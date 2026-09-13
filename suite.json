@@ -1,0 +1,264 @@
+{
+  "train": "aeco-0.8.1",
+  "repos": [
+    {
+      "name": "usdaeco-core",
+      "path": "core/usdaeco-core",
+      "tier": "core",
+      "kind": "library",
+      "library": "usdAeco",
+      "tag": "v0.9.5",
+      "requires": {}
+    },
+    {
+      "name": "usdaeco-axis",
+      "path": "section/usdaeco-axis",
+      "tier": "section",
+      "kind": "library",
+      "library": "usdAecoAxis",
+      "tag": "v0.1.5",
+      "requires": {
+        "usdAeco": ">=0.9.2,<1.0"
+      }
+    },
+    {
+      "name": "usdaeco-buildup",
+      "path": "section/usdaeco-buildup",
+      "tier": "section",
+      "kind": "library",
+      "library": "usdAecoBuildUp",
+      "tag": "v0.2.5",
+      "requires": {
+        "usdAeco": ">=0.9,<1.0"
+      }
+    },
+    {
+      "name": "usdaeco-wall",
+      "path": "kind/usdaeco-wall",
+      "tier": "kind",
+      "kind": "usecase",
+      "library": "usdAecoWall",
+      "tag": "v0.2.5",
+      "requires": {
+        "usdAeco": ">=0.9,<1.0",
+        "usdAecoAxis": ">=0.1,<0.2",
+        "usdAecoBuildUp": ">=0.1,<0.3"
+      }
+    },
+    {
+      "name": "usdaeco-pipe",
+      "path": "kind/usdaeco-pipe",
+      "tier": "kind",
+      "kind": "usecase",
+      "library": "usdAecoPipe",
+      "tag": "v0.2.5",
+      "requires": {
+        "usdAeco": ">=0.9,<1.0",
+        "usdAecoAxis": ">=0.1.1,<0.2"
+      }
+    },
+    {
+      "name": "usdaeco-cctv",
+      "path": "kind/usdaeco-cctv",
+      "tier": "kind",
+      "kind": "usecase",
+      "library": "usdAecoCctv",
+      "tag": "v0.5.6",
+      "requires": {
+        "usdAeco": ">=0.9,<1.0"
+      }
+    },
+    {
+      "name": "usdaeco-clash",
+      "path": "kind/usdaeco-clash",
+      "tier": "kind",
+      "kind": "usecase",
+      "library": "usdAecoClash",
+      "tag": "v0.2.3",
+      "requires": {
+        "usdAeco": ">=0.9.2,<1.0"
+      }
+    },
+    {
+      "name": "usdaeco-plan",
+      "path": "kind/usdaeco-plan",
+      "tier": "kind",
+      "kind": "usecase",
+      "library": "usdAecoPlan",
+      "tag": "v0.1.4",
+      "requires": {
+        "usdAeco": ">=0.9.2,<1.0"
+      }
+    },
+    {
+      "name": "usdaeco-repeat",
+      "path": "kind/usdaeco-repeat",
+      "tier": "kind",
+      "kind": "usecase",
+      "library": "usdAecoRepeat",
+      "tag": "v0.2.1",
+      "requires": {
+        "usdAeco": ">=0.9.2,<1.0",
+        "usdAecoBuildUp": ">=0.2,<0.3",
+        "usdAecoAxis": ">=0.1,<0.2"
+      }
+    },
+    {
+      "name": "usdaeco-compliance",
+      "path": "kind/usdaeco-compliance",
+      "tier": "kind",
+      "kind": "usecase",
+      "library": "usdAecoCompliance",
+      "tag": "v0.1.3",
+      "requires": {
+        "usdAeco": ">=0.9.2,<1.0"
+      }
+    },
+    {
+      "name": "usdaeco-solid",
+      "path": "kind/usdaeco-solid",
+      "tier": "kind",
+      "kind": "usecase",
+      "library": null,
+      "tag": "v0.1.5",
+      "requires": {
+        "usdAeco": ">=0.9,<1.0",
+        "usdaeco-ifc": ">=0.2,<0.3",
+        "usdSolid": ">=0.1,<0.2",
+        "usdSolidOcct": ">=0.1,<0.2"
+      }
+    },
+    {
+      "name": "usdaeco-sync",
+      "path": "record/usdaeco-sync",
+      "tier": "record",
+      "kind": "library",
+      "library": "usdAecoSync",
+      "tag": "v0.5.5",
+      "requires": {
+        "usdAeco": ">=0.9.2,<1.0",
+        "usdAecoAxis": ">=0.1,<0.2"
+      }
+    },
+    {
+      "name": "usdaeco-ifc",
+      "path": "hosts/usdaeco-ifc",
+      "tier": "hosts",
+      "kind": "integration",
+      "library": null,
+      "tag": "v0.2.3",
+      "requires": {
+        "usdAeco": ">=0.9,<1.0",
+        "usdAecoSync": ">=0.5,<0.6",
+        "usdAecoAxis": ">=0.1,<0.2",
+        "usdSolid": ">=0.1,<0.2",
+        "usdSolidOcct": ">=0.1,<0.2"
+      }
+    },
+    {
+      "name": "usdaeco-revit",
+      "path": "hosts/usdaeco-revit",
+      "tier": "hosts",
+      "kind": "integration",
+      "library": null,
+      "tag": "v0.1.5",
+      "requires": {
+        "usdAeco": ">=0.9,<1.0",
+        "usdAecoSync": ">=0.5,<0.6",
+        "usdAecoAxis": ">=0.1,<0.2"
+      }
+    },
+    {
+      "name": "usdaeco-bonsai",
+      "path": "hosts/usdaeco-bonsai",
+      "tier": "hosts",
+      "kind": "integration",
+      "library": null,
+      "tag": "v0.1.6",
+      "requires": {
+        "usdAeco": ">=0.9,<1.0",
+        "usdAecoSync": ">=0.5,<0.6",
+        "usdAecoAxis": ">=0.1,<0.2"
+      }
+    },
+    {
+      "name": "usdaeco-toolchain",
+      "path": "kits/usdaeco-toolchain",
+      "tier": "kits",
+      "kind": "library",
+      "library": null,
+      "tag": "v0.3.10",
+      "requires": {}
+    },
+    {
+      "name": "aeco-toolchain",
+      "path": "kits/aeco-toolchain",
+      "tier": "kits",
+      "kind": "kit",
+      "library": null,
+      "tag": "v0.4.0",
+      "requires": {}
+    },
+    {
+      "name": "usdaeco-cctv-exec",
+      "path": "kits/usdaeco-cctv-exec",
+      "tier": "kits",
+      "kind": "library",
+      "library": null,
+      "tag": "v0.2.4",
+      "requires": {
+        "usdAeco": ">=0.9.2,<1.0",
+        "usdAecoCctv": ">=0.5.2,<0.6"
+      }
+    },
+    {
+      "name": "usdSolid",
+      "path": "kits/usdSolid",
+      "tier": "kits",
+      "kind": "kit",
+      "library": "usdSolid",
+      "tag": "v0.1.6",
+      "requires": {}
+    },
+    {
+      "name": "usdSolidOcct",
+      "path": "kits/usdSolidOcct",
+      "tier": "kits",
+      "kind": "kit",
+      "library": "usdSolidOcct",
+      "tag": "v0.1.5",
+      "requires": {
+        "usdSolid": ">=0.1,<0.2"
+      }
+    },
+    {
+      "name": "usdaeco-datacentre",
+      "path": "data/usdaeco-datacentre",
+      "tier": "data",
+      "kind": "data",
+      "library": null,
+      "tag": "v0.4.9",
+      "requires": {
+        "usdaeco-revit": ">=0.1,<0.2"
+      }
+    },
+    {
+      "name": "usdaeco-scenarios",
+      "path": "gate/usdaeco-scenarios",
+      "tier": "gate",
+      "kind": "gate",
+      "library": null,
+      "tag": "v0.8.1",
+      "requires": {}
+    },
+    {
+      "name": "usdaeco-board",
+      "path": "gate/usdaeco-board",
+      "tier": "gate",
+      "kind": "board",
+      "library": null,
+      "tag": "v0.1.5",
+      "requires": {}
+    }
+  ]
+}

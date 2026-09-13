@@ -1,0 +1,8 @@
+{
+  "name": "usdaeco",
+  "version": "0.1.0",
+  "kind": "suite",
+  "tier": "suite",
+  "requires": {},
+  "licence": "MIT"
+}

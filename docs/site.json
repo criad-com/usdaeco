@@ -1,0 +1,25 @@
+{
+  "files": {
+    "index.html": {
+      "bytes": 5595,
+      "sha256": "5b9af8c4c31fca0566c30a66934ff04d40cf9f09bfdf656bfbfe13a7ceefafde",
+      "source_sha256": "5b9af8c4c31fca0566c30a66934ff04d40cf9f09bfdf656bfbfe13a7ceefafde"
+    },
+    "schemas/usdAeco/overview.html": {
+      "bytes": 62421,
+      "sha256": "a5c7272b29ddaa3c309ab1e19a08100c92623f7831a71ecb1a6cee8c5b45d04a",
+      "source_sha256": "2de976457bf2f0f13ea88ec75c40c04ce26e5dbe4c434cfa837b19a60f887ec0"
+    },
+    "_static/aeco.css": {
+      "bytes": 13092,
+      "sha256": "d81092123da04f3499435f27038833a9132123bd15466a4645725d67810565ab",
+      "source_sha256": "d81092123da04f3499435f27038833a9132123bd15466a4645725d67810565ab"
+    },
+    "schemas/usdAeco/usdAecoExample.png": {
+      "bytes": 74685,
+      "sha256": "0ff6947afd3a15b77991e9d19000ee9016878da135f300f084491dd4dbad39c5",
+      "source_sha256": "0ff6947afd3a15b77991e9d19000ee9016878da135f300f084491dd4dbad39c5"
+    }
+  },
+  "prose_terminology_edits": 2
+}

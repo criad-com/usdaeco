@@ -1,0 +1,946 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Overview — Built Environment (usdAeco) — usdAECO schema domains</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&family=Roboto+Slab:wght@400;700&display=swap">
+<link rel="stylesheet" href="../../_static/aeco.css">
+</head>
+<body>
+<button class="nav-toggle" type="button" aria-label="Toggle navigation" onclick="document.querySelector('.nav-side').classList.toggle('open')">☰ Menu</button>
+<nav class="nav-side" aria-label="Navigation menu">
+  <div class="nav-head">
+    <a href="../../index.html">usdAECO<span class="sub">schema domains for the built environment</span></a>
+  </div>
+  <div class="nav-menu">
+    <p class="caption">Schema Domains</p>
+    <ul>
+      <li class="current"><a href="overview.html">Built Environment (usdAeco)</a>
+        <ul>
+          <li><a href="#overview">Overview</a></li>
+          <li><a href="#schemas-and-concepts">Schemas and Concepts</a></li>
+          <li><a href="#identity">Identity</a></li>
+          <li><a href="#phase">Phase and Time</a></li>
+          <li><a href="#vanilla">Composing Without Plugins</a></li>
+          <li><a href="#properties">Properties</a></li>
+          <li><a href="#validation">Validation</a></li>
+          <li><a href="#core-and-others">The Core and the Other Domains</a></li>
+          <li><a href="#classes">Schema Classes</a></li>
+          <li><a href="#examples">Examples</a></li>
+        </ul>
+      </li>
+      <li class="pending"><a href="https://github.com/criad-com/usdaeco-axis">Path Drivers (usdAecoAxis)<span class="tag">guide to follow</span></a></li>
+      <li class="pending"><a href="https://github.com/criad-com/usdaeco-buildup">Layered Sections (usdAecoBuildUp)<span class="tag">guide to follow</span></a></li>
+      <li class="pending"><a href="https://github.com/criad-com/usdaeco-wall">Walls (usdAecoWall)<span class="tag">guide to follow</span></a></li>
+      <li class="pending"><a href="https://github.com/criad-com/usdaeco-pipe">Pipes (usdAecoPipe)<span class="tag">guide to follow</span></a></li>
+      <li class="pending"><a href="https://github.com/criad-com/usdaeco-sync">Host Sync (usdAecoSync)<span class="tag">guide to follow</span></a></li>
+      <li class="pending"><a href="https://github.com/criad-com/usdaeco-cctv">Cameras (usdAecoCctv)<span class="tag">guide to follow</span></a></li>
+      <li class="pending"><a href="https://github.com/criad-com/usdaeco-clash">Clash (usdAecoClash)<span class="tag">guide to follow</span></a></li>
+      <li class="pending"><a href="https://github.com/criad-com/usdaeco-plan">Programmes (usdAecoPlan)<span class="tag">guide to follow</span></a></li>
+      <li class="pending"><a href="https://github.com/criad-com/usdaeco-repeat">Repeated Floors (usdAecoRepeat)<span class="tag">guide to follow</span></a></li>
+      <li class="pending"><a href="https://github.com/criad-com/usdaeco-compliance">Compliance (usdAecoCompliance)<span class="tag">guide to follow</span></a></li>
+      <li class="pending"><a href="https://github.com/criad-com/usdaeco-solid">Exact Bodies (usdaeco-solid)<span class="tag">guide to follow</span></a></li>
+    </ul>
+    <p class="caption">Reference</p>
+    <ul>
+      <li><a href="https://github.com/criad-com/usdaeco-core">usdaeco-core on GitHub</a></li>
+      <li><a href="https://github.com/criad-com/usdaeco-toolchain">Build and check kit</a></li>
+      <li><a href="https://github.com/criad-com/usdaeco-scenarios">Suite manifest</a></li>
+    </ul>
+  </div>
+</nav>
+
+<div class="content-wrap">
+<main class="content">
+<ul class="breadcrumbs">
+  <li><a href="../../index.html">Schema Domains</a></li>
+  <li><a href="overview.html">Built Environment (usdAeco)</a></li>
+  <li class="current">Overview</li>
+</ul>
+<hr class="top">
+
+<h1 id="overview">Overview<a class="headerlink" href="#overview" title="Link to this heading">¶</a></h1>
+
+<p class="lead">The usdAeco schema domain contains schemas for describing the built environment:
+the sites, facilities, levels and spaces of a built thing, the elements inside them, and the
+identity, classification, grouping and connectivity those elements share. usdAeco is designed
+to carry the semantics every dataset about a built thing needs, in a small, codeless form that
+composes on any OpenUSD runtime.</p>
+
+<p>usdAeco is the <em>core</em> of a suite of AECO schema domains. This guide covers the core
+only. Everything a downstream domain adds &mdash; path drivers, layered sections, walls, pipes,
+cameras, programmes, host synchronization &mdash; is deliberately kept out of the core and is
+described in its own guide. See <a href="#core-and-others">The Core and the Other Domains</a>
+for how the two relate and what the core does not contain.</p>
+
+<figure>
+  <img src="usdAecoExample.png" alt="The small building example rendered with guide, proxy and render purposes enabled" width="1280" height="800">
+  <figcaption>The small building example: 16 elements on two levels, catalog inheritance and a connected cold-water run.
+  Every gprim is ordinary UsdGeom marked as derived; the blue curve is a wall axis rendered as guide geometry.</figcaption>
+</figure>
+
+<h2 id="schemas-and-concepts">usdAeco Schemas and Concepts<a class="headerlink" href="#schemas-and-concepts" title="Link to this heading">¶</a></h2>
+
+<p>usdAeco includes several schemas that provide the following features:</p>
+<ul>
+  <li>Mark a stage as an AECO project</li>
+  <li>Represent the spatial structure (e.g. AecoLevel, AecoSpace)</li>
+  <li>Endow element capabilities</li>
+  <li>Classify prims against external dictionaries</li>
+  <li>Represent catalog types and their occurrences</li>
+  <li>Represent groups: systems and zones</li>
+  <li>Represent connectivity with ports</li>
+  <li>Mark derived geometry</li>
+</ul>
+<p>Each of these is described in the following sections.</p>
+
+<h3 id="project">Marking a Project<a class="headerlink" href="#project" title="Link to this heading">¶</a></h3>
+
+<p>The <a href="#AecoProjectAPI">AecoProjectAPI</a> schema is applied to the root model prim of a
+stage and marks it as an AECO project, carrying the project name and a stable project identifier.
+Units and up axis remain UsdGeom stage metrics (<code>metersPerUnit</code>, <code>upAxis</code>).
+The schema deliberately carries nothing else: conventions that only matter to a downstream
+domain, such as a calendar epoch for 4D views, are declared by that domain's own root schema.</p>
+
+<pre><code class="usda">def Xform "SmallProject" (
+    prepend apiSchemas = ["AecoProjectAPI"]
+    kind = "assembly"
+)
+{
+    string aeco:project:id = "22de894f-1a16-5d9b-82f4-988837ce6db1"
+    string aeco:project:name = "Schema Demo House"
+}</code></pre>
+
+<h3 id="spatial">Representing the Spatial Structure<a class="headerlink" href="#spatial" title="Link to this heading">¶</a></h3>
+
+<p>usdAeco provides five typed schemas that represent the spatial structure of a built thing:
+<a href="#AecoSite">AecoSite</a>, <a href="#AecoFacility">AecoFacility</a>,
+<a href="#AecoFacilityPart">AecoFacilityPart</a>, <a href="#AecoLevel">AecoLevel</a> and
+<a href="#AecoSpace">AecoSpace</a>. All five derive from
+<a href="#AecoSpatialBase">AecoSpatialBase</a>, which in turn derives from Xformable, so that
+every spatial container can be transformed like any Xformable prim and carries a stable
+identity (<code>aeco:id</code>) and a lifecycle phase (<code>aeco:phase</code>).</p>
+
+<p>Containment is the USD namespace: a prim's container is its nearest spatial ancestor.
+Organizational Scopes and Xforms may sit in between and are invisible to the containment rules.
+Which spatial prims may contain which is a four-rule grammar, with recursion at every type:</p>
+
+<pre><code>site     ⊃ { site, facility, space }
+facility ⊃ { part, space }
+part     ⊃ { part, space }          (a level is a part)
+space    ⊃ { space }</code></pre>
+
+<figure class="fig-svg">
+<svg viewBox="0 0 740 262" width="740" height="262" role="img" aria-labelledby="grammar-title">
+  <title id="grammar-title">The containment grammar of the five spatial types</title>
+  <defs>
+    <marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="arrow"/></marker>
+    <marker id="arr-err" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="arrow err"/></marker>
+  </defs>
+  <!-- self loops (nesting) -->
+  <path class="edge" d="M 70 110 C 55 66, 115 66, 100 112" marker-end="url(#arr)"/>
+  <path class="edge err" d="M 240 110 C 225 66, 285 66, 270 112" marker-end="url(#arr-err)"/>
+  <path class="edge" d="M 425 100 C 410 56, 470 56, 455 102" marker-end="url(#arr)"/>
+  <path class="edge" d="M 630 110 C 615 66, 675 66, 660 112" marker-end="url(#arr)"/>
+  <text class="label s" x="85" y="60" text-anchor="middle">nests</text>
+  <text class="label s err-text" x="255" y="60" text-anchor="middle">error: use AecoFacilityPart</text>
+  <text class="label s" x="440" y="50" text-anchor="middle">nests (wing ⊃ storey ⊃ mezzanine)</text>
+  <text class="label s" x="645" y="60" text-anchor="middle">nests</text>
+  <!-- chain -->
+  <line class="edge" x1="150" y1="132" x2="186" y2="132" marker-end="url(#arr)"/>
+  <line class="edge" x1="320" y1="132" x2="356" y2="132" marker-end="url(#arr)"/>
+  <line class="edge" x1="520" y1="132" x2="576" y2="132" marker-end="url(#arr)"/>
+  <!-- long arcs to space -->
+  <path class="edge" d="M 85 154 C 85 240, 665 240, 665 158" marker-end="url(#arr)"/>
+  <path class="edge" d="M 255 154 C 255 208, 622 208, 622 158" marker-end="url(#arr)"/>
+  <!-- nodes -->
+  <rect class="box" x="20" y="110" width="130" height="44" rx="3"/>
+  <text class="label b" x="85" y="137" text-anchor="middle">AecoSite</text>
+  <rect class="box" x="190" y="110" width="130" height="44" rx="3"/>
+  <text class="label b" x="255" y="137" text-anchor="middle">AecoFacility</text>
+  <rect class="box" x="360" y="100" width="160" height="64" rx="3"/>
+  <text class="label b" x="440" y="124" text-anchor="middle">AecoFacilityPart</text>
+  <text class="label s" x="440" y="148" text-anchor="middle">AecoLevel : AecoFacilityPart</text>
+  <rect class="box" x="580" y="110" width="130" height="44" rx="3"/>
+  <text class="label b" x="645" y="137" text-anchor="middle">AecoSpace</text>
+  <text class="label s" x="20" y="256">An arrow means "may contain". Every type nests except AecoFacility.</text>
+</svg>
+<figcaption>The containment grammar. It is enforced by a validator at error tier; unanchored parts and spaces only warn.</figcaption>
+</figure>
+
+<p>Note that a facility may not contain another facility: a podium with two towers is one
+AecoFacility whose major divisions are AecoFacilityParts, and separately operated assets are
+sibling facilities related by systems and references. AecoLevel derives from AecoFacilityPart,
+so a level may contain a level (a mezzanine), and it carries the one property every vertical
+facility shares, its datum elevation. The following example is the top of a campus with a podium
+development, taken from the hard-cases example stage.</p>
+
+<pre><code class="usda">def AecoSite "Campus"
+{
+    def AecoSite "ParcelNorth"
+    {
+        def AecoFacility "Development" (
+            prepend apiSchemas = ["AecoClassificationAPI:ifc"]
+        )
+        {
+            string aeco:class:ifc:code = "IfcBuilding"
+
+            def AecoFacilityPart "Podium"
+            {
+                def AecoLevel "L0"
+                {
+                    double aeco:elevation = 0
+
+                    def AecoSpace "Lobby" { }
+
+                    def AecoLevel "Mezzanine"
+                    {
+                        double aeco:elevation = 2.1
+                    }
+                }
+            }
+            def AecoFacilityPart "TowerA" { }
+            def AecoSpace "Atrium" { }
+        }
+        def AecoSpace "Plaza" { }
+    }
+}</code></pre>
+
+<p>The kind of a spatial prim &mdash; building or road, wing or road section, room or plaza
+&mdash; is never a subtype. It is classification, exactly as for elements (see
+<a href="#classification">Classifying Prims</a>). There is no AecoBuilding: a building is an
+AecoFacility classified as one, and a road is an AecoFacility classified as <code>IfcRoad</code>
+whose sections are AecoFacilityParts. Type is structure; kind is data.</p>
+
+<div class="tablewrap"><table class="docutils compact">
+<thead><tr><th>Schema</th><th>Represents</th><th>Fallback type</th></tr></thead>
+<tbody>
+<tr><td><a href="#AecoSite">AecoSite</a></td><td>An area of land or water under development; sites nest (campus ⊃ parcels)</td><td>Xform</td></tr>
+<tr><td><a href="#AecoFacility">AecoFacility</a></td><td>One built asset operated as a whole: a building, bridge, road, tunnel, plant</td><td>Xform</td></tr>
+<tr><td><a href="#AecoFacilityPart">AecoFacilityPart</a></td><td>A structural subdivision of a facility: wing, tower, podium, road section; concrete and recursive</td><td>Xform</td></tr>
+<tr><td><a href="#AecoLevel">AecoLevel</a></td><td>The one universal part: a horizontal stratum at a datum elevation</td><td>Xform</td></tr>
+<tr><td><a href="#AecoSpace">AecoSpace</a></td><td>A bounded usable region, interior or exterior: room, hall, yard, atrium, plaza; spaces nest</td><td>Xform</td></tr>
+</tbody></table></div>
+
+<h3 id="elements">Endowing Element Capabilities<a class="headerlink" href="#elements" title="Link to this heading">¶</a></h3>
+
+<p>The <a href="#AecoElementAPI">AecoElementAPI</a> schema imparts "element capabilities" to the
+prim it is applied to, so the prim can be treated as being a built element. The schema can be
+applied to any Imageable prim &mdash; an Xform, a Mesh, a referenced asset &mdash; and gives it a
+stable identity (<code>aeco:id</code>), a lifecycle phase (<code>aeco:phase</code>) and optional
+secondary spatial anchors (<code>aeco:referencedContainers</code>). usdAeco provides no typed
+element hierarchy: what an element <em>is</em> comes from classification.</p>
+
+<pre><code class="usda">def Xform "WallPartition" (
+    prepend apiSchemas = ["AecoElementAPI", "AecoClassificationAPI:ifc"]
+)
+{
+    string aeco:id = "59c47682-097a-5121-b9ae-ec35085e206f"
+    uniform token aeco:phase = "proposed"
+    string aeco:class:ifc:code = "IfcWall.PARTITIONING"
+    string aeco:class:ifc:name = "Wall (partitioning)"
+}</code></pre>
+
+<p>An element is where the containment grammar stops. Below an element, namespace is assembly
+structure, not spatial containment: a door nested inside a curtain-wall element is legal and
+ordinary, and containment queries see <em>through</em> element subtrees to the nearest spatial
+ancestor. An element that spans containers beyond its own &mdash; a riser serving upper levels,
+a skybridge reaching the other tower, a culvert serving the adjacent road section &mdash; lists
+them in <code>aeco:referencedContainers</code>, authored on the element by the discipline that
+owns it.</p>
+
+<pre><code class="usda">def Xform "SkyBridge" (
+    prepend apiSchemas = ["AecoElementAPI", "AecoClassificationAPI:ifc"]
+)
+{
+    string aeco:id = "07ef25f4-da8b-50bd-b1a5-49677c74d3df"
+    string aeco:class:ifc:code = "IfcElementAssembly.USERDEFINED"
+    prepend rel aeco:referencedContainers = &lt;/Metro/Campus/ParcelNorth/Development/Parts/TowerB/B_L1&gt;
+}</code></pre>
+
+<p>A spatial prim or a port that itself wears AecoElementAPI is a validator error: containers,
+ports and elements are referents of different kinds.</p>
+
+<h3 id="classification">Classifying Prims<a class="headerlink" href="#classification" title="Link to this heading">¶</a></h3>
+
+<p>The <a href="#AecoClassificationAPI">AecoClassificationAPI</a> schema is a multiple-apply
+schema that binds a prim to one entry of one external classification system. Each instance is
+named for its system and contributes a <code>code</code>, a <code>name</code> and a resolvable
+<code>uri</code> under the <code>aeco:class:&lt;system&gt;:</code> namespace. Several instances
+per prim are normal and expected.</p>
+
+<pre><code class="usda">class "ExternalCavityWall" (
+    prepend apiSchemas = ["AecoTypeAPI", "AecoClassificationAPI:uniclass", "AecoClassificationAPI:ifc"]
+)
+{
+    string aeco:class:ifc:code = "IfcWall.SOLIDWALL"
+    string aeco:class:ifc:name = "Wall (solid)"
+    string aeco:class:ifc:uri = "https://identifier.buildingsmart.org/uri/buildingsmart/ifc/4.3/class/IfcWall"
+    string aeco:class:uniclass:code = "Ss_25_10_20"
+    string aeco:class:uniclass:name = "Wall systems"
+    string aeco:class:uniclass:uri = "https://uniclass.thenbs.com/taxon/ss_25_10_20"
+}</code></pre>
+
+<p>Classification is the <em>only</em> kind mechanism in the core. It applies to elements,
+spatial prims, groups and catalog types alike: the kind of a facility (<code>IfcRoad</code>),
+of a system (<code>IfcDistributionSystem.CHILLEDWATER</code>) and of a wall
+(<code>IfcWall.PARTITIONING</code>, <code>Ss_25_10_20</code>) all ride the same mechanism.
+usdAeco carries no census token or taxonomy of its own, so "all walls" is one query in whichever
+dictionary the data uses, and nothing in the core needs re-mapping when a dictionary revises.
+The IFC entity is the recommended default system because every authoring tool can emit it; the
+code form is the entity name, then the PredefinedType after a dot when one is set.</p>
+
+<p>Instance names are governed tokens from the <code>classification_systems</code> registry
+(<code>ifc</code>, <code>uniclass</code>, <code>omniclass</code>, <code>uniformat</code>,
+<code>masterformat</code>, <code>etim</code>, <code>bsdd</code>), so two tools name the same
+dictionary the same way. Validators warn on an unknown system, on an empty code, and on
+elements with no classification at all or classified only as a proxy &mdash; the measurable
+version of proxy abuse.</p>
+
+<h3 id="types">Representing Types and Occurrences<a class="headerlink" href="#types" title="Link to this heading">¶</a></h3>
+
+<p>The <a href="#AecoTypeAPI">AecoTypeAPI</a> schema marks a class prim as a catalog type &mdash;
+a product or type definition &mdash; and carries product identity: manufacturer, model and
+catalog URI. Occurrences compose the type through an <code>inherits</code> arc, so
+type/occurrence <em>is</em> USD composition: edits to the type broadcast to every occurrence,
+and an occurrence's own opinions override the type's by composition strength. No relationship
+needs chasing; <code>attr.Get()</code> on the occurrence is already right.</p>
+
+<pre><code class="usda">class "_TypeCatalog"
+{
+    class "ExternalCavityWall" (
+        prepend apiSchemas = ["AecoTypeAPI", "AecoClassificationAPI:ifc"]
+    )
+    {
+        string aeco:class:ifc:code = "IfcWall.SOLIDWALL"
+        string aeco:type:manufacturer = "Example Masonry Ltd"
+        string aeco:type:model = "Cavity wall 300 (102.5 / 100 / 100)"
+    }
+}
+
+def Xform "WallNorth" (
+    prepend apiSchemas = ["AecoElementAPI"]
+    prepend inherits = &lt;/_TypeCatalog/ExternalCavityWall&gt;
+)
+{
+    # Resolves aeco:class:ifc:code and aeco:type:model from the type.
+    string aeco:id = "e1337f59-b0e2-5dd0-8474-c578c5b0afbd"
+}</code></pre>
+
+<p>Applied schemas compose through inherits too, so the occurrence resolves the type's
+manufacturer as its own (correct: the manufacturer of the type is the manufacturer of every
+occurrence). Enumerate the <em>catalog</em> over class prims (<code>Usd.PrimIsAbstract</code>),
+not over <code>HasAPI</code> alone. Identity stays on the occurrence: a type prim never carries
+an <code>aeco:id</code>.</p>
+
+<h3 id="groups">Representing Groups: Systems and Zones<a class="headerlink" href="#groups" title="Link to this heading">¶</a></h3>
+
+<p>usdAeco provides two typed schemas that overlay groups on the spatial structure.
+<a href="#AecoSystem">AecoSystem</a> represents a functional service network &mdash; a piping
+run, an air loop, a circuit, a structural frame &mdash; the logical view of a service, distinct
+from its spatially placed members. <a href="#AecoZone">AecoZone</a> represents a purpose
+grouping &mdash; a fire compartment, an HVAC zone, a security zone, a department. Both derive
+from <a href="#AecoGroupBase">AecoGroupBase</a>, which carries an identity and a built-in
+<code>members</code> collection (<code>CollectionAPI:members</code>, expansion rule
+<code>explicitOnly</code> by fallback). A group is its members plus an identity: membership
+never changes where a thing is, and anything may belong to any number of groups.</p>
+
+<pre><code class="usda">def AecoSystem "DomesticColdWater" (
+    prepend apiSchemas = ["AecoClassificationAPI:ifc"]
+    displayName = "Domestic Cold Water"
+)
+{
+    string aeco:id = "e9f6b301-f133-5f40-82b8-95a349687722"
+    string aeco:class:ifc:code = "IfcDistributionSystem.DOMESTICCOLDWATER"
+    prepend rel aeco:serves = &lt;/SmallProject/Site/Building&gt;
+    prepend rel collection:members:includes = [
+        &lt;/SmallProject/Site/Building/Level1/CWEntry&gt;,
+        &lt;/SmallProject/Site/Building/Level1/CWRiser&gt;,
+        &lt;/SmallProject/Site/Building/Level2/Bathroom/CWBranch&gt;,
+        &lt;/SmallProject/Site/Building/Level2/Bathroom/Basin&gt;,
+    ]
+}
+
+def AecoZone "FireCompartmentFC1" (
+    prepend apiSchemas = ["AecoClassificationAPI:ifc"]
+    displayName = "Fire compartment FC1"
+)
+{
+    string aeco:id = "1ec53345-e096-599c-8bf1-194eb5e39d97"
+    string aeco:class:ifc:code = "IfcSpatialZone.FIRESAFETY"
+    prepend rel collection:members:includes = [
+        &lt;/Metro/Campus/ParcelNorth/Development/Parts/Podium/L0/Lobby&gt;,
+        &lt;/Metro/Campus/ParcelNorth/Development/Parts/TowerA/A_L2/Bathroom&gt;,
+    ]
+}</code></pre>
+
+<p>AecoSystem adds <code>aeco:serves</code>, the spatial prims or zones a service reaches. This
+is coarser than member connectivity and valid before any pipe is drawn: a cold water system
+serves a building at concept stage. The kind of a group is classification, and its human label
+is the prim's <code>displayName</code> metadata. A group carries no status, owner or
+title-as-data; those are statements <em>about</em> a group and belong to a downstream domain.
+Zones may overlap freely and never nest spatially; when a zone needs a volumetric extent, that
+extent is an AecoSpace at its natural place in the tree, grouped by the zone.</p>
+
+<p>A plain selection set needs no AECO type at all: a <code>CollectionAPI</code> instance on any
+prim is USD's own grouping. Downstream domains refine systems and zones with applied schemas
+that declare <code>apiSchemaCanOnlyApplyTo = ["AecoSystem"]</code> or
+<code>["AecoZone"]</code>; nothing subclasses them.</p>
+
+<h3 id="ports">Representing Connectivity with Ports<a class="headerlink" href="#ports" title="Link to this heading">¶</a></h3>
+
+<p>The <a href="#AecoPort">AecoPort</a> schema represents a typed connection point on an element.
+A port is authored as a child prim, so it has a transform (the physical connection location) and
+can be targeted by relationships. Ports carry a medium (<code>pipe</code>, <code>duct</code>,
+<code>cable</code>, <code>cableCarrier</code>, <code>wireless</code>, <code>other</code>), a
+flow direction (<code>source</code>, <code>sink</code>, <code>bidirectional</code>) and the
+symmetric <code>aeco:connectedPorts</code> relationship, authored on both ends.</p>
+
+<pre><code class="usda">def Xform "CWEntry" (
+    prepend apiSchemas = ["AecoElementAPI", "AecoClassificationAPI:ifc"]
+)
+{
+    string aeco:id = "ab096698-1b91-5c84-810c-5150bea6d9ce"
+    string aeco:class:ifc:code = "IfcPipeSegment.RIGIDSEGMENT"
+
+    def AecoPort "Out"
+    {
+        string aeco:id = "d3356492-f76a-5470-9e37-b81f9d7bf4cc"
+        uniform token aeco:medium = "pipe"
+        uniform token aeco:flowDirection = "source"
+        prepend rel aeco:connectedPorts = &lt;/SmallProject/Site/Building/Level1/CWRiser/In&gt;
+        double3 xformOp:translate = (-3.5, 1.4, 0.5)
+        uniform token[] xformOpOrder = ["xformOp:translate"]
+    }
+}</code></pre>
+
+<p>Ports have <code>purpose = guide</code> by fallback, so vanilla viewers hide them unless
+guides are shown; this is safe because ports carry no renderable children.
+<code>undefined</code> is a wildcard for both medium and flow direction: the validators refuse
+only <em>stated</em> incompatibilities &mdash; a pipe port connected to a cable port, a source
+connected to a source &mdash; and flag asymmetric or dangling links. The core defines no
+connection entities and no shading-style attribute connections: dataflow is not physical
+topology.</p>
+
+<h3 id="derived">Marking Derived Geometry<a class="headerlink" href="#derived" title="Link to this heading">¶</a></h3>
+
+<p>usdAeco adds no geometry schema. Geometry is ordinary UsdGeom &mdash; a Cube, a Cylinder, a
+Mesh, a BasisCurves &mdash; authored as a child of the referent it stands for, and the
+<a href="#AecoDerivedGeometryAPI">AecoDerivedGeometryAPI</a> schema marks it as <em>derived</em>:
+which referent it pictures (<code>aeco:derived:source</code> repeats the referent's
+<code>aeco:id</code>), what it is a picture of (<code>aeco:derived:role</code>), how faithful it
+is (<code>aeco:derived:approx</code>), which tool produced it (<code>aeco:derived:stamp</code>),
+which other representation it was derived from (<code>aeco:derived:from</code>) and the
+tolerance the derivation honoured (<code>aeco:derived:tolerance</code>, in metres).</p>
+
+<figure class="fig-svg">
+<svg viewBox="0 0 740 232" width="740" height="232" role="img" aria-labelledby="derived-title">
+  <title id="derived-title">An element and its derived representations</title>
+  <defs>
+    <marker id="arr2" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="arrow"/></marker>
+    <marker id="arr2-soft" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="arrow soft"/></marker>
+  </defs>
+  <line class="edge" x1="115" y1="140" x2="290" y2="82" marker-end="url(#arr2)"/>
+  <line class="edge" x1="370" y1="140" x2="370" y2="82" marker-end="url(#arr2)"/>
+  <line class="edge" x1="625" y1="140" x2="450" y2="82" marker-end="url(#arr2)"/>
+  <rect class="box core" x="200" y="16" width="340" height="64" rx="3"/>
+  <text class="label b" x="370" y="40" text-anchor="middle">Xform "WallNorth"  +  AecoElementAPI</text>
+  <text class="mono" x="370" y="62" text-anchor="middle">aeco:id = "e1337f59-b0e2-5dd0-8474-c578c5b0afbd"</text>
+  <rect class="box child" x="10" y="140" width="210" height="76" rx="3"/>
+  <text class="label b" x="115" y="162" text-anchor="middle">BasisCurves "Axis"</text>
+  <text class="mono" x="115" y="182" text-anchor="middle">role = axis · purpose = guide</text>
+  <text class="mono" x="115" y="200" text-anchor="middle">approx = exact</text>
+  <rect class="box child" x="265" y="140" width="210" height="76" rx="3"/>
+  <text class="label b" x="370" y="162" text-anchor="middle">Cube "Body"</text>
+  <text class="mono" x="370" y="182" text-anchor="middle">role = body · purpose = render</text>
+  <text class="mono" x="370" y="200" text-anchor="middle">approx = exact · tolerance = 1e-6</text>
+  <rect class="box child" x="520" y="140" width="210" height="76" rx="3"/>
+  <text class="label b" x="625" y="162" text-anchor="middle">Mesh "Proxy"</text>
+  <text class="mono" x="625" y="182" text-anchor="middle">role = proxy · purpose = proxy</text>
+  <text class="mono" x="625" y="200" text-anchor="middle">approx = tessellated · from = Body</text>
+  <line class="edge soft" x1="520" y1="128" x2="478" y2="128" marker-end="url(#arr2-soft)"/>
+  <text class="label s" x="499" y="122" text-anchor="middle">from</text>
+  <text class="label s" x="10" y="228">Each child is a namespace child of its referent; aeco:derived:source repeats the referent's aeco:id.</text>
+</svg>
+<figcaption>Plain UsdGeom gprims plus one applied schema is the whole representation pattern. The mark adds no geometry type.</figcaption>
+</figure>
+
+<pre><code class="usda">def Xform "WallNorth" (
+    prepend apiSchemas = ["AecoElementAPI"]
+)
+{
+    string aeco:id = "e1337f59-b0e2-5dd0-8474-c578c5b0afbd"
+
+    def BasisCurves "Axis" (
+        prepend apiSchemas = ["AecoDerivedGeometryAPI"]
+    )
+    {
+        string aeco:derived:source = "e1337f59-b0e2-5dd0-8474-c578c5b0afbd"
+        uniform token aeco:derived:role = "axis"
+        uniform token aeco:derived:approx = "exact"
+        string aeco:derived:stamp = "small building 0.9.2"
+        double aeco:derived:tolerance = 0.000001
+        uniform token purpose = "guide"
+        uniform token type = "linear"
+        int[] curveVertexCounts = [2]
+        point3f[] points = [(-3.2, 2.1, 0.2), (3.2, 2.1, 0.2)]
+    }
+
+    def Cube "Geom" (
+        prepend apiSchemas = ["AecoDerivedGeometryAPI"]
+    )
+    {
+        string aeco:derived:source = "e1337f59-b0e2-5dd0-8474-c578c5b0afbd"
+        uniform token aeco:derived:role = "body"
+        uniform token aeco:derived:approx = "exact"
+        string aeco:derived:stamp = "small building 0.9.2"
+        double aeco:derived:tolerance = 0.000001
+        double size = 1
+        double3 xformOp:scale = (6.4, 0.2, 2.7)
+        double3 xformOp:translate = (0, 2.1, 1.55)
+        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+    }
+}</code></pre>
+
+<div class="tablewrap"><table class="docutils compact">
+<thead><tr><th>Role</th><th>What the gprim is a picture of</th><th>Required purpose</th></tr></thead>
+<tbody>
+<tr><td><code>body</code></td><td>The element's body (the fallback)</td><td>render</td></tr>
+<tr><td><code>proxy</code></td><td>A lightweight stand-in for the body</td><td>proxy</td></tr>
+<tr><td><code>axis</code></td><td>The element's axis or centreline</td><td>guide</td></tr>
+<tr><td><code>footprint</code>, <code>symbol</code></td><td>A plan footprint; a schematic symbol</td><td>&mdash;</td></tr>
+<tr><td><code>extent</code></td><td>A spatial container's volume &mdash; never an obstacle</td><td>guide</td></tr>
+<tr><td><code>sector</code>, <code>coverage</code></td><td>An analytic view sector; analytic clipped coverage</td><td>guide</td></tr>
+<tr><td><code>wireframe</code></td><td>Edges extracted from an exact body</td><td>guide</td></tr>
+</tbody></table></div>
+
+<p>Two rules make exactness honest. A Mesh is never <code>approx = exact</code>, because a
+tessellation cannot be; exact bodies are analytic UsdGeom primitives (Cube, Cylinder, Sphere,
+Cone, Capsule) or a BrepArray carried by a kit outside the core, and a Mesh twin links its
+exact source through <code>aeco:derived:from</code>. And an exact representation declares a
+positive tolerance; a missing one warns. The other approximation tokens are
+<code>driverEval</code> (a stage-side evaluation of the element's drivers, before host joins and
+clips), <code>tessellated</code>, <code>arcSegmented</code>, <code>defaultDims</code> and
+<code>bbox</code>.</p>
+
+<p>Geometry flows <em>out</em> of authoring hosts and stage-side derivations into their own
+layers. The core never presents a mesh as editing input, and the drivers that produce geometry
+&mdash; axes, sections, joins, openings &mdash; live in downstream domains, not here.</p>
+
+<h2 id="identity">Identity<a class="headerlink" href="#identity" title="Link to this heading">¶</a></h2>
+
+<p>Every referent in usdAeco carries one identity attribute, <code>aeco:id</code>. Spatial prims,
+elements, groups and ports share a single uniqueness space, enforced per stage by a validator; a
+lowercase hyphenated UUID is recommended. <code>aeco:id</code> is the interchange join key:
+census, diffing, issue anchoring and FM inventories join on it across every route. It is the
+counterpart of IFC's <code>GlobalId</code>, which encodes the same 128-bit UUID in 22 characters:</p>
+
+<pre><code>aeco_id   = str(uuid.UUID(hex=ifcopenshell.guid.expand(global_id)))
+global_id = ifcopenshell.guid.compress(uuid.UUID(aeco_id).hex)</code></pre>
+
+<p>Because containment is namespace, restructuring a tree moves paths, and path-anchored
+relationships in federated layers can dangle. Identity on every container, group and element
+makes the repair mechanical: the companion <code>repath</code> tool re-anchors dangling targets
+by <code>aeco:id</code>, with longest-prefix remapping so the ports and nested prims under a
+moved element follow it. Repairs compose as opinions in a stronger layer without touching the
+stale one. There is no alternative identity attribute and no equivalence property; several
+exports of the same referent compose opinions on one <code>aeco:id</code>.</p>
+
+<h2 id="phase">Phase and Time<a class="headerlink" href="#phase" title="Link to this heading">¶</a></h2>
+
+<p><code>aeco:phase</code> is the asset clock: which world a referent belongs to with respect to
+this project &mdash; <code>proposed</code>, <code>existing</code>, <code>demolished</code> or
+<code>temporary</code>. It sits on elements and spatial prims alike, so a renovation models the
+existing fabric and the proposed remodel in one structure:</p>
+
+<pre><code class="usda">def AecoFacilityPart "WingB"
+{
+    uniform token aeco:phase = "existing"
+
+    def AecoLevel "L1"
+    {
+        uniform token aeco:phase = "existing"
+
+        def AecoSpace "Office"
+        {
+            uniform token aeco:phase = "existing"
+
+            def Xform "Partition1" (prepend apiSchemas = ["AecoElementAPI"])
+            {
+                uniform token aeco:phase = "demolished"
+            }
+            def Xform "Partition2" (prepend apiSchemas = ["AecoElementAPI"])
+            {
+                uniform token aeco:phase = "proposed"
+            }
+        }
+    }
+}</code></pre>
+
+<p>Phase is not status: it names which world a referent belongs to, not where a workflow stands.
+The core carries <em>no date at all</em>. Information time &mdash; what was said when &mdash; is
+layers and layer metadata, which USD already provides; work time &mdash; when work happens
+&mdash; belongs to record prims in a downstream domain, and neither is ever encoded as
+<code>UsdTimeCode</code> samples. Design options are a <code>VariantSet</code> on the spatial
+referent: a representation choice on one state, never a clock.</p>
+
+<h2 id="vanilla">Composing Without Plugins<a class="headerlink" href="#vanilla" title="Link to this heading">¶</a></h2>
+
+<p>A usdAeco stage remains an ordinary USD stage. Every stage authors
+<code>fallbackPrimTypes</code> for the core types it uses, so a runtime with no AECO plugins
+installed composes an AecoLevel as an Xform and an AecoSystem as a Scope, with identical
+transforms and legible data:</p>
+
+<pre><code class="usda">#usda 1.0
+(
+    defaultPrim = "SmallProject"
+    metersPerUnit = 1
+    upAxis = "Z"
+    fallbackPrimTypes = {
+        token[] AecoSite = ["Xform"]
+        token[] AecoFacility = ["Xform"]
+        token[] AecoFacilityPart = ["Xform"]
+        token[] AecoLevel = ["Xform"]
+        token[] AecoSpace = ["Xform"]
+        token[] AecoPort = ["Xform"]
+        token[] AecoSystem = ["Scope"]
+        token[] AecoZone = ["Scope"]
+    }
+)</code></pre>
+
+<p>Applied schemas compose without the plugin as well; their properties simply appear as authored
+attributes. Renderers install nothing. The usdAeco plugin itself is codeless &mdash;
+<code>plugInfo.json</code> plus <code>generatedSchema.usda</code> &mdash; and registers one
+property metadatum, <code>aecoDerived</code>, which downstream schemas use to declare a property
+as host-reported rather than editor-authored.</p>
+
+<h2 id="properties">Standardized and Ad-hoc Properties<a class="headerlink" href="#properties" title="Link to this heading">¶</a></h2>
+
+<p>Properties have two tiers and no third place. Standardized properties are schema attributes
+&mdash; of the core in the <code>aeco:</code> namespace, or of a downstream domain in its own
+<code>aeco:&lt;library&gt;:</code> namespace &mdash; with documentation, SI-fixed units, fallbacks
+and allowed tokens. Ad-hoc data lives only under <code>aeco:props:&lt;Set&gt;:&lt;name&gt;</code>,
+where the set name comes from a sanctioned group in the <code>prop_sets</code> registry
+(<code>Pset_*</code>, <code>Qto_*</code>, <code>Ifc*</code>, <code>source</code>):</p>
+
+<pre><code class="usda">double aeco:props:Pset_PipeSegmentTypeCommon:NominalDiameter = 25</code></pre>
+
+<p>The quarantine is deliberately open: any tool may stash namespaced data there without a
+schema change, and conformance reports which sets a stage uses. Governed and project data stay
+mechanically distinguishable, and a generic viewer can display unknown sets safely.</p>
+
+<h2 id="validation">Validation<a class="headerlink" href="#validation" title="Link to this heading">¶</a></h2>
+
+<p>usdAeco ships eight UsdValidation validators under the <code>UsdAecoValidators</code> keyword.
+Universal rules error; sector-contextual rules warn. A conformance <em>profile</em> is a JSON
+document that re-grades named rules for a sector or an exchange
+(<code>"unclassifiedElement": "error"</code>); profiles never add rules, only harden them.</p>
+
+<div class="tablewrap"><table class="docutils compact">
+<thead><tr><th>Validator</th><th>Rules (error unless marked warn)</th></tr></thead>
+<tbody>
+<tr><td>IdentityChecker</td><td><code>missingId</code> (elements; warn elsewhere), <code>malformedId</code> (warn), <code>duplicateId</code></td></tr>
+<tr><td>SpatialGrammarChecker</td><td><code>facilityInFacility</code>, <code>badSpatialNesting</code>, <code>spatialIsElement</code>, <code>portIsElement</code>; <code>unanchoredSpatial</code>, <code>spatialInsideElement</code>, <code>levelWithoutElevation</code>, <code>elevationDrift</code> (warn)</td></tr>
+<tr><td>ClassificationChecker</td><td><code>unclassifiedElement</code>, <code>emptyClassificationCode</code>, <code>unregisteredClassificationSystem</code>, <code>proxyClassified</code> (all warn)</td></tr>
+<tr><td>PortConnectivityChecker</td><td><code>danglingPortLink</code>, <code>asymmetricPortLink</code>, <code>incompatibleFlow</code>, <code>mediumMismatch</code></td></tr>
+<tr><td>GroupChecker</td><td><code>zoneAuthorsServes</code>, <code>servesTargetsNonSpatial</code>, <code>danglingMember</code> (warn)</td></tr>
+<tr><td>DerivedGeometryChecker</td><td><code>derivedGeometryOrphan</code>, <code>derivedGeometryRole</code>, <code>derivedGeometryPurpose</code> (warn)</td></tr>
+<tr><td>DerivedExactOnMeshChecker</td><td><code>DerivedExactOnMesh</code>: a Mesh cannot declare <code>approx = exact</code></td></tr>
+<tr><td>ExactWithoutToleranceChecker</td><td><code>ExactWithoutTolerance</code>: an exact representation without a positive, finite tolerance (warn)</td></tr>
+</tbody></table></div>
+
+<h2 id="core-and-others">The Core and the Other Domains<a class="headerlink" href="#core-and-others" title="Link to this heading">¶</a></h2>
+
+<p>usdAeco is closed and small: five spatial types, two group types, one port type, two abstract
+bases and five applied schemas. A consumer that knows these can traverse an entire built thing
+and will never meet another core structure. Everything else in the suite is a separate schema
+domain that <em>applies to</em> core prims and never subclasses them. The core has no
+dependencies; every other domain depends on the core; and the dependencies form a tiered graph
+whose edges point strictly toward the more generic tier.</p>
+
+<div class="tiers" role="img" aria-label="The suite's tiers, from hosts and tools at the top down to the core at the bottom">
+  <div class="tier-name">Hosts and tools</div>
+  <div class="tier-row">
+    <span class="chip tool">usdaeco-ifc</span><span class="chip tool">usdaeco-revit</span><span class="chip tool">usdaeco-bonsai</span>
+    <span class="chip tool">usdaeco-toolchain</span><span class="chip tool">usdaeco-cctv-exec</span>
+    <span class="note">integrations and kits, not schema domains</span>
+  </div>
+  <div class="tier-name">Record</div>
+  <div class="tier-row"><span class="chip">usdAecoSync</span><span class="note">intent, result and diagnostics layers for host synchronization</span></div>
+  <div class="tier-name">Kind</div>
+  <div class="tier-row">
+    <span class="chip">usdAecoWall</span><span class="chip">usdAecoPipe</span><span class="chip">usdAecoCctv</span><span class="chip">usdAecoClash</span>
+    <span class="chip">usdAecoPlan</span><span class="chip">usdAecoRepeat</span><span class="chip">usdAecoCompliance</span><span class="chip">usdaeco-solid</span>
+  </div>
+  <div class="tier-name">Section</div>
+  <div class="tier-row"><span class="chip">usdAecoAxis</span><span class="chip">usdAecoBuildUp</span><span class="note">shared contracts a kind library may sublayer</span></div>
+  <div class="tier-name core-name">Core</div>
+  <div class="tier-row core-row"><span class="chip">usdAeco</span><span class="note">this guide &mdash; no dependencies, no geometry, no dates, no taxonomy of its own</span></div>
+</div>
+<p class="tiers-legend">Each tier depends only on the tiers below it. A kind library never depends on another kind library; cross-kind rules live in validation, keeping the graph acyclic. <span class="chip tool">dashed</span> chips are integrations and tooling, which ship no schemas of their own.</p>
+
+<p>The clearest way to read the boundary is by what the core refuses to hold. Each item below is
+real and needed; it is simply owned by another domain, so that the core stays reviewable in an
+afternoon and never accumulates a vocabulary it would have to maintain.</p>
+
+<div class="tablewrap"><table class="docutils">
+<thead><tr><th>Not in the core</th><th>Where it lives</th></tr></thead>
+<tbody>
+<tr><td>Geometry drivers: axes, layered sections, joins, openings, nominal sizes</td><td>usdAecoAxis and usdAecoBuildUp (section tier); usdAecoWall, usdAecoPipe (kind tier)</td></tr>
+<tr><td>Exact bodies: BrepArray, kernel evaluation, measured clearances</td><td>usdSolid and usdSolidOcct (shared kits outside the suite); usdaeco-solid</td></tr>
+<tr><td>Cameras and coverage; clash evidence; programmes and 4D playback; repeated-floor drift; requirement checks</td><td>usdAecoCctv, usdAecoClash, usdAecoPlan, usdAecoRepeat, usdAecoCompliance</td></tr>
+<tr><td>Host synchronization: intent layers, solved results, diagnostics, refusal reasons</td><td>usdAecoSync, with usdaeco-ifc, usdaeco-revit and usdaeco-bonsai as hosts</td></tr>
+<tr><td>Register rows: status, owner, title-as-data, documents, cost, dates</td><td>The record tier, as applied statements <em>about</em> core referents</td></tr>
+<tr><td>A kind vocabulary: element categories, facility subtypes, system types</td><td>Nowhere in the suite &mdash; kind is always an external classification</td></tr>
+<tr><td>Datums, grids, alignments, geodetic anchoring</td><td>Open; deferred to OpenUSD's own geospatial and future work</td></tr>
+<tr><td>Materials, lighting, physics, rendering</td><td>The existing OpenUSD domains, which AECO schemas only reference</td></tr>
+</tbody></table></div>
+
+<p>A downstream domain is conformant when it follows the extension contract, which a schema
+review can check in the library itself:</p>
+<ul>
+  <li><strong>Extend vocabulary, never structure.</strong> Add applied schemas freely; add typed prims only for genuinely new referents; never subclass AecoSpatialBase or AecoGroupBase; never add a second containment, grouping, connectivity or identity mechanism.</li>
+  <li><strong>Decorate, never capture.</strong> Attach semantics in your own <code>aeco:&lt;library&gt;:</code> namespace; never retype or reparent another discipline's prims.</li>
+  <li><strong>Kind via classification only.</strong> No typed prim, parallel enum or census token per product kind.</li>
+  <li><strong>Groups through the core, connectivity through ports.</strong> Refinement is an applied schema with <code>apiSchemaCanOnlyApplyTo</code> declared.</li>
+  <li><strong>One identity.</strong> <code>aeco:id</code> everywhere; per-occurrence, never on type prims.</li>
+  <li><strong>Drivers in, derived out.</strong> Editors author drivers; hosts and derivations write derived values into their own layers; a derived property is declared with the <code>aecoDerived</code> metadatum in the schema, never in stage data.</li>
+  <li><strong>Semantics only.</strong> Geometry, materials, physics, lighting and rendering belong to the existing USD domains.</li>
+  <li><strong>Ship conformant.</strong> Codeless build, declared core-version conformance, registered tokens, application restrictions authored, the shared validation suite green on a submitted example.</li>
+</ul>
+
+<p>The following table lists the schema domains of the suite as of this writing, with the
+domains each requires. Each will have a guide of its own; none of them is part of usdAeco.</p>
+
+<div class="tablewrap"><table class="docutils compact">
+<thead><tr><th>Domain</th><th>Tier</th><th>Adds</th><th>Requires</th></tr></thead>
+<tbody>
+<tr><td>usdAeco</td><td><span class="badge core">core</span></td><td>Identity, spatial structure, classification, groups, ports, catalog inheritance, phase, the derived-geometry mark</td><td>&mdash;</td></tr>
+<tr><td>usdAecoAxis</td><td>section</td><td>Line and circular-arc path drivers for walls, pipes and beams; derived guide curves</td><td>usdAeco</td></tr>
+<tr><td>usdAecoBuildUp</td><td>section</td><td>Layered sections shared by walls, floors, roofs and ceilings, owned by catalog classes</td><td>usdAeco</td></tr>
+<tr><td>usdAecoWall</td><td>kind</td><td>Wall drivers: axis, section, joins and openings; bodies from the authoring kernel</td><td>usdAeco, Axis, BuildUp</td></tr>
+<tr><td>usdAecoPipe</td><td>kind</td><td>Pipe drivers, catalogs and connected fittings with ports</td><td>usdAeco, Axis</td></tr>
+<tr><td>usdAecoCctv</td><td>kind</td><td>Camera drivers and coverage derivations over the built thing</td><td>usdAeco</td></tr>
+<tr><td>usdAecoClash</td><td>kind</td><td>Mesh and exact clash evidence with measured uncertainty</td><td>usdAeco</td></tr>
+<tr><td>usdAecoPlan</td><td>kind</td><td>Programmes, workspace checks and derived 4D playback</td><td>usdAeco</td></tr>
+<tr><td>usdAecoRepeat</td><td>kind</td><td>Repeated floors, explicit drift and measured quantities</td><td>usdAeco, BuildUp, Axis</td></tr>
+<tr><td>usdAecoCompliance</td><td>kind</td><td>Requirements measured against the built model</td><td>usdAeco</td></tr>
+<tr><td>usdaeco-solid</td><td>kind</td><td>Exact bodies with ordinary USD proxy twins</td><td>usdAeco, usdaeco-ifc, usdSolid, usdSolidOcct</td></tr>
+<tr><td>usdAecoSync</td><td>record</td><td>Edit drivers in an intent layer; a host solves; results and diagnostics are published separately</td><td>usdAeco, Axis</td></tr>
+</tbody></table></div>
+
+<h2 id="classes">Schema Classes<a class="headerlink" href="#classes" title="Link to this heading">¶</a></h2>
+
+<p>Every property of the core, with its USD type and fallback. The authoritative source is
+<code>usdAeco/schema.usda</code>, whose doc strings carry the reasoning. Lengths are stage linear
+units unless stated; ° marks an abstract type, never serialized in a stage.</p>
+
+<div class="classref" id="AecoSpatialBase">
+<h4>AecoSpatialBase °</h4>
+<p class="meta">Abstract typed schema. Inherits <code>Xformable</code>. Root of the five spatial types; libraries must not subclass it.</p>
+<div class="tablewrap"><table class="docutils compact props">
+<thead><tr><th>Property</th><th>USD type</th><th>Fallback</th><th>Description</th></tr></thead>
+<tbody>
+<tr><td><code>aeco:id</code></td><td>string</td><td><code>""</code></td><td>Stable, globally unique identity; shares one uniqueness space with elements, groups and ports.</td></tr>
+<tr><td><code>aeco:phase</code></td><td>uniform token</td><td><code>proposed</code></td><td>Lifecycle phase with respect to this project: <code>proposed</code>, <code>existing</code>, <code>demolished</code>, <code>temporary</code>.</td></tr>
+</tbody></table></div>
+</div>
+
+<div class="classref" id="AecoSite">
+<h4>AecoSite</h4>
+<p class="meta">Typed schema. Inherits <code>AecoSpatialBase</code>. Fallback type <code>Xform</code>. An area of land or water under development; sites nest and may directly contain facilities, spaces and site-works elements. No properties of its own.</p>
+</div>
+
+<div class="classref" id="AecoFacility">
+<h4>AecoFacility</h4>
+<p class="meta">Typed schema. Inherits <code>AecoSpatialBase</code>. Fallback type <code>Xform</code>. One built asset operated as a whole; its kind comes from classification. A facility may not contain another facility. No properties of its own.</p>
+</div>
+
+<div class="classref" id="AecoFacilityPart">
+<h4>AecoFacilityPart</h4>
+<p class="meta">Typed schema. Inherits <code>AecoSpatialBase</code>. Fallback type <code>Xform</code>. A structural subdivision of a facility: wing, tower, podium, road section, process unit. Concrete and recursive. No properties of its own.</p>
+</div>
+
+<div class="classref" id="AecoLevel">
+<h4>AecoLevel</h4>
+<p class="meta">Typed schema. Inherits <code>AecoFacilityPart</code>. Fallback type <code>Xform</code>. A horizontal stratum at a datum elevation; levels are parts, so a level may contain a level.</p>
+<div class="tablewrap"><table class="docutils compact props">
+<thead><tr><th>Property</th><th>USD type</th><th>Fallback</th><th>Description</th></tr></thead>
+<tbody>
+<tr><td><code>aeco:elevation</code></td><td>double</td><td><code>0</code></td><td>Declarative datum elevation in the frame of the nearest ancestor facility, along the stage up axis. Placement remains xformOps; a validator warns when the two diverge.</td></tr>
+</tbody></table></div>
+</div>
+
+<div class="classref" id="AecoSpace">
+<h4>AecoSpace</h4>
+<p class="meta">Typed schema. Inherits <code>AecoSpatialBase</code>. Fallback type <code>Xform</code>. A bounded usable region, interior or exterior; spaces nest and may sit under a site, a facility, a part or another space. No properties of its own.</p>
+</div>
+
+<div class="classref" id="AecoGroupBase">
+<h4>AecoGroupBase °</h4>
+<p class="meta">Abstract typed schema. Inherits <code>Typed</code>. Built-in applied schema <code>CollectionAPI:members</code>. Root of the two group types; libraries must not subclass it or add a second membership mechanism.</p>
+<div class="tablewrap"><table class="docutils compact props">
+<thead><tr><th>Property</th><th>USD type</th><th>Fallback</th><th>Description</th></tr></thead>
+<tbody>
+<tr><td><code>aeco:id</code></td><td>string</td><td><code>""</code></td><td>Stable unique identity; groups are addressable artifacts.</td></tr>
+<tr><td><code>collection:members:expansionRule</code></td><td>uniform token</td><td><code>explicitOnly</code></td><td>Membership is exactly the targeted prims; authors may opt into <code>expandPrims</code> or a membership expression per group.</td></tr>
+</tbody></table></div>
+</div>
+
+<div class="classref" id="AecoSystem">
+<h4>AecoSystem</h4>
+<p class="meta">Typed schema. Inherits <code>AecoGroupBase</code>. Fallback type <code>Scope</code>. A functional service network; kind-specific data comes from applied schemas that declare <code>apiSchemaCanOnlyApplyTo = ["AecoSystem"]</code>.</p>
+<div class="tablewrap"><table class="docutils compact props">
+<thead><tr><th>Property</th><th>USD type</th><th>Fallback</th><th>Description</th></tr></thead>
+<tbody>
+<tr><td><code>aeco:serves</code></td><td>rel</td><td>&mdash;</td><td>The spatial prims and/or zones this system functionally serves; valid without any modeled connectivity.</td></tr>
+</tbody></table></div>
+</div>
+
+<div class="classref" id="AecoZone">
+<h4>AecoZone</h4>
+<p class="meta">Typed schema. Inherits <code>AecoGroupBase</code>. Fallback type <code>Scope</code>. A purpose-driven grouping of spaces, regions and/or elements; zones may overlap freely and never nest spatially. No properties of its own.</p>
+</div>
+
+<div class="classref" id="AecoPort">
+<h4>AecoPort</h4>
+<p class="meta">Typed schema. Inherits <code>Xformable</code>. Fallback type <code>Xform</code>. A typed connection point, authored as a child prim of its element.</p>
+<div class="tablewrap"><table class="docutils compact props">
+<thead><tr><th>Property</th><th>USD type</th><th>Fallback</th><th>Description</th></tr></thead>
+<tbody>
+<tr><td><code>purpose</code></td><td>uniform token</td><td><code>guide</code></td><td>Fallback override of the Imageable purpose: ports hide in vanilla viewers unless guides are shown.</td></tr>
+<tr><td><code>aeco:id</code></td><td>string</td><td><code>""</code></td><td>Stable unique identity for commissioning and fabrication records.</td></tr>
+<tr><td><code>aeco:medium</code></td><td>uniform token</td><td><code>undefined</code></td><td>What passes or connects at this port: <code>pipe</code>, <code>duct</code>, <code>cable</code>, <code>cableCarrier</code>, <code>wireless</code>, <code>other</code>, <code>undefined</code>.</td></tr>
+<tr><td><code>aeco:flowDirection</code></td><td>uniform token</td><td><code>undefined</code></td><td>Flow relative to the owning element: <code>source</code>, <code>sink</code>, <code>bidirectional</code>, <code>undefined</code>.</td></tr>
+<tr><td><code>aeco:connectedPorts</code></td><td>rel</td><td>&mdash;</td><td>The port(s) this port is physically connected to; author on both ends.</td></tr>
+</tbody></table></div>
+</div>
+
+<div class="classref" id="AecoProjectAPI">
+<h4>AecoProjectAPI</h4>
+<p class="meta">Single-apply API schema. Applies to <code>Xform</code>, on the root model prim.</p>
+<div class="tablewrap"><table class="docutils compact props">
+<thead><tr><th>Property</th><th>USD type</th><th>Fallback</th><th>Description</th></tr></thead>
+<tbody>
+<tr><td><code>aeco:project:name</code></td><td>string</td><td><code>""</code></td><td>Human-readable project name.</td></tr>
+<tr><td><code>aeco:project:id</code></td><td>string</td><td><code>""</code></td><td>Stable project identifier for cross-tool correlation; the counterpart of <code>IfcProject.GlobalId</code>.</td></tr>
+</tbody></table></div>
+</div>
+
+<div class="classref" id="AecoElementAPI">
+<h4>AecoElementAPI</h4>
+<p class="meta">Single-apply API schema. Applies to <code>Imageable</code>; a validator refuses it on spatial prims and ports.</p>
+<div class="tablewrap"><table class="docutils compact props">
+<thead><tr><th>Property</th><th>USD type</th><th>Fallback</th><th>Description</th></tr></thead>
+<tbody>
+<tr><td><code>aeco:id</code></td><td>string</td><td><code>""</code></td><td>Stable, globally unique element identity; the interchange join key and the counterpart of <code>IfcRoot.GlobalId</code>.</td></tr>
+<tr><td><code>aeco:phase</code></td><td>uniform token</td><td><code>proposed</code></td><td>Lifecycle phase: <code>proposed</code>, <code>existing</code>, <code>demolished</code>, <code>temporary</code>.</td></tr>
+<tr><td><code>aeco:referencedContainers</code></td><td>rel</td><td>&mdash;</td><td>Secondary spatial anchors of any type, in any facility, that this element serves or spans beyond its primary container.</td></tr>
+</tbody></table></div>
+</div>
+
+<div class="classref" id="AecoClassificationAPI">
+<h4>AecoClassificationAPI</h4>
+<p class="meta">Multiple-apply API schema. Applies to <code>Typed</code>. Property namespace prefix <code>aeco:class</code>; instance names are registered classification systems.</p>
+<div class="tablewrap"><table class="docutils compact props">
+<thead><tr><th>Property</th><th>USD type</th><th>Fallback</th><th>Description</th></tr></thead>
+<tbody>
+<tr><td><code>aeco:class:&lt;system&gt;:code</code></td><td>string</td><td><code>""</code></td><td>The code within this system, e.g. <code>Ss_25_10_20</code> or <code>IfcWall.PARTITIONING</code>.</td></tr>
+<tr><td><code>aeco:class:&lt;system&gt;:name</code></td><td>string</td><td><code>""</code></td><td>Human-readable name of the classification entry.</td></tr>
+<tr><td><code>aeco:class:&lt;system&gt;:uri</code></td><td>string</td><td><code>""</code></td><td>Resolvable dictionary URI pinning the exact system version.</td></tr>
+</tbody></table></div>
+</div>
+
+<div class="classref" id="AecoTypeAPI">
+<h4>AecoTypeAPI</h4>
+<p class="meta">Single-apply API schema. Applies to <code>Typed</code>, on catalog class prims; occurrences compose it through <code>inherits</code>.</p>
+<div class="tablewrap"><table class="docutils compact props">
+<thead><tr><th>Property</th><th>USD type</th><th>Fallback</th><th>Description</th></tr></thead>
+<tbody>
+<tr><td><code>aeco:type:manufacturer</code></td><td>string</td><td><code>""</code></td><td>Manufacturer or system owner of the cataloged product.</td></tr>
+<tr><td><code>aeco:type:model</code></td><td>string</td><td><code>""</code></td><td>Model or product designation.</td></tr>
+<tr><td><code>aeco:type:catalogUri</code></td><td>string</td><td><code>""</code></td><td>Resolvable product or catalog entry URI.</td></tr>
+</tbody></table></div>
+</div>
+
+<div class="classref" id="AecoDerivedGeometryAPI">
+<h4>AecoDerivedGeometryAPI</h4>
+<p class="meta">Single-apply API schema. Applies to <code>Gprim</code>; the gprim is a descendant of its element or spatial referent.</p>
+<div class="tablewrap"><table class="docutils compact props">
+<thead><tr><th>Property</th><th>USD type</th><th>Fallback</th><th>Description</th></tr></thead>
+<tbody>
+<tr><td><code>aeco:derived:source</code></td><td>string</td><td><code>""</code></td><td>The <code>aeco:id</code> of the referent this gprim stands for.</td></tr>
+<tr><td><code>aeco:derived:role</code></td><td>uniform token</td><td><code>body</code></td><td><code>body</code>, <code>proxy</code>, <code>axis</code>, <code>footprint</code>, <code>symbol</code>, <code>extent</code>, <code>sector</code>, <code>coverage</code>, <code>wireframe</code>.</td></tr>
+<tr><td><code>aeco:derived:approx</code></td><td>uniform token</td><td><code>exact</code></td><td><code>exact</code>, <code>driverEval</code>, <code>tessellated</code>, <code>arcSegmented</code>, <code>defaultDims</code>, <code>bbox</code>.</td></tr>
+<tr><td><code>aeco:derived:stamp</code></td><td>string</td><td><code>""</code></td><td>The deriving host or tool and its version.</td></tr>
+<tr><td><code>aeco:derived:from</code></td><td>rel</td><td>&mdash;</td><td>The representation(s) this gprim was derived from, when not from the element itself; N:1 allowed.</td></tr>
+<tr><td><code>aeco:derived:tolerance</code></td><td>double</td><td><code>0</code></td><td>The tolerance the derivation honoured, in metres; <code>0</code> means unknown.</td></tr>
+</tbody></table></div>
+</div>
+
+<h2 id="examples">Examples<a class="headerlink" href="#examples" title="Link to this heading">¶</a></h2>
+
+<p>The core repository ships six example stages that exercise the core directly, each with a
+flattened result, editable layers and a stock USD preview:</p>
+<ul>
+  <li><strong>early design</strong> (the minimal alias): spaces, a system and a zone with no geometry at all &mdash; a complete, conformant dataset before any mesh exists.</li>
+  <li><strong>small building</strong>: 16 elements on two levels, a shared catalog type, a connected cold-water run and marked guide curves.</li>
+  <li><strong>hard cases</strong>: a campus of parcels, a podium with two towers, a mezzanine, an atrium, a plaza, a skybridge, a design-option variant set and a road in sections, in one stage.</li>
+  <li><strong>renovation</strong>: existing fabric, a demolished partition, a proposed one and a temporary compound in one structure.</li>
+  <li><strong>road</strong> and <strong>service campus</strong>: linear infrastructure with a drainage system; a plant with halls, yards and a standby-power system.</li>
+</ul>
+
+<p>The smallest complete stage separates semantics from representation into two layers. The
+semantics layer holds the referents; the derived layer, stronger in the sublayer stack, holds
+the geometry. Muting the derived layer leaves identity, classification and connectivity intact:</p>
+
+<pre><code class="usda">#usda 1.0
+(
+    defaultPrim = "World"
+    metersPerUnit = 1
+    upAxis = "Z"
+    fallbackPrimTypes = {
+        token[] AecoFacility = ["Xform"]
+        token[] AecoPort = ["Xform"]
+    }
+    subLayers = [@pipe.derived.usda@, @pipe.semantics.usda@]
+)</code></pre>
+
+<p>See the <a href="https://github.com/criad-com/usdaeco-core/blob/main/docs/07-worked-examples.md">worked examples</a>
+for the complete pipe run and wall corner, and the
+<a href="https://github.com/criad-com/usdaeco-core/blob/main/docs/03-design-model.md">design model</a>
+for the reasoning behind every commitment described in this guide.</p>
+
+<div class="footer-nav">
+  <a href="../../index.html" rel="prev">« Schema Domains</a>
+  <a href="#overview">Back to top</a>
+</div>
+<footer class="colophon">
+  <p>Written against usdAeco 0.9.5. Schema names, properties and fallbacks are taken from <code>usdAeco/schema.usda</code>; example snippets are from the repository's example stages.</p>
+  <p>usdAeco is released under the MIT licence. This guide follows the structure of the OpenUSD schema domain user guides.</p>
+</footer>
+</main>
+</div>
+
+<script>
+(function () {
+  var esc = function (s) { return s.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;"); };
+  var re = /("(?:[^"\\\n]|\\.)*")|(#[^\n]*)|(<[^>\n]*>)|(@[^@\n]*@)|(?<![:\w])(def|over|class|uniform|custom|rel|prepend|append|delete|add|reorder|variantSet|variants|variantSets|apiSchemas|inherits|references|payload|subLayers|defaultPrim|upAxis|metersPerUnit|fallbackPrimTypes|customData|doc|allowedTokens|kind|displayName|interpolation|timeSamples)(?![:\w])|(?<![:\w])(token|string|double3|double|float3|float|int|bool|point3f|color3f|asset|quatf|matrix4d|vector3f|normal3f)(\[\])?(?![:\w])|(?<![:\w])(Aeco[A-Za-z]+|Xform|Scope|Cube|Cylinder|Sphere|Mesh|BasisCurves)(?![:\w])|(?<![\w.:])(-?\d+(?:\.\d+)?(?:e-?\d+)?)(?![\w.:])/g;
+  document.querySelectorAll("pre code.usda").forEach(function (el) {
+    var src = el.textContent, out = "", last = 0, m;
+    re.lastIndex = 0;
+    while ((m = re.exec(src)) !== null) {
+      out += esc(src.slice(last, m.index));
+      var cls = m[1] ? "str" : m[2] ? "cm" : m[3] ? "path" : m[4] ? "str" : m[5] ? "kw" : m[6] ? "ty" : m[8] ? "prim" : "num";
+      out += '<span class="' + cls + '">' + esc(m[0]) + "</span>";
+      last = m.index + m[0].length;
+    }
+    out += esc(src.slice(last));
+    el.innerHTML = out;
+  });
+})();
+</script>
+</body>
+</html>

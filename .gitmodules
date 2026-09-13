@@ -1,0 +1,69 @@
+[submodule "core/usdaeco-core"]
+	path = core/usdaeco-core
+	url = ../usdaeco-core.git
+[submodule "section/usdaeco-axis"]
+	path = section/usdaeco-axis
+	url = ../usdaeco-axis.git
+[submodule "section/usdaeco-buildup"]
+	path = section/usdaeco-buildup
+	url = ../usdaeco-buildup.git
+[submodule "kind/usdaeco-wall"]
+	path = kind/usdaeco-wall
+	url = ../usdaeco-wall.git
+[submodule "kind/usdaeco-pipe"]
+	path = kind/usdaeco-pipe
+	url = ../usdaeco-pipe.git
+[submodule "kind/usdaeco-cctv"]
+	path = kind/usdaeco-cctv
+	url = ../usdaeco-cctv.git
+[submodule "kind/usdaeco-clash"]
+	path = kind/usdaeco-clash
+	url = ../usdaeco-clash.git
+[submodule "kind/usdaeco-plan"]
+	path = kind/usdaeco-plan
+	url = ../usdaeco-plan.git
+[submodule "kind/usdaeco-repeat"]
+	path = kind/usdaeco-repeat
+	url = ../usdaeco-repeat.git
+[submodule "kind/usdaeco-compliance"]
+	path = kind/usdaeco-compliance
+	url = ../usdaeco-compliance.git
+[submodule "kind/usdaeco-solid"]
+	path = kind/usdaeco-solid
+	url = ../usdaeco-solid.git
+[submodule "record/usdaeco-sync"]
+	path = record/usdaeco-sync
+	url = ../usdaeco-sync.git
+[submodule "hosts/usdaeco-ifc"]
+	path = hosts/usdaeco-ifc
+	url = ../usdaeco-ifc.git
+[submodule "hosts/usdaeco-revit"]
+	path = hosts/usdaeco-revit
+	url = ../usdaeco-revit.git
+[submodule "hosts/usdaeco-bonsai"]
+	path = hosts/usdaeco-bonsai
+	url = ../usdaeco-bonsai.git
+[submodule "kits/usdaeco-toolchain"]
+	path = kits/usdaeco-toolchain
+	url = ../usdaeco-toolchain.git
+[submodule "kits/aeco-toolchain"]
+	path = kits/aeco-toolchain
+	url = ../aeco-toolchain.git
+[submodule "kits/usdaeco-cctv-exec"]
+	path = kits/usdaeco-cctv-exec
+	url = ../usdaeco-cctv-exec.git
+[submodule "kits/usdSolid"]
+	path = kits/usdSolid
+	url = ../usdSolid.git
+[submodule "kits/usdSolidOcct"]
+	path = kits/usdSolidOcct
+	url = ../usdSolidOcct.git
+[submodule "data/usdaeco-datacentre"]
+	path = data/usdaeco-datacentre
+	url = ../usdaeco-datacentre.git
+[submodule "gate/usdaeco-scenarios"]
+	path = gate/usdaeco-scenarios
+	url = ../usdaeco-scenarios.git
+[submodule "gate/usdaeco-board"]
+	path = gate/usdaeco-board
+	url = ../usdaeco-board.git

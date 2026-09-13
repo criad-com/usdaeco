@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Schema Domains — usdAECO</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&family=Roboto+Slab:wght@400;700&display=swap">
+<link rel="stylesheet" href="_static/aeco.css">
+</head>
+<body>
+<button class="nav-toggle" type="button" aria-label="Toggle navigation" onclick="document.querySelector('.nav-side').classList.toggle('open')">☰ Menu</button>
+<nav class="nav-side" aria-label="Navigation menu">
+  <div class="nav-head">
+    <a href="index.html">usdAECO<span class="sub">schema domains for the built environment</span></a>
+  </div>
+  <div class="nav-menu">
+    <p class="caption">Schema Domains</p>
+    <ul>
+      <li><a href="schemas/usdAeco/overview.html">Built Environment (usdAeco)</a></li>
+      <li class="pending"><a href="https://github.com/criad-com/usdaeco-axis">Path Drivers (usdAecoAxis)<span class="tag">guide to follow</span></a></li>
+      <li class="pending"><a href="https://github.com/criad-com/usdaeco-buildup">Layered Sections (usdAecoBuildUp)<span class="tag">guide to follow</span></a></li>
+      <li class="pending"><a href="https://github.com/criad-com/usdaeco-wall">Walls (usdAecoWall)<span class="tag">guide to follow</span></a></li>
+      <li class="pending"><a href="https://github.com/criad-com/usdaeco-pipe">Pipes (usdAecoPipe)<span class="tag">guide to follow</span></a></li>
+      <li class="pending"><a href="https://github.com/criad-com/usdaeco-sync">Host Sync (usdAecoSync)<span class="tag">guide to follow</span></a></li>
+      <li class="pending"><a href="https://github.com/criad-com/usdaeco-cctv">Cameras (usdAecoCctv)<span class="tag">guide to follow</span></a></li>
+      <li class="pending"><a href="https://github.com/criad-com/usdaeco-clash">Clash (usdAecoClash)<span class="tag">guide to follow</span></a></li>
+      <li class="pending"><a href="https://github.com/criad-com/usdaeco-plan">Programmes (usdAecoPlan)<span class="tag">guide to follow</span></a></li>
+      <li class="pending"><a href="https://github.com/criad-com/usdaeco-repeat">Repeated Floors (usdAecoRepeat)<span class="tag">guide to follow</span></a></li>
+      <li class="pending"><a href="https://github.com/criad-com/usdaeco-compliance">Compliance (usdAecoCompliance)<span class="tag">guide to follow</span></a></li>
+      <li class="pending"><a href="https://github.com/criad-com/usdaeco-solid">Exact Bodies (usdaeco-solid)<span class="tag">guide to follow</span></a></li>
+    </ul>
+    <p class="caption">Reference</p>
+    <ul>
+      <li><a href="https://github.com/criad-com/usdaeco-core">usdaeco-core on GitHub</a></li>
+      <li><a href="https://github.com/criad-com/usdaeco-toolchain">Build and check kit</a></li>
+      <li><a href="https://github.com/criad-com/usdaeco-scenarios">Suite manifest</a></li>
+    </ul>
+  </div>
+</nav>
+
+<div class="content-wrap">
+<main class="content">
+<ul class="breadcrumbs"><li class="current">Schema Domains</li></ul>
+<hr class="top">
+
+<h1 id="schema-domains">Schema Domains<a class="headerlink" href="#schema-domains" title="Link to this heading">¶</a></h1>
+
+<p class="lead">The usdAECO suite provides schema domains for describing the built environment on
+OpenUSD. Each domain is a separate codeless schema library with its own guide. The core domain,
+usdAeco, carries the semantics every dataset about a built thing shares; every other domain
+applies to core prims and never changes the core's structure.</p>
+
+<ul class="domain-list">
+  <li><a class="name" href="schemas/usdAeco/overview.html">Built Environment (usdAeco)</a>
+    <span class="desc">Identity, the five-type spatial structure, classification against external dictionaries, systems and zones, ports, catalog types and occurrences, phase, and the mark on derived geometry. The core: no dependencies, no geometry schemas, no dates.</span></li>
+  <li class="pending"><span class="name">Path Drivers (usdAecoAxis)</span>
+    <span class="desc">Line and circular-arc path drivers for walls, pipes and beams, with derived guide curves. Section tier.</span></li>
+  <li class="pending"><span class="name">Layered Sections (usdAecoBuildUp)</span>
+    <span class="desc">Layered build-ups shared by walls, floors, roofs and ceilings, owned by catalog classes. Section tier.</span></li>
+  <li class="pending"><span class="name">Walls (usdAecoWall) and Pipes (usdAecoPipe)</span>
+    <span class="desc">Element-kind drivers: axes, sections, joins, openings, nominal sizes and connected fittings; bodies come from the authoring kernel.</span></li>
+  <li class="pending"><span class="name">Host Sync (usdAecoSync)</span>
+    <span class="desc">Edit drivers in an intent layer, let an installed host solve them, publish results and diagnostics separately. Record tier.</span></li>
+  <li class="pending"><span class="name">Cameras, Clash, Programmes, Repeated Floors, Compliance, Exact Bodies</span>
+    <span class="desc">Use-case domains that derive findings over the built thing: camera coverage, clash evidence with measured uncertainty, programmes and 4D playback, floor-to-floor drift, requirement checks, and exact BRep bodies with proxy twins.</span></li>
+</ul>
+
+<p>Guides marked "to follow" link to their repositories until their pages exist.</p>
+
+<div class="footer-nav">
+  <span></span>
+  <a href="schemas/usdAeco/overview.html" rel="next">Built Environment (usdAeco) »</a>
+</div>
+</main>
+</div>
+</body>
+</html>
