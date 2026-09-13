@@ -1,6 +1,6 @@
 # usdaeco — the usdAECO suite
 
-The usdAECO suite brings 23 released repositories into one Git superproject:
+The usdAECO suite brings 22 released repositories into one Git superproject:
 schema domains, tools, integrations, a federated demo facility and the
 [HTML guide](docs/index.html). [suite.json](suite.json) lists the pins;
 [the suite map](docs/suite.md) links their documentation.
@@ -100,14 +100,15 @@ discards edits.
 
 ## Suite
 
-The baseline is release train `aeco-0.8.1`. Two explicit advances select the
-federated data release `v0.5.1` and IFC reader `v0.3.1`.
+The baseline is release train `aeco-0.8.1`. Explicit advances select the
+Revit architecture delivery in `v0.6.0`, IFC reader `v0.3.1`, and the
+released study layout and public source updates listed in the suite overrides.
 Each override records a released tag, its full revision and a reason.
 Other pins must still agree with the baseline index.
 
 Each generated entry records its path, tier, repository kind, schema domain,
 exact tag and supported requirements. `library.json` supplies metadata; the
-older processing-toolchain kit uses its release-index card. All 23 submodules
+older processing-toolchain kit uses its release-index card. All 22 submodules
 remain independent repositories at their recorded tags.
 
 ## Layout
@@ -121,7 +122,7 @@ remain independent repositories at their recorded tags.
 | hosts/ | IFC, Revit and Bonsai integrations |
 | kits/ | Build/check, execution and exact-geometry tools |
 | data/ | Released demo facility |
-| gate/ | Release scenarios and suite board |
+| gate/ | Release scenarios |
 | docs/ | HTML guide, suite map and verification notes |
 | stage/ | Connected, flattened and USD-only forms, deliveries, analyses, views and proofs |
 | tools/usdaeco_suite/ | Pin, build, traversal and verification utilities |
@@ -134,12 +135,13 @@ remain independent repositories at their recorded tags.
 
 ## Status
 
-Version 0.4.0 adds [Working with the integrated stage](docs/stage/index.html)
-and a checkout walkthrough in the documentation hub. The guide connects forms,
-deliveries, traversal and views to the published evidence. The stage remains the
-0.3.0 artifact; its [reference](stage/README.md) records what was run, what uses
-committed results, and the limits of expected analysis findings and mute-validation
-deviations. The complete measured record is [stage/manifest.json](stage/manifest.json).
+Version 0.5.0 groups analysis additions under `/Studies/<library>` and keeps
+one catalog under `/demo_datacentre_01/_TypeCatalog`. Render cameras live under
+`/Renders/<library>`. Architecture is delivered through Revit; cooling retains
+its accepted Bonsai delivery. The [stage reference](stage/README.md) and
+[manifest](stage/manifest.json) record the measured proofs and deviations.
+
+`usdaeco-board` is the internal operations tool and is not part of the public suite.
 
 ## Licence
 

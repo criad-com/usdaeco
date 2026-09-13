@@ -1,6 +1,6 @@
 # usdAECO suite map
 
-Release train: `aeco-0.8.1`.
+Release train: `aeco-0.9.0`.
 
 Each repository is a submodule at the tag shown. Paths are relative to this checkout.
 See the [HTML guide](index.html), [Working with the integrated stage](stage/index.html)
@@ -17,14 +17,14 @@ and [stage setup and reproduction](../stage/README.md).
 
 ## kind
 
-- [usdaeco-wall](../kind/usdaeco-wall/README.md) · [docs](../kind/usdaeco-wall/docs/) · `v0.2.5`
-- [usdaeco-pipe](../kind/usdaeco-pipe/README.md) · [docs](../kind/usdaeco-pipe/docs/) · `v0.2.5`
-- [usdaeco-cctv](../kind/usdaeco-cctv/README.md) · [docs](../kind/usdaeco-cctv/docs/) · `v0.5.6`
-- [usdaeco-clash](../kind/usdaeco-clash/README.md) · [docs](../kind/usdaeco-clash/docs/) · `v0.2.3`
-- [usdaeco-plan](../kind/usdaeco-plan/README.md) · [docs](../kind/usdaeco-plan/docs/) · `v0.1.4`
+- [usdaeco-wall](../kind/usdaeco-wall/README.md) · [docs](../kind/usdaeco-wall/docs/) · `v0.2.6`
+- [usdaeco-pipe](../kind/usdaeco-pipe/README.md) · [docs](../kind/usdaeco-pipe/docs/) · `v0.2.6`
+- [usdaeco-cctv](../kind/usdaeco-cctv/README.md) · [docs](../kind/usdaeco-cctv/docs/) · `v0.5.7`
+- [usdaeco-clash](../kind/usdaeco-clash/README.md) · [docs](../kind/usdaeco-clash/docs/) · `v0.2.4`
+- [usdaeco-plan](../kind/usdaeco-plan/README.md) · [docs](../kind/usdaeco-plan/docs/) · `v0.1.5`
 - [usdaeco-repeat](../kind/usdaeco-repeat/README.md) · [docs](../kind/usdaeco-repeat/docs/) · `v0.2.1`
-- [usdaeco-compliance](../kind/usdaeco-compliance/README.md) · [docs](../kind/usdaeco-compliance/docs/) · `v0.1.3`
-- [usdaeco-solid](../kind/usdaeco-solid/README.md) · [docs](../kind/usdaeco-solid/docs/) · `v0.1.5`
+- [usdaeco-compliance](../kind/usdaeco-compliance/README.md) · [docs](../kind/usdaeco-compliance/docs/) · `v0.2.1`
+- [usdaeco-solid](../kind/usdaeco-solid/README.md) · [docs](../kind/usdaeco-solid/docs/) · `v0.1.6`
 
 ## record
 
@@ -38,7 +38,7 @@ and [stage setup and reproduction](../stage/README.md).
 
 ## kits
 
-- [usdaeco-toolchain](../kits/usdaeco-toolchain/README.md) · [docs](../kits/usdaeco-toolchain/docs/) · `v0.3.10`
+- [usdaeco-toolchain](../kits/usdaeco-toolchain/README.md) · [docs](../kits/usdaeco-toolchain/docs/) · `v0.3.11`
 - [aeco-toolchain](../kits/aeco-toolchain/README.md) · [docs](../kits/aeco-toolchain/docs/) · `v0.4.0`
 - [usdaeco-cctv-exec](../kits/usdaeco-cctv-exec/README.md) · [docs](../kits/usdaeco-cctv-exec/docs/) · `v0.2.4`
 - [usdSolid](../kits/usdSolid/README.md) · [docs](../kits/usdSolid/docs/) · `v0.1.6`
@@ -46,9 +46,8 @@ and [stage setup and reproduction](../stage/README.md).
 
 ## data
 
-- [usdaeco-datacentre](../data/usdaeco-datacentre/README.md) · [docs](../data/usdaeco-datacentre/docs/) · `v0.5.1`
+- [usdaeco-datacentre](../data/usdaeco-datacentre/README.md) · [docs](../data/usdaeco-datacentre/docs/) · `v0.6.0`
 
 ## gate
 
-- [usdaeco-scenarios](../gate/usdaeco-scenarios/README.md) · [docs](../gate/usdaeco-scenarios/docs/) · `v0.8.1`
-- [usdaeco-board](../gate/usdaeco-board/README.md) · [docs](../gate/usdaeco-board/docs/) · `v0.1.5`
+- [usdaeco-scenarios](../gate/usdaeco-scenarios/README.md) · [docs](../gate/usdaeco-scenarios/docs/) · `v0.9.2`

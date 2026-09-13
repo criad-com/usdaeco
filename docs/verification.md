@@ -4,9 +4,10 @@ The source gate checks the usdAECO suite's own files, recorded release gitlinks,
 portable paths and vocabulary. It does not rebuild or recursively lint released
 submodules. Their licences and release evidence remain with their sources.
 
-The 23 pins follow the scenarios release index except for two explicitly released
-advances in `suite-overrides.json`: the full data-centre delivery and its IFC
-reader. Tag commits, clean checkouts, the indexed gitlinks, generated `suite.json`,
+The 22 public pins follow the scenarios release index and the explicit released
+advances in `suite-overrides.json`, including the native architecture delivery,
+its IFC reader and the study layout releases. Tag commits, clean checkouts,
+the indexed gitlinks, generated `suite.json`,
 flake inputs and [suite map](suite.md) are checked independently.
 
 The skeleton gate applies the toolchain's applicability rules to the superproject.
@@ -14,7 +15,8 @@ Its suite adaptations check metadata, source layout, documentation targets,
 image inventory and sanitization. The integrated artifact has its own
 [stage gate and operating reference](../stage/README.md). The
 [integrated-stage user guide](stage/index.html) explains the recorded evidence.
-The stage gate measures all three forms,
+The stage gate requires exactly three roots and one project catalog, checks each
+analysis namespace and its stored paths, and measures all three forms,
 stock composition and rendering, all registered validators, delivery and analysis
 muting, source provenance, package ownership, views, size caps and reconstruction.
 The manifest preserves raw validator severities and all stated deviations.

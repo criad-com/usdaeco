@@ -1,6 +1,7 @@
 #usda 1.0
 (
  customLayerData = {
+  string "aeco:clash:studyRoot" = "/Studies/clash"
   string "aeco:layer:package" = "clash"
   string "aeco:layer:producer" = "hook v0.2.4"
   string "aeco:layer:role" = "analysis"

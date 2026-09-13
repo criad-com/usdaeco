@@ -20,7 +20,7 @@ TIERS = {
     "hosts": ("usdaeco-ifc", "usdaeco-revit", "usdaeco-bonsai"),
     "kits": ("usdaeco-toolchain", "aeco-toolchain", "usdaeco-cctv-exec", "usdSolid", "usdSolidOcct"),
     "data": ("usdaeco-datacentre",),
-    "gate": ("usdaeco-scenarios", "usdaeco-board"),
+    "gate": ("usdaeco-scenarios",),
 }
 LAYOUT = {name: f"{tier}/{name}" for tier, names in TIERS.items() for name in names}
 FLAKE_REPOS = {"aeco-toolchain", "usdaeco-toolchain"}
@@ -50,9 +50,9 @@ def release_index(root):
     released = {p["name"]: p for p in data["repos"] if p["released"] is not None}
     if len(released) != sum(p["released"] is not None for p in data["repos"]):
         raise ValueError("duplicate released repository")
-    if set(released) != set(LAYOUT):
-        raise ValueError("released repository set differs from the suite layout")
-    return data["train"], released
+    if not set(LAYOUT) <= set(released):
+        raise ValueError("release index is missing public suite repositories")
+    return data["train"], {name: released[name] for name in LAYOUT}
 
 
 def overrides(root):

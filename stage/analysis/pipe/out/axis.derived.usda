@@ -4,11 +4,11 @@
   string "aeco:axis:layer" = "derived"
   string "aeco:axis:producer" = "aeco-axis 0.1.3"
   string "aeco:layer:package" = "pipe"
-  string "aeco:layer:producer" = "hook v0.2.5"
+  string "aeco:layer:producer" = "hook v0.2.6"
   string "aeco:layer:role" = "analysis"
   string "aeco:layer:source" = "kind/usdaeco-pipe/examples/datacentre/run.py"
   string "aeco:layer:sourceSha256" = "f83472499f2702101fc9d97fe6a59d634baf4c21500a2865bcc8807d543bba61"
-  string "aeco:layer:tag" = "v0.2.5"
+  string "aeco:layer:tag" = "v0.2.6"
  }
  subLayers = [
   @axis/part-000.usdc@,

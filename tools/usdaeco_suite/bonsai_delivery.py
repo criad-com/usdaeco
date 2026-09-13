@@ -54,7 +54,7 @@ def convert_delivery(source, destination):
     return convert(str(source), str(destination / 'cooling.usda'), overlay_spine=True)
 
 
-def stamp_twin(folder):
+def stamp_twin(folder, *, tag=None):
     """Keep the two declared display fixtures; all other geometry is converted."""
     from pxr import Sdf
     controlled = read(SOURCE / 'dc.manifest.json')['tessellationControlled']
@@ -68,7 +68,7 @@ def stamp_twin(folder):
     for suffix, role in [('.usda', 'package'), ('.semantics.usda', 'semantics'), ('.geometry.usdc', 'geometry')]:
         layer = Sdf.Layer.FindOrOpen(str(folder / ('cooling' + suffix)))
         stamp(layer, role, 'cooling', PRODUCER, 'cooling.ifc', sha(folder / 'cooling.ifc'),
-              'v' + read(ROOT / 'library.json')['version'])
+              tag or 'v' + read(ROOT / 'library.json')['version'])
         layer.customLayerData = {**layer.customLayerData,
                                  'aeco:layer:generatorSourceSha256': sha(SOURCE / 'cooling.ifc')}
         layer.Save()
@@ -109,7 +109,9 @@ def install_delivery(destination, copied):
     folder = destination / 'packages/cooling'
     shutil.copyfile(accepted / 'cooling.ifc', folder / 'cooling.ifc')
     convert_delivery(folder / 'cooling.ifc', folder)
-    stamp_twin(folder)
+    from pxr import Sdf
+    production_tag = Sdf.Layer.FindOrOpen(str(accepted / 'cooling.usda')).customLayerData['aeco:layer:tag']
+    stamp_twin(folder, tag=production_tag)
     if any(normalized_hash(folder / name) != value for name, value in receipt['twins'].items()):
         raise ValueError('regenerated Bonsai twin differs from the accepted delivery')
     shutil.copyfile(receipt_path, folder / 'bonsai-export.json')

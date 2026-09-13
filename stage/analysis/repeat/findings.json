@@ -18,9 +18,9 @@
   },
   {
     "all_changes": {
-      "changed": 1,
-      "extra": 1,
-      "missing": 26
+      "changed": 2,
+      "extra": 2,
+      "missing": 27
     },
     "declared_deviations": 0,
     "extra_doors": 1,
@@ -30,19 +30,27 @@
   {
     "doors": 1.0,
     "name": "ScheduleDelta",
-    "partition_length_L01_m": 43.0,
-    "partition_length_L02_m": 46.2,
-    "partition_length_m": 3.200000000000003
+    "partition_length_L01_m": 9.0,
+    "partition_length_L02_m": 9.0,
+    "partition_length_m": 0.0
   },
   {
-    "addition_lines": 50,
-    "max_error": 8.881784197001252e-16,
+    "addition_lines": 146,
+    "max_error": 0.0,
     "name": "Composition",
-    "occurrence_lines": 686,
-    "over_lines": 451,
+    "occurrence_lines": 657,
+    "over_lines": 535,
     "prims_checked": 71,
     "reference_count": 1,
-    "vertices_checked": 944
+    "vertices_checked": 488
+  },
+  {
+    "message": "changed: /demo_datacentre_01/demo_datacentre_01_Site/demo_datacentre_01/L02_Office/slab_l2_office",
+    "name": "RepeatDrift",
+    "paths": [
+      "/demo_datacentre_01/demo_datacentre_01_Site/demo_datacentre_01/L02_Office"
+    ],
+    "severity": "error"
   },
   {
     "message": "changed: /demo_datacentre_01/demo_datacentre_01_Site/demo_datacentre_01/L02_Office/wall_l2_v_016",
@@ -54,6 +62,14 @@
   },
   {
     "message": "extra: /demo_datacentre_01/demo_datacentre_01_Site/demo_datacentre_01/L02_Office/Additional_Meeting_Access",
+    "name": "RepeatDrift",
+    "paths": [
+      "/demo_datacentre_01/demo_datacentre_01_Site/demo_datacentre_01/L02_Office"
+    ],
+    "severity": "error"
+  },
+  {
+    "message": "extra: /demo_datacentre_01/demo_datacentre_01_Site/demo_datacentre_01/L02_Office/Stair_L01/Office_Stair",
     "name": "RepeatDrift",
     "paths": [
       "/demo_datacentre_01/demo_datacentre_01_Site/demo_datacentre_01/L02_Office"
@@ -230,6 +246,14 @@
   },
   {
     "message": "missing: /demo_datacentre_01/demo_datacentre_01_Site/demo_datacentre_01/L01_Office/Open_Office/lum_office_6",
+    "name": "RepeatDrift",
+    "paths": [
+      "/demo_datacentre_01/demo_datacentre_01_Site/demo_datacentre_01/L02_Office"
+    ],
+    "severity": "error"
+  },
+  {
+    "message": "missing: /demo_datacentre_01/demo_datacentre_01_Site/demo_datacentre_01/L01_Office/Stair_L01/Office_Stair",
     "name": "RepeatDrift",
     "paths": [
       "/demo_datacentre_01/demo_datacentre_01_Site/demo_datacentre_01/L02_Office"

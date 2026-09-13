@@ -160,6 +160,15 @@ The <a href="../../stage/manifest.json">suite manifest's <code>analyses</code> e
 identify each study's producer and whether its hook ran. Clash retains committed exact results;
 Solid uses a committed exact result. Full-facility exact recomputation is not proven.</p>
 
+<p><a href="../../stage/packages/arch/README.md">Architecture</a> is delivered by
+Revit 2027 in data-centre 0.6.0. Its 167 elements retain their native IFC and USD bytes.
+The architecture producer and acceptance are recorded under <code>producers.arch</code>
+in the manifest. CCTV and Compliance join issued door approach drivers by UUID in
+analysis input overlays. The delivery itself remains the native export. BuildUp selects recipes by the named
+native wall types because the exported exterior flag is true on all three types;
+Repeat preserves native replacements at an existing path while retaining its
+complete geometry proof. These adapters are listed in the analysis receipts.</p>
+
 <h2 id="layers">Reading the Layer Stack<a class="headerlink" href="#layers" title="Link to this heading">¶</a></h2>
 
 <p>At the Sdf layer level, <code>customLayerData</code> records the role, package, producer,
@@ -259,10 +268,29 @@ cooling branch (other branches are omitted):</p>
           pipe_clash_near [packages/cooling]
           pipe_clash_tangent [packages/cooling]</code></pre>
 
-<p>The delivered catalog and systems also sit below the project root. Analyses have their
-own roots, such as <code>/Clash</code>, <code>/Programme</code> and <code>/Specifications</code>.
-The utility prints those roots separately; its summary agrees with the
-<a href="../../stage/manifest.json">manifest's <code>proofs.layout.elementsByPackage</code></a>.</p>
+<p>The root contains exactly <code>demo_datacentre_01</code>, <code>Studies</code> and
+<code>Renders</code>. The single catalog is <code>/demo_datacentre_01/_TypeCatalog</code>;
+Pipe adds its classes there, so references to the project carry its catalog.
+<code>/Studies</code> is a plain Scope. All analysis additions outside the building live
+under <code>/Studies/&lt;library&gt;</code>: targets, looks, findings, programmes,
+specifications, exact prototypes and materials. Cameras live under
+<code>/Renders/&lt;library&gt;/&lt;camera&gt;</code>.</p>
+
+<pre><code>/demo_datacentre_01
+  _TypeCatalog
+  demo_datacentre_01_Site
+/Studies
+  cctv  clash  plan  compliance  repeat  solid  wall  pipe  buildup
+/Renders
+  &lt;library&gt;/&lt;camera&gt;</code></pre>
+
+<p>For example, inspect <code>/Studies/clash/Clash</code>,
+<code>/Studies/plan/Programme</code>, <code>/Studies/compliance/Specifications</code>
+and <code>/Studies/solid/ExactPrototypes</code>. Workers receive
+<code>AECO_STUDY_ROOT=/Studies/&lt;library&gt;</code>; tools resolve the stored root from
+the resulting data. The checker inspects every analysis and presentation layer for
+obsolete paths. The manifest records these namespaces in <code>layout</code>, with the
+measured roots and catalog in <code>proofs.layout</code>.</p>
 
 <h2 id="muting">Muting a Delivery<a class="headerlink" href="#muting" title="Link to this heading">¶</a></h2>
 
@@ -277,10 +305,10 @@ is recorded in <a href="../../stage/manifest.json">manifest.json</a> under
 <caption>Selected manifest mute rows; counts are diagnostics newly exposed relative to baseline.</caption>
 <thead><tr><th>Muted layer</th><th>Remaining prims</th><th>Unchanged transforms compared</th><th>Port sites, predicted / observed</th><th>Dependency errors</th></tr></thead>
 <tbody>
-<tr><td><a href="../../stage/packages/cooling/cooling.usda">Cooling delivery</a></td><td>15,481</td><td>11,991</td><td>184 / 184</td><td>495</td></tr>
-<tr><td><a href="../../stage/packages/electrical/electrical.usda">Electrical delivery</a></td><td>12,709</td><td>9,815</td><td>344 / 344</td><td>15</td></tr>
-<tr><td><a href="../../stage/analysis/cctv/root.usda">CCTV analysis</a></td><td>15,421</td><td>15,052</td><td>0 / 0</td><td>11</td></tr>
-<tr><td><a href="../../stage/analysis/compliance/root.usda">Compliance analysis</a></td><td>15,562</td><td>15,179</td><td>0 / 0</td><td>0</td></tr>
+<tr><td><a href="../../stage/packages/cooling/cooling.usda">Cooling delivery</a></td><td>15,510</td><td>11,995</td><td>184 / 184</td><td>495</td></tr>
+<tr><td><a href="../../stage/packages/electrical/electrical.usda">Electrical delivery</a></td><td>12,738</td><td>9,819</td><td>344 / 344</td><td>15</td></tr>
+<tr><td><a href="../../stage/analysis/cctv/root.usda">CCTV analysis</a></td><td>15,450</td><td>15,056</td><td>0 / 0</td><td>11</td></tr>
+<tr><td><a href="../../stage/analysis/compliance/root.usda">Compliance analysis</a></td><td>15,591</td><td>15,040</td><td>0 / 0</td><td>0</td></tr>
 </tbody></table></div>
 
 <p>Every row above has zero composition errors and zero moved transforms. Cooling's 495
@@ -301,7 +329,7 @@ restore its dependency before treating that receipt as current.</p>
   <path class="edge" d="M264 79 V121 H304" marker-end="url(#mute-arrow)"/>
   <rect class="box core" x="310" y="12" width="416" height="54" rx="3"/>
   <text class="label b" x="328" y="34">Composition and placement</text>
-  <text class="label" x="328" y="54">0 composition errors · 11,991 unchanged transforms</text>
+  <text class="label" x="328" y="54">0 composition errors · 11,995 unchanged transforms</text>
   <rect class="box child" x="310" y="94" width="416" height="54" rx="3"/>
   <text class="label b" x="328" y="116">Dependencies to inspect</text>
   <text class="label" x="328" y="136">184 dangling port sites · 495 analysis errors</text>
@@ -310,9 +338,9 @@ restore its dependency before treating that receipt as current.</p>
 <a href="../../stage/manifest.json">the cooling mute row</a>.</figcaption>
 </figure>
 
-<p>The complete recorded drill covers 117 cases, including 20 view-only layers absent from
+<p>The complete recorded drill covers 120 cases, including 20 view-only layers absent from
 the integrated stack. It compares 19 animated prims at 109 authored transform samples and
-records no placement changes or composition errors. Sixty cases expose analysis dependency
+records no placement changes or composition errors. Sixty-one cases expose analysis dependency
 errors; the port-only diagnostic requirement is therefore not met. The
 <a href="../../stage/README.md#acceptance-and-deviations">acceptance notes</a> and
 <a href="../../stage/manifest.json">mute proof</a> retain this limitation explicitly.</p>
@@ -354,14 +382,15 @@ opening a form is not a fresh run of its full proof.</p>
 <div class="tablewrap"><table class="docutils">
 <thead><tr><th>Measurement</th><th>Recorded result</th><th>Manifest field</th></tr></thead>
 <tbody>
-<tr><td>A / C prim count</td><td>15,576 / 15,576; no added, missing or changed paths in the comparison</td><td><code>proofs.connected parity</code></td></tr>
+<tr><td>Root layout</td><td>Exactly the project, Studies and Renders; one project catalog; nine study scopes</td><td><code>proofs.layout</code>, <code>proofs.flattened.layout</code></td></tr>
+<tr><td>A / C prim count</td><td>15,605 / 15,605; no added, missing or changed paths in the comparison</td><td><code>proofs.connected parity</code></td></tr>
 <tr><td>C mesh census / A–C compared meshes</td><td>3,585 / 3,583; two controlled tessellations excluded</td><td><code>proofs.vanilla.census</code>, <code>proofs.connected parity</code></td></tr>
-<tr><td>B scene / raw prim count</td><td>15,576 / 15,582; six generated prototype storage prims</td><td><code>proofs.flattened</code></td></tr>
+<tr><td>B scene / raw prim count</td><td>15,605 / 15,611; six generated prototype storage prims</td><td><code>proofs.flattened</code></td></tr>
 <tr><td>B–A compared meshes</td><td>3,585; no exclusions or changed meshes</td><td><code>proofs.flattened.comparisons.flattenedToConnected</code></td></tr>
-<tr><td>Flattened crate</td><td>3,166,293 bytes; no external assets or sublayers</td><td><code>proofs.flattened</code></td></tr>
+<tr><td>Flattened crate</td><td>3,184,833 bytes; no external assets or sublayers</td><td><code>proofs.flattened</code></td></tr>
 <tr><td>Normalized flatten builds</td><td>Three equal hashes using <code>sdf-usda-v1</code></td><td><code>proofs.flattened.normalizedHashes</code></td></tr>
-<tr><td>Registered validators</td><td>124 executed; 55 expected error-severity findings; 0 unexpected errors</td><td><code>proofs.validators</code></td></tr>
-<tr><td>Text reconstruction</td><td>177 USDA layers; 0 changed</td><td><code>proofs.rebuild</code></td></tr>
+<tr><td>Registered validators</td><td>124 executed; 69 expected error-severity findings; 0 unexpected errors</td><td><code>proofs.validators</code></td></tr>
+<tr><td>Text reconstruction</td><td>180 USDA layers; 0 changed</td><td><code>proofs.rebuild</code></td></tr>
 </tbody></table></div>
 
 <p>The two mesh exceptions are <code>pipe_clash_near/Geom</code> and
@@ -376,10 +405,14 @@ data, retaining their other scene-field and world-transform comparisons.</p>
 all forms is not proven. The <a href="../../tools/usdaeco_suite/stage_flatten.py">flatten check</a>
 compares the original scene paths, identities, types, world transforms and animation, and
 reports those storage prims separately. B is <code>Usd.Stage.Flatten</code> of A;
-internal instance references remain in its otherwise self-contained crate.</p>
+internal instance references remain in its otherwise self-contained crate. Generated
+prototype storage lives under its owning <code>/Studies/&lt;library&gt;</code>, so the
+flattened form has the same three root prims. Library study-root receipts are
+retained in the flattened layer, so readers also find their data without an
+authoring environment setting.</p>
 
-<p>The validator baseline includes two <code>MisplacedDevice</code> findings from
-<a href="../../stage/analysis/compliance/integrated-findings.json">Compliance</a> and 53
+<p>The validator baseline includes 13 <code>MisplacedDevice</code> findings from
+<a href="../../stage/analysis/compliance/integrated-findings.json">Compliance</a> and 56
 <code>RepeatDrift</code> findings from <a href="../../stage/analysis/repeat/integrated-findings.json">Repeat</a>.
 These are expected findings with error severity, so the record does not claim zero raw errors.
 The <a href="../../tools/usdaeco_suite/stage_checks.py">gate</a> requires the exact expected

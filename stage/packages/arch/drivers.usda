@@ -5,8 +5,8 @@
   string "aeco:layer:producer" = "usdAECO suite"
   string "aeco:layer:role" = "drivers"
   string "aeco:layer:source" = "data/usdaeco-datacentre/dist/full/arch.semantics.usda"
-  string "aeco:layer:sourceSha256" = "165506b3365cb59cbce61cf6c87cb81b9a02d3064c1fc7c612ff0b28a47c247c"
-  string "aeco:layer:tag" = "v0.5.1"
+  string "aeco:layer:sourceSha256" = "dc708a8f31ef3d738e41b4fea2e951d43bbd16bb89ba87cd4428929df7dc6a03"
+  string "aeco:layer:tag" = "v0.6.0"
  }
 )
 
@@ -18,146 +18,161 @@ over "demo_datacentre_01"
   {
    over "L01_Office"
    {
+    over "Stair_L01"
+    {
+     over "Office_Stair" (
+      prepend inherits = </demo_datacentre_01/_TypeCatalog/Office_Stair_356604>
+     )
+     {
+     }
+    }
+
     over "wall_l1_v_017" (
-     prepend inherits = </demo_datacentre_01/_TypeCatalog/External_Wall_300>
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Basic_Wall_DC_External>
     )
     {
     }
 
     over "wall_l1_h_001" (
-     prepend inherits = </demo_datacentre_01/_TypeCatalog/External_Wall_300>
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Basic_Wall_DC_External>
     )
     {
     }
 
     over "wall_l1_v_014" (
-     prepend inherits = </demo_datacentre_01/_TypeCatalog/Internal_Wall_150>
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Basic_Wall_DC_Internal>
     )
     {
     }
 
     over "wall_l1_h_008" (
-     prepend inherits = </demo_datacentre_01/_TypeCatalog/Internal_Wall_150>
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Basic_Wall_DC_Internal>
     )
     {
     }
 
     over "wall_l1_h_002" (
-     prepend inherits = </demo_datacentre_01/_TypeCatalog/External_Wall_300>
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Basic_Wall_DC_External>
     )
     {
     }
 
     over "wall_l1_h_010" (
-     prepend inherits = </demo_datacentre_01/_TypeCatalog/External_Wall_300>
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Basic_Wall_DC_External>
     )
     {
     }
 
     over "wall_l1_h_007" (
-     prepend inherits = </demo_datacentre_01/_TypeCatalog/Internal_Wall_150>
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Basic_Wall_DC_Internal>
     )
     {
     }
 
     over "wall_l1_v_013" (
-     prepend inherits = </demo_datacentre_01/_TypeCatalog/Internal_Wall_150>
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Basic_Wall_DC_Internal>
     )
     {
     }
 
     over "wall_l1_v_019" (
-     prepend inherits = </demo_datacentre_01/_TypeCatalog/External_Wall_300>
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Basic_Wall_DC_External>
     )
     {
     }
 
     over "wall_l1_v_012" (
-     prepend inherits = </demo_datacentre_01/_TypeCatalog/External_Wall_300>
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Basic_Wall_DC_External>
+    )
+    {
+    }
+
+    over "slab_l1_office" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Floor_DC_slab_250_mm>
     )
     {
     }
 
     over "door_kitchen" (
-     prepend inherits = </demo_datacentre_01/_TypeCatalog/Door_Single_900x2100>
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/M_Single_Flush_DC_door_single_0_9_x_2_1_fe6234>
     )
     {
     }
 
     over "door_stair_1" (
-     prepend inherits = </demo_datacentre_01/_TypeCatalog/Door_Single_900x2100>
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/M_Single_Flush_DC_door_single_0_9_x_2_1_fe6234>
     )
     {
     }
 
     over "wall_l1_h_006" (
-     prepend inherits = </demo_datacentre_01/_TypeCatalog/Internal_Wall_150>
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Basic_Wall_DC_Internal>
     )
     {
     }
 
     over "wall_l1_h_004" (
-     prepend inherits = </demo_datacentre_01/_TypeCatalog/Internal_Wall_150>
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Basic_Wall_DC_Internal>
     )
     {
     }
 
     over "door_office_1" (
-     prepend inherits = </demo_datacentre_01/_TypeCatalog/Door_Double_1800x2100>
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/M_Single_Flush_DC_door_double_1_8_x_2_1>
     )
     {
     }
 
     over "wall_l1_h_003" (
-     prepend inherits = </demo_datacentre_01/_TypeCatalog/External_Wall_300>
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Basic_Wall_DC_External>
     )
     {
     }
 
     over "wall_l1_v_018" (
-     prepend inherits = </demo_datacentre_01/_TypeCatalog/External_Wall_300>
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Basic_Wall_DC_External>
     )
     {
     }
 
     over "wall_l1_v_015" (
-     prepend inherits = </demo_datacentre_01/_TypeCatalog/Internal_Wall_150>
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Basic_Wall_DC_Internal>
     )
     {
     }
 
     over "wall_l1_h_009" (
-     prepend inherits = </demo_datacentre_01/_TypeCatalog/External_Wall_300>
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Basic_Wall_DC_External>
     )
     {
     }
 
     over "wall_l1_v_016" (
-     prepend inherits = </demo_datacentre_01/_TypeCatalog/Internal_Wall_150>
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Basic_Wall_DC_Internal>
     )
     {
     }
 
     over "door_wc" (
-     prepend inherits = </demo_datacentre_01/_TypeCatalog/Door_Single_900x2100>
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/M_Single_Flush_DC_door_single_0_9_x_2_1_fe6234>
     )
     {
     }
 
     over "wall_l1_v_011" (
-     prepend inherits = </demo_datacentre_01/_TypeCatalog/External_Wall_300>
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Basic_Wall_DC_External>
     )
     {
     }
 
     over "wall_l1_h_005" (
-     prepend inherits = </demo_datacentre_01/_TypeCatalog/Internal_Wall_150>
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Basic_Wall_DC_Internal>
     )
     {
     }
 
     over "door_meeting_1" (
-     prepend inherits = </demo_datacentre_01/_TypeCatalog/Door_Single_900x2100>
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/M_Single_Flush_DC_door_single_0_9_x_2_1_fe6234>
     )
     {
     }
@@ -165,656 +180,677 @@ over "demo_datacentre_01"
 
    over "L00_Ground"
    {
+    over "Stair_L00"
+    {
+     over "Office_Stair" (
+      prepend inherits = </demo_datacentre_01/_TypeCatalog/Office_Stair_356603>
+     )
+     {
+     }
+    }
+
     over "wall_l0_v_051" (
-     prepend inherits = </demo_datacentre_01/_TypeCatalog/Internal_Wall_150>
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Basic_Wall_DC_Internal>
     )
     {
     }
 
     over "door_corr_e" (
-     prepend inherits = </demo_datacentre_01/_TypeCatalog/Door_Double_1800x2100>
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/M_Single_Flush_DC_door_double_1_8_x_2_1>
     )
     {
     }
 
     over "door_stair_0" (
-     prepend inherits = </demo_datacentre_01/_TypeCatalog/Door_Single_900x2100>
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/M_Single_Flush_DC_door_single_0_9_x_2_1_fe6234>
     )
     {
     }
 
     over "wall_l0_v_063" (
-     prepend inherits = </demo_datacentre_01/_TypeCatalog/Fire_Wall_200>
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Basic_Wall_DC_Fire>
     )
     {
     }
 
     over "wall_l0_h_033" (
-     prepend inherits = </demo_datacentre_01/_TypeCatalog/Fire_Wall_200>
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Basic_Wall_DC_Fire>
     )
     {
     }
 
     over "wall_l0_h_039" (
-     prepend inherits = </demo_datacentre_01/_TypeCatalog/External_Wall_300>
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Basic_Wall_DC_External>
     )
     {
     }
 
     over "door_noc" (
-     prepend inherits = </demo_datacentre_01/_TypeCatalog/Door_Single_900x2100>
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/M_Single_Flush_DC_door_single_0_9_x_2_1_fe6234>
     )
     {
     }
 
     over "wall_l0_v_069" (
-     prepend inherits = </demo_datacentre_01/_TypeCatalog/Fire_Wall_200>
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Basic_Wall_DC_Fire>
     )
     {
     }
 
     over "wall_l0_h_022" (
-     prepend inherits = </demo_datacentre_01/_TypeCatalog/Fire_Wall_200>
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Basic_Wall_DC_Fire>
     )
     {
     }
 
     over "wall_l0_v_048" (
-     prepend inherits = </demo_datacentre_01/_TypeCatalog/Fire_Wall_200>
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Basic_Wall_DC_Fire>
     )
     {
     }
 
     over "wall_l0_v_043" (
-     prepend inherits = </demo_datacentre_01/_TypeCatalog/External_Wall_300>
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Basic_Wall_DC_External>
     )
     {
     }
 
     over "wall_l0_v_058" (
-     prepend inherits = </demo_datacentre_01/_TypeCatalog/Fire_Wall_200>
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Basic_Wall_DC_Fire>
     )
     {
     }
 
     over "wall_l0_v_053" (
-     prepend inherits = </demo_datacentre_01/_TypeCatalog/Fire_Wall_200>
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Basic_Wall_DC_Fire>
     )
     {
     }
 
     over "wall_l0_v_047" (
-     prepend inherits = </demo_datacentre_01/_TypeCatalog/Fire_Wall_200>
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Basic_Wall_DC_Fire>
     )
     {
     }
 
     over "wall_l0_v_064" (
-     prepend inherits = </demo_datacentre_01/_TypeCatalog/Fire_Wall_200>
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Basic_Wall_DC_Fire>
     )
     {
     }
 
     over "wall_l0_h_010" (
-     prepend inherits = </demo_datacentre_01/_TypeCatalog/Fire_Wall_200>
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Basic_Wall_DC_Fire>
     )
     {
     }
 
     over "wall_l0_h_008" (
-     prepend inherits = </demo_datacentre_01/_TypeCatalog/Internal_Wall_150>
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Basic_Wall_DC_Internal>
     )
     {
     }
 
     over "wall_l0_h_017" (
-     prepend inherits = </demo_datacentre_01/_TypeCatalog/External_Wall_300>
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Basic_Wall_DC_External>
     )
     {
     }
 
     over "wall_l0_h_036" (
-     prepend inherits = </demo_datacentre_01/_TypeCatalog/External_Wall_300>
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Basic_Wall_DC_External>
     )
     {
     }
 
     over "door_corr_c" (
-     prepend inherits = </demo_datacentre_01/_TypeCatalog/Door_Single_900x2100>
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/M_Single_Flush_DC_door_single_0_9_x_2_1_fe6234>
     )
     {
     }
 
     over "wall_l0_v_065" (
-     prepend inherits = </demo_datacentre_01/_TypeCatalog/Fire_Wall_200>
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Basic_Wall_DC_Fire>
     )
     {
     }
 
     over "wall_l0_v_040" (
-     prepend inherits = </demo_datacentre_01/_TypeCatalog/External_Wall_300>
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Basic_Wall_DC_External>
     )
     {
     }
 
     over "door_loading" (
-     prepend inherits = </demo_datacentre_01/_TypeCatalog/Door_Double_1800x2100>
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/M_Single_Flush_DC_door_double_1_8_x_2_1>
     )
     {
     }
 
     over "wall_l0_v_070" (
-     prepend inherits = </demo_datacentre_01/_TypeCatalog/External_Wall_300>
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Basic_Wall_DC_External>
     )
     {
     }
 
     over "door_hall_b_e" (
-     prepend inherits = </demo_datacentre_01/_TypeCatalog/Door_Double_1800x2100>
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/M_Single_Flush_DC_door_double_1_8_x_2_1_c4549c>
     )
     {
     }
 
     over "door_batt_a" (
-     prepend inherits = </demo_datacentre_01/_TypeCatalog/Door_Single_900x2100>
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/M_Single_Flush_DC_door_single_0_9_x_2_1>
     )
     {
     }
 
     over "Loading_Dock" (
-     prepend inherits = </demo_datacentre_01/_TypeCatalog/Door_Roller_3500x4000>
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/_356505>
     )
     {
     }
 
     over "door_security" (
-     prepend inherits = </demo_datacentre_01/_TypeCatalog/Door_Single_900x2100>
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/M_Single_Flush_DC_door_single_0_9_x_2_1_fe6234>
     )
     {
     }
 
     over "Electrical_A_Yard_Access" (
-     prepend inherits = </demo_datacentre_01/_TypeCatalog/Door_Double_1800x2100>
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/M_Single_Flush_DC_door_double_1_8_x_2_1_47efa4>
     )
     {
     }
 
     over "wall_l0_v_061" (
-     prepend inherits = </demo_datacentre_01/_TypeCatalog/Fire_Wall_200>
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Basic_Wall_DC_Fire>
     )
     {
     }
 
     over "wall_l0_h_009" (
-     prepend inherits = </demo_datacentre_01/_TypeCatalog/External_Wall_300>
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Basic_Wall_DC_External>
     )
     {
     }
 
     over "wall_l0_v_052" (
-     prepend inherits = </demo_datacentre_01/_TypeCatalog/Internal_Wall_150>
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Basic_Wall_DC_Internal>
     )
     {
     }
 
     over "wall_l0_h_032" (
-     prepend inherits = </demo_datacentre_01/_TypeCatalog/Internal_Wall_150>
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Basic_Wall_DC_Internal>
     )
     {
     }
 
     over "door_noc_meeting" (
-     prepend inherits = </demo_datacentre_01/_TypeCatalog/Door_Single_900x2100>
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/M_Single_Flush_DC_door_single_0_9_x_2_1_fe6234>
     )
     {
     }
 
     over "wall_l0_v_068" (
-     prepend inherits = </demo_datacentre_01/_TypeCatalog/Fire_Wall_200>
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Basic_Wall_DC_Fire>
     )
     {
     }
 
     over "wall_l0_h_028" (
-     prepend inherits = </demo_datacentre_01/_TypeCatalog/Internal_Wall_150>
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Basic_Wall_DC_Internal>
     )
     {
     }
 
     over "wall_l0_v_042" (
-     prepend inherits = </demo_datacentre_01/_TypeCatalog/External_Wall_300>
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Basic_Wall_DC_External>
     )
     {
     }
 
     over "wall_l0_h_011" (
-     prepend inherits = </demo_datacentre_01/_TypeCatalog/Fire_Wall_200>
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Basic_Wall_DC_Fire>
     )
     {
     }
 
     over "Plant_Yard_Access" (
-     prepend inherits = </demo_datacentre_01/_TypeCatalog/Door_Double_1800x2100>
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/M_Single_Flush_DC_door_double_1_8_x_2_1_47efa4>
     )
     {
     }
 
     over "wall_l0_v_067" (
-     prepend inherits = </demo_datacentre_01/_TypeCatalog/Fire_Wall_200>
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Basic_Wall_DC_Fire>
     )
     {
     }
 
     over "wall_l0_h_005" (
-     prepend inherits = </demo_datacentre_01/_TypeCatalog/Internal_Wall_150>
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Basic_Wall_DC_Internal>
     )
     {
     }
 
     over "wall_l0_v_055" (
-     prepend inherits = </demo_datacentre_01/_TypeCatalog/Internal_Wall_150>
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Basic_Wall_DC_Internal>
     )
     {
     }
 
     over "wall_l0_h_002" (
-     prepend inherits = </demo_datacentre_01/_TypeCatalog/External_Wall_300>
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Basic_Wall_DC_External>
     )
     {
     }
 
     over "wall_l0_v_049" (
-     prepend inherits = </demo_datacentre_01/_TypeCatalog/Internal_Wall_150>
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Basic_Wall_DC_Internal>
     )
     {
     }
 
     over "Electrical_B_Yard_Access" (
-     prepend inherits = </demo_datacentre_01/_TypeCatalog/Door_Double_1800x2100>
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/M_Single_Flush_DC_door_double_1_8_x_2_1_47efa4>
     )
     {
     }
 
     over "wall_l0_v_072" (
-     prepend inherits = </demo_datacentre_01/_TypeCatalog/External_Wall_300>
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Basic_Wall_DC_External>
     )
     {
     }
 
     over "wall_l0_h_003" (
-     prepend inherits = </demo_datacentre_01/_TypeCatalog/External_Wall_300>
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Basic_Wall_DC_External>
     )
     {
     }
 
     over "door_corr_s" (
-     prepend inherits = </demo_datacentre_01/_TypeCatalog/Door_Double_1800x2100>
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/M_Single_Flush_DC_door_double_1_8_x_2_1>
     )
     {
     }
 
     over "wall_l0_h_012" (
-     prepend inherits = </demo_datacentre_01/_TypeCatalog/Fire_Wall_200>
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Basic_Wall_DC_Fire>
     )
     {
     }
 
     over "door_hall_a_w" (
-     prepend inherits = </demo_datacentre_01/_TypeCatalog/Door_Double_1800x2100>
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/M_Single_Flush_DC_door_double_1_8_x_2_1_c4549c>
     )
     {
     }
 
     over "wall_l0_h_014" (
-     prepend inherits = </demo_datacentre_01/_TypeCatalog/Fire_Wall_200>
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Basic_Wall_DC_Fire>
     )
     {
     }
 
     over "wall_l0_h_007" (
-     prepend inherits = </demo_datacentre_01/_TypeCatalog/Internal_Wall_150>
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Basic_Wall_DC_Internal>
     )
     {
     }
 
     over "wall_l0_v_041" (
-     prepend inherits = </demo_datacentre_01/_TypeCatalog/External_Wall_300>
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Basic_Wall_DC_External>
     )
     {
     }
 
     over "wall_l0_h_021" (
-     prepend inherits = </demo_datacentre_01/_TypeCatalog/Fire_Wall_200>
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Basic_Wall_DC_Fire>
     )
     {
     }
 
     over "wall_l0_v_060" (
-     prepend inherits = </demo_datacentre_01/_TypeCatalog/External_Wall_300>
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Basic_Wall_DC_External>
     )
     {
     }
 
     over "wall_l0_v_044" (
-     prepend inherits = </demo_datacentre_01/_TypeCatalog/Fire_Wall_200>
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Basic_Wall_DC_Fire>
     )
     {
     }
 
     over "door_elec_a_s" (
-     prepend inherits = </demo_datacentre_01/_TypeCatalog/Door_Single_900x2100>
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/M_Single_Flush_DC_door_single_0_9_x_2_1>
     )
     {
     }
 
     over "wall_l0_h_029" (
-     prepend inherits = </demo_datacentre_01/_TypeCatalog/Fire_Wall_200>
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Basic_Wall_DC_Fire>
     )
     {
     }
 
     over "wall_l0_h_025" (
-     prepend inherits = </demo_datacentre_01/_TypeCatalog/Fire_Wall_200>
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Basic_Wall_DC_Fire>
     )
     {
     }
 
     over "wall_l0_h_020" (
-     prepend inherits = </demo_datacentre_01/_TypeCatalog/Fire_Wall_200>
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Basic_Wall_DC_Fire>
     )
     {
     }
 
     over "door_elec_a" (
-     prepend inherits = </demo_datacentre_01/_TypeCatalog/Door_Double_1800x2100>
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/M_Single_Flush_DC_door_double_1_8_x_2_1_c4549c>
     )
     {
     }
 
     over "wall_l0_h_015" (
-     prepend inherits = </demo_datacentre_01/_TypeCatalog/External_Wall_300>
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Basic_Wall_DC_External>
     )
     {
     }
 
     over "wall_l0_v_057" (
-     prepend inherits = </demo_datacentre_01/_TypeCatalog/Fire_Wall_200>
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Basic_Wall_DC_Fire>
     )
     {
     }
 
     over "door_mmr_1" (
-     prepend inherits = </demo_datacentre_01/_TypeCatalog/Door_Single_900x2100>
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/M_Single_Flush_DC_door_single_0_9_x_2_1>
     )
     {
     }
 
     over "wall_l0_h_037" (
-     prepend inherits = </demo_datacentre_01/_TypeCatalog/External_Wall_300>
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Basic_Wall_DC_External>
     )
     {
     }
 
     over "Office_Link" (
-     prepend inherits = </demo_datacentre_01/_TypeCatalog/Door_Double_1800x2100>
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/M_Single_Flush_DC_door_double_1_8_x_2_1_c4549c>
+    )
+    {
+    }
+
+    over "slab_ground_office" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Floor_DC_slab_300_mm>
     )
     {
     }
 
     over "wall_l0_h_016" (
-     prepend inherits = </demo_datacentre_01/_TypeCatalog/External_Wall_300>
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Basic_Wall_DC_External>
     )
     {
     }
 
     over "door_water" (
-     prepend inherits = </demo_datacentre_01/_TypeCatalog/Door_Single_900x2100>
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/M_Single_Flush_DC_door_single_0_9_x_2_1>
     )
     {
     }
 
     over "door_mmr_2" (
-     prepend inherits = </demo_datacentre_01/_TypeCatalog/Door_Single_900x2100>
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/M_Single_Flush_DC_door_single_0_9_x_2_1>
+    )
+    {
+    }
+
+    over "slab_ground_main" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Floor_DC_slab_300_mm>
     )
     {
     }
 
     over "wall_l0_v_071" (
-     prepend inherits = </demo_datacentre_01/_TypeCatalog/External_Wall_300>
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Basic_Wall_DC_External>
     )
     {
     }
 
     over "wall_l0_h_038" (
-     prepend inherits = </demo_datacentre_01/_TypeCatalog/External_Wall_300>
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Basic_Wall_DC_External>
     )
     {
     }
 
     over "door_lobby_corr" (
-     prepend inherits = </demo_datacentre_01/_TypeCatalog/Door_Double_1800x2100>
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/M_Single_Flush_DC_door_double_1_8_x_2_1>
     )
     {
     }
 
     over "wall_l0_v_073" (
-     prepend inherits = </demo_datacentre_01/_TypeCatalog/External_Wall_300>
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Basic_Wall_DC_External>
     )
     {
     }
 
     over "door_fire" (
-     prepend inherits = </demo_datacentre_01/_TypeCatalog/Door_Single_900x2100>
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/M_Single_Flush_DC_door_single_0_9_x_2_1>
     )
     {
     }
 
     over "door_meeting" (
-     prepend inherits = </demo_datacentre_01/_TypeCatalog/Door_Single_900x2100>
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/M_Single_Flush_DC_door_single_0_9_x_2_1_fe6234>
     )
     {
     }
 
     over "wall_l0_h_019" (
-     prepend inherits = </demo_datacentre_01/_TypeCatalog/Fire_Wall_200>
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Basic_Wall_DC_Fire>
     )
     {
     }
 
     over "wall_l0_v_066" (
-     prepend inherits = </demo_datacentre_01/_TypeCatalog/Fire_Wall_200>
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Basic_Wall_DC_Fire>
     )
     {
     }
 
     over "door_hall_a_s" (
-     prepend inherits = </demo_datacentre_01/_TypeCatalog/Door_Double_1800x2100>
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/M_Single_Flush_DC_door_double_1_8_x_2_1_c4549c>
     )
     {
     }
 
     over "wall_l0_v_056" (
-     prepend inherits = </demo_datacentre_01/_TypeCatalog/Fire_Wall_200>
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Basic_Wall_DC_Fire>
     )
     {
     }
 
     over "door_batt_a_i" (
-     prepend inherits = </demo_datacentre_01/_TypeCatalog/Door_Single_900x2100>
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/M_Single_Flush_DC_door_single_0_9_x_2_1>
     )
     {
     }
 
     over "wall_l0_h_027" (
-     prepend inherits = </demo_datacentre_01/_TypeCatalog/Fire_Wall_200>
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Basic_Wall_DC_Fire>
     )
     {
     }
 
     over "door_corr_w" (
-     prepend inherits = </demo_datacentre_01/_TypeCatalog/Door_Double_1800x2100>
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/M_Single_Flush_DC_door_double_1_8_x_2_1>
     )
     {
     }
 
     over "wall_l0_h_030" (
-     prepend inherits = </demo_datacentre_01/_TypeCatalog/Internal_Wall_150>
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Basic_Wall_DC_Internal>
     )
     {
     }
 
     over "door_hall_b_s" (
-     prepend inherits = </demo_datacentre_01/_TypeCatalog/Door_Double_1800x2100>
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/M_Single_Flush_DC_door_double_1_8_x_2_1_c4549c>
     )
     {
     }
 
     over "wall_l0_h_013" (
-     prepend inherits = </demo_datacentre_01/_TypeCatalog/Fire_Wall_200>
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Basic_Wall_DC_Fire>
     )
     {
     }
 
     over "door_hall_a_e" (
-     prepend inherits = </demo_datacentre_01/_TypeCatalog/Door_Double_1800x2100>
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/M_Single_Flush_DC_door_double_1_8_x_2_1_c4549c>
     )
     {
     }
 
     over "wall_l0_v_045" (
-     prepend inherits = </demo_datacentre_01/_TypeCatalog/External_Wall_300>
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Basic_Wall_DC_External>
     )
     {
     }
 
     over "Main_Entrance" (
-     prepend inherits = </demo_datacentre_01/_TypeCatalog/Door_Double_1800x2100>
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/M_Single_Flush_DC_door_double_1_8_x_2_1_47efa4>
     )
     {
     }
 
     over "wall_l0_h_018" (
-     prepend inherits = </demo_datacentre_01/_TypeCatalog/External_Wall_300>
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Basic_Wall_DC_External>
     )
     {
     }
 
     over "door_plant" (
-     prepend inherits = </demo_datacentre_01/_TypeCatalog/Door_Double_1800x2100>
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/M_Single_Flush_DC_door_double_1_8_x_2_1_c4549c>
     )
     {
     }
 
     over "door_elec_b" (
-     prepend inherits = </demo_datacentre_01/_TypeCatalog/Door_Double_1800x2100>
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/M_Single_Flush_DC_door_double_1_8_x_2_1_c4549c>
     )
     {
     }
 
     over "wall_l0_h_024" (
-     prepend inherits = </demo_datacentre_01/_TypeCatalog/Internal_Wall_150>
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Basic_Wall_DC_Internal>
     )
     {
     }
 
     over "wall_l0_h_006" (
-     prepend inherits = </demo_datacentre_01/_TypeCatalog/Fire_Wall_200>
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Basic_Wall_DC_Fire>
     )
     {
     }
 
     over "wall_l0_v_050" (
-     prepend inherits = </demo_datacentre_01/_TypeCatalog/Internal_Wall_150>
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Basic_Wall_DC_Internal>
     )
     {
     }
 
     over "wall_l0_h_001" (
-     prepend inherits = </demo_datacentre_01/_TypeCatalog/External_Wall_300>
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Basic_Wall_DC_External>
     )
     {
     }
 
     over "door_plant_fire" (
-     prepend inherits = </demo_datacentre_01/_TypeCatalog/Door_Single_900x2100>
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/M_Single_Flush_DC_door_single_0_9_x_2_1>
     )
     {
     }
 
     over "wall_l0_v_062" (
-     prepend inherits = </demo_datacentre_01/_TypeCatalog/Fire_Wall_200>
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Basic_Wall_DC_Fire>
     )
     {
     }
 
     over "wall_l0_v_054" (
-     prepend inherits = </demo_datacentre_01/_TypeCatalog/Fire_Wall_200>
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Basic_Wall_DC_Fire>
     )
     {
     }
 
     over "door_batt_b_i" (
-     prepend inherits = </demo_datacentre_01/_TypeCatalog/Door_Single_900x2100>
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/M_Single_Flush_DC_door_single_0_9_x_2_1>
     )
     {
     }
 
     over "wall_l0_v_046" (
-     prepend inherits = </demo_datacentre_01/_TypeCatalog/External_Wall_300>
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Basic_Wall_DC_External>
     )
     {
     }
 
     over "wall_l0_h_026" (
-     prepend inherits = </demo_datacentre_01/_TypeCatalog/Fire_Wall_200>
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Basic_Wall_DC_Fire>
     )
     {
     }
 
     over "door_hall_b_w" (
-     prepend inherits = </demo_datacentre_01/_TypeCatalog/Door_Double_1800x2100>
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/M_Single_Flush_DC_door_double_1_8_x_2_1_c4549c>
     )
     {
     }
 
     over "wall_l0_h_004" (
-     prepend inherits = </demo_datacentre_01/_TypeCatalog/Internal_Wall_150>
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Basic_Wall_DC_Internal>
     )
     {
     }
 
     over "wall_l0_h_034" (
-     prepend inherits = </demo_datacentre_01/_TypeCatalog/Internal_Wall_150>
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Basic_Wall_DC_Internal>
     )
     {
     }
 
     over "wall_l0_v_059" (
-     prepend inherits = </demo_datacentre_01/_TypeCatalog/External_Wall_300>
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Basic_Wall_DC_External>
     )
     {
     }
 
     over "wall_l0_h_031" (
-     prepend inherits = </demo_datacentre_01/_TypeCatalog/Fire_Wall_200>
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Basic_Wall_DC_Fire>
     )
     {
     }
 
     over "wall_l0_h_023" (
-     prepend inherits = </demo_datacentre_01/_TypeCatalog/Fire_Wall_200>
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Basic_Wall_DC_Fire>
     )
     {
     }
 
     over "door_noc_comms" (
-     prepend inherits = </demo_datacentre_01/_TypeCatalog/Door_Single_900x2100>
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/M_Single_Flush_DC_door_single_0_9_x_2_1>
     )
     {
     }
 
     over "wall_l0_h_035" (
-     prepend inherits = </demo_datacentre_01/_TypeCatalog/External_Wall_300>
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Basic_Wall_DC_External>
     )
     {
     }
@@ -822,155 +858,182 @@ over "demo_datacentre_01"
 
    over "L02_Office"
    {
+    over "Stair_L01"
+    {
+     over "Office_Stair" (
+      prepend inherits = </demo_datacentre_01/_TypeCatalog/Office_Stair_356605>
+     )
+     {
+     }
+    }
+
     over "wall_l2_h_007" (
-     prepend inherits = </demo_datacentre_01/_TypeCatalog/Internal_Wall_150>
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Basic_Wall_DC_Internal>
     )
     {
     }
 
     over "wall_l2_h_003" (
-     prepend inherits = </demo_datacentre_01/_TypeCatalog/External_Wall_300>
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Basic_Wall_DC_External>
     )
     {
     }
 
     over "wall_l2_v_019" (
-     prepend inherits = </demo_datacentre_01/_TypeCatalog/External_Wall_300>
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Basic_Wall_DC_External>
     )
     {
     }
 
     over "Additional_Meeting_Access" (
-     prepend inherits = </demo_datacentre_01/_TypeCatalog/Door_Single_900x2100>
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/M_Single_Flush_DC_door_single_0_9_x_2_1_fe6234>
     )
     {
     }
 
     over "wall_l2_v_014" (
-     prepend inherits = </demo_datacentre_01/_TypeCatalog/Internal_Wall_150>
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Basic_Wall_DC_Internal>
     )
     {
     }
 
     over "wall_l2_h_010" (
-     prepend inherits = </demo_datacentre_01/_TypeCatalog/External_Wall_300>
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Basic_Wall_DC_External>
     )
     {
     }
 
     over "wall_l2_h_008" (
-     prepend inherits = </demo_datacentre_01/_TypeCatalog/Internal_Wall_150>
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Basic_Wall_DC_Internal>
     )
     {
     }
 
     over "door_office_1_2" (
-     prepend inherits = </demo_datacentre_01/_TypeCatalog/Door_Double_1800x2100>
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/M_Single_Flush_DC_door_double_1_8_x_2_1>
     )
     {
     }
 
     over "wall_l2_h_004" (
-     prepend inherits = </demo_datacentre_01/_TypeCatalog/Internal_Wall_150>
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Basic_Wall_DC_Internal>
     )
     {
     }
 
     over "wall_l2_v_013" (
-     prepend inherits = </demo_datacentre_01/_TypeCatalog/Internal_Wall_150>
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Basic_Wall_DC_Internal>
     )
     {
     }
 
     over "door_meeting_1_2" (
-     prepend inherits = </demo_datacentre_01/_TypeCatalog/Door_Single_900x2100>
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/M_Single_Flush_DC_door_single_0_9_x_2_1_fe6234>
+    )
+    {
+    }
+
+    over "slab_l2_office" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Floor_DC_slab_250_mm>
     )
     {
     }
 
     over "wall_l2_v_016" (
-     prepend inherits = </demo_datacentre_01/_TypeCatalog/Internal_Wall_150>
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Basic_Wall_DC_Internal>
     )
     {
     }
 
     over "wall_l2_h_006" (
-     prepend inherits = </demo_datacentre_01/_TypeCatalog/Internal_Wall_150>
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Basic_Wall_DC_Internal>
     )
     {
     }
 
     over "wall_l2_v_012" (
-     prepend inherits = </demo_datacentre_01/_TypeCatalog/External_Wall_300>
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Basic_Wall_DC_External>
     )
     {
     }
 
     over "door_kitchen_2" (
-     prepend inherits = </demo_datacentre_01/_TypeCatalog/Door_Single_900x2100>
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/M_Single_Flush_DC_door_single_0_9_x_2_1_fe6234>
     )
     {
     }
 
     over "door_stair_1_2" (
-     prepend inherits = </demo_datacentre_01/_TypeCatalog/Door_Single_900x2100>
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/M_Single_Flush_DC_door_single_0_9_x_2_1_fe6234>
     )
     {
     }
 
     over "wall_l2_v_018" (
-     prepend inherits = </demo_datacentre_01/_TypeCatalog/External_Wall_300>
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Basic_Wall_DC_External>
     )
     {
     }
 
     over "wall_l2_v_015" (
-     prepend inherits = </demo_datacentre_01/_TypeCatalog/Internal_Wall_150>
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Basic_Wall_DC_Internal>
     )
     {
     }
 
     over "wall_l2_v_011" (
-     prepend inherits = </demo_datacentre_01/_TypeCatalog/External_Wall_300>
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Basic_Wall_DC_External>
     )
     {
     }
 
     over "wall_l2_h_005" (
-     prepend inherits = </demo_datacentre_01/_TypeCatalog/Internal_Wall_150>
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Basic_Wall_DC_Internal>
     )
     {
     }
 
     over "wall_l2_v_017" (
-     prepend inherits = </demo_datacentre_01/_TypeCatalog/External_Wall_300>
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Basic_Wall_DC_External>
     )
     {
     }
 
     over "wall_l2_h_001" (
-     prepend inherits = </demo_datacentre_01/_TypeCatalog/External_Wall_300>
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Basic_Wall_DC_External>
     )
     {
     }
 
     over "door_wc_2" (
-     prepend inherits = </demo_datacentre_01/_TypeCatalog/Door_Single_900x2100>
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/M_Single_Flush_DC_door_single_0_9_x_2_1_fe6234>
     )
     {
     }
 
     over "wall_l2_h_009" (
-     prepend inherits = </demo_datacentre_01/_TypeCatalog/External_Wall_300>
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Basic_Wall_DC_External>
     )
     {
     }
 
     over "wall_l2_h_002" (
-     prepend inherits = </demo_datacentre_01/_TypeCatalog/External_Wall_300>
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Basic_Wall_DC_External>
     )
     {
     }
+   }
+
+   over "slab_roof_office" (
+    prepend inherits = </demo_datacentre_01/_TypeCatalog/Floor_DC_slab_250_mm_9053d1>
+   )
+   {
+   }
+
+   over "slab_roof_main" (
+    prepend inherits = </demo_datacentre_01/_TypeCatalog/Floor_DC_slab_250_mm_9053d1>
+   )
+   {
    }
   }
  }

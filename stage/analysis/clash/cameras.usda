@@ -2,11 +2,11 @@
 (
  customLayerData = {
   string "aeco:layer:package" = "clash"
-  string "aeco:layer:producer" = "hook v0.2.3"
+  string "aeco:layer:producer" = "hook v0.2.4"
   string "aeco:layer:role" = "analysis"
   string "aeco:layer:source" = "kind/usdaeco-clash/examples/datacentre/run.py"
   string "aeco:layer:sourceSha256" = "1aab99ee111301ea03d6ddc6d205829c30d7fc71baf54ed9845770fb31b2bd8e"
-  string "aeco:layer:tag" = "v0.2.3"
+  string "aeco:layer:tag" = "v0.2.4"
  }
 )
 
@@ -59,6 +59,102 @@ def "Renders"
    float verticalAperture = 1.625
    float verticalApertureOffset = 0
    matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 0, 1, 0), (0, -1, 0, 0), (42, -5, 6.86, 1) )
+   uniform token[] xformOpOrder = ["xformOp:transform"]
+  }
+
+  def Camera "Result_b87e3bc1e7f95c218e8540962036139e"
+  {
+   float4[] clippingPlanes = []
+   float2 clippingRange = (0.001, 100)
+   float focalLength = 45
+   float focusDistance = 0
+   float fStop = 0
+   float horizontalAperture = 20.955
+   float horizontalApertureOffset = 0
+   token projection = "perspective"
+   float verticalAperture = 15.2908
+   float verticalApertureOffset = 0
+   matrix4d xformOp:transform = ( (0.7071067811865479, 0.7071067811865469, 0, 0), (-0.408248290463863, 0.4082482904638636, 0.8164965809277255, 0), (0.5773502691896251, -0.5773502691896258, 0.5773502691896263, 0), (23.9, -2.3999999999999995, 7.752499961853028, 1) )
+   uniform token[] xformOpOrder = ["xformOp:transform"]
+  }
+
+  def Camera "Result_dd098bb17c5a54249e4da88ead318732"
+  {
+   float4[] clippingPlanes = []
+   float2 clippingRange = (0.001, 100)
+   float focalLength = 45
+   float focusDistance = 0
+   float fStop = 0
+   float horizontalAperture = 20.955
+   float horizontalApertureOffset = 0
+   token projection = "perspective"
+   float verticalAperture = 15.2908
+   float verticalApertureOffset = 0
+   matrix4d xformOp:transform = ( (0.7071067811865479, 0.7071067811865469, 0, 0), (-0.408248290463863, 0.4082482904638636, 0.8164965809277255, 0), (0.5773502691896251, -0.5773502691896258, 0.5773502691896263, 0), (23.899999999999995, -3.826063537597655, 7.7000001907348645, 1) )
+   uniform token[] xformOpOrder = ["xformOp:transform"]
+  }
+
+  def Camera "Result_e871d6a8fd345356bd8b5d7dc4bbe3d5"
+  {
+   float4[] clippingPlanes = []
+   float2 clippingRange = (0.001, 100)
+   float focalLength = 45
+   float focusDistance = 0
+   float fStop = 0
+   float horizontalAperture = 20.955
+   float horizontalApertureOffset = 0
+   token projection = "perspective"
+   float verticalAperture = 15.2908
+   float verticalApertureOffset = 0
+   matrix4d xformOp:transform = ( (0.7071067811865479, 0.7071067811865469, 0, 0), (-0.408248290463863, 0.4082482904638636, 0.8164965809277255, 0), (0.5773502691896251, -0.5773502691896258, 0.5773502691896263, 0), (24.869850540161135, -3.9000000000000004, 7.700000190734865, 1) )
+   uniform token[] xformOpOrder = ["xformOp:transform"]
+  }
+
+  def Camera "ExactResult_b87e3bc1e7f95c218e8540962036139e"
+  {
+   float4[] clippingPlanes = []
+   float2 clippingRange = (0.001, 100)
+   float focalLength = 45
+   float focusDistance = 0
+   float fStop = 0
+   float horizontalAperture = 20.955
+   float horizontalApertureOffset = 0
+   token projection = "perspective"
+   float verticalAperture = 15.2908
+   float verticalApertureOffset = 0
+   matrix4d xformOp:transform = ( (0.7071067811865479, 0.7071067811865469, 0, 0), (-0.408248290463863, 0.4082482904638636, 0.8164965809277255, 0), (0.5773502691896251, -0.5773502691896258, 0.5773502691896263, 0), (24.15, -2.3999999999999977, 7.742574954032897, 1) )
+   uniform token[] xformOpOrder = ["xformOp:transform"]
+  }
+
+  def Camera "ExactResult_dd098bb17c5a54249e4da88ead318732"
+  {
+   float4[] clippingPlanes = []
+   float2 clippingRange = (0.001, 100)
+   float focalLength = 45
+   float focusDistance = 0
+   float fStop = 0
+   float horizontalAperture = 20.955
+   float horizontalApertureOffset = 0
+   token projection = "perspective"
+   float verticalAperture = 15.2908
+   float verticalApertureOffset = 0
+   matrix4d xformOp:transform = ( (0.7071067811865479, 0.7071067811865469, 0, 0), (-0.408248290463863, 0.4082482904638636, 0.8164965809277255, 0), (0.5773502691896251, -0.5773502691896258, 0.5773502691896263, 0), (24.899999999999995, -3.847425007820126, 7.0499999761581424, 1) )
+   uniform token[] xformOpOrder = ["xformOp:transform"]
+  }
+
+  def Camera "ExactResult_e871d6a8fd345356bd8b5d7dc4bbe3d5"
+  {
+   float4[] clippingPlanes = []
+   float2 clippingRange = (0.001, 100)
+   float focalLength = 45
+   float focusDistance = 0
+   float fStop = 0
+   float horizontalAperture = 20.955
+   float horizontalApertureOffset = 0
+   token projection = "perspective"
+   float verticalAperture = 15.2908
+   float verticalApertureOffset = 0
+   matrix4d xformOp:transform = ( (0.7071067811865479, 0.7071067811865469, 0, 0), (-0.408248290463863, 0.4082482904638636, 0.8164965809277255, 0), (0.5773502691896251, -0.5773502691896258, 0.5773502691896263, 0), (24.9, -3.8999999701976744, 7.049999976158141, 1) )
    uniform token[] xformOpOrder = ["xformOp:transform"]
   }
  }

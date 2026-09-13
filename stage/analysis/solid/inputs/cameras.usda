@@ -2,11 +2,11 @@
 (
  customLayerData = {
   string "aeco:layer:package" = "solid"
-  string "aeco:layer:producer" = "committed result v0.1.5"
+  string "aeco:layer:producer" = "committed result v0.1.6"
   string "aeco:layer:role" = "analysis"
   string "aeco:layer:source" = "kind/usdaeco-solid/examples/datacentre/manifest.json"
   string "aeco:layer:sourceSha256" = "25c3c3e9a71d1cf0432d0483f03346b52a3b3c3973dcf045f56563b034b101af"
-  string "aeco:layer:tag" = "v0.1.5"
+  string "aeco:layer:tag" = "v0.1.6"
  }
  metersPerUnit = 1
  upAxis = "Z"

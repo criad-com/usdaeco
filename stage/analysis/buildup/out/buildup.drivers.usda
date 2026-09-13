@@ -17,7 +17,7 @@ over "demo_datacentre_01"
   class "OfficeBuildUp_PlasterboardPartition" (
    prepend apiSchemas = ["AecoBuildUpAPI"]
    displayName = "Plasterboard partition — 150 mm"
-   prepend inherits = </demo_datacentre_01/_TypeCatalog/Internal_Wall_150>
+   prepend inherits = </demo_datacentre_01/_TypeCatalog/Basic_Wall_DC_Internal>
   )
   {
    token[] aeco:buildUp:functions = ["finish", "structure", "finish"]
@@ -29,7 +29,7 @@ over "demo_datacentre_01"
   class "OfficeBuildUp_Blockwork" (
    prepend apiSchemas = ["AecoBuildUpAPI"]
    displayName = "Finished blockwork — 200 mm"
-   prepend inherits = </demo_datacentre_01/_TypeCatalog/Fire_Wall_200>
+   prepend inherits = </demo_datacentre_01/_TypeCatalog/Basic_Wall_DC_Fire>
   )
   {
    token[] aeco:buildUp:functions = ["finish", "structure", "finish"]
@@ -41,7 +41,7 @@ over "demo_datacentre_01"
   class "OfficeBuildUp_WcLining" (
    prepend apiSchemas = ["AecoBuildUpAPI"]
    displayName = "WC lined partition — 150 mm"
-   prepend inherits = </demo_datacentre_01/_TypeCatalog/Internal_Wall_150>
+   prepend inherits = </demo_datacentre_01/_TypeCatalog/Basic_Wall_DC_Internal>
   )
   {
    token[] aeco:buildUp:functions = ["finish", "structure", "substrate", "finish"]

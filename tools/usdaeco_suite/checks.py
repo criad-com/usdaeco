@@ -77,7 +77,7 @@ def flake(root):
     require('nixpkgs.follows = "aeco-toolchain/nixpkgs";' in text, "toolchain nixpkgs follow missing")
     require("pins = assert pinsAgree;" in text and "usdaeco-toolchain.packages.${system}.pythonEnv" in text,
             "pin assertion or toolchain Python shell missing")
-    return f"{len(urls)} matching public tag URLs; 21 source inputs; 2 toolchain flakes"
+    return f"{len(urls)} matching public tag URLs; {len(expected) - len(FLAKE_REPOS)} source inputs; {len(FLAKE_REPOS)} toolchain flakes"
 
 
 def pin(root, repo):
@@ -95,7 +95,7 @@ def fresh(root):
     document = generate(root)
     for path, content in generated_files(root, document).items():
         require((root / path).read_text() == content, f"{path}: stale generated content")
-    return "23 metadata/tag entries; 3 generated files fresh; 1 documented legacy kit metadata source"
+    return f"{len(document['repos'])} metadata/tag entries; 3 generated files fresh; 1 documented legacy kit metadata source"
 
 
 def versions(root):
@@ -137,4 +137,4 @@ def site(root):
 def terms(root, extra_patterns=()):
     count, findings = sweep(root, extra_patterns=extra_patterns)
     require(not findings, "term sweep: " + ", ".join(findings[:20]))
-    return f"{count} owned text files; 0 findings; 23 relative URLs"
+    return f"{count} owned text files; 0 findings; {len(LAYOUT)} relative URLs"

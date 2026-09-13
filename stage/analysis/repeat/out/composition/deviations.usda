@@ -277,12 +277,6 @@ over "demo_datacentre_01"
       matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (13.5, -1.5, 7, 1) )
       uniform token[] xformOpOrder = ["xformOp:transform"]
      }
-
-     over "Office_Stair"
-     {
-      matrix4d xformOp:transform = ( (0, 1, 0, 0), (0, 0, 1, 0), (1, 0, 0, 0), (12.9, -2.9, 7, 1) )
-      uniform token[] xformOpOrder = ["xformOp:transform"]
-     }
     }
 
     over "Meeting_Room_L01"
@@ -301,6 +295,9 @@ over "demo_datacentre_01"
     over "wall_l1_h_007"
     {
      string aeco:class:ifc:name = "wall.l2.h.007"
+     custom string aeco:props:Constraints:Base_Constraint = "L02 Office"
+     custom string aeco:props:Identity_Data:Mark = "wall.l2.h.007"
+     custom string aeco:props:IFC_Parameters:IfcGUID = "030lw4F85OXQaxn3tlIDIR"
 
      over "Geom"
      {
@@ -312,147 +309,234 @@ over "demo_datacentre_01"
     over "wall_l1_h_003"
     {
      string aeco:class:ifc:name = "wall.l2.h.003"
+     custom string aeco:props:Constraints:Base_Constraint = "L02 Office"
+     custom string aeco:props:Identity_Data:Mark = "wall.l2.h.003"
+     custom string aeco:props:IFC_Parameters:IfcGUID = "05EcgeGOHToBN35bHKXU92"
     }
 
     over "wall_l1_v_019"
     {
      string aeco:class:ifc:name = "wall.l2.v.019"
+     custom string aeco:props:Constraints:Base_Constraint = "L02 Office"
+     custom string aeco:props:Identity_Data:Mark = "wall.l2.v.019"
+     custom string aeco:props:IFC_Parameters:IfcGUID = "0KoAQjFwnLfvtH1jypXbzS"
     }
 
     over "Additional_Meeting_Access"
     {
-     matrix4d xformOp:transform = ( (0, 1, 0, 0), (-1, 0, 0, 0), (0, 0, 1, 0), (27, -5.95, 0, 1) )
+     matrix4d xformOp:transform = ( (0, 1, 0, 0), (-1, 0, 0, 0), (0, 0, 1, 0), (27.075, -5.95, 0, 1) )
      uniform token[] xformOpOrder = ["xformOp:transform"]
     }
 
     over "wall_l1_v_014"
     {
      string aeco:class:ifc:name = "wall.l2.v.014"
+     custom string aeco:props:Constraints:Base_Constraint = "L02 Office"
+     custom string aeco:props:Identity_Data:Mark = "wall.l2.v.014"
+     custom string aeco:props:IFC_Parameters:IfcGUID = "14ReGJSdzSWxOyj10Ol5nw"
     }
 
     over "wall_l1_h_010"
     {
      string aeco:class:ifc:name = "wall.l2.h.010"
+     custom string aeco:props:Constraints:Base_Constraint = "L02 Office"
+     custom string aeco:props:Identity_Data:Mark = "wall.l2.h.010"
+     custom string aeco:props:IFC_Parameters:IfcGUID = "18APMOlyTNOwsahylDY13K"
     }
 
     over "wall_l1_h_008"
     {
      string aeco:class:ifc:name = "wall.l2.h.008"
+     custom string aeco:props:Constraints:Base_Constraint = "L02 Office"
+     custom string aeco:props:Identity_Data:Mark = "wall.l2.h.008"
+     custom string aeco:props:IFC_Parameters:IfcGUID = "1J0W7vzjHRNfrvbBl0xJcm"
     }
 
     over "door_office_1"
     {
      string aeco:class:ifc:name = "door.office.1.2"
-     custom string aeco:props:DC_DoorApproach:ApproachSpace = "sp.ocorr.1.2"
+     custom string aeco:props:Constraints:Level = "L02 Office"
+     custom string aeco:props:Identity_Data:Mark = "door.office.1.2"
+     custom string aeco:props:IFC_Parameters:IfcGUID = "1f_BpmJWLLau68jAvJh$uK"
+     custom string aeco:props:Other:Host_Id = "356457"
     }
 
     over "wall_l1_h_004"
     {
      string aeco:class:ifc:name = "wall.l2.h.004"
+     custom string aeco:props:Constraints:Base_Constraint = "L02 Office"
+     custom string aeco:props:Identity_Data:Mark = "wall.l2.h.004"
+     custom string aeco:props:IFC_Parameters:IfcGUID = "1mVPsTPr5Lwx6BZxvsDxkE"
     }
 
     over "wall_l1_v_013"
     {
      string aeco:class:ifc:name = "wall.l2.v.013"
+     custom string aeco:props:Constraints:Base_Constraint = "L02 Office"
+     custom string aeco:props:Identity_Data:Mark = "wall.l2.v.013"
+     custom string aeco:props:IFC_Parameters:IfcGUID = "1x4cF6ycbQrxAarzRIUOum"
     }
 
     over "door_meeting_1"
     {
      string aeco:class:ifc:name = "door.meeting.1.2"
-     custom string aeco:props:DC_DoorApproach:ApproachSpace = "sp.ocorr.1.2"
+     custom string aeco:props:Constraints:Level = "L02 Office"
+     custom string aeco:props:Identity_Data:Mark = "door.meeting.1.2"
+     custom string aeco:props:IFC_Parameters:IfcGUID = "2AW1gVbP9M19gwiDcdttMS"
+     custom string aeco:props:Other:Host_Id = "356458"
     }
 
     over "slab_l1_office"
     {
      string aeco:class:ifc:name = "slab.l2.office"
+     custom string aeco:props:Constraints:Level = "L02 Office"
+     custom double aeco:props:Dimensions:Elevation_at_Bottom = 6.75
+     custom double aeco:props:Dimensions:Elevation_at_Bottom_Core = 6.75
+     custom double aeco:props:Dimensions:Elevation_at_Top = 6.999999999999999
+     custom double aeco:props:Dimensions:Elevation_at_Top_Core = 6.999999999999999
+     custom string aeco:props:Identity_Data:Mark = "slab.l2.office"
+     custom string aeco:props:IFC_Parameters:IfcGUID = "2CU_3pTPrN$xbi_bxrBKSN"
+
+     over "Geom"
+     {
+      int[] faceVertexIndices = [1, 0, 3, 2, 1, 3, 2, 3, 5, 4, 2, 5, 4, 5, 7, 6, 4, 7, 6, 7, 9, 8, 6, 9, 8, 9, 10, 10, 9, 11, 10, 11, 0, 1, 10, 0, 3, 0, 5, 5, 0, 11, 7, 5, 9, 5, 11, 9, 4, 1, 2, 10, 1, 4, 8, 4, 6, 8, 10, 4]
+     }
     }
 
     over "wall_l1_v_016"
     {
-     double3 aeco:axis:end = (8.2, 0, 0)
-     double aeco:axis:length = 8.2
      string aeco:class:ifc:name = "wall.l2.v.016"
-     custom double aeco:props:Qto_WallBaseQuantities:GrossSideArea = 24.599999999999998
-     custom double aeco:props:Qto_WallBaseQuantities:GrossVolume = 3.6899999999999995
-     custom double aeco:props:Qto_WallBaseQuantities:Length = 8.2
-     matrix4d xformOp:transform = ( (0, 1, 0, 0), (-1, 0, 0, 0), (0, 0, 1, 0), (27, -11.2, 0, 1) )
+     custom string aeco:props:Constraints:Base_Constraint = "L02 Office"
+     custom double aeco:props:Dimensions:Area = 24.14999999999999
+     custom double aeco:props:Dimensions:Length = 8.199999999999998
+     custom double aeco:props:Dimensions:Volume = 3.622500000000011
+     custom string aeco:props:Identity_Data:Mark = "wall.l2.v.016"
+     custom string aeco:props:IFC_Parameters:IfcGUID = "2FK7gVc$jHRPyCYL2U7lNP"
+     custom double aeco:props:Qto_BodyGeometryValidation:NetSurfaceArea = 52.515
+     custom double aeco:props:Qto_BodyGeometryValidation:NetVolume = 3.622500000000011
+     custom double aeco:props:Qto_WallBaseQuantities:GrossFootprintArea = 1.2300000000000042
+     custom double aeco:props:Qto_WallBaseQuantities:GrossSideArea = 24.599999999999977
+     custom double aeco:props:Qto_WallBaseQuantities:GrossVolume = 3.6899999999999955
+     custom double aeco:props:Qto_WallBaseQuantities:Length = 8.199999999999998
+     custom double aeco:props:Qto_WallBaseQuantities:NetSideArea = 24.14999999999999
+     custom double aeco:props:Qto_WallBaseQuantities:NetVolume = 3.622500000000011
+     matrix4d xformOp:transform = ( (0, 1, 0, 0), (-1, 0, 0, 0), (0, 0, 1, 0), (27, -11.200000000000001, 0, 1) )
      uniform token[] xformOpOrder = ["xformOp:transform"]
 
      over "Geom"
      {
       float3[] extent = [(0, -0.075, 0), (8.2, 0.075, 3)]
-      int[] faceVertexCounts = [3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3]
-      int[] faceVertexIndices = [1, 0, 3, 2, 1, 3, 2, 3, 4, 4, 3, 5, 4, 5, 7, 6, 4, 7, 6, 7, 8, 8, 7, 9, 8, 9, 11, 10, 8, 11, 10, 11, 13, 12, 10, 13, 13, 14, 15, 13, 15, 12, 14, 0, 1, 14, 1, 15, 0, 14, 5, 7, 5, 14, 3, 0, 5, 13, 7, 14, 11, 9, 7, 11, 7, 13, 4, 15, 1, 15, 4, 6, 4, 1, 2, 15, 6, 12, 6, 8, 10, 12, 6, 10]
-      point3f[] points = [(8.2, -0.075, 0), (8.2, 0.075, 0), (6.15, 0.075, 6.661338e-16), (6.15, -0.075, 6.661338e-16), (6.15, 0.075, 2.1), (6.15, -0.075, 2.1), (5.25, 0.075, 2.1), (5.25, -0.075, 2.1), (5.25, 0.075, 6.661338e-16), (5.25, -0.075, 6.661338e-16), (0, 0.075, 0), (0, -0.075, 0), (0, 0.075, 3), (0, -0.075, 3), (8.2, -0.075, 3), (8.2, 0.075, 3)]
+      int[] faceVertexCounts = [3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3]
+      int[] faceVertexIndices = [3, 0, 1, 3, 1, 2, 5, 4, 3, 2, 5, 3, 7, 6, 4, 5, 7, 4, 1, 0, 6, 7, 1, 6, 6, 0, 3, 4, 6, 3, 2, 1, 7, 2, 7, 5, 11, 8, 9, 11, 9, 10, 13, 11, 10, 13, 10, 12, 15, 14, 13, 12, 15, 13, 8, 14, 15, 8, 15, 9, 14, 8, 11, 13, 14, 11, 10, 9, 15, 10, 15, 12]
+      point3f[] points = [(0, -0.075, 0), (0, 0.075, 0), (3.125, 0.075, 4.440892e-16), (3.125, -0.075, 4.440892e-16), (3.125, -0.075, 3), (3.125, 0.075, 3), (0, -0.075, 3), (0, 0.075, 3), (3.275, -0.075, 4.440892e-16), (3.275, 0.075, 4.440892e-16), (8.2, 0.075, 0), (8.2, -0.075, 0), (8.2, 0.075, 3), (8.2, -0.075, 3), (3.275, -0.075, 3), (3.275, 0.075, 3)]
      }
     }
 
     over "wall_l1_h_006"
     {
      string aeco:class:ifc:name = "wall.l2.h.006"
+     custom string aeco:props:Constraints:Base_Constraint = "L02 Office"
+     custom string aeco:props:Identity_Data:Mark = "wall.l2.h.006"
+     custom string aeco:props:IFC_Parameters:IfcGUID = "2IM3P4_u5MZfrdsrSDtxmr"
     }
 
     over "wall_l1_v_012"
     {
      string aeco:class:ifc:name = "wall.l2.v.012"
+     custom string aeco:props:Constraints:Base_Constraint = "L02 Office"
+     custom string aeco:props:Identity_Data:Mark = "wall.l2.v.012"
+     custom string aeco:props:IFC_Parameters:IfcGUID = "2Jl6KOvEHRCPxOLz9nHW17"
     }
 
     over "door_kitchen"
     {
      string aeco:class:ifc:name = "door.kitchen.2"
-     custom string aeco:props:DC_DoorApproach:ApproachSpace = "sp.ocorr.1.2"
+     custom string aeco:props:Constraints:Level = "L02 Office"
+     custom string aeco:props:Identity_Data:Mark = "door.kitchen.2"
+     custom string aeco:props:IFC_Parameters:IfcGUID = "2LfkQ1Ls1PkffsXlNzlg1q"
+     custom string aeco:props:Other:Host_Id = "356459"
     }
 
     over "door_stair_1"
     {
      string aeco:class:ifc:name = "door.stair.1.2"
-     custom string aeco:props:DC_DoorApproach:ApproachSpace = "sp.ocorr.1.2"
+     custom string aeco:props:Constraints:Level = "L02 Office"
+     custom string aeco:props:Identity_Data:Mark = "door.stair.1.2"
+     custom string aeco:props:IFC_Parameters:IfcGUID = "2MDoLs0uHUsAu2l1oJMaxV"
+     custom string aeco:props:Other:Host_Id = "356464"
     }
 
     over "wall_l1_v_018"
     {
      string aeco:class:ifc:name = "wall.l2.v.018"
+     custom string aeco:props:Constraints:Base_Constraint = "L02 Office"
+     custom string aeco:props:Identity_Data:Mark = "wall.l2.v.018"
+     custom string aeco:props:IFC_Parameters:IfcGUID = "2NF7jBCsPTu9DiVGSu3K1q"
     }
 
     over "wall_l1_v_015"
     {
      string aeco:class:ifc:name = "wall.l2.v.015"
+     custom string aeco:props:Constraints:Base_Constraint = "L02 Office"
+     custom string aeco:props:Identity_Data:Mark = "wall.l2.v.015"
+     custom string aeco:props:IFC_Parameters:IfcGUID = "2QNMZIaOLLdRwgg50RWK$9"
     }
 
     over "wall_l1_v_011"
     {
      string aeco:class:ifc:name = "wall.l2.v.011"
+     custom string aeco:props:Constraints:Base_Constraint = "L02 Office"
+     custom string aeco:props:Identity_Data:Mark = "wall.l2.v.011"
+     custom string aeco:props:IFC_Parameters:IfcGUID = "2SXlMqiefJVP8QVKaUTXxl"
     }
 
     over "wall_l1_h_005"
     {
      string aeco:class:ifc:name = "wall.l2.h.005"
+     custom string aeco:props:Constraints:Base_Constraint = "L02 Office"
+     custom string aeco:props:Identity_Data:Mark = "wall.l2.h.005"
+     custom string aeco:props:IFC_Parameters:IfcGUID = "2s_rmVBMXHbvI0UUWP8Xy6"
     }
 
     over "wall_l1_v_017"
     {
      string aeco:class:ifc:name = "wall.l2.v.017"
+     custom string aeco:props:Constraints:Base_Constraint = "L02 Office"
+     custom string aeco:props:Identity_Data:Mark = "wall.l2.v.017"
+     custom string aeco:props:IFC_Parameters:IfcGUID = "3Mi7MuI4PV_OYtprKzGoVm"
     }
 
     over "wall_l1_h_001"
     {
      string aeco:class:ifc:name = "wall.l2.h.001"
+     custom string aeco:props:Constraints:Base_Constraint = "L02 Office"
+     custom string aeco:props:Identity_Data:Mark = "wall.l2.h.001"
+     custom string aeco:props:IFC_Parameters:IfcGUID = "3aFREvQJXIo9cEziUNL4e1"
     }
 
     over "door_wc"
     {
      string aeco:class:ifc:name = "door.wc.2"
-     custom string aeco:props:DC_DoorApproach:ApproachSpace = "sp.kitchen.2"
+     custom string aeco:props:Constraints:Level = "L02 Office"
+     custom string aeco:props:Identity_Data:Mark = "door.wc.2"
+     custom string aeco:props:IFC_Parameters:IfcGUID = "3b7z_U70HNAB6D2PShv3S1"
+     custom string aeco:props:Other:Host_Id = "356455"
     }
 
     over "wall_l1_h_009"
     {
      string aeco:class:ifc:name = "wall.l2.h.009"
+     custom string aeco:props:Constraints:Base_Constraint = "L02 Office"
+     custom string aeco:props:Identity_Data:Mark = "wall.l2.h.009"
+     custom string aeco:props:IFC_Parameters:IfcGUID = "3boI$0QOzJIeHrajxYu4Jr"
     }
 
     over "wall_l1_h_002"
     {
      string aeco:class:ifc:name = "wall.l2.h.002"
+     custom string aeco:props:Constraints:Base_Constraint = "L02 Office"
+     custom string aeco:props:Identity_Data:Mark = "wall.l2.h.002"
+     custom string aeco:props:IFC_Parameters:IfcGUID = "3d_r2v0qTJ3B7OJid3HYzf"
     }
    }
   }

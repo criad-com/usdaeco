@@ -11,7 +11,25 @@ elements, 41 spaces and three levels**, shared by all analyses. A [stock USD ren
 | C | `demo-datacentre-01.usd-only.usda` | Stock USD; optional schema plugins enrich queries |
 
 The source is
-`usdaeco-datacentre v0.5.1`; the reader is `usdaeco-ifc v0.3.1`.
+`usdaeco-datacentre v0.6.0`; the reader is `usdaeco-ifc v0.3.1`.
+
+The integrated root contains exactly three prims:
+
+```text
+/demo_datacentre_01
+  _TypeCatalog
+  demo_datacentre_01_Site
+/Studies
+  cctv clash plan compliance repeat solid wall pipe buildup
+/Renders
+  <library>/<camera>
+```
+
+`/Studies` is a plain Scope. All analysis additions outside the building live
+under `/Studies/<library>`, including materials, target grids, findings,
+programmes, specifications and exact prototypes. The one catalog is
+`/demo_datacentre_01/_TypeCatalog`; Pipe adds its classes there. A referenced
+project therefore carries its catalog. There is no root-level `/_TypeCatalog`.
 
 ## Walking the building
 
@@ -89,7 +107,7 @@ This is level → space → nested space → element. The full traversal also vi
 `L00_Ground` and `L02_Office`; the package filter shows only occupied branches.
 In usdview's layer browser, mute `packages/cooling/cooling.usda`. The manifest's
 `proofs.mute.rows` entry records **184 predicted and observed dangling port sites**,
-**11,991 unchanged world transforms**, and zero composition errors. It also records
+**11,995 unchanged world transforms**, and zero composition errors. It also records
 495 dependent analysis errors: 475 `PipeMissingAxis`, 11 `ComplianceStale`,
 6 `ClashResultWithoutElements` and 3 `QuantityStale`. Those analyses retain opinions
 whose inputs were removed; the diagnostics identify the dependencies to restore.
@@ -117,9 +135,15 @@ plus classification, relationship targets, world transforms and 776 meshes with
 shared space extents. Only the two declared controlled meshes are excluded.
 They remain the pinned display fixtures in the regenerated twin.
 
+Architecture's 167 elements are delivered by Revit 2027. Its IFC and three USD
+files come unchanged from data-centre 0.6.0; the package README and manifest
+retain the native producer and its identity/placement acceptance. CCTV and
+Compliance join the issued plan's door identity and approach drivers to the
+native referents by UUID in their own input overlays. Geometry stays native.
+
 Copied source stamps retain their original production tag; cooling's stamps name
 its producer, accepted IFC hash and generator source hash. `dc.manifest.json` remains
-the unchanged generator publication manifest. The suite manifest records the
+the unchanged upstream publication manifest. The suite manifest records the
 accepted replacement separately under `bonsai`. Package READMEs show their census.
 
 Strongest first, the roots compose presentation, analysis roots, then each
@@ -163,9 +187,23 @@ reported, not forced to match the smaller source fixture. `integration.json`
 records computations refreshed against the final combined stack.
 
 The released hooks contain fixture assumptions. The suite's bounded adapters
-use the full publication's camera census, source hashes and counts, select
+use the full publication's source hashes and counts, select
 among multiple WC spaces, and exclude prototype-only spatial extents before
 running Repeat's original reconstruction proof. The submodules are unchanged.
+Repeat also keeps native stair replacements active when the comparison reports
+a removal and addition at the same path; its complete subtree proof still runs.
+Revit's exported `IsExternal` property is true for all three native wall types.
+BuildUp selects recipes and facade visibility by the named native types while
+preserving that delivered property. The recipe width and classification checks
+still apply.
+
+Each worker receives `AECO_STUDY_ROOT=/Studies/<library>` before importing its
+hook. Released scoping helpers relocate committed exact results; the suite
+relocates writable copies of legacy inputs and validates their relationships,
+references, connections and metadata. Library tools resolve their study root
+from persisted data; Form B retains the library root receipts when sublayers
+are flattened away. The suite checker inspects every analysis layer, including
+unused view layers, and every presentation layer for obsolete paths.
 
 Exact material face subsets on `BrepArray` have no stock USD element domain;
 the integration omits those material-only subsets, retaining the mesh twins'
@@ -176,7 +214,7 @@ changes refresh exact/twin correlation stamps without claiming new tessellation.
 ## Reproduce and verify
 
 For computation, use the converter Python with USD 26.8, numpy, packaging,
-IfcOpenShell, Pillow and the dependencies supplied by the pinned repositories.
+IfcOpenShell, Pillow, PyYAML, Pydantic and the dependencies supplied by the pinned repositories.
 No package installation is required. Source imports come from each submodule's
 `tools/` directory.
 
@@ -270,10 +308,13 @@ are checked. The stage cap is 80,000,000 bytes; each analysis USDA is capped at
 
 | Measured proof | Result |
 |---|---:|
-| Connected and USD-only prims | 15,576 each; identical |
-| Flattened scene / raw prims | 15,576 / 15,582 |
-| Flattened crate bytes | 3,166,293; committed |
-| Flattened normalized SHA-256 | `5d16395e6089a17eb84a5d2fea1eaa80d9eaa9ede91eb421430c4e8aa9d6775f` |
+| Root prims (A, B and C) | `demo_datacentre_01`, `Renders`, `Studies` |
+| Catalog | `/demo_datacentre_01/_TypeCatalog` only |
+| Outside-building analysis namespaces | Nine under `/Studies/<library>` |
+| Connected and USD-only prims | 15,605 each; identical |
+| Flattened scene / raw prims | 15,605 / 15,611 |
+| Flattened crate bytes | 3,184,833; committed |
+| Flattened normalized SHA-256 | `d6fbbe7199dd554b12946c6cf5f7a575e4e6e0f48d96937107cb42c59c0f6093` |
 | Flattened generated prototype prims | 6 |
 | Flattened deterministic builds | Three equal `sdf-usda-v1` hashes |
 | Bonsai IFC GlobalIds / document links | 16,163 / 184; zero lost or changed |
@@ -281,25 +322,28 @@ are checked. The stage cap is 80,000,000 bytes; each analysis USDA is capped at
 | Plugin-free views | 21 |
 | Registered validators executed | 124 |
 | Unexpected integration errors | 0 |
-| Expected findings (error severity) | 55 |
+| Expected findings (error severity) | 69 |
 | Animated prims / transform samples | 19 / 109 |
-| Mute cases / placement changes | 117 / 0 |
+| Mute cases / placement changes | 120 / 0 |
 | Predicted and observed dangling port sites | 1,008 each |
 | Stage gate | 12 checks, 0 failed |
-| Text layers in the rebuild comparison | 177 |
-| Source gate | 56 checks, 0 failed |
-| Pytest | 48 passed |
+| Text layers in the rebuild comparison | 180 |
+| Source gate | 55 checks, 0 failed |
+| Pytest | 53 passed |
 
 The published analyses encode expected findings with validator error severity:
-2 `MisplacedDevice` results from Compliance and 53 `RepeatDrift` results from
-Repeat. `expectedFindings` names each rule, count, producing library and its
+13 `MisplacedDevice` results from Compliance and 56 `RepeatDrift` results from
+Repeat. Native door envelopes change the measured leaf-edge offsets; native
+stair types and slab representations add comparison findings. These are
+measured findings, with no count forced to match the generator-only stage.
+`expectedFindings` names each rule, count, producing library and its
 `integrated-findings.json`. The gate independently cross-checks those analysis
 findings and requires the validator error multiset to match exactly. Any extra
 error, including `ComplianceStale`, fails. The final full-plugin computation
 has no stale compliance receipts; `integrationFindings` is empty.
 
-The mute table covers 97 used layers (including 19 empty layers) and 20
-view-only layers absent from the integrated stack. Sixty cases expose
+The mute table covers 100 used layers (including 20 empty layers) and 20
+view-only layers absent from the integrated stack. Sixty-one cases expose
 additional analysis dependency errors.
 
 Muting source or analysis dependencies can invalidate persisted derived receipts
@@ -308,22 +352,26 @@ composition, transform changes and the source manifest's predicted cross-package
 port links. This is a deviation from the port-only diagnostic requirement; it does not
 claim that a muted study remains current.
 
-Six upstream USD source stamps (the three twin layers for electrical
-and IT) do not match their delivered IFC hashes. Those source bytes are retained
-exactly; `sourceStampDifferences` records the mismatch separately from the
-verified copy hashes and the suite-authored provenance.
+All delivered source stamps match their adjacent IFC bytes. The earlier
+mismatches for electrical and IT are resolved by the pinned data release.
+The content audit also checked 28 decoded geometry crates. The sanitizer recognizes only
+canonical Revit type-property identifiers; their values and adjacent text
+remain subject to every term and path check.
 
 The exact producer hooks remain tied to their original native generation
 recipes; their committed results are identified explicitly. Full-facility exact
-recomputation is not proven. Nix packaging is not proven: the single attempt
-stopped at a public input lookup returning HTTP 404. The measured stock CPU
+recomputation is not proven. Nix packaging is not proven. The previous stage release
+recorded one attempt that stopped at a public input lookup returning HTTP 404.
+This lane uses existing runtime outputs and makes no new Nix attempt. The measured stock CPU
 renderer uses USD 25.05.01; connected reads and strict checks use the supplied
 USD 26.11 runtime, while plugin-free composition is also checked with USD 26.8.
 
-Form B is exactly `Usd.Stage.Flatten(addSourceFileComment=False)` of Form A,
-with root metadata and provenance preserved. USD introduces six generated
-instance-prototype storage prims: the literal `TraverseAll` count is therefore
-15,582 rather than 15,576. This is a deviation from raw prim-count equality.
+Form B starts with `Usd.Stage.Flatten(addSourceFileComment=False)` of Form A.
+The suite moves generated instance storage into its owning study, gives it
+stable names derived from the source references, and retains library root
+receipts alongside root metadata and provenance. USD introduces six generated
+storage prims: the literal `TraverseAll` count is therefore 15,611 compared with
+15,605 scene prims. This is a deviation from raw prim-count equality.
 The checker reports those storage prims separately and compares every original
 scene path, type, identity, world transform (including animation samples) and mesh.
 `Flatten(C)` matches on those same fields; only the two declared mesh exclusions

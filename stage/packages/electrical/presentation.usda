@@ -6,7 +6,7 @@
   string "aeco:layer:role" = "presentation"
   string "aeco:layer:source" = "data/usdaeco-datacentre/dist/full/electrical.ifc"
   string "aeco:layer:sourceSha256" = "56589b1ed3422b3469b67e2889af2b8461c2a3d4e3efda480e3362a7826a85db"
-  string "aeco:layer:tag" = "v0.5.1"
+  string "aeco:layer:tag" = "v0.6.0"
  }
 )
 

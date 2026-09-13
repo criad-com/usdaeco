@@ -65,6 +65,15 @@
         "reason": ""
       },
       {
+        "classification": "IfcSlab.FLOOR",
+        "declared": false,
+        "distance": 0.0,
+        "instance": "/demo_datacentre_01/demo_datacentre_01_Site/demo_datacentre_01/L02_Office/slab_l2_office",
+        "kind": "changed",
+        "prototype": "/demo_datacentre_01/demo_datacentre_01_Site/demo_datacentre_01/L01_Office/slab_l1_office",
+        "reason": ""
+      },
+      {
         "classification": "IfcWall.SOLIDWALL",
         "declared": false,
         "distance": 0.0,
@@ -202,7 +211,7 @@
       {
         "classification": "IfcWall.PARTITIONING",
         "declared": false,
-        "distance": 3.1999999999999993,
+        "distance": 3.200000000000001,
         "instance": "/demo_datacentre_01/demo_datacentre_01_Site/demo_datacentre_01/L02_Office/wall_l2_v_016",
         "kind": "changed",
         "prototype": "/demo_datacentre_01/demo_datacentre_01_Site/demo_datacentre_01/L01_Office/wall_l1_v_016",
@@ -240,6 +249,15 @@
         "declared": false,
         "distance": null,
         "instance": "/demo_datacentre_01/demo_datacentre_01_Site/demo_datacentre_01/L02_Office/Additional_Meeting_Access",
+        "kind": "extra",
+        "prototype": null,
+        "reason": ""
+      },
+      {
+        "classification": "IfcStair.STRAIGHT_RUN_STAIR",
+        "declared": false,
+        "distance": null,
+        "instance": "/demo_datacentre_01/demo_datacentre_01_Site/demo_datacentre_01/L02_Office/Stair_L01/Office_Stair",
         "kind": "extra",
         "prototype": null,
         "reason": ""
@@ -443,6 +461,15 @@
         "reason": ""
       },
       {
+        "classification": "IfcStair.STRAIGHT_RUN_STAIR",
+        "declared": false,
+        "distance": null,
+        "instance": null,
+        "kind": "missing",
+        "prototype": "/demo_datacentre_01/demo_datacentre_01_Site/demo_datacentre_01/L01_Office/Stair_L01/Office_Stair",
+        "reason": ""
+      },
+      {
         "classification": "IfcPipeSegment.RIGIDSEGMENT",
         "declared": false,
         "distance": null,
@@ -489,10 +516,6 @@
       {
         "instance": "/demo_datacentre_01/demo_datacentre_01_Site/demo_datacentre_01/L02_Office/Office_Corridor_L01/sec_cam_corr_ocorr_1_2_2",
         "prototype": "/demo_datacentre_01/demo_datacentre_01_Site/demo_datacentre_01/L01_Office/Office_Corridor_L01/sec_cam_corr_ocorr_1_2"
-      },
-      {
-        "instance": "/demo_datacentre_01/demo_datacentre_01_Site/demo_datacentre_01/L02_Office/Stair_L01/Office_Stair",
-        "prototype": "/demo_datacentre_01/demo_datacentre_01_Site/demo_datacentre_01/L01_Office/Stair_L01/Office_Stair"
       },
       {
         "instance": "/demo_datacentre_01/demo_datacentre_01_Site/demo_datacentre_01/L02_Office/door_kitchen_2",

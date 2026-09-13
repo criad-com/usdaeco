@@ -12,11 +12,13 @@ def test_flatten_preserves_metadata_animation_and_resolves_references(tmp_path):
     delivery = Usd.Stage.CreateNew(str(tmp_path / 'delivery.usda'))
     prim = UsdGeom.Xform.Define(delivery, '/Source')
     prim.AddTranslateOp().Set((1, 2, 3), 7)
+    delivery.GetRootLayer().customLayerData = {'aeco:cctv:studyRoot': '/Studies/cctv'}
     delivery.GetRootLayer().Save()
     stage = Usd.Stage.CreateNew(str(tmp_path / FORM_A))
     header(stage.GetRootLayer(), {'AecoSpace': ['Xform']})
     root = stage.DefinePrim('/demo_datacentre_01', 'Xform')
     root.GetReferences().AddReference('delivery.usda', '/Source')
+    stage.GetRootLayer().subLayerPaths = ['delivery.usda']
     stage.GetRootLayer().Save()
     target = tmp_path / 'flat.usdc'
     export_flat(stage, tmp_path, target)
@@ -26,6 +28,7 @@ def test_flatten_preserves_metadata_animation_and_resolves_references(tmp_path):
     assert not any(flat.GetRootLayer().externalReferences)
     assert flat.GetDefaultPrim().GetAttribute('xformOp:translate').Get(7) == (1, 2, 3)
     assert flat.GetRootLayer().customLayerData['aeco:layer:role'] == 'flattened'
+    assert flat.GetRootLayer().customLayerData['aeco:cctv:studyRoot'] == '/Studies/cctv'
 
 
 def test_flatten_rejects_asset_attributes(tmp_path):
@@ -35,6 +38,31 @@ def test_flatten_rejects_asset_attributes(tmp_path):
     stage.GetRootLayer().Save()
     with pytest.raises(ValueError, match='external asset'):
         export_flat(stage, tmp_path, tmp_path / 'flat.usdc')
+
+
+def test_flatten_keeps_instance_storage_under_the_owning_study(tmp_path):
+    stage = Usd.Stage.CreateNew(str(tmp_path / FORM_A))
+    header(stage.GetRootLayer(), {})
+    stage.DefinePrim('/demo_datacentre_01', 'Xform')
+    stage.DefinePrim('/Renders', 'Scope')
+    stage.DefinePrim('/Renders/solid')
+    stage.DefinePrim('/Studies', 'Scope')
+    stage.DefinePrim('/Studies/solid', 'Scope')
+    prototype = stage.DefinePrim('/Studies/solid/ExactPrototypes/Body', 'Xform')
+    UsdGeom.Cube.Define(stage, prototype.GetPath().AppendChild('Geometry')).CreateSizeAttr(2)
+    instance = stage.DefinePrim('/demo_datacentre_01/Element', 'Xform')
+    instance.GetReferences().AddInternalReference(prototype.GetPath())
+    instance.SetInstanceable(True)
+    stage.GetRootLayer().Save()
+    target = tmp_path / 'flat.usdc'
+    export_flat(stage, tmp_path, target)
+    flat = Usd.Stage.Open(str(target))
+    assert {p.GetName() for p in flat.GetPseudoRoot().GetAllChildren()} == {'demo_datacentre_01', 'Studies', 'Renders'}
+    assert flat.GetPrimAtPath('/Renders/solid').GetTypeName() == ''
+    instance = flat.GetPrimAtPath(instance.GetPath())
+    assert instance.IsInstance()
+    assert instance.GetMetadata('references').GetAppliedItems()[0].primPath.HasPrefix(Sdf.Path('/Studies/solid'))
+    assert instance.GetChild('Geometry').GetAttribute('size').Get() == 2
 
 
 def test_controlled_mesh_exclusion_cannot_hide_identity_or_placement_change():

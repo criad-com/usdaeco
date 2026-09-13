@@ -2,11 +2,11 @@
 (
  customLayerData = {
   string "aeco:layer:package" = "clash"
-  string "aeco:layer:producer" = "hook v0.2.3"
+  string "aeco:layer:producer" = "hook v0.2.4"
   string "aeco:layer:role" = "analysis"
   string "aeco:layer:source" = "kind/usdaeco-clash/examples/datacentre/run.py"
   string "aeco:layer:sourceSha256" = "1aab99ee111301ea03d6ddc6d205829c30d7fc71baf54ed9845770fb31b2bd8e"
-  string "aeco:layer:tag" = "v0.2.3"
+  string "aeco:layer:tag" = "v0.2.4"
  }
  fallbackPrimTypes = {
   token[] AecoClashResult = ["Scope"]
@@ -14,27 +14,33 @@
  }
 )
 
-def Scope "Clash"
+def Scope "Studies"
 {
- def AecoClashTest "Pinned" (
-  prepend apiSchemas = ["CollectionAPI:setA", "CollectionAPI:setB"]
- )
+ def Scope "clash"
  {
-  double aeco:clash:clearance = 0.01
-  uniform token aeco:clash:method = "mesh"
-  double aeco:clash:tolerance = 0.001
-  string aeco:id = "d5d2aa31-76bb-5bd8-89c4-fd002370d2e4"
-  uniform token collection:setA:expansionRule = "explicitOnly"
-  rel collection:setA:includes = [
-   </demo_datacentre_01/demo_datacentre_01_Site/demo_datacentre_01/L01_Office/Office_Corridor_L01/Corridor_ceiling_void/pipe_clash_hard>,
-   </demo_datacentre_01/demo_datacentre_01_Site/demo_datacentre_01/L01_Office/Office_Corridor_L01/Corridor_ceiling_void/pipe_clash_near>,
-   </demo_datacentre_01/demo_datacentre_01_Site/demo_datacentre_01/L01_Office/Office_Corridor_L01/Corridor_ceiling_void/pipe_clash_tangent>,
-  ]
-  uniform token collection:setB:expansionRule = "explicitOnly"
-  rel collection:setB:includes = [
-   </demo_datacentre_01/demo_datacentre_01_Site/demo_datacentre_01/L01_Office/wall_l1_h_007>,
-   </demo_datacentre_01/demo_datacentre_01_Site/demo_datacentre_01/L01_Office/Office_Corridor_L01/Corridor_ceiling_void/tray_void_ocorr_1>,
-  ]
+  def Scope "Clash"
+  {
+   def AecoClashTest "Pinned" (
+    prepend apiSchemas = ["CollectionAPI:setA", "CollectionAPI:setB"]
+   )
+   {
+    double aeco:clash:clearance = 0.01
+    uniform token aeco:clash:method = "mesh"
+    double aeco:clash:tolerance = 0.001
+    string aeco:id = "d5d2aa31-76bb-5bd8-89c4-fd002370d2e4"
+    uniform token collection:setA:expansionRule = "explicitOnly"
+    rel collection:setA:includes = [
+     </demo_datacentre_01/demo_datacentre_01_Site/demo_datacentre_01/L01_Office/Office_Corridor_L01/Corridor_ceiling_void/pipe_clash_hard>,
+     </demo_datacentre_01/demo_datacentre_01_Site/demo_datacentre_01/L01_Office/Office_Corridor_L01/Corridor_ceiling_void/pipe_clash_near>,
+     </demo_datacentre_01/demo_datacentre_01_Site/demo_datacentre_01/L01_Office/Office_Corridor_L01/Corridor_ceiling_void/pipe_clash_tangent>,
+    ]
+    uniform token collection:setB:expansionRule = "explicitOnly"
+    rel collection:setB:includes = [
+     </demo_datacentre_01/demo_datacentre_01_Site/demo_datacentre_01/L01_Office/wall_l1_h_007>,
+     </demo_datacentre_01/demo_datacentre_01_Site/demo_datacentre_01/L01_Office/Office_Corridor_L01/Corridor_ceiling_void/tray_void_ocorr_1>,
+    ]
+   }
+  }
  }
 }
 

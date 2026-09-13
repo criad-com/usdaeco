@@ -580,6 +580,51 @@ over "demo_datacentre_01"
      }
     }
 
+    over "Stair_L01"
+    {
+     over "Office_Stair"
+     {
+      def BasisCurves "RepeatHighlight" (
+       prepend apiSchemas = ["AecoDerivedGeometryAPI"]
+      )
+      {
+       uniform token aeco:derived:approx = "bbox"
+       rel aeco:derived:from = </demo_datacentre_01/demo_datacentre_01_Site/demo_datacentre_01/L01_Office/Stair_L01/Office_Stair/Geom>
+       uniform token aeco:derived:role = "symbol"
+       string aeco:derived:source = "433acb7c-dbba-5481-96c6-de9afd976ddd"
+       string aeco:derived:stamp = "repeat-highlight-v1"
+       int[] curveVertexCounts = [4]
+       point3f[] points = [(-0.18, -0.18, 3.08), (1.38, -0.18, 3.08), (1.38, 2.98, 3.08), (-0.18, 2.98, 3.08)]
+       uniform token type = "linear"
+       float[] widths = [0.18] (
+        interpolation = "constant"
+       )
+       uniform token wrap = "periodic"
+      }
+     }
+    }
+
+    over "slab_l1_office"
+    {
+     def BasisCurves "RepeatHighlight" (
+      prepend apiSchemas = ["AecoDerivedGeometryAPI"]
+     )
+     {
+      uniform token aeco:derived:approx = "bbox"
+      rel aeco:derived:from = </demo_datacentre_01/demo_datacentre_01_Site/demo_datacentre_01/L01_Office/slab_l1_office/Geom>
+      uniform token aeco:derived:role = "symbol"
+      string aeco:derived:source = "74510da6-0878-5d0a-b122-2a3e782686ae"
+      string aeco:derived:stamp = "repeat-highlight-v1"
+      int[] curveVertexCounts = [4]
+      point3f[] points = [(11.82, -12.18, 0.08), (30.18, -12.18, 0.08), (30.18, 0.18, 0.08), (11.82, 0.18, 0.08)]
+      uniform token type = "linear"
+      float[] widths = [0.18] (
+       interpolation = "constant"
+      )
+      uniform token wrap = "periodic"
+     }
+    }
+
     over "wall_l1_v_016"
     {
      def BasisCurves "RepeatHighlight" (
@@ -604,6 +649,30 @@ over "demo_datacentre_01"
 
    over "L02_Office"
    {
+    over "Stair_L01"
+    {
+     over "Office_Stair"
+     {
+      def BasisCurves "RepeatHighlight" (
+       prepend apiSchemas = ["AecoDerivedGeometryAPI"]
+      )
+      {
+       uniform token aeco:derived:approx = "bbox"
+       rel aeco:derived:from = </demo_datacentre_01/demo_datacentre_01_Site/demo_datacentre_01/L02_Office/Stair_L01/Office_Stair/Geom>
+       uniform token aeco:derived:role = "symbol"
+       string aeco:derived:source = "a6fd82c6-ba88-5b32-a6e9-77684acf0845"
+       string aeco:derived:stamp = "repeat-highlight-v1"
+       int[] curveVertexCounts = [4]
+       point3f[] points = [(-0.18, -0.18, 3.08), (1.38, -0.18, 3.08), (1.38, 2.98, 3.08), (-0.18, 2.98, 3.08)]
+       uniform token type = "linear"
+       float[] widths = [0.18] (
+        interpolation = "constant"
+       )
+       uniform token wrap = "periodic"
+      }
+     }
+    }
+
     over "Additional_Meeting_Access"
     {
      def BasisCurves "RepeatHighlight" (
@@ -616,7 +685,28 @@ over "demo_datacentre_01"
       string aeco:derived:source = "3ca0f7bb-160c-52ca-b9b5-52db8a894f1c"
       string aeco:derived:stamp = "repeat-highlight-v1"
       int[] curveVertexCounts = [4]
-      point3f[] points = [(-0.205, -0.195, 2.205), (1.105, -0.195, 2.205), (1.105, 0.28, 2.205), (-0.205, 0.28, 2.205)]
+      point3f[] points = [(-0.256, -0.205, 2.256), (1.156, -0.205, 2.256), (1.156, 0.355, 2.256), (-0.256, 0.355, 2.256)]
+      uniform token type = "linear"
+      float[] widths = [0.18] (
+       interpolation = "constant"
+      )
+      uniform token wrap = "periodic"
+     }
+    }
+
+    over "slab_l2_office"
+    {
+     def BasisCurves "RepeatHighlight" (
+      prepend apiSchemas = ["AecoDerivedGeometryAPI"]
+     )
+     {
+      uniform token aeco:derived:approx = "bbox"
+      rel aeco:derived:from = </demo_datacentre_01/demo_datacentre_01_Site/demo_datacentre_01/L02_Office/slab_l2_office/Geom>
+      uniform token aeco:derived:role = "symbol"
+      string aeco:derived:source = "8c7be0f3-759d-57ff-b96c-fa5ef52d4717"
+      string aeco:derived:stamp = "repeat-highlight-v1"
+      int[] curveVertexCounts = [4]
+      point3f[] points = [(11.82, -12.18, 0.08), (30.18, -12.18, 0.08), (30.18, 0.18, 0.08), (11.82, 0.18, 0.08)]
       uniform token type = "linear"
       float[] widths = [0.18] (
        interpolation = "constant"

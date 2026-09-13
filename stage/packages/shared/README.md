@@ -1,6 +1,6 @@
 # shared delivery
 
-Producer: {'version': '0.5.1'}. Source release: `v0.5.1`.
+Producer: Demo data-centre generator 0.5.2. Source release: `v0.6.0`.
 
 The IFC delivery and its USD twin are copied without changing their bytes.
 The source layer stamps retain their original production tag; the suite manifest

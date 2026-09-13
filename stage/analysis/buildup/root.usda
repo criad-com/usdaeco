@@ -7,6 +7,7 @@
   string "aeco:layer:source" = "section/usdaeco-buildup/examples/datacentre/run.py"
   string "aeco:layer:sourceSha256" = "53d0e90d16eadda33bd1bf08425246b4ad0d2062a740cd107110c42a8e658f84"
   string "aeco:layer:tag" = "v0.2.5"
+  string "aeco:suite:studyRoot" = "/Studies/buildup"
  }
  subLayers = [
   @cameras.usda@,
@@ -17,4 +18,11 @@
   @inputs/cameras.usda@
  ]
 )
+
+def Scope "Studies"
+{
+ def Scope "buildup"
+ {
+ }
+}
 

@@ -7,6 +7,7 @@
   string "aeco:layer:source" = "kind/usdaeco-repeat/examples/datacentre/run.py"
   string "aeco:layer:sourceSha256" = "1b931ed764ad3b73341738c7ba6d25433424cd5d02c520927466898467965b11"
   string "aeco:layer:tag" = "v0.2.1"
+  string "aeco:suite:studyRoot" = "/Studies/repeat"
  }
  subLayers = [
   @cameras.usda@,
@@ -19,4 +20,11 @@
   @out/context.usda@
  ]
 )
+
+def Scope "Studies"
+{
+ def Scope "repeat"
+ {
+ }
+}
 

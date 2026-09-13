@@ -24,6 +24,20 @@ def test_public_org_and_technical_font_syntax_have_narrow_exceptions():
     assert text_findings("criad-com", extra_patterns=["criad-com"]) == [1]
 
 
+def test_native_property_identifiers_do_not_exempt_values_or_prose():
+    token = "Fam" + "ily"
+    usd = f'custom string aeco:props:Other:{token} = "Basic Wall"'
+    assert text_findings(usd, suffix='.usda') == []
+    assert text_findings(usd.replace('Basic Wall', token), suffix='.usda') == [1]
+    assert text_findings(usd, suffix='.md') == [1]
+    assert text_findings(usd, suffix='.usda', extra_patterns=['Basic Wall']) == [1]
+    for ending in ('', ' Name', ' and Type'):
+        ifc = f"#1=IFCPROPERTYSINGLEVALUE('{token}{ending}',$,IFCLABEL('Basic Wall'),$);"
+        assert text_findings(ifc, suffix='.ifc') == []
+        assert text_findings(ifc.replace('Basic Wall', token), suffix='.ifc') == [1]
+    assert text_findings(f'/* {token} */', suffix='.ifc') == [1]
+
+
 def test_exact_relative_kit_urls_are_allowed_but_adjacent_terms_are_scanned(tmp_path):
     import subprocess
 

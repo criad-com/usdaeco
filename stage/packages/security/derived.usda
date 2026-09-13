@@ -5,8 +5,8 @@
   string "aeco:layer:producer" = "usdAECO suite representation placement"
   string "aeco:layer:role" = "derived"
   string "aeco:layer:source" = "kind/usdaeco-solid/examples/datacentre/run.py"
-  string "aeco:layer:sourceSha256" = "0118e7228b59c88cb24366d29f26a2d70ff2d255f392190f982b791185df4c26"
-  string "aeco:layer:tag" = "v0.1.5"
+  string "aeco:layer:sourceSha256" = "721e39241afc93fa2d44b01510e20114d78176e32dc1fe6c4ff8246c86249ae7"
+  string "aeco:layer:tag" = "v0.1.6"
  }
 )
 

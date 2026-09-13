@@ -2,11 +2,11 @@
 (
  customLayerData = {
   string "aeco:layer:package" = "clash"
-  string "aeco:layer:producer" = "hook v0.2.3"
+  string "aeco:layer:producer" = "hook v0.2.4"
   string "aeco:layer:role" = "presentation"
   string "aeco:layer:source" = "kind/usdaeco-clash/examples/datacentre/run.py"
   string "aeco:layer:sourceSha256" = "1aab99ee111301ea03d6ddc6d205829c30d7fc71baf54ed9845770fb31b2bd8e"
-  string "aeco:layer:tag" = "v0.2.3"
+  string "aeco:layer:tag" = "v0.2.4"
  }
 )
 

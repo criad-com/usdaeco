@@ -2,13 +2,13 @@
 (
  customLayerData = {
   string "aeco:layer:package" = "wall"
-  string "aeco:layer:producer" = "hook v0.2.5"
+  string "aeco:layer:producer" = "hook v0.2.6"
   string "aeco:layer:role" = "analysis"
   string "aeco:layer:source" = "kind/usdaeco-wall/examples/datacentre/run.py"
   string "aeco:layer:sourceSha256" = "9e18f0a19e4439b31ec3dbb5c225b2806f76e62202406a6d905bac191b147479"
-  string "aeco:layer:tag" = "v0.2.5"
+  string "aeco:layer:tag" = "v0.2.6"
   string "aeco:wall:layer" = "drivers"
-  string "aeco:wall:producer" = "aeco-wall 0.2.5"
+  string "aeco:wall:producer" = "aeco-wall 0.2.6"
   string "aeco:wall:sectionEvidence" = "equivalent single layer from reported SI width; materials and priorities unknown"
  }
  defaultPrim = "demo_datacentre_01"
@@ -55,11 +55,13 @@ over "demo_datacentre_01"
      custom double aeco:props:Qto_WallBaseQuantities:GrossSideArea = None
      custom double aeco:props:Qto_WallBaseQuantities:GrossVolume = None
      custom double aeco:props:Qto_WallBaseQuantities:Height = None
+     custom double aeco:props:Qto_WallBaseQuantities:NetSideArea = None
+     custom double aeco:props:Qto_WallBaseQuantities:NetVolume = None
      custom double aeco:props:Qto_WallBaseQuantities:Width = None
      bool aeco:wall:flipped = None
      double aeco:wall:height = 3
      bool aeco:wall:isExternal = 1
-     bool aeco:wall:loadBearing = 1
+     bool aeco:wall:loadBearing = 0
      uniform token aeco:wall:locationLine = None
     }
 
@@ -72,11 +74,13 @@ over "demo_datacentre_01"
      custom double aeco:props:Qto_WallBaseQuantities:GrossSideArea = None
      custom double aeco:props:Qto_WallBaseQuantities:GrossVolume = None
      custom double aeco:props:Qto_WallBaseQuantities:Height = None
+     custom double aeco:props:Qto_WallBaseQuantities:NetSideArea = None
+     custom double aeco:props:Qto_WallBaseQuantities:NetVolume = None
      custom double aeco:props:Qto_WallBaseQuantities:Width = None
      bool aeco:wall:flipped = None
      double aeco:wall:height = 3
      bool aeco:wall:isExternal = 1
-     bool aeco:wall:loadBearing = 1
+     bool aeco:wall:loadBearing = 0
      uniform token aeco:wall:locationLine = None
     }
 
@@ -89,10 +93,12 @@ over "demo_datacentre_01"
      custom double aeco:props:Qto_WallBaseQuantities:GrossSideArea = None
      custom double aeco:props:Qto_WallBaseQuantities:GrossVolume = None
      custom double aeco:props:Qto_WallBaseQuantities:Height = None
+     custom double aeco:props:Qto_WallBaseQuantities:NetSideArea = None
+     custom double aeco:props:Qto_WallBaseQuantities:NetVolume = None
      custom double aeco:props:Qto_WallBaseQuantities:Width = None
      bool aeco:wall:flipped = None
      double aeco:wall:height = 3
-     bool aeco:wall:isExternal = 0
+     bool aeco:wall:isExternal = 1
      bool aeco:wall:loadBearing = 0
      uniform token aeco:wall:locationLine = None
     }
@@ -106,10 +112,12 @@ over "demo_datacentre_01"
      custom double aeco:props:Qto_WallBaseQuantities:GrossSideArea = None
      custom double aeco:props:Qto_WallBaseQuantities:GrossVolume = None
      custom double aeco:props:Qto_WallBaseQuantities:Height = None
+     custom double aeco:props:Qto_WallBaseQuantities:NetSideArea = None
+     custom double aeco:props:Qto_WallBaseQuantities:NetVolume = None
      custom double aeco:props:Qto_WallBaseQuantities:Width = None
      bool aeco:wall:flipped = None
      double aeco:wall:height = 3
-     bool aeco:wall:isExternal = 0
+     bool aeco:wall:isExternal = 1
      bool aeco:wall:loadBearing = 0
      uniform token aeco:wall:locationLine = None
     }
@@ -123,11 +131,13 @@ over "demo_datacentre_01"
      custom double aeco:props:Qto_WallBaseQuantities:GrossSideArea = None
      custom double aeco:props:Qto_WallBaseQuantities:GrossVolume = None
      custom double aeco:props:Qto_WallBaseQuantities:Height = None
+     custom double aeco:props:Qto_WallBaseQuantities:NetSideArea = None
+     custom double aeco:props:Qto_WallBaseQuantities:NetVolume = None
      custom double aeco:props:Qto_WallBaseQuantities:Width = None
      bool aeco:wall:flipped = None
      double aeco:wall:height = 3
      bool aeco:wall:isExternal = 1
-     bool aeco:wall:loadBearing = 1
+     bool aeco:wall:loadBearing = 0
      uniform token aeco:wall:locationLine = None
     }
 
@@ -140,11 +150,13 @@ over "demo_datacentre_01"
      custom double aeco:props:Qto_WallBaseQuantities:GrossSideArea = None
      custom double aeco:props:Qto_WallBaseQuantities:GrossVolume = None
      custom double aeco:props:Qto_WallBaseQuantities:Height = None
+     custom double aeco:props:Qto_WallBaseQuantities:NetSideArea = None
+     custom double aeco:props:Qto_WallBaseQuantities:NetVolume = None
      custom double aeco:props:Qto_WallBaseQuantities:Width = None
      bool aeco:wall:flipped = None
      double aeco:wall:height = 3
      bool aeco:wall:isExternal = 1
-     bool aeco:wall:loadBearing = 1
+     bool aeco:wall:loadBearing = 0
      uniform token aeco:wall:locationLine = None
     }
 
@@ -157,10 +169,12 @@ over "demo_datacentre_01"
      custom double aeco:props:Qto_WallBaseQuantities:GrossSideArea = None
      custom double aeco:props:Qto_WallBaseQuantities:GrossVolume = None
      custom double aeco:props:Qto_WallBaseQuantities:Height = None
+     custom double aeco:props:Qto_WallBaseQuantities:NetSideArea = None
+     custom double aeco:props:Qto_WallBaseQuantities:NetVolume = None
      custom double aeco:props:Qto_WallBaseQuantities:Width = None
      bool aeco:wall:flipped = None
      double aeco:wall:height = 3
-     bool aeco:wall:isExternal = 0
+     bool aeco:wall:isExternal = 1
      bool aeco:wall:loadBearing = 0
      uniform token aeco:wall:locationLine = None
     }
@@ -174,10 +188,12 @@ over "demo_datacentre_01"
      custom double aeco:props:Qto_WallBaseQuantities:GrossSideArea = None
      custom double aeco:props:Qto_WallBaseQuantities:GrossVolume = None
      custom double aeco:props:Qto_WallBaseQuantities:Height = None
+     custom double aeco:props:Qto_WallBaseQuantities:NetSideArea = None
+     custom double aeco:props:Qto_WallBaseQuantities:NetVolume = None
      custom double aeco:props:Qto_WallBaseQuantities:Width = None
      bool aeco:wall:flipped = None
      double aeco:wall:height = 3
-     bool aeco:wall:isExternal = 0
+     bool aeco:wall:isExternal = 1
      bool aeco:wall:loadBearing = 0
      uniform token aeco:wall:locationLine = None
     }
@@ -191,11 +207,13 @@ over "demo_datacentre_01"
      custom double aeco:props:Qto_WallBaseQuantities:GrossSideArea = None
      custom double aeco:props:Qto_WallBaseQuantities:GrossVolume = None
      custom double aeco:props:Qto_WallBaseQuantities:Height = None
+     custom double aeco:props:Qto_WallBaseQuantities:NetSideArea = None
+     custom double aeco:props:Qto_WallBaseQuantities:NetVolume = None
      custom double aeco:props:Qto_WallBaseQuantities:Width = None
      bool aeco:wall:flipped = None
      double aeco:wall:height = 3
      bool aeco:wall:isExternal = 1
-     bool aeco:wall:loadBearing = 1
+     bool aeco:wall:loadBearing = 0
      uniform token aeco:wall:locationLine = None
     }
 
@@ -208,11 +226,13 @@ over "demo_datacentre_01"
      custom double aeco:props:Qto_WallBaseQuantities:GrossSideArea = None
      custom double aeco:props:Qto_WallBaseQuantities:GrossVolume = None
      custom double aeco:props:Qto_WallBaseQuantities:Height = None
+     custom double aeco:props:Qto_WallBaseQuantities:NetSideArea = None
+     custom double aeco:props:Qto_WallBaseQuantities:NetVolume = None
      custom double aeco:props:Qto_WallBaseQuantities:Width = None
      bool aeco:wall:flipped = None
      double aeco:wall:height = 3
      bool aeco:wall:isExternal = 1
-     bool aeco:wall:loadBearing = 1
+     bool aeco:wall:loadBearing = 0
      uniform token aeco:wall:locationLine = None
     }
 
@@ -225,10 +245,12 @@ over "demo_datacentre_01"
      custom double aeco:props:Qto_WallBaseQuantities:GrossSideArea = None
      custom double aeco:props:Qto_WallBaseQuantities:GrossVolume = None
      custom double aeco:props:Qto_WallBaseQuantities:Height = None
+     custom double aeco:props:Qto_WallBaseQuantities:NetSideArea = None
+     custom double aeco:props:Qto_WallBaseQuantities:NetVolume = None
      custom double aeco:props:Qto_WallBaseQuantities:Width = None
      bool aeco:wall:flipped = None
      double aeco:wall:height = 3
-     bool aeco:wall:isExternal = 0
+     bool aeco:wall:isExternal = 1
      bool aeco:wall:loadBearing = 0
      uniform token aeco:wall:locationLine = None
     }
@@ -242,10 +264,12 @@ over "demo_datacentre_01"
      custom double aeco:props:Qto_WallBaseQuantities:GrossSideArea = None
      custom double aeco:props:Qto_WallBaseQuantities:GrossVolume = None
      custom double aeco:props:Qto_WallBaseQuantities:Height = None
+     custom double aeco:props:Qto_WallBaseQuantities:NetSideArea = None
+     custom double aeco:props:Qto_WallBaseQuantities:NetVolume = None
      custom double aeco:props:Qto_WallBaseQuantities:Width = None
      bool aeco:wall:flipped = None
      double aeco:wall:height = 3
-     bool aeco:wall:isExternal = 0
+     bool aeco:wall:isExternal = 1
      bool aeco:wall:loadBearing = 0
      uniform token aeco:wall:locationLine = None
     }
@@ -259,11 +283,13 @@ over "demo_datacentre_01"
      custom double aeco:props:Qto_WallBaseQuantities:GrossSideArea = None
      custom double aeco:props:Qto_WallBaseQuantities:GrossVolume = None
      custom double aeco:props:Qto_WallBaseQuantities:Height = None
+     custom double aeco:props:Qto_WallBaseQuantities:NetSideArea = None
+     custom double aeco:props:Qto_WallBaseQuantities:NetVolume = None
      custom double aeco:props:Qto_WallBaseQuantities:Width = None
      bool aeco:wall:flipped = None
      double aeco:wall:height = 3
      bool aeco:wall:isExternal = 1
-     bool aeco:wall:loadBearing = 1
+     bool aeco:wall:loadBearing = 0
      uniform token aeco:wall:locationLine = None
     }
 
@@ -276,11 +302,13 @@ over "demo_datacentre_01"
      custom double aeco:props:Qto_WallBaseQuantities:GrossSideArea = None
      custom double aeco:props:Qto_WallBaseQuantities:GrossVolume = None
      custom double aeco:props:Qto_WallBaseQuantities:Height = None
+     custom double aeco:props:Qto_WallBaseQuantities:NetSideArea = None
+     custom double aeco:props:Qto_WallBaseQuantities:NetVolume = None
      custom double aeco:props:Qto_WallBaseQuantities:Width = None
      bool aeco:wall:flipped = None
      double aeco:wall:height = 3
      bool aeco:wall:isExternal = 1
-     bool aeco:wall:loadBearing = 1
+     bool aeco:wall:loadBearing = 0
      uniform token aeco:wall:locationLine = None
     }
 
@@ -293,10 +321,12 @@ over "demo_datacentre_01"
      custom double aeco:props:Qto_WallBaseQuantities:GrossSideArea = None
      custom double aeco:props:Qto_WallBaseQuantities:GrossVolume = None
      custom double aeco:props:Qto_WallBaseQuantities:Height = None
+     custom double aeco:props:Qto_WallBaseQuantities:NetSideArea = None
+     custom double aeco:props:Qto_WallBaseQuantities:NetVolume = None
      custom double aeco:props:Qto_WallBaseQuantities:Width = None
      bool aeco:wall:flipped = None
      double aeco:wall:height = 3
-     bool aeco:wall:isExternal = 0
+     bool aeco:wall:isExternal = 1
      bool aeco:wall:loadBearing = 0
      uniform token aeco:wall:locationLine = None
     }
@@ -310,11 +340,13 @@ over "demo_datacentre_01"
      custom double aeco:props:Qto_WallBaseQuantities:GrossSideArea = None
      custom double aeco:props:Qto_WallBaseQuantities:GrossVolume = None
      custom double aeco:props:Qto_WallBaseQuantities:Height = None
+     custom double aeco:props:Qto_WallBaseQuantities:NetSideArea = None
+     custom double aeco:props:Qto_WallBaseQuantities:NetVolume = None
      custom double aeco:props:Qto_WallBaseQuantities:Width = None
      bool aeco:wall:flipped = None
      double aeco:wall:height = 3
      bool aeco:wall:isExternal = 1
-     bool aeco:wall:loadBearing = 1
+     bool aeco:wall:loadBearing = 0
      uniform token aeco:wall:locationLine = None
     }
 
@@ -327,10 +359,12 @@ over "demo_datacentre_01"
      custom double aeco:props:Qto_WallBaseQuantities:GrossSideArea = None
      custom double aeco:props:Qto_WallBaseQuantities:GrossVolume = None
      custom double aeco:props:Qto_WallBaseQuantities:Height = None
+     custom double aeco:props:Qto_WallBaseQuantities:NetSideArea = None
+     custom double aeco:props:Qto_WallBaseQuantities:NetVolume = None
      custom double aeco:props:Qto_WallBaseQuantities:Width = None
      bool aeco:wall:flipped = None
      double aeco:wall:height = 3
-     bool aeco:wall:isExternal = 0
+     bool aeco:wall:isExternal = 1
      bool aeco:wall:loadBearing = 0
      uniform token aeco:wall:locationLine = None
     }
@@ -344,11 +378,13 @@ over "demo_datacentre_01"
      custom double aeco:props:Qto_WallBaseQuantities:GrossSideArea = None
      custom double aeco:props:Qto_WallBaseQuantities:GrossVolume = None
      custom double aeco:props:Qto_WallBaseQuantities:Height = None
+     custom double aeco:props:Qto_WallBaseQuantities:NetSideArea = None
+     custom double aeco:props:Qto_WallBaseQuantities:NetVolume = None
      custom double aeco:props:Qto_WallBaseQuantities:Width = None
      bool aeco:wall:flipped = None
      double aeco:wall:height = 3
      bool aeco:wall:isExternal = 1
-     bool aeco:wall:loadBearing = 1
+     bool aeco:wall:loadBearing = 0
      uniform token aeco:wall:locationLine = None
     }
 
@@ -361,10 +397,12 @@ over "demo_datacentre_01"
      custom double aeco:props:Qto_WallBaseQuantities:GrossSideArea = None
      custom double aeco:props:Qto_WallBaseQuantities:GrossVolume = None
      custom double aeco:props:Qto_WallBaseQuantities:Height = None
+     custom double aeco:props:Qto_WallBaseQuantities:NetSideArea = None
+     custom double aeco:props:Qto_WallBaseQuantities:NetVolume = None
      custom double aeco:props:Qto_WallBaseQuantities:Width = None
      bool aeco:wall:flipped = None
      double aeco:wall:height = 3
-     bool aeco:wall:isExternal = 0
+     bool aeco:wall:isExternal = 1
      bool aeco:wall:loadBearing = 0
      uniform token aeco:wall:locationLine = None
     }
@@ -381,10 +419,12 @@ over "demo_datacentre_01"
      custom double aeco:props:Qto_WallBaseQuantities:GrossSideArea = None
      custom double aeco:props:Qto_WallBaseQuantities:GrossVolume = None
      custom double aeco:props:Qto_WallBaseQuantities:Height = None
+     custom double aeco:props:Qto_WallBaseQuantities:NetSideArea = None
+     custom double aeco:props:Qto_WallBaseQuantities:NetVolume = None
      custom double aeco:props:Qto_WallBaseQuantities:Width = None
      bool aeco:wall:flipped = None
-     double aeco:wall:height = 3.75
-     bool aeco:wall:isExternal = 0
+     double aeco:wall:height = 3.7499999999999996
+     bool aeco:wall:isExternal = 1
      bool aeco:wall:loadBearing = 0
      uniform token aeco:wall:locationLine = None
     }
@@ -398,11 +438,13 @@ over "demo_datacentre_01"
      custom double aeco:props:Qto_WallBaseQuantities:GrossSideArea = None
      custom double aeco:props:Qto_WallBaseQuantities:GrossVolume = None
      custom double aeco:props:Qto_WallBaseQuantities:Height = None
+     custom double aeco:props:Qto_WallBaseQuantities:NetSideArea = None
+     custom double aeco:props:Qto_WallBaseQuantities:NetVolume = None
      custom double aeco:props:Qto_WallBaseQuantities:Width = None
      bool aeco:wall:flipped = None
-     double aeco:wall:height = 6
-     bool aeco:wall:isExternal = 0
-     bool aeco:wall:loadBearing = 1
+     double aeco:wall:height = 5.999999999999999
+     bool aeco:wall:isExternal = 1
+     bool aeco:wall:loadBearing = 0
      uniform token aeco:wall:locationLine = None
     }
 
@@ -415,11 +457,13 @@ over "demo_datacentre_01"
      custom double aeco:props:Qto_WallBaseQuantities:GrossSideArea = None
      custom double aeco:props:Qto_WallBaseQuantities:GrossVolume = None
      custom double aeco:props:Qto_WallBaseQuantities:Height = None
+     custom double aeco:props:Qto_WallBaseQuantities:NetSideArea = None
+     custom double aeco:props:Qto_WallBaseQuantities:NetVolume = None
      custom double aeco:props:Qto_WallBaseQuantities:Width = None
      bool aeco:wall:flipped = None
-     double aeco:wall:height = 6
-     bool aeco:wall:isExternal = 0
-     bool aeco:wall:loadBearing = 1
+     double aeco:wall:height = 5.999999999999999
+     bool aeco:wall:isExternal = 1
+     bool aeco:wall:loadBearing = 0
      uniform token aeco:wall:locationLine = None
     }
 
@@ -432,11 +476,13 @@ over "demo_datacentre_01"
      custom double aeco:props:Qto_WallBaseQuantities:GrossSideArea = None
      custom double aeco:props:Qto_WallBaseQuantities:GrossVolume = None
      custom double aeco:props:Qto_WallBaseQuantities:Height = None
+     custom double aeco:props:Qto_WallBaseQuantities:NetSideArea = None
+     custom double aeco:props:Qto_WallBaseQuantities:NetVolume = None
      custom double aeco:props:Qto_WallBaseQuantities:Width = None
      bool aeco:wall:flipped = None
-     double aeco:wall:height = 7
+     double aeco:wall:height = 6.999999999999999
      bool aeco:wall:isExternal = 1
-     bool aeco:wall:loadBearing = 1
+     bool aeco:wall:loadBearing = 0
      uniform token aeco:wall:locationLine = None
     }
 
@@ -449,11 +495,13 @@ over "demo_datacentre_01"
      custom double aeco:props:Qto_WallBaseQuantities:GrossSideArea = None
      custom double aeco:props:Qto_WallBaseQuantities:GrossVolume = None
      custom double aeco:props:Qto_WallBaseQuantities:Height = None
+     custom double aeco:props:Qto_WallBaseQuantities:NetSideArea = None
+     custom double aeco:props:Qto_WallBaseQuantities:NetVolume = None
      custom double aeco:props:Qto_WallBaseQuantities:Width = None
      bool aeco:wall:flipped = None
-     double aeco:wall:height = 6
-     bool aeco:wall:isExternal = 0
-     bool aeco:wall:loadBearing = 1
+     double aeco:wall:height = 5.999999999999999
+     bool aeco:wall:isExternal = 1
+     bool aeco:wall:loadBearing = 0
      uniform token aeco:wall:locationLine = None
     }
 
@@ -466,11 +514,13 @@ over "demo_datacentre_01"
      custom double aeco:props:Qto_WallBaseQuantities:GrossSideArea = None
      custom double aeco:props:Qto_WallBaseQuantities:GrossVolume = None
      custom double aeco:props:Qto_WallBaseQuantities:Height = None
+     custom double aeco:props:Qto_WallBaseQuantities:NetSideArea = None
+     custom double aeco:props:Qto_WallBaseQuantities:NetVolume = None
      custom double aeco:props:Qto_WallBaseQuantities:Width = None
      bool aeco:wall:flipped = None
-     double aeco:wall:height = 6
-     bool aeco:wall:isExternal = 0
-     bool aeco:wall:loadBearing = 1
+     double aeco:wall:height = 5.999999999999999
+     bool aeco:wall:isExternal = 1
+     bool aeco:wall:loadBearing = 0
      uniform token aeco:wall:locationLine = None
     }
 
@@ -483,11 +533,13 @@ over "demo_datacentre_01"
      custom double aeco:props:Qto_WallBaseQuantities:GrossSideArea = None
      custom double aeco:props:Qto_WallBaseQuantities:GrossVolume = None
      custom double aeco:props:Qto_WallBaseQuantities:Height = None
+     custom double aeco:props:Qto_WallBaseQuantities:NetSideArea = None
+     custom double aeco:props:Qto_WallBaseQuantities:NetVolume = None
      custom double aeco:props:Qto_WallBaseQuantities:Width = None
      bool aeco:wall:flipped = None
-     double aeco:wall:height = 6
-     bool aeco:wall:isExternal = 0
-     bool aeco:wall:loadBearing = 1
+     double aeco:wall:height = 5.999999999999999
+     bool aeco:wall:isExternal = 1
+     bool aeco:wall:loadBearing = 0
      uniform token aeco:wall:locationLine = None
     }
 
@@ -500,11 +552,13 @@ over "demo_datacentre_01"
      custom double aeco:props:Qto_WallBaseQuantities:GrossSideArea = None
      custom double aeco:props:Qto_WallBaseQuantities:GrossVolume = None
      custom double aeco:props:Qto_WallBaseQuantities:Height = None
+     custom double aeco:props:Qto_WallBaseQuantities:NetSideArea = None
+     custom double aeco:props:Qto_WallBaseQuantities:NetVolume = None
      custom double aeco:props:Qto_WallBaseQuantities:Width = None
      bool aeco:wall:flipped = None
-     double aeco:wall:height = 7
+     double aeco:wall:height = 6.999999999999999
      bool aeco:wall:isExternal = 1
-     bool aeco:wall:loadBearing = 1
+     bool aeco:wall:loadBearing = 0
      uniform token aeco:wall:locationLine = None
     }
 
@@ -517,11 +571,13 @@ over "demo_datacentre_01"
      custom double aeco:props:Qto_WallBaseQuantities:GrossSideArea = None
      custom double aeco:props:Qto_WallBaseQuantities:GrossVolume = None
      custom double aeco:props:Qto_WallBaseQuantities:Height = None
+     custom double aeco:props:Qto_WallBaseQuantities:NetSideArea = None
+     custom double aeco:props:Qto_WallBaseQuantities:NetVolume = None
      custom double aeco:props:Qto_WallBaseQuantities:Width = None
      bool aeco:wall:flipped = None
-     double aeco:wall:height = 3.75
-     bool aeco:wall:isExternal = 0
-     bool aeco:wall:loadBearing = 1
+     double aeco:wall:height = 3.7499999999999996
+     bool aeco:wall:isExternal = 1
+     bool aeco:wall:loadBearing = 0
      uniform token aeco:wall:locationLine = None
     }
 
@@ -534,11 +590,13 @@ over "demo_datacentre_01"
      custom double aeco:props:Qto_WallBaseQuantities:GrossSideArea = None
      custom double aeco:props:Qto_WallBaseQuantities:GrossVolume = None
      custom double aeco:props:Qto_WallBaseQuantities:Height = None
+     custom double aeco:props:Qto_WallBaseQuantities:NetSideArea = None
+     custom double aeco:props:Qto_WallBaseQuantities:NetVolume = None
      custom double aeco:props:Qto_WallBaseQuantities:Width = None
      bool aeco:wall:flipped = None
-     double aeco:wall:height = 6
-     bool aeco:wall:isExternal = 0
-     bool aeco:wall:loadBearing = 1
+     double aeco:wall:height = 5.999999999999999
+     bool aeco:wall:isExternal = 1
+     bool aeco:wall:loadBearing = 0
      uniform token aeco:wall:locationLine = None
     }
 
@@ -551,11 +609,13 @@ over "demo_datacentre_01"
      custom double aeco:props:Qto_WallBaseQuantities:GrossSideArea = None
      custom double aeco:props:Qto_WallBaseQuantities:GrossVolume = None
      custom double aeco:props:Qto_WallBaseQuantities:Height = None
+     custom double aeco:props:Qto_WallBaseQuantities:NetSideArea = None
+     custom double aeco:props:Qto_WallBaseQuantities:NetVolume = None
      custom double aeco:props:Qto_WallBaseQuantities:Width = None
      bool aeco:wall:flipped = None
-     double aeco:wall:height = 6
-     bool aeco:wall:isExternal = 0
-     bool aeco:wall:loadBearing = 1
+     double aeco:wall:height = 5.999999999999999
+     bool aeco:wall:isExternal = 1
+     bool aeco:wall:loadBearing = 0
      uniform token aeco:wall:locationLine = None
     }
 
@@ -568,11 +628,13 @@ over "demo_datacentre_01"
      custom double aeco:props:Qto_WallBaseQuantities:GrossSideArea = None
      custom double aeco:props:Qto_WallBaseQuantities:GrossVolume = None
      custom double aeco:props:Qto_WallBaseQuantities:Height = None
+     custom double aeco:props:Qto_WallBaseQuantities:NetSideArea = None
+     custom double aeco:props:Qto_WallBaseQuantities:NetVolume = None
      custom double aeco:props:Qto_WallBaseQuantities:Width = None
      bool aeco:wall:flipped = None
-     double aeco:wall:height = 6
-     bool aeco:wall:isExternal = 0
-     bool aeco:wall:loadBearing = 1
+     double aeco:wall:height = 5.999999999999999
+     bool aeco:wall:isExternal = 1
+     bool aeco:wall:loadBearing = 0
      uniform token aeco:wall:locationLine = None
     }
 
@@ -585,11 +647,13 @@ over "demo_datacentre_01"
      custom double aeco:props:Qto_WallBaseQuantities:GrossSideArea = None
      custom double aeco:props:Qto_WallBaseQuantities:GrossVolume = None
      custom double aeco:props:Qto_WallBaseQuantities:Height = None
+     custom double aeco:props:Qto_WallBaseQuantities:NetSideArea = None
+     custom double aeco:props:Qto_WallBaseQuantities:NetVolume = None
      custom double aeco:props:Qto_WallBaseQuantities:Width = None
      bool aeco:wall:flipped = None
-     double aeco:wall:height = 7
-     bool aeco:wall:isExternal = 0
-     bool aeco:wall:loadBearing = 1
+     double aeco:wall:height = 6.999999999999999
+     bool aeco:wall:isExternal = 1
+     bool aeco:wall:loadBearing = 0
      uniform token aeco:wall:locationLine = None
     }
 
@@ -602,10 +666,12 @@ over "demo_datacentre_01"
      custom double aeco:props:Qto_WallBaseQuantities:GrossSideArea = None
      custom double aeco:props:Qto_WallBaseQuantities:GrossVolume = None
      custom double aeco:props:Qto_WallBaseQuantities:Height = None
+     custom double aeco:props:Qto_WallBaseQuantities:NetSideArea = None
+     custom double aeco:props:Qto_WallBaseQuantities:NetVolume = None
      custom double aeco:props:Qto_WallBaseQuantities:Width = None
      bool aeco:wall:flipped = None
-     double aeco:wall:height = 3.75
-     bool aeco:wall:isExternal = 0
+     double aeco:wall:height = 3.7499999999999996
+     bool aeco:wall:isExternal = 1
      bool aeco:wall:loadBearing = 0
      uniform token aeco:wall:locationLine = None
     }
@@ -619,11 +685,13 @@ over "demo_datacentre_01"
      custom double aeco:props:Qto_WallBaseQuantities:GrossSideArea = None
      custom double aeco:props:Qto_WallBaseQuantities:GrossVolume = None
      custom double aeco:props:Qto_WallBaseQuantities:Height = None
+     custom double aeco:props:Qto_WallBaseQuantities:NetSideArea = None
+     custom double aeco:props:Qto_WallBaseQuantities:NetVolume = None
      custom double aeco:props:Qto_WallBaseQuantities:Width = None
      bool aeco:wall:flipped = None
-     double aeco:wall:height = 7
+     double aeco:wall:height = 6.999999999999999
      bool aeco:wall:isExternal = 1
-     bool aeco:wall:loadBearing = 1
+     bool aeco:wall:loadBearing = 0
      uniform token aeco:wall:locationLine = None
     }
 
@@ -636,11 +704,13 @@ over "demo_datacentre_01"
      custom double aeco:props:Qto_WallBaseQuantities:GrossSideArea = None
      custom double aeco:props:Qto_WallBaseQuantities:GrossVolume = None
      custom double aeco:props:Qto_WallBaseQuantities:Height = None
+     custom double aeco:props:Qto_WallBaseQuantities:NetSideArea = None
+     custom double aeco:props:Qto_WallBaseQuantities:NetVolume = None
      custom double aeco:props:Qto_WallBaseQuantities:Width = None
      bool aeco:wall:flipped = None
-     double aeco:wall:height = 7
+     double aeco:wall:height = 6.999999999999999
      bool aeco:wall:isExternal = 1
-     bool aeco:wall:loadBearing = 1
+     bool aeco:wall:loadBearing = 0
      uniform token aeco:wall:locationLine = None
     }
 
@@ -653,11 +723,13 @@ over "demo_datacentre_01"
      custom double aeco:props:Qto_WallBaseQuantities:GrossSideArea = None
      custom double aeco:props:Qto_WallBaseQuantities:GrossVolume = None
      custom double aeco:props:Qto_WallBaseQuantities:Height = None
+     custom double aeco:props:Qto_WallBaseQuantities:NetSideArea = None
+     custom double aeco:props:Qto_WallBaseQuantities:NetVolume = None
      custom double aeco:props:Qto_WallBaseQuantities:Width = None
      bool aeco:wall:flipped = None
-     double aeco:wall:height = 6
-     bool aeco:wall:isExternal = 0
-     bool aeco:wall:loadBearing = 1
+     double aeco:wall:height = 5.999999999999999
+     bool aeco:wall:isExternal = 1
+     bool aeco:wall:loadBearing = 0
      uniform token aeco:wall:locationLine = None
     }
 
@@ -670,11 +742,13 @@ over "demo_datacentre_01"
      custom double aeco:props:Qto_WallBaseQuantities:GrossSideArea = None
      custom double aeco:props:Qto_WallBaseQuantities:GrossVolume = None
      custom double aeco:props:Qto_WallBaseQuantities:Height = None
+     custom double aeco:props:Qto_WallBaseQuantities:NetSideArea = None
+     custom double aeco:props:Qto_WallBaseQuantities:NetVolume = None
      custom double aeco:props:Qto_WallBaseQuantities:Width = None
      bool aeco:wall:flipped = None
-     double aeco:wall:height = 7
+     double aeco:wall:height = 6.999999999999999
      bool aeco:wall:isExternal = 1
-     bool aeco:wall:loadBearing = 1
+     bool aeco:wall:loadBearing = 0
      uniform token aeco:wall:locationLine = None
     }
 
@@ -687,11 +761,13 @@ over "demo_datacentre_01"
      custom double aeco:props:Qto_WallBaseQuantities:GrossSideArea = None
      custom double aeco:props:Qto_WallBaseQuantities:GrossVolume = None
      custom double aeco:props:Qto_WallBaseQuantities:Height = None
+     custom double aeco:props:Qto_WallBaseQuantities:NetSideArea = None
+     custom double aeco:props:Qto_WallBaseQuantities:NetVolume = None
      custom double aeco:props:Qto_WallBaseQuantities:Width = None
      bool aeco:wall:flipped = None
-     double aeco:wall:height = 7
+     double aeco:wall:height = 6.999999999999999
      bool aeco:wall:isExternal = 1
-     bool aeco:wall:loadBearing = 1
+     bool aeco:wall:loadBearing = 0
      uniform token aeco:wall:locationLine = None
     }
 
@@ -704,11 +780,13 @@ over "demo_datacentre_01"
      custom double aeco:props:Qto_WallBaseQuantities:GrossSideArea = None
      custom double aeco:props:Qto_WallBaseQuantities:GrossVolume = None
      custom double aeco:props:Qto_WallBaseQuantities:Height = None
+     custom double aeco:props:Qto_WallBaseQuantities:NetSideArea = None
+     custom double aeco:props:Qto_WallBaseQuantities:NetVolume = None
      custom double aeco:props:Qto_WallBaseQuantities:Width = None
      bool aeco:wall:flipped = None
-     double aeco:wall:height = 6
-     bool aeco:wall:isExternal = 0
-     bool aeco:wall:loadBearing = 1
+     double aeco:wall:height = 5.999999999999999
+     bool aeco:wall:isExternal = 1
+     bool aeco:wall:loadBearing = 0
      uniform token aeco:wall:locationLine = None
     }
 
@@ -721,11 +799,13 @@ over "demo_datacentre_01"
      custom double aeco:props:Qto_WallBaseQuantities:GrossSideArea = None
      custom double aeco:props:Qto_WallBaseQuantities:GrossVolume = None
      custom double aeco:props:Qto_WallBaseQuantities:Height = None
+     custom double aeco:props:Qto_WallBaseQuantities:NetSideArea = None
+     custom double aeco:props:Qto_WallBaseQuantities:NetVolume = None
      custom double aeco:props:Qto_WallBaseQuantities:Width = None
      bool aeco:wall:flipped = None
-     double aeco:wall:height = 7
+     double aeco:wall:height = 6.999999999999999
      bool aeco:wall:isExternal = 1
-     bool aeco:wall:loadBearing = 1
+     bool aeco:wall:loadBearing = 0
      uniform token aeco:wall:locationLine = None
     }
 
@@ -738,10 +818,12 @@ over "demo_datacentre_01"
      custom double aeco:props:Qto_WallBaseQuantities:GrossSideArea = None
      custom double aeco:props:Qto_WallBaseQuantities:GrossVolume = None
      custom double aeco:props:Qto_WallBaseQuantities:Height = None
+     custom double aeco:props:Qto_WallBaseQuantities:NetSideArea = None
+     custom double aeco:props:Qto_WallBaseQuantities:NetVolume = None
      custom double aeco:props:Qto_WallBaseQuantities:Width = None
      bool aeco:wall:flipped = None
-     double aeco:wall:height = 3.75
-     bool aeco:wall:isExternal = 0
+     double aeco:wall:height = 3.7499999999999996
+     bool aeco:wall:isExternal = 1
      bool aeco:wall:loadBearing = 0
      uniform token aeco:wall:locationLine = None
     }
@@ -755,10 +837,12 @@ over "demo_datacentre_01"
      custom double aeco:props:Qto_WallBaseQuantities:GrossSideArea = None
      custom double aeco:props:Qto_WallBaseQuantities:GrossVolume = None
      custom double aeco:props:Qto_WallBaseQuantities:Height = None
+     custom double aeco:props:Qto_WallBaseQuantities:NetSideArea = None
+     custom double aeco:props:Qto_WallBaseQuantities:NetVolume = None
      custom double aeco:props:Qto_WallBaseQuantities:Width = None
      bool aeco:wall:flipped = None
-     double aeco:wall:height = 6
-     bool aeco:wall:isExternal = 0
+     double aeco:wall:height = 5.999999999999999
+     bool aeco:wall:isExternal = 1
      bool aeco:wall:loadBearing = 0
      uniform token aeco:wall:locationLine = None
     }
@@ -772,11 +856,13 @@ over "demo_datacentre_01"
      custom double aeco:props:Qto_WallBaseQuantities:GrossSideArea = None
      custom double aeco:props:Qto_WallBaseQuantities:GrossVolume = None
      custom double aeco:props:Qto_WallBaseQuantities:Height = None
+     custom double aeco:props:Qto_WallBaseQuantities:NetSideArea = None
+     custom double aeco:props:Qto_WallBaseQuantities:NetVolume = None
      custom double aeco:props:Qto_WallBaseQuantities:Width = None
      bool aeco:wall:flipped = None
-     double aeco:wall:height = 6
-     bool aeco:wall:isExternal = 0
-     bool aeco:wall:loadBearing = 1
+     double aeco:wall:height = 5.999999999999999
+     bool aeco:wall:isExternal = 1
+     bool aeco:wall:loadBearing = 0
      uniform token aeco:wall:locationLine = None
     }
 
@@ -789,10 +875,12 @@ over "demo_datacentre_01"
      custom double aeco:props:Qto_WallBaseQuantities:GrossSideArea = None
      custom double aeco:props:Qto_WallBaseQuantities:GrossVolume = None
      custom double aeco:props:Qto_WallBaseQuantities:Height = None
+     custom double aeco:props:Qto_WallBaseQuantities:NetSideArea = None
+     custom double aeco:props:Qto_WallBaseQuantities:NetVolume = None
      custom double aeco:props:Qto_WallBaseQuantities:Width = None
      bool aeco:wall:flipped = None
-     double aeco:wall:height = 6
-     bool aeco:wall:isExternal = 0
+     double aeco:wall:height = 5.999999999999999
+     bool aeco:wall:isExternal = 1
      bool aeco:wall:loadBearing = 0
      uniform token aeco:wall:locationLine = None
     }
@@ -806,11 +894,13 @@ over "demo_datacentre_01"
      custom double aeco:props:Qto_WallBaseQuantities:GrossSideArea = None
      custom double aeco:props:Qto_WallBaseQuantities:GrossVolume = None
      custom double aeco:props:Qto_WallBaseQuantities:Height = None
+     custom double aeco:props:Qto_WallBaseQuantities:NetSideArea = None
+     custom double aeco:props:Qto_WallBaseQuantities:NetVolume = None
      custom double aeco:props:Qto_WallBaseQuantities:Width = None
      bool aeco:wall:flipped = None
-     double aeco:wall:height = 7
+     double aeco:wall:height = 6.999999999999999
      bool aeco:wall:isExternal = 1
-     bool aeco:wall:loadBearing = 1
+     bool aeco:wall:loadBearing = 0
      uniform token aeco:wall:locationLine = None
     }
 
@@ -823,11 +913,13 @@ over "demo_datacentre_01"
      custom double aeco:props:Qto_WallBaseQuantities:GrossSideArea = None
      custom double aeco:props:Qto_WallBaseQuantities:GrossVolume = None
      custom double aeco:props:Qto_WallBaseQuantities:Height = None
+     custom double aeco:props:Qto_WallBaseQuantities:NetSideArea = None
+     custom double aeco:props:Qto_WallBaseQuantities:NetVolume = None
      custom double aeco:props:Qto_WallBaseQuantities:Width = None
      bool aeco:wall:flipped = None
-     double aeco:wall:height = 7
-     bool aeco:wall:isExternal = 0
-     bool aeco:wall:loadBearing = 1
+     double aeco:wall:height = 6.999999999999999
+     bool aeco:wall:isExternal = 1
+     bool aeco:wall:loadBearing = 0
      uniform token aeco:wall:locationLine = None
     }
 
@@ -840,11 +932,13 @@ over "demo_datacentre_01"
      custom double aeco:props:Qto_WallBaseQuantities:GrossSideArea = None
      custom double aeco:props:Qto_WallBaseQuantities:GrossVolume = None
      custom double aeco:props:Qto_WallBaseQuantities:Height = None
+     custom double aeco:props:Qto_WallBaseQuantities:NetSideArea = None
+     custom double aeco:props:Qto_WallBaseQuantities:NetVolume = None
      custom double aeco:props:Qto_WallBaseQuantities:Width = None
      bool aeco:wall:flipped = None
-     double aeco:wall:height = 6
-     bool aeco:wall:isExternal = 0
-     bool aeco:wall:loadBearing = 1
+     double aeco:wall:height = 5.999999999999999
+     bool aeco:wall:isExternal = 1
+     bool aeco:wall:loadBearing = 0
      uniform token aeco:wall:locationLine = None
     }
 
@@ -857,10 +951,12 @@ over "demo_datacentre_01"
      custom double aeco:props:Qto_WallBaseQuantities:GrossSideArea = None
      custom double aeco:props:Qto_WallBaseQuantities:GrossVolume = None
      custom double aeco:props:Qto_WallBaseQuantities:Height = None
+     custom double aeco:props:Qto_WallBaseQuantities:NetSideArea = None
+     custom double aeco:props:Qto_WallBaseQuantities:NetVolume = None
      custom double aeco:props:Qto_WallBaseQuantities:Width = None
      bool aeco:wall:flipped = None
-     double aeco:wall:height = 3.75
-     bool aeco:wall:isExternal = 0
+     double aeco:wall:height = 3.7499999999999996
+     bool aeco:wall:isExternal = 1
      bool aeco:wall:loadBearing = 0
      uniform token aeco:wall:locationLine = None
     }
@@ -874,10 +970,12 @@ over "demo_datacentre_01"
      custom double aeco:props:Qto_WallBaseQuantities:GrossSideArea = None
      custom double aeco:props:Qto_WallBaseQuantities:GrossVolume = None
      custom double aeco:props:Qto_WallBaseQuantities:Height = None
+     custom double aeco:props:Qto_WallBaseQuantities:NetSideArea = None
+     custom double aeco:props:Qto_WallBaseQuantities:NetVolume = None
      custom double aeco:props:Qto_WallBaseQuantities:Width = None
      bool aeco:wall:flipped = None
-     double aeco:wall:height = 3.75
-     bool aeco:wall:isExternal = 0
+     double aeco:wall:height = 3.7499999999999996
+     bool aeco:wall:isExternal = 1
      bool aeco:wall:loadBearing = 0
      uniform token aeco:wall:locationLine = None
     }
@@ -891,11 +989,13 @@ over "demo_datacentre_01"
      custom double aeco:props:Qto_WallBaseQuantities:GrossSideArea = None
      custom double aeco:props:Qto_WallBaseQuantities:GrossVolume = None
      custom double aeco:props:Qto_WallBaseQuantities:Height = None
+     custom double aeco:props:Qto_WallBaseQuantities:NetSideArea = None
+     custom double aeco:props:Qto_WallBaseQuantities:NetVolume = None
      custom double aeco:props:Qto_WallBaseQuantities:Width = None
      bool aeco:wall:flipped = None
-     double aeco:wall:height = 4
+     double aeco:wall:height = 3.9999999999999996
      bool aeco:wall:isExternal = 1
-     bool aeco:wall:loadBearing = 1
+     bool aeco:wall:loadBearing = 0
      uniform token aeco:wall:locationLine = None
     }
 
@@ -908,10 +1008,12 @@ over "demo_datacentre_01"
      custom double aeco:props:Qto_WallBaseQuantities:GrossSideArea = None
      custom double aeco:props:Qto_WallBaseQuantities:GrossVolume = None
      custom double aeco:props:Qto_WallBaseQuantities:Height = None
+     custom double aeco:props:Qto_WallBaseQuantities:NetSideArea = None
+     custom double aeco:props:Qto_WallBaseQuantities:NetVolume = None
      custom double aeco:props:Qto_WallBaseQuantities:Width = None
      bool aeco:wall:flipped = None
-     double aeco:wall:height = 3.75
-     bool aeco:wall:isExternal = 0
+     double aeco:wall:height = 3.7499999999999996
+     bool aeco:wall:isExternal = 1
      bool aeco:wall:loadBearing = 0
      uniform token aeco:wall:locationLine = None
     }
@@ -925,11 +1027,13 @@ over "demo_datacentre_01"
      custom double aeco:props:Qto_WallBaseQuantities:GrossSideArea = None
      custom double aeco:props:Qto_WallBaseQuantities:GrossVolume = None
      custom double aeco:props:Qto_WallBaseQuantities:Height = None
+     custom double aeco:props:Qto_WallBaseQuantities:NetSideArea = None
+     custom double aeco:props:Qto_WallBaseQuantities:NetVolume = None
      custom double aeco:props:Qto_WallBaseQuantities:Width = None
      bool aeco:wall:flipped = None
-     double aeco:wall:height = 7
+     double aeco:wall:height = 6.999999999999999
      bool aeco:wall:isExternal = 1
-     bool aeco:wall:loadBearing = 1
+     bool aeco:wall:loadBearing = 0
      uniform token aeco:wall:locationLine = None
     }
 
@@ -942,11 +1046,13 @@ over "demo_datacentre_01"
      custom double aeco:props:Qto_WallBaseQuantities:GrossSideArea = None
      custom double aeco:props:Qto_WallBaseQuantities:GrossVolume = None
      custom double aeco:props:Qto_WallBaseQuantities:Height = None
+     custom double aeco:props:Qto_WallBaseQuantities:NetSideArea = None
+     custom double aeco:props:Qto_WallBaseQuantities:NetVolume = None
      custom double aeco:props:Qto_WallBaseQuantities:Width = None
      bool aeco:wall:flipped = None
-     double aeco:wall:height = 4
+     double aeco:wall:height = 3.9999999999999996
      bool aeco:wall:isExternal = 1
-     bool aeco:wall:loadBearing = 1
+     bool aeco:wall:loadBearing = 0
      uniform token aeco:wall:locationLine = None
     }
 
@@ -959,11 +1065,13 @@ over "demo_datacentre_01"
      custom double aeco:props:Qto_WallBaseQuantities:GrossSideArea = None
      custom double aeco:props:Qto_WallBaseQuantities:GrossVolume = None
      custom double aeco:props:Qto_WallBaseQuantities:Height = None
+     custom double aeco:props:Qto_WallBaseQuantities:NetSideArea = None
+     custom double aeco:props:Qto_WallBaseQuantities:NetVolume = None
      custom double aeco:props:Qto_WallBaseQuantities:Width = None
      bool aeco:wall:flipped = None
-     double aeco:wall:height = 7
-     bool aeco:wall:isExternal = 0
-     bool aeco:wall:loadBearing = 1
+     double aeco:wall:height = 6.999999999999999
+     bool aeco:wall:isExternal = 1
+     bool aeco:wall:loadBearing = 0
      uniform token aeco:wall:locationLine = None
     }
 
@@ -976,11 +1084,13 @@ over "demo_datacentre_01"
      custom double aeco:props:Qto_WallBaseQuantities:GrossSideArea = None
      custom double aeco:props:Qto_WallBaseQuantities:GrossVolume = None
      custom double aeco:props:Qto_WallBaseQuantities:Height = None
+     custom double aeco:props:Qto_WallBaseQuantities:NetSideArea = None
+     custom double aeco:props:Qto_WallBaseQuantities:NetVolume = None
      custom double aeco:props:Qto_WallBaseQuantities:Width = None
      bool aeco:wall:flipped = None
-     double aeco:wall:height = 7
-     bool aeco:wall:isExternal = 0
-     bool aeco:wall:loadBearing = 1
+     double aeco:wall:height = 6.999999999999999
+     bool aeco:wall:isExternal = 1
+     bool aeco:wall:loadBearing = 0
      uniform token aeco:wall:locationLine = None
     }
 
@@ -993,10 +1103,12 @@ over "demo_datacentre_01"
      custom double aeco:props:Qto_WallBaseQuantities:GrossSideArea = None
      custom double aeco:props:Qto_WallBaseQuantities:GrossVolume = None
      custom double aeco:props:Qto_WallBaseQuantities:Height = None
+     custom double aeco:props:Qto_WallBaseQuantities:NetSideArea = None
+     custom double aeco:props:Qto_WallBaseQuantities:NetVolume = None
      custom double aeco:props:Qto_WallBaseQuantities:Width = None
      bool aeco:wall:flipped = None
-     double aeco:wall:height = 3.75
-     bool aeco:wall:isExternal = 0
+     double aeco:wall:height = 3.7499999999999996
+     bool aeco:wall:isExternal = 1
      bool aeco:wall:loadBearing = 0
      uniform token aeco:wall:locationLine = None
     }
@@ -1010,11 +1122,13 @@ over "demo_datacentre_01"
      custom double aeco:props:Qto_WallBaseQuantities:GrossSideArea = None
      custom double aeco:props:Qto_WallBaseQuantities:GrossVolume = None
      custom double aeco:props:Qto_WallBaseQuantities:Height = None
+     custom double aeco:props:Qto_WallBaseQuantities:NetSideArea = None
+     custom double aeco:props:Qto_WallBaseQuantities:NetVolume = None
      custom double aeco:props:Qto_WallBaseQuantities:Width = None
      bool aeco:wall:flipped = None
-     double aeco:wall:height = 7
+     double aeco:wall:height = 6.999999999999999
      bool aeco:wall:isExternal = 1
-     bool aeco:wall:loadBearing = 1
+     bool aeco:wall:loadBearing = 0
      uniform token aeco:wall:locationLine = None
     }
 
@@ -1027,11 +1141,13 @@ over "demo_datacentre_01"
      custom double aeco:props:Qto_WallBaseQuantities:GrossSideArea = None
      custom double aeco:props:Qto_WallBaseQuantities:GrossVolume = None
      custom double aeco:props:Qto_WallBaseQuantities:Height = None
+     custom double aeco:props:Qto_WallBaseQuantities:NetSideArea = None
+     custom double aeco:props:Qto_WallBaseQuantities:NetVolume = None
      custom double aeco:props:Qto_WallBaseQuantities:Width = None
      bool aeco:wall:flipped = None
-     double aeco:wall:height = 6
-     bool aeco:wall:isExternal = 0
-     bool aeco:wall:loadBearing = 1
+     double aeco:wall:height = 5.999999999999999
+     bool aeco:wall:isExternal = 1
+     bool aeco:wall:loadBearing = 0
      uniform token aeco:wall:locationLine = None
     }
 
@@ -1044,11 +1160,13 @@ over "demo_datacentre_01"
      custom double aeco:props:Qto_WallBaseQuantities:GrossSideArea = None
      custom double aeco:props:Qto_WallBaseQuantities:GrossVolume = None
      custom double aeco:props:Qto_WallBaseQuantities:Height = None
+     custom double aeco:props:Qto_WallBaseQuantities:NetSideArea = None
+     custom double aeco:props:Qto_WallBaseQuantities:NetVolume = None
      custom double aeco:props:Qto_WallBaseQuantities:Width = None
      bool aeco:wall:flipped = None
-     double aeco:wall:height = 4
+     double aeco:wall:height = 3.9999999999999996
      bool aeco:wall:isExternal = 1
-     bool aeco:wall:loadBearing = 1
+     bool aeco:wall:loadBearing = 0
      uniform token aeco:wall:locationLine = None
     }
 
@@ -1061,11 +1179,13 @@ over "demo_datacentre_01"
      custom double aeco:props:Qto_WallBaseQuantities:GrossSideArea = None
      custom double aeco:props:Qto_WallBaseQuantities:GrossVolume = None
      custom double aeco:props:Qto_WallBaseQuantities:Height = None
+     custom double aeco:props:Qto_WallBaseQuantities:NetSideArea = None
+     custom double aeco:props:Qto_WallBaseQuantities:NetVolume = None
      custom double aeco:props:Qto_WallBaseQuantities:Width = None
      bool aeco:wall:flipped = None
-     double aeco:wall:height = 6
-     bool aeco:wall:isExternal = 0
-     bool aeco:wall:loadBearing = 1
+     double aeco:wall:height = 5.999999999999999
+     bool aeco:wall:isExternal = 1
+     bool aeco:wall:loadBearing = 0
      uniform token aeco:wall:locationLine = None
     }
 
@@ -1078,11 +1198,13 @@ over "demo_datacentre_01"
      custom double aeco:props:Qto_WallBaseQuantities:GrossSideArea = None
      custom double aeco:props:Qto_WallBaseQuantities:GrossVolume = None
      custom double aeco:props:Qto_WallBaseQuantities:Height = None
+     custom double aeco:props:Qto_WallBaseQuantities:NetSideArea = None
+     custom double aeco:props:Qto_WallBaseQuantities:NetVolume = None
      custom double aeco:props:Qto_WallBaseQuantities:Width = None
      bool aeco:wall:flipped = None
-     double aeco:wall:height = 6
-     bool aeco:wall:isExternal = 0
-     bool aeco:wall:loadBearing = 1
+     double aeco:wall:height = 5.999999999999999
+     bool aeco:wall:isExternal = 1
+     bool aeco:wall:loadBearing = 0
      uniform token aeco:wall:locationLine = None
     }
 
@@ -1095,11 +1217,13 @@ over "demo_datacentre_01"
      custom double aeco:props:Qto_WallBaseQuantities:GrossSideArea = None
      custom double aeco:props:Qto_WallBaseQuantities:GrossVolume = None
      custom double aeco:props:Qto_WallBaseQuantities:Height = None
+     custom double aeco:props:Qto_WallBaseQuantities:NetSideArea = None
+     custom double aeco:props:Qto_WallBaseQuantities:NetVolume = None
      custom double aeco:props:Qto_WallBaseQuantities:Width = None
      bool aeco:wall:flipped = None
-     double aeco:wall:height = 6
-     bool aeco:wall:isExternal = 0
-     bool aeco:wall:loadBearing = 1
+     double aeco:wall:height = 5.999999999999999
+     bool aeco:wall:isExternal = 1
+     bool aeco:wall:loadBearing = 0
      uniform token aeco:wall:locationLine = None
     }
 
@@ -1112,11 +1236,13 @@ over "demo_datacentre_01"
      custom double aeco:props:Qto_WallBaseQuantities:GrossSideArea = None
      custom double aeco:props:Qto_WallBaseQuantities:GrossVolume = None
      custom double aeco:props:Qto_WallBaseQuantities:Height = None
+     custom double aeco:props:Qto_WallBaseQuantities:NetSideArea = None
+     custom double aeco:props:Qto_WallBaseQuantities:NetVolume = None
      custom double aeco:props:Qto_WallBaseQuantities:Width = None
      bool aeco:wall:flipped = None
-     double aeco:wall:height = 6
-     bool aeco:wall:isExternal = 0
-     bool aeco:wall:loadBearing = 1
+     double aeco:wall:height = 5.999999999999999
+     bool aeco:wall:isExternal = 1
+     bool aeco:wall:loadBearing = 0
      uniform token aeco:wall:locationLine = None
     }
 
@@ -1129,11 +1255,13 @@ over "demo_datacentre_01"
      custom double aeco:props:Qto_WallBaseQuantities:GrossSideArea = None
      custom double aeco:props:Qto_WallBaseQuantities:GrossVolume = None
      custom double aeco:props:Qto_WallBaseQuantities:Height = None
+     custom double aeco:props:Qto_WallBaseQuantities:NetSideArea = None
+     custom double aeco:props:Qto_WallBaseQuantities:NetVolume = None
      custom double aeco:props:Qto_WallBaseQuantities:Width = None
      bool aeco:wall:flipped = None
-     double aeco:wall:height = 7
+     double aeco:wall:height = 6.999999999999999
      bool aeco:wall:isExternal = 1
-     bool aeco:wall:loadBearing = 1
+     bool aeco:wall:loadBearing = 0
      uniform token aeco:wall:locationLine = None
     }
 
@@ -1146,11 +1274,13 @@ over "demo_datacentre_01"
      custom double aeco:props:Qto_WallBaseQuantities:GrossSideArea = None
      custom double aeco:props:Qto_WallBaseQuantities:GrossVolume = None
      custom double aeco:props:Qto_WallBaseQuantities:Height = None
+     custom double aeco:props:Qto_WallBaseQuantities:NetSideArea = None
+     custom double aeco:props:Qto_WallBaseQuantities:NetVolume = None
      custom double aeco:props:Qto_WallBaseQuantities:Width = None
      bool aeco:wall:flipped = None
-     double aeco:wall:height = 6
-     bool aeco:wall:isExternal = 0
-     bool aeco:wall:loadBearing = 1
+     double aeco:wall:height = 5.999999999999999
+     bool aeco:wall:isExternal = 1
+     bool aeco:wall:loadBearing = 0
      uniform token aeco:wall:locationLine = None
     }
 
@@ -1163,11 +1293,13 @@ over "demo_datacentre_01"
      custom double aeco:props:Qto_WallBaseQuantities:GrossSideArea = None
      custom double aeco:props:Qto_WallBaseQuantities:GrossVolume = None
      custom double aeco:props:Qto_WallBaseQuantities:Height = None
+     custom double aeco:props:Qto_WallBaseQuantities:NetSideArea = None
+     custom double aeco:props:Qto_WallBaseQuantities:NetVolume = None
      custom double aeco:props:Qto_WallBaseQuantities:Width = None
      bool aeco:wall:flipped = None
-     double aeco:wall:height = 7
+     double aeco:wall:height = 6.999999999999999
      bool aeco:wall:isExternal = 1
-     bool aeco:wall:loadBearing = 1
+     bool aeco:wall:loadBearing = 0
      uniform token aeco:wall:locationLine = None
     }
 
@@ -1180,11 +1312,13 @@ over "demo_datacentre_01"
      custom double aeco:props:Qto_WallBaseQuantities:GrossSideArea = None
      custom double aeco:props:Qto_WallBaseQuantities:GrossVolume = None
      custom double aeco:props:Qto_WallBaseQuantities:Height = None
+     custom double aeco:props:Qto_WallBaseQuantities:NetSideArea = None
+     custom double aeco:props:Qto_WallBaseQuantities:NetVolume = None
      custom double aeco:props:Qto_WallBaseQuantities:Width = None
      bool aeco:wall:flipped = None
-     double aeco:wall:height = 7
+     double aeco:wall:height = 6.999999999999999
      bool aeco:wall:isExternal = 1
-     bool aeco:wall:loadBearing = 1
+     bool aeco:wall:loadBearing = 0
      uniform token aeco:wall:locationLine = None
     }
 
@@ -1197,11 +1331,13 @@ over "demo_datacentre_01"
      custom double aeco:props:Qto_WallBaseQuantities:GrossSideArea = None
      custom double aeco:props:Qto_WallBaseQuantities:GrossVolume = None
      custom double aeco:props:Qto_WallBaseQuantities:Height = None
+     custom double aeco:props:Qto_WallBaseQuantities:NetSideArea = None
+     custom double aeco:props:Qto_WallBaseQuantities:NetVolume = None
      custom double aeco:props:Qto_WallBaseQuantities:Width = None
      bool aeco:wall:flipped = None
-     double aeco:wall:height = 7
+     double aeco:wall:height = 6.999999999999999
      bool aeco:wall:isExternal = 1
-     bool aeco:wall:loadBearing = 1
+     bool aeco:wall:loadBearing = 0
      uniform token aeco:wall:locationLine = None
     }
 
@@ -1214,11 +1350,13 @@ over "demo_datacentre_01"
      custom double aeco:props:Qto_WallBaseQuantities:GrossSideArea = None
      custom double aeco:props:Qto_WallBaseQuantities:GrossVolume = None
      custom double aeco:props:Qto_WallBaseQuantities:Height = None
+     custom double aeco:props:Qto_WallBaseQuantities:NetSideArea = None
+     custom double aeco:props:Qto_WallBaseQuantities:NetVolume = None
      custom double aeco:props:Qto_WallBaseQuantities:Width = None
      bool aeco:wall:flipped = None
-     double aeco:wall:height = 7
+     double aeco:wall:height = 6.999999999999999
      bool aeco:wall:isExternal = 1
-     bool aeco:wall:loadBearing = 1
+     bool aeco:wall:loadBearing = 0
      uniform token aeco:wall:locationLine = None
     }
 
@@ -1231,11 +1369,13 @@ over "demo_datacentre_01"
      custom double aeco:props:Qto_WallBaseQuantities:GrossSideArea = None
      custom double aeco:props:Qto_WallBaseQuantities:GrossVolume = None
      custom double aeco:props:Qto_WallBaseQuantities:Height = None
+     custom double aeco:props:Qto_WallBaseQuantities:NetSideArea = None
+     custom double aeco:props:Qto_WallBaseQuantities:NetVolume = None
      custom double aeco:props:Qto_WallBaseQuantities:Width = None
      bool aeco:wall:flipped = None
-     double aeco:wall:height = 7
+     double aeco:wall:height = 6.999999999999999
      bool aeco:wall:isExternal = 1
-     bool aeco:wall:loadBearing = 1
+     bool aeco:wall:loadBearing = 0
      uniform token aeco:wall:locationLine = None
     }
 
@@ -1248,11 +1388,13 @@ over "demo_datacentre_01"
      custom double aeco:props:Qto_WallBaseQuantities:GrossSideArea = None
      custom double aeco:props:Qto_WallBaseQuantities:GrossVolume = None
      custom double aeco:props:Qto_WallBaseQuantities:Height = None
+     custom double aeco:props:Qto_WallBaseQuantities:NetSideArea = None
+     custom double aeco:props:Qto_WallBaseQuantities:NetVolume = None
      custom double aeco:props:Qto_WallBaseQuantities:Width = None
      bool aeco:wall:flipped = None
-     double aeco:wall:height = 6
-     bool aeco:wall:isExternal = 0
-     bool aeco:wall:loadBearing = 1
+     double aeco:wall:height = 5.999999999999999
+     bool aeco:wall:isExternal = 1
+     bool aeco:wall:loadBearing = 0
      uniform token aeco:wall:locationLine = None
     }
 
@@ -1265,11 +1407,13 @@ over "demo_datacentre_01"
      custom double aeco:props:Qto_WallBaseQuantities:GrossSideArea = None
      custom double aeco:props:Qto_WallBaseQuantities:GrossVolume = None
      custom double aeco:props:Qto_WallBaseQuantities:Height = None
+     custom double aeco:props:Qto_WallBaseQuantities:NetSideArea = None
+     custom double aeco:props:Qto_WallBaseQuantities:NetVolume = None
      custom double aeco:props:Qto_WallBaseQuantities:Width = None
      bool aeco:wall:flipped = None
-     double aeco:wall:height = 6
-     bool aeco:wall:isExternal = 0
-     bool aeco:wall:loadBearing = 1
+     double aeco:wall:height = 5.999999999999999
+     bool aeco:wall:isExternal = 1
+     bool aeco:wall:loadBearing = 0
      uniform token aeco:wall:locationLine = None
     }
 
@@ -1282,11 +1426,13 @@ over "demo_datacentre_01"
      custom double aeco:props:Qto_WallBaseQuantities:GrossSideArea = None
      custom double aeco:props:Qto_WallBaseQuantities:GrossVolume = None
      custom double aeco:props:Qto_WallBaseQuantities:Height = None
+     custom double aeco:props:Qto_WallBaseQuantities:NetSideArea = None
+     custom double aeco:props:Qto_WallBaseQuantities:NetVolume = None
      custom double aeco:props:Qto_WallBaseQuantities:Width = None
      bool aeco:wall:flipped = None
-     double aeco:wall:height = 6
-     bool aeco:wall:isExternal = 0
-     bool aeco:wall:loadBearing = 1
+     double aeco:wall:height = 5.999999999999999
+     bool aeco:wall:isExternal = 1
+     bool aeco:wall:loadBearing = 0
      uniform token aeco:wall:locationLine = None
     }
 
@@ -1299,11 +1445,13 @@ over "demo_datacentre_01"
      custom double aeco:props:Qto_WallBaseQuantities:GrossSideArea = None
      custom double aeco:props:Qto_WallBaseQuantities:GrossVolume = None
      custom double aeco:props:Qto_WallBaseQuantities:Height = None
+     custom double aeco:props:Qto_WallBaseQuantities:NetSideArea = None
+     custom double aeco:props:Qto_WallBaseQuantities:NetVolume = None
      custom double aeco:props:Qto_WallBaseQuantities:Width = None
      bool aeco:wall:flipped = None
-     double aeco:wall:height = 6
-     bool aeco:wall:isExternal = 0
-     bool aeco:wall:loadBearing = 1
+     double aeco:wall:height = 5.999999999999999
+     bool aeco:wall:isExternal = 1
+     bool aeco:wall:loadBearing = 0
      uniform token aeco:wall:locationLine = None
     }
 
@@ -1316,10 +1464,12 @@ over "demo_datacentre_01"
      custom double aeco:props:Qto_WallBaseQuantities:GrossSideArea = None
      custom double aeco:props:Qto_WallBaseQuantities:GrossVolume = None
      custom double aeco:props:Qto_WallBaseQuantities:Height = None
+     custom double aeco:props:Qto_WallBaseQuantities:NetSideArea = None
+     custom double aeco:props:Qto_WallBaseQuantities:NetVolume = None
      custom double aeco:props:Qto_WallBaseQuantities:Width = None
      bool aeco:wall:flipped = None
-     double aeco:wall:height = 6
-     bool aeco:wall:isExternal = 0
+     double aeco:wall:height = 5.999999999999999
+     bool aeco:wall:isExternal = 1
      bool aeco:wall:loadBearing = 0
      uniform token aeco:wall:locationLine = None
     }
@@ -1333,11 +1483,13 @@ over "demo_datacentre_01"
      custom double aeco:props:Qto_WallBaseQuantities:GrossSideArea = None
      custom double aeco:props:Qto_WallBaseQuantities:GrossVolume = None
      custom double aeco:props:Qto_WallBaseQuantities:Height = None
+     custom double aeco:props:Qto_WallBaseQuantities:NetSideArea = None
+     custom double aeco:props:Qto_WallBaseQuantities:NetVolume = None
      custom double aeco:props:Qto_WallBaseQuantities:Width = None
      bool aeco:wall:flipped = None
-     double aeco:wall:height = 7
-     bool aeco:wall:isExternal = 0
-     bool aeco:wall:loadBearing = 1
+     double aeco:wall:height = 6.999999999999999
+     bool aeco:wall:isExternal = 1
+     bool aeco:wall:loadBearing = 0
      uniform token aeco:wall:locationLine = None
     }
 
@@ -1350,11 +1502,13 @@ over "demo_datacentre_01"
      custom double aeco:props:Qto_WallBaseQuantities:GrossSideArea = None
      custom double aeco:props:Qto_WallBaseQuantities:GrossVolume = None
      custom double aeco:props:Qto_WallBaseQuantities:Height = None
+     custom double aeco:props:Qto_WallBaseQuantities:NetSideArea = None
+     custom double aeco:props:Qto_WallBaseQuantities:NetVolume = None
      custom double aeco:props:Qto_WallBaseQuantities:Width = None
      bool aeco:wall:flipped = None
-     double aeco:wall:height = 4
+     double aeco:wall:height = 3.9999999999999996
      bool aeco:wall:isExternal = 1
-     bool aeco:wall:loadBearing = 1
+     bool aeco:wall:loadBearing = 0
      uniform token aeco:wall:locationLine = None
     }
 
@@ -1367,11 +1521,13 @@ over "demo_datacentre_01"
      custom double aeco:props:Qto_WallBaseQuantities:GrossSideArea = None
      custom double aeco:props:Qto_WallBaseQuantities:GrossVolume = None
      custom double aeco:props:Qto_WallBaseQuantities:Height = None
+     custom double aeco:props:Qto_WallBaseQuantities:NetSideArea = None
+     custom double aeco:props:Qto_WallBaseQuantities:NetVolume = None
      custom double aeco:props:Qto_WallBaseQuantities:Width = None
      bool aeco:wall:flipped = None
-     double aeco:wall:height = 7
+     double aeco:wall:height = 6.999999999999999
      bool aeco:wall:isExternal = 1
-     bool aeco:wall:loadBearing = 1
+     bool aeco:wall:loadBearing = 0
      uniform token aeco:wall:locationLine = None
     }
 
@@ -1384,10 +1540,12 @@ over "demo_datacentre_01"
      custom double aeco:props:Qto_WallBaseQuantities:GrossSideArea = None
      custom double aeco:props:Qto_WallBaseQuantities:GrossVolume = None
      custom double aeco:props:Qto_WallBaseQuantities:Height = None
+     custom double aeco:props:Qto_WallBaseQuantities:NetSideArea = None
+     custom double aeco:props:Qto_WallBaseQuantities:NetVolume = None
      custom double aeco:props:Qto_WallBaseQuantities:Width = None
      bool aeco:wall:flipped = None
-     double aeco:wall:height = 6
-     bool aeco:wall:isExternal = 0
+     double aeco:wall:height = 5.999999999999999
+     bool aeco:wall:isExternal = 1
      bool aeco:wall:loadBearing = 0
      uniform token aeco:wall:locationLine = None
     }
@@ -1401,11 +1559,13 @@ over "demo_datacentre_01"
      custom double aeco:props:Qto_WallBaseQuantities:GrossSideArea = None
      custom double aeco:props:Qto_WallBaseQuantities:GrossVolume = None
      custom double aeco:props:Qto_WallBaseQuantities:Height = None
+     custom double aeco:props:Qto_WallBaseQuantities:NetSideArea = None
+     custom double aeco:props:Qto_WallBaseQuantities:NetVolume = None
      custom double aeco:props:Qto_WallBaseQuantities:Width = None
      bool aeco:wall:flipped = None
-     double aeco:wall:height = 3.75
-     bool aeco:wall:isExternal = 0
-     bool aeco:wall:loadBearing = 1
+     double aeco:wall:height = 3.7499999999999996
+     bool aeco:wall:isExternal = 1
+     bool aeco:wall:loadBearing = 0
      uniform token aeco:wall:locationLine = None
     }
 
@@ -1418,10 +1578,12 @@ over "demo_datacentre_01"
      custom double aeco:props:Qto_WallBaseQuantities:GrossSideArea = None
      custom double aeco:props:Qto_WallBaseQuantities:GrossVolume = None
      custom double aeco:props:Qto_WallBaseQuantities:Height = None
+     custom double aeco:props:Qto_WallBaseQuantities:NetSideArea = None
+     custom double aeco:props:Qto_WallBaseQuantities:NetVolume = None
      custom double aeco:props:Qto_WallBaseQuantities:Width = None
      bool aeco:wall:flipped = None
-     double aeco:wall:height = 3.75
-     bool aeco:wall:isExternal = 0
+     double aeco:wall:height = 3.7499999999999996
+     bool aeco:wall:isExternal = 1
      bool aeco:wall:loadBearing = 0
      uniform token aeco:wall:locationLine = None
     }
@@ -1435,11 +1597,13 @@ over "demo_datacentre_01"
      custom double aeco:props:Qto_WallBaseQuantities:GrossSideArea = None
      custom double aeco:props:Qto_WallBaseQuantities:GrossVolume = None
      custom double aeco:props:Qto_WallBaseQuantities:Height = None
+     custom double aeco:props:Qto_WallBaseQuantities:NetSideArea = None
+     custom double aeco:props:Qto_WallBaseQuantities:NetVolume = None
      custom double aeco:props:Qto_WallBaseQuantities:Width = None
      bool aeco:wall:flipped = None
-     double aeco:wall:height = 4
+     double aeco:wall:height = 3.9999999999999996
      bool aeco:wall:isExternal = 1
-     bool aeco:wall:loadBearing = 1
+     bool aeco:wall:loadBearing = 0
      uniform token aeco:wall:locationLine = None
     }
 
@@ -1452,11 +1616,13 @@ over "demo_datacentre_01"
      custom double aeco:props:Qto_WallBaseQuantities:GrossSideArea = None
      custom double aeco:props:Qto_WallBaseQuantities:GrossVolume = None
      custom double aeco:props:Qto_WallBaseQuantities:Height = None
+     custom double aeco:props:Qto_WallBaseQuantities:NetSideArea = None
+     custom double aeco:props:Qto_WallBaseQuantities:NetVolume = None
      custom double aeco:props:Qto_WallBaseQuantities:Width = None
      bool aeco:wall:flipped = None
-     double aeco:wall:height = 6
-     bool aeco:wall:isExternal = 0
-     bool aeco:wall:loadBearing = 1
+     double aeco:wall:height = 5.999999999999999
+     bool aeco:wall:isExternal = 1
+     bool aeco:wall:loadBearing = 0
      uniform token aeco:wall:locationLine = None
     }
 
@@ -1469,11 +1635,13 @@ over "demo_datacentre_01"
      custom double aeco:props:Qto_WallBaseQuantities:GrossSideArea = None
      custom double aeco:props:Qto_WallBaseQuantities:GrossVolume = None
      custom double aeco:props:Qto_WallBaseQuantities:Height = None
+     custom double aeco:props:Qto_WallBaseQuantities:NetSideArea = None
+     custom double aeco:props:Qto_WallBaseQuantities:NetVolume = None
      custom double aeco:props:Qto_WallBaseQuantities:Width = None
      bool aeco:wall:flipped = None
-     double aeco:wall:height = 6
-     bool aeco:wall:isExternal = 0
-     bool aeco:wall:loadBearing = 1
+     double aeco:wall:height = 5.999999999999999
+     bool aeco:wall:isExternal = 1
+     bool aeco:wall:loadBearing = 0
      uniform token aeco:wall:locationLine = None
     }
 
@@ -1486,11 +1654,13 @@ over "demo_datacentre_01"
      custom double aeco:props:Qto_WallBaseQuantities:GrossSideArea = None
      custom double aeco:props:Qto_WallBaseQuantities:GrossVolume = None
      custom double aeco:props:Qto_WallBaseQuantities:Height = None
+     custom double aeco:props:Qto_WallBaseQuantities:NetSideArea = None
+     custom double aeco:props:Qto_WallBaseQuantities:NetVolume = None
      custom double aeco:props:Qto_WallBaseQuantities:Width = None
      bool aeco:wall:flipped = None
-     double aeco:wall:height = 4
+     double aeco:wall:height = 3.9999999999999996
      bool aeco:wall:isExternal = 1
-     bool aeco:wall:loadBearing = 1
+     bool aeco:wall:loadBearing = 0
      uniform token aeco:wall:locationLine = None
     }
 
@@ -1503,11 +1673,13 @@ over "demo_datacentre_01"
      custom double aeco:props:Qto_WallBaseQuantities:GrossSideArea = None
      custom double aeco:props:Qto_WallBaseQuantities:GrossVolume = None
      custom double aeco:props:Qto_WallBaseQuantities:Height = None
+     custom double aeco:props:Qto_WallBaseQuantities:NetSideArea = None
+     custom double aeco:props:Qto_WallBaseQuantities:NetVolume = None
      custom double aeco:props:Qto_WallBaseQuantities:Width = None
      bool aeco:wall:flipped = None
-     double aeco:wall:height = 6
-     bool aeco:wall:isExternal = 0
-     bool aeco:wall:loadBearing = 1
+     double aeco:wall:height = 5.999999999999999
+     bool aeco:wall:isExternal = 1
+     bool aeco:wall:loadBearing = 0
      uniform token aeco:wall:locationLine = None
     }
 
@@ -1520,10 +1692,12 @@ over "demo_datacentre_01"
      custom double aeco:props:Qto_WallBaseQuantities:GrossSideArea = None
      custom double aeco:props:Qto_WallBaseQuantities:GrossVolume = None
      custom double aeco:props:Qto_WallBaseQuantities:Height = None
+     custom double aeco:props:Qto_WallBaseQuantities:NetSideArea = None
+     custom double aeco:props:Qto_WallBaseQuantities:NetVolume = None
      custom double aeco:props:Qto_WallBaseQuantities:Width = None
      bool aeco:wall:flipped = None
-     double aeco:wall:height = 3.75
-     bool aeco:wall:isExternal = 0
+     double aeco:wall:height = 3.7499999999999996
+     bool aeco:wall:isExternal = 1
      bool aeco:wall:loadBearing = 0
      uniform token aeco:wall:locationLine = None
     }
@@ -1537,10 +1711,12 @@ over "demo_datacentre_01"
      custom double aeco:props:Qto_WallBaseQuantities:GrossSideArea = None
      custom double aeco:props:Qto_WallBaseQuantities:GrossVolume = None
      custom double aeco:props:Qto_WallBaseQuantities:Height = None
+     custom double aeco:props:Qto_WallBaseQuantities:NetSideArea = None
+     custom double aeco:props:Qto_WallBaseQuantities:NetVolume = None
      custom double aeco:props:Qto_WallBaseQuantities:Width = None
      bool aeco:wall:flipped = None
-     double aeco:wall:height = 6
-     bool aeco:wall:isExternal = 0
+     double aeco:wall:height = 5.999999999999999
+     bool aeco:wall:isExternal = 1
      bool aeco:wall:loadBearing = 0
      uniform token aeco:wall:locationLine = None
     }
@@ -1554,11 +1730,13 @@ over "demo_datacentre_01"
      custom double aeco:props:Qto_WallBaseQuantities:GrossSideArea = None
      custom double aeco:props:Qto_WallBaseQuantities:GrossVolume = None
      custom double aeco:props:Qto_WallBaseQuantities:Height = None
+     custom double aeco:props:Qto_WallBaseQuantities:NetSideArea = None
+     custom double aeco:props:Qto_WallBaseQuantities:NetVolume = None
      custom double aeco:props:Qto_WallBaseQuantities:Width = None
      bool aeco:wall:flipped = None
-     double aeco:wall:height = 4
+     double aeco:wall:height = 3.9999999999999996
      bool aeco:wall:isExternal = 1
-     bool aeco:wall:loadBearing = 1
+     bool aeco:wall:loadBearing = 0
      uniform token aeco:wall:locationLine = None
     }
 
@@ -1571,11 +1749,13 @@ over "demo_datacentre_01"
      custom double aeco:props:Qto_WallBaseQuantities:GrossSideArea = None
      custom double aeco:props:Qto_WallBaseQuantities:GrossVolume = None
      custom double aeco:props:Qto_WallBaseQuantities:Height = None
+     custom double aeco:props:Qto_WallBaseQuantities:NetSideArea = None
+     custom double aeco:props:Qto_WallBaseQuantities:NetVolume = None
      custom double aeco:props:Qto_WallBaseQuantities:Width = None
      bool aeco:wall:flipped = None
-     double aeco:wall:height = 6
-     bool aeco:wall:isExternal = 0
-     bool aeco:wall:loadBearing = 1
+     double aeco:wall:height = 5.999999999999999
+     bool aeco:wall:isExternal = 1
+     bool aeco:wall:loadBearing = 0
      uniform token aeco:wall:locationLine = None
     }
 
@@ -1588,11 +1768,13 @@ over "demo_datacentre_01"
      custom double aeco:props:Qto_WallBaseQuantities:GrossSideArea = None
      custom double aeco:props:Qto_WallBaseQuantities:GrossVolume = None
      custom double aeco:props:Qto_WallBaseQuantities:Height = None
+     custom double aeco:props:Qto_WallBaseQuantities:NetSideArea = None
+     custom double aeco:props:Qto_WallBaseQuantities:NetVolume = None
      custom double aeco:props:Qto_WallBaseQuantities:Width = None
      bool aeco:wall:flipped = None
-     double aeco:wall:height = 6
-     bool aeco:wall:isExternal = 0
-     bool aeco:wall:loadBearing = 1
+     double aeco:wall:height = 5.999999999999999
+     bool aeco:wall:isExternal = 1
+     bool aeco:wall:loadBearing = 0
      uniform token aeco:wall:locationLine = None
     }
 
@@ -1605,11 +1787,13 @@ over "demo_datacentre_01"
      custom double aeco:props:Qto_WallBaseQuantities:GrossSideArea = None
      custom double aeco:props:Qto_WallBaseQuantities:GrossVolume = None
      custom double aeco:props:Qto_WallBaseQuantities:Height = None
+     custom double aeco:props:Qto_WallBaseQuantities:NetSideArea = None
+     custom double aeco:props:Qto_WallBaseQuantities:NetVolume = None
      custom double aeco:props:Qto_WallBaseQuantities:Width = None
      bool aeco:wall:flipped = None
-     double aeco:wall:height = 7
+     double aeco:wall:height = 6.999999999999999
      bool aeco:wall:isExternal = 1
-     bool aeco:wall:loadBearing = 1
+     bool aeco:wall:loadBearing = 0
      uniform token aeco:wall:locationLine = None
     }
    }
@@ -1625,10 +1809,12 @@ over "demo_datacentre_01"
      custom double aeco:props:Qto_WallBaseQuantities:GrossSideArea = None
      custom double aeco:props:Qto_WallBaseQuantities:GrossVolume = None
      custom double aeco:props:Qto_WallBaseQuantities:Height = None
+     custom double aeco:props:Qto_WallBaseQuantities:NetSideArea = None
+     custom double aeco:props:Qto_WallBaseQuantities:NetVolume = None
      custom double aeco:props:Qto_WallBaseQuantities:Width = None
      bool aeco:wall:flipped = None
-     double aeco:wall:height = 3
-     bool aeco:wall:isExternal = 0
+     double aeco:wall:height = 2.9999999999999982
+     bool aeco:wall:isExternal = 1
      bool aeco:wall:loadBearing = 0
      uniform token aeco:wall:locationLine = None
     }
@@ -1642,11 +1828,13 @@ over "demo_datacentre_01"
      custom double aeco:props:Qto_WallBaseQuantities:GrossSideArea = None
      custom double aeco:props:Qto_WallBaseQuantities:GrossVolume = None
      custom double aeco:props:Qto_WallBaseQuantities:Height = None
+     custom double aeco:props:Qto_WallBaseQuantities:NetSideArea = None
+     custom double aeco:props:Qto_WallBaseQuantities:NetVolume = None
      custom double aeco:props:Qto_WallBaseQuantities:Width = None
      bool aeco:wall:flipped = None
-     double aeco:wall:height = 3
+     double aeco:wall:height = 2.9999999999999982
      bool aeco:wall:isExternal = 1
-     bool aeco:wall:loadBearing = 1
+     bool aeco:wall:loadBearing = 0
      uniform token aeco:wall:locationLine = None
     }
 
@@ -1659,11 +1847,13 @@ over "demo_datacentre_01"
      custom double aeco:props:Qto_WallBaseQuantities:GrossSideArea = None
      custom double aeco:props:Qto_WallBaseQuantities:GrossVolume = None
      custom double aeco:props:Qto_WallBaseQuantities:Height = None
+     custom double aeco:props:Qto_WallBaseQuantities:NetSideArea = None
+     custom double aeco:props:Qto_WallBaseQuantities:NetVolume = None
      custom double aeco:props:Qto_WallBaseQuantities:Width = None
      bool aeco:wall:flipped = None
-     double aeco:wall:height = 3
+     double aeco:wall:height = 2.9999999999999982
      bool aeco:wall:isExternal = 1
-     bool aeco:wall:loadBearing = 1
+     bool aeco:wall:loadBearing = 0
      uniform token aeco:wall:locationLine = None
     }
 
@@ -1676,10 +1866,12 @@ over "demo_datacentre_01"
      custom double aeco:props:Qto_WallBaseQuantities:GrossSideArea = None
      custom double aeco:props:Qto_WallBaseQuantities:GrossVolume = None
      custom double aeco:props:Qto_WallBaseQuantities:Height = None
+     custom double aeco:props:Qto_WallBaseQuantities:NetSideArea = None
+     custom double aeco:props:Qto_WallBaseQuantities:NetVolume = None
      custom double aeco:props:Qto_WallBaseQuantities:Width = None
      bool aeco:wall:flipped = None
-     double aeco:wall:height = 3
-     bool aeco:wall:isExternal = 0
+     double aeco:wall:height = 2.9999999999999982
+     bool aeco:wall:isExternal = 1
      bool aeco:wall:loadBearing = 0
      uniform token aeco:wall:locationLine = None
     }
@@ -1693,11 +1885,13 @@ over "demo_datacentre_01"
      custom double aeco:props:Qto_WallBaseQuantities:GrossSideArea = None
      custom double aeco:props:Qto_WallBaseQuantities:GrossVolume = None
      custom double aeco:props:Qto_WallBaseQuantities:Height = None
+     custom double aeco:props:Qto_WallBaseQuantities:NetSideArea = None
+     custom double aeco:props:Qto_WallBaseQuantities:NetVolume = None
      custom double aeco:props:Qto_WallBaseQuantities:Width = None
      bool aeco:wall:flipped = None
-     double aeco:wall:height = 3
+     double aeco:wall:height = 2.9999999999999982
      bool aeco:wall:isExternal = 1
-     bool aeco:wall:loadBearing = 1
+     bool aeco:wall:loadBearing = 0
      uniform token aeco:wall:locationLine = None
     }
 
@@ -1710,10 +1904,12 @@ over "demo_datacentre_01"
      custom double aeco:props:Qto_WallBaseQuantities:GrossSideArea = None
      custom double aeco:props:Qto_WallBaseQuantities:GrossVolume = None
      custom double aeco:props:Qto_WallBaseQuantities:Height = None
+     custom double aeco:props:Qto_WallBaseQuantities:NetSideArea = None
+     custom double aeco:props:Qto_WallBaseQuantities:NetVolume = None
      custom double aeco:props:Qto_WallBaseQuantities:Width = None
      bool aeco:wall:flipped = None
-     double aeco:wall:height = 3
-     bool aeco:wall:isExternal = 0
+     double aeco:wall:height = 2.9999999999999982
+     bool aeco:wall:isExternal = 1
      bool aeco:wall:loadBearing = 0
      uniform token aeco:wall:locationLine = None
     }
@@ -1727,10 +1923,12 @@ over "demo_datacentre_01"
      custom double aeco:props:Qto_WallBaseQuantities:GrossSideArea = None
      custom double aeco:props:Qto_WallBaseQuantities:GrossVolume = None
      custom double aeco:props:Qto_WallBaseQuantities:Height = None
+     custom double aeco:props:Qto_WallBaseQuantities:NetSideArea = None
+     custom double aeco:props:Qto_WallBaseQuantities:NetVolume = None
      custom double aeco:props:Qto_WallBaseQuantities:Width = None
      bool aeco:wall:flipped = None
-     double aeco:wall:height = 3
-     bool aeco:wall:isExternal = 0
+     double aeco:wall:height = 2.9999999999999982
+     bool aeco:wall:isExternal = 1
      bool aeco:wall:loadBearing = 0
      uniform token aeco:wall:locationLine = None
     }
@@ -1744,10 +1942,12 @@ over "demo_datacentre_01"
      custom double aeco:props:Qto_WallBaseQuantities:GrossSideArea = None
      custom double aeco:props:Qto_WallBaseQuantities:GrossVolume = None
      custom double aeco:props:Qto_WallBaseQuantities:Height = None
+     custom double aeco:props:Qto_WallBaseQuantities:NetSideArea = None
+     custom double aeco:props:Qto_WallBaseQuantities:NetVolume = None
      custom double aeco:props:Qto_WallBaseQuantities:Width = None
      bool aeco:wall:flipped = None
-     double aeco:wall:height = 3
-     bool aeco:wall:isExternal = 0
+     double aeco:wall:height = 2.9999999999999982
+     bool aeco:wall:isExternal = 1
      bool aeco:wall:loadBearing = 0
      uniform token aeco:wall:locationLine = None
     }
@@ -1761,10 +1961,12 @@ over "demo_datacentre_01"
      custom double aeco:props:Qto_WallBaseQuantities:GrossSideArea = None
      custom double aeco:props:Qto_WallBaseQuantities:GrossVolume = None
      custom double aeco:props:Qto_WallBaseQuantities:Height = None
+     custom double aeco:props:Qto_WallBaseQuantities:NetSideArea = None
+     custom double aeco:props:Qto_WallBaseQuantities:NetVolume = None
      custom double aeco:props:Qto_WallBaseQuantities:Width = None
      bool aeco:wall:flipped = None
-     double aeco:wall:height = 3
-     bool aeco:wall:isExternal = 0
+     double aeco:wall:height = 2.9999999999999982
+     bool aeco:wall:isExternal = 1
      bool aeco:wall:loadBearing = 0
      uniform token aeco:wall:locationLine = None
     }
@@ -1778,10 +1980,12 @@ over "demo_datacentre_01"
      custom double aeco:props:Qto_WallBaseQuantities:GrossSideArea = None
      custom double aeco:props:Qto_WallBaseQuantities:GrossVolume = None
      custom double aeco:props:Qto_WallBaseQuantities:Height = None
+     custom double aeco:props:Qto_WallBaseQuantities:NetSideArea = None
+     custom double aeco:props:Qto_WallBaseQuantities:NetVolume = None
      custom double aeco:props:Qto_WallBaseQuantities:Width = None
      bool aeco:wall:flipped = None
-     double aeco:wall:height = 3
-     bool aeco:wall:isExternal = 0
+     double aeco:wall:height = 2.9999999999999982
+     bool aeco:wall:isExternal = 1
      bool aeco:wall:loadBearing = 0
      uniform token aeco:wall:locationLine = None
     }
@@ -1795,11 +1999,13 @@ over "demo_datacentre_01"
      custom double aeco:props:Qto_WallBaseQuantities:GrossSideArea = None
      custom double aeco:props:Qto_WallBaseQuantities:GrossVolume = None
      custom double aeco:props:Qto_WallBaseQuantities:Height = None
+     custom double aeco:props:Qto_WallBaseQuantities:NetSideArea = None
+     custom double aeco:props:Qto_WallBaseQuantities:NetVolume = None
      custom double aeco:props:Qto_WallBaseQuantities:Width = None
      bool aeco:wall:flipped = None
-     double aeco:wall:height = 3
+     double aeco:wall:height = 2.9999999999999982
      bool aeco:wall:isExternal = 1
-     bool aeco:wall:loadBearing = 1
+     bool aeco:wall:loadBearing = 0
      uniform token aeco:wall:locationLine = None
     }
 
@@ -1812,11 +2018,13 @@ over "demo_datacentre_01"
      custom double aeco:props:Qto_WallBaseQuantities:GrossSideArea = None
      custom double aeco:props:Qto_WallBaseQuantities:GrossVolume = None
      custom double aeco:props:Qto_WallBaseQuantities:Height = None
+     custom double aeco:props:Qto_WallBaseQuantities:NetSideArea = None
+     custom double aeco:props:Qto_WallBaseQuantities:NetVolume = None
      custom double aeco:props:Qto_WallBaseQuantities:Width = None
      bool aeco:wall:flipped = None
-     double aeco:wall:height = 3
+     double aeco:wall:height = 2.9999999999999982
      bool aeco:wall:isExternal = 1
-     bool aeco:wall:loadBearing = 1
+     bool aeco:wall:loadBearing = 0
      uniform token aeco:wall:locationLine = None
     }
 
@@ -1829,10 +2037,12 @@ over "demo_datacentre_01"
      custom double aeco:props:Qto_WallBaseQuantities:GrossSideArea = None
      custom double aeco:props:Qto_WallBaseQuantities:GrossVolume = None
      custom double aeco:props:Qto_WallBaseQuantities:Height = None
+     custom double aeco:props:Qto_WallBaseQuantities:NetSideArea = None
+     custom double aeco:props:Qto_WallBaseQuantities:NetVolume = None
      custom double aeco:props:Qto_WallBaseQuantities:Width = None
      bool aeco:wall:flipped = None
-     double aeco:wall:height = 3
-     bool aeco:wall:isExternal = 0
+     double aeco:wall:height = 2.9999999999999982
+     bool aeco:wall:isExternal = 1
      bool aeco:wall:loadBearing = 0
      uniform token aeco:wall:locationLine = None
     }
@@ -1846,11 +2056,13 @@ over "demo_datacentre_01"
      custom double aeco:props:Qto_WallBaseQuantities:GrossSideArea = None
      custom double aeco:props:Qto_WallBaseQuantities:GrossVolume = None
      custom double aeco:props:Qto_WallBaseQuantities:Height = None
+     custom double aeco:props:Qto_WallBaseQuantities:NetSideArea = None
+     custom double aeco:props:Qto_WallBaseQuantities:NetVolume = None
      custom double aeco:props:Qto_WallBaseQuantities:Width = None
      bool aeco:wall:flipped = None
-     double aeco:wall:height = 3
+     double aeco:wall:height = 2.9999999999999982
      bool aeco:wall:isExternal = 1
-     bool aeco:wall:loadBearing = 1
+     bool aeco:wall:loadBearing = 0
      uniform token aeco:wall:locationLine = None
     }
 
@@ -1863,10 +2075,12 @@ over "demo_datacentre_01"
      custom double aeco:props:Qto_WallBaseQuantities:GrossSideArea = None
      custom double aeco:props:Qto_WallBaseQuantities:GrossVolume = None
      custom double aeco:props:Qto_WallBaseQuantities:Height = None
+     custom double aeco:props:Qto_WallBaseQuantities:NetSideArea = None
+     custom double aeco:props:Qto_WallBaseQuantities:NetVolume = None
      custom double aeco:props:Qto_WallBaseQuantities:Width = None
      bool aeco:wall:flipped = None
-     double aeco:wall:height = 3
-     bool aeco:wall:isExternal = 0
+     double aeco:wall:height = 2.9999999999999982
+     bool aeco:wall:isExternal = 1
      bool aeco:wall:loadBearing = 0
      uniform token aeco:wall:locationLine = None
     }
@@ -1880,11 +2094,13 @@ over "demo_datacentre_01"
      custom double aeco:props:Qto_WallBaseQuantities:GrossSideArea = None
      custom double aeco:props:Qto_WallBaseQuantities:GrossVolume = None
      custom double aeco:props:Qto_WallBaseQuantities:Height = None
+     custom double aeco:props:Qto_WallBaseQuantities:NetSideArea = None
+     custom double aeco:props:Qto_WallBaseQuantities:NetVolume = None
      custom double aeco:props:Qto_WallBaseQuantities:Width = None
      bool aeco:wall:flipped = None
-     double aeco:wall:height = 3
+     double aeco:wall:height = 2.9999999999999982
      bool aeco:wall:isExternal = 1
-     bool aeco:wall:loadBearing = 1
+     bool aeco:wall:loadBearing = 0
      uniform token aeco:wall:locationLine = None
     }
 
@@ -1897,11 +2113,13 @@ over "demo_datacentre_01"
      custom double aeco:props:Qto_WallBaseQuantities:GrossSideArea = None
      custom double aeco:props:Qto_WallBaseQuantities:GrossVolume = None
      custom double aeco:props:Qto_WallBaseQuantities:Height = None
+     custom double aeco:props:Qto_WallBaseQuantities:NetSideArea = None
+     custom double aeco:props:Qto_WallBaseQuantities:NetVolume = None
      custom double aeco:props:Qto_WallBaseQuantities:Width = None
      bool aeco:wall:flipped = None
-     double aeco:wall:height = 3
+     double aeco:wall:height = 2.9999999999999982
      bool aeco:wall:isExternal = 1
-     bool aeco:wall:loadBearing = 1
+     bool aeco:wall:loadBearing = 0
      uniform token aeco:wall:locationLine = None
     }
 
@@ -1914,11 +2132,13 @@ over "demo_datacentre_01"
      custom double aeco:props:Qto_WallBaseQuantities:GrossSideArea = None
      custom double aeco:props:Qto_WallBaseQuantities:GrossVolume = None
      custom double aeco:props:Qto_WallBaseQuantities:Height = None
+     custom double aeco:props:Qto_WallBaseQuantities:NetSideArea = None
+     custom double aeco:props:Qto_WallBaseQuantities:NetVolume = None
      custom double aeco:props:Qto_WallBaseQuantities:Width = None
      bool aeco:wall:flipped = None
-     double aeco:wall:height = 3
+     double aeco:wall:height = 2.9999999999999982
      bool aeco:wall:isExternal = 1
-     bool aeco:wall:loadBearing = 1
+     bool aeco:wall:loadBearing = 0
      uniform token aeco:wall:locationLine = None
     }
 
@@ -1931,11 +2151,13 @@ over "demo_datacentre_01"
      custom double aeco:props:Qto_WallBaseQuantities:GrossSideArea = None
      custom double aeco:props:Qto_WallBaseQuantities:GrossVolume = None
      custom double aeco:props:Qto_WallBaseQuantities:Height = None
+     custom double aeco:props:Qto_WallBaseQuantities:NetSideArea = None
+     custom double aeco:props:Qto_WallBaseQuantities:NetVolume = None
      custom double aeco:props:Qto_WallBaseQuantities:Width = None
      bool aeco:wall:flipped = None
-     double aeco:wall:height = 3
+     double aeco:wall:height = 2.9999999999999982
      bool aeco:wall:isExternal = 1
-     bool aeco:wall:loadBearing = 1
+     bool aeco:wall:loadBearing = 0
      uniform token aeco:wall:locationLine = None
     }
    }
@@ -1944,7 +2166,7 @@ over "demo_datacentre_01"
 
  over "_TypeCatalog"
  {
-  over "External_Wall_300" (
+  over "Basic_Wall_DC_External" (
    prepend apiSchemas = ["AecoBuildUpAPI"]
    customData = {
     dictionary aeco = {
@@ -1958,10 +2180,10 @@ over "demo_datacentre_01"
    token[] aeco:buildUp:functions = ["other"]
    string[] aeco:buildUp:materials = [""]
    int[] aeco:buildUp:priorities = [0]
-   double[] aeco:buildUp:thicknesses = [0.3]
+   double[] aeco:buildUp:thicknesses = [0.29999999999999993]
   }
 
-  over "Internal_Wall_150" (
+  over "Basic_Wall_DC_Internal" (
    prepend apiSchemas = ["AecoBuildUpAPI"]
    customData = {
     dictionary aeco = {
@@ -1975,10 +2197,10 @@ over "demo_datacentre_01"
    token[] aeco:buildUp:functions = ["other"]
    string[] aeco:buildUp:materials = [""]
    int[] aeco:buildUp:priorities = [0]
-   double[] aeco:buildUp:thicknesses = [0.15]
+   double[] aeco:buildUp:thicknesses = [0.14999999999999997]
   }
 
-  over "Fire_Wall_200" (
+  over "Basic_Wall_DC_Fire" (
    prepend apiSchemas = ["AecoBuildUpAPI"]
    customData = {
     dictionary aeco = {

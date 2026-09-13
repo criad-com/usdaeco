@@ -2,11 +2,11 @@
 (
  customLayerData = {
   string "aeco:layer:package" = "solid"
-  string "aeco:layer:producer" = "committed result v0.1.5"
+  string "aeco:layer:producer" = "committed result v0.1.6"
   string "aeco:layer:role" = "analysis"
   string "aeco:layer:source" = "kind/usdaeco-solid/examples/datacentre/result/layers/out/presentation.usda"
   string "aeco:layer:sourceSha256" = "efed56f4bb9da6a7de5c4e3a01f7f7483022fef4d37ecea4825b7bf6c3dc5517"
-  string "aeco:layer:tag" = "v0.1.5"
+  string "aeco:layer:tag" = "v0.1.6"
  }
 )
 

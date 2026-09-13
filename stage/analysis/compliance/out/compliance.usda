@@ -2,14 +2,15 @@
 (
  customLayerData = {
   string "aeco:layer:package" = "compliance"
-  string "aeco:layer:producer" = "hook v0.1.3"
+  string "aeco:layer:producer" = "hook v0.2.1"
   string "aeco:layer:role" = "analysis"
   string "aeco:layer:source" = "kind/usdaeco-compliance/examples/datacentre/run.py"
-  string "aeco:layer:sourceSha256" = "c9ca2d1e189b819ab74c294ca01392402d15e006406857b996b88028b58e6b11"
-  string "aeco:layer:tag" = "v0.1.3"
+  string "aeco:layer:sourceSha256" = "59dc10df2afa683537a3351b5dc2c683359b9019f6569593b7ce740388dce924"
+  string "aeco:layer:tag" = "v0.2.1"
   string aecoComplianceRole = "result"
-  string evaluatorVersion = "0.1.0"
-  string inputFingerprint = "aa5bb0fbc19ed2bf9534031e1312a9218a4e9fef78ed6c430e9c361cdf49a1e0"
+  string aecoComplianceStudyRoot = "/Studies/compliance"
+  string evaluatorVersion = "0.2.0"
+  string inputFingerprint = "d51c3cc5a6d096490ddcfaebc98737844638bf4562bb83c6d40ab9c890508810"
  }
  fallbackPrimTypes = {
   token[] AecoRequirement = ["Scope"]
@@ -31,34 +32,34 @@ over "demo_datacentre_01"
       prepend apiSchemas = ["AecoComplianceAPI"]
      )
      {
-      string aeco:compliance:report = """/Specifications/accessibility/Clause01 | Illustrative accessibility design exercise; not a transcription of a regulation | measured:centreHeightAboveFloor = 1.2 m | between [0.9, 1.2] +/- 1e-06 | pass
-/Specifications/employer_security/Clause01 | Demo employer security brief, illustrative reader clause 1 | measured:centreHeightAboveFloor = 1.2 m | between [1.05, 1.2] +/- 1e-06 | pass
-/Specifications/employer_security/Clause02 | Demo employer security brief, illustrative reader clause 1 | measured:distanceToDoorLeafEdge = 0.325 m | between [0.3, 0.5] +/- 1e-06 | pass
-/Specifications/employer_security/Clause03 | Demo employer security brief, illustrative reader clause 1 | measured:sideOfDoor = pull 1 | eq ['pull'] +/- 0 | pass
-/Specifications/reader_datasheet/Clause01 | Generic demo reader datasheet, illustrative capture clause 1 | measured:centreHeightAboveFloor = 1.2 m | between [1.0, 1.7] +/- 1e-06 | pass"""
+      string aeco:compliance:report = """/Studies/compliance/Specifications/accessibility/Clause01 | Illustrative accessibility design exercise; not a transcription of a regulation | measured:centreHeightAboveFloor = 1.2 m | between [0.9, 1.2] +/- 1e-06 | pass
+/Studies/compliance/Specifications/employer_security/Clause01 | Demo employer security brief, illustrative reader clause 1 | measured:centreHeightAboveFloor = 1.2 m | between [1.05, 1.2] +/- 1e-06 | pass
+/Studies/compliance/Specifications/employer_security/Clause02 | Demo employer security brief, illustrative reader clause 1 | measured:distanceToDoorLeafEdge = 0.274 m | between [0.3, 0.5] +/- 1e-06 | fail
+/Studies/compliance/Specifications/employer_security/Clause03 | Demo employer security brief, illustrative reader clause 1 | measured:sideOfDoor = pull 1 | eq ['pull'] +/- 0 | pass
+/Studies/compliance/Specifications/reader_datasheet/Clause01 | Generic demo reader datasheet, illustrative capture clause 1 | measured:centreHeightAboveFloor = 1.2 m | between [1.0, 1.7] +/- 1e-06 | pass"""
       rel aeco:compliance:specifications = [
-       </Specifications/accessibility>,
-       </Specifications/employer_security>,
-       </Specifications/reader_datasheet>,
+       </Studies/compliance/Specifications/accessibility>,
+       </Studies/compliance/Specifications/employer_security>,
+       </Studies/compliance/Specifications/reader_datasheet>,
       ]
-      uniform token aeco:compliance:status = "pass"
+      uniform token aeco:compliance:status = "fail"
      }
 
      over "Iris_Scanner_door_hall_b_w" (
       prepend apiSchemas = ["AecoComplianceAPI"]
      )
      {
-      string aeco:compliance:report = """/Specifications/accessibility/Clause01 | Illustrative accessibility design exercise; not a transcription of a regulation | measured:centreHeightAboveFloor = 1.2 m | between [0.9, 1.2] +/- 1e-06 | pass
-/Specifications/employer_security/Clause01 | Demo employer security brief, illustrative reader clause 1 | measured:centreHeightAboveFloor = 1.2 m | between [1.05, 1.2] +/- 1e-06 | pass
-/Specifications/employer_security/Clause02 | Demo employer security brief, illustrative reader clause 1 | measured:distanceToDoorLeafEdge = 0.325 m | between [0.3, 0.5] +/- 1e-06 | pass
-/Specifications/employer_security/Clause03 | Demo employer security brief, illustrative reader clause 1 | measured:sideOfDoor = pull 1 | eq ['pull'] +/- 0 | pass
-/Specifications/reader_datasheet/Clause01 | Generic demo reader datasheet, illustrative capture clause 1 | measured:centreHeightAboveFloor = 1.2 m | between [1.0, 1.7] +/- 1e-06 | pass"""
+      string aeco:compliance:report = """/Studies/compliance/Specifications/accessibility/Clause01 | Illustrative accessibility design exercise; not a transcription of a regulation | measured:centreHeightAboveFloor = 1.2 m | between [0.9, 1.2] +/- 1e-06 | pass
+/Studies/compliance/Specifications/employer_security/Clause01 | Demo employer security brief, illustrative reader clause 1 | measured:centreHeightAboveFloor = 1.2 m | between [1.05, 1.2] +/- 1e-06 | pass
+/Studies/compliance/Specifications/employer_security/Clause02 | Demo employer security brief, illustrative reader clause 1 | measured:distanceToDoorLeafEdge = 0.274 m | between [0.3, 0.5] +/- 1e-06 | fail
+/Studies/compliance/Specifications/employer_security/Clause03 | Demo employer security brief, illustrative reader clause 1 | measured:sideOfDoor = pull 1 | eq ['pull'] +/- 0 | pass
+/Studies/compliance/Specifications/reader_datasheet/Clause01 | Generic demo reader datasheet, illustrative capture clause 1 | measured:centreHeightAboveFloor = 1.2 m | between [1.0, 1.7] +/- 1e-06 | pass"""
       rel aeco:compliance:specifications = [
-       </Specifications/accessibility>,
-       </Specifications/employer_security>,
-       </Specifications/reader_datasheet>,
+       </Studies/compliance/Specifications/accessibility>,
+       </Studies/compliance/Specifications/employer_security>,
+       </Studies/compliance/Specifications/reader_datasheet>,
       ]
-      uniform token aeco:compliance:status = "pass"
+      uniform token aeco:compliance:status = "fail"
      }
     }
 
@@ -68,17 +69,17 @@ over "demo_datacentre_01"
       prepend apiSchemas = ["AecoComplianceAPI"]
      )
      {
-      string aeco:compliance:report = """/Specifications/accessibility/Clause01 | Illustrative accessibility design exercise; not a transcription of a regulation | measured:centreHeightAboveFloor = 1.2 m | between [0.9, 1.2] +/- 1e-06 | pass
-/Specifications/employer_security/Clause01 | Demo employer security brief, illustrative reader clause 1 | measured:centreHeightAboveFloor = 1.2 m | between [1.05, 1.2] +/- 1e-06 | pass
-/Specifications/employer_security/Clause02 | Demo employer security brief, illustrative reader clause 1 | measured:distanceToDoorLeafEdge = 0.325 m | between [0.3, 0.5] +/- 1e-06 | pass
-/Specifications/employer_security/Clause03 | Demo employer security brief, illustrative reader clause 1 | measured:sideOfDoor = pull 1 | eq ['pull'] +/- 0 | pass
-/Specifications/reader_datasheet/Clause01 | Generic demo reader datasheet, illustrative capture clause 1 | measured:centreHeightAboveFloor = 1.2 m | between [1.0, 1.7] +/- 1e-06 | pass"""
+      string aeco:compliance:report = """/Studies/compliance/Specifications/accessibility/Clause01 | Illustrative accessibility design exercise; not a transcription of a regulation | measured:centreHeightAboveFloor = 1.2 m | between [0.9, 1.2] +/- 1e-06 | pass
+/Studies/compliance/Specifications/employer_security/Clause01 | Demo employer security brief, illustrative reader clause 1 | measured:centreHeightAboveFloor = 1.2 m | between [1.05, 1.2] +/- 1e-06 | pass
+/Studies/compliance/Specifications/employer_security/Clause02 | Demo employer security brief, illustrative reader clause 1 | measured:distanceToDoorLeafEdge = 0.274 m | between [0.3, 0.5] +/- 1e-06 | fail
+/Studies/compliance/Specifications/employer_security/Clause03 | Demo employer security brief, illustrative reader clause 1 | measured:sideOfDoor = pull 1 | eq ['pull'] +/- 0 | pass
+/Studies/compliance/Specifications/reader_datasheet/Clause01 | Generic demo reader datasheet, illustrative capture clause 1 | measured:centreHeightAboveFloor = 1.2 m | between [1.0, 1.7] +/- 1e-06 | pass"""
       rel aeco:compliance:specifications = [
-       </Specifications/accessibility>,
-       </Specifications/employer_security>,
-       </Specifications/reader_datasheet>,
+       </Studies/compliance/Specifications/accessibility>,
+       </Studies/compliance/Specifications/employer_security>,
+       </Studies/compliance/Specifications/reader_datasheet>,
       ]
-      uniform token aeco:compliance:status = "pass"
+      uniform token aeco:compliance:status = "fail"
      }
     }
 
@@ -88,32 +89,32 @@ over "demo_datacentre_01"
       prepend apiSchemas = ["AecoComplianceAPI"]
      )
      {
-      string aeco:compliance:report = """/Specifications/accessibility/Clause01 | Illustrative accessibility design exercise; not a transcription of a regulation | measured:centreHeightAboveFloor = 1.2 m | between [0.9, 1.2] +/- 1e-06 | pass
-/Specifications/employer_security/Clause01 | Demo employer security brief, illustrative reader clause 1 | measured:centreHeightAboveFloor = 1.2 m | between [1.05, 1.2] +/- 1e-06 | pass
-/Specifications/employer_security/Clause02 | Demo employer security brief, illustrative reader clause 1 | measured:distanceToDoorLeafEdge = 0.325 m | between [0.3, 0.5] +/- 1e-06 | pass
-/Specifications/employer_security/Clause03 | Demo employer security brief, illustrative reader clause 1 | measured:sideOfDoor = pull 1 | eq ['pull'] +/- 0 | pass
-/Specifications/reader_datasheet/Clause01 | Generic demo reader datasheet, illustrative capture clause 1 | measured:centreHeightAboveFloor = 1.2 m | between [1.0, 1.7] +/- 1e-06 | pass"""
+      string aeco:compliance:report = """/Studies/compliance/Specifications/accessibility/Clause01 | Illustrative accessibility design exercise; not a transcription of a regulation | measured:centreHeightAboveFloor = 1.2 m | between [0.9, 1.2] +/- 1e-06 | pass
+/Studies/compliance/Specifications/employer_security/Clause01 | Demo employer security brief, illustrative reader clause 1 | measured:centreHeightAboveFloor = 1.2 m | between [1.05, 1.2] +/- 1e-06 | pass
+/Studies/compliance/Specifications/employer_security/Clause02 | Demo employer security brief, illustrative reader clause 1 | measured:distanceToDoorLeafEdge = 0.274 m | between [0.3, 0.5] +/- 1e-06 | fail
+/Studies/compliance/Specifications/employer_security/Clause03 | Demo employer security brief, illustrative reader clause 1 | measured:sideOfDoor = pull 1 | eq ['pull'] +/- 0 | pass
+/Studies/compliance/Specifications/reader_datasheet/Clause01 | Generic demo reader datasheet, illustrative capture clause 1 | measured:centreHeightAboveFloor = 1.2 m | between [1.0, 1.7] +/- 1e-06 | pass"""
       rel aeco:compliance:specifications = [
-       </Specifications/accessibility>,
-       </Specifications/employer_security>,
-       </Specifications/reader_datasheet>,
+       </Studies/compliance/Specifications/accessibility>,
+       </Studies/compliance/Specifications/employer_security>,
+       </Studies/compliance/Specifications/reader_datasheet>,
       ]
-      uniform token aeco:compliance:status = "pass"
+      uniform token aeco:compliance:status = "fail"
      }
 
      over "Iris_Scanner_door_office_link" (
       prepend apiSchemas = ["AecoComplianceAPI"]
      )
      {
-      string aeco:compliance:report = """/Specifications/accessibility/Clause01 | Illustrative accessibility design exercise; not a transcription of a regulation | measured:centreHeightAboveFloor = 1.65 m | between [0.9, 1.2] +/- 1e-06 | fail
-/Specifications/employer_security/Clause01 | Demo employer security brief, illustrative reader clause 1 | measured:centreHeightAboveFloor = 1.65 m | between [1.05, 1.2] +/- 1e-06 | fail
-/Specifications/employer_security/Clause02 | Demo employer security brief, illustrative reader clause 1 | measured:distanceToDoorLeafEdge = 0.325 m | between [0.3, 0.5] +/- 1e-06 | pass
-/Specifications/employer_security/Clause03 | Demo employer security brief, illustrative reader clause 1 | measured:sideOfDoor = pull 1 | eq ['pull'] +/- 0 | pass
-/Specifications/reader_datasheet/Clause01 | Generic demo reader datasheet, illustrative capture clause 1 | measured:centreHeightAboveFloor = 1.65 m | between [1.0, 1.7] +/- 1e-06 | pass"""
+      string aeco:compliance:report = """/Studies/compliance/Specifications/accessibility/Clause01 | Illustrative accessibility design exercise; not a transcription of a regulation | measured:centreHeightAboveFloor = 1.65 m | between [0.9, 1.2] +/- 1e-06 | fail
+/Studies/compliance/Specifications/employer_security/Clause01 | Demo employer security brief, illustrative reader clause 1 | measured:centreHeightAboveFloor = 1.65 m | between [1.05, 1.2] +/- 1e-06 | fail
+/Studies/compliance/Specifications/employer_security/Clause02 | Demo employer security brief, illustrative reader clause 1 | measured:distanceToDoorLeafEdge = 0.274 m | between [0.3, 0.5] +/- 1e-06 | fail
+/Studies/compliance/Specifications/employer_security/Clause03 | Demo employer security brief, illustrative reader clause 1 | measured:sideOfDoor = pull 1 | eq ['pull'] +/- 0 | pass
+/Studies/compliance/Specifications/reader_datasheet/Clause01 | Generic demo reader datasheet, illustrative capture clause 1 | measured:centreHeightAboveFloor = 1.65 m | between [1.0, 1.7] +/- 1e-06 | pass"""
       rel aeco:compliance:specifications = [
-       </Specifications/accessibility>,
-       </Specifications/employer_security>,
-       </Specifications/reader_datasheet>,
+       </Studies/compliance/Specifications/accessibility>,
+       </Studies/compliance/Specifications/employer_security>,
+       </Studies/compliance/Specifications/reader_datasheet>,
       ]
       uniform token aeco:compliance:status = "fail"
      }
@@ -125,85 +126,85 @@ over "demo_datacentre_01"
       prepend apiSchemas = ["AecoComplianceAPI"]
      )
      {
-      string aeco:compliance:report = """/Specifications/accessibility/Clause01 | Illustrative accessibility design exercise; not a transcription of a regulation | measured:centreHeightAboveFloor = 1.2 m | between [0.9, 1.2] +/- 1e-06 | pass
-/Specifications/employer_security/Clause01 | Demo employer security brief, illustrative reader clause 1 | measured:centreHeightAboveFloor = 1.2 m | between [1.05, 1.2] +/- 1e-06 | pass
-/Specifications/employer_security/Clause02 | Demo employer security brief, illustrative reader clause 1 | measured:distanceToDoorLeafEdge = 0.325 m | between [0.3, 0.5] +/- 1e-06 | pass
-/Specifications/employer_security/Clause03 | Demo employer security brief, illustrative reader clause 1 | measured:sideOfDoor = pull 1 | eq ['pull'] +/- 0 | pass
-/Specifications/reader_datasheet/Clause01 | Generic demo reader datasheet, illustrative capture clause 1 | measured:centreHeightAboveFloor = 1.2 m | between [1.0, 1.7] +/- 1e-06 | pass"""
+      string aeco:compliance:report = """/Studies/compliance/Specifications/accessibility/Clause01 | Illustrative accessibility design exercise; not a transcription of a regulation | measured:centreHeightAboveFloor = 1.2 m | between [0.9, 1.2] +/- 1e-06 | pass
+/Studies/compliance/Specifications/employer_security/Clause01 | Demo employer security brief, illustrative reader clause 1 | measured:centreHeightAboveFloor = 1.2 m | between [1.05, 1.2] +/- 1e-06 | pass
+/Studies/compliance/Specifications/employer_security/Clause02 | Demo employer security brief, illustrative reader clause 1 | measured:distanceToDoorLeafEdge = 0.274 m | between [0.3, 0.5] +/- 1e-06 | fail
+/Studies/compliance/Specifications/employer_security/Clause03 | Demo employer security brief, illustrative reader clause 1 | measured:sideOfDoor = pull 1 | eq ['pull'] +/- 0 | pass
+/Studies/compliance/Specifications/reader_datasheet/Clause01 | Generic demo reader datasheet, illustrative capture clause 1 | measured:centreHeightAboveFloor = 1.2 m | between [1.0, 1.7] +/- 1e-06 | pass"""
       rel aeco:compliance:specifications = [
-       </Specifications/accessibility>,
-       </Specifications/employer_security>,
-       </Specifications/reader_datasheet>,
+       </Studies/compliance/Specifications/accessibility>,
+       </Studies/compliance/Specifications/employer_security>,
+       </Studies/compliance/Specifications/reader_datasheet>,
       ]
-      uniform token aeco:compliance:status = "pass"
+      uniform token aeco:compliance:status = "fail"
      }
 
      over "Iris_Scanner_door_elec_b" (
       prepend apiSchemas = ["AecoComplianceAPI"]
      )
      {
-      string aeco:compliance:report = """/Specifications/accessibility/Clause01 | Illustrative accessibility design exercise; not a transcription of a regulation | measured:centreHeightAboveFloor = 1.2 m | between [0.9, 1.2] +/- 1e-06 | pass
-/Specifications/employer_security/Clause01 | Demo employer security brief, illustrative reader clause 1 | measured:centreHeightAboveFloor = 1.2 m | between [1.05, 1.2] +/- 1e-06 | pass
-/Specifications/employer_security/Clause02 | Demo employer security brief, illustrative reader clause 1 | measured:distanceToDoorLeafEdge = 0.325 m | between [0.3, 0.5] +/- 1e-06 | pass
-/Specifications/employer_security/Clause03 | Demo employer security brief, illustrative reader clause 1 | measured:sideOfDoor = pull 1 | eq ['pull'] +/- 0 | pass
-/Specifications/reader_datasheet/Clause01 | Generic demo reader datasheet, illustrative capture clause 1 | measured:centreHeightAboveFloor = 1.2 m | between [1.0, 1.7] +/- 1e-06 | pass"""
+      string aeco:compliance:report = """/Studies/compliance/Specifications/accessibility/Clause01 | Illustrative accessibility design exercise; not a transcription of a regulation | measured:centreHeightAboveFloor = 1.2 m | between [0.9, 1.2] +/- 1e-06 | pass
+/Studies/compliance/Specifications/employer_security/Clause01 | Demo employer security brief, illustrative reader clause 1 | measured:centreHeightAboveFloor = 1.2 m | between [1.05, 1.2] +/- 1e-06 | pass
+/Studies/compliance/Specifications/employer_security/Clause02 | Demo employer security brief, illustrative reader clause 1 | measured:distanceToDoorLeafEdge = 0.274 m | between [0.3, 0.5] +/- 1e-06 | fail
+/Studies/compliance/Specifications/employer_security/Clause03 | Demo employer security brief, illustrative reader clause 1 | measured:sideOfDoor = pull 1 | eq ['pull'] +/- 0 | pass
+/Studies/compliance/Specifications/reader_datasheet/Clause01 | Generic demo reader datasheet, illustrative capture clause 1 | measured:centreHeightAboveFloor = 1.2 m | between [1.0, 1.7] +/- 1e-06 | pass"""
       rel aeco:compliance:specifications = [
-       </Specifications/accessibility>,
-       </Specifications/employer_security>,
-       </Specifications/reader_datasheet>,
+       </Studies/compliance/Specifications/accessibility>,
+       </Studies/compliance/Specifications/employer_security>,
+       </Studies/compliance/Specifications/reader_datasheet>,
       ]
-      uniform token aeco:compliance:status = "pass"
+      uniform token aeco:compliance:status = "fail"
      }
 
      over "Iris_Scanner_door_hall_a_s" (
       prepend apiSchemas = ["AecoComplianceAPI"]
      )
      {
-      string aeco:compliance:report = """/Specifications/accessibility/Clause01 | Illustrative accessibility design exercise; not a transcription of a regulation | measured:centreHeightAboveFloor = 1.2 m | between [0.9, 1.2] +/- 1e-06 | pass
-/Specifications/employer_security/Clause01 | Demo employer security brief, illustrative reader clause 1 | measured:centreHeightAboveFloor = 1.2 m | between [1.05, 1.2] +/- 1e-06 | pass
-/Specifications/employer_security/Clause02 | Demo employer security brief, illustrative reader clause 1 | measured:distanceToDoorLeafEdge = 0.325 m | between [0.3, 0.5] +/- 1e-06 | pass
-/Specifications/employer_security/Clause03 | Demo employer security brief, illustrative reader clause 1 | measured:sideOfDoor = pull 1 | eq ['pull'] +/- 0 | pass
-/Specifications/reader_datasheet/Clause01 | Generic demo reader datasheet, illustrative capture clause 1 | measured:centreHeightAboveFloor = 1.2 m | between [1.0, 1.7] +/- 1e-06 | pass"""
+      string aeco:compliance:report = """/Studies/compliance/Specifications/accessibility/Clause01 | Illustrative accessibility design exercise; not a transcription of a regulation | measured:centreHeightAboveFloor = 1.2 m | between [0.9, 1.2] +/- 1e-06 | pass
+/Studies/compliance/Specifications/employer_security/Clause01 | Demo employer security brief, illustrative reader clause 1 | measured:centreHeightAboveFloor = 1.2 m | between [1.05, 1.2] +/- 1e-06 | pass
+/Studies/compliance/Specifications/employer_security/Clause02 | Demo employer security brief, illustrative reader clause 1 | measured:distanceToDoorLeafEdge = 0.274 m | between [0.3, 0.5] +/- 1e-06 | fail
+/Studies/compliance/Specifications/employer_security/Clause03 | Demo employer security brief, illustrative reader clause 1 | measured:sideOfDoor = pull 1 | eq ['pull'] +/- 0 | pass
+/Studies/compliance/Specifications/reader_datasheet/Clause01 | Generic demo reader datasheet, illustrative capture clause 1 | measured:centreHeightAboveFloor = 1.2 m | between [1.0, 1.7] +/- 1e-06 | pass"""
       rel aeco:compliance:specifications = [
-       </Specifications/accessibility>,
-       </Specifications/employer_security>,
-       </Specifications/reader_datasheet>,
+       </Studies/compliance/Specifications/accessibility>,
+       </Studies/compliance/Specifications/employer_security>,
+       </Studies/compliance/Specifications/reader_datasheet>,
       ]
-      uniform token aeco:compliance:status = "pass"
+      uniform token aeco:compliance:status = "fail"
      }
 
      over "Iris_Scanner_door_hall_b_s" (
       prepend apiSchemas = ["AecoComplianceAPI"]
      )
      {
-      string aeco:compliance:report = """/Specifications/accessibility/Clause01 | Illustrative accessibility design exercise; not a transcription of a regulation | measured:centreHeightAboveFloor = 1.2 m | between [0.9, 1.2] +/- 1e-06 | pass
-/Specifications/employer_security/Clause01 | Demo employer security brief, illustrative reader clause 1 | measured:centreHeightAboveFloor = 1.2 m | between [1.05, 1.2] +/- 1e-06 | pass
-/Specifications/employer_security/Clause02 | Demo employer security brief, illustrative reader clause 1 | measured:distanceToDoorLeafEdge = 0.325 m | between [0.3, 0.5] +/- 1e-06 | pass
-/Specifications/employer_security/Clause03 | Demo employer security brief, illustrative reader clause 1 | measured:sideOfDoor = pull 1 | eq ['pull'] +/- 0 | pass
-/Specifications/reader_datasheet/Clause01 | Generic demo reader datasheet, illustrative capture clause 1 | measured:centreHeightAboveFloor = 1.2 m | between [1.0, 1.7] +/- 1e-06 | pass"""
+      string aeco:compliance:report = """/Studies/compliance/Specifications/accessibility/Clause01 | Illustrative accessibility design exercise; not a transcription of a regulation | measured:centreHeightAboveFloor = 1.2 m | between [0.9, 1.2] +/- 1e-06 | pass
+/Studies/compliance/Specifications/employer_security/Clause01 | Demo employer security brief, illustrative reader clause 1 | measured:centreHeightAboveFloor = 1.2 m | between [1.05, 1.2] +/- 1e-06 | pass
+/Studies/compliance/Specifications/employer_security/Clause02 | Demo employer security brief, illustrative reader clause 1 | measured:distanceToDoorLeafEdge = 0.274 m | between [0.3, 0.5] +/- 1e-06 | fail
+/Studies/compliance/Specifications/employer_security/Clause03 | Demo employer security brief, illustrative reader clause 1 | measured:sideOfDoor = pull 1 | eq ['pull'] +/- 0 | pass
+/Studies/compliance/Specifications/reader_datasheet/Clause01 | Generic demo reader datasheet, illustrative capture clause 1 | measured:centreHeightAboveFloor = 1.2 m | between [1.0, 1.7] +/- 1e-06 | pass"""
       rel aeco:compliance:specifications = [
-       </Specifications/accessibility>,
-       </Specifications/employer_security>,
-       </Specifications/reader_datasheet>,
+       </Studies/compliance/Specifications/accessibility>,
+       </Studies/compliance/Specifications/employer_security>,
+       </Studies/compliance/Specifications/reader_datasheet>,
       ]
-      uniform token aeco:compliance:status = "pass"
+      uniform token aeco:compliance:status = "fail"
      }
 
      over "Iris_Scanner_door_mmr_2" (
       prepend apiSchemas = ["AecoComplianceAPI"]
      )
      {
-      string aeco:compliance:report = """/Specifications/accessibility/Clause01 | Illustrative accessibility design exercise; not a transcription of a regulation | measured:centreHeightAboveFloor = 1.2 m | between [0.9, 1.2] +/- 1e-06 | pass
-/Specifications/employer_security/Clause01 | Demo employer security brief, illustrative reader clause 1 | measured:centreHeightAboveFloor = 1.2 m | between [1.05, 1.2] +/- 1e-06 | pass
-/Specifications/employer_security/Clause02 | Demo employer security brief, illustrative reader clause 1 | measured:distanceToDoorLeafEdge = 0.325 m | between [0.3, 0.5] +/- 1e-06 | pass
-/Specifications/employer_security/Clause03 | Demo employer security brief, illustrative reader clause 1 | measured:sideOfDoor = pull 1 | eq ['pull'] +/- 0 | pass
-/Specifications/reader_datasheet/Clause01 | Generic demo reader datasheet, illustrative capture clause 1 | measured:centreHeightAboveFloor = 1.2 m | between [1.0, 1.7] +/- 1e-06 | pass"""
+      string aeco:compliance:report = """/Studies/compliance/Specifications/accessibility/Clause01 | Illustrative accessibility design exercise; not a transcription of a regulation | measured:centreHeightAboveFloor = 1.2 m | between [0.9, 1.2] +/- 1e-06 | pass
+/Studies/compliance/Specifications/employer_security/Clause01 | Demo employer security brief, illustrative reader clause 1 | measured:centreHeightAboveFloor = 1.2 m | between [1.05, 1.2] +/- 1e-06 | pass
+/Studies/compliance/Specifications/employer_security/Clause02 | Demo employer security brief, illustrative reader clause 1 | measured:distanceToDoorLeafEdge = 0.274 m | between [0.3, 0.5] +/- 1e-06 | fail
+/Studies/compliance/Specifications/employer_security/Clause03 | Demo employer security brief, illustrative reader clause 1 | measured:sideOfDoor = pull 1 | eq ['pull'] +/- 0 | pass
+/Studies/compliance/Specifications/reader_datasheet/Clause01 | Generic demo reader datasheet, illustrative capture clause 1 | measured:centreHeightAboveFloor = 1.2 m | between [1.0, 1.7] +/- 1e-06 | pass"""
       rel aeco:compliance:specifications = [
-       </Specifications/accessibility>,
-       </Specifications/employer_security>,
-       </Specifications/reader_datasheet>,
+       </Studies/compliance/Specifications/accessibility>,
+       </Studies/compliance/Specifications/employer_security>,
+       </Studies/compliance/Specifications/reader_datasheet>,
       ]
-      uniform token aeco:compliance:status = "pass"
+      uniform token aeco:compliance:status = "fail"
      }
     }
 
@@ -213,17 +214,17 @@ over "demo_datacentre_01"
       prepend apiSchemas = ["AecoComplianceAPI"]
      )
      {
-      string aeco:compliance:report = """/Specifications/accessibility/Clause01 | Illustrative accessibility design exercise; not a transcription of a regulation | measured:centreHeightAboveFloor = 1.2 m | between [0.9, 1.2] +/- 1e-06 | pass
-/Specifications/employer_security/Clause01 | Demo employer security brief, illustrative reader clause 1 | measured:centreHeightAboveFloor = 1.2 m | between [1.05, 1.2] +/- 1e-06 | pass
-/Specifications/employer_security/Clause02 | Demo employer security brief, illustrative reader clause 1 | measured:distanceToDoorLeafEdge = 0.325 m | between [0.3, 0.5] +/- 1e-06 | pass
-/Specifications/employer_security/Clause03 | Demo employer security brief, illustrative reader clause 1 | measured:sideOfDoor = pull 1 | eq ['pull'] +/- 0 | pass
-/Specifications/reader_datasheet/Clause01 | Generic demo reader datasheet, illustrative capture clause 1 | measured:centreHeightAboveFloor = 1.2 m | between [1.0, 1.7] +/- 1e-06 | pass"""
+      string aeco:compliance:report = """/Studies/compliance/Specifications/accessibility/Clause01 | Illustrative accessibility design exercise; not a transcription of a regulation | measured:centreHeightAboveFloor = 1.2 m | between [0.9, 1.2] +/- 1e-06 | pass
+/Studies/compliance/Specifications/employer_security/Clause01 | Demo employer security brief, illustrative reader clause 1 | measured:centreHeightAboveFloor = 1.2 m | between [1.05, 1.2] +/- 1e-06 | pass
+/Studies/compliance/Specifications/employer_security/Clause02 | Demo employer security brief, illustrative reader clause 1 | measured:distanceToDoorLeafEdge = 0.274 m | between [0.3, 0.5] +/- 1e-06 | fail
+/Studies/compliance/Specifications/employer_security/Clause03 | Demo employer security brief, illustrative reader clause 1 | measured:sideOfDoor = pull 1 | eq ['pull'] +/- 0 | pass
+/Studies/compliance/Specifications/reader_datasheet/Clause01 | Generic demo reader datasheet, illustrative capture clause 1 | measured:centreHeightAboveFloor = 1.2 m | between [1.0, 1.7] +/- 1e-06 | pass"""
       rel aeco:compliance:specifications = [
-       </Specifications/accessibility>,
-       </Specifications/employer_security>,
-       </Specifications/reader_datasheet>,
+       </Studies/compliance/Specifications/accessibility>,
+       </Studies/compliance/Specifications/employer_security>,
+       </Studies/compliance/Specifications/reader_datasheet>,
       ]
-      uniform token aeco:compliance:status = "pass"
+      uniform token aeco:compliance:status = "fail"
      }
     }
    }

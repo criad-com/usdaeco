@@ -2,11 +2,11 @@
 (
  customLayerData = {
   string "aeco:layer:package" = "pipe"
-  string "aeco:layer:producer" = "hook v0.2.5"
+  string "aeco:layer:producer" = "hook v0.2.6"
   string "aeco:layer:role" = "analysis"
   string "aeco:layer:source" = "kind/usdaeco-pipe/examples/datacentre/run.py"
   string "aeco:layer:sourceSha256" = "f83472499f2702101fc9d97fe6a59d634baf4c21500a2865bcc8807d543bba61"
-  string "aeco:layer:tag" = "v0.2.5"
+  string "aeco:layer:tag" = "v0.2.6"
   string "aeco:pipe:layer" = "import"
   string "aeco:pipe:producer" = "aeco-pipe 0.2.0"
  }
@@ -51,7 +51,7 @@ over "demo_datacentre_01"
      {
       over "pipe_chw_void_f" (
        prepend apiSchemas = ["AecoPipeAPI"]
-       prepend inherits = </_TypeCatalog/PipeSection_6381e4938e6b>
+       prepend inherits = </demo_datacentre_01/_TypeCatalog/PipeSection_6381e4938e6b>
       )
       {
        double aeco:pipe:nominalDiameter = 0.05
@@ -75,7 +75,7 @@ over "demo_datacentre_01"
 
       over "pipe_chw_void_r" (
        prepend apiSchemas = ["AecoPipeAPI"]
-       prepend inherits = </_TypeCatalog/PipeSection_6381e4938e6b>
+       prepend inherits = </demo_datacentre_01/_TypeCatalog/PipeSection_6381e4938e6b>
       )
       {
        double aeco:pipe:nominalDiameter = 0.05
@@ -99,7 +99,7 @@ over "demo_datacentre_01"
 
       over "pipe_clash_hard" (
        prepend apiSchemas = ["AecoPipeAPI"]
-       prepend inherits = </_TypeCatalog/PipeSection_6381e4938e6b>
+       prepend inherits = </demo_datacentre_01/_TypeCatalog/PipeSection_6381e4938e6b>
       )
       {
        double aeco:pipe:nominalDiameter = 0.05
@@ -123,7 +123,7 @@ over "demo_datacentre_01"
 
       over "pipe_clash_near" (
        prepend apiSchemas = ["AecoPipeAPI"]
-       prepend inherits = </_TypeCatalog/PipeSection_6381e4938e6b>
+       prepend inherits = </demo_datacentre_01/_TypeCatalog/PipeSection_6381e4938e6b>
       )
       {
        double aeco:pipe:nominalDiameter = 0.05
@@ -147,7 +147,7 @@ over "demo_datacentre_01"
 
       over "pipe_clash_tangent" (
        prepend apiSchemas = ["AecoPipeAPI"]
-       prepend inherits = </_TypeCatalog/PipeSection_6381e4938e6b>
+       prepend inherits = </demo_datacentre_01/_TypeCatalog/PipeSection_6381e4938e6b>
       )
       {
        double aeco:pipe:nominalDiameter = 0.05
@@ -175,7 +175,7 @@ over "demo_datacentre_01"
     {
      over "pipe_drain_pod" (
       prepend apiSchemas = ["AecoPipeAPI"]
-      prepend inherits = </_TypeCatalog/PipeSection_61ea2992b556>
+      prepend inherits = </demo_datacentre_01/_TypeCatalog/PipeSection_61ea2992b556>
      )
      {
       double aeco:pipe:nominalDiameter = 0.1
@@ -15032,6 +15032,20 @@ over "demo_datacentre_01"
 
  over "_TypeCatalog"
  {
+  class "PipeSection_6381e4938e6b" (
+   prepend apiSchemas = ["AecoTypeAPI", "AecoPipeTypeAPI"]
+  )
+  {
+   string aeco:type:model = "Imported pipe section"
+  }
+
+  class "PipeSection_61ea2992b556" (
+   prepend apiSchemas = ["AecoTypeAPI", "AecoPipeTypeAPI"]
+  )
+  {
+   string aeco:type:model = "Imported pipe section"
+  }
+
   over "Fuel_Line_DN80" (
    prepend apiSchemas = ["AecoPipeTypeAPI"]
   )
@@ -15154,23 +15168,6 @@ over "demo_datacentre_01"
   )
   {
   }
- }
-}
-
-def "_TypeCatalog"
-{
- class "PipeSection_6381e4938e6b" (
-  prepend apiSchemas = ["AecoTypeAPI", "AecoPipeTypeAPI"]
- )
- {
-  string aeco:type:model = "Imported pipe section"
- }
-
- class "PipeSection_61ea2992b556" (
-  prepend apiSchemas = ["AecoTypeAPI", "AecoPipeTypeAPI"]
- )
- {
-  string aeco:type:model = "Imported pipe section"
  }
 }
 

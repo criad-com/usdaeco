@@ -71,6 +71,35 @@ over "demo_datacentre_01"
      }
     }
 
+    over "Stair_L01"
+    {
+     over "Office_Stair"
+     {
+      over BasisCurves "RepeatHighlight"
+      {
+       matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (12.9, -2.9, 4, 1) ) (
+        aecoDerived = true
+       )
+       token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+        aecoDerived = true
+       )
+      }
+     }
+    }
+
+    over "slab_l1_office"
+    {
+     over BasisCurves "RepeatHighlight"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (0, 0, 4, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
     over "wall_l1_v_016"
     {
      over BasisCurves "RepeatHighlight"
@@ -515,7 +544,7 @@ over "demo_datacentre_01"
     {
      over BrepArray "BodyExact"
      {
-      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (27.55, -3, 4, 1) ) (
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (27.55, -3.075, 4, 1) ) (
        aecoDerived = true
       )
       token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
@@ -525,7 +554,7 @@ over "demo_datacentre_01"
 
      over Mesh "Body"
      {
-      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (27.55, -3, 4, 1) ) (
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (27.55, -3.075, 4, 1) ) (
        aecoDerived = true
       )
       token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
@@ -535,7 +564,7 @@ over "demo_datacentre_01"
 
      over BasisCurves "Edges"
      {
-      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (27.55, -3, 4, 1) ) (
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (27.55, -3.075, 4, 1) ) (
        aecoDerived = true
       )
       token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
@@ -548,7 +577,7 @@ over "demo_datacentre_01"
     {
      over BrepArray "BodyExact"
      {
-      matrix4d xformOp:transform = ( (0, 1, 0, 0), (-1, 0, 0, 0), (0, 0, 1, 0), (15, -1.95, 4, 1) ) (
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (-1, 0, 0, 0), (0, 0, 1, 0), (15.075000000000001, -1.95, 4, 1) ) (
        aecoDerived = true
       )
       token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
@@ -558,7 +587,7 @@ over "demo_datacentre_01"
 
      over Mesh "Body"
      {
-      matrix4d xformOp:transform = ( (0, 1, 0, 0), (-1, 0, 0, 0), (0, 0, 1, 0), (15, -1.95, 4, 1) ) (
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (-1, 0, 0, 0), (0, 0, 1, 0), (15.075000000000001, -1.95, 4, 1) ) (
        aecoDerived = true
       )
       token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
@@ -568,7 +597,7 @@ over "demo_datacentre_01"
 
      over BasisCurves "Edges"
      {
-      matrix4d xformOp:transform = ( (0, 1, 0, 0), (-1, 0, 0, 0), (0, 0, 1, 0), (15, -1.95, 4, 1) ) (
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (-1, 0, 0, 0), (0, 0, 1, 0), (15.075000000000001, -1.95, 4, 1) ) (
        aecoDerived = true
       )
       token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
@@ -707,7 +736,7 @@ over "demo_datacentre_01"
     {
      over BrepArray "BodyExact"
      {
-      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (16.1, -3, 4, 1) ) (
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (16.1, -3.075, 4, 1) ) (
        aecoDerived = true
       )
       token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
@@ -717,7 +746,7 @@ over "demo_datacentre_01"
 
      over Mesh "Body"
      {
-      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (16.1, -3, 4, 1) ) (
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (16.1, -3.075, 4, 1) ) (
        aecoDerived = true
       )
       token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
@@ -727,7 +756,7 @@ over "demo_datacentre_01"
 
      over BasisCurves "Edges"
      {
-      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (16.1, -3, 4, 1) ) (
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (16.1, -3.075, 4, 1) ) (
        aecoDerived = true
       )
       token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
@@ -952,7 +981,7 @@ over "demo_datacentre_01"
     {
      over BrepArray "BodyExact"
      {
-      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (27.55, -8, 4, 1) ) (
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (27.55, -8.075, 4, 1) ) (
        aecoDerived = true
       )
       token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
@@ -962,7 +991,7 @@ over "demo_datacentre_01"
 
      over Mesh "Body"
      {
-      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (27.55, -8, 4, 1) ) (
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (27.55, -8.075, 4, 1) ) (
        aecoDerived = true
       )
       token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
@@ -972,7 +1001,7 @@ over "demo_datacentre_01"
 
      over BasisCurves "Edges"
      {
-      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (27.55, -8, 4, 1) ) (
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (27.55, -8.075, 4, 1) ) (
        aecoDerived = true
       )
       token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
@@ -1071,7 +1100,7 @@ over "demo_datacentre_01"
     {
      over BrepArray "BodyExact"
      {
-      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (23.55, -3, 4, 1) ) (
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (23.55, -3.075, 4, 1) ) (
        aecoDerived = true
       )
       token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
@@ -1081,7 +1110,7 @@ over "demo_datacentre_01"
 
      over Mesh "Body"
      {
-      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (23.55, -3, 4, 1) ) (
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (23.55, -3.075, 4, 1) ) (
        aecoDerived = true
       )
       token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
@@ -1091,7 +1120,7 @@ over "demo_datacentre_01"
 
      over BasisCurves "Edges"
      {
-      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (23.55, -3, 4, 1) ) (
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (23.55, -3.075, 4, 1) ) (
        aecoDerived = true
       )
       token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
@@ -1103,11 +1132,40 @@ over "demo_datacentre_01"
 
    over "L02_Office"
    {
+    over "Stair_L01"
+    {
+     over "Office_Stair"
+     {
+      over BasisCurves "RepeatHighlight"
+      {
+       matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (12.9, -2.9, 7, 1) ) (
+        aecoDerived = true
+       )
+       token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+        aecoDerived = true
+       )
+      }
+     }
+    }
+
     over "Additional_Meeting_Access"
     {
      over BasisCurves "RepeatHighlight"
      {
-      matrix4d xformOp:transform = ( (0, 1, 0, 0), (-1, 0, 0, 0), (0, 0, 1, 0), (27, -5.95, 7, 1) ) (
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (-1, 0, 0, 0), (0, 0, 1, 0), (27.075, -5.95, 7, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "slab_l2_office"
+    {
+     over BasisCurves "RepeatHighlight"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (0, 0, 7, 1) ) (
        aecoDerived = true
       )
       token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
@@ -1120,7 +1178,7 @@ over "demo_datacentre_01"
     {
      over BasisCurves "RepeatHighlight"
      {
-      matrix4d xformOp:transform = ( (0, 1, 0, 0), (-1, 0, 0, 0), (0, 0, 1, 0), (27, -11.2, 7, 1) ) (
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (-1, 0, 0, 0), (0, 0, 1, 0), (27, -11.200000000000001, 7, 1) ) (
        aecoDerived = true
       )
       token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
@@ -1130,7 +1188,7 @@ over "demo_datacentre_01"
 
      over BasisCurves "Axis"
      {
-      matrix4d xformOp:transform = ( (0, 1, 0, 0), (-1, 0, 0, 0), (0, 0, 1, 0), (27, -11.2, 7, 1) ) (
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (-1, 0, 0, 0), (0, 0, 1, 0), (27, -11.200000000000001, 7, 1) ) (
        aecoDerived = true
       )
       token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
@@ -1382,7 +1440,7 @@ over "demo_datacentre_01"
      {
       over BrepArray "BodyExact"
       {
-       matrix4d xformOp:transform = ( (0, 1, 0, 0), (0, 0, 1, 0), (1, 0, 0, 0), (12.9, -2.9, 0, 1) ) (
+       matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (12.9, -2.9, 0, 1) ) (
         aecoDerived = true
        )
        token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
@@ -1392,7 +1450,7 @@ over "demo_datacentre_01"
 
       over Mesh "Body"
       {
-       matrix4d xformOp:transform = ( (0, 1, 0, 0), (0, 0, 1, 0), (1, 0, 0, 0), (12.9, -2.9, 0, 1) ) (
+       matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (12.9, -2.9, 0, 1) ) (
         aecoDerived = true
        )
        token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
@@ -1402,7 +1460,7 @@ over "demo_datacentre_01"
 
       over BasisCurves "Edges"
       {
-       matrix4d xformOp:transform = ( (0, 1, 0, 0), (0, 0, 1, 0), (1, 0, 0, 0), (12.9, -2.9, 0, 1) ) (
+       matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (12.9, -2.9, 0, 1) ) (
         aecoDerived = true
        )
        token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
@@ -1459,7 +1517,7 @@ over "demo_datacentre_01"
     {
      over BrepArray "BodyExact"
      {
-      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (13.05, -3, 0, 1) ) (
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (13.05, -3.075, 0, 1) ) (
        aecoDerived = true
       )
       token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
@@ -1469,7 +1527,7 @@ over "demo_datacentre_01"
 
      over Mesh "Body"
      {
-      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (13.05, -3, 0, 1) ) (
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (13.05, -3.075, 0, 1) ) (
        aecoDerived = true
       )
       token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
@@ -1479,7 +1537,7 @@ over "demo_datacentre_01"
 
      over BasisCurves "Edges"
      {
-      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (13.05, -3, 0, 1) ) (
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (13.05, -3.075, 0, 1) ) (
        aecoDerived = true
       )
       token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
@@ -1492,7 +1550,7 @@ over "demo_datacentre_01"
     {
      over BrepArray "BodyExact"
      {
-      matrix4d xformOp:transform = ( (0, 1, 0, 0), (-1, 0, 0, 0), (0, 0, 1, 0), (18, -1.95, 0, 1) ) (
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (-1, 0, 0, 0), (0, 0, 1, 0), (18.075, -1.95, 0, 1) ) (
        aecoDerived = true
       )
       token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
@@ -1502,7 +1560,7 @@ over "demo_datacentre_01"
 
      over Mesh "Body"
      {
-      matrix4d xformOp:transform = ( (0, 1, 0, 0), (-1, 0, 0, 0), (0, 0, 1, 0), (18, -1.95, 0, 1) ) (
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (-1, 0, 0, 0), (0, 0, 1, 0), (18.075, -1.95, 0, 1) ) (
        aecoDerived = true
       )
       token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
@@ -1512,7 +1570,7 @@ over "demo_datacentre_01"
 
      over BasisCurves "Edges"
      {
-      matrix4d xformOp:transform = ( (0, 1, 0, 0), (-1, 0, 0, 0), (0, 0, 1, 0), (18, -1.95, 0, 1) ) (
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (-1, 0, 0, 0), (0, 0, 1, 0), (18.075, -1.95, 0, 1) ) (
        aecoDerived = true
       )
       token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
@@ -1565,7 +1623,7 @@ over "demo_datacentre_01"
 
      over Cube "BuildUpLayer1"
      {
-      matrix4d xformOp:transform = ( (0, 6, 0, 0), (-0.014999999664723873, 0, 0, 0), (0, 0, 3.75, 0), (26.0925, -3, 1.875, 1) ) (
+      matrix4d xformOp:transform = ( (0, 6, 0, 0), (-0.014999999664723873, 0, 0, 0), (0, 0, 3.75, 0), (26.0925, -3.0000000000000004, 1.8749999999999998, 1) ) (
        aecoDerived = true
       )
       token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
@@ -1575,7 +1633,7 @@ over "demo_datacentre_01"
 
      over Cube "BuildUpLayer2"
      {
-      matrix4d xformOp:transform = ( (0, 6, 0, 0), (-0.17000000178813934, 0, 0, 0), (0, 0, 3.75, 0), (26, -3, 1.875, 1) ) (
+      matrix4d xformOp:transform = ( (0, 6, 0, 0), (-0.17000000178813934, 0, 0, 0), (0, 0, 3.75, 0), (26, -3.0000000000000004, 1.8749999999999998, 1) ) (
        aecoDerived = true
       )
       token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
@@ -1585,7 +1643,7 @@ over "demo_datacentre_01"
 
      over Cube "BuildUpLayer3"
      {
-      matrix4d xformOp:transform = ( (0, 6, 0, 0), (-0.014999999664723873, 0, 0, 0), (0, 0, 3.75, 0), (25.9075, -3, 1.875, 1) ) (
+      matrix4d xformOp:transform = ( (0, 6, 0, 0), (-0.014999999664723873, 0, 0, 0), (0, 0, 3.75, 0), (25.9075, -3.0000000000000004, 1.8749999999999998, 1) ) (
        aecoDerived = true
       )
       token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
@@ -1684,7 +1742,7 @@ over "demo_datacentre_01"
     {
      over BrepArray "BodyExact"
      {
-      matrix4d xformOp:transform = ( (0, 1, 0, 0), (-1, 0, 0, 0), (0, 0, 1, 0), (18, -8.45, 0, 1) ) (
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (-1, 0, 0, 0), (0, 0, 1, 0), (18.075, -8.45, 0, 1) ) (
        aecoDerived = true
       )
       token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
@@ -1694,7 +1752,7 @@ over "demo_datacentre_01"
 
      over Mesh "Body"
      {
-      matrix4d xformOp:transform = ( (0, 1, 0, 0), (-1, 0, 0, 0), (0, 0, 1, 0), (18, -8.45, 0, 1) ) (
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (-1, 0, 0, 0), (0, 0, 1, 0), (18.075, -8.45, 0, 1) ) (
        aecoDerived = true
       )
       token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
@@ -1704,7 +1762,7 @@ over "demo_datacentre_01"
 
      over BasisCurves "Edges"
      {
-      matrix4d xformOp:transform = ( (0, 1, 0, 0), (-1, 0, 0, 0), (0, 0, 1, 0), (18, -8.45, 0, 1) ) (
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (-1, 0, 0, 0), (0, 0, 1, 0), (18.075, -8.45, 0, 1) ) (
        aecoDerived = true
       )
       token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
@@ -1760,7 +1818,7 @@ over "demo_datacentre_01"
     {
      over BrepArray "BodyExact"
      {
-      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (23.55, -6, 0, 1) ) (
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (23.55, -6.075, 0, 1) ) (
        aecoDerived = true
       )
       token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
@@ -1770,7 +1828,7 @@ over "demo_datacentre_01"
 
      over Mesh "Body"
      {
-      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (23.55, -6, 0, 1) ) (
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (23.55, -6.075, 0, 1) ) (
        aecoDerived = true
       )
       token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
@@ -1780,7 +1838,7 @@ over "demo_datacentre_01"
 
      over BasisCurves "Edges"
      {
-      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (23.55, -6, 0, 1) ) (
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (23.55, -6.075, 0, 1) ) (
        aecoDerived = true
       )
       token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
@@ -1876,7 +1934,7 @@ over "demo_datacentre_01"
 
      over Cube "BuildUpLayer1"
      {
-      matrix4d xformOp:transform = ( (4, 0, 0, 0), (0, 0.02500000037252903, 0, 0), (0, 0, 3.75, 0), (24, -6.0625, 1.875, 1) ) (
+      matrix4d xformOp:transform = ( (4, 0, 0, 0), (0, 0.02500000037252903, 0, 0), (0, 0, 3.75, 0), (24, -6.0625, 1.8749999999999998, 1) ) (
        aecoDerived = true
       )
       token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
@@ -1886,7 +1944,7 @@ over "demo_datacentre_01"
 
      over Cube "BuildUpLayer2"
      {
-      matrix4d xformOp:transform = ( (4, 0, 0, 0), (0, 0.10000000149011612, 0, 0), (0, 0, 3.75, 0), (24, -6, 1.875, 1) ) (
+      matrix4d xformOp:transform = ( (4, 0, 0, 0), (0, 0.10000000149011612, 0, 0), (0, 0, 3.75, 0), (24, -6, 1.8749999999999998, 1) ) (
        aecoDerived = true
       )
       token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
@@ -1896,7 +1954,7 @@ over "demo_datacentre_01"
 
      over Cube "BuildUpLayer3"
      {
-      matrix4d xformOp:transform = ( (4, 0, 0, 0), (0, 0.02500000037252903, 0, 0), (0, 0, 3.75, 0), (24, -5.9375, 1.875, 1) ) (
+      matrix4d xformOp:transform = ( (4, 0, 0, 0), (0, 0.02500000037252903, 0, 0), (0, 0, 3.75, 0), (24, -5.9375, 1.8749999999999998, 1) ) (
        aecoDerived = true
       )
       token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
@@ -2253,7 +2311,7 @@ over "demo_datacentre_01"
     {
      over BrepArray "BodyExact"
      {
-      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (21, -6, -0.3, 1) ) (
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (0, 0, 0, 1) ) (
        aecoDerived = true
       )
       token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
@@ -2263,7 +2321,7 @@ over "demo_datacentre_01"
 
      over Mesh "Body"
      {
-      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (21, -6, -0.3, 1) ) (
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (0, 0, 0, 1) ) (
        aecoDerived = true
       )
       token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
@@ -2273,7 +2331,7 @@ over "demo_datacentre_01"
 
      over BasisCurves "Edges"
      {
-      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (21, -6, -0.3, 1) ) (
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (0, 0, 0, 1) ) (
        aecoDerived = true
       )
       token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
@@ -2286,7 +2344,7 @@ over "demo_datacentre_01"
     {
      over BrepArray "BodyExact"
      {
-      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (15.6, -3, 0, 1) ) (
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (15.6, -3.075, 0, 1) ) (
        aecoDerived = true
       )
       token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
@@ -2296,7 +2354,7 @@ over "demo_datacentre_01"
 
      over Mesh "Body"
      {
-      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (15.6, -3, 0, 1) ) (
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (15.6, -3.075, 0, 1) ) (
        aecoDerived = true
       )
       token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
@@ -2306,7 +2364,7 @@ over "demo_datacentre_01"
 
      over BasisCurves "Edges"
      {
-      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (15.6, -3, 0, 1) ) (
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (15.6, -3.075, 0, 1) ) (
        aecoDerived = true
       )
       token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
@@ -2319,7 +2377,7 @@ over "demo_datacentre_01"
     {
      over BrepArray "BodyExact"
      {
-      matrix4d xformOp:transform = ( (0, 1, 0, 0), (-1, 0, 0, 0), (0, 0, 1, 0), (22, -9.45, 0, 1) ) (
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (-1, 0, 0, 0), (0, 0, 1, 0), (22.075, -9.450000000000001, 0, 1) ) (
        aecoDerived = true
       )
       token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
@@ -2329,7 +2387,7 @@ over "demo_datacentre_01"
 
      over Mesh "Body"
      {
-      matrix4d xformOp:transform = ( (0, 1, 0, 0), (-1, 0, 0, 0), (0, 0, 1, 0), (22, -9.45, 0, 1) ) (
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (-1, 0, 0, 0), (0, 0, 1, 0), (22.075, -9.450000000000001, 0, 1) ) (
        aecoDerived = true
       )
       token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
@@ -2339,7 +2397,7 @@ over "demo_datacentre_01"
 
      over BasisCurves "Edges"
      {
-      matrix4d xformOp:transform = ( (0, 1, 0, 0), (-1, 0, 0, 0), (0, 0, 1, 0), (22, -9.45, 0, 1) ) (
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (-1, 0, 0, 0), (0, 0, 1, 0), (22.075, -9.450000000000001, 0, 1) ) (
        aecoDerived = true
       )
       token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
@@ -2438,7 +2496,7 @@ over "demo_datacentre_01"
     {
      over BrepArray "BodyExact"
      {
-      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (14.1, -12, 0, 1) ) (
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (14.1, -12.15, 0, 1) ) (
        aecoDerived = true
       )
       token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
@@ -2448,7 +2506,7 @@ over "demo_datacentre_01"
 
      over Mesh "Body"
      {
-      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (14.1, -12, 0, 1) ) (
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (14.1, -12.15, 0, 1) ) (
        aecoDerived = true
       )
       token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
@@ -2458,7 +2516,7 @@ over "demo_datacentre_01"
 
      over BasisCurves "Edges"
      {
-      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (14.1, -12, 0, 1) ) (
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (14.1, -12.15, 0, 1) ) (
        aecoDerived = true
       )
       token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
@@ -2511,7 +2569,7 @@ over "demo_datacentre_01"
 
      over Cube "BuildUpLayer1"
      {
-      matrix4d xformOp:transform = ( (4, 0, 0, 0), (0, 0.014999999664723873, 0, 0), (0, 0, 3.75, 0), (28, -6.0925, 1.875, 1) ) (
+      matrix4d xformOp:transform = ( (4, 0, 0, 0), (0, 0.014999999664723873, 0, 0), (0, 0, 3.75, 0), (28, -6.0925, 1.8749999999999998, 1) ) (
        aecoDerived = true
       )
       token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
@@ -2521,7 +2579,7 @@ over "demo_datacentre_01"
 
      over Cube "BuildUpLayer2"
      {
-      matrix4d xformOp:transform = ( (4, 0, 0, 0), (0, 0.17000000178813934, 0, 0), (0, 0, 3.75, 0), (28, -6, 1.875, 1) ) (
+      matrix4d xformOp:transform = ( (4, 0, 0, 0), (0, 0.17000000178813934, 0, 0), (0, 0, 3.75, 0), (28, -6, 1.8749999999999998, 1) ) (
        aecoDerived = true
       )
       token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
@@ -2531,7 +2589,7 @@ over "demo_datacentre_01"
 
      over Cube "BuildUpLayer3"
      {
-      matrix4d xformOp:transform = ( (4, 0, 0, 0), (0, 0.014999999664723873, 0, 0), (0, 0, 3.75, 0), (28, -5.9075, 1.875, 1) ) (
+      matrix4d xformOp:transform = ( (4, 0, 0, 0), (0, 0.014999999664723873, 0, 0), (0, 0, 3.75, 0), (28, -5.9075, 1.8749999999999998, 1) ) (
        aecoDerived = true
       )
       token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
@@ -2713,7 +2771,7 @@ over "demo_datacentre_01"
 
      over Cube "BuildUpLayer1"
      {
-      matrix4d xformOp:transform = ( (4, 0, 0, 0), (0, 0.02500000037252903, 0, 0), (0, 0, 3.75, 0), (20, -6.0625, 1.875, 1) ) (
+      matrix4d xformOp:transform = ( (4, 0, 0, 0), (0, 0.02500000037252903, 0, 0), (0, 0, 3.75, 0), (20, -6.0625, 1.8749999999999998, 1) ) (
        aecoDerived = true
       )
       token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
@@ -2723,7 +2781,7 @@ over "demo_datacentre_01"
 
      over Cube "BuildUpLayer2"
      {
-      matrix4d xformOp:transform = ( (4, 0, 0, 0), (0, 0.10000000149011612, 0, 0), (0, 0, 3.75, 0), (20, -6, 1.875, 1) ) (
+      matrix4d xformOp:transform = ( (4, 0, 0, 0), (0, 0.10000000149011612, 0, 0), (0, 0, 3.75, 0), (20, -6, 1.8749999999999998, 1) ) (
        aecoDerived = true
       )
       token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
@@ -2733,7 +2791,7 @@ over "demo_datacentre_01"
 
      over Cube "BuildUpLayer3"
      {
-      matrix4d xformOp:transform = ( (4, 0, 0, 0), (0, 0.02500000037252903, 0, 0), (0, 0, 3.75, 0), (20, -5.9375, 1.875, 1) ) (
+      matrix4d xformOp:transform = ( (4, 0, 0, 0), (0, 0.02500000037252903, 0, 0), (0, 0, 3.75, 0), (20, -5.9375, 1.8749999999999998, 1) ) (
        aecoDerived = true
       )
       token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
@@ -2789,7 +2847,7 @@ over "demo_datacentre_01"
     {
      over BrepArray "BodyExact"
      {
-      matrix4d xformOp:transform = ( (0, 1, 0, 0), (-1, 0, 0, 0), (0, 0, 1, 0), (26, -3.45, 0, 1) ) (
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (-1, 0, 0, 0), (0, 0, 1, 0), (26.1, -3.45, 0, 1) ) (
        aecoDerived = true
       )
       token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
@@ -2799,7 +2857,7 @@ over "demo_datacentre_01"
 
      over Mesh "Body"
      {
-      matrix4d xformOp:transform = ( (0, 1, 0, 0), (-1, 0, 0, 0), (0, 0, 1, 0), (26, -3.45, 0, 1) ) (
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (-1, 0, 0, 0), (0, 0, 1, 0), (26.1, -3.45, 0, 1) ) (
        aecoDerived = true
       )
       token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
@@ -2809,7 +2867,7 @@ over "demo_datacentre_01"
 
      over BasisCurves "Edges"
      {
-      matrix4d xformOp:transform = ( (0, 1, 0, 0), (-1, 0, 0, 0), (0, 0, 1, 0), (26, -3.45, 0, 1) ) (
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (-1, 0, 0, 0), (0, 0, 1, 0), (26.1, -3.45, 0, 1) ) (
        aecoDerived = true
       )
       token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (

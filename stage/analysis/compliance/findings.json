@@ -1,11 +1,11 @@
 [
   {
-    "clause_failures": 2,
-    "fail": 1,
+    "clause_failures": 13,
+    "fail": 11,
     "illustrative": true,
     "kind": "summary",
     "notApplicable": 0,
-    "pass": 10,
+    "pass": 0,
     "readers": 11,
     "source_counts": {
       "elements": 3009,
@@ -20,10 +20,82 @@
   },
   {
     "benchmarks": [
+      0.3,
+      0.5
+    ],
+    "clause": "/Studies/compliance/Specifications/employer_security/Clause02",
+    "id": "9e666400-0d29-5bd8-83a4-03903c8153b2",
+    "kind": "misplacedDevice",
+    "measure": "measured:distanceToDoorLeafEdge",
+    "measured": 0.2739999532699571,
+    "operator": "between",
+    "path": "/demo_datacentre_01/demo_datacentre_01_Site/demo_datacentre_01/L00_Ground/Corridor_Centre/Iris_Scanner_door_hall_a_e",
+    "severity": "error",
+    "source": "Demo employer security brief, illustrative reader clause 1",
+    "status": "fail",
+    "tolerance": 1e-06,
+    "unit": "m"
+  },
+  {
+    "benchmarks": [
+      0.3,
+      0.5
+    ],
+    "clause": "/Studies/compliance/Specifications/employer_security/Clause02",
+    "id": "98bfb7a6-153e-58e8-92df-e77a80ac2726",
+    "kind": "misplacedDevice",
+    "measure": "measured:distanceToDoorLeafEdge",
+    "measured": 0.2739999532699571,
+    "operator": "between",
+    "path": "/demo_datacentre_01/demo_datacentre_01_Site/demo_datacentre_01/L00_Ground/Corridor_Centre/Iris_Scanner_door_hall_b_w",
+    "severity": "error",
+    "source": "Demo employer security brief, illustrative reader clause 1",
+    "status": "fail",
+    "tolerance": 1e-06,
+    "unit": "m"
+  },
+  {
+    "benchmarks": [
+      0.3,
+      0.5
+    ],
+    "clause": "/Studies/compliance/Specifications/employer_security/Clause02",
+    "id": "55f5a3c5-ef38-5ef8-b656-f1a6e89347b2",
+    "kind": "misplacedDevice",
+    "measure": "measured:distanceToDoorLeafEdge",
+    "measured": 0.2739999532699571,
+    "operator": "between",
+    "path": "/demo_datacentre_01/demo_datacentre_01_Site/demo_datacentre_01/L00_Ground/Corridor_East/Iris_Scanner_door_hall_b_e",
+    "severity": "error",
+    "source": "Demo employer security brief, illustrative reader clause 1",
+    "status": "fail",
+    "tolerance": 1e-06,
+    "unit": "m"
+  },
+  {
+    "benchmarks": [
+      0.3,
+      0.5
+    ],
+    "clause": "/Studies/compliance/Specifications/employer_security/Clause02",
+    "id": "d3c1a99b-5ad0-585e-9844-0ce455d9d0c8",
+    "kind": "misplacedDevice",
+    "measure": "measured:distanceToDoorLeafEdge",
+    "measured": 0.27399998903274536,
+    "operator": "between",
+    "path": "/demo_datacentre_01/demo_datacentre_01_Site/demo_datacentre_01/L00_Ground/Corridor_South/Iris_Scanner_door_mmr_1",
+    "severity": "error",
+    "source": "Demo employer security brief, illustrative reader clause 1",
+    "status": "fail",
+    "tolerance": 1e-06,
+    "unit": "m"
+  },
+  {
+    "benchmarks": [
       0.9,
       1.2
     ],
-    "clause": "/Specifications/accessibility/Clause01",
+    "clause": "/Studies/compliance/Specifications/accessibility/Clause01",
     "id": "9f18ec18-169f-5d23-8daa-ab76fcd64c0d",
     "kind": "misplacedDevice",
     "measure": "measured:centreHeightAboveFloor",
@@ -41,13 +113,139 @@
       1.05,
       1.2
     ],
-    "clause": "/Specifications/employer_security/Clause01",
+    "clause": "/Studies/compliance/Specifications/employer_security/Clause01",
     "id": "9f18ec18-169f-5d23-8daa-ab76fcd64c0d",
     "kind": "misplacedDevice",
     "measure": "measured:centreHeightAboveFloor",
     "measured": 1.6499999982118605,
     "operator": "between",
     "path": "/demo_datacentre_01/demo_datacentre_01_Site/demo_datacentre_01/L00_Ground/Corridor_South/Iris_Scanner_door_office_link",
+    "severity": "error",
+    "source": "Demo employer security brief, illustrative reader clause 1",
+    "status": "fail",
+    "tolerance": 1e-06,
+    "unit": "m"
+  },
+  {
+    "benchmarks": [
+      0.3,
+      0.5
+    ],
+    "clause": "/Studies/compliance/Specifications/employer_security/Clause02",
+    "id": "9f18ec18-169f-5d23-8daa-ab76fcd64c0d",
+    "kind": "misplacedDevice",
+    "measure": "measured:distanceToDoorLeafEdge",
+    "measured": 0.2739999532699571,
+    "operator": "between",
+    "path": "/demo_datacentre_01/demo_datacentre_01_Site/demo_datacentre_01/L00_Ground/Corridor_South/Iris_Scanner_door_office_link",
+    "severity": "error",
+    "source": "Demo employer security brief, illustrative reader clause 1",
+    "status": "fail",
+    "tolerance": 1e-06,
+    "unit": "m"
+  },
+  {
+    "benchmarks": [
+      0.3,
+      0.5
+    ],
+    "clause": "/Studies/compliance/Specifications/employer_security/Clause02",
+    "id": "58c4272e-5e9d-559a-b3ab-f602af24d1fb",
+    "kind": "misplacedDevice",
+    "measure": "measured:distanceToDoorLeafEdge",
+    "measured": 0.27399995326995885,
+    "operator": "between",
+    "path": "/demo_datacentre_01/demo_datacentre_01_Site/demo_datacentre_01/L00_Ground/Corridor_Spine/Iris_Scanner_door_elec_a",
+    "severity": "error",
+    "source": "Demo employer security brief, illustrative reader clause 1",
+    "status": "fail",
+    "tolerance": 1e-06,
+    "unit": "m"
+  },
+  {
+    "benchmarks": [
+      0.3,
+      0.5
+    ],
+    "clause": "/Studies/compliance/Specifications/employer_security/Clause02",
+    "id": "16acdf41-334b-5bd5-a3da-6dda44f2a7d7",
+    "kind": "misplacedDevice",
+    "measure": "measured:distanceToDoorLeafEdge",
+    "measured": 0.2739999532699642,
+    "operator": "between",
+    "path": "/demo_datacentre_01/demo_datacentre_01_Site/demo_datacentre_01/L00_Ground/Corridor_Spine/Iris_Scanner_door_elec_b",
+    "severity": "error",
+    "source": "Demo employer security brief, illustrative reader clause 1",
+    "status": "fail",
+    "tolerance": 1e-06,
+    "unit": "m"
+  },
+  {
+    "benchmarks": [
+      0.3,
+      0.5
+    ],
+    "clause": "/Studies/compliance/Specifications/employer_security/Clause02",
+    "id": "d714f2dd-af6c-5604-8957-7c837bd54bdb",
+    "kind": "misplacedDevice",
+    "measure": "measured:distanceToDoorLeafEdge",
+    "measured": 0.2739999532699571,
+    "operator": "between",
+    "path": "/demo_datacentre_01/demo_datacentre_01_Site/demo_datacentre_01/L00_Ground/Corridor_Spine/Iris_Scanner_door_hall_a_s",
+    "severity": "error",
+    "source": "Demo employer security brief, illustrative reader clause 1",
+    "status": "fail",
+    "tolerance": 1e-06,
+    "unit": "m"
+  },
+  {
+    "benchmarks": [
+      0.3,
+      0.5
+    ],
+    "clause": "/Studies/compliance/Specifications/employer_security/Clause02",
+    "id": "ce6c55ad-4e78-5e63-828c-456d846d70c1",
+    "kind": "misplacedDevice",
+    "measure": "measured:distanceToDoorLeafEdge",
+    "measured": 0.2739999532699571,
+    "operator": "between",
+    "path": "/demo_datacentre_01/demo_datacentre_01_Site/demo_datacentre_01/L00_Ground/Corridor_Spine/Iris_Scanner_door_hall_b_s",
+    "severity": "error",
+    "source": "Demo employer security brief, illustrative reader clause 1",
+    "status": "fail",
+    "tolerance": 1e-06,
+    "unit": "m"
+  },
+  {
+    "benchmarks": [
+      0.3,
+      0.5
+    ],
+    "clause": "/Studies/compliance/Specifications/employer_security/Clause02",
+    "id": "9fc66cb7-c597-548c-b8af-75575bf46649",
+    "kind": "misplacedDevice",
+    "measure": "measured:distanceToDoorLeafEdge",
+    "measured": 0.27399998903273826,
+    "operator": "between",
+    "path": "/demo_datacentre_01/demo_datacentre_01_Site/demo_datacentre_01/L00_Ground/Corridor_Spine/Iris_Scanner_door_mmr_2",
+    "severity": "error",
+    "source": "Demo employer security brief, illustrative reader clause 1",
+    "status": "fail",
+    "tolerance": 1e-06,
+    "unit": "m"
+  },
+  {
+    "benchmarks": [
+      0.3,
+      0.5
+    ],
+    "clause": "/Studies/compliance/Specifications/employer_security/Clause02",
+    "id": "d4cd7132-d2e9-5cd9-9be2-461959bf46f5",
+    "kind": "misplacedDevice",
+    "measure": "measured:distanceToDoorLeafEdge",
+    "measured": 0.2739999532699571,
+    "operator": "between",
+    "path": "/demo_datacentre_01/demo_datacentre_01_Site/demo_datacentre_01/L00_Ground/Corridor_West/Iris_Scanner_door_hall_a_w",
     "severity": "error",
     "source": "Demo employer security brief, illustrative reader clause 1",
     "status": "fail",

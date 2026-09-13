@@ -1,15 +1,16 @@
 {
   "adaptations": [
-    "Mesh hook runs on full; exact bodies and exact results are committed result v0.2.3."
+    "Mesh hook runs on full; exact bodies and exact results are committed result v0.2.4."
   ],
   "differences": [
     "findings differ (values, fields or multiplicity outside tolerance)"
   ],
   "expectedFindings": 18,
   "findings": 13,
-  "producer": "hook v0.2.3",
+  "producer": "hook v0.2.4",
   "run": true,
   "source": "kind/usdaeco-clash/examples/datacentre/run.py",
   "sourceSha256": "1aab99ee111301ea03d6ddc6d205829c30d7fc71baf54ed9845770fb31b2bd8e",
-  "tag": "v0.2.3"
+  "studyRoot": "/Studies/clash",
+  "tag": "v0.2.4"
 }

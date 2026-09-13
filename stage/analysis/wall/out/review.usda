@@ -2,11 +2,11 @@
 (
  customLayerData = {
   string "aeco:layer:package" = "wall"
-  string "aeco:layer:producer" = "hook v0.2.5"
+  string "aeco:layer:producer" = "hook v0.2.6"
   string "aeco:layer:role" = "analysis"
   string "aeco:layer:source" = "kind/usdaeco-wall/examples/datacentre/run.py"
   string "aeco:layer:sourceSha256" = "9e18f0a19e4439b31ec3dbb5c225b2806f76e62202406a6d905bac191b147479"
-  string "aeco:layer:tag" = "v0.2.5"
+  string "aeco:layer:tag" = "v0.2.6"
   string "aeco:wall:framing" = "composed corner bounds; extents excluded"
   string "aeco:wall:layer" = "review"
  }

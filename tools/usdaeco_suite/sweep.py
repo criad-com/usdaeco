@@ -41,6 +41,14 @@ def text_findings(text, *, suffix="", extra_patterns=()):
         if suffix == ".html":
             # Preserve the imported font-service query parameter, never prose.
             public_line = re.sub(r"(?<=[?&])fam[i]ly=", "font=", public_line)
+        if suffix == ".usda":
+            # Native Revit field identifiers are part of the delivered data
+            # contract. Values and adjacent text still undergo every check.
+            public_line = re.sub(r"\baeco:props:Other:[F]amily(?=\s*=)",
+                                 "aeco:props:Other:NativeType", public_line)
+        if suffix == ".ifc":
+            public_line = re.sub(r"(?<=IFCPROPERTYSINGLEVALUE\(')[F]amily(?: Name| and Type)?(?=',)",
+                                 "NativeTypeField", public_line)
         if any(p.search(public_line) for p in regexes) or any(p.search(line) for p in extras):
             result.append(number)
     return result

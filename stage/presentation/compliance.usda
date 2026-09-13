@@ -2,13 +2,738 @@
 (
  customLayerData = {
   string "aeco:layer:package" = "compliance"
-  string "aeco:layer:producer" = "hook v0.1.3"
+  string "aeco:layer:producer" = "hook v0.2.1"
   string "aeco:layer:role" = "presentation"
   string "aeco:layer:source" = "kind/usdaeco-compliance/examples/datacentre/run.py"
-  string "aeco:layer:sourceSha256" = "c9ca2d1e189b819ab74c294ca01392402d15e006406857b996b88028b58e6b11"
-  string "aeco:layer:tag" = "v0.1.3"
+  string "aeco:layer:sourceSha256" = "59dc10df2afa683537a3351b5dc2c683359b9019f6569593b7ce740388dce924"
+  string "aeco:layer:tag" = "v0.2.1"
  }
 )
+
+over "Studies"
+{
+ over "compliance"
+ {
+  over "ComplianceFigures"
+  {
+   over "Elevation"
+   {
+    over "Shape0001"
+    {
+     color3f[] primvars:displayColor = [(0.96, 0.97, 0.98)]
+    }
+
+    over "Shape0002"
+    {
+     color3f[] primvars:displayColor = [(0.065, 0.1, 0.16)]
+    }
+
+    over "Shape0003"
+    {
+     color3f[] primvars:displayColor = [(0.065, 0.1, 0.16)]
+    }
+
+    over "Shape0004"
+    {
+     color3f[] primvars:displayColor = [(0.065, 0.1, 0.16)]
+    }
+
+    over "Shape0005"
+    {
+     color3f[] primvars:displayColor = [(0.065, 0.1, 0.16)]
+    }
+
+    over "Shape0006"
+    {
+     color3f[] primvars:displayColor = [(0.065, 0.1, 0.16)]
+    }
+
+    over "Shape0007"
+    {
+     color3f[] primvars:displayColor = [(0.87, 0.16, 0.18)]
+    }
+
+    over "Shape0008"
+    {
+     color3f[] primvars:displayColor = [(0.87, 0.16, 0.18)]
+    }
+
+    over "Shape0009"
+    {
+     color3f[] primvars:displayColor = [(0.065, 0.1, 0.16)]
+    }
+
+    over "Shape0010"
+    {
+     color3f[] primvars:displayColor = [(0.17, 0.44, 0.76)]
+    }
+
+    over "Shape0011"
+    {
+     color3f[] primvars:displayColor = [(0.17, 0.44, 0.76)]
+    }
+
+    over "Shape0012"
+    {
+     color3f[] primvars:displayColor = [(0.17, 0.44, 0.76)]
+    }
+
+    over "Shape0013"
+    {
+     color3f[] primvars:displayColor = [(0.08, 0.55, 0.34)]
+    }
+
+    over "Shape0014"
+    {
+     color3f[] primvars:displayColor = [(0.08, 0.55, 0.34)]
+    }
+
+    over "Shape0015"
+    {
+     color3f[] primvars:displayColor = [(0.08, 0.55, 0.34)]
+    }
+
+    over "Shape0016"
+    {
+     color3f[] primvars:displayColor = [(0.84, 0.52, 0.1)]
+    }
+
+    over "Shape0017"
+    {
+     color3f[] primvars:displayColor = [(0.84, 0.52, 0.1)]
+    }
+
+    over "Shape0018"
+    {
+     color3f[] primvars:displayColor = [(0.84, 0.52, 0.1)]
+    }
+
+    over "Shape0019"
+    {
+     color3f[] primvars:displayColor = [(0.87, 0.16, 0.18)]
+    }
+
+    over "Shape0020"
+    {
+     color3f[] primvars:displayColor = [(0.87, 0.16, 0.18)]
+    }
+
+    over "Shape0021"
+    {
+     color3f[] primvars:displayColor = [(0.17, 0.44, 0.76)]
+    }
+
+    over "Shape0022"
+    {
+     color3f[] primvars:displayColor = [(0.17, 0.44, 0.76)]
+    }
+
+    over "Shape0023"
+    {
+     color3f[] primvars:displayColor = [(0.08, 0.55, 0.34)]
+    }
+
+    over "Shape0024"
+    {
+     color3f[] primvars:displayColor = [(0.08, 0.55, 0.34)]
+    }
+
+    over "Shape0025"
+    {
+     color3f[] primvars:displayColor = [(0.84, 0.52, 0.1)]
+    }
+
+    over "Shape0026"
+    {
+     color3f[] primvars:displayColor = [(0.84, 0.52, 0.1)]
+    }
+
+    over "Shape0027"
+    {
+     color3f[] primvars:displayColor = [(0.065, 0.1, 0.16)]
+    }
+
+    over "Shape0028"
+    {
+     color3f[] primvars:displayColor = [(0.065, 0.1, 0.16)]
+    }
+   }
+
+   over "Plan"
+   {
+    over "Shape0001"
+    {
+     color3f[] primvars:displayColor = [(0.96, 0.97, 0.98)]
+    }
+
+    over "Shape0002"
+    {
+     color3f[] primvars:displayColor = [(0.065, 0.1, 0.16)]
+    }
+
+    over "Shape0003"
+    {
+     color3f[] primvars:displayColor = [(0.065, 0.1, 0.16)]
+    }
+
+    over "Shape0004"
+    {
+     color3f[] primvars:displayColor = [(0.065, 0.1, 0.16)]
+    }
+
+    over "Shape0005"
+    {
+     color3f[] primvars:displayColor = [(0.72, 0.77, 0.81)]
+    }
+
+    over "Shape0006"
+    {
+     color3f[] primvars:displayColor = [(0.72, 0.77, 0.81)]
+    }
+
+    over "Shape0007"
+    {
+     color3f[] primvars:displayColor = [(0.72, 0.77, 0.81)]
+    }
+
+    over "Shape0008"
+    {
+     color3f[] primvars:displayColor = [(0.72, 0.77, 0.81)]
+    }
+
+    over "Shape0009"
+    {
+     color3f[] primvars:displayColor = [(0.72, 0.77, 0.81)]
+    }
+
+    over "Shape0010"
+    {
+     color3f[] primvars:displayColor = [(0.72, 0.77, 0.81)]
+    }
+
+    over "Shape0011"
+    {
+     color3f[] primvars:displayColor = [(0.72, 0.77, 0.81)]
+    }
+
+    over "Shape0012"
+    {
+     color3f[] primvars:displayColor = [(0.72, 0.77, 0.81)]
+    }
+
+    over "Shape0013"
+    {
+     color3f[] primvars:displayColor = [(0.72, 0.77, 0.81)]
+    }
+
+    over "Shape0014"
+    {
+     color3f[] primvars:displayColor = [(0.72, 0.77, 0.81)]
+    }
+
+    over "Shape0015"
+    {
+     color3f[] primvars:displayColor = [(0.72, 0.77, 0.81)]
+    }
+
+    over "Shape0016"
+    {
+     color3f[] primvars:displayColor = [(0.72, 0.77, 0.81)]
+    }
+
+    over "Shape0017"
+    {
+     color3f[] primvars:displayColor = [(0.72, 0.77, 0.81)]
+    }
+
+    over "Shape0018"
+    {
+     color3f[] primvars:displayColor = [(0.72, 0.77, 0.81)]
+    }
+
+    over "Shape0019"
+    {
+     color3f[] primvars:displayColor = [(0.72, 0.77, 0.81)]
+    }
+
+    over "Shape0020"
+    {
+     color3f[] primvars:displayColor = [(0.72, 0.77, 0.81)]
+    }
+
+    over "Shape0021"
+    {
+     color3f[] primvars:displayColor = [(0.72, 0.77, 0.81)]
+    }
+
+    over "Shape0022"
+    {
+     color3f[] primvars:displayColor = [(0.72, 0.77, 0.81)]
+    }
+
+    over "Shape0023"
+    {
+     color3f[] primvars:displayColor = [(0.72, 0.77, 0.81)]
+    }
+
+    over "Shape0024"
+    {
+     color3f[] primvars:displayColor = [(0.72, 0.77, 0.81)]
+    }
+
+    over "Shape0025"
+    {
+     color3f[] primvars:displayColor = [(0.72, 0.77, 0.81)]
+    }
+
+    over "Shape0026"
+    {
+     color3f[] primvars:displayColor = [(0.72, 0.77, 0.81)]
+    }
+
+    over "Shape0027"
+    {
+     color3f[] primvars:displayColor = [(0.72, 0.77, 0.81)]
+    }
+
+    over "Shape0028"
+    {
+     color3f[] primvars:displayColor = [(0.72, 0.77, 0.81)]
+    }
+
+    over "Shape0029"
+    {
+     color3f[] primvars:displayColor = [(0.72, 0.77, 0.81)]
+    }
+
+    over "Shape0030"
+    {
+     color3f[] primvars:displayColor = [(0.72, 0.77, 0.81)]
+    }
+
+    over "Shape0031"
+    {
+     color3f[] primvars:displayColor = [(0.72, 0.77, 0.81)]
+    }
+
+    over "Shape0032"
+    {
+     color3f[] primvars:displayColor = [(0.72, 0.77, 0.81)]
+    }
+
+    over "Shape0033"
+    {
+     color3f[] primvars:displayColor = [(0.72, 0.77, 0.81)]
+    }
+
+    over "Shape0034"
+    {
+     color3f[] primvars:displayColor = [(0.72, 0.77, 0.81)]
+    }
+
+    over "Shape0035"
+    {
+     color3f[] primvars:displayColor = [(0.72, 0.77, 0.81)]
+    }
+
+    over "Shape0036"
+    {
+     color3f[] primvars:displayColor = [(0.72, 0.77, 0.81)]
+    }
+
+    over "Shape0037"
+    {
+     color3f[] primvars:displayColor = [(0.72, 0.77, 0.81)]
+    }
+
+    over "Shape0038"
+    {
+     color3f[] primvars:displayColor = [(0.72, 0.77, 0.81)]
+    }
+
+    over "Shape0039"
+    {
+     color3f[] primvars:displayColor = [(0.72, 0.77, 0.81)]
+    }
+
+    over "Shape0040"
+    {
+     color3f[] primvars:displayColor = [(0.72, 0.77, 0.81)]
+    }
+
+    over "Shape0041"
+    {
+     color3f[] primvars:displayColor = [(0.72, 0.77, 0.81)]
+    }
+
+    over "Shape0042"
+    {
+     color3f[] primvars:displayColor = [(0.72, 0.77, 0.81)]
+    }
+
+    over "Shape0043"
+    {
+     color3f[] primvars:displayColor = [(0.72, 0.77, 0.81)]
+    }
+
+    over "Shape0044"
+    {
+     color3f[] primvars:displayColor = [(0.72, 0.77, 0.81)]
+    }
+
+    over "Shape0045"
+    {
+     color3f[] primvars:displayColor = [(0.72, 0.77, 0.81)]
+    }
+
+    over "Shape0046"
+    {
+     color3f[] primvars:displayColor = [(0.72, 0.77, 0.81)]
+    }
+
+    over "Shape0047"
+    {
+     color3f[] primvars:displayColor = [(0.72, 0.77, 0.81)]
+    }
+
+    over "Shape0048"
+    {
+     color3f[] primvars:displayColor = [(0.72, 0.77, 0.81)]
+    }
+
+    over "Shape0049"
+    {
+     color3f[] primvars:displayColor = [(0.72, 0.77, 0.81)]
+    }
+
+    over "Shape0050"
+    {
+     color3f[] primvars:displayColor = [(0.72, 0.77, 0.81)]
+    }
+
+    over "Shape0051"
+    {
+     color3f[] primvars:displayColor = [(0.72, 0.77, 0.81)]
+    }
+
+    over "Shape0052"
+    {
+     color3f[] primvars:displayColor = [(0.72, 0.77, 0.81)]
+    }
+
+    over "Shape0053"
+    {
+     color3f[] primvars:displayColor = [(0.72, 0.77, 0.81)]
+    }
+
+    over "Shape0054"
+    {
+     color3f[] primvars:displayColor = [(0.72, 0.77, 0.81)]
+    }
+
+    over "Shape0055"
+    {
+     color3f[] primvars:displayColor = [(0.72, 0.77, 0.81)]
+    }
+
+    over "Shape0056"
+    {
+     color3f[] primvars:displayColor = [(0.72, 0.77, 0.81)]
+    }
+
+    over "Shape0057"
+    {
+     color3f[] primvars:displayColor = [(0.72, 0.77, 0.81)]
+    }
+
+    over "Shape0058"
+    {
+     color3f[] primvars:displayColor = [(0.72, 0.77, 0.81)]
+    }
+
+    over "Shape0059"
+    {
+     color3f[] primvars:displayColor = [(0.72, 0.77, 0.81)]
+    }
+
+    over "Shape0060"
+    {
+     color3f[] primvars:displayColor = [(0.72, 0.77, 0.81)]
+    }
+
+    over "Shape0061"
+    {
+     color3f[] primvars:displayColor = [(0.72, 0.77, 0.81)]
+    }
+
+    over "Shape0062"
+    {
+     color3f[] primvars:displayColor = [(0.72, 0.77, 0.81)]
+    }
+
+    over "Shape0063"
+    {
+     color3f[] primvars:displayColor = [(0.72, 0.77, 0.81)]
+    }
+
+    over "Shape0064"
+    {
+     color3f[] primvars:displayColor = [(0.72, 0.77, 0.81)]
+    }
+
+    over "Shape0065"
+    {
+     color3f[] primvars:displayColor = [(0.72, 0.77, 0.81)]
+    }
+
+    over "Shape0066"
+    {
+     color3f[] primvars:displayColor = [(0.72, 0.77, 0.81)]
+    }
+
+    over "Shape0067"
+    {
+     color3f[] primvars:displayColor = [(0.72, 0.77, 0.81)]
+    }
+
+    over "Shape0068"
+    {
+     color3f[] primvars:displayColor = [(0.72, 0.77, 0.81)]
+    }
+
+    over "Shape0069"
+    {
+     color3f[] primvars:displayColor = [(0.72, 0.77, 0.81)]
+    }
+
+    over "Shape0070"
+    {
+     color3f[] primvars:displayColor = [(0.72, 0.77, 0.81)]
+    }
+
+    over "Shape0071"
+    {
+     color3f[] primvars:displayColor = [(0.72, 0.77, 0.81)]
+    }
+
+    over "Shape0072"
+    {
+     color3f[] primvars:displayColor = [(0.72, 0.77, 0.81)]
+    }
+
+    over "Shape0073"
+    {
+     color3f[] primvars:displayColor = [(0.72, 0.77, 0.81)]
+    }
+
+    over "Shape0074"
+    {
+     color3f[] primvars:displayColor = [(0.72, 0.77, 0.81)]
+    }
+
+    over "Shape0075"
+    {
+     color3f[] primvars:displayColor = [(0.72, 0.77, 0.81)]
+    }
+
+    over "Shape0076"
+    {
+     color3f[] primvars:displayColor = [(0.72, 0.77, 0.81)]
+    }
+
+    over "Shape0077"
+    {
+     color3f[] primvars:displayColor = [(0.72, 0.77, 0.81)]
+    }
+
+    over "Shape0078"
+    {
+     color3f[] primvars:displayColor = [(0.72, 0.77, 0.81)]
+    }
+
+    over "Shape0079"
+    {
+     color3f[] primvars:displayColor = [(0.72, 0.77, 0.81)]
+    }
+
+    over "Shape0080"
+    {
+     color3f[] primvars:displayColor = [(0.72, 0.77, 0.81)]
+    }
+
+    over "Shape0081"
+    {
+     color3f[] primvars:displayColor = [(0.72, 0.77, 0.81)]
+    }
+
+    over "Shape0082"
+    {
+     color3f[] primvars:displayColor = [(0.72, 0.77, 0.81)]
+    }
+
+    over "Shape0083"
+    {
+     color3f[] primvars:displayColor = [(0.72, 0.77, 0.81)]
+    }
+
+    over "Shape0084"
+    {
+     color3f[] primvars:displayColor = [(0.72, 0.77, 0.81)]
+    }
+
+    over "Shape0085"
+    {
+     color3f[] primvars:displayColor = [(0.72, 0.77, 0.81)]
+    }
+
+    over "Shape0086"
+    {
+     color3f[] primvars:displayColor = [(0.72, 0.77, 0.81)]
+    }
+
+    over "Shape0087"
+    {
+     color3f[] primvars:displayColor = [(0.72, 0.77, 0.81)]
+    }
+
+    over "Shape0088"
+    {
+     color3f[] primvars:displayColor = [(0.87, 0.16, 0.18)]
+    }
+
+    over "Shape0089"
+    {
+     color3f[] primvars:displayColor = [(0.87, 0.16, 0.18)]
+    }
+
+    over "Shape0090"
+    {
+     color3f[] primvars:displayColor = [(0.87, 0.16, 0.18)]
+    }
+
+    over "Shape0091"
+    {
+     color3f[] primvars:displayColor = [(0.87, 0.16, 0.18)]
+    }
+
+    over "Shape0092"
+    {
+     color3f[] primvars:displayColor = [(0.87, 0.16, 0.18)]
+    }
+
+    over "Shape0093"
+    {
+     color3f[] primvars:displayColor = [(0.87, 0.16, 0.18)]
+    }
+
+    over "Shape0094"
+    {
+     color3f[] primvars:displayColor = [(0.87, 0.16, 0.18)]
+    }
+
+    over "Shape0095"
+    {
+     color3f[] primvars:displayColor = [(0.87, 0.16, 0.18)]
+    }
+
+    over "Shape0096"
+    {
+     color3f[] primvars:displayColor = [(0.87, 0.16, 0.18)]
+    }
+
+    over "Shape0097"
+    {
+     color3f[] primvars:displayColor = [(0.87, 0.16, 0.18)]
+    }
+
+    over "Shape0098"
+    {
+     color3f[] primvars:displayColor = [(0.87, 0.16, 0.18)]
+    }
+
+    over "Shape0099"
+    {
+     color3f[] primvars:displayColor = [(0.87, 0.16, 0.18)]
+    }
+
+    over "Shape0100"
+    {
+     color3f[] primvars:displayColor = [(0.87, 0.16, 0.18)]
+    }
+
+    over "Shape0101"
+    {
+     color3f[] primvars:displayColor = [(0.87, 0.16, 0.18)]
+    }
+
+    over "Shape0102"
+    {
+     color3f[] primvars:displayColor = [(0.87, 0.16, 0.18)]
+    }
+
+    over "Shape0103"
+    {
+     color3f[] primvars:displayColor = [(0.87, 0.16, 0.18)]
+    }
+
+    over "Shape0104"
+    {
+     color3f[] primvars:displayColor = [(0.87, 0.16, 0.18)]
+    }
+
+    over "Shape0105"
+    {
+     color3f[] primvars:displayColor = [(0.87, 0.16, 0.18)]
+    }
+
+    over "Shape0106"
+    {
+     color3f[] primvars:displayColor = [(0.87, 0.16, 0.18)]
+    }
+
+    over "Shape0107"
+    {
+     color3f[] primvars:displayColor = [(0.87, 0.16, 0.18)]
+    }
+
+    over "Shape0108"
+    {
+     color3f[] primvars:displayColor = [(0.87, 0.16, 0.18)]
+    }
+
+    over "Shape0109"
+    {
+     color3f[] primvars:displayColor = [(0.87, 0.16, 0.18)]
+    }
+
+    over "Shape0110"
+    {
+     color3f[] primvars:displayColor = [(0.08, 0.55, 0.34)]
+    }
+
+    over "Shape0111"
+    {
+     color3f[] primvars:displayColor = [(0.065, 0.1, 0.16)]
+    }
+
+    over "Shape0112"
+    {
+     color3f[] primvars:displayColor = [(0.87, 0.16, 0.18)]
+    }
+
+    over "Shape0113"
+    {
+     color3f[] primvars:displayColor = [(0.87, 0.16, 0.18)]
+    }
+
+    over "Shape0114"
+    {
+     color3f[] primvars:displayColor = [(0.065, 0.1, 0.16)]
+    }
+   }
+  }
+ }
+}
 
 over "demo_datacentre_01"
 {
@@ -16,725 +741,6 @@ over "demo_datacentre_01"
  {
   over "demo_datacentre_01"
   {
-   over "ComplianceFigures"
-   {
-    over "Elevation"
-    {
-     over "Shape0001"
-     {
-      color3f[] primvars:displayColor = [(0.96, 0.97, 0.98)]
-     }
-
-     over "Shape0002"
-     {
-      color3f[] primvars:displayColor = [(0.065, 0.1, 0.16)]
-     }
-
-     over "Shape0003"
-     {
-      color3f[] primvars:displayColor = [(0.065, 0.1, 0.16)]
-     }
-
-     over "Shape0004"
-     {
-      color3f[] primvars:displayColor = [(0.065, 0.1, 0.16)]
-     }
-
-     over "Shape0005"
-     {
-      color3f[] primvars:displayColor = [(0.065, 0.1, 0.16)]
-     }
-
-     over "Shape0006"
-     {
-      color3f[] primvars:displayColor = [(0.065, 0.1, 0.16)]
-     }
-
-     over "Shape0007"
-     {
-      color3f[] primvars:displayColor = [(0.87, 0.16, 0.18)]
-     }
-
-     over "Shape0008"
-     {
-      color3f[] primvars:displayColor = [(0.87, 0.16, 0.18)]
-     }
-
-     over "Shape0009"
-     {
-      color3f[] primvars:displayColor = [(0.065, 0.1, 0.16)]
-     }
-
-     over "Shape0010"
-     {
-      color3f[] primvars:displayColor = [(0.17, 0.44, 0.76)]
-     }
-
-     over "Shape0011"
-     {
-      color3f[] primvars:displayColor = [(0.17, 0.44, 0.76)]
-     }
-
-     over "Shape0012"
-     {
-      color3f[] primvars:displayColor = [(0.17, 0.44, 0.76)]
-     }
-
-     over "Shape0013"
-     {
-      color3f[] primvars:displayColor = [(0.08, 0.55, 0.34)]
-     }
-
-     over "Shape0014"
-     {
-      color3f[] primvars:displayColor = [(0.08, 0.55, 0.34)]
-     }
-
-     over "Shape0015"
-     {
-      color3f[] primvars:displayColor = [(0.08, 0.55, 0.34)]
-     }
-
-     over "Shape0016"
-     {
-      color3f[] primvars:displayColor = [(0.84, 0.52, 0.1)]
-     }
-
-     over "Shape0017"
-     {
-      color3f[] primvars:displayColor = [(0.84, 0.52, 0.1)]
-     }
-
-     over "Shape0018"
-     {
-      color3f[] primvars:displayColor = [(0.84, 0.52, 0.1)]
-     }
-
-     over "Shape0019"
-     {
-      color3f[] primvars:displayColor = [(0.87, 0.16, 0.18)]
-     }
-
-     over "Shape0020"
-     {
-      color3f[] primvars:displayColor = [(0.87, 0.16, 0.18)]
-     }
-
-     over "Shape0021"
-     {
-      color3f[] primvars:displayColor = [(0.17, 0.44, 0.76)]
-     }
-
-     over "Shape0022"
-     {
-      color3f[] primvars:displayColor = [(0.17, 0.44, 0.76)]
-     }
-
-     over "Shape0023"
-     {
-      color3f[] primvars:displayColor = [(0.08, 0.55, 0.34)]
-     }
-
-     over "Shape0024"
-     {
-      color3f[] primvars:displayColor = [(0.08, 0.55, 0.34)]
-     }
-
-     over "Shape0025"
-     {
-      color3f[] primvars:displayColor = [(0.84, 0.52, 0.1)]
-     }
-
-     over "Shape0026"
-     {
-      color3f[] primvars:displayColor = [(0.84, 0.52, 0.1)]
-     }
-
-     over "Shape0027"
-     {
-      color3f[] primvars:displayColor = [(0.065, 0.1, 0.16)]
-     }
-
-     over "Shape0028"
-     {
-      color3f[] primvars:displayColor = [(0.065, 0.1, 0.16)]
-     }
-    }
-
-    over "Plan"
-    {
-     over "Shape0001"
-     {
-      color3f[] primvars:displayColor = [(0.96, 0.97, 0.98)]
-     }
-
-     over "Shape0002"
-     {
-      color3f[] primvars:displayColor = [(0.065, 0.1, 0.16)]
-     }
-
-     over "Shape0003"
-     {
-      color3f[] primvars:displayColor = [(0.065, 0.1, 0.16)]
-     }
-
-     over "Shape0004"
-     {
-      color3f[] primvars:displayColor = [(0.065, 0.1, 0.16)]
-     }
-
-     over "Shape0005"
-     {
-      color3f[] primvars:displayColor = [(0.72, 0.77, 0.81)]
-     }
-
-     over "Shape0006"
-     {
-      color3f[] primvars:displayColor = [(0.72, 0.77, 0.81)]
-     }
-
-     over "Shape0007"
-     {
-      color3f[] primvars:displayColor = [(0.72, 0.77, 0.81)]
-     }
-
-     over "Shape0008"
-     {
-      color3f[] primvars:displayColor = [(0.72, 0.77, 0.81)]
-     }
-
-     over "Shape0009"
-     {
-      color3f[] primvars:displayColor = [(0.72, 0.77, 0.81)]
-     }
-
-     over "Shape0010"
-     {
-      color3f[] primvars:displayColor = [(0.72, 0.77, 0.81)]
-     }
-
-     over "Shape0011"
-     {
-      color3f[] primvars:displayColor = [(0.72, 0.77, 0.81)]
-     }
-
-     over "Shape0012"
-     {
-      color3f[] primvars:displayColor = [(0.72, 0.77, 0.81)]
-     }
-
-     over "Shape0013"
-     {
-      color3f[] primvars:displayColor = [(0.72, 0.77, 0.81)]
-     }
-
-     over "Shape0014"
-     {
-      color3f[] primvars:displayColor = [(0.72, 0.77, 0.81)]
-     }
-
-     over "Shape0015"
-     {
-      color3f[] primvars:displayColor = [(0.72, 0.77, 0.81)]
-     }
-
-     over "Shape0016"
-     {
-      color3f[] primvars:displayColor = [(0.72, 0.77, 0.81)]
-     }
-
-     over "Shape0017"
-     {
-      color3f[] primvars:displayColor = [(0.72, 0.77, 0.81)]
-     }
-
-     over "Shape0018"
-     {
-      color3f[] primvars:displayColor = [(0.72, 0.77, 0.81)]
-     }
-
-     over "Shape0019"
-     {
-      color3f[] primvars:displayColor = [(0.72, 0.77, 0.81)]
-     }
-
-     over "Shape0020"
-     {
-      color3f[] primvars:displayColor = [(0.72, 0.77, 0.81)]
-     }
-
-     over "Shape0021"
-     {
-      color3f[] primvars:displayColor = [(0.72, 0.77, 0.81)]
-     }
-
-     over "Shape0022"
-     {
-      color3f[] primvars:displayColor = [(0.72, 0.77, 0.81)]
-     }
-
-     over "Shape0023"
-     {
-      color3f[] primvars:displayColor = [(0.72, 0.77, 0.81)]
-     }
-
-     over "Shape0024"
-     {
-      color3f[] primvars:displayColor = [(0.72, 0.77, 0.81)]
-     }
-
-     over "Shape0025"
-     {
-      color3f[] primvars:displayColor = [(0.72, 0.77, 0.81)]
-     }
-
-     over "Shape0026"
-     {
-      color3f[] primvars:displayColor = [(0.72, 0.77, 0.81)]
-     }
-
-     over "Shape0027"
-     {
-      color3f[] primvars:displayColor = [(0.72, 0.77, 0.81)]
-     }
-
-     over "Shape0028"
-     {
-      color3f[] primvars:displayColor = [(0.72, 0.77, 0.81)]
-     }
-
-     over "Shape0029"
-     {
-      color3f[] primvars:displayColor = [(0.72, 0.77, 0.81)]
-     }
-
-     over "Shape0030"
-     {
-      color3f[] primvars:displayColor = [(0.72, 0.77, 0.81)]
-     }
-
-     over "Shape0031"
-     {
-      color3f[] primvars:displayColor = [(0.72, 0.77, 0.81)]
-     }
-
-     over "Shape0032"
-     {
-      color3f[] primvars:displayColor = [(0.72, 0.77, 0.81)]
-     }
-
-     over "Shape0033"
-     {
-      color3f[] primvars:displayColor = [(0.72, 0.77, 0.81)]
-     }
-
-     over "Shape0034"
-     {
-      color3f[] primvars:displayColor = [(0.72, 0.77, 0.81)]
-     }
-
-     over "Shape0035"
-     {
-      color3f[] primvars:displayColor = [(0.72, 0.77, 0.81)]
-     }
-
-     over "Shape0036"
-     {
-      color3f[] primvars:displayColor = [(0.72, 0.77, 0.81)]
-     }
-
-     over "Shape0037"
-     {
-      color3f[] primvars:displayColor = [(0.72, 0.77, 0.81)]
-     }
-
-     over "Shape0038"
-     {
-      color3f[] primvars:displayColor = [(0.72, 0.77, 0.81)]
-     }
-
-     over "Shape0039"
-     {
-      color3f[] primvars:displayColor = [(0.72, 0.77, 0.81)]
-     }
-
-     over "Shape0040"
-     {
-      color3f[] primvars:displayColor = [(0.72, 0.77, 0.81)]
-     }
-
-     over "Shape0041"
-     {
-      color3f[] primvars:displayColor = [(0.72, 0.77, 0.81)]
-     }
-
-     over "Shape0042"
-     {
-      color3f[] primvars:displayColor = [(0.72, 0.77, 0.81)]
-     }
-
-     over "Shape0043"
-     {
-      color3f[] primvars:displayColor = [(0.72, 0.77, 0.81)]
-     }
-
-     over "Shape0044"
-     {
-      color3f[] primvars:displayColor = [(0.72, 0.77, 0.81)]
-     }
-
-     over "Shape0045"
-     {
-      color3f[] primvars:displayColor = [(0.72, 0.77, 0.81)]
-     }
-
-     over "Shape0046"
-     {
-      color3f[] primvars:displayColor = [(0.72, 0.77, 0.81)]
-     }
-
-     over "Shape0047"
-     {
-      color3f[] primvars:displayColor = [(0.72, 0.77, 0.81)]
-     }
-
-     over "Shape0048"
-     {
-      color3f[] primvars:displayColor = [(0.72, 0.77, 0.81)]
-     }
-
-     over "Shape0049"
-     {
-      color3f[] primvars:displayColor = [(0.72, 0.77, 0.81)]
-     }
-
-     over "Shape0050"
-     {
-      color3f[] primvars:displayColor = [(0.72, 0.77, 0.81)]
-     }
-
-     over "Shape0051"
-     {
-      color3f[] primvars:displayColor = [(0.72, 0.77, 0.81)]
-     }
-
-     over "Shape0052"
-     {
-      color3f[] primvars:displayColor = [(0.72, 0.77, 0.81)]
-     }
-
-     over "Shape0053"
-     {
-      color3f[] primvars:displayColor = [(0.72, 0.77, 0.81)]
-     }
-
-     over "Shape0054"
-     {
-      color3f[] primvars:displayColor = [(0.72, 0.77, 0.81)]
-     }
-
-     over "Shape0055"
-     {
-      color3f[] primvars:displayColor = [(0.72, 0.77, 0.81)]
-     }
-
-     over "Shape0056"
-     {
-      color3f[] primvars:displayColor = [(0.72, 0.77, 0.81)]
-     }
-
-     over "Shape0057"
-     {
-      color3f[] primvars:displayColor = [(0.72, 0.77, 0.81)]
-     }
-
-     over "Shape0058"
-     {
-      color3f[] primvars:displayColor = [(0.72, 0.77, 0.81)]
-     }
-
-     over "Shape0059"
-     {
-      color3f[] primvars:displayColor = [(0.72, 0.77, 0.81)]
-     }
-
-     over "Shape0060"
-     {
-      color3f[] primvars:displayColor = [(0.72, 0.77, 0.81)]
-     }
-
-     over "Shape0061"
-     {
-      color3f[] primvars:displayColor = [(0.72, 0.77, 0.81)]
-     }
-
-     over "Shape0062"
-     {
-      color3f[] primvars:displayColor = [(0.72, 0.77, 0.81)]
-     }
-
-     over "Shape0063"
-     {
-      color3f[] primvars:displayColor = [(0.72, 0.77, 0.81)]
-     }
-
-     over "Shape0064"
-     {
-      color3f[] primvars:displayColor = [(0.72, 0.77, 0.81)]
-     }
-
-     over "Shape0065"
-     {
-      color3f[] primvars:displayColor = [(0.72, 0.77, 0.81)]
-     }
-
-     over "Shape0066"
-     {
-      color3f[] primvars:displayColor = [(0.72, 0.77, 0.81)]
-     }
-
-     over "Shape0067"
-     {
-      color3f[] primvars:displayColor = [(0.72, 0.77, 0.81)]
-     }
-
-     over "Shape0068"
-     {
-      color3f[] primvars:displayColor = [(0.72, 0.77, 0.81)]
-     }
-
-     over "Shape0069"
-     {
-      color3f[] primvars:displayColor = [(0.72, 0.77, 0.81)]
-     }
-
-     over "Shape0070"
-     {
-      color3f[] primvars:displayColor = [(0.72, 0.77, 0.81)]
-     }
-
-     over "Shape0071"
-     {
-      color3f[] primvars:displayColor = [(0.72, 0.77, 0.81)]
-     }
-
-     over "Shape0072"
-     {
-      color3f[] primvars:displayColor = [(0.72, 0.77, 0.81)]
-     }
-
-     over "Shape0073"
-     {
-      color3f[] primvars:displayColor = [(0.72, 0.77, 0.81)]
-     }
-
-     over "Shape0074"
-     {
-      color3f[] primvars:displayColor = [(0.72, 0.77, 0.81)]
-     }
-
-     over "Shape0075"
-     {
-      color3f[] primvars:displayColor = [(0.72, 0.77, 0.81)]
-     }
-
-     over "Shape0076"
-     {
-      color3f[] primvars:displayColor = [(0.72, 0.77, 0.81)]
-     }
-
-     over "Shape0077"
-     {
-      color3f[] primvars:displayColor = [(0.72, 0.77, 0.81)]
-     }
-
-     over "Shape0078"
-     {
-      color3f[] primvars:displayColor = [(0.72, 0.77, 0.81)]
-     }
-
-     over "Shape0079"
-     {
-      color3f[] primvars:displayColor = [(0.72, 0.77, 0.81)]
-     }
-
-     over "Shape0080"
-     {
-      color3f[] primvars:displayColor = [(0.72, 0.77, 0.81)]
-     }
-
-     over "Shape0081"
-     {
-      color3f[] primvars:displayColor = [(0.72, 0.77, 0.81)]
-     }
-
-     over "Shape0082"
-     {
-      color3f[] primvars:displayColor = [(0.72, 0.77, 0.81)]
-     }
-
-     over "Shape0083"
-     {
-      color3f[] primvars:displayColor = [(0.72, 0.77, 0.81)]
-     }
-
-     over "Shape0084"
-     {
-      color3f[] primvars:displayColor = [(0.72, 0.77, 0.81)]
-     }
-
-     over "Shape0085"
-     {
-      color3f[] primvars:displayColor = [(0.72, 0.77, 0.81)]
-     }
-
-     over "Shape0086"
-     {
-      color3f[] primvars:displayColor = [(0.72, 0.77, 0.81)]
-     }
-
-     over "Shape0087"
-     {
-      color3f[] primvars:displayColor = [(0.72, 0.77, 0.81)]
-     }
-
-     over "Shape0088"
-     {
-      color3f[] primvars:displayColor = [(0.08, 0.55, 0.34)]
-     }
-
-     over "Shape0089"
-     {
-      color3f[] primvars:displayColor = [(0.08, 0.55, 0.34)]
-     }
-
-     over "Shape0090"
-     {
-      color3f[] primvars:displayColor = [(0.08, 0.55, 0.34)]
-     }
-
-     over "Shape0091"
-     {
-      color3f[] primvars:displayColor = [(0.08, 0.55, 0.34)]
-     }
-
-     over "Shape0092"
-     {
-      color3f[] primvars:displayColor = [(0.08, 0.55, 0.34)]
-     }
-
-     over "Shape0093"
-     {
-      color3f[] primvars:displayColor = [(0.08, 0.55, 0.34)]
-     }
-
-     over "Shape0094"
-     {
-      color3f[] primvars:displayColor = [(0.08, 0.55, 0.34)]
-     }
-
-     over "Shape0095"
-     {
-      color3f[] primvars:displayColor = [(0.08, 0.55, 0.34)]
-     }
-
-     over "Shape0096"
-     {
-      color3f[] primvars:displayColor = [(0.87, 0.16, 0.18)]
-     }
-
-     over "Shape0097"
-     {
-      color3f[] primvars:displayColor = [(0.87, 0.16, 0.18)]
-     }
-
-     over "Shape0098"
-     {
-      color3f[] primvars:displayColor = [(0.08, 0.55, 0.34)]
-     }
-
-     over "Shape0099"
-     {
-      color3f[] primvars:displayColor = [(0.08, 0.55, 0.34)]
-     }
-
-     over "Shape0100"
-     {
-      color3f[] primvars:displayColor = [(0.08, 0.55, 0.34)]
-     }
-
-     over "Shape0101"
-     {
-      color3f[] primvars:displayColor = [(0.08, 0.55, 0.34)]
-     }
-
-     over "Shape0102"
-     {
-      color3f[] primvars:displayColor = [(0.08, 0.55, 0.34)]
-     }
-
-     over "Shape0103"
-     {
-      color3f[] primvars:displayColor = [(0.08, 0.55, 0.34)]
-     }
-
-     over "Shape0104"
-     {
-      color3f[] primvars:displayColor = [(0.08, 0.55, 0.34)]
-     }
-
-     over "Shape0105"
-     {
-      color3f[] primvars:displayColor = [(0.08, 0.55, 0.34)]
-     }
-
-     over "Shape0106"
-     {
-      color3f[] primvars:displayColor = [(0.08, 0.55, 0.34)]
-     }
-
-     over "Shape0107"
-     {
-      color3f[] primvars:displayColor = [(0.08, 0.55, 0.34)]
-     }
-
-     over "Shape0108"
-     {
-      color3f[] primvars:displayColor = [(0.08, 0.55, 0.34)]
-     }
-
-     over "Shape0109"
-     {
-      color3f[] primvars:displayColor = [(0.08, 0.55, 0.34)]
-     }
-
-     over "Shape0110"
-     {
-      color3f[] primvars:displayColor = [(0.08, 0.55, 0.34)]
-     }
-
-     over "Shape0111"
-     {
-      color3f[] primvars:displayColor = [(0.065, 0.1, 0.16)]
-     }
-
-     over "Shape0112"
-     {
-      color3f[] primvars:displayColor = [(0.87, 0.16, 0.18)]
-     }
-
-     over "Shape0113"
-     {
-      color3f[] primvars:displayColor = [(0.87, 0.16, 0.18)]
-     }
-
-     over "Shape0114"
-     {
-      color3f[] primvars:displayColor = [(0.065, 0.1, 0.16)]
-     }
-    }
-   }
-
    over "L00_Ground"
    {
     over "Corridor_Centre"
@@ -743,7 +749,7 @@ over "demo_datacentre_01"
      {
       over "Geom"
       {
-       color3f[] primvars:displayColor = [(0.08, 0.55, 0.34)] (
+       color3f[] primvars:displayColor = [(0.87, 0.16, 0.18)] (
         aecoDerived = true
        )
       }
@@ -773,7 +779,7 @@ over "demo_datacentre_01"
 
        over "Status"
        {
-        color3f[] primvars:displayColor = [(0.08, 0.55, 0.34)] (
+        color3f[] primvars:displayColor = [(0.87, 0.16, 0.18)] (
          aecoDerived = true
         )
        }
@@ -784,7 +790,7 @@ over "demo_datacentre_01"
      {
       over "Geom"
       {
-       color3f[] primvars:displayColor = [(0.08, 0.55, 0.34)] (
+       color3f[] primvars:displayColor = [(0.87, 0.16, 0.18)] (
         aecoDerived = true
        )
       }
@@ -814,7 +820,7 @@ over "demo_datacentre_01"
 
        over "Status"
        {
-        color3f[] primvars:displayColor = [(0.08, 0.55, 0.34)] (
+        color3f[] primvars:displayColor = [(0.87, 0.16, 0.18)] (
          aecoDerived = true
         )
        }
@@ -828,7 +834,7 @@ over "demo_datacentre_01"
      {
       over "Geom"
       {
-       color3f[] primvars:displayColor = [(0.08, 0.55, 0.34)] (
+       color3f[] primvars:displayColor = [(0.87, 0.16, 0.18)] (
         aecoDerived = true
        )
       }
@@ -858,7 +864,7 @@ over "demo_datacentre_01"
 
        over "Status"
        {
-        color3f[] primvars:displayColor = [(0.08, 0.55, 0.34)] (
+        color3f[] primvars:displayColor = [(0.87, 0.16, 0.18)] (
          aecoDerived = true
         )
        }
@@ -872,7 +878,7 @@ over "demo_datacentre_01"
      {
       over "Geom"
       {
-       color3f[] primvars:displayColor = [(0.08, 0.55, 0.34)] (
+       color3f[] primvars:displayColor = [(0.87, 0.16, 0.18)] (
         aecoDerived = true
        )
       }
@@ -902,7 +908,7 @@ over "demo_datacentre_01"
 
        over "Status"
        {
-        color3f[] primvars:displayColor = [(0.08, 0.55, 0.34)] (
+        color3f[] primvars:displayColor = [(0.87, 0.16, 0.18)] (
          aecoDerived = true
         )
        }
@@ -957,7 +963,7 @@ over "demo_datacentre_01"
      {
       over "Geom"
       {
-       color3f[] primvars:displayColor = [(0.08, 0.55, 0.34)] (
+       color3f[] primvars:displayColor = [(0.87, 0.16, 0.18)] (
         aecoDerived = true
        )
       }
@@ -987,7 +993,7 @@ over "demo_datacentre_01"
 
        over "Status"
        {
-        color3f[] primvars:displayColor = [(0.08, 0.55, 0.34)] (
+        color3f[] primvars:displayColor = [(0.87, 0.16, 0.18)] (
          aecoDerived = true
         )
        }
@@ -998,7 +1004,7 @@ over "demo_datacentre_01"
      {
       over "Geom"
       {
-       color3f[] primvars:displayColor = [(0.08, 0.55, 0.34)] (
+       color3f[] primvars:displayColor = [(0.87, 0.16, 0.18)] (
         aecoDerived = true
        )
       }
@@ -1028,7 +1034,7 @@ over "demo_datacentre_01"
 
        over "Status"
        {
-        color3f[] primvars:displayColor = [(0.08, 0.55, 0.34)] (
+        color3f[] primvars:displayColor = [(0.87, 0.16, 0.18)] (
          aecoDerived = true
         )
        }
@@ -1039,7 +1045,7 @@ over "demo_datacentre_01"
      {
       over "Geom"
       {
-       color3f[] primvars:displayColor = [(0.08, 0.55, 0.34)] (
+       color3f[] primvars:displayColor = [(0.87, 0.16, 0.18)] (
         aecoDerived = true
        )
       }
@@ -1069,7 +1075,7 @@ over "demo_datacentre_01"
 
        over "Status"
        {
-        color3f[] primvars:displayColor = [(0.08, 0.55, 0.34)] (
+        color3f[] primvars:displayColor = [(0.87, 0.16, 0.18)] (
          aecoDerived = true
         )
        }
@@ -1080,7 +1086,7 @@ over "demo_datacentre_01"
      {
       over "Geom"
       {
-       color3f[] primvars:displayColor = [(0.08, 0.55, 0.34)] (
+       color3f[] primvars:displayColor = [(0.87, 0.16, 0.18)] (
         aecoDerived = true
        )
       }
@@ -1110,7 +1116,7 @@ over "demo_datacentre_01"
 
        over "Status"
        {
-        color3f[] primvars:displayColor = [(0.08, 0.55, 0.34)] (
+        color3f[] primvars:displayColor = [(0.87, 0.16, 0.18)] (
          aecoDerived = true
         )
        }
@@ -1121,7 +1127,7 @@ over "demo_datacentre_01"
      {
       over "Geom"
       {
-       color3f[] primvars:displayColor = [(0.08, 0.55, 0.34)] (
+       color3f[] primvars:displayColor = [(0.87, 0.16, 0.18)] (
         aecoDerived = true
        )
       }
@@ -1151,7 +1157,7 @@ over "demo_datacentre_01"
 
        over "Status"
        {
-        color3f[] primvars:displayColor = [(0.08, 0.55, 0.34)] (
+        color3f[] primvars:displayColor = [(0.87, 0.16, 0.18)] (
          aecoDerived = true
         )
        }
@@ -1165,7 +1171,7 @@ over "demo_datacentre_01"
      {
       over "Geom"
       {
-       color3f[] primvars:displayColor = [(0.08, 0.55, 0.34)] (
+       color3f[] primvars:displayColor = [(0.87, 0.16, 0.18)] (
         aecoDerived = true
        )
       }
@@ -1195,7 +1201,7 @@ over "demo_datacentre_01"
 
        over "Status"
        {
-        color3f[] primvars:displayColor = [(0.08, 0.55, 0.34)] (
+        color3f[] primvars:displayColor = [(0.87, 0.16, 0.18)] (
          aecoDerived = true
         )
        }

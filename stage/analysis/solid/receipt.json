@@ -5,9 +5,10 @@
   "differences": [],
   "expectedFindings": 5,
   "findings": 5,
-  "producer": "committed result v0.1.5",
+  "producer": "committed result v0.1.6",
   "run": false,
   "source": "kind/usdaeco-solid/examples/datacentre/run.py",
-  "sourceSha256": "0118e7228b59c88cb24366d29f26a2d70ff2d255f392190f982b791185df4c26",
-  "tag": "v0.1.5"
+  "sourceSha256": "721e39241afc93fa2d44b01510e20114d78176e32dc1fe6c4ff8246c86249ae7",
+  "studyRoot": "/Studies/solid",
+  "tag": "v0.1.6"
 }

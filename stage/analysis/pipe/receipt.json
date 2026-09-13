@@ -5,9 +5,10 @@
   ],
   "expectedFindings": 7,
   "findings": 7,
-  "producer": "hook v0.2.5",
+  "producer": "hook v0.2.6",
   "run": true,
   "source": "kind/usdaeco-pipe/examples/datacentre/run.py",
   "sourceSha256": "f83472499f2702101fc9d97fe6a59d634baf4c21500a2865bcc8807d543bba61",
-  "tag": "v0.2.5"
+  "studyRoot": "/Studies/pipe",
+  "tag": "v0.2.6"
 }

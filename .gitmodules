@@ -64,6 +64,3 @@
 [submodule "gate/usdaeco-scenarios"]
 	path = gate/usdaeco-scenarios
 	url = ../usdaeco-scenarios.git
-[submodule "gate/usdaeco-board"]
-	path = gate/usdaeco-board
-	url = ../usdaeco-board.git

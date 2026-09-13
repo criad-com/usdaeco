@@ -1,0 +1,409 @@
+#usda 1.0
+(
+ customLayerData = {
+  string "aeco:layer:package" = "cctv"
+  string "aeco:layer:producer" = "hook v0.5.7"
+  string "aeco:layer:role" = "analysis"
+  string "aeco:layer:source" = "data/usdaeco-datacentre/src/dcbuild/layout.py"
+  string "aeco:layer:sourceSha256" = "38dbb11894c73262716ae46d0e3a08b6647082cd63284793fa9ad4a82ba62076"
+  string "aeco:layer:tag" = "v0.5.7"
+  string "aeco:suite:adapter" = "Issued full-plan door drivers joined by aeco:id"
+  string "aeco:suite:adapterSha256" = "70cbc4ddfafb71964e71600006a2e3666fc10fc7bfca7bf31ea0416a309970f5"
+  int "aeco:suite:joinedDoors" = 47
+ }
+)
+
+over "demo_datacentre_01"
+{
+ over "demo_datacentre_01_Site"
+ {
+  over "demo_datacentre_01"
+  {
+   over "L01_Office"
+   {
+    over "door_kitchen"
+    {
+     custom string aeco:props:DC_DoorApproach:ApproachNormal = "+Y"
+     custom string aeco:props:DC_DoorApproach:ApproachSpace = "sp.ocorr.1"
+     custom double aeco:props:DC_DoorApproach:ThresholdHeight = 1.6
+     custom string aeco:props:DC_Identity:Id = "door.kitchen"
+    }
+
+    over "door_stair_1"
+    {
+     custom string aeco:props:DC_DoorApproach:ApproachNormal = "+X"
+     custom string aeco:props:DC_DoorApproach:ApproachSpace = "sp.ocorr.1"
+     custom double aeco:props:DC_DoorApproach:ThresholdHeight = 1.6
+     custom string aeco:props:DC_Identity:Id = "door.stair.1"
+    }
+
+    over "door_office_1"
+    {
+     custom string aeco:props:DC_DoorApproach:ApproachNormal = "+Y"
+     custom string aeco:props:DC_DoorApproach:ApproachSpace = "sp.ocorr.1"
+     custom double aeco:props:DC_DoorApproach:ThresholdHeight = 1.6
+     custom string aeco:props:DC_Identity:Id = "door.office.1"
+    }
+
+    over "door_wc"
+    {
+     custom string aeco:props:DC_DoorApproach:ApproachNormal = "+Y"
+     custom string aeco:props:DC_DoorApproach:ApproachSpace = "sp.kitchen"
+     custom double aeco:props:DC_DoorApproach:ThresholdHeight = 1.6
+     custom string aeco:props:DC_Identity:Id = "door.wc"
+    }
+
+    over "door_meeting_1"
+    {
+     custom string aeco:props:DC_DoorApproach:ApproachNormal = "+Y"
+     custom string aeco:props:DC_DoorApproach:ApproachSpace = "sp.ocorr.1"
+     custom double aeco:props:DC_DoorApproach:ThresholdHeight = 1.6
+     custom string aeco:props:DC_Identity:Id = "door.meeting.1"
+    }
+   }
+
+   over "L00_Ground"
+   {
+    over "door_corr_e"
+    {
+     custom string aeco:props:DC_DoorApproach:ApproachNormal = "+Y"
+     custom string aeco:props:DC_DoorApproach:ApproachSpace = "sp.corr.e"
+     custom double aeco:props:DC_DoorApproach:ThresholdHeight = 1.6
+     custom string aeco:props:DC_Identity:Id = "door.corr.e"
+    }
+
+    over "door_stair_0"
+    {
+     custom string aeco:props:DC_DoorApproach:ApproachNormal = "-Y"
+     custom string aeco:props:DC_DoorApproach:ApproachSpace = "sp.lobby"
+     custom double aeco:props:DC_DoorApproach:ThresholdHeight = 1.6
+     custom string aeco:props:DC_Identity:Id = "door.stair.0"
+    }
+
+    over "door_noc"
+    {
+     custom string aeco:props:DC_DoorApproach:ApproachNormal = "-X"
+     custom string aeco:props:DC_DoorApproach:ApproachSpace = "sp.ocorr.0"
+     custom double aeco:props:DC_DoorApproach:ThresholdHeight = 1.6
+     custom string aeco:props:DC_Identity:Id = "door.noc"
+    }
+
+    over "door_corr_c"
+    {
+     custom string aeco:props:DC_DoorApproach:ApproachNormal = "+Y"
+     custom string aeco:props:DC_DoorApproach:ApproachSpace = "sp.corr.c"
+     custom double aeco:props:DC_DoorApproach:ThresholdHeight = 1.6
+     custom string aeco:props:DC_Identity:Id = "door.corr.c"
+    }
+
+    over "door_loading"
+    {
+     custom string aeco:props:DC_DoorApproach:ApproachNormal = "+Y"
+     custom string aeco:props:DC_DoorApproach:ApproachSpace = "sp.corr.spine"
+     custom double aeco:props:DC_DoorApproach:ThresholdHeight = 1.6
+     custom string aeco:props:DC_Identity:Id = "door.loading"
+    }
+
+    over "door_hall_b_e"
+    {
+     custom string aeco:props:DC_DoorApproach:ApproachNormal = "+X"
+     custom string aeco:props:DC_DoorApproach:ApproachSpace = "sp.corr.e"
+     custom double aeco:props:DC_DoorApproach:ThresholdHeight = 1.6
+     custom string aeco:props:DC_Identity:Id = "door.hall.b.e"
+    }
+
+    over "door_batt_a"
+    {
+     custom string aeco:props:DC_DoorApproach:ApproachNormal = "+X"
+     custom string aeco:props:DC_DoorApproach:ApproachSpace = "sp.corr.s"
+     custom double aeco:props:DC_DoorApproach:ThresholdHeight = 1.6
+     custom string aeco:props:DC_Identity:Id = "door.batt.a"
+    }
+
+    over "Loading_Dock"
+    {
+     custom string aeco:props:DC_DoorApproach:ApproachNormal = "-Y"
+     custom string aeco:props:DC_DoorApproach:ApproachSpace = "sp.yard.hr"
+     custom double aeco:props:DC_DoorApproach:ThresholdHeight = 1.6
+     custom string aeco:props:DC_Identity:Id = "door.dock"
+    }
+
+    over "door_security"
+    {
+     custom string aeco:props:DC_DoorApproach:ApproachNormal = "-X"
+     custom string aeco:props:DC_DoorApproach:ApproachSpace = "sp.lobby"
+     custom double aeco:props:DC_DoorApproach:ThresholdHeight = 1.6
+     custom string aeco:props:DC_Identity:Id = "door.security"
+    }
+
+    over "Electrical_A_Yard_Access"
+    {
+     custom string aeco:props:DC_DoorApproach:ApproachNormal = "-X"
+     custom string aeco:props:DC_DoorApproach:ApproachSpace = "sp.yard.gen.a"
+     custom double aeco:props:DC_DoorApproach:ThresholdHeight = 1.6
+     custom string aeco:props:DC_Identity:Id = "door.gen.a"
+    }
+
+    over "door_noc_meeting"
+    {
+     custom string aeco:props:DC_DoorApproach:ApproachNormal = "-Y"
+     custom string aeco:props:DC_DoorApproach:ApproachSpace = "sp.meeting"
+     custom double aeco:props:DC_DoorApproach:ThresholdHeight = 1.6
+     custom string aeco:props:DC_Identity:Id = "door.noc.meeting"
+    }
+
+    over "Plant_Yard_Access"
+    {
+     custom string aeco:props:DC_DoorApproach:ApproachNormal = "-Y"
+     custom string aeco:props:DC_DoorApproach:ApproachSpace = "sp.yard.hr"
+     custom double aeco:props:DC_DoorApproach:ThresholdHeight = 1.6
+     custom string aeco:props:DC_Identity:Id = "door.plant.ext"
+    }
+
+    over "Electrical_B_Yard_Access"
+    {
+     custom string aeco:props:DC_DoorApproach:ApproachNormal = "+X"
+     custom string aeco:props:DC_DoorApproach:ApproachSpace = "sp.yard.gen.b"
+     custom double aeco:props:DC_DoorApproach:ThresholdHeight = 1.6
+     custom string aeco:props:DC_Identity:Id = "door.gen.b"
+    }
+
+    over "door_corr_s"
+    {
+     custom string aeco:props:DC_DoorApproach:ApproachNormal = "-Y"
+     custom string aeco:props:DC_DoorApproach:ApproachSpace = "sp.corr.s"
+     custom double aeco:props:DC_DoorApproach:ThresholdHeight = 1.6
+     custom string aeco:props:DC_Identity:Id = "door.corr.s"
+    }
+
+    over "door_hall_a_w"
+    {
+     custom string aeco:props:DC_DoorApproach:ApproachNormal = "-X"
+     custom string aeco:props:DC_DoorApproach:ApproachSpace = "sp.corr.w"
+     custom double aeco:props:DC_DoorApproach:ThresholdHeight = 1.6
+     custom string aeco:props:DC_Identity:Id = "door.hall.a.w"
+    }
+
+    over "door_elec_a_s"
+    {
+     custom string aeco:props:DC_DoorApproach:ApproachNormal = "+X"
+     custom string aeco:props:DC_DoorApproach:ApproachSpace = "sp.corr.s"
+     custom double aeco:props:DC_DoorApproach:ThresholdHeight = 1.6
+     custom string aeco:props:DC_Identity:Id = "door.elec.a.s"
+    }
+
+    over "door_elec_a"
+    {
+     custom string aeco:props:DC_DoorApproach:ApproachNormal = "+Y"
+     custom string aeco:props:DC_DoorApproach:ApproachSpace = "sp.corr.spine"
+     custom double aeco:props:DC_DoorApproach:ThresholdHeight = 1.6
+     custom string aeco:props:DC_Identity:Id = "door.elec.a"
+    }
+
+    over "door_mmr_1"
+    {
+     custom string aeco:props:DC_DoorApproach:ApproachNormal = "-X"
+     custom string aeco:props:DC_DoorApproach:ApproachSpace = "sp.corr.s"
+     custom double aeco:props:DC_DoorApproach:ThresholdHeight = 1.6
+     custom string aeco:props:DC_Identity:Id = "door.mmr.1"
+    }
+
+    over "Office_Link"
+    {
+     custom string aeco:props:DC_DoorApproach:ApproachNormal = "+Y"
+     custom string aeco:props:DC_DoorApproach:ApproachSpace = "sp.corr.s"
+     custom double aeco:props:DC_DoorApproach:ThresholdHeight = 1.6
+     custom string aeco:props:DC_Identity:Id = "door.office.link"
+    }
+
+    over "door_water"
+    {
+     custom string aeco:props:DC_DoorApproach:ApproachNormal = "+X"
+     custom string aeco:props:DC_DoorApproach:ApproachSpace = "sp.loading"
+     custom double aeco:props:DC_DoorApproach:ThresholdHeight = 1.6
+     custom string aeco:props:DC_Identity:Id = "door.water"
+    }
+
+    over "door_mmr_2"
+    {
+     custom string aeco:props:DC_DoorApproach:ApproachNormal = "+Y"
+     custom string aeco:props:DC_DoorApproach:ApproachSpace = "sp.corr.spine"
+     custom double aeco:props:DC_DoorApproach:ThresholdHeight = 1.6
+     custom string aeco:props:DC_Identity:Id = "door.mmr.2"
+    }
+
+    over "door_lobby_corr"
+    {
+     custom string aeco:props:DC_DoorApproach:ApproachNormal = "+Y"
+     custom string aeco:props:DC_DoorApproach:ApproachSpace = "sp.ocorr.0"
+     custom double aeco:props:DC_DoorApproach:ThresholdHeight = 1.6
+     custom string aeco:props:DC_Identity:Id = "door.lobby.corr"
+    }
+
+    over "door_fire"
+    {
+     custom string aeco:props:DC_DoorApproach:ApproachNormal = "-X"
+     custom string aeco:props:DC_DoorApproach:ApproachSpace = "sp.corr.s"
+     custom double aeco:props:DC_DoorApproach:ThresholdHeight = 1.6
+     custom string aeco:props:DC_Identity:Id = "door.fire"
+    }
+
+    over "door_meeting"
+    {
+     custom string aeco:props:DC_DoorApproach:ApproachNormal = "+X"
+     custom string aeco:props:DC_DoorApproach:ApproachSpace = "sp.meeting"
+     custom double aeco:props:DC_DoorApproach:ThresholdHeight = 1.6
+     custom string aeco:props:DC_Identity:Id = "door.meeting"
+    }
+
+    over "door_hall_a_s"
+    {
+     custom string aeco:props:DC_DoorApproach:ApproachNormal = "-Y"
+     custom string aeco:props:DC_DoorApproach:ApproachSpace = "sp.corr.spine"
+     custom double aeco:props:DC_DoorApproach:ThresholdHeight = 1.6
+     custom string aeco:props:DC_Identity:Id = "door.hall.a.s"
+    }
+
+    over "door_batt_a_i"
+    {
+     custom string aeco:props:DC_DoorApproach:ApproachNormal = "-Y"
+     custom string aeco:props:DC_DoorApproach:ApproachSpace = "sp.batt.a"
+     custom double aeco:props:DC_DoorApproach:ThresholdHeight = 1.6
+     custom string aeco:props:DC_Identity:Id = "door.batt.a.i"
+    }
+
+    over "door_corr_w"
+    {
+     custom string aeco:props:DC_DoorApproach:ApproachNormal = "-Y"
+     custom string aeco:props:DC_DoorApproach:ApproachSpace = "sp.corr.spine"
+     custom double aeco:props:DC_DoorApproach:ThresholdHeight = 1.6
+     custom string aeco:props:DC_Identity:Id = "door.corr.w"
+    }
+
+    over "door_hall_b_s"
+    {
+     custom string aeco:props:DC_DoorApproach:ApproachNormal = "-Y"
+     custom string aeco:props:DC_DoorApproach:ApproachSpace = "sp.corr.spine"
+     custom double aeco:props:DC_DoorApproach:ThresholdHeight = 1.6
+     custom string aeco:props:DC_Identity:Id = "door.hall.b.s"
+    }
+
+    over "door_hall_a_e"
+    {
+     custom string aeco:props:DC_DoorApproach:ApproachNormal = "+X"
+     custom string aeco:props:DC_DoorApproach:ApproachSpace = "sp.corr.c"
+     custom double aeco:props:DC_DoorApproach:ThresholdHeight = 1.6
+     custom string aeco:props:DC_Identity:Id = "door.hall.a.e"
+    }
+
+    over "Main_Entrance"
+    {
+     custom string aeco:props:DC_DoorApproach:ApproachNormal = "-Y"
+     custom string aeco:props:DC_DoorApproach:ApproachSpace = "sp.yard.hr"
+     custom double aeco:props:DC_DoorApproach:ThresholdHeight = 1.6
+     custom string aeco:props:DC_Identity:Id = "door.main"
+    }
+
+    over "door_plant"
+    {
+     custom string aeco:props:DC_DoorApproach:ApproachNormal = "+Y"
+     custom string aeco:props:DC_DoorApproach:ApproachSpace = "sp.corr.spine"
+     custom double aeco:props:DC_DoorApproach:ThresholdHeight = 1.6
+     custom string aeco:props:DC_Identity:Id = "door.plant"
+    }
+
+    over "door_elec_b"
+    {
+     custom string aeco:props:DC_DoorApproach:ApproachNormal = "+Y"
+     custom string aeco:props:DC_DoorApproach:ApproachSpace = "sp.corr.spine"
+     custom double aeco:props:DC_DoorApproach:ThresholdHeight = 1.6
+     custom string aeco:props:DC_Identity:Id = "door.elec.b"
+    }
+
+    over "door_plant_fire"
+    {
+     custom string aeco:props:DC_DoorApproach:ApproachNormal = "-X"
+     custom string aeco:props:DC_DoorApproach:ApproachSpace = "sp.fire"
+     custom double aeco:props:DC_DoorApproach:ThresholdHeight = 1.6
+     custom string aeco:props:DC_Identity:Id = "door.plant.fire"
+    }
+
+    over "door_batt_b_i"
+    {
+     custom string aeco:props:DC_DoorApproach:ApproachNormal = "-Y"
+     custom string aeco:props:DC_DoorApproach:ApproachSpace = "sp.batt.b"
+     custom double aeco:props:DC_DoorApproach:ThresholdHeight = 1.6
+     custom string aeco:props:DC_Identity:Id = "door.batt.b.i"
+    }
+
+    over "door_hall_b_w"
+    {
+     custom string aeco:props:DC_DoorApproach:ApproachNormal = "-X"
+     custom string aeco:props:DC_DoorApproach:ApproachSpace = "sp.corr.c"
+     custom double aeco:props:DC_DoorApproach:ThresholdHeight = 1.6
+     custom string aeco:props:DC_Identity:Id = "door.hall.b.w"
+    }
+
+    over "door_noc_comms"
+    {
+     custom string aeco:props:DC_DoorApproach:ApproachNormal = "+X"
+     custom string aeco:props:DC_DoorApproach:ApproachSpace = "sp.comms"
+     custom double aeco:props:DC_DoorApproach:ThresholdHeight = 1.6
+     custom string aeco:props:DC_Identity:Id = "door.noc.comms"
+    }
+   }
+
+   over "L02_Office"
+   {
+    over "Additional_Meeting_Access"
+    {
+     custom string aeco:props:DC_DoorApproach:ApproachNormal = "+X"
+     custom string aeco:props:DC_DoorApproach:ApproachSpace = "sp.kitchen.2"
+     custom double aeco:props:DC_DoorApproach:ThresholdHeight = 1.6
+     custom string aeco:props:DC_Identity:Id = "door.office.2b"
+    }
+
+    over "door_office_1_2"
+    {
+     custom string aeco:props:DC_DoorApproach:ApproachNormal = "+Y"
+     custom string aeco:props:DC_DoorApproach:ApproachSpace = "sp.ocorr.1.2"
+     custom double aeco:props:DC_DoorApproach:ThresholdHeight = 1.6
+     custom string aeco:props:DC_Identity:Id = "door.office.1.2"
+    }
+
+    over "door_meeting_1_2"
+    {
+     custom string aeco:props:DC_DoorApproach:ApproachNormal = "+Y"
+     custom string aeco:props:DC_DoorApproach:ApproachSpace = "sp.ocorr.1.2"
+     custom double aeco:props:DC_DoorApproach:ThresholdHeight = 1.6
+     custom string aeco:props:DC_Identity:Id = "door.meeting.1.2"
+    }
+
+    over "door_kitchen_2"
+    {
+     custom string aeco:props:DC_DoorApproach:ApproachNormal = "+Y"
+     custom string aeco:props:DC_DoorApproach:ApproachSpace = "sp.ocorr.1.2"
+     custom double aeco:props:DC_DoorApproach:ThresholdHeight = 1.6
+     custom string aeco:props:DC_Identity:Id = "door.kitchen.2"
+    }
+
+    over "door_stair_1_2"
+    {
+     custom string aeco:props:DC_DoorApproach:ApproachNormal = "+X"
+     custom string aeco:props:DC_DoorApproach:ApproachSpace = "sp.ocorr.1.2"
+     custom double aeco:props:DC_DoorApproach:ThresholdHeight = 1.6
+     custom string aeco:props:DC_Identity:Id = "door.stair.1.2"
+    }
+
+    over "door_wc_2"
+    {
+     custom string aeco:props:DC_DoorApproach:ApproachNormal = "+Y"
+     custom string aeco:props:DC_DoorApproach:ApproachSpace = "sp.kitchen.2"
+     custom double aeco:props:DC_DoorApproach:ThresholdHeight = 1.6
+     custom string aeco:props:DC_Identity:Id = "door.wc.2"
+    }
+   }
+  }
+ }
+}
+

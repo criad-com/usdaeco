@@ -1,15 +1,17 @@
 {
   "adaptations": [
-    "Fixed iris manifest lookup aliases the full publication."
+    "Fixed iris manifest lookup aliases the full publication.",
+    "Join issued full-plan door identity and approach drivers to the Revit delivery by aeco:id."
   ],
   "differences": [
     "findings differ (values, fields or multiplicity outside tolerance)"
   ],
   "expectedFindings": 3,
-  "findings": 3,
-  "producer": "hook v0.1.3",
+  "findings": 14,
+  "producer": "hook v0.2.1",
   "run": true,
   "source": "kind/usdaeco-compliance/examples/datacentre/run.py",
-  "sourceSha256": "c9ca2d1e189b819ab74c294ca01392402d15e006406857b996b88028b58e6b11",
-  "tag": "v0.1.3"
+  "sourceSha256": "59dc10df2afa683537a3351b5dc2c683359b9019f6569593b7ce740388dce924",
+  "studyRoot": "/Studies/compliance",
+  "tag": "v0.2.1"
 }

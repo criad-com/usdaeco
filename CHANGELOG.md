@@ -1,5 +1,14 @@
 # Changelog
 
+## 0.5.0
+
+- Group every analysis under `/Studies/<library>` and retain one project catalog,
+  with cameras under `/Renders/<library>` and checks for the complete namespace.
+- Advance the released library pins and deliver the Revit architecture package
+  from data-centre 0.6.0; refresh the integrated forms, views and measured proofs.
+- Remove the private operations submodule from the public suite and its generated
+  metadata, documentation map and Nix inputs.
+
 ## 0.4.0
 
 - Add the Working with the integrated stage HTML guide: forms, delivery folders,

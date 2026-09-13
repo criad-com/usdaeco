@@ -200,13 +200,18 @@ def main():
         elif args.mode == 'flat-snapshot':
             from pxr import UsdUtils
             from usdaeco_suite.stage_flatten import metadata
+            from usdaeco_suite.stage_checks import tidy_stage
             layer = stage.GetRootLayer()
             if layer.subLayerPaths or any(UsdUtils.ExtractExternalReferences(layer.identifier)):
                 raise ValueError('Form B is not self-contained')
             if any(p.GetTypeName().startswith('Aeco') and p.GetPrimTypeInfo().GetSchemaType().isUnknown
                    for p in stage.TraverseAll()):
                 raise ValueError('missing effective stock fallback')
-            data = dict(snapshot=snapshot(stage), metadata=metadata(stage), plugins=[],
+            studies = stage.GetPrimAtPath('/Studies')
+            layout = tidy_stage(stage, [p.GetName() for p in studies.GetAllChildren()] if studies else [])
+            if layout['errors']:
+                raise ValueError('Form B layout differs: ' + ', '.join(layout['errors']))
+            data = dict(snapshot=snapshot(stage), metadata=metadata(stage), plugins=[], layout=layout,
                         usdVersion=list(Usd.GetVersion()), provenance=dict(layer.customLayerData),
                         sublayers=[], externalAssets=[])
             clean_plugins()

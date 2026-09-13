@@ -1,14 +1,68 @@
 {
   "usdaeco-datacentre": {
-    "tag": "v0.5.1",
-    "revision": "ca308d9bd5fb5f3217b7bf2bc58e420e90ea7dd2",
+    "tag": "v0.6.0",
+    "revision": "3c69eef790465415e368b2e60332a03195af374f",
     "status": "released",
-    "reason": "Federated full facility with external port references."
+    "reason": "Released stage layout, producer delivery, or public source update beyond the baseline train."
   },
   "usdaeco-ifc": {
     "tag": "v0.3.1",
     "revision": "0e32d395351902ca98982017db3e04d200b67092",
     "status": "released",
-    "reason": "Federated IFC file-format reader with full-delivery parity."
+    "reason": "Released stage layout, producer delivery, or public source update beyond the baseline train."
+  },
+  "usdaeco-toolchain": {
+    "tag": "v0.3.11",
+    "revision": "57ae364050e1347275844f664972860a90bcefb1",
+    "status": "released",
+    "reason": "Released stage layout, producer delivery, or public source update beyond the baseline train."
+  },
+  "usdaeco-wall": {
+    "tag": "v0.2.6",
+    "revision": "5cff4e4a8e966a697ecdf04c8d61917ddc1c07bd",
+    "status": "released",
+    "reason": "Released stage layout, producer delivery, or public source update beyond the baseline train."
+  },
+  "usdaeco-pipe": {
+    "tag": "v0.2.6",
+    "revision": "488e9be85189f88a193d61a82543787cf7bdf6f3",
+    "status": "released",
+    "reason": "Released stage layout, producer delivery, or public source update beyond the baseline train."
+  },
+  "usdaeco-cctv": {
+    "tag": "v0.5.7",
+    "revision": "d6514f1aa3ebcab106fef3a0875a22be1a9f10ef",
+    "status": "released",
+    "reason": "Released stage layout, producer delivery, or public source update beyond the baseline train."
+  },
+  "usdaeco-scenarios": {
+    "tag": "v0.9.2",
+    "revision": "e68e6ee479b8bc9e7eb7297f1ec91c2787ca017e",
+    "status": "released",
+    "reason": "Released stage layout, producer delivery, or public source update beyond the baseline train."
+  },
+  "usdaeco-plan": {
+    "tag": "v0.1.5",
+    "revision": "ef69f4f8739a4199473b45bfa801c4739c7829ae",
+    "status": "released",
+    "reason": "Released stage layout, producer delivery, or public source update beyond the baseline train."
+  },
+  "usdaeco-compliance": {
+    "tag": "v0.2.1",
+    "revision": "c3429246a03c0a3ff6dff6c95e6f770af7d9d77a",
+    "status": "released",
+    "reason": "Released stage layout, producer delivery, or public source update beyond the baseline train."
+  },
+  "usdaeco-clash": {
+    "tag": "v0.2.4",
+    "revision": "cb4fac4439f1fcb2c82fa5a37316724a776288d6",
+    "status": "released",
+    "reason": "Released stage layout, producer delivery, or public source update beyond the baseline train."
+  },
+  "usdaeco-solid": {
+    "tag": "v0.1.6",
+    "revision": "4f2758d4cae45f44bd4dcf5292a4562ebe512b57",
+    "status": "released",
+    "reason": "Released configurable study root and relocated exact results."
   }
 }

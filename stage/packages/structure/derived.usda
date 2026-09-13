@@ -6,7 +6,7 @@
   string "aeco:layer:role" = "derived"
   string "aeco:layer:source" = "kind/usdaeco-pipe/examples/datacentre/run.py"
   string "aeco:layer:sourceSha256" = "f83472499f2702101fc9d97fe6a59d634baf4c21500a2865bcc8807d543bba61"
-  string "aeco:layer:tag" = "v0.2.5"
+  string "aeco:layer:tag" = "v0.2.6"
  }
 )
 

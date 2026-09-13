@@ -24,10 +24,64 @@ def metadata(stage):
     return result
 
 
+def study_root_receipts(stage):
+    """Retain library path settings when sublayer metadata is flattened away."""
+    result = {}
+    for layer in stage.GetLayerStack():
+        for key, value in layer.customLayerData.items():
+            if not key.lower().endswith('studyroot') or key == 'aeco:suite:studyRoot':
+                continue
+            if key in result and result[key] != value:
+                raise ValueError('library study root receipts disagree: ' + key)
+            result[key] = value
+    return result
+
+
+def scope_flattened_prototypes(stage, layer):
+    """Keep Flatten's generated instance storage inside its source study."""
+    from pxr import Sdf
+    from usdaeco_suite.stage_common import layer_paths
+    from usdaeco_suite.stage_hooks import remap_text
+    generated = {p.path for p in layer.rootPrims if p.name.startswith('Flattened_Prototype_')}
+    owners = {path: set() for path in generated}
+    targets = {path: set() for path in generated}
+    for path in layer_paths(layer):
+        spec = layer.GetPrimAtPath(path) if path.IsPrimPath() else None
+        if not spec or not spec.HasInfo('references'):
+            continue
+        source = stage.GetPrimAtPath(path)
+        if not source:
+            continue
+        references = source.GetMetadata('references')
+        roots = {r.primPath.GetPrefixes()[1] for r in references.GetAppliedItems()
+                 if r.primPath.HasPrefix(Sdf.Path('/Studies')) and len(r.primPath.GetPrefixes()) >= 2} if references else set()
+        for reference in spec.referenceList.GetAppliedItems():
+            if reference.primPath in owners:
+                owners[reference.primPath].update(roots)
+                targets[reference.primPath].update(str(r.primPath) for r in references.GetAppliedItems())
+    if any(len(roots) != 1 for roots in owners.values()):
+        raise ValueError('flattened prototype must have one owning study')
+    mappings = {}
+    for path, roots in owners.items():
+        suffix = hashlib.sha256('\n'.join(sorted(targets[path])).encode()).hexdigest()[:16]
+        mappings[str(path)] = str(next(iter(roots)).AppendChild('Flattened_Prototype_' + suffix))
+    edits = Sdf.BatchNamespaceEdit()
+    for old, new in sorted(mappings.items(), key=lambda pair: pair[1]):
+        if layer.GetPrimAtPath(new):
+            raise ValueError('source occupies the generated prototype namespace')
+        edits.Add(old, new)
+    if mappings:
+        if not layer.Apply(edits):
+            raise ValueError('cannot scope flattened instance storage')
+        layer.ImportFromString(remap_text(layer.ExportToString(), mappings))
+
+
 def export_flat(stage, directory, target):
     from pxr import UsdUtils
     from usdaeco_suite.stage_probe import snapshot
     layer = stage.Flatten(addSourceFileComment=False)
+    scope_flattened_prototypes(stage, layer)
+    layer.customLayerData = {**layer.customLayerData, **study_root_receipts(stage)}
     for key in METADATA:
         layer.pseudoRoot.SetInfo(key, stage.GetMetadata(key))
     stamp(layer, 'flattened', 'suite', 'Usd.Stage.Flatten', 'stage/' + FORM_A,
@@ -39,7 +93,7 @@ def export_flat(stage, directory, target):
     if any(UsdUtils.ExtractExternalReferences(str(target))):
         target.unlink()
         raise ValueError('flattened stage has external asset dependencies')
-    return dict(source=snapshot(stage), metadata=metadata(stage))
+    return dict(source=snapshot(stage), metadata=metadata(stage), studyRoots=study_root_receipts(stage))
 
 
 def compare(left, right, excluded=()):
@@ -65,7 +119,7 @@ def scene_fields(rows, *, flattened=False):
     """Compare public scene paths; report Flatten's generated storage separately."""
     result, storage = {}, []
     for path, row in rows.items():
-        if path.split('/')[1].startswith('Flattened_Prototype_'):
+        if any(part.startswith('Flattened_Prototype_') for part in path.split('/')):
             if not flattened:
                 raise ValueError('source occupies the generated prototype namespace')
             storage.append(path)
@@ -133,6 +187,8 @@ def check_flattened(directory, output, manifest):
              and artifact.stat().st_size == record['bytes']
              and record['sourceSha256'] == sha(directory / FORM_A)
              and b['metadata'] == a['metadata'] == c['metadata'] == fc['metadata']
+             and a['studyRoots'] == c['studyRoots']
+             and all(b['provenance'].get(k) == v == fc['provenance'].get(k) for k, v in a['studyRoots'].items())
              and b['provenance']['aeco:layer:role'] == 'flattened'
              and b['provenance']['aeco:layer:source'] == 'stage/' + FORM_A
              and b['provenance']['aeco:layer:sourceSha256'] == record['sourceSha256']
@@ -140,6 +196,8 @@ def check_flattened(directory, output, manifest):
              and record['distribution'] == ('committed' if record['bytes'] <= CRATE_CAP else 'release-asset')
              and (record['bytes'] <= CRATE_CAP or not (directory / FORM_B).exists()))
     data = dict(comparisons=comparisons, metadata=b['metadata'], plugins=b['plugins'],
+                layout=b['layout'],
+                studyRoots=a['studyRoots'],
                 rawPrims=len(b['snapshot']), scenePrims=len(bs), generatedPrototypePrims=len(storage),
                 flattenedTwinsPrototypePrims=len(c_storage),
                 censusDeviation='Usd.Stage.Flatten adds generated instance-prototype storage prims.',

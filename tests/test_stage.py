@@ -2,8 +2,9 @@ from pathlib import Path
 
 from pxr import Sdf, Usd
 
-from usdaeco_suite.stage_checks import compare_errors, finding_records, summarize_mutes, summarize_validation
-from usdaeco_suite.stage_hooks import prune, reroot
+from usdaeco_suite.stage_checks import (analysis_namespace_errors, compare_errors, finding_records,
+                                       summarize_mutes, summarize_validation, tidy_stage)
+from usdaeco_suite.stage_hooks import prune, remap_data, reroot, study_mappings
 from usdaeco_suite.traverse import owner
 
 
@@ -27,6 +28,75 @@ def test_camera_reroot_keeps_relationships_and_pose():
     assert tuple(camera.GetAttribute('xformOp:translate').Get()) == (1, 2, 3)
     assert stage.GetPrimAtPath('/Study').GetRelationship('camera').GetTargets() == [camera.GetPath()]
     assert not stage.GetPrimAtPath('/Renders/overview')
+
+
+def test_study_relocation_keeps_discovery_arcs_and_metadata():
+    layer = Sdf.Layer.CreateAnonymous()
+    layer.ImportFromString('''#usda 1.0
+    (customLayerData = { string result = "/Clash/Result" })
+    def Scope "Clash" {
+        def Scope "Result" {
+            rel targets = [</Clash/Result>, </demo_datacentre_01/Wall>]
+        }
+        def Scope "Instance" (prepend references = </Clash/Result>) {}
+    }
+    ''')
+    moves = study_mappings([layer], 'clash', 'demo_datacentre_01')
+    reroot(layer, 'clash', mappings=moves)
+    stage = Usd.Stage.Open(layer)
+    result = stage.GetPrimAtPath('/Studies/clash/Clash/Result')
+    assert result in list(stage.Traverse())
+    assert layer.customLayerData['result'] == str(result.GetPath())
+    assert result.GetRelationship('targets').GetTargets() == [result.GetPath(), Sdf.Path('/demo_datacentre_01/Wall')]
+    assert stage.GetPrimAtPath('/Studies/clash/Clash/Instance').GetRelationship('targets')
+    assert not analysis_namespace_errors(layer, 'clash', '/demo_datacentre_01')
+    assert remap_data({'targets': ['/Clash/Result', '/ClashSimilar']}, moves) == {
+        'targets': [str(result.GetPath()), '/ClashSimilar']}
+    before = layer.ExportToString()
+    reroot(layer, 'clash', mappings=study_mappings([layer], 'clash', 'demo_datacentre_01'))
+    assert layer.ExportToString() == before
+
+
+def test_namespace_check_rejects_stale_targets_metadata_and_foreign_studies():
+    layer = Sdf.Layer.CreateAnonymous()
+    layer.ImportFromString('''#usda 1.0
+    (customLayerData = { string programme = "/Programme" })
+    def Scope "Studies" {
+        def Scope "plan" {
+            rel old = </Looks/Material>
+            def Camera "misplacedCamera" {}
+        }
+        def Scope "cctv" {}
+    }
+    ''')
+    errors = analysis_namespace_errors(layer, 'plan', '/demo_datacentre_01')
+    assert any('/Programme' in e for e in errors)
+    assert any('/Looks/Material' in e for e in errors)
+    assert any('/Studies/cctv' in e for e in errors)
+    assert any('render camera outside' in e for e in errors)
+
+
+def test_tidy_root_includes_classes_and_inactive_strays():
+    layer = Sdf.Layer.CreateAnonymous()
+    layer.ImportFromString('''#usda 1.0
+    (defaultPrim = "demo_datacentre_01")
+    def Xform "demo_datacentre_01" {
+        class "_TypeCatalog" {}
+    }
+    def Scope "Renders" {}
+    def Scope "Studies" {
+        def Scope "pipe" {}
+    }
+    ''')
+    stage = Usd.Stage.Open(layer)
+    assert not tidy_stage(stage, ['pipe'])['errors']
+    stray = Sdf.CreatePrimInLayer(layer, '/_TypeCatalog')
+    stray.specifier = Sdf.SpecifierClass
+    assert 'stage must contain only the project catalog' in tidy_stage(stage, ['pipe'])['errors']
+    del layer.rootPrims['_TypeCatalog']
+    stray = Sdf.CreatePrimInLayer(layer, '/Hidden')
+    stray.active = False
+    assert 'stage root prims differ' in tidy_stage(stage, ['pipe'])['errors']
 
 
 def test_empty_over_pruning_preserves_authored_controls():

@@ -14,10 +14,51 @@ from usdaeco_suite.stage_common import (ROOT, FORM_C, read, write, sha, repos, c
                                        stamp, header, layer_paths)
 
 
-def reroot(layer, prefix, *, facility=False):
+def study_mappings(layers, name, project):
+    """Discover external roots in writable library copies, including old results."""
+    result = {}
+    for layer in layers:
+        for prim in layer.rootPrims:
+            if prim.name not in (project, 'Studies', 'Renders'):
+                if prim.name == '_TypeCatalog':
+                    raise ValueError('analysis authored a second catalog: ' + name)
+                result[str(prim.path)] = '/Studies/' + name + str(prim.path)
+            if prim.name == 'Renders':
+                for child in prim.nameChildren:
+                    if child.name != name:
+                        result[str(child.path)] = '/Renders/' + name + '/' + child.name
+    return result
+
+
+def remap_text(text, mappings):
+    """Replace serialized path values once, including paths inside metadata."""
+    if not mappings:
+        return text
+    pattern = r'([<"])(' + '|'.join(re.escape(p) for p in sorted(mappings, key=len, reverse=True)) + r')(?=[/.>\"])'
+    return re.sub(pattern, lambda match: match[1] + mappings[match[2]], text)
+
+
+def remap_data(value, mappings):
+    if isinstance(value, dict):
+        return {k: remap_data(v, mappings) for k, v in value.items()}
+    if isinstance(value, list):
+        return [remap_data(v, mappings) for v in value]
+    if isinstance(value, str):
+        for old in sorted(mappings, key=len, reverse=True):
+            if value == old or value.startswith((old + '/', old + '.')):
+                return mappings[old] + value[len(old):]
+    return value
+
+
+def reroot(layer, prefix, *, facility=False, mappings=None):
     """Move authored specs as well as all path-valued targets in the text layer."""
     from pxr import Sdf
-    mappings = {'/Renders': '/Renders/' + prefix}
+    if mappings is None:
+        renders = layer.GetPrimAtPath('/Renders')
+        mappings = {str(p.path): '/Renders/' + prefix + '/' + p.name
+                    for p in renders.nameChildren if p.name != prefix} if renders else {}
+    else:
+        mappings = dict(mappings)
     if facility:
         mappings.update({p: '/demo_datacentre_01' + p for p in
                          ('/demo_datacentre_01_Site', '/_TypeCatalog', '/Systems', '/Zones')})
@@ -26,21 +67,68 @@ def reroot(layer, prefix, *, facility=False):
             temporary = Sdf.Layer.CreateAnonymous()
             Sdf.CreatePrimInLayer(temporary, Sdf.Path(new).GetParentPath())
             Sdf.CopySpec(layer, old, temporary, new)
-            del layer.rootPrims[Sdf.Path(old).name]
+            edit = Sdf.BatchNamespaceEdit()
+            edit.Add(old, Sdf.Path.emptyPath)
+            if not layer.Apply(edit):
+                raise ValueError('cannot relocate analysis prim: ' + old)
             top = Sdf.Path(new).GetPrefixes()[0]
             if layer.GetPrimAtPath(top):
                 Sdf.CreatePrimInLayer(layer, Sdf.Path(new).GetParentPath())
                 Sdf.CopySpec(temporary, new, layer, new)
             else:
                 Sdf.CopySpec(temporary, top, layer, top)
-    text = layer.ExportToString()
-    # Only serialized path values, not prim declarations or arbitrary substrings.
-    for old, new in mappings.items():
-        text = re.sub(r'([<"])' + re.escape(old) + r'(?=[/>"])', r'\g<1>' + new, text)
-    layer.ImportFromString(text)
+    if '/' + layer.defaultPrim in mappings:
+        layer.defaultPrim = Sdf.Path(mappings['/' + layer.defaultPrim]).GetPrefixes()[0].name
+    layer.ImportFromString(remap_text(layer.ExportToString(), mappings))
+    for namespace in ('Studies', 'Renders'):
+        root = layer.GetPrimAtPath('/' + namespace)
+        if root:
+            for scope in [root, *root.nameChildren]:
+                if scope.typeName not in ('', 'Scope'):
+                    continue
+                scope.specifier = Sdf.SpecifierDef
+                scope.typeName = 'Scope'
+
+
+def native_arch_drivers(stage, path):
+    """Join issued door approach drivers to native referents by UUID, not geometry."""
+    import uuid
+    from pxr import Sdf, Usd
+    sys.path.insert(0, str(ROOT / 'data/usdaeco-datacentre/src'))
+    from dcbuild.layout import resolve
+    from dcbuild.spec import load
+    plan = resolve(load(ROOT / 'data/usdaeco-datacentre/spec', variant='full'))
+    doors = {str(uuid.uuid5(uuid.NAMESPACE_DNS, 'usdaeco-datacentre:' + door.id)): door
+             for door in plan.doors}
+    layer = Sdf.Layer.CreateNew(str(path))
+    stage.GetRootLayer().subLayerPaths.insert(0, str(path))
+    joined = set()
+    with Usd.EditContext(stage, layer):
+        for prim in stage.Traverse():
+            identity = prim.GetAttribute('aeco:id').Get()
+            if identity not in doors:
+                continue
+            door = doors[identity]
+            joined.add(identity)
+            values = {'DC_Identity:Id': door.id,
+                      'DC_DoorApproach:ApproachNormal': door.approach_normal,
+                      'DC_DoorApproach:ApproachSpace': door.approach_space,
+                      'DC_DoorApproach:ThresholdHeight': door.threshold_height}
+            for key, value in values.items():
+                attribute = prim.GetAttribute('aeco:props:' + key)
+                if not attribute or attribute.Get() is None:
+                    prim.CreateAttribute('aeco:props:' + key, Sdf.ValueTypeNames.Double
+                                         if isinstance(value, float) else Sdf.ValueTypeNames.String).Set(value)
+    if joined != set(doors):
+        raise ValueError('issued door drivers do not join the native architecture')
+    layer.customLayerData = {'aeco:suite:adapter': 'Issued full-plan door drivers joined by aeco:id',
+                             'aeco:suite:joinedDoors': len(joined),
+                             'aeco:suite:adapterSha256': sha(Path(__file__))}
+    layer.Save()
 
 
 def run(name, destination):
+    os.environ['AECO_STUDY_ROOT'] = '/Studies/' + name
     configure()
     from pxr import Sdf, Usd
     card = repos()['usdaeco-' + name]
@@ -73,7 +161,21 @@ def run(name, destination):
     layer.TransferContent(base)
     # Preserve source metadata, rebasing every package sublayer to this workspace.
     layer.subLayerPaths = [str(destination / p) for p in base.subLayerPaths]
+    if name in ('cctv', 'compliance'):
+        native_arch_drivers(Usd.Stage.Open(layer), workspace / 'inputs/native-arch.usda')
     inputs = sorted((workspace / 'inputs').glob('*.usda'))
+    input_layers = [Sdf.Layer.FindOrOpen(str(p)) for p in inputs]
+    moves = study_mappings(input_layers, name, base.defaultPrim)
+    if name in ('wall', 'buildup', 'repeat'):
+        # These releases still select their standalone camera input by path.
+        # Archive relocates the complete camera definitions and all targets.
+        moves = {old: new for old, new in moves.items() if not old.startswith('/Renders/')}
+    for copied in input_layers:
+        reroot(copied, name, mappings=moves)
+        # The compliance hook recognizes relocated inputs by its persisted root.
+        if name == 'compliance':
+            copied.customLayerData = {**copied.customLayerData, 'aecoComplianceStudyRoot': os.environ['AECO_STUDY_ROOT']}
+        copied.Save()
     layer.subLayerPaths = [str(p) for p in inputs] + [str(destination / FORM_C)]
     layer.Save()
     os.environ['AECO_DATACENTRE_STAGE'] = str(destination / FORM_C)
@@ -93,6 +195,8 @@ def run(name, destination):
             text = path.read_text()
             text = re.sub(r'@[^@]*inputs/source/dist/[^@]+@', '@' + str(destination / FORM_C) + '@', text)
             target.write_text(text)
+        from usdaeco_solid.paths import scope_export
+        scope_export(out)
         layer.subLayerPaths[:0] = ['presentation.usda', 'twins.usda', 'exact.usda']
         layer.Save()
         findings = read(example / 'expected/findings.json')
@@ -122,6 +226,27 @@ def run(name, destination):
             return destination / FORM_C, publication
         imported.published_source = published_full
     if name == 'buildup':
+        native_models = {'Basic Wall:DC Internal': 'Internal Wall 150',
+                         'Basic Wall:DC Fire': 'Fire Wall 200',
+                         'Basic Wall:DC External': 'External Wall 300'}
+        def wall_model(prim):
+            model = prim.GetAttribute('aeco:type:model').Get()
+            return native_models.get(model, model)
+        def wall_is_external(prim):
+            model = prim.GetAttribute('aeco:type:model').Get()
+            return (model == 'Basic Wall:DC External' if model in native_models
+                    else prim.GetAttribute('aeco:props:Pset_WallCommon:IsExternal').Get())
+        # Revit names its three wall types and exports IsExternal=true on all
+        # of them. Select the issued native type; retain the delivered property.
+        for function_name in ('select_walls', 'present'):
+            source = inspect.getsource(getattr(imported, function_name))
+            source = source.replace("prim.GetAttribute('aeco:type:model').Get()", 'wall_model(prim)')
+            for variable in ('prim', 'parent'):
+                source = source.replace(variable + ".GetAttribute('aeco:props:Pset_WallCommon:IsExternal').Get()",
+                                        'wall_is_external(' + variable + ')')
+            namespace = {**imported.__dict__, 'wall_model': wall_model, 'wall_is_external': wall_is_external}
+            exec(compile(source, '<suite native wall type adapter>', 'exec'), namespace)
+            setattr(imported, function_name, namespace[function_name])
         select = imported.select_walls
         def select_full(stage, config):
             spaces = [p for p in stage.Traverse() if p.GetTypeName() == 'AecoSpace' and p.GetName() == 'WC']
@@ -166,21 +291,25 @@ def run(name, destination):
             delta.Save()
             return verify(original, composed, mapping, tolerance)
         composition.verify = verify_full
-    if name == 'cctv':
-        # The released hook hard-codes the base fixture census. Preserve its
-        # guard, substituting the full publication's independently recorded count.
-        source = inspect.getsource(hook)
-        old = 'len(cameras) != 45'
+        # Native stair types differ between floors. The diff correctly reports
+        # a removal and addition at the same path; keep the added referent
+        # active while copying its representation, then run the full proof.
+        source = inspect.getsource(composition.compose)
+        old = 'for p in missing: stage.OverridePrim(p).SetActive(False)'
         if source.count(old) != 1:
-            raise ValueError('camera census adapter no longer matches the pinned hook')
-        source = source.replace(old, 'len(cameras) != ' + str(read(destination / 'dc.manifest.json')['census']['cameras']))
-        namespace = dict(imported.__dict__)
-        exec(compile(source, '<suite camera census adapter>', 'exec'), namespace)
-        hook = namespace[function]
+            raise ValueError('repeat replacement adapter no longer matches the pinned hook')
+        namespace = dict(composition.__dict__)
+        exec(compile(source.replace(old, 'for p in missing:\n            if p not in extras: stage.OverridePrim(p).SetActive(False)'),
+                     '<suite native repeat replacement adapter>', 'exec'), namespace)
+        imported.compose = namespace['compose']
     findings = hook(stage, out, render_a=False) if name == 'plan' else hook(stage, out)
     if name == 'clash':
+        from usdaeco_clash.paths import scope_layer
         for filename in ('exact.usda', 'twins.usda', 'exact-results.usda'):
             shutil.copyfile(example / 'result/layers/out' / filename, out / filename)
+            copied = Sdf.Layer.FindOrOpen(str(out / filename))
+            scope_layer(copied, os.environ['AECO_STUDY_ROOT'])
+            copied.Save()
             layer.subLayerPaths.insert(0, filename)
     layer.Save()
     write(out / 'hook-findings.json', findings)
@@ -200,6 +329,8 @@ def archive(name, destination, workspace, stage, findings, card, example):
     def provenance(layer, role):
         committed = name == 'solid' or (name == 'clash' and Path(layer.realPath).name in ('exact.usda', 'twins.usda', 'exact-results.usda'))
         origin = source
+        if Path(layer.realPath).name == 'native-arch.usda':
+            origin = ROOT / 'data/usdaeco-datacentre/src/dcbuild/layout.py'
         if committed:
             origin = example / 'result/layers/out' / Path(layer.realPath).name
             if not origin.exists():
@@ -209,6 +340,7 @@ def archive(name, destination, workspace, stage, findings, card, example):
     own = sorted((workspace / 'inputs').rglob('*.usda')) + sorted(out.rglob('*.usda'))
     excluded = {out / 'example.usda', out / 'source.usda'}
     own = [p for p in own if p not in excluded]
+    moves = study_mappings([Sdf.Layer.FindOrOpen(str(p)) for p in own], name, stage.GetDefaultPrim().GetName())
     mapping = {str(p): folder / p.relative_to(workspace) for p in own}
     generated = {}
     for path in own:
@@ -228,7 +360,7 @@ def archive(name, destination, workspace, stage, findings, card, example):
             else:
                 raise ValueError('unmapped analysis sublayer: ' + Path(asset).name)
         copied.subLayerPaths = sublayers
-        reroot(copied, name)
+        reroot(copied, name, mappings=moves)
         for prim_path in list(layer_paths(copied)):
             spec = copied.GetPrimAtPath(prim_path) if prim_path.IsPrimPath() else None
             if not spec:
@@ -406,6 +538,12 @@ def archive(name, destination, workspace, stage, findings, card, example):
     presentation.Save()
     root = Sdf.Layer.CreateNew(str(folder / 'root.usda'))
     provenance(root, 'analysis')
+    study_root = '/Studies/' + name
+    for path in Sdf.Path(study_root).GetPrefixes():
+        scope = Sdf.CreatePrimInLayer(root, path)
+        scope.specifier = Sdf.SpecifierDef
+        scope.typeName = 'Scope'
+    root.customLayerData = {**root.customLayerData, 'aeco:suite:studyRoot': study_root}
     direct = []
     for asset in stage.GetRootLayer().subLayerPaths:
         resolved = str((out / asset).resolve())
@@ -414,27 +552,31 @@ def archive(name, destination, workspace, stage, findings, card, example):
     direct += [os.path.relpath(mapping[str(p)], folder) for p in sorted((workspace / 'inputs').glob('*.usda'))]
     root.subLayerPaths = ['cameras.usda', 'inheritance.usda', *dict.fromkeys(direct)]
     root.Save()
+    findings = remap_data(findings, moves)
     write(folder / 'findings.json', findings)
     expected = read(example / 'expected/findings.json')
     differences = diff_findings(findings, expected)
     adaptations = {
-        'cctv': ['Base camera census guard uses full manifest count.'],
+        'cctv': ['Join issued full-plan door identity and approach drivers to the Revit delivery by aeco:id.'],
         'wall': ['Published-source adapter verifies the full delivery hashes and counts.'],
         'buildup': ['Published-source adapter verifies the full delivery hashes and counts.',
+                    'Select recipes and facade visibility by the three named Revit wall types; retain native IsExternal values.',
                     'Apply the released WC boundary selector to every WC space, merging selections by prim path.'],
         'plan': ['Fixed pod source lookup aliases the full publication; frame rendering is separate.',
                  'The integrated root selects programme B; A and B have separate 4D views.',
                  'Demonstration pod relocation is confined to the programme views; the integrated facility keeps its delivered placement.'],
         'repeat': ['Fixed floors source lookup aliases the full publication.',
+                   'Keep native stair replacements active when the diff reports removal and addition at the same path.',
                    'Deactivate prototype-only spatial extents absent from the occurrence, then run the original exact subtree proof.'],
-        'compliance': ['Fixed iris manifest lookup aliases the full publication.'],
+        'compliance': ['Fixed iris manifest lookup aliases the full publication.',
+                       'Join issued full-plan door identity and approach drivers to the Revit delivery by aeco:id.'],
         'clash': ['Mesh hook runs on full; exact bodies and exact results are committed result ' + card['tag'] + '.'],
         'solid': ['Native exact producer is not rerun; committed geometry is rebased over full.'],
     }.get(name, [])
     write(folder / 'receipt.json', dict(producer=('committed result ' if name == 'solid' else 'hook ') + card['tag'], tag=card['tag'], run=name != 'solid',
           findings=len(findings), expectedFindings=len(expected), differences=differences,
           source=str(source.relative_to(ROOT)), sourceSha256=sha(source),
-          adaptations=adaptations))
+          adaptations=adaptations, studyRoot=study_root))
 
 
 def prune(layer):

@@ -1,6 +1,7 @@
 {
   "adaptations": [
     "Published-source adapter verifies the full delivery hashes and counts.",
+    "Select recipes and facade visibility by the three named Revit wall types; retain native IsExternal values.",
     "Apply the released WC boundary selector to every WC space, merging selections by prim path."
   ],
   "differences": [
@@ -12,5 +13,6 @@
   "run": true,
   "source": "section/usdaeco-buildup/examples/datacentre/run.py",
   "sourceSha256": "53d0e90d16eadda33bd1bf08425246b4ad0d2062a740cd107110c42a8e658f84",
+  "studyRoot": "/Studies/buildup",
   "tag": "v0.2.5"
 }

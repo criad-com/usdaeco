@@ -128,7 +128,7 @@
     "message": "Body uncertainty exceeds the test tolerance or the uncertainty band is invalid; review the evidence.",
     "name": "ClashUncertaintyExceedsTolerance",
     "paths": [
-      "/Clash/Pinned/Result_b87e3bc1e7f95c218e8540962036139e"
+      "/Studies/clash/Clash/Pinned/Result_b87e3bc1e7f95c218e8540962036139e"
     ],
     "severity": "warn"
   },
@@ -136,15 +136,7 @@
     "message": "Clash result has not been reviewed.",
     "name": "ClashStatusUnreviewed",
     "paths": [
-      "/Clash/Pinned/Result_e871d6a8fd345356bd8b5d7dc4bbe3d5"
-    ],
-    "severity": "warn"
-  },
-  {
-    "message": "Clash result has not been reviewed.",
-    "name": "ClashStatusUnreviewed",
-    "paths": [
-      "/Clash/Pinned/Result_dd098bb17c5a54249e4da88ead318732"
+      "/Studies/clash/Clash/Pinned/Result_b87e3bc1e7f95c218e8540962036139e"
     ],
     "severity": "warn"
   },
@@ -152,7 +144,7 @@
     "message": "Body uncertainty exceeds the test tolerance or the uncertainty band is invalid; review the evidence.",
     "name": "ClashUncertaintyExceedsTolerance",
     "paths": [
-      "/Clash/Pinned/Result_dd098bb17c5a54249e4da88ead318732"
+      "/Studies/clash/Clash/Pinned/Result_dd098bb17c5a54249e4da88ead318732"
     ],
     "severity": "warn"
   },
@@ -160,7 +152,15 @@
     "message": "Clash result has not been reviewed.",
     "name": "ClashStatusUnreviewed",
     "paths": [
-      "/Clash/Pinned/Result_b87e3bc1e7f95c218e8540962036139e"
+      "/Studies/clash/Clash/Pinned/Result_e871d6a8fd345356bd8b5d7dc4bbe3d5"
+    ],
+    "severity": "warn"
+  },
+  {
+    "message": "Clash result has not been reviewed.",
+    "name": "ClashStatusUnreviewed",
+    "paths": [
+      "/Studies/clash/Clash/Pinned/Result_dd098bb17c5a54249e4da88ead318732"
     ],
     "severity": "warn"
   }

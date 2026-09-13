@@ -2,11 +2,11 @@
 (
  customLayerData = {
   string "aeco:layer:package" = "cctv"
-  string "aeco:layer:producer" = "hook v0.5.6"
+  string "aeco:layer:producer" = "hook v0.5.7"
   string "aeco:layer:role" = "presentation"
   string "aeco:layer:source" = "kind/usdaeco-cctv/examples/datacentre/run.py"
-  string "aeco:layer:sourceSha256" = "20cad38173f7b25d9ecb528dab991cc0e04a445aa0048237ceb51559dc18cee0"
-  string "aeco:layer:tag" = "v0.5.6"
+  string "aeco:layer:sourceSha256" = "9388b5f1386b0dc100530a8a6f3ee5b46baab71379defbc6cac3485e0d1a40fa"
+  string "aeco:layer:tag" = "v0.5.7"
  }
 )
 
@@ -3605,7 +3605,7 @@ over "demo_datacentre_01"
      {
       over "Geom"
       {
-       color3f[] primvars:displayColor = [(0.55799997, 0.55799997, 0.54)]
+       color3f[] primvars:displayColor = [(0.63, 0.63, 0.63)]
       }
      }
     }
@@ -23633,7 +23633,7 @@ over "demo_datacentre_01"
     {
      over "Geom"
      {
-      color3f[] primvars:displayColor = [(0.774, 0.774, 0.756)]
+      color3f[] primvars:displayColor = [(0.6388235, 0.6388235, 0.6388235)]
      }
     }
 
@@ -23641,7 +23641,7 @@ over "demo_datacentre_01"
     {
      over "Geom"
      {
-      color3f[] primvars:displayColor = [(0.40499997, 0.42299998, 0.45)]
+      color3f[] primvars:displayColor = [(0.4164706, 0.24705882, 0.17999999)]
      }
     }
 
@@ -23649,7 +23649,7 @@ over "demo_datacentre_01"
     {
      over "Geom"
      {
-      color3f[] primvars:displayColor = [(0.40499997, 0.42299998, 0.45)]
+      color3f[] primvars:displayColor = [(0.4164706, 0.24705882, 0.17999999)]
      }
     }
 
@@ -23657,7 +23657,7 @@ over "demo_datacentre_01"
     {
      over "Geom"
      {
-      color3f[] primvars:displayColor = [(0.52199996, 0.52199996, 0.504)]
+      color3f[] primvars:displayColor = [(0.45176473, 0.45176473, 0.45176473)]
      }
     }
 
@@ -23665,7 +23665,7 @@ over "demo_datacentre_01"
     {
      over "Geom"
      {
-      color3f[] primvars:displayColor = [(0.52199996, 0.52199996, 0.504)]
+      color3f[] primvars:displayColor = [(0.45176473, 0.45176473, 0.45176473)]
      }
     }
 
@@ -23673,7 +23673,7 @@ over "demo_datacentre_01"
     {
      over "Geom"
      {
-      color3f[] primvars:displayColor = [(0.648, 0.648, 0.63)]
+      color3f[] primvars:displayColor = [(0.45176473, 0.45176473, 0.45176473)]
      }
     }
 
@@ -23681,7 +23681,7 @@ over "demo_datacentre_01"
     {
      over "Geom"
      {
-      color3f[] primvars:displayColor = [(0.40499997, 0.42299998, 0.45)]
+      color3f[] primvars:displayColor = [(0.4164706, 0.24705882, 0.17999999)]
      }
     }
 
@@ -23689,7 +23689,7 @@ over "demo_datacentre_01"
     {
      over "Geom"
      {
-      color3f[] primvars:displayColor = [(0.52199996, 0.52199996, 0.504)]
+      color3f[] primvars:displayColor = [(0.45176473, 0.45176473, 0.45176473)]
      }
     }
 
@@ -23697,7 +23697,7 @@ over "demo_datacentre_01"
     {
      over "Geom"
      {
-      color3f[] primvars:displayColor = [(0.52199996, 0.52199996, 0.504)]
+      color3f[] primvars:displayColor = [(0.45176473, 0.45176473, 0.45176473)]
      }
     }
 
@@ -23705,7 +23705,7 @@ over "demo_datacentre_01"
     {
      over "Geom"
      {
-      color3f[] primvars:displayColor = [(0.52199996, 0.52199996, 0.504)]
+      color3f[] primvars:displayColor = [(0.45176473, 0.45176473, 0.45176473)]
      }
     }
 
@@ -23713,7 +23713,7 @@ over "demo_datacentre_01"
     {
      over "Geom"
      {
-      color3f[] primvars:displayColor = [(0.648, 0.648, 0.63)]
+      color3f[] primvars:displayColor = [(0.45176473, 0.45176473, 0.45176473)]
      }
     }
 
@@ -23721,7 +23721,7 @@ over "demo_datacentre_01"
     {
      over "Geom"
      {
-      color3f[] primvars:displayColor = [(0.52199996, 0.52199996, 0.504)]
+      color3f[] primvars:displayColor = [(0.45176473, 0.45176473, 0.45176473)]
      }
     }
 
@@ -23729,7 +23729,7 @@ over "demo_datacentre_01"
     {
      over "Geom"
      {
-      color3f[] primvars:displayColor = [(0.52199996, 0.52199996, 0.504)]
+      color3f[] primvars:displayColor = [(0.45176473, 0.45176473, 0.45176473)]
      }
     }
 
@@ -23737,7 +23737,7 @@ over "demo_datacentre_01"
     {
      over "Geom"
      {
-      color3f[] primvars:displayColor = [(0.52199996, 0.52199996, 0.504)]
+      color3f[] primvars:displayColor = [(0.45176473, 0.45176473, 0.45176473)]
      }
     }
 
@@ -23745,7 +23745,7 @@ over "demo_datacentre_01"
     {
      over "Geom"
      {
-      color3f[] primvars:displayColor = [(0.52199996, 0.52199996, 0.504)]
+      color3f[] primvars:displayColor = [(0.45176473, 0.45176473, 0.45176473)]
      }
     }
 
@@ -23753,7 +23753,7 @@ over "demo_datacentre_01"
     {
      over "Geom"
      {
-      color3f[] primvars:displayColor = [(0.52199996, 0.52199996, 0.504)]
+      color3f[] primvars:displayColor = [(0.45176473, 0.45176473, 0.45176473)]
      }
     }
 
@@ -23761,7 +23761,7 @@ over "demo_datacentre_01"
     {
      over "Geom"
      {
-      color3f[] primvars:displayColor = [(0.774, 0.774, 0.756)]
+      color3f[] primvars:displayColor = [(0.6388235, 0.6388235, 0.6388235)]
      }
     }
 
@@ -23769,7 +23769,7 @@ over "demo_datacentre_01"
     {
      over "Geom"
      {
-      color3f[] primvars:displayColor = [(0.648, 0.648, 0.63)]
+      color3f[] primvars:displayColor = [(0.45176473, 0.45176473, 0.45176473)]
      }
     }
 
@@ -23777,7 +23777,7 @@ over "demo_datacentre_01"
     {
      over "Geom"
      {
-      color3f[] primvars:displayColor = [(0.648, 0.648, 0.63)]
+      color3f[] primvars:displayColor = [(0.45176473, 0.45176473, 0.45176473)]
      }
     }
 
@@ -23785,7 +23785,7 @@ over "demo_datacentre_01"
     {
      over "Geom"
      {
-      color3f[] primvars:displayColor = [(0.40499997, 0.42299998, 0.45)]
+      color3f[] primvars:displayColor = [(0.4164706, 0.24705882, 0.17999999)]
      }
     }
 
@@ -23793,7 +23793,7 @@ over "demo_datacentre_01"
     {
      over "Geom"
      {
-      color3f[] primvars:displayColor = [(0.52199996, 0.52199996, 0.504)]
+      color3f[] primvars:displayColor = [(0.45176473, 0.45176473, 0.45176473)]
      }
     }
 
@@ -23801,7 +23801,7 @@ over "demo_datacentre_01"
     {
      over "Geom"
      {
-      color3f[] primvars:displayColor = [(0.648, 0.648, 0.63)]
+      color3f[] primvars:displayColor = [(0.45176473, 0.45176473, 0.45176473)]
      }
     }
 
@@ -23809,7 +23809,7 @@ over "demo_datacentre_01"
     {
      over "Geom"
      {
-      color3f[] primvars:displayColor = [(0.40499997, 0.42299998, 0.45)]
+      color3f[] primvars:displayColor = [(0.4164706, 0.24705882, 0.17999999)]
      }
     }
 
@@ -23817,7 +23817,7 @@ over "demo_datacentre_01"
     {
      over "Geom"
      {
-      color3f[] primvars:displayColor = [(0.648, 0.648, 0.63)]
+      color3f[] primvars:displayColor = [(0.45176473, 0.45176473, 0.45176473)]
      }
     }
 
@@ -23825,7 +23825,7 @@ over "demo_datacentre_01"
     {
      over "Geom"
      {
-      color3f[] primvars:displayColor = [(0.40499997, 0.42299998, 0.45)]
+      color3f[] primvars:displayColor = [(0.4164706, 0.24705882, 0.17999999)]
      }
     }
 
@@ -23833,7 +23833,7 @@ over "demo_datacentre_01"
     {
      over "Geom"
      {
-      color3f[] primvars:displayColor = [(0.40499997, 0.42299998, 0.45)]
+      color3f[] primvars:displayColor = [(0.4164706, 0.24705882, 0.17999999)]
      }
     }
 
@@ -23841,7 +23841,7 @@ over "demo_datacentre_01"
     {
      over "Geom"
      {
-      color3f[] primvars:displayColor = [(0.40499997, 0.42299998, 0.45)]
+      color3f[] primvars:displayColor = [(0.495, 0.27, 0.135)]
      }
     }
 
@@ -23849,7 +23849,7 @@ over "demo_datacentre_01"
     {
      over "Geom"
      {
-      color3f[] primvars:displayColor = [(0.40499997, 0.42299998, 0.45)]
+      color3f[] primvars:displayColor = [(0.4164706, 0.24705882, 0.17999999)]
      }
     }
 
@@ -23857,7 +23857,7 @@ over "demo_datacentre_01"
     {
      over "Geom"
      {
-      color3f[] primvars:displayColor = [(0.40499997, 0.42299998, 0.45)]
+      color3f[] primvars:displayColor = [(0.4164706, 0.24705882, 0.17999999)]
      }
     }
 
@@ -23865,7 +23865,7 @@ over "demo_datacentre_01"
     {
      over "Geom"
      {
-      color3f[] primvars:displayColor = [(0.52199996, 0.52199996, 0.504)]
+      color3f[] primvars:displayColor = [(0.45176473, 0.45176473, 0.45176473)]
      }
     }
 
@@ -23873,7 +23873,7 @@ over "demo_datacentre_01"
     {
      over "Geom"
      {
-      color3f[] primvars:displayColor = [(0.648, 0.648, 0.63)]
+      color3f[] primvars:displayColor = [(0.45176473, 0.45176473, 0.45176473)]
      }
     }
 
@@ -23881,7 +23881,7 @@ over "demo_datacentre_01"
     {
      over "Geom"
      {
-      color3f[] primvars:displayColor = [(0.774, 0.774, 0.756)]
+      color3f[] primvars:displayColor = [(0.6388235, 0.6388235, 0.6388235)]
      }
     }
 
@@ -23889,7 +23889,7 @@ over "demo_datacentre_01"
     {
      over "Geom"
      {
-      color3f[] primvars:displayColor = [(0.774, 0.774, 0.756)]
+      color3f[] primvars:displayColor = [(0.6388235, 0.6388235, 0.6388235)]
      }
     }
 
@@ -23897,7 +23897,7 @@ over "demo_datacentre_01"
     {
      over "Geom"
      {
-      color3f[] primvars:displayColor = [(0.40499997, 0.42299998, 0.45)]
+      color3f[] primvars:displayColor = [(0.4164706, 0.24705882, 0.17999999)]
      }
     }
 
@@ -23905,7 +23905,7 @@ over "demo_datacentre_01"
     {
      over "Geom"
      {
-      color3f[] primvars:displayColor = [(0.52199996, 0.52199996, 0.504)]
+      color3f[] primvars:displayColor = [(0.45176473, 0.45176473, 0.45176473)]
      }
     }
 
@@ -23913,7 +23913,7 @@ over "demo_datacentre_01"
     {
      over "Geom"
      {
-      color3f[] primvars:displayColor = [(0.774, 0.774, 0.756)]
+      color3f[] primvars:displayColor = [(0.6388235, 0.6388235, 0.6388235)]
      }
     }
 
@@ -23921,7 +23921,7 @@ over "demo_datacentre_01"
     {
      over "Geom"
      {
-      color3f[] primvars:displayColor = [(0.648, 0.648, 0.63)]
+      color3f[] primvars:displayColor = [(0.45176473, 0.45176473, 0.45176473)]
      }
     }
 
@@ -23929,7 +23929,7 @@ over "demo_datacentre_01"
     {
      over "Geom"
      {
-      color3f[] primvars:displayColor = [(0.52199996, 0.52199996, 0.504)]
+      color3f[] primvars:displayColor = [(0.45176473, 0.45176473, 0.45176473)]
      }
     }
 
@@ -23937,7 +23937,7 @@ over "demo_datacentre_01"
     {
      over "Geom"
      {
-      color3f[] primvars:displayColor = [(0.40499997, 0.42299998, 0.45)]
+      color3f[] primvars:displayColor = [(0.4164706, 0.24705882, 0.17999999)]
      }
     }
 
@@ -23945,7 +23945,7 @@ over "demo_datacentre_01"
     {
      over "Geom"
      {
-      color3f[] primvars:displayColor = [(0.52199996, 0.52199996, 0.504)]
+      color3f[] primvars:displayColor = [(0.45176473, 0.45176473, 0.45176473)]
      }
     }
 
@@ -23953,7 +23953,7 @@ over "demo_datacentre_01"
     {
      over "Geom"
      {
-      color3f[] primvars:displayColor = [(0.774, 0.774, 0.756)]
+      color3f[] primvars:displayColor = [(0.6388235, 0.6388235, 0.6388235)]
      }
     }
 
@@ -23961,7 +23961,7 @@ over "demo_datacentre_01"
     {
      over "Geom"
      {
-      color3f[] primvars:displayColor = [(0.774, 0.774, 0.756)]
+      color3f[] primvars:displayColor = [(0.6388235, 0.6388235, 0.6388235)]
      }
     }
 
@@ -23969,7 +23969,7 @@ over "demo_datacentre_01"
     {
      over "Geom"
      {
-      color3f[] primvars:displayColor = [(0.648, 0.648, 0.63)]
+      color3f[] primvars:displayColor = [(0.45176473, 0.45176473, 0.45176473)]
      }
     }
 
@@ -23977,7 +23977,7 @@ over "demo_datacentre_01"
     {
      over "Geom"
      {
-      color3f[] primvars:displayColor = [(0.774, 0.774, 0.756)]
+      color3f[] primvars:displayColor = [(0.6388235, 0.6388235, 0.6388235)]
      }
     }
 
@@ -23985,7 +23985,7 @@ over "demo_datacentre_01"
     {
      over "Geom"
      {
-      color3f[] primvars:displayColor = [(0.40499997, 0.42299998, 0.45)]
+      color3f[] primvars:displayColor = [(0.4164706, 0.24705882, 0.17999999)]
      }
     }
 
@@ -23993,7 +23993,7 @@ over "demo_datacentre_01"
     {
      over "Geom"
      {
-      color3f[] primvars:displayColor = [(0.648, 0.648, 0.63)]
+      color3f[] primvars:displayColor = [(0.45176473, 0.45176473, 0.45176473)]
      }
     }
 
@@ -24001,7 +24001,7 @@ over "demo_datacentre_01"
     {
      over "Geom"
      {
-      color3f[] primvars:displayColor = [(0.648, 0.648, 0.63)]
+      color3f[] primvars:displayColor = [(0.45176473, 0.45176473, 0.45176473)]
      }
     }
 
@@ -24009,7 +24009,7 @@ over "demo_datacentre_01"
     {
      over "Geom"
      {
-      color3f[] primvars:displayColor = [(0.40499997, 0.42299998, 0.45)]
+      color3f[] primvars:displayColor = [(0.4164706, 0.24705882, 0.17999999)]
      }
     }
 
@@ -24017,7 +24017,7 @@ over "demo_datacentre_01"
     {
      over "Geom"
      {
-      color3f[] primvars:displayColor = [(0.52199996, 0.52199996, 0.504)]
+      color3f[] primvars:displayColor = [(0.45176473, 0.45176473, 0.45176473)]
      }
     }
 
@@ -24025,7 +24025,7 @@ over "demo_datacentre_01"
     {
      over "Geom"
      {
-      color3f[] primvars:displayColor = [(0.40499997, 0.42299998, 0.45)]
+      color3f[] primvars:displayColor = [(0.4164706, 0.24705882, 0.17999999)]
      }
     }
 
@@ -24033,7 +24033,7 @@ over "demo_datacentre_01"
     {
      over "Geom"
      {
-      color3f[] primvars:displayColor = [(0.52199996, 0.52199996, 0.504)]
+      color3f[] primvars:displayColor = [(0.45176473, 0.45176473, 0.45176473)]
      }
     }
 
@@ -24041,7 +24041,7 @@ over "demo_datacentre_01"
     {
      over "Geom"
      {
-      color3f[] primvars:displayColor = [(0.774, 0.774, 0.756)]
+      color3f[] primvars:displayColor = [(0.6388235, 0.6388235, 0.6388235)]
      }
     }
 
@@ -24049,7 +24049,7 @@ over "demo_datacentre_01"
     {
      over "Geom"
      {
-      color3f[] primvars:displayColor = [(0.648, 0.648, 0.63)]
+      color3f[] primvars:displayColor = [(0.45176473, 0.45176473, 0.45176473)]
      }
     }
 
@@ -24057,7 +24057,7 @@ over "demo_datacentre_01"
     {
      over "Geom"
      {
-      color3f[] primvars:displayColor = [(0.52199996, 0.52199996, 0.504)]
+      color3f[] primvars:displayColor = [(0.45176473, 0.45176473, 0.45176473)]
      }
     }
 
@@ -24065,7 +24065,7 @@ over "demo_datacentre_01"
     {
      over "Geom"
      {
-      color3f[] primvars:displayColor = [(0.648, 0.648, 0.63)]
+      color3f[] primvars:displayColor = [(0.45176473, 0.45176473, 0.45176473)]
      }
     }
 
@@ -24073,7 +24073,7 @@ over "demo_datacentre_01"
     {
      over "Geom"
      {
-      color3f[] primvars:displayColor = [(0.52199996, 0.52199996, 0.504)]
+      color3f[] primvars:displayColor = [(0.45176473, 0.45176473, 0.45176473)]
      }
     }
 
@@ -24081,7 +24081,7 @@ over "demo_datacentre_01"
     {
      over "Geom"
      {
-      color3f[] primvars:displayColor = [(0.40499997, 0.42299998, 0.45)]
+      color3f[] primvars:displayColor = [(0.4164706, 0.24705882, 0.17999999)]
      }
     }
 
@@ -24089,7 +24089,7 @@ over "demo_datacentre_01"
     {
      over "Geom"
      {
-      color3f[] primvars:displayColor = [(0.52199996, 0.52199996, 0.504)]
+      color3f[] primvars:displayColor = [(0.45176473, 0.45176473, 0.45176473)]
      }
     }
 
@@ -24097,7 +24097,7 @@ over "demo_datacentre_01"
     {
      over "Geom"
      {
-      color3f[] primvars:displayColor = [(0.52199996, 0.52199996, 0.504)]
+      color3f[] primvars:displayColor = [(0.45176473, 0.45176473, 0.45176473)]
      }
     }
 
@@ -24105,7 +24105,7 @@ over "demo_datacentre_01"
     {
      over "Geom"
      {
-      color3f[] primvars:displayColor = [(0.52199996, 0.52199996, 0.504)]
+      color3f[] primvars:displayColor = [(0.45176473, 0.45176473, 0.45176473)]
      }
     }
 
@@ -24113,7 +24113,7 @@ over "demo_datacentre_01"
     {
      over "Geom"
      {
-      color3f[] primvars:displayColor = [(0.40499997, 0.42299998, 0.45)]
+      color3f[] primvars:displayColor = [(0.4164706, 0.24705882, 0.17999999)]
      }
     }
 
@@ -24121,7 +24121,7 @@ over "demo_datacentre_01"
     {
      over "Geom"
      {
-      color3f[] primvars:displayColor = [(0.648, 0.648, 0.63)]
+      color3f[] primvars:displayColor = [(0.45176473, 0.45176473, 0.45176473)]
      }
     }
 
@@ -24129,7 +24129,7 @@ over "demo_datacentre_01"
     {
      over "Geom"
      {
-      color3f[] primvars:displayColor = [(0.52199996, 0.52199996, 0.504)]
+      color3f[] primvars:displayColor = [(0.45176473, 0.45176473, 0.45176473)]
      }
     }
 
@@ -24137,7 +24137,7 @@ over "demo_datacentre_01"
     {
      over "Geom"
      {
-      color3f[] primvars:displayColor = [(0.40499997, 0.42299998, 0.45)]
+      color3f[] primvars:displayColor = [(0.4164706, 0.24705882, 0.17999999)]
      }
     }
 
@@ -24145,7 +24145,7 @@ over "demo_datacentre_01"
     {
      over "Geom"
      {
-      color3f[] primvars:displayColor = [(0.648, 0.648, 0.63)]
+      color3f[] primvars:displayColor = [(0.45176473, 0.45176473, 0.45176473)]
      }
     }
 
@@ -24153,7 +24153,7 @@ over "demo_datacentre_01"
     {
      over "Geom"
      {
-      color3f[] primvars:displayColor = [(0.40499997, 0.42299998, 0.45)]
+      color3f[] primvars:displayColor = [(0.4164706, 0.24705882, 0.17999999)]
      }
     }
 
@@ -24161,7 +24161,7 @@ over "demo_datacentre_01"
     {
      over "Geom"
      {
-      color3f[] primvars:displayColor = [(0.55799997, 0.55799997, 0.54)]
+      color3f[] primvars:displayColor = [(0.44823527, 0.44823527, 0.44823527)]
      }
     }
 
@@ -24169,7 +24169,7 @@ over "demo_datacentre_01"
     {
      over "Geom"
      {
-      color3f[] primvars:displayColor = [(0.648, 0.648, 0.63)]
+      color3f[] primvars:displayColor = [(0.45176473, 0.45176473, 0.45176473)]
      }
     }
 
@@ -24177,7 +24177,7 @@ over "demo_datacentre_01"
     {
      over "Geom"
      {
-      color3f[] primvars:displayColor = [(0.40499997, 0.42299998, 0.45)]
+      color3f[] primvars:displayColor = [(0.4164706, 0.24705882, 0.17999999)]
      }
     }
 
@@ -24185,7 +24185,7 @@ over "demo_datacentre_01"
     {
      over "Geom"
      {
-      color3f[] primvars:displayColor = [(0.40499997, 0.42299998, 0.45)]
+      color3f[] primvars:displayColor = [(0.4164706, 0.24705882, 0.17999999)]
      }
     }
 
@@ -24193,7 +24193,7 @@ over "demo_datacentre_01"
     {
      over "Geom"
      {
-      color3f[] primvars:displayColor = [(0.55799997, 0.55799997, 0.54)]
+      color3f[] primvars:displayColor = [(0.44823527, 0.44823527, 0.44823527)]
      }
     }
 
@@ -24201,7 +24201,7 @@ over "demo_datacentre_01"
     {
      over "Geom"
      {
-      color3f[] primvars:displayColor = [(0.648, 0.648, 0.63)]
+      color3f[] primvars:displayColor = [(0.45176473, 0.45176473, 0.45176473)]
      }
     }
 
@@ -24209,7 +24209,7 @@ over "demo_datacentre_01"
     {
      over "Geom"
      {
-      color3f[] primvars:displayColor = [(0.648, 0.648, 0.63)]
+      color3f[] primvars:displayColor = [(0.45176473, 0.45176473, 0.45176473)]
      }
     }
 
@@ -24217,7 +24217,7 @@ over "demo_datacentre_01"
     {
      over "Geom"
      {
-      color3f[] primvars:displayColor = [(0.40499997, 0.42299998, 0.45)]
+      color3f[] primvars:displayColor = [(0.4164706, 0.24705882, 0.17999999)]
      }
     }
 
@@ -24225,7 +24225,7 @@ over "demo_datacentre_01"
     {
      over "Geom"
      {
-      color3f[] primvars:displayColor = [(0.648, 0.648, 0.63)]
+      color3f[] primvars:displayColor = [(0.45176473, 0.45176473, 0.45176473)]
      }
     }
 
@@ -24233,7 +24233,7 @@ over "demo_datacentre_01"
     {
      over "Geom"
      {
-      color3f[] primvars:displayColor = [(0.40499997, 0.42299998, 0.45)]
+      color3f[] primvars:displayColor = [(0.4164706, 0.24705882, 0.17999999)]
      }
     }
 
@@ -24241,7 +24241,7 @@ over "demo_datacentre_01"
     {
      over "Geom"
      {
-      color3f[] primvars:displayColor = [(0.40499997, 0.42299998, 0.45)]
+      color3f[] primvars:displayColor = [(0.4164706, 0.24705882, 0.17999999)]
      }
     }
 
@@ -24249,7 +24249,7 @@ over "demo_datacentre_01"
     {
      over "Geom"
      {
-      color3f[] primvars:displayColor = [(0.52199996, 0.52199996, 0.504)]
+      color3f[] primvars:displayColor = [(0.45176473, 0.45176473, 0.45176473)]
      }
     }
 
@@ -24257,7 +24257,7 @@ over "demo_datacentre_01"
     {
      over "Geom"
      {
-      color3f[] primvars:displayColor = [(0.52199996, 0.52199996, 0.504)]
+      color3f[] primvars:displayColor = [(0.45176473, 0.45176473, 0.45176473)]
      }
     }
 
@@ -24265,7 +24265,7 @@ over "demo_datacentre_01"
     {
      over "Geom"
      {
-      color3f[] primvars:displayColor = [(0.8, 0.65, 0.28), (0.8, 0.65, 0.28), (0.8, 0.65, 0.28), (0.8, 0.65, 0.28), (0.8, 0.65, 0.28), (0.8, 0.65, 0.28), (0.8, 0.65, 0.28), (0.8, 0.65, 0.28), (0.8, 0.65, 0.28), (0.8, 0.65, 0.28), (0.8, 0.65, 0.28), (0.8, 0.65, 0.28), (0.8, 0.65, 0.28), (0.8, 0.65, 0.28), (0.8, 0.65, 0.28), (0.8, 0.65, 0.28), (0.8, 0.65, 0.28), (0.8, 0.65, 0.28), (0.8, 0.65, 0.28), (0.8, 0.65, 0.28), (0.8, 0.65, 0.28), (0.8, 0.65, 0.28), (0.8, 0.65, 0.28), (0.8, 0.65, 0.28), (0.8, 0.65, 0.28), (0.8, 0.65, 0.28), (0.8, 0.65, 0.28), (0.8, 0.65, 0.28), (0.8, 0.65, 0.28), (0.8, 0.65, 0.28), (0.8, 0.65, 0.28), (0.8, 0.65, 0.28), (0.8, 0.65, 0.28), (0.8, 0.65, 0.28), (0.8, 0.65, 0.28), (0.8, 0.65, 0.28), (0.38, 0.6, 0.8), (0.38, 0.6, 0.8), (0.38, 0.6, 0.8), (0.38, 0.6, 0.8), (0.38, 0.6, 0.8), (0.38, 0.6, 0.8), (0.8, 0.65, 0.28), (0.8, 0.65, 0.28), (0.8, 0.65, 0.28), (0.8, 0.65, 0.28), (0.8, 0.65, 0.28), (0.8, 0.65, 0.28), (0.8, 0.65, 0.28), (0.8, 0.65, 0.28), (0.8, 0.65, 0.28), (0.8, 0.65, 0.28), (0.8, 0.65, 0.28), (0.8, 0.65, 0.28), (0.8, 0.65, 0.28), (0.8, 0.65, 0.28), (0.38, 0.6, 0.8), (0.38, 0.6, 0.8), (0.38, 0.6, 0.8), (0.38, 0.6, 0.8), (0.38, 0.6, 0.8), (0.38, 0.6, 0.8), (0.38, 0.6, 0.8), (0.38, 0.6, 0.8), (0.38, 0.6, 0.8), (0.38, 0.6, 0.8), (0.38, 0.6, 0.8), (0.38, 0.6, 0.8), (0.8, 0.65, 0.28), (0.8, 0.65, 0.28), (0.8, 0.65, 0.28), (0.8, 0.65, 0.28), (0.8, 0.65, 0.28), (0.8, 0.65, 0.28), (0.8, 0.65, 0.28), (0.8, 0.65, 0.28), (0.38, 0.6, 0.8), (0.38, 0.6, 0.8), (0.38, 0.6, 0.8), (0.38, 0.6, 0.8), (0.38, 0.6, 0.8), (0.38, 0.6, 0.8), (0.8, 0.65, 0.28), (0.8, 0.65, 0.28), (0.8, 0.65, 0.28), (0.8, 0.65, 0.28), (0.8, 0.65, 0.28), (0.8, 0.65, 0.28), (0.8, 0.65, 0.28), (0.8, 0.65, 0.28), (0.8, 0.65, 0.28), (0.8, 0.65, 0.28), (0.8, 0.65, 0.28), (0.8, 0.65, 0.28), (0.8, 0.65, 0.28), (0.8, 0.65, 0.28), (0.8, 0.65, 0.28), (0.8, 0.65, 0.28), (0.8, 0.65, 0.28), (0.8, 0.65, 0.28), (0.8, 0.65, 0.28), (0.8, 0.65, 0.28), (0.8, 0.65, 0.28), (0.8, 0.65, 0.28), (0.8, 0.65, 0.28), (0.8, 0.65, 0.28), (0.8, 0.65, 0.28), (0.8, 0.65, 0.28), (0.8, 0.65, 0.28), (0.8, 0.65, 0.28), (0.8, 0.65, 0.28), (0.8, 0.65, 0.28), (0.8, 0.65, 0.28), (0.8, 0.65, 0.28), (0.8, 0.65, 0.28), (0.8, 0.65, 0.28), (0.8, 0.65, 0.28), (0.8, 0.65, 0.28), (0.8, 0.65, 0.28), (0.8, 0.65, 0.28), (0.8, 0.65, 0.28), (0.8, 0.65, 0.28), (0.8, 0.65, 0.28), (0.8, 0.65, 0.28), (0.38, 0.6, 0.8), (0.38, 0.6, 0.8), (0.38, 0.6, 0.8), (0.38, 0.6, 0.8), (0.38, 0.6, 0.8), (0.38, 0.6, 0.8), (0.8, 0.65, 0.28), (0.8, 0.65, 0.28), (0.38, 0.6, 0.8), (0.38, 0.6, 0.8), (0.8, 0.65, 0.28), (0.8, 0.65, 0.28), (0.38, 0.6, 0.8), (0.38, 0.6, 0.8), (0.38, 0.6, 0.8), (0.38, 0.6, 0.8), (0.38, 0.6, 0.8), (0.38, 0.6, 0.8), (0.38, 0.6, 0.8), (0.38, 0.6, 0.8), (0.38, 0.6, 0.8), (0.38, 0.6, 0.8), (0.38, 0.6, 0.8), (0.38, 0.6, 0.8), (0.38, 0.6, 0.8), (0.38, 0.6, 0.8), (0.38, 0.6, 0.8), (0.38, 0.6, 0.8), (0.38, 0.6, 0.8), (0.38, 0.6, 0.8), (0.38, 0.6, 0.8), (0.38, 0.6, 0.8), (0.38, 0.6, 0.8), (0.38, 0.6, 0.8), (0.38, 0.6, 0.8), (0.38, 0.6, 0.8), (0.38, 0.6, 0.8), (0.38, 0.6, 0.8), (0.38, 0.6, 0.8), (0.38, 0.6, 0.8), (0.38, 0.6, 0.8), (0.38, 0.6, 0.8), (0.38, 0.6, 0.8), (0.38, 0.6, 0.8), (0.38, 0.6, 0.8), (0.38, 0.6, 0.8), (0.38, 0.6, 0.8), (0.38, 0.6, 0.8), (0.38, 0.6, 0.8), (0.38, 0.6, 0.8), (0.38, 0.6, 0.8), (0.38, 0.6, 0.8), (0.38, 0.6, 0.8), (0.38, 0.6, 0.8), (0.38, 0.6, 0.8), (0.38, 0.6, 0.8), (0.38, 0.6, 0.8), (0.38, 0.6, 0.8), (0.8, 0.65, 0.28), (0.8, 0.65, 0.28), (0.38, 0.6, 0.8), (0.38, 0.6, 0.8), (0.8, 0.65, 0.28), (0.8, 0.65, 0.28), (0.38, 0.6, 0.8), (0.38, 0.6, 0.8), (0.38, 0.6, 0.8), (0.38, 0.6, 0.8), (0.38, 0.6, 0.8), (0.38, 0.6, 0.8), (0.38, 0.6, 0.8), (0.38, 0.6, 0.8), (0.38, 0.6, 0.8), (0.38, 0.6, 0.8), (0.38, 0.6, 0.8), (0.38, 0.6, 0.8), (0.38, 0.6, 0.8), (0.38, 0.6, 0.8), (0.38, 0.6, 0.8), (0.38, 0.6, 0.8), (0.38, 0.6, 0.8), (0.38, 0.6, 0.8), (0.38, 0.6, 0.8), (0.38, 0.6, 0.8), (0.38, 0.6, 0.8), (0.38, 0.6, 0.8), (0.38, 0.6, 0.8), (0.38, 0.6, 0.8), (0.38, 0.6, 0.8), (0.38, 0.6, 0.8), (0.38, 0.6, 0.8), (0.38, 0.6, 0.8), (0.38, 0.6, 0.8), (0.38, 0.6, 0.8), (0.38, 0.6, 0.8), (0.38, 0.6, 0.8), (0.38, 0.6, 0.8), (0.38, 0.6, 0.8), (0.38, 0.6, 0.8), (0.38, 0.6, 0.8), (0.38, 0.6, 0.8), (0.38, 0.6, 0.8), (0.38, 0.6, 0.8), (0.38, 0.6, 0.8)] (
+      color3f[] primvars:displayColor = [(0.8, 0.65, 0.28), (0.8, 0.65, 0.28), (0.8, 0.65, 0.28), (0.8, 0.65, 0.28), (0.8, 0.65, 0.28), (0.8, 0.65, 0.28), (0.38, 0.6, 0.8), (0.38, 0.6, 0.8), (0.38, 0.6, 0.8), (0.38, 0.6, 0.8), (0.38, 0.6, 0.8), (0.38, 0.6, 0.8), (0.8, 0.65, 0.28), (0.8, 0.65, 0.28), (0.8, 0.65, 0.28), (0.8, 0.65, 0.28), (0.8, 0.65, 0.28), (0.8, 0.65, 0.28), (0.8, 0.65, 0.28), (0.8, 0.65, 0.28), (0.8, 0.65, 0.28), (0.8, 0.65, 0.28), (0.8, 0.65, 0.28), (0.8, 0.65, 0.28), (0.8, 0.65, 0.28), (0.8, 0.65, 0.28), (0.8, 0.65, 0.28), (0.8, 0.65, 0.28), (0.8, 0.65, 0.28), (0.8, 0.65, 0.28), (0.8, 0.65, 0.28), (0.8, 0.65, 0.28), (0.38, 0.6, 0.8), (0.38, 0.6, 0.8), (0.38, 0.6, 0.8), (0.38, 0.6, 0.8), (0.38, 0.6, 0.8), (0.38, 0.6, 0.8), (0.8, 0.65, 0.28), (0.8, 0.65, 0.28), (0.8, 0.65, 0.28), (0.8, 0.65, 0.28), (0.8, 0.65, 0.28), (0.8, 0.65, 0.28), (0.8, 0.65, 0.28), (0.8, 0.65, 0.28), (0.8, 0.65, 0.28), (0.8, 0.65, 0.28), (0.8, 0.65, 0.28), (0.8, 0.65, 0.28), (0.8, 0.65, 0.28), (0.8, 0.65, 0.28), (0.8, 0.65, 0.28), (0.8, 0.65, 0.28), (0.8, 0.65, 0.28), (0.8, 0.65, 0.28), (0.38, 0.6, 0.8), (0.38, 0.6, 0.8), (0.38, 0.6, 0.8), (0.38, 0.6, 0.8), (0.38, 0.6, 0.8), (0.38, 0.6, 0.8), (0.38, 0.6, 0.8), (0.38, 0.6, 0.8), (0.38, 0.6, 0.8), (0.38, 0.6, 0.8), (0.38, 0.6, 0.8), (0.38, 0.6, 0.8)] (
        interpolation = "uniform"
       )
      }
@@ -24275,7 +24275,7 @@ over "demo_datacentre_01"
     {
      over "Geom"
      {
-      color3f[] primvars:displayColor = [(0.52199996, 0.52199996, 0.504)]
+      color3f[] primvars:displayColor = [(0.45176473, 0.45176473, 0.45176473)]
      }
     }
 
@@ -24283,7 +24283,7 @@ over "demo_datacentre_01"
     {
      over "Geom"
      {
-      color3f[] primvars:displayColor = [(0.40499997, 0.42299998, 0.45)]
+      color3f[] primvars:displayColor = [(0.4164706, 0.24705882, 0.17999999)]
      }
     }
 
@@ -24291,7 +24291,7 @@ over "demo_datacentre_01"
     {
      over "Geom"
      {
-      color3f[] primvars:displayColor = [(0.52199996, 0.52199996, 0.504)]
+      color3f[] primvars:displayColor = [(0.45176473, 0.45176473, 0.45176473)]
      }
     }
 
@@ -24299,7 +24299,7 @@ over "demo_datacentre_01"
     {
      over "Geom"
      {
-      color3f[] primvars:displayColor = [(0.40499997, 0.42299998, 0.45)]
+      color3f[] primvars:displayColor = [(0.4164706, 0.24705882, 0.17999999)]
      }
     }
 
@@ -24307,7 +24307,7 @@ over "demo_datacentre_01"
     {
      over "Geom"
      {
-      color3f[] primvars:displayColor = [(0.774, 0.774, 0.756)]
+      color3f[] primvars:displayColor = [(0.6388235, 0.6388235, 0.6388235)]
      }
     }
 
@@ -24315,7 +24315,7 @@ over "demo_datacentre_01"
     {
      over "Geom"
      {
-      color3f[] primvars:displayColor = [(0.40499997, 0.42299998, 0.45)]
+      color3f[] primvars:displayColor = [(0.4164706, 0.24705882, 0.17999999)]
      }
     }
 
@@ -24323,7 +24323,7 @@ over "demo_datacentre_01"
     {
      over "Geom"
      {
-      color3f[] primvars:displayColor = [(0.52199996, 0.52199996, 0.504)]
+      color3f[] primvars:displayColor = [(0.45176473, 0.45176473, 0.45176473)]
      }
     }
 
@@ -24331,7 +24331,7 @@ over "demo_datacentre_01"
     {
      over "Geom"
      {
-      color3f[] primvars:displayColor = [(0.40499997, 0.42299998, 0.45)]
+      color3f[] primvars:displayColor = [(0.4164706, 0.24705882, 0.17999999)]
      }
     }
 
@@ -24339,7 +24339,7 @@ over "demo_datacentre_01"
     {
      over "Geom"
      {
-      color3f[] primvars:displayColor = [(0.648, 0.648, 0.63)]
+      color3f[] primvars:displayColor = [(0.45176473, 0.45176473, 0.45176473)]
      }
     }
 
@@ -24347,7 +24347,7 @@ over "demo_datacentre_01"
     {
      over "Geom"
      {
-      color3f[] primvars:displayColor = [(0.40499997, 0.42299998, 0.45)]
+      color3f[] primvars:displayColor = [(0.4164706, 0.24705882, 0.17999999)]
      }
     }
 
@@ -24355,7 +24355,7 @@ over "demo_datacentre_01"
     {
      over "Geom"
      {
-      color3f[] primvars:displayColor = [(0.648, 0.648, 0.63)]
+      color3f[] primvars:displayColor = [(0.45176473, 0.45176473, 0.45176473)]
      }
     }
 
@@ -24363,7 +24363,7 @@ over "demo_datacentre_01"
     {
      over "Geom"
      {
-      color3f[] primvars:displayColor = [(0.40499997, 0.42299998, 0.45)]
+      color3f[] primvars:displayColor = [(0.4164706, 0.24705882, 0.17999999)]
      }
     }
 
@@ -24371,7 +24371,7 @@ over "demo_datacentre_01"
     {
      over "Geom"
      {
-      color3f[] primvars:displayColor = [(0.40499997, 0.42299998, 0.45)]
+      color3f[] primvars:displayColor = [(0.4164706, 0.24705882, 0.17999999)]
      }
     }
 
@@ -24379,7 +24379,7 @@ over "demo_datacentre_01"
     {
      over "Geom"
      {
-      color3f[] primvars:displayColor = [(0.774, 0.774, 0.756)]
+      color3f[] primvars:displayColor = [(0.6388235, 0.6388235, 0.6388235)]
      }
     }
 
@@ -24387,7 +24387,7 @@ over "demo_datacentre_01"
     {
      over "Geom"
      {
-      color3f[] primvars:displayColor = [(0.52199996, 0.52199996, 0.504)]
+      color3f[] primvars:displayColor = [(0.45176473, 0.45176473, 0.45176473)]
      }
     }
 
@@ -24395,7 +24395,7 @@ over "demo_datacentre_01"
     {
      over "Geom"
      {
-      color3f[] primvars:displayColor = [(0.774, 0.774, 0.756)]
+      color3f[] primvars:displayColor = [(0.6388235, 0.6388235, 0.6388235)]
      }
     }
 
@@ -24403,7 +24403,7 @@ over "demo_datacentre_01"
     {
      over "Geom"
      {
-      color3f[] primvars:displayColor = [(0.648, 0.648, 0.63)]
+      color3f[] primvars:displayColor = [(0.45176473, 0.45176473, 0.45176473)]
      }
     }
 
@@ -24411,7 +24411,7 @@ over "demo_datacentre_01"
     {
      over "Geom"
      {
-      color3f[] primvars:displayColor = [(0.40499997, 0.42299998, 0.45)]
+      color3f[] primvars:displayColor = [(0.4164706, 0.24705882, 0.17999999)]
      }
     }
 
@@ -24419,7 +24419,7 @@ over "demo_datacentre_01"
     {
      over "Geom"
      {
-      color3f[] primvars:displayColor = [(0.52199996, 0.52199996, 0.504)]
+      color3f[] primvars:displayColor = [(0.45176473, 0.45176473, 0.45176473)]
      }
     }
 
@@ -24427,7 +24427,7 @@ over "demo_datacentre_01"
     {
      over "Geom"
      {
-      color3f[] primvars:displayColor = [(0.52199996, 0.52199996, 0.504)]
+      color3f[] primvars:displayColor = [(0.45176473, 0.45176473, 0.45176473)]
      }
     }
 
@@ -24435,7 +24435,7 @@ over "demo_datacentre_01"
     {
      over "Geom"
      {
-      color3f[] primvars:displayColor = [(0.40499997, 0.42299998, 0.45)]
+      color3f[] primvars:displayColor = [(0.4164706, 0.24705882, 0.17999999)]
      }
     }
 
@@ -24443,7 +24443,7 @@ over "demo_datacentre_01"
     {
      over "Geom"
      {
-      color3f[] primvars:displayColor = [(0.648, 0.648, 0.63)]
+      color3f[] primvars:displayColor = [(0.45176473, 0.45176473, 0.45176473)]
      }
     }
 
@@ -24451,7 +24451,7 @@ over "demo_datacentre_01"
     {
      over "Geom"
      {
-      color3f[] primvars:displayColor = [(0.52199996, 0.52199996, 0.504)]
+      color3f[] primvars:displayColor = [(0.45176473, 0.45176473, 0.45176473)]
      }
     }
 
@@ -24459,7 +24459,7 @@ over "demo_datacentre_01"
     {
      over "Geom"
      {
-      color3f[] primvars:displayColor = [(0.40499997, 0.42299998, 0.45)]
+      color3f[] primvars:displayColor = [(0.4164706, 0.24705882, 0.17999999)]
      }
     }
 
@@ -24467,7 +24467,7 @@ over "demo_datacentre_01"
     {
      over "Geom"
      {
-      color3f[] primvars:displayColor = [(0.774, 0.774, 0.756)]
+      color3f[] primvars:displayColor = [(0.6388235, 0.6388235, 0.6388235)]
      }
     }
 
@@ -24475,7 +24475,7 @@ over "demo_datacentre_01"
     {
      over "Geom"
      {
-      color3f[] primvars:displayColor = [(0.774, 0.774, 0.756)]
+      color3f[] primvars:displayColor = [(0.6388235, 0.6388235, 0.6388235)]
      }
     }
 
@@ -24483,7 +24483,7 @@ over "demo_datacentre_01"
     {
      over "Geom"
      {
-      color3f[] primvars:displayColor = [(0.648, 0.648, 0.63)]
+      color3f[] primvars:displayColor = [(0.45176473, 0.45176473, 0.45176473)]
      }
     }
 
@@ -24491,7 +24491,7 @@ over "demo_datacentre_01"
     {
      over "Geom"
      {
-      color3f[] primvars:displayColor = [(0.52199996, 0.52199996, 0.504)]
+      color3f[] primvars:displayColor = [(0.45176473, 0.45176473, 0.45176473)]
      }
     }
 
@@ -24499,7 +24499,7 @@ over "demo_datacentre_01"
     {
      over "Geom"
      {
-      color3f[] primvars:displayColor = [(0.52199996, 0.52199996, 0.504)]
+      color3f[] primvars:displayColor = [(0.45176473, 0.45176473, 0.45176473)]
      }
     }
 
@@ -24507,7 +24507,7 @@ over "demo_datacentre_01"
     {
      over "Geom"
      {
-      color3f[] primvars:displayColor = [(0.40499997, 0.42299998, 0.45)]
+      color3f[] primvars:displayColor = [(0.4164706, 0.24705882, 0.17999999)]
      }
     }
 
@@ -24515,7 +24515,7 @@ over "demo_datacentre_01"
     {
      over "Geom"
      {
-      color3f[] primvars:displayColor = [(0.648, 0.648, 0.63)]
+      color3f[] primvars:displayColor = [(0.45176473, 0.45176473, 0.45176473)]
      }
     }
    }
@@ -24853,7 +24853,7 @@ over "demo_datacentre_01"
      {
       over "Geom"
       {
-       color3f[] primvars:displayColor = [(0.55799997, 0.55799997, 0.54)]
+       color3f[] primvars:displayColor = [(0.63, 0.63, 0.63)]
       }
      }
     }
@@ -24862,7 +24862,7 @@ over "demo_datacentre_01"
     {
      over "Geom"
      {
-      color3f[] primvars:displayColor = [(0.648, 0.648, 0.63)]
+      color3f[] primvars:displayColor = [(0.45176473, 0.45176473, 0.45176473)]
      }
     }
 
@@ -24870,7 +24870,7 @@ over "demo_datacentre_01"
     {
      over "Geom"
      {
-      color3f[] primvars:displayColor = [(0.648, 0.648, 0.63)]
+      color3f[] primvars:displayColor = [(0.45176473, 0.45176473, 0.45176473)]
      }
     }
 
@@ -24878,7 +24878,7 @@ over "demo_datacentre_01"
     {
      over "Geom"
      {
-      color3f[] primvars:displayColor = [(0.774, 0.774, 0.756)]
+      color3f[] primvars:displayColor = [(0.6388235, 0.6388235, 0.6388235)]
      }
     }
 
@@ -24886,7 +24886,7 @@ over "demo_datacentre_01"
     {
      over "Geom"
      {
-      color3f[] primvars:displayColor = [(0.774, 0.774, 0.756)]
+      color3f[] primvars:displayColor = [(0.6388235, 0.6388235, 0.6388235)]
      }
     }
 
@@ -24894,7 +24894,7 @@ over "demo_datacentre_01"
     {
      over "Geom"
      {
-      color3f[] primvars:displayColor = [(0.648, 0.648, 0.63)]
+      color3f[] primvars:displayColor = [(0.45176473, 0.45176473, 0.45176473)]
      }
     }
 
@@ -24902,7 +24902,7 @@ over "demo_datacentre_01"
     {
      over "Geom"
      {
-      color3f[] primvars:displayColor = [(0.648, 0.648, 0.63)]
+      color3f[] primvars:displayColor = [(0.45176473, 0.45176473, 0.45176473)]
      }
     }
 
@@ -24910,7 +24910,7 @@ over "demo_datacentre_01"
     {
      over "Geom"
      {
-      color3f[] primvars:displayColor = [(0.774, 0.774, 0.756)]
+      color3f[] primvars:displayColor = [(0.6388235, 0.6388235, 0.6388235)]
      }
     }
 
@@ -24918,7 +24918,7 @@ over "demo_datacentre_01"
     {
      over "Geom"
      {
-      color3f[] primvars:displayColor = [(0.774, 0.774, 0.756)]
+      color3f[] primvars:displayColor = [(0.6388235, 0.6388235, 0.6388235)]
      }
     }
 
@@ -24926,7 +24926,7 @@ over "demo_datacentre_01"
     {
      over "Geom"
      {
-      color3f[] primvars:displayColor = [(0.648, 0.648, 0.63)]
+      color3f[] primvars:displayColor = [(0.45176473, 0.45176473, 0.45176473)]
      }
     }
 
@@ -24934,7 +24934,7 @@ over "demo_datacentre_01"
     {
      over "Geom"
      {
-      color3f[] primvars:displayColor = [(0.648, 0.648, 0.63)]
+      color3f[] primvars:displayColor = [(0.45176473, 0.45176473, 0.45176473)]
      }
     }
 
@@ -24942,7 +24942,7 @@ over "demo_datacentre_01"
     {
      over "Geom"
      {
-      color3f[] primvars:displayColor = [(0.55799997, 0.55799997, 0.54)]
+      color3f[] primvars:displayColor = [(0.44823527, 0.44823527, 0.44823527)]
      }
     }
 
@@ -24950,7 +24950,7 @@ over "demo_datacentre_01"
     {
      over "Geom"
      {
-      color3f[] primvars:displayColor = [(0.40499997, 0.42299998, 0.45)]
+      color3f[] primvars:displayColor = [(0.4164706, 0.24705882, 0.17999999)]
      }
     }
 
@@ -24958,7 +24958,7 @@ over "demo_datacentre_01"
     {
      over "Geom"
      {
-      color3f[] primvars:displayColor = [(0.40499997, 0.42299998, 0.45)]
+      color3f[] primvars:displayColor = [(0.4164706, 0.24705882, 0.17999999)]
      }
     }
 
@@ -24966,7 +24966,7 @@ over "demo_datacentre_01"
     {
      over "Geom"
      {
-      color3f[] primvars:displayColor = [(0.774, 0.774, 0.756)]
+      color3f[] primvars:displayColor = [(0.6388235, 0.6388235, 0.6388235)]
      }
     }
 
@@ -24974,7 +24974,7 @@ over "demo_datacentre_01"
     {
      over "Geom"
      {
-      color3f[] primvars:displayColor = [(0.774, 0.774, 0.756)]
+      color3f[] primvars:displayColor = [(0.6388235, 0.6388235, 0.6388235)]
      }
     }
 
@@ -24982,7 +24982,7 @@ over "demo_datacentre_01"
     {
      over "Geom"
      {
-      color3f[] primvars:displayColor = [(0.40499997, 0.42299998, 0.45)]
+      color3f[] primvars:displayColor = [(0.4164706, 0.24705882, 0.17999999)]
      }
     }
 
@@ -24990,7 +24990,7 @@ over "demo_datacentre_01"
     {
      over "Geom"
      {
-      color3f[] primvars:displayColor = [(0.648, 0.648, 0.63)]
+      color3f[] primvars:displayColor = [(0.45176473, 0.45176473, 0.45176473)]
      }
     }
 
@@ -24998,7 +24998,7 @@ over "demo_datacentre_01"
     {
      over "Geom"
      {
-      color3f[] primvars:displayColor = [(0.648, 0.648, 0.63)]
+      color3f[] primvars:displayColor = [(0.45176473, 0.45176473, 0.45176473)]
      }
     }
 
@@ -25006,7 +25006,7 @@ over "demo_datacentre_01"
     {
      over "Geom"
      {
-      color3f[] primvars:displayColor = [(0.774, 0.774, 0.756)]
+      color3f[] primvars:displayColor = [(0.6388235, 0.6388235, 0.6388235)]
      }
     }
 
@@ -25014,7 +25014,7 @@ over "demo_datacentre_01"
     {
      over "Geom"
      {
-      color3f[] primvars:displayColor = [(0.648, 0.648, 0.63)]
+      color3f[] primvars:displayColor = [(0.45176473, 0.45176473, 0.45176473)]
      }
     }
 
@@ -25022,7 +25022,7 @@ over "demo_datacentre_01"
     {
      over "Geom"
      {
-      color3f[] primvars:displayColor = [(0.774, 0.774, 0.756)]
+      color3f[] primvars:displayColor = [(0.6388235, 0.6388235, 0.6388235)]
      }
     }
 
@@ -25030,7 +25030,7 @@ over "demo_datacentre_01"
     {
      over "Geom"
      {
-      color3f[] primvars:displayColor = [(0.40499997, 0.42299998, 0.45)]
+      color3f[] primvars:displayColor = [(0.4164706, 0.24705882, 0.17999999)]
      }
     }
 
@@ -25038,7 +25038,7 @@ over "demo_datacentre_01"
     {
      over "Geom"
      {
-      color3f[] primvars:displayColor = [(0.648, 0.648, 0.63)]
+      color3f[] primvars:displayColor = [(0.45176473, 0.45176473, 0.45176473)]
      }
     }
 
@@ -25046,7 +25046,7 @@ over "demo_datacentre_01"
     {
      over "Geom"
      {
-      color3f[] primvars:displayColor = [(0.774, 0.774, 0.756)]
+      color3f[] primvars:displayColor = [(0.6388235, 0.6388235, 0.6388235)]
      }
     }
 
@@ -25054,7 +25054,7 @@ over "demo_datacentre_01"
     {
      over "Geom"
      {
-      color3f[] primvars:displayColor = [(0.40499997, 0.42299998, 0.45)]
+      color3f[] primvars:displayColor = [(0.4164706, 0.24705882, 0.17999999)]
      }
     }
    }
@@ -25172,7 +25172,7 @@ over "demo_datacentre_01"
      {
       over "Geom"
       {
-       color3f[] primvars:displayColor = [(0.55799997, 0.55799997, 0.54)]
+       color3f[] primvars:displayColor = [(0.63, 0.63, 0.63)]
       }
      }
     }
@@ -25181,7 +25181,7 @@ over "demo_datacentre_01"
     {
      over "Geom"
      {
-      color3f[] primvars:displayColor = [(0.774, 0.774, 0.756)]
+      color3f[] primvars:displayColor = [(0.6388235, 0.6388235, 0.6388235)]
      }
     }
 
@@ -25189,7 +25189,7 @@ over "demo_datacentre_01"
     {
      over "Geom"
      {
-      color3f[] primvars:displayColor = [(0.648, 0.648, 0.63)]
+      color3f[] primvars:displayColor = [(0.45176473, 0.45176473, 0.45176473)]
      }
     }
 
@@ -25197,7 +25197,7 @@ over "demo_datacentre_01"
     {
      over "Geom"
      {
-      color3f[] primvars:displayColor = [(0.648, 0.648, 0.63)]
+      color3f[] primvars:displayColor = [(0.45176473, 0.45176473, 0.45176473)]
      }
     }
 
@@ -25205,7 +25205,7 @@ over "demo_datacentre_01"
     {
      over "Geom"
      {
-      color3f[] primvars:displayColor = [(0.40499997, 0.42299998, 0.45)]
+      color3f[] primvars:displayColor = [(0.4164706, 0.24705882, 0.17999999)]
      }
     }
 
@@ -25213,7 +25213,7 @@ over "demo_datacentre_01"
     {
      over "Geom"
      {
-      color3f[] primvars:displayColor = [(0.774, 0.774, 0.756)]
+      color3f[] primvars:displayColor = [(0.6388235, 0.6388235, 0.6388235)]
      }
     }
 
@@ -25221,7 +25221,7 @@ over "demo_datacentre_01"
     {
      over "Geom"
      {
-      color3f[] primvars:displayColor = [(0.648, 0.648, 0.63)]
+      color3f[] primvars:displayColor = [(0.45176473, 0.45176473, 0.45176473)]
      }
     }
 
@@ -25229,7 +25229,7 @@ over "demo_datacentre_01"
     {
      over "Geom"
      {
-      color3f[] primvars:displayColor = [(0.774, 0.774, 0.756)]
+      color3f[] primvars:displayColor = [(0.6388235, 0.6388235, 0.6388235)]
      }
     }
 
@@ -25237,7 +25237,7 @@ over "demo_datacentre_01"
     {
      over "Geom"
      {
-      color3f[] primvars:displayColor = [(0.40499997, 0.42299998, 0.45)]
+      color3f[] primvars:displayColor = [(0.4164706, 0.24705882, 0.17999999)]
      }
     }
 
@@ -25245,7 +25245,7 @@ over "demo_datacentre_01"
     {
      over "Geom"
      {
-      color3f[] primvars:displayColor = [(0.774, 0.774, 0.756)]
+      color3f[] primvars:displayColor = [(0.6388235, 0.6388235, 0.6388235)]
      }
     }
 
@@ -25253,7 +25253,7 @@ over "demo_datacentre_01"
     {
      over "Geom"
      {
-      color3f[] primvars:displayColor = [(0.774, 0.774, 0.756)]
+      color3f[] primvars:displayColor = [(0.6388235, 0.6388235, 0.6388235)]
      }
     }
 
@@ -25261,7 +25261,7 @@ over "demo_datacentre_01"
     {
      over "Geom"
      {
-      color3f[] primvars:displayColor = [(0.40499997, 0.42299998, 0.45)]
+      color3f[] primvars:displayColor = [(0.4164706, 0.24705882, 0.17999999)]
      }
     }
 
@@ -25269,7 +25269,7 @@ over "demo_datacentre_01"
     {
      over "Geom"
      {
-      color3f[] primvars:displayColor = [(0.55799997, 0.55799997, 0.54)]
+      color3f[] primvars:displayColor = [(0.44823527, 0.44823527, 0.44823527)]
      }
     }
 
@@ -25277,7 +25277,7 @@ over "demo_datacentre_01"
     {
      over "Geom"
      {
-      color3f[] primvars:displayColor = [(0.774, 0.774, 0.756)]
+      color3f[] primvars:displayColor = [(0.6388235, 0.6388235, 0.6388235)]
      }
     }
 
@@ -25285,7 +25285,7 @@ over "demo_datacentre_01"
     {
      over "Geom"
      {
-      color3f[] primvars:displayColor = [(0.774, 0.774, 0.756)]
+      color3f[] primvars:displayColor = [(0.6388235, 0.6388235, 0.6388235)]
      }
     }
 
@@ -25293,7 +25293,7 @@ over "demo_datacentre_01"
     {
      over "Geom"
      {
-      color3f[] primvars:displayColor = [(0.648, 0.648, 0.63)]
+      color3f[] primvars:displayColor = [(0.45176473, 0.45176473, 0.45176473)]
      }
     }
 
@@ -25301,7 +25301,7 @@ over "demo_datacentre_01"
     {
      over "Geom"
      {
-      color3f[] primvars:displayColor = [(0.40499997, 0.42299998, 0.45)]
+      color3f[] primvars:displayColor = [(0.4164706, 0.24705882, 0.17999999)]
      }
     }
 
@@ -25309,7 +25309,7 @@ over "demo_datacentre_01"
     {
      over "Geom"
      {
-      color3f[] primvars:displayColor = [(0.40499997, 0.42299998, 0.45)]
+      color3f[] primvars:displayColor = [(0.4164706, 0.24705882, 0.17999999)]
      }
     }
 
@@ -25317,7 +25317,7 @@ over "demo_datacentre_01"
     {
      over "Geom"
      {
-      color3f[] primvars:displayColor = [(0.648, 0.648, 0.63)]
+      color3f[] primvars:displayColor = [(0.45176473, 0.45176473, 0.45176473)]
      }
     }
 
@@ -25325,7 +25325,7 @@ over "demo_datacentre_01"
     {
      over "Geom"
      {
-      color3f[] primvars:displayColor = [(0.774, 0.774, 0.756)]
+      color3f[] primvars:displayColor = [(0.6388235, 0.6388235, 0.6388235)]
      }
     }
 
@@ -25333,7 +25333,7 @@ over "demo_datacentre_01"
     {
      over "Geom"
      {
-      color3f[] primvars:displayColor = [(0.648, 0.648, 0.63)]
+      color3f[] primvars:displayColor = [(0.45176473, 0.45176473, 0.45176473)]
      }
     }
 
@@ -25341,7 +25341,7 @@ over "demo_datacentre_01"
     {
      over "Geom"
      {
-      color3f[] primvars:displayColor = [(0.774, 0.774, 0.756)]
+      color3f[] primvars:displayColor = [(0.6388235, 0.6388235, 0.6388235)]
      }
     }
 
@@ -25349,7 +25349,7 @@ over "demo_datacentre_01"
     {
      over "Geom"
      {
-      color3f[] primvars:displayColor = [(0.648, 0.648, 0.63)]
+      color3f[] primvars:displayColor = [(0.45176473, 0.45176473, 0.45176473)]
      }
     }
 
@@ -25357,7 +25357,7 @@ over "demo_datacentre_01"
     {
      over "Geom"
      {
-      color3f[] primvars:displayColor = [(0.648, 0.648, 0.63)]
+      color3f[] primvars:displayColor = [(0.45176473, 0.45176473, 0.45176473)]
      }
     }
 
@@ -25365,7 +25365,7 @@ over "demo_datacentre_01"
     {
      over "Geom"
      {
-      color3f[] primvars:displayColor = [(0.40499997, 0.42299998, 0.45)]
+      color3f[] primvars:displayColor = [(0.4164706, 0.24705882, 0.17999999)]
      }
     }
 
@@ -25373,7 +25373,7 @@ over "demo_datacentre_01"
     {
      over "Geom"
      {
-      color3f[] primvars:displayColor = [(0.648, 0.648, 0.63)]
+      color3f[] primvars:displayColor = [(0.45176473, 0.45176473, 0.45176473)]
      }
     }
 
@@ -25381,7 +25381,7 @@ over "demo_datacentre_01"
     {
      over "Geom"
      {
-      color3f[] primvars:displayColor = [(0.648, 0.648, 0.63)]
+      color3f[] primvars:displayColor = [(0.45176473, 0.45176473, 0.45176473)]
      }
     }
    }
@@ -25390,7 +25390,7 @@ over "demo_datacentre_01"
    {
     over "Geom"
     {
-     color3f[] primvars:displayColor = [(0.55799997, 0.55799997, 0.54)]
+     color3f[] primvars:displayColor = [(0.44823527, 0.44823527, 0.44823527)]
     }
    }
 
@@ -25398,7 +25398,7 @@ over "demo_datacentre_01"
    {
     over "Geom"
     {
-     color3f[] primvars:displayColor = [(0.55799997, 0.55799997, 0.54)]
+     color3f[] primvars:displayColor = [(0.44823527, 0.44823527, 0.44823527)]
     }
    }
   }
@@ -26189,26 +26189,32 @@ over "demo_datacentre_01"
  }
 }
 
-over "AecoCctvLooks"
+over "Studies"
 {
- over "Shell_identify"
+ over "cctv"
  {
-  token visibility = "invisible"
- }
+  over "Looks"
+  {
+   over "Shell_identify"
+   {
+    token visibility = "invisible"
+   }
 
- over "Shell_recognise"
- {
-  token visibility = "invisible"
- }
+   over "Shell_recognise"
+   {
+    token visibility = "invisible"
+   }
 
- over "Shell_observe"
- {
-  token visibility = "invisible"
- }
+   over "Shell_observe"
+   {
+    token visibility = "invisible"
+   }
 
- over "Envelope"
- {
-  token visibility = "invisible"
+   over "Envelope"
+   {
+    token visibility = "invisible"
+   }
+  }
  }
 }
 

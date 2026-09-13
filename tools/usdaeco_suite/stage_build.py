@@ -82,8 +82,10 @@ def packages(destination, fallbacks):
                 target = Sdf.CreatePrimInLayer(drivers, path)
                 target.SetInfo('inheritPaths', prim.GetInfo('inheritPaths'))
         drivers.Save()
+        producer = data.get('producers', {}).get(discipline, {}).get('producer',
+                    'Demo data-centre generator ' + data['generator']['version'])
         lines = [f'# {discipline} delivery', '',
-                 f'Producer: {data["generator"]}. Source release: `{tag}`.', '',
+                 f'Producer: {producer}. Source release: `{tag}`.', '',
                  'The IFC delivery and its USD twin are copied without changing their bytes.',
                  'The source layer stamps retain their original production tag; the suite manifest',
                  'records the release that supplied these bytes.', '',
@@ -283,6 +285,10 @@ def main(argv=None):
                     packages=read(destination / 'dc.manifest.json')['packages'], analyses=analyses, views=selection,
                     crossPackageLinks=read(destination / 'dc.manifest.json')['crossPackageLinks'],
                     integration=read(destination / 'integration.json'),
+                    producers=read(destination / 'dc.manifest.json').get('producers', {}),
+                    layout=dict(rootPrims=['demo_datacentre_01', 'Renders', 'Studies'],
+                                catalog='/demo_datacentre_01/_TypeCatalog',
+                                studies={name: '/Studies/' + name for name in analyses}),
                     axis=dict(run=True, producer='wall and pipe hooks', standaloneHook=False), proofs={})
     from usdaeco_suite.stage_checks import finding_records
     manifest['expectedFindings'] = finding_records(manifest)

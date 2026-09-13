@@ -2,15 +2,16 @@
 (
  customLayerData = {
   string "aeco:layer:package" = "compliance"
-  string "aeco:layer:producer" = "hook v0.1.3"
+  string "aeco:layer:producer" = "hook v0.2.1"
   string "aeco:layer:role" = "analysis"
   string "aeco:layer:source" = "kind/usdaeco-compliance/examples/datacentre/run.py"
-  string "aeco:layer:sourceSha256" = "c9ca2d1e189b819ab74c294ca01392402d15e006406857b996b88028b58e6b11"
-  string "aeco:layer:tag" = "v0.1.3"
+  string "aeco:layer:sourceSha256" = "59dc10df2afa683537a3351b5dc2c683359b9019f6569593b7ce740388dce924"
+  string "aeco:layer:tag" = "v0.2.1"
+  string aecoComplianceStudyRoot = "/Studies/compliance"
   bool illustrative = 1
   string source = "reader-datasheet.yaml"
  }
- defaultPrim = "Specifications"
+ defaultPrim = "Studies"
  fallbackPrimTypes = {
   token[] AecoRequirement = ["Scope"]
   token[] AecoSpecification = ["Scope"]
@@ -19,26 +20,32 @@
  upAxis = "Z"
 )
 
-def Scope "Specifications"
+def Scope "Studies"
 {
- def AecoSpecification "reader_datasheet"
+ def Scope "compliance"
  {
-  string[] aeco:spec:appliesToClassification = ["ifc:IfcSensor.IDENTIFIERSENSOR"]
-  rel aeco:spec:appliesToTypes = </demo_datacentre_01/_TypeCatalog/Iris_Scanner>
-  uniform token aeco:spec:kind = "datasheet"
-  string aeco:spec:source = "Generic demo reader datasheet, illustrative capture clause 1"
-  string aeco:spec:title = "Illustrative reader capture envelope"
-
-  def AecoRequirement "Clause01"
+  def Scope "Specifications"
   {
-   string aeco:req:measure = "measured:centreHeightAboveFloor"
-   uniform token aeco:req:operator = "between"
-   string aeco:req:rationale = "Illustrative reader centre-height band for the demonstration."
-   uniform token aeco:req:severity = "warn"
-   string[] aeco:req:tokens = []
-   double aeco:req:tolerance = 0.000001
-   string aeco:req:unit = "m"
-   double[] aeco:req:values = [1, 1.7]
+   def AecoSpecification "reader_datasheet"
+   {
+    string[] aeco:spec:appliesToClassification = ["ifc:IfcSensor.IDENTIFIERSENSOR"]
+    rel aeco:spec:appliesToTypes = </demo_datacentre_01/_TypeCatalog/Iris_Scanner>
+    uniform token aeco:spec:kind = "datasheet"
+    string aeco:spec:source = "Generic demo reader datasheet, illustrative capture clause 1"
+    string aeco:spec:title = "Illustrative reader capture envelope"
+
+    def AecoRequirement "Clause01"
+    {
+     string aeco:req:measure = "measured:centreHeightAboveFloor"
+     uniform token aeco:req:operator = "between"
+     string aeco:req:rationale = "Illustrative reader centre-height band for the demonstration."
+     uniform token aeco:req:severity = "warn"
+     string[] aeco:req:tokens = []
+     double aeco:req:tolerance = 0.000001
+     string aeco:req:unit = "m"
+     double[] aeco:req:values = [1, 1.7]
+    }
+   }
   }
  }
 }
