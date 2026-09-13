@@ -1,0 +1,57 @@
+[
+  {
+    "clause_failures": 2,
+    "fail": 1,
+    "illustrative": true,
+    "kind": "summary",
+    "notApplicable": 0,
+    "pass": 10,
+    "readers": 11,
+    "source_counts": {
+      "elements": 3009,
+      "levels": 3,
+      "meshes": 3050,
+      "ports": 6244,
+      "spaces": 41,
+      "unclassified": 2,
+      "unparented": 0
+    },
+    "warn": 0
+  },
+  {
+    "benchmarks": [
+      0.9,
+      1.2
+    ],
+    "clause": "/Specifications/accessibility/Clause01",
+    "id": "9f18ec18-169f-5d23-8daa-ab76fcd64c0d",
+    "kind": "misplacedDevice",
+    "measure": "measured:centreHeightAboveFloor",
+    "measured": 1.6499999982118605,
+    "operator": "between",
+    "path": "/demo_datacentre_01/demo_datacentre_01_Site/demo_datacentre_01/L00_Ground/Corridor_South/Iris_Scanner_door_office_link",
+    "severity": "error",
+    "source": "Illustrative accessibility design exercise; not a transcription of a regulation",
+    "status": "fail",
+    "tolerance": 1e-06,
+    "unit": "m"
+  },
+  {
+    "benchmarks": [
+      1.05,
+      1.2
+    ],
+    "clause": "/Specifications/employer_security/Clause01",
+    "id": "9f18ec18-169f-5d23-8daa-ab76fcd64c0d",
+    "kind": "misplacedDevice",
+    "measure": "measured:centreHeightAboveFloor",
+    "measured": 1.6499999982118605,
+    "operator": "between",
+    "path": "/demo_datacentre_01/demo_datacentre_01_Site/demo_datacentre_01/L00_Ground/Corridor_South/Iris_Scanner_door_office_link",
+    "severity": "error",
+    "source": "Demo employer security brief, illustrative reader clause 1",
+    "status": "fail",
+    "tolerance": 1e-06,
+    "unit": "m"
+  }
+]

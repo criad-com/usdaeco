@@ -1,0 +1,145 @@
+#usda 1.0
+(
+ customLayerData = {
+  string "aeco:cctv:densityModel" = "plane"
+  string "aeco:cctv:layer" = "derived"
+  string "aeco:cctv:levelSystem" = "dori2015"
+  string "aeco:cctv:stamp" = "usdAecoCctv derive 0.5.3"
+  string "aeco:layer:package" = "cctv"
+  string "aeco:layer:producer" = "hook v0.5.6"
+  string "aeco:layer:role" = "analysis"
+  string "aeco:layer:source" = "kind/usdaeco-cctv/examples/datacentre/run.py"
+  string "aeco:layer:sourceSha256" = "20cad38173f7b25d9ecb528dab991cc0e04a445aa0048237ceb51559dc18cee0"
+  string "aeco:layer:tag" = "v0.5.6"
+ }
+ defaultPrim = "demo_datacentre_01"
+ endTimeCode = 288
+ fallbackPrimTypes = {
+  token[] AecoActivity = ["Scope"]
+  token[] AecoClashResult = ["Scope"]
+  token[] AecoClashTest = ["Scope"]
+  token[] AecoFacility = ["Xform"]
+  token[] AecoFacilityPart = ["Xform"]
+  token[] AecoLevel = ["Xform"]
+  token[] AecoMilestone = ["Scope"]
+  token[] AecoPort = ["Xform"]
+  token[] AecoProgramme = ["Scope"]
+  token[] AecoRequirement = ["Scope"]
+  token[] AecoSite = ["Xform"]
+  token[] AecoSpace = ["Xform"]
+  token[] AecoSpecification = ["Scope"]
+  token[] AecoSyncDiagnostic = ["Scope"]
+  token[] AecoSystem = ["Scope"]
+  token[] AecoZone = ["Scope"]
+  token[] BrepArray = ["Xform"]
+ }
+ framesPerSecond = 24
+ metersPerUnit = 1
+ startTimeCode = 0
+ subLayers = [
+  @derived-cameras-01.usdc@,
+  @derived-cameras-02.usdc@,
+  @derived-cameras-03.usdc@,
+  @derived-cameras-04.usdc@,
+  @derived-cameras-05.usdc@,
+  @derived-cameras-06.usdc@,
+  @kind.usda@
+ ]
+ timeCodesPerSecond = 24
+ upAxis = "Z"
+)
+
+over "demo_datacentre_01"
+{
+ over "_TypeCatalog"
+ {
+  over "bullet_4mp_outdoor"
+  {
+   int aeco:cctvType:sensorCount = 1
+  }
+
+  over "dome_5mp"
+  {
+   int aeco:cctvType:sensorCount = 1
+  }
+
+  over "ptz_4k"
+  {
+   int aeco:cctvType:sensorCount = 1
+  }
+ }
+}
+
+def "AecoCctvLooks"
+{
+ def Material "Sector"
+ {
+  token outputs:surface.connect = </AecoCctvLooks/Sector/PreviewSurface.outputs:surface>
+
+  def Shader "PreviewSurface"
+  {
+   uniform token info:id = "UsdPreviewSurface"
+   color3f inputs:diffuseColor = (0, 0.85, 0.95)
+   float inputs:opacity = 0.3
+   float inputs:roughness = 0.9
+   token outputs:surface
+  }
+ }
+
+ def Material "Shell_identify"
+ {
+  token outputs:surface.connect = </AecoCctvLooks/Shell_identify/PreviewSurface.outputs:surface>
+
+  def Shader "PreviewSurface"
+  {
+   uniform token info:id = "UsdPreviewSurface"
+   color3f inputs:diffuseColor = (0, 0.5, 0.45)
+   float inputs:opacity = 0.3
+   float inputs:roughness = 0.9
+   token outputs:surface
+  }
+ }
+
+ def Material "Shell_recognise"
+ {
+  token outputs:surface.connect = </AecoCctvLooks/Shell_recognise/PreviewSurface.outputs:surface>
+
+  def Shader "PreviewSurface"
+  {
+   uniform token info:id = "UsdPreviewSurface"
+   color3f inputs:diffuseColor = (0.18333334, 0.6166667, 0.56666666)
+   float inputs:opacity = 0.3
+   float inputs:roughness = 0.9
+   token outputs:surface
+  }
+ }
+
+ def Material "Shell_observe"
+ {
+  token outputs:surface.connect = </AecoCctvLooks/Shell_observe/PreviewSurface.outputs:surface>
+
+  def Shader "PreviewSurface"
+  {
+   uniform token info:id = "UsdPreviewSurface"
+   color3f inputs:diffuseColor = (0.36666667, 0.73333335, 0.68333334)
+   float inputs:opacity = 0.3
+   float inputs:roughness = 0.9
+   token outputs:surface
+  }
+ }
+
+ def Material "Envelope"
+ {
+  token outputs:surface.connect = </AecoCctvLooks/Envelope/PreviewSurface.outputs:surface>
+
+  def Shader "PreviewSurface"
+  {
+   uniform token info:id = "UsdPreviewSurface"
+   color3f inputs:diffuseColor = (0.75, 0.75, 0.75)
+   float inputs:opacity = 0.3
+   float inputs:roughness = 0.9
+   token outputs:surface
+  }
+ }
+}
+

@@ -1,0 +1,323 @@
+#usda 1.0
+(
+ customLayerData = {
+  string "aeco:layer:package" = "buildup"
+  string "aeco:layer:producer" = "hook v0.2.5"
+  string "aeco:layer:role" = "analysis"
+  string "aeco:layer:source" = "section/usdaeco-buildup/examples/datacentre/run.py"
+  string "aeco:layer:sourceSha256" = "53d0e90d16eadda33bd1bf08425246b4ad0d2062a740cd107110c42a8e658f84"
+  string "aeco:layer:tag" = "v0.2.5"
+ }
+)
+
+over "demo_datacentre_01"
+{
+ over "_TypeCatalog"
+ {
+  over "OfficeBuildUp_PlasterboardPartition"
+  {
+   double aeco:buildUp:totalThickness = 0.15000000000000002
+  }
+
+  over "OfficeBuildUp_Blockwork"
+  {
+   double aeco:buildUp:totalThickness = 0.2
+  }
+
+  over "OfficeBuildUp_WcLining"
+  {
+   double aeco:buildUp:totalThickness = 0.15
+  }
+ }
+
+ over "demo_datacentre_01_Site"
+ {
+  over "demo_datacentre_01"
+  {
+   over "L00_Ground"
+   {
+    over "wall_l0_h_004"
+    {
+     def Cube "BuildUpLayer1" (
+      prepend apiSchemas = ["AecoDerivedGeometryAPI"]
+      displayName = "Plasterboard"
+     )
+     {
+      uniform token aeco:derived:approx = "defaultDims"
+      uniform token aeco:derived:role = "proxy"
+      string aeco:derived:source = "ec2567dc-13cd-5c3c-af0f-cf787afac752"
+      string aeco:derived:stamp = "aeco-buildup 0.2.4 gross rectangular preview"
+      uniform token purpose = "proxy"
+      double size = 1
+     }
+
+     def Cube "BuildUpLayer2" (
+      prepend apiSchemas = ["AecoDerivedGeometryAPI"]
+      displayName = "Metal stud and insulation zone"
+     )
+     {
+      uniform token aeco:derived:approx = "defaultDims"
+      uniform token aeco:derived:role = "proxy"
+      string aeco:derived:source = "ec2567dc-13cd-5c3c-af0f-cf787afac752"
+      string aeco:derived:stamp = "aeco-buildup 0.2.4 gross rectangular preview"
+      uniform token purpose = "proxy"
+      double size = 1
+     }
+
+     def Cube "BuildUpLayer3" (
+      prepend apiSchemas = ["AecoDerivedGeometryAPI"]
+      displayName = "Plasterboard"
+     )
+     {
+      uniform token aeco:derived:approx = "defaultDims"
+      uniform token aeco:derived:role = "proxy"
+      string aeco:derived:source = "ec2567dc-13cd-5c3c-af0f-cf787afac752"
+      string aeco:derived:stamp = "aeco-buildup 0.2.4 gross rectangular preview"
+      uniform token purpose = "proxy"
+      double size = 1
+     }
+    }
+
+    over "wall_l0_h_005"
+    {
+     def Cube "BuildUpLayer1" (
+      prepend apiSchemas = ["AecoDerivedGeometryAPI"]
+      displayName = "Plasterboard"
+     )
+     {
+      uniform token aeco:derived:approx = "defaultDims"
+      uniform token aeco:derived:role = "proxy"
+      string aeco:derived:source = "60e1be69-6aef-5ba6-a9ab-7ec2f0f11723"
+      string aeco:derived:stamp = "aeco-buildup 0.2.4 gross rectangular preview"
+      uniform token purpose = "proxy"
+      double size = 1
+     }
+
+     def Cube "BuildUpLayer2" (
+      prepend apiSchemas = ["AecoDerivedGeometryAPI"]
+      displayName = "Metal stud and insulation zone"
+     )
+     {
+      uniform token aeco:derived:approx = "defaultDims"
+      uniform token aeco:derived:role = "proxy"
+      string aeco:derived:source = "60e1be69-6aef-5ba6-a9ab-7ec2f0f11723"
+      string aeco:derived:stamp = "aeco-buildup 0.2.4 gross rectangular preview"
+      uniform token purpose = "proxy"
+      double size = 1
+     }
+
+     def Cube "BuildUpLayer3" (
+      prepend apiSchemas = ["AecoDerivedGeometryAPI"]
+      displayName = "Plasterboard"
+     )
+     {
+      uniform token aeco:derived:approx = "defaultDims"
+      uniform token aeco:derived:role = "proxy"
+      string aeco:derived:source = "60e1be69-6aef-5ba6-a9ab-7ec2f0f11723"
+      string aeco:derived:stamp = "aeco-buildup 0.2.4 gross rectangular preview"
+      uniform token purpose = "proxy"
+      double size = 1
+     }
+    }
+
+    over "wall_l0_h_006"
+    {
+     def Cube "BuildUpLayer1" (
+      prepend apiSchemas = ["AecoDerivedGeometryAPI"]
+      displayName = "Plaster"
+     )
+     {
+      uniform token aeco:derived:approx = "defaultDims"
+      uniform token aeco:derived:role = "proxy"
+      string aeco:derived:source = "c5521242-0ce6-5cee-8cb9-1d35163f743a"
+      string aeco:derived:stamp = "aeco-buildup 0.2.4 gross rectangular preview"
+      uniform token purpose = "proxy"
+      double size = 1
+     }
+
+     def Cube "BuildUpLayer2" (
+      prepend apiSchemas = ["AecoDerivedGeometryAPI"]
+      displayName = "Dense concrete blockwork"
+     )
+     {
+      uniform token aeco:derived:approx = "defaultDims"
+      uniform token aeco:derived:role = "proxy"
+      string aeco:derived:source = "c5521242-0ce6-5cee-8cb9-1d35163f743a"
+      string aeco:derived:stamp = "aeco-buildup 0.2.4 gross rectangular preview"
+      uniform token purpose = "proxy"
+      double size = 1
+     }
+
+     def Cube "BuildUpLayer3" (
+      prepend apiSchemas = ["AecoDerivedGeometryAPI"]
+      displayName = "Plaster"
+     )
+     {
+      uniform token aeco:derived:approx = "defaultDims"
+      uniform token aeco:derived:role = "proxy"
+      string aeco:derived:source = "c5521242-0ce6-5cee-8cb9-1d35163f743a"
+      string aeco:derived:stamp = "aeco-buildup 0.2.4 gross rectangular preview"
+      uniform token purpose = "proxy"
+      double size = 1
+     }
+    }
+
+    over "wall_l0_v_058"
+    {
+     def Cube "BuildUpLayer1" (
+      prepend apiSchemas = ["AecoDerivedGeometryAPI"]
+      displayName = "Plaster"
+     )
+     {
+      uniform token aeco:derived:approx = "defaultDims"
+      uniform token aeco:derived:role = "proxy"
+      string aeco:derived:source = "0fded623-5c36-5b11-b090-f8fc2fb4c79a"
+      string aeco:derived:stamp = "aeco-buildup 0.2.4 gross rectangular preview"
+      uniform token purpose = "proxy"
+      double size = 1
+     }
+
+     def Cube "BuildUpLayer2" (
+      prepend apiSchemas = ["AecoDerivedGeometryAPI"]
+      displayName = "Dense concrete blockwork"
+     )
+     {
+      uniform token aeco:derived:approx = "defaultDims"
+      uniform token aeco:derived:role = "proxy"
+      string aeco:derived:source = "0fded623-5c36-5b11-b090-f8fc2fb4c79a"
+      string aeco:derived:stamp = "aeco-buildup 0.2.4 gross rectangular preview"
+      uniform token purpose = "proxy"
+      double size = 1
+     }
+
+     def Cube "BuildUpLayer3" (
+      prepend apiSchemas = ["AecoDerivedGeometryAPI"]
+      displayName = "Plaster"
+     )
+     {
+      uniform token aeco:derived:approx = "defaultDims"
+      uniform token aeco:derived:role = "proxy"
+      string aeco:derived:source = "0fded623-5c36-5b11-b090-f8fc2fb4c79a"
+      string aeco:derived:stamp = "aeco-buildup 0.2.4 gross rectangular preview"
+      uniform token purpose = "proxy"
+      double size = 1
+     }
+    }
+   }
+
+   over "L01_Office"
+   {
+    over "wall_l1_h_004"
+    {
+     def Cube "BuildUpLayer1" (
+      prepend apiSchemas = ["AecoDerivedGeometryAPI"]
+      displayName = "Plasterboard"
+     )
+     {
+      uniform token aeco:derived:approx = "defaultDims"
+      uniform token aeco:derived:role = "proxy"
+      string aeco:derived:source = "9765b9c4-40bb-5ff7-a2a5-cdebad75b0bc"
+      string aeco:derived:stamp = "aeco-buildup 0.2.4 gross rectangular preview"
+      uniform token purpose = "proxy"
+      double size = 1
+     }
+
+     def Cube "BuildUpLayer2" (
+      prepend apiSchemas = ["AecoDerivedGeometryAPI"]
+      displayName = "Metal stud and insulation zone"
+     )
+     {
+      uniform token aeco:derived:approx = "defaultDims"
+      uniform token aeco:derived:role = "proxy"
+      string aeco:derived:source = "9765b9c4-40bb-5ff7-a2a5-cdebad75b0bc"
+      string aeco:derived:stamp = "aeco-buildup 0.2.4 gross rectangular preview"
+      uniform token purpose = "proxy"
+      double size = 1
+     }
+
+     def Cube "BuildUpLayer3" (
+      prepend apiSchemas = ["AecoDerivedGeometryAPI"]
+      displayName = "Moisture-resistant board"
+     )
+     {
+      uniform token aeco:derived:approx = "defaultDims"
+      uniform token aeco:derived:role = "proxy"
+      string aeco:derived:source = "9765b9c4-40bb-5ff7-a2a5-cdebad75b0bc"
+      string aeco:derived:stamp = "aeco-buildup 0.2.4 gross rectangular preview"
+      uniform token purpose = "proxy"
+      double size = 1
+     }
+
+     def Cube "BuildUpLayer4" (
+      prepend apiSchemas = ["AecoDerivedGeometryAPI"]
+      displayName = "Tile finish"
+     )
+     {
+      uniform token aeco:derived:approx = "defaultDims"
+      uniform token aeco:derived:role = "proxy"
+      string aeco:derived:source = "9765b9c4-40bb-5ff7-a2a5-cdebad75b0bc"
+      string aeco:derived:stamp = "aeco-buildup 0.2.4 gross rectangular preview"
+      uniform token purpose = "proxy"
+      double size = 1
+     }
+    }
+
+    over "wall_l1_v_015"
+    {
+     def Cube "BuildUpLayer1" (
+      prepend apiSchemas = ["AecoDerivedGeometryAPI"]
+      displayName = "Plasterboard"
+     )
+     {
+      uniform token aeco:derived:approx = "defaultDims"
+      uniform token aeco:derived:role = "proxy"
+      string aeco:derived:source = "c46e4871-96dd-54c4-af2b-1a161d7f1f55"
+      string aeco:derived:stamp = "aeco-buildup 0.2.4 gross rectangular preview"
+      uniform token purpose = "proxy"
+      double size = 1
+     }
+
+     def Cube "BuildUpLayer2" (
+      prepend apiSchemas = ["AecoDerivedGeometryAPI"]
+      displayName = "Metal stud and insulation zone"
+     )
+     {
+      uniform token aeco:derived:approx = "defaultDims"
+      uniform token aeco:derived:role = "proxy"
+      string aeco:derived:source = "c46e4871-96dd-54c4-af2b-1a161d7f1f55"
+      string aeco:derived:stamp = "aeco-buildup 0.2.4 gross rectangular preview"
+      uniform token purpose = "proxy"
+      double size = 1
+     }
+
+     def Cube "BuildUpLayer3" (
+      prepend apiSchemas = ["AecoDerivedGeometryAPI"]
+      displayName = "Moisture-resistant board"
+     )
+     {
+      uniform token aeco:derived:approx = "defaultDims"
+      uniform token aeco:derived:role = "proxy"
+      string aeco:derived:source = "c46e4871-96dd-54c4-af2b-1a161d7f1f55"
+      string aeco:derived:stamp = "aeco-buildup 0.2.4 gross rectangular preview"
+      uniform token purpose = "proxy"
+      double size = 1
+     }
+
+     def Cube "BuildUpLayer4" (
+      prepend apiSchemas = ["AecoDerivedGeometryAPI"]
+      displayName = "Tile finish"
+     )
+     {
+      uniform token aeco:derived:approx = "defaultDims"
+      uniform token aeco:derived:role = "proxy"
+      string aeco:derived:source = "c46e4871-96dd-54c4-af2b-1a161d7f1f55"
+      string aeco:derived:stamp = "aeco-buildup 0.2.4 gross rectangular preview"
+      uniform token purpose = "proxy"
+      double size = 1
+     }
+    }
+   }
+  }
+ }
+}
+

@@ -1,0 +1,12 @@
+#usda 1.0
+(
+ customLayerData = {
+  string "aeco:layer:package" = "it"
+  string "aeco:layer:producer" = "usdAECO suite"
+  string "aeco:layer:role" = "presentation"
+  string "aeco:layer:source" = "data/usdaeco-datacentre/dist/full/it.ifc"
+  string "aeco:layer:sourceSha256" = "485bddbc54c145ee39f6dffbbe830221faf19b3a188610f3f48f639feb7308b6"
+  string "aeco:layer:tag" = "v0.5.1"
+ }
+)
+

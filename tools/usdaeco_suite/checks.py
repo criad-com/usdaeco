@@ -8,6 +8,7 @@ from usdaeco_suite.checkout import git, gitlinks, modules, tag_commit
 from usdaeco_suite.docs import check_links
 from usdaeco_suite.pins import (
     FLAKE_REPOS, LAYOUT, generate, generated_files, read_json, release_index, validate_document,
+    overrides, pin_target,
 )
 from usdaeco_suite.sweep import expected_url, repository_files, sweep
 
@@ -55,8 +56,10 @@ def inventory(root):
     require(all(url == expected_url(Path(path).name) for path, url in declared.items()), "relative submodule URLs differ")
     train, released = release_index(root)
     require(train == document["train"], "train name differs from the scenarios index")
-    require({p["name"]: p["tag"] for p in document["repos"]}
-            == {name: p["released"] for name, p in released.items()}, "pins differ from the released train")
+    expected = {name: p["released"] for name, p in released.items()}
+    expected.update({name: p["tag"] for name, p in overrides(root).items()})
+    require({p["name"]: p["tag"] for p in document["repos"]} == expected,
+            "pins differ from the baseline and explicit suite advances")
     return f"{len(paths)} gitlinks = suite entries = module declarations = released repositories"
 
 
@@ -79,10 +82,9 @@ def flake(root):
 
 def pin(root, repo):
     path = repo["path"]
-    _, released = release_index(root)
-    tag = released[repo["name"]]["released"]
+    tag = repo["tag"]
     checkout = root / path
-    target = tag_commit(checkout, tag)
+    target = pin_target(root, repo["name"], tag)
     require(git(checkout, "rev-parse", "HEAD") == target == gitlinks(root)[path],
             "HEAD, resolved release tag and recorded gitlink differ")
     require(not git(checkout, "status", "--porcelain", "--untracked-files=all"), "submodule has local changes")

@@ -1,0 +1,12 @@
+#usda 1.0
+(
+ customLayerData = {
+  string "aeco:layer:package" = "fitout"
+  string "aeco:layer:producer" = "usdAECO suite"
+  string "aeco:layer:role" = "drivers"
+  string "aeco:layer:source" = "data/usdaeco-datacentre/dist/full/fitout.semantics.usda"
+  string "aeco:layer:sourceSha256" = "d49c2936978c4de4efd2fad1d0c9fee6ba96ee8f0953bef7657e576c302ed7c1"
+  string "aeco:layer:tag" = "v0.5.1"
+ }
+)
+

@@ -1,0 +1,519 @@
+#usda 1.0
+(
+ customLayerData = {
+  string "aeco:layer:package" = "security"
+  string "aeco:layer:producer" = "usdAECO suite"
+  string "aeco:layer:role" = "drivers"
+  string "aeco:layer:source" = "data/usdaeco-datacentre/dist/full/security.semantics.usda"
+  string "aeco:layer:sourceSha256" = "b5d65ef1a4ce78dea80904fb6d9aa4627883bf4f2522c883abcf1064a5341e37"
+  string "aeco:layer:tag" = "v0.5.1"
+ }
+)
+
+over "demo_datacentre_01"
+{
+ over "demo_datacentre_01_Site"
+ {
+  over "Generator_Yard_B"
+  {
+   over "sec_cam_yard_gen_b_fixed_1" (
+    prepend inherits = </demo_datacentre_01/_TypeCatalog/bullet_4mp_outdoor>
+   )
+   {
+   }
+
+   over "sec_cam_yard_b" (
+    prepend inherits = </demo_datacentre_01/_TypeCatalog/ptz_4k>
+   )
+   {
+   }
+
+   over "sec_cam_ext_gen_b" (
+    prepend inherits = </demo_datacentre_01/_TypeCatalog/bullet_4mp_outdoor>
+   )
+   {
+   }
+
+   over "sec_cam_yard_gen_b_fixed_2" (
+    prepend inherits = </demo_datacentre_01/_TypeCatalog/bullet_4mp_outdoor>
+   )
+   {
+   }
+  }
+
+  over "Generator_Yard_A"
+  {
+   over "sec_cam_ext_gen_a" (
+    prepend inherits = </demo_datacentre_01/_TypeCatalog/bullet_4mp_outdoor>
+   )
+   {
+   }
+
+   over "sec_cam_yard_a" (
+    prepend inherits = </demo_datacentre_01/_TypeCatalog/ptz_4k>
+   )
+   {
+   }
+
+   over "sec_cam_yard_gen_a_fixed_1" (
+    prepend inherits = </demo_datacentre_01/_TypeCatalog/bullet_4mp_outdoor>
+   )
+   {
+   }
+
+   over "sec_cam_yard_gen_a_fixed_2" (
+    prepend inherits = </demo_datacentre_01/_TypeCatalog/bullet_4mp_outdoor>
+   )
+   {
+   }
+  }
+
+  over "Heat_Rejection_Yard"
+  {
+   over "sec_cam_yard_hr_fixed_2" (
+    prepend inherits = </demo_datacentre_01/_TypeCatalog/bullet_4mp_outdoor>
+   )
+   {
+   }
+
+   over "sec_cam_ext_plant_ext" (
+    prepend inherits = </demo_datacentre_01/_TypeCatalog/bullet_4mp_outdoor>
+   )
+   {
+   }
+
+   over "sec_cam_ext_dock" (
+    prepend inherits = </demo_datacentre_01/_TypeCatalog/bullet_4mp_outdoor>
+   )
+   {
+   }
+
+   over "sec_cam_ext_main" (
+    prepend inherits = </demo_datacentre_01/_TypeCatalog/bullet_4mp_outdoor>
+   )
+   {
+   }
+
+   over "sec_cam_yard_hr_fixed_1" (
+    prepend inherits = </demo_datacentre_01/_TypeCatalog/bullet_4mp_outdoor>
+   )
+   {
+   }
+  }
+
+  over "demo_datacentre_01"
+  {
+   over "L01_Office"
+   {
+    over "Office_Corridor_L01"
+    {
+     over "sec_cam_corr_ocorr_1_2" (
+      prepend inherits = </demo_datacentre_01/_TypeCatalog/dome_5mp>
+     )
+     {
+     }
+
+     over "sec_cam_corr_ocorr_1_1" (
+      prepend inherits = </demo_datacentre_01/_TypeCatalog/dome_5mp>
+     )
+     {
+     }
+    }
+   }
+
+   over "L00_Ground"
+   {
+    over "Office_Corridor_L00"
+    {
+     over "sec_cam_corr_ocorr_0_1" (
+      prepend inherits = </demo_datacentre_01/_TypeCatalog/dome_5mp>
+     )
+     {
+     }
+
+     over "sec_cam_corr_ocorr_0_2" (
+      prepend inherits = </demo_datacentre_01/_TypeCatalog/dome_5mp>
+     )
+     {
+     }
+    }
+
+    over "Corridor_East"
+    {
+     over "sec_cam_corr_corr_e_2" (
+      prepend inherits = </demo_datacentre_01/_TypeCatalog/dome_5mp>
+     )
+     {
+     }
+
+     over "Iris_Scanner_door_hall_b_e" (
+      prepend inherits = </demo_datacentre_01/_TypeCatalog/Iris_Scanner>
+     )
+     {
+     }
+
+     over "sec_cam_corr_corr_e_1" (
+      prepend inherits = </demo_datacentre_01/_TypeCatalog/dome_5mp>
+     )
+     {
+     }
+
+     over "sec_cam_door_hall_b_e" (
+      prepend inherits = </demo_datacentre_01/_TypeCatalog/dome_5mp>
+     )
+     {
+     }
+    }
+
+    over "Electrical_Room_A"
+    {
+     over "AVA_Electrical_Room_A" (
+      prepend inherits = </demo_datacentre_01/_TypeCatalog/AVA_Sounder_Beacon>
+     )
+     {
+     }
+    }
+
+    over "Corridor_Spine"
+    {
+     over "sec_cam_corr_corr_spine_6" (
+      prepend inherits = </demo_datacentre_01/_TypeCatalog/dome_5mp>
+     )
+     {
+     }
+
+     over "sec_cam_corr_corr_spine_4" (
+      prepend inherits = </demo_datacentre_01/_TypeCatalog/dome_5mp>
+     )
+     {
+     }
+
+     over "Iris_Scanner_door_elec_b" (
+      prepend inherits = </demo_datacentre_01/_TypeCatalog/Iris_Scanner>
+     )
+     {
+     }
+
+     over "sec_cam_door_mmr_2" (
+      prepend inherits = </demo_datacentre_01/_TypeCatalog/dome_5mp>
+     )
+     {
+     }
+
+     over "Iris_Scanner_door_elec_a" (
+      prepend inherits = </demo_datacentre_01/_TypeCatalog/Iris_Scanner>
+     )
+     {
+     }
+
+     over "sec_cam_door_elec_a" (
+      prepend inherits = </demo_datacentre_01/_TypeCatalog/dome_5mp>
+     )
+     {
+     }
+
+     over "sec_cam_door_elec_b" (
+      prepend inherits = </demo_datacentre_01/_TypeCatalog/dome_5mp>
+     )
+     {
+     }
+
+     over "Iris_Scanner_door_mmr_2" (
+      prepend inherits = </demo_datacentre_01/_TypeCatalog/Iris_Scanner>
+     )
+     {
+     }
+
+     over "sec_cam_corr_corr_spine_2" (
+      prepend inherits = </demo_datacentre_01/_TypeCatalog/dome_5mp>
+     )
+     {
+     }
+
+     over "sec_cam_corr_corr_spine_3" (
+      prepend inherits = </demo_datacentre_01/_TypeCatalog/dome_5mp>
+     )
+     {
+     }
+
+     over "Iris_Scanner_door_hall_b_s" (
+      prepend inherits = </demo_datacentre_01/_TypeCatalog/Iris_Scanner>
+     )
+     {
+     }
+
+     over "sec_cam_corr_corr_spine_5" (
+      prepend inherits = </demo_datacentre_01/_TypeCatalog/dome_5mp>
+     )
+     {
+     }
+
+     over "Iris_Scanner_door_hall_a_s" (
+      prepend inherits = </demo_datacentre_01/_TypeCatalog/Iris_Scanner>
+     )
+     {
+     }
+
+     over "sec_cam_door_hall_a_s" (
+      prepend inherits = </demo_datacentre_01/_TypeCatalog/dome_5mp>
+     )
+     {
+     }
+
+     over "sec_cam_door_hall_b_s" (
+      prepend inherits = </demo_datacentre_01/_TypeCatalog/dome_5mp>
+     )
+     {
+     }
+
+     over "sec_cam_corr_corr_spine_1" (
+      prepend inherits = </demo_datacentre_01/_TypeCatalog/dome_5mp>
+     )
+     {
+     }
+    }
+
+    over "Battery_Room_A"
+    {
+     over "AVA_Battery_Room_A" (
+      prepend inherits = </demo_datacentre_01/_TypeCatalog/AVA_Sounder_Beacon>
+     )
+     {
+     }
+    }
+
+    over "Corridor_South"
+    {
+     over "sec_cam_corr_corr_s_1" (
+      prepend inherits = </demo_datacentre_01/_TypeCatalog/dome_5mp>
+     )
+     {
+     }
+
+     over "sec_cam_door_office_link" (
+      prepend inherits = </demo_datacentre_01/_TypeCatalog/dome_5mp>
+     )
+     {
+     }
+
+     over "sec_cam_corr_corr_s_2" (
+      prepend inherits = </demo_datacentre_01/_TypeCatalog/dome_5mp>
+     )
+     {
+     }
+
+     over "Iris_Scanner_door_office_link" (
+      prepend inherits = </demo_datacentre_01/_TypeCatalog/Iris_Scanner>
+     )
+     {
+     }
+
+     over "sec_cam_door_mmr_1" (
+      prepend inherits = </demo_datacentre_01/_TypeCatalog/dome_5mp>
+     )
+     {
+     }
+
+     over "Iris_Scanner_door_mmr_1" (
+      prepend inherits = </demo_datacentre_01/_TypeCatalog/Iris_Scanner>
+     )
+     {
+     }
+    }
+
+    over "Corridor_Centre"
+    {
+     over "sec_cam_door_hall_b_w" (
+      prepend inherits = </demo_datacentre_01/_TypeCatalog/dome_5mp>
+     )
+     {
+     }
+
+     over "sec_cam_corr_corr_c_2" (
+      prepend inherits = </demo_datacentre_01/_TypeCatalog/dome_5mp>
+     )
+     {
+     }
+
+     over "Iris_Scanner_door_hall_b_w" (
+      prepend inherits = </demo_datacentre_01/_TypeCatalog/Iris_Scanner>
+     )
+     {
+     }
+
+     over "Iris_Scanner_door_hall_a_e" (
+      prepend inherits = </demo_datacentre_01/_TypeCatalog/Iris_Scanner>
+     )
+     {
+     }
+
+     over "sec_cam_door_hall_a_e" (
+      prepend inherits = </demo_datacentre_01/_TypeCatalog/dome_5mp>
+     )
+     {
+     }
+
+     over "sec_cam_corr_corr_c_1" (
+      prepend inherits = </demo_datacentre_01/_TypeCatalog/dome_5mp>
+     )
+     {
+     }
+    }
+
+    over "Electrical_Room_B"
+    {
+     over "AVA_Electrical_Room_B" (
+      prepend inherits = </demo_datacentre_01/_TypeCatalog/AVA_Sounder_Beacon>
+     )
+     {
+     }
+    }
+
+    over "Data_Hall_B"
+    {
+     over "AVA_Data_Hall_B" (
+      prepend inherits = </demo_datacentre_01/_TypeCatalog/AVA_Sounder_Beacon>
+     )
+     {
+     }
+    }
+
+    over "Corridor_West"
+    {
+     over "sec_cam_door_hall_a_w" (
+      prepend inherits = </demo_datacentre_01/_TypeCatalog/dome_5mp>
+     )
+     {
+     }
+
+     over "sec_cam_corr_corr_w_1" (
+      prepend inherits = </demo_datacentre_01/_TypeCatalog/dome_5mp>
+     )
+     {
+     }
+
+     over "sec_cam_corr_corr_w_2" (
+      prepend inherits = </demo_datacentre_01/_TypeCatalog/dome_5mp>
+     )
+     {
+     }
+
+     over "Iris_Scanner_door_hall_a_w" (
+      prepend inherits = </demo_datacentre_01/_TypeCatalog/Iris_Scanner>
+     )
+     {
+     }
+    }
+
+    over "Loading_Storage"
+    {
+     over "AVA_Loading_Storage" (
+      prepend inherits = </demo_datacentre_01/_TypeCatalog/AVA_Sounder_Beacon>
+     )
+     {
+     }
+    }
+
+    over "Entrance_Lobby"
+    {
+     over "sec_cam_lobby" (
+      prepend inherits = </demo_datacentre_01/_TypeCatalog/ptz_4k>
+     )
+     {
+     }
+
+     over "sec_cam_lobby_fixed_1" (
+      prepend inherits = </demo_datacentre_01/_TypeCatalog/dome_5mp>
+     )
+     {
+     }
+
+     over "sec_cam_lobby_fixed_2" (
+      prepend inherits = </demo_datacentre_01/_TypeCatalog/dome_5mp>
+     )
+     {
+     }
+
+     over "AVA_Entrance_Lobby" (
+      prepend inherits = </demo_datacentre_01/_TypeCatalog/AVA_Sounder_Beacon>
+     )
+     {
+     }
+    }
+
+    over "Fire_Suppression"
+    {
+     over "AVA_Fire_Suppression" (
+      prepend inherits = </demo_datacentre_01/_TypeCatalog/AVA_Sounder_Beacon>
+     )
+     {
+     }
+    }
+
+    over "Meet_Me_Room_1"
+    {
+     over "AVA_Meet_Me_Room_1" (
+      prepend inherits = </demo_datacentre_01/_TypeCatalog/AVA_Sounder_Beacon>
+     )
+     {
+     }
+    }
+
+    over "Meet_Me_Room_2"
+    {
+     over "AVA_Meet_Me_Room_2" (
+      prepend inherits = </demo_datacentre_01/_TypeCatalog/AVA_Sounder_Beacon>
+     )
+     {
+     }
+    }
+
+    over "Data_Hall_A"
+    {
+     over "AVA_Data_Hall_A" (
+      prepend inherits = </demo_datacentre_01/_TypeCatalog/AVA_Sounder_Beacon>
+     )
+     {
+     }
+    }
+
+    over "Cooling_Plant_Room"
+    {
+     over "AVA_Cooling_Plant_Room" (
+      prepend inherits = </demo_datacentre_01/_TypeCatalog/AVA_Sounder_Beacon>
+     )
+     {
+     }
+    }
+
+    over "Battery_Room_B"
+    {
+     over "AVA_Battery_Room_B" (
+      prepend inherits = </demo_datacentre_01/_TypeCatalog/AVA_Sounder_Beacon>
+     )
+     {
+     }
+    }
+   }
+
+   over "L02_Office"
+   {
+    over "Office_Corridor_L01"
+    {
+     over "sec_cam_corr_ocorr_1_2_1" (
+      prepend inherits = </demo_datacentre_01/_TypeCatalog/dome_5mp>
+     )
+     {
+     }
+
+     over "sec_cam_corr_ocorr_1_2_2" (
+      prepend inherits = </demo_datacentre_01/_TypeCatalog/dome_5mp>
+     )
+     {
+     }
+    }
+   }
+  }
+ }
+}
+

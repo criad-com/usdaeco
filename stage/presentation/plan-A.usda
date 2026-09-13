@@ -1,0 +1,408 @@
+#usda 1.0
+(
+ customLayerData = {
+  string "aeco:layer:package" = "plan"
+  string "aeco:layer:producer" = "hook v0.1.4"
+  string "aeco:layer:role" = "presentation"
+  string "aeco:layer:source" = "kind/usdaeco-plan/examples/datacentre/run.py"
+  string "aeco:layer:sourceSha256" = "3eb75431d86cb884a3ef78789066e83df407a3c47155bb6bd3287537d724e0b5"
+  string "aeco:layer:tag" = "v0.1.4"
+ }
+)
+
+over "demo_datacentre_01"
+{
+ over "demo_datacentre_01_Site"
+ {
+  over "demo_datacentre_01"
+  {
+   over "L01_Office"
+   {
+    over "Office_Corridor_L01"
+    {
+     over "pod_wc_temp"
+     {
+      token visibility = "inherited" (
+       aecoDerived = true
+      )
+      token visibility.timeSamples = {
+       0: "invisible",
+       14: "inherited",
+       59: "invisible",
+      }
+
+      over "Geom"
+      {
+       custom color3f[] primvars:displayColor = [(0.93, 0.43, 0.16)]
+      }
+     }
+
+     over "Corridor_ceiling_void"
+     {
+      over "pipe_chw_void_f"
+      {
+       token visibility = "inherited" (
+        aecoDerived = true
+       )
+       token visibility.timeSamples = {
+        0: "invisible",
+        28: "inherited",
+       }
+
+       over "Geom"
+       {
+        custom color3f[] primvars:displayColor = [(0.13, 0.62, 0.57)]
+       }
+      }
+
+      over "pipe_chw_void_r"
+      {
+       token visibility = "inherited" (
+        aecoDerived = true
+       )
+       token visibility.timeSamples = {
+        0: "invisible",
+        28: "inherited",
+       }
+
+       over "Geom"
+       {
+        custom color3f[] primvars:displayColor = [(0.13, 0.62, 0.57)]
+       }
+      }
+
+      over "tray_void_ocorr_1"
+      {
+       token visibility = "inherited" (
+        aecoDerived = true
+       )
+       token visibility.timeSamples = {
+        0: "invisible",
+        28: "inherited",
+       }
+
+       over "Geom"
+       {
+        custom color3f[] primvars:displayColor = [(0.13, 0.62, 0.57)]
+       }
+      }
+     }
+
+     over "clg_ocorr_1"
+     {
+      token visibility = "inherited" (
+       aecoDerived = true
+      )
+      token visibility.timeSamples = {
+       0: "invisible",
+       35: "inherited",
+      }
+
+      over "Geom"
+      {
+       custom color3f[] primvars:displayColor = [(0.23, 0.39, 0.6)]
+      }
+     }
+    }
+
+    over "Open_Office"
+    {
+     over "Office_ceiling_void"
+     {
+      over "cnd_void_office_1"
+      {
+       token visibility = "inherited" (
+        aecoDerived = true
+       )
+       token visibility.timeSamples = {
+        0: "invisible",
+        28: "inherited",
+       }
+
+       over "Geom"
+       {
+        custom color3f[] primvars:displayColor = [(0.13, 0.62, 0.57)]
+       }
+      }
+
+      over "cnd_void_office_2"
+      {
+       token visibility = "inherited" (
+        aecoDerived = true
+       )
+       token visibility.timeSamples = {
+        0: "invisible",
+        28: "inherited",
+       }
+
+       over "Geom"
+       {
+        custom color3f[] primvars:displayColor = [(0.13, 0.62, 0.57)]
+       }
+      }
+
+      over "fcu_office_1"
+      {
+       token visibility = "inherited" (
+        aecoDerived = true
+       )
+       token visibility.timeSamples = {
+        0: "invisible",
+        28: "inherited",
+       }
+
+       over "Geom"
+       {
+        custom color3f[] primvars:displayColor = [(0.13, 0.62, 0.57)]
+       }
+      }
+     }
+
+     over "clg_office"
+     {
+      token visibility = "inherited" (
+       aecoDerived = true
+      )
+      token visibility.timeSamples = {
+       0: "invisible",
+       35: "inherited",
+      }
+
+      over "Geom"
+      {
+       custom color3f[] primvars:displayColor = [(0.23, 0.39, 0.6)]
+      }
+     }
+
+     over "grl_office_1"
+     {
+      token visibility = "inherited" (
+       aecoDerived = true
+      )
+      token visibility.timeSamples = {
+       0: "invisible",
+       49: "inherited",
+      }
+
+      over "Geom"
+      {
+       custom color3f[] primvars:displayColor = [(0.13, 0.62, 0.57)]
+      }
+     }
+
+     over "grl_office_2"
+     {
+      token visibility = "inherited" (
+       aecoDerived = true
+      )
+      token visibility.timeSamples = {
+       0: "invisible",
+       49: "inherited",
+      }
+
+      over "Geom"
+      {
+       custom color3f[] primvars:displayColor = [(0.13, 0.62, 0.57)]
+      }
+     }
+
+     over "grl_office_3"
+     {
+      token visibility = "inherited" (
+       aecoDerived = true
+      )
+      token visibility.timeSamples = {
+       0: "invisible",
+       49: "inherited",
+      }
+
+      over "Geom"
+      {
+       custom color3f[] primvars:displayColor = [(0.13, 0.62, 0.57)]
+      }
+     }
+
+     over "grl_office_4"
+     {
+      token visibility = "inherited" (
+       aecoDerived = true
+      )
+      token visibility.timeSamples = {
+       0: "invisible",
+       49: "inherited",
+      }
+
+      over "Geom"
+      {
+       custom color3f[] primvars:displayColor = [(0.13, 0.62, 0.57)]
+      }
+     }
+
+     over "lum_office_1"
+     {
+      token visibility = "inherited" (
+       aecoDerived = true
+      )
+      token visibility.timeSamples = {
+       0: "invisible",
+       49: "inherited",
+      }
+
+      over "Geom"
+      {
+       custom color3f[] primvars:displayColor = [(0.13, 0.62, 0.57)]
+      }
+     }
+
+     over "lum_office_2"
+     {
+      token visibility = "inherited" (
+       aecoDerived = true
+      )
+      token visibility.timeSamples = {
+       0: "invisible",
+       49: "inherited",
+      }
+
+      over "Geom"
+      {
+       custom color3f[] primvars:displayColor = [(0.13, 0.62, 0.57)]
+      }
+     }
+
+     over "lum_office_3"
+     {
+      token visibility = "inherited" (
+       aecoDerived = true
+      )
+      token visibility.timeSamples = {
+       0: "invisible",
+       49: "inherited",
+      }
+
+      over "Geom"
+      {
+       custom color3f[] primvars:displayColor = [(0.13, 0.62, 0.57)]
+      }
+     }
+
+     over "lum_office_4"
+     {
+      token visibility = "inherited" (
+       aecoDerived = true
+      )
+      token visibility.timeSamples = {
+       0: "invisible",
+       49: "inherited",
+      }
+
+      over "Geom"
+      {
+       custom color3f[] primvars:displayColor = [(0.13, 0.62, 0.57)]
+      }
+     }
+
+     over "lum_office_5"
+     {
+      token visibility = "inherited" (
+       aecoDerived = true
+      )
+      token visibility.timeSamples = {
+       0: "invisible",
+       49: "inherited",
+      }
+
+      over "Geom"
+      {
+       custom color3f[] primvars:displayColor = [(0.13, 0.62, 0.57)]
+      }
+     }
+
+     over "lum_office_6"
+     {
+      token visibility = "inherited" (
+       aecoDerived = true
+      )
+      token visibility.timeSamples = {
+       0: "invisible",
+       49: "inherited",
+      }
+
+      over "Geom"
+      {
+       custom color3f[] primvars:displayColor = [(0.13, 0.62, 0.57)]
+      }
+     }
+    }
+
+    over "WC"
+    {
+     over "pipe_drain_pod"
+     {
+      token visibility = "inherited" (
+       aecoDerived = true
+      )
+      token visibility.timeSamples = {
+       0: "invisible",
+       63: "inherited",
+      }
+
+      over "Geom"
+      {
+       custom color3f[] primvars:displayColor = [(0.13, 0.62, 0.57)]
+      }
+     }
+
+     over "pod_wc"
+     {
+      token visibility = "inherited" (
+       aecoDerived = true
+      )
+      token visibility.timeSamples = {
+       0: "invisible",
+       60: "inherited",
+      }
+
+      over "Geom"
+      {
+       custom color3f[] primvars:displayColor = [(0.13, 0.62, 0.57)]
+      }
+     }
+
+     over "san_pod_1"
+     {
+      token visibility = "inherited" (
+       aecoDerived = true
+      )
+      token visibility.timeSamples = {
+       0: "invisible",
+       63: "inherited",
+      }
+
+      over "Geom"
+      {
+       custom color3f[] primvars:displayColor = [(0.13, 0.62, 0.57)]
+      }
+     }
+
+     over "san_pod_2"
+     {
+      token visibility = "inherited" (
+       aecoDerived = true
+      )
+      token visibility.timeSamples = {
+       0: "invisible",
+       63: "inherited",
+      }
+
+      over "Geom"
+      {
+       custom color3f[] primvars:displayColor = [(0.13, 0.62, 0.57)]
+      }
+     }
+    }
+   }
+  }
+ }
+}
+

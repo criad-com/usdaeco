@@ -1,0 +1,14 @@
+{
+  "usdaeco-datacentre": {
+    "tag": "v0.5.1",
+    "revision": "ca308d9bd5fb5f3217b7bf2bc58e420e90ea7dd2",
+    "status": "released",
+    "reason": "Federated full facility with external port references."
+  },
+  "usdaeco-ifc": {
+    "tag": "v0.3.1",
+    "revision": "0e32d395351902ca98982017db3e04d200b67092",
+    "status": "released",
+    "reason": "Federated IFC file-format reader with full-delivery parity."
+  }
+}

@@ -1,0 +1,3980 @@
+#usda 1.0
+(
+ customLayerData = {
+  string "aeco:layer:package" = "security"
+  string "aeco:layer:producer" = "usdAECO suite representation placement"
+  string "aeco:layer:role" = "derived"
+  string "aeco:layer:source" = "kind/usdaeco-solid/examples/datacentre/run.py"
+  string "aeco:layer:sourceSha256" = "0118e7228b59c88cb24366d29f26a2d70ff2d255f392190f982b791185df4c26"
+  string "aeco:layer:tag" = "v0.1.5"
+ }
+)
+
+over "demo_datacentre_01"
+{
+ over "demo_datacentre_01_Site"
+ {
+  over "demo_datacentre_01"
+  {
+   over "L01_Office"
+   {
+    over "Office_Corridor_L01"
+    {
+     over "sec_cam_corr_ocorr_1_2"
+     {
+      over Camera "Sensor_0"
+      {
+       matrix4d xformOp:transform = ( (2.220446049250313e-16, 1, 0, 0), (-0.25881904510252096, 5.746937261686313e-17, 0.9659258262890682, 0), (0.9659258262890682, -2.1447861848524057e-16, 0.25881904510252096, 0), (29.5, -1.5, 6.82, 1) ) (
+        aecoDerived = true
+       )
+       token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+        aecoDerived = true
+       )
+
+       over Mesh "Sector"
+       {
+        matrix4d xformOp:transform = ( (2.220446049250313e-16, 1, 0, 0), (-0.25881904510252096, 5.746937261686313e-17, 0.9659258262890682, 0), (0.9659258262890682, -2.1447861848524057e-16, 0.25881904510252096, 0), (29.5, -1.5, 6.82, 1) ) (
+         aecoDerived = true
+        )
+        token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+         aecoDerived = true
+        )
+       }
+
+       over Mesh "Shell_identify"
+       {
+        matrix4d xformOp:transform = ( (2.220446049250313e-16, 1, 0, 0), (-0.25881904510252096, 5.746937261686313e-17, 0.9659258262890682, 0), (0.9659258262890682, -2.1447861848524057e-16, 0.25881904510252096, 0), (29.5, -1.5, 6.82, 1) ) (
+         aecoDerived = true
+        )
+        token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+         aecoDerived = true
+        )
+       }
+
+       over Mesh "Shell_recognise"
+       {
+        matrix4d xformOp:transform = ( (2.220446049250313e-16, 1, 0, 0), (-0.25881904510252096, 5.746937261686313e-17, 0.9659258262890682, 0), (0.9659258262890682, -2.1447861848524057e-16, 0.25881904510252096, 0), (29.5, -1.5, 6.82, 1) ) (
+         aecoDerived = true
+        )
+        token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+         aecoDerived = true
+        )
+       }
+
+       over Mesh "Shell_observe"
+       {
+        matrix4d xformOp:transform = ( (2.220446049250313e-16, 1, 0, 0), (-0.25881904510252096, 5.746937261686313e-17, 0.9659258262890682, 0), (0.9659258262890682, -2.1447861848524057e-16, 0.25881904510252096, 0), (29.5, -1.5, 6.82, 1) ) (
+         aecoDerived = true
+        )
+        token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+         aecoDerived = true
+        )
+       }
+
+       over Mesh "Coverage_Privacy"
+       {
+        matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (0, 0, 0, 1) ) (
+         aecoDerived = true
+        )
+        token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+         aecoDerived = true
+        )
+       }
+      }
+
+      over BrepArray "BodyExact"
+      {
+       matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (29.5, -1.5, 6.9, 1) ) (
+        aecoDerived = true
+       )
+       token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+        aecoDerived = true
+       )
+      }
+
+      over Mesh "Body"
+      {
+       matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (29.5, -1.5, 6.9, 1) ) (
+        aecoDerived = true
+       )
+       token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+        aecoDerived = true
+       )
+      }
+
+      over BasisCurves "Edges"
+      {
+       matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (29.5, -1.5, 6.9, 1) ) (
+        aecoDerived = true
+       )
+       token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+        aecoDerived = true
+       )
+      }
+     }
+
+     over "sec_cam_corr_ocorr_1_1"
+     {
+      over Camera "Sensor_0"
+      {
+       matrix4d xformOp:transform = ( (2.220446049250313e-16, -1, 0, 0), (0.25881904510252096, 5.746937261686313e-17, 0.9659258262890682, 0), (-0.9659258262890682, -2.1447861848524057e-16, 0.25881904510252096, 0), (15.5, -1.5, 6.82, 1) ) (
+        aecoDerived = true
+       )
+       token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+        aecoDerived = true
+       )
+
+       over Mesh "Sector"
+       {
+        matrix4d xformOp:transform = ( (2.220446049250313e-16, -1, 0, 0), (0.25881904510252096, 5.746937261686313e-17, 0.9659258262890682, 0), (-0.9659258262890682, -2.1447861848524057e-16, 0.25881904510252096, 0), (15.5, -1.5, 6.82, 1) ) (
+         aecoDerived = true
+        )
+        token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+         aecoDerived = true
+        )
+       }
+
+       over Mesh "Shell_identify"
+       {
+        matrix4d xformOp:transform = ( (2.220446049250313e-16, -1, 0, 0), (0.25881904510252096, 5.746937261686313e-17, 0.9659258262890682, 0), (-0.9659258262890682, -2.1447861848524057e-16, 0.25881904510252096, 0), (15.5, -1.5, 6.82, 1) ) (
+         aecoDerived = true
+        )
+        token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+         aecoDerived = true
+        )
+       }
+
+       over Mesh "Shell_recognise"
+       {
+        matrix4d xformOp:transform = ( (2.220446049250313e-16, -1, 0, 0), (0.25881904510252096, 5.746937261686313e-17, 0.9659258262890682, 0), (-0.9659258262890682, -2.1447861848524057e-16, 0.25881904510252096, 0), (15.5, -1.5, 6.82, 1) ) (
+         aecoDerived = true
+        )
+        token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+         aecoDerived = true
+        )
+       }
+
+       over Mesh "Shell_observe"
+       {
+        matrix4d xformOp:transform = ( (2.220446049250313e-16, -1, 0, 0), (0.25881904510252096, 5.746937261686313e-17, 0.9659258262890682, 0), (-0.9659258262890682, -2.1447861848524057e-16, 0.25881904510252096, 0), (15.5, -1.5, 6.82, 1) ) (
+         aecoDerived = true
+        )
+        token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+         aecoDerived = true
+        )
+       }
+
+       over Mesh "Coverage_Privacy"
+       {
+        matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (0, 0, 0, 1) ) (
+         aecoDerived = true
+        )
+        token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+         aecoDerived = true
+        )
+       }
+      }
+
+      over BrepArray "BodyExact"
+      {
+       matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (15.5, -1.5, 6.9, 1) ) (
+        aecoDerived = true
+       )
+       token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+        aecoDerived = true
+       )
+      }
+
+      over Mesh "Body"
+      {
+       matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (15.5, -1.5, 6.9, 1) ) (
+        aecoDerived = true
+       )
+       token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+        aecoDerived = true
+       )
+      }
+
+      over BasisCurves "Edges"
+      {
+       matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (15.5, -1.5, 6.9, 1) ) (
+        aecoDerived = true
+       )
+       token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+        aecoDerived = true
+       )
+      }
+     }
+    }
+   }
+
+   over "L00_Ground"
+   {
+    over "Office_Corridor_L00"
+    {
+     over "sec_cam_corr_ocorr_0_1"
+     {
+      over Camera "Sensor_0"
+      {
+       matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 0.8660254037844387, 0.49999999999999994, 0), (0, -0.49999999999999994, 0.8660254037844387, 0), (16.5, -2.5, 3.42, 1) ) (
+        aecoDerived = true
+       )
+       token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+        aecoDerived = true
+       )
+
+       over Mesh "Sector"
+       {
+        matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 0.8660254037844387, 0.49999999999999994, 0), (0, -0.49999999999999994, 0.8660254037844387, 0), (16.5, -2.5, 3.42, 1) ) (
+         aecoDerived = true
+        )
+        token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+         aecoDerived = true
+        )
+       }
+
+       over Mesh "Shell_identify"
+       {
+        matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 0.8660254037844387, 0.49999999999999994, 0), (0, -0.49999999999999994, 0.8660254037844387, 0), (16.5, -2.5, 3.42, 1) ) (
+         aecoDerived = true
+        )
+        token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+         aecoDerived = true
+        )
+       }
+
+       over Mesh "Shell_recognise"
+       {
+        matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 0.8660254037844387, 0.49999999999999994, 0), (0, -0.49999999999999994, 0.8660254037844387, 0), (16.5, -2.5, 3.42, 1) ) (
+         aecoDerived = true
+        )
+        token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+         aecoDerived = true
+        )
+       }
+
+       over Mesh "Shell_observe"
+       {
+        matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 0.8660254037844387, 0.49999999999999994, 0), (0, -0.49999999999999994, 0.8660254037844387, 0), (16.5, -2.5, 3.42, 1) ) (
+         aecoDerived = true
+        )
+        token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+         aecoDerived = true
+        )
+       }
+
+       over Mesh "Coverage_Privacy"
+       {
+        matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (0, 0, 0, 1) ) (
+         aecoDerived = true
+        )
+        token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+         aecoDerived = true
+        )
+       }
+      }
+
+      over BrepArray "BodyExact"
+      {
+       matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (16.5, -2.5, 3.5, 1) ) (
+        aecoDerived = true
+       )
+       token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+        aecoDerived = true
+       )
+      }
+
+      over Mesh "Body"
+      {
+       matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (16.5, -2.5, 3.5, 1) ) (
+        aecoDerived = true
+       )
+       token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+        aecoDerived = true
+       )
+      }
+
+      over BasisCurves "Edges"
+      {
+       matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (16.5, -2.5, 3.5, 1) ) (
+        aecoDerived = true
+       )
+       token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+        aecoDerived = true
+       )
+      }
+     }
+
+     over "sec_cam_corr_ocorr_0_2"
+     {
+      over Camera "Sensor_0"
+      {
+       matrix4d xformOp:transform = ( (-1, 1.2246467991473532e-16, 0, 0), (-1.0605752387249069e-16, -0.8660254037844387, 0.49999999999999994, 0), (6.123233995736765e-17, 0.49999999999999994, 0.8660254037844387, 0), (16.5, -0.5, 3.42, 1) ) (
+        aecoDerived = true
+       )
+       token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+        aecoDerived = true
+       )
+
+       over Mesh "Sector"
+       {
+        matrix4d xformOp:transform = ( (-1, 1.2246467991473532e-16, 0, 0), (-1.0605752387249069e-16, -0.8660254037844387, 0.49999999999999994, 0), (6.123233995736765e-17, 0.49999999999999994, 0.8660254037844387, 0), (16.5, -0.5, 3.42, 1) ) (
+         aecoDerived = true
+        )
+        token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+         aecoDerived = true
+        )
+       }
+
+       over Mesh "Shell_identify"
+       {
+        matrix4d xformOp:transform = ( (-1, 1.2246467991473532e-16, 0, 0), (-1.0605752387249069e-16, -0.8660254037844387, 0.49999999999999994, 0), (6.123233995736765e-17, 0.49999999999999994, 0.8660254037844387, 0), (16.5, -0.5, 3.42, 1) ) (
+         aecoDerived = true
+        )
+        token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+         aecoDerived = true
+        )
+       }
+
+       over Mesh "Shell_recognise"
+       {
+        matrix4d xformOp:transform = ( (-1, 1.2246467991473532e-16, 0, 0), (-1.0605752387249069e-16, -0.8660254037844387, 0.49999999999999994, 0), (6.123233995736765e-17, 0.49999999999999994, 0.8660254037844387, 0), (16.5, -0.5, 3.42, 1) ) (
+         aecoDerived = true
+        )
+        token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+         aecoDerived = true
+        )
+       }
+
+       over Mesh "Shell_observe"
+       {
+        matrix4d xformOp:transform = ( (-1, 1.2246467991473532e-16, 0, 0), (-1.0605752387249069e-16, -0.8660254037844387, 0.49999999999999994, 0), (6.123233995736765e-17, 0.49999999999999994, 0.8660254037844387, 0), (16.5, -0.5, 3.42, 1) ) (
+         aecoDerived = true
+        )
+        token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+         aecoDerived = true
+        )
+       }
+
+       over Mesh "Coverage_Privacy"
+       {
+        matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (0, 0, 0, 1) ) (
+         aecoDerived = true
+        )
+        token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+         aecoDerived = true
+        )
+       }
+      }
+
+      over BrepArray "BodyExact"
+      {
+       matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (16.5, -0.5, 3.5, 1) ) (
+        aecoDerived = true
+       )
+       token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+        aecoDerived = true
+       )
+      }
+
+      over Mesh "Body"
+      {
+       matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (16.5, -0.5, 3.5, 1) ) (
+        aecoDerived = true
+       )
+       token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+        aecoDerived = true
+       )
+      }
+
+      over BasisCurves "Edges"
+      {
+       matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (16.5, -0.5, 3.5, 1) ) (
+        aecoDerived = true
+       )
+       token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+        aecoDerived = true
+       )
+      }
+     }
+    }
+
+    over "Corridor_East"
+    {
+     over "sec_cam_corr_corr_e_2"
+     {
+      over Camera "Sensor_0"
+      {
+       matrix4d xformOp:transform = ( (-1, 1.2246467991473532e-16, 0, 0), (-3.1696191514317674e-17, -0.25881904510252096, 0.9659258262890682, 0), (1.1829179713786696e-16, 0.9659258262890682, 0.25881904510252096, 0), (70, 35.5, 3.42, 1) ) (
+        aecoDerived = true
+       )
+       token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+        aecoDerived = true
+       )
+
+       over Mesh "Sector"
+       {
+        matrix4d xformOp:transform = ( (-1, 1.2246467991473532e-16, 0, 0), (-3.1696191514317674e-17, -0.25881904510252096, 0.9659258262890682, 0), (1.1829179713786696e-16, 0.9659258262890682, 0.25881904510252096, 0), (70, 35.5, 3.42, 1) ) (
+         aecoDerived = true
+        )
+        token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+         aecoDerived = true
+        )
+       }
+
+       over Mesh "Shell_identify"
+       {
+        matrix4d xformOp:transform = ( (-1, 1.2246467991473532e-16, 0, 0), (-3.1696191514317674e-17, -0.25881904510252096, 0.9659258262890682, 0), (1.1829179713786696e-16, 0.9659258262890682, 0.25881904510252096, 0), (70, 35.5, 3.42, 1) ) (
+         aecoDerived = true
+        )
+        token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+         aecoDerived = true
+        )
+       }
+
+       over Mesh "Shell_recognise"
+       {
+        matrix4d xformOp:transform = ( (-1, 1.2246467991473532e-16, 0, 0), (-3.1696191514317674e-17, -0.25881904510252096, 0.9659258262890682, 0), (1.1829179713786696e-16, 0.9659258262890682, 0.25881904510252096, 0), (70, 35.5, 3.42, 1) ) (
+         aecoDerived = true
+        )
+        token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+         aecoDerived = true
+        )
+       }
+
+       over Mesh "Shell_observe"
+       {
+        matrix4d xformOp:transform = ( (-1, 1.2246467991473532e-16, 0, 0), (-3.1696191514317674e-17, -0.25881904510252096, 0.9659258262890682, 0), (1.1829179713786696e-16, 0.9659258262890682, 0.25881904510252096, 0), (70, 35.5, 3.42, 1) ) (
+         aecoDerived = true
+        )
+        token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+         aecoDerived = true
+        )
+       }
+
+       over Mesh "Coverage_Privacy"
+       {
+        matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (0, 0, 0, 1) ) (
+         aecoDerived = true
+        )
+        token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+         aecoDerived = true
+        )
+       }
+      }
+     }
+
+     over "sec_cam_corr_corr_e_1"
+     {
+      over Camera "Sensor_0"
+      {
+       matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 0.25881904510252096, 0.9659258262890682, 0), (0, -0.9659258262890682, 0.25881904510252096, 0), (70, 18.5, 3.42, 1) ) (
+        aecoDerived = true
+       )
+       token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+        aecoDerived = true
+       )
+
+       over Mesh "Sector"
+       {
+        matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 0.25881904510252096, 0.9659258262890682, 0), (0, -0.9659258262890682, 0.25881904510252096, 0), (70, 18.5, 3.42, 1) ) (
+         aecoDerived = true
+        )
+        token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+         aecoDerived = true
+        )
+       }
+
+       over Mesh "Shell_identify"
+       {
+        matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 0.25881904510252096, 0.9659258262890682, 0), (0, -0.9659258262890682, 0.25881904510252096, 0), (70, 18.5, 3.42, 1) ) (
+         aecoDerived = true
+        )
+        token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+         aecoDerived = true
+        )
+       }
+
+       over Mesh "Shell_recognise"
+       {
+        matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 0.25881904510252096, 0.9659258262890682, 0), (0, -0.9659258262890682, 0.25881904510252096, 0), (70, 18.5, 3.42, 1) ) (
+         aecoDerived = true
+        )
+        token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+         aecoDerived = true
+        )
+       }
+
+       over Mesh "Shell_observe"
+       {
+        matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 0.25881904510252096, 0.9659258262890682, 0), (0, -0.9659258262890682, 0.25881904510252096, 0), (70, 18.5, 3.42, 1) ) (
+         aecoDerived = true
+        )
+        token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+         aecoDerived = true
+        )
+       }
+
+       over Mesh "Coverage_Privacy"
+       {
+        matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (0, 0, 0, 1) ) (
+         aecoDerived = true
+        )
+        token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+         aecoDerived = true
+        )
+       }
+      }
+     }
+
+     over "sec_cam_door_hall_b_e"
+     {
+      over Camera "Sensor_0"
+      {
+       matrix4d xformOp:transform = ( (-0.5692099788303042, 0.8221921916437814, 0, 0), (-0.7120393247567184, -0.49295030175464605, 0.49999999999999994, 0), (0.41109609582189066, 0.28460498941515205, 0.8660254037844387, 0), (68.65, 27.45, 2.92, 1) ) (
+        aecoDerived = true
+       )
+       token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+        aecoDerived = true
+       )
+
+       over Mesh "Sector"
+       {
+        matrix4d xformOp:transform = ( (-0.5692099788303042, 0.8221921916437814, 0, 0), (-0.7120393247567184, -0.49295030175464605, 0.49999999999999994, 0), (0.41109609582189066, 0.28460498941515205, 0.8660254037844387, 0), (68.65, 27.45, 2.92, 1) ) (
+         aecoDerived = true
+        )
+        token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+         aecoDerived = true
+        )
+       }
+
+       over Mesh "Shell_identify"
+       {
+        matrix4d xformOp:transform = ( (-0.5692099788303042, 0.8221921916437814, 0, 0), (-0.7120393247567184, -0.49295030175464605, 0.49999999999999994, 0), (0.41109609582189066, 0.28460498941515205, 0.8660254037844387, 0), (68.65, 27.45, 2.92, 1) ) (
+         aecoDerived = true
+        )
+        token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+         aecoDerived = true
+        )
+       }
+
+       over Mesh "Shell_recognise"
+       {
+        matrix4d xformOp:transform = ( (-0.5692099788303042, 0.8221921916437814, 0, 0), (-0.7120393247567184, -0.49295030175464605, 0.49999999999999994, 0), (0.41109609582189066, 0.28460498941515205, 0.8660254037844387, 0), (68.65, 27.45, 2.92, 1) ) (
+         aecoDerived = true
+        )
+        token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+         aecoDerived = true
+        )
+       }
+
+       over Mesh "Coverage_CriticalDoors"
+       {
+        matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (0, 0, 0, 1) ) (
+         aecoDerived = true
+        )
+        token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+         aecoDerived = true
+        )
+       }
+
+       over Mesh "Coverage_Privacy"
+       {
+        matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (0, 0, 0, 1) ) (
+         aecoDerived = true
+        )
+        token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+         aecoDerived = true
+        )
+       }
+      }
+     }
+
+     over "Iris_Scanner_door_hall_b_e"
+     {
+      over Xform "ComplianceEnvelope"
+      {
+       matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (0, 0, 0, 1) ) (
+        aecoDerived = true
+       )
+       token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+        aecoDerived = true
+       )
+
+       over Mesh "accessibility"
+       {
+        matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (0, 0, 0, 1) ) (
+         aecoDerived = true
+        )
+        token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+         aecoDerived = true
+        )
+       }
+
+       over Mesh "employer_security"
+       {
+        matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (0, 0, 0, 1) ) (
+         aecoDerived = true
+        )
+        token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+         aecoDerived = true
+        )
+       }
+
+       over Mesh "reader_datasheet"
+       {
+        matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (0, 0, 0, 1) ) (
+         aecoDerived = true
+        )
+        token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+         aecoDerived = true
+        )
+       }
+
+       over Mesh "Status"
+       {
+        matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (0, 0, 0, 1) ) (
+         aecoDerived = true
+        )
+        token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+         aecoDerived = true
+        )
+       }
+      }
+     }
+    }
+
+    over "Corridor_Spine"
+    {
+     over "sec_cam_corr_corr_spine_6"
+     {
+      over Camera "Sensor_0"
+      {
+       matrix4d xformOp:transform = ( (2.220446049250313e-16, 1, 0, 0), (-0.25881904510252096, 5.746937261686313e-17, 0.9659258262890682, 0), (0.9659258262890682, -2.1447861848524057e-16, 0.25881904510252096, 0), (71.5, 16.5, 3.42, 1) ) (
+        aecoDerived = true
+       )
+       token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+        aecoDerived = true
+       )
+
+       over Mesh "Sector"
+       {
+        matrix4d xformOp:transform = ( (2.220446049250313e-16, 1, 0, 0), (-0.25881904510252096, 5.746937261686313e-17, 0.9659258262890682, 0), (0.9659258262890682, -2.1447861848524057e-16, 0.25881904510252096, 0), (71.5, 16.5, 3.42, 1) ) (
+         aecoDerived = true
+        )
+        token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+         aecoDerived = true
+        )
+       }
+
+       over Mesh "Shell_identify"
+       {
+        matrix4d xformOp:transform = ( (2.220446049250313e-16, 1, 0, 0), (-0.25881904510252096, 5.746937261686313e-17, 0.9659258262890682, 0), (0.9659258262890682, -2.1447861848524057e-16, 0.25881904510252096, 0), (71.5, 16.5, 3.42, 1) ) (
+         aecoDerived = true
+        )
+        token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+         aecoDerived = true
+        )
+       }
+
+       over Mesh "Shell_recognise"
+       {
+        matrix4d xformOp:transform = ( (2.220446049250313e-16, 1, 0, 0), (-0.25881904510252096, 5.746937261686313e-17, 0.9659258262890682, 0), (0.9659258262890682, -2.1447861848524057e-16, 0.25881904510252096, 0), (71.5, 16.5, 3.42, 1) ) (
+         aecoDerived = true
+        )
+        token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+         aecoDerived = true
+        )
+       }
+
+       over Mesh "Shell_observe"
+       {
+        matrix4d xformOp:transform = ( (2.220446049250313e-16, 1, 0, 0), (-0.25881904510252096, 5.746937261686313e-17, 0.9659258262890682, 0), (0.9659258262890682, -2.1447861848524057e-16, 0.25881904510252096, 0), (71.5, 16.5, 3.42, 1) ) (
+         aecoDerived = true
+        )
+        token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+         aecoDerived = true
+        )
+       }
+
+       over Mesh "Coverage_Privacy"
+       {
+        matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (0, 0, 0, 1) ) (
+         aecoDerived = true
+        )
+        token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+         aecoDerived = true
+        )
+       }
+      }
+     }
+
+     over "sec_cam_corr_corr_spine_4"
+     {
+      over Camera "Sensor_0"
+      {
+       matrix4d xformOp:transform = ( (2.220446049250313e-16, 1, 0, 0), (-0.25881904510252096, 5.746937261686313e-17, 0.9659258262890682, 0), (0.9659258262890682, -2.1447861848524057e-16, 0.25881904510252096, 0), (43.1, 16.5, 3.42, 1) ) (
+        aecoDerived = true
+       )
+       token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+        aecoDerived = true
+       )
+
+       over Mesh "Sector"
+       {
+        matrix4d xformOp:transform = ( (2.220446049250313e-16, 1, 0, 0), (-0.25881904510252096, 5.746937261686313e-17, 0.9659258262890682, 0), (0.9659258262890682, -2.1447861848524057e-16, 0.25881904510252096, 0), (43.1, 16.5, 3.42, 1) ) (
+         aecoDerived = true
+        )
+        token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+         aecoDerived = true
+        )
+       }
+
+       over Mesh "Shell_identify"
+       {
+        matrix4d xformOp:transform = ( (2.220446049250313e-16, 1, 0, 0), (-0.25881904510252096, 5.746937261686313e-17, 0.9659258262890682, 0), (0.9659258262890682, -2.1447861848524057e-16, 0.25881904510252096, 0), (43.1, 16.5, 3.42, 1) ) (
+         aecoDerived = true
+        )
+        token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+         aecoDerived = true
+        )
+       }
+
+       over Mesh "Shell_recognise"
+       {
+        matrix4d xformOp:transform = ( (2.220446049250313e-16, 1, 0, 0), (-0.25881904510252096, 5.746937261686313e-17, 0.9659258262890682, 0), (0.9659258262890682, -2.1447861848524057e-16, 0.25881904510252096, 0), (43.1, 16.5, 3.42, 1) ) (
+         aecoDerived = true
+        )
+        token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+         aecoDerived = true
+        )
+       }
+
+       over Mesh "Shell_observe"
+       {
+        matrix4d xformOp:transform = ( (2.220446049250313e-16, 1, 0, 0), (-0.25881904510252096, 5.746937261686313e-17, 0.9659258262890682, 0), (0.9659258262890682, -2.1447861848524057e-16, 0.25881904510252096, 0), (43.1, 16.5, 3.42, 1) ) (
+         aecoDerived = true
+        )
+        token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+         aecoDerived = true
+        )
+       }
+
+       over Mesh "Coverage_Privacy"
+       {
+        matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (0, 0, 0, 1) ) (
+         aecoDerived = true
+        )
+        token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+         aecoDerived = true
+        )
+       }
+      }
+     }
+
+     over "sec_cam_door_mmr_2"
+     {
+      over Camera "Sensor_0"
+      {
+       matrix4d xformOp:transform = ( (-0.8221921916437771, -0.5692099788303108, 0, 0), (0.4929503017546517, -0.7120393247567147, 0.49999999999999994, 0), (-0.28460498941515533, 0.4110960958218885, 0.8660254037844387, 0), (50.55, 15.65, 2.92, 1) ) (
+        aecoDerived = true
+       )
+       token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+        aecoDerived = true
+       )
+
+       over Mesh "Sector"
+       {
+        matrix4d xformOp:transform = ( (-0.8221921916437771, -0.5692099788303108, 0, 0), (0.4929503017546517, -0.7120393247567147, 0.49999999999999994, 0), (-0.28460498941515533, 0.4110960958218885, 0.8660254037844387, 0), (50.55, 15.65, 2.92, 1) ) (
+         aecoDerived = true
+        )
+        token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+         aecoDerived = true
+        )
+       }
+
+       over Mesh "Shell_identify"
+       {
+        matrix4d xformOp:transform = ( (-0.8221921916437771, -0.5692099788303108, 0, 0), (0.4929503017546517, -0.7120393247567147, 0.49999999999999994, 0), (-0.28460498941515533, 0.4110960958218885, 0.8660254037844387, 0), (50.55, 15.65, 2.92, 1) ) (
+         aecoDerived = true
+        )
+        token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+         aecoDerived = true
+        )
+       }
+
+       over Mesh "Shell_recognise"
+       {
+        matrix4d xformOp:transform = ( (-0.8221921916437771, -0.5692099788303108, 0, 0), (0.4929503017546517, -0.7120393247567147, 0.49999999999999994, 0), (-0.28460498941515533, 0.4110960958218885, 0.8660254037844387, 0), (50.55, 15.65, 2.92, 1) ) (
+         aecoDerived = true
+        )
+        token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+         aecoDerived = true
+        )
+       }
+
+       over Mesh "Coverage_CriticalDoors"
+       {
+        matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (0, 0, 0, 1) ) (
+         aecoDerived = true
+        )
+        token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+         aecoDerived = true
+        )
+       }
+
+       over Mesh "Coverage_Privacy"
+       {
+        matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (0, 0, 0, 1) ) (
+         aecoDerived = true
+        )
+        token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+         aecoDerived = true
+        )
+       }
+      }
+     }
+
+     over "sec_cam_door_elec_a"
+     {
+      over Camera "Sensor_0"
+      {
+       matrix4d xformOp:transform = ( (-0.82219219164378, -0.5692099788303076, 0, 0), (0.4929503017546489, -0.7120393247567172, 0.49999999999999994, 0), (-0.2846049894151537, 0.41109609582188994, 0.8660254037844387, 0), (8.55, 15.65, 2.92, 1) ) (
+        aecoDerived = true
+       )
+       token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+        aecoDerived = true
+       )
+
+       over Mesh "Sector"
+       {
+        matrix4d xformOp:transform = ( (-0.82219219164378, -0.5692099788303076, 0, 0), (0.4929503017546489, -0.7120393247567172, 0.49999999999999994, 0), (-0.2846049894151537, 0.41109609582188994, 0.8660254037844387, 0), (8.55, 15.65, 2.92, 1) ) (
+         aecoDerived = true
+        )
+        token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+         aecoDerived = true
+        )
+       }
+
+       over Mesh "Shell_identify"
+       {
+        matrix4d xformOp:transform = ( (-0.82219219164378, -0.5692099788303076, 0, 0), (0.4929503017546489, -0.7120393247567172, 0.49999999999999994, 0), (-0.2846049894151537, 0.41109609582188994, 0.8660254037844387, 0), (8.55, 15.65, 2.92, 1) ) (
+         aecoDerived = true
+        )
+        token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+         aecoDerived = true
+        )
+       }
+
+       over Mesh "Shell_recognise"
+       {
+        matrix4d xformOp:transform = ( (-0.82219219164378, -0.5692099788303076, 0, 0), (0.4929503017546489, -0.7120393247567172, 0.49999999999999994, 0), (-0.2846049894151537, 0.41109609582188994, 0.8660254037844387, 0), (8.55, 15.65, 2.92, 1) ) (
+         aecoDerived = true
+        )
+        token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+         aecoDerived = true
+        )
+       }
+
+       over Mesh "Coverage_CriticalDoors"
+       {
+        matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (0, 0, 0, 1) ) (
+         aecoDerived = true
+        )
+        token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+         aecoDerived = true
+        )
+       }
+
+       over Mesh "Coverage_Privacy"
+       {
+        matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (0, 0, 0, 1) ) (
+         aecoDerived = true
+        )
+        token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+         aecoDerived = true
+        )
+       }
+      }
+     }
+
+     over "sec_cam_door_elec_b"
+     {
+      over Camera "Sensor_0"
+      {
+       matrix4d xformOp:transform = ( (-0.8221921916437771, -0.5692099788303108, 0, 0), (0.4929503017546517, -0.7120393247567147, 0.49999999999999994, 0), (-0.28460498941515533, 0.4110960958218885, 0.8660254037844387, 0), (68.55, 15.65, 2.92, 1) ) (
+        aecoDerived = true
+       )
+       token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+        aecoDerived = true
+       )
+
+       over Mesh "Sector"
+       {
+        matrix4d xformOp:transform = ( (-0.8221921916437771, -0.5692099788303108, 0, 0), (0.4929503017546517, -0.7120393247567147, 0.49999999999999994, 0), (-0.28460498941515533, 0.4110960958218885, 0.8660254037844387, 0), (68.55, 15.65, 2.92, 1) ) (
+         aecoDerived = true
+        )
+        token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+         aecoDerived = true
+        )
+       }
+
+       over Mesh "Shell_identify"
+       {
+        matrix4d xformOp:transform = ( (-0.8221921916437771, -0.5692099788303108, 0, 0), (0.4929503017546517, -0.7120393247567147, 0.49999999999999994, 0), (-0.28460498941515533, 0.4110960958218885, 0.8660254037844387, 0), (68.55, 15.65, 2.92, 1) ) (
+         aecoDerived = true
+        )
+        token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+         aecoDerived = true
+        )
+       }
+
+       over Mesh "Shell_recognise"
+       {
+        matrix4d xformOp:transform = ( (-0.8221921916437771, -0.5692099788303108, 0, 0), (0.4929503017546517, -0.7120393247567147, 0.49999999999999994, 0), (-0.28460498941515533, 0.4110960958218885, 0.8660254037844387, 0), (68.55, 15.65, 2.92, 1) ) (
+         aecoDerived = true
+        )
+        token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+         aecoDerived = true
+        )
+       }
+
+       over Mesh "Coverage_CriticalDoors"
+       {
+        matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (0, 0, 0, 1) ) (
+         aecoDerived = true
+        )
+        token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+         aecoDerived = true
+        )
+       }
+
+       over Mesh "Coverage_Privacy"
+       {
+        matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (0, 0, 0, 1) ) (
+         aecoDerived = true
+        )
+        token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+         aecoDerived = true
+        )
+       }
+      }
+     }
+
+     over "sec_cam_corr_corr_spine_2"
+     {
+      over Camera "Sensor_0"
+      {
+       matrix4d xformOp:transform = ( (2.220446049250313e-16, 1, 0, 0), (-0.25881904510252096, 5.746937261686313e-17, 0.9659258262890682, 0), (0.9659258262890682, -2.1447861848524057e-16, 0.25881904510252096, 0), (14.7, 16.5, 3.42, 1) ) (
+        aecoDerived = true
+       )
+       token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+        aecoDerived = true
+       )
+
+       over Mesh "Sector"
+       {
+        matrix4d xformOp:transform = ( (2.220446049250313e-16, 1, 0, 0), (-0.25881904510252096, 5.746937261686313e-17, 0.9659258262890682, 0), (0.9659258262890682, -2.1447861848524057e-16, 0.25881904510252096, 0), (14.7, 16.5, 3.42, 1) ) (
+         aecoDerived = true
+        )
+        token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+         aecoDerived = true
+        )
+       }
+
+       over Mesh "Shell_identify"
+       {
+        matrix4d xformOp:transform = ( (2.220446049250313e-16, 1, 0, 0), (-0.25881904510252096, 5.746937261686313e-17, 0.9659258262890682, 0), (0.9659258262890682, -2.1447861848524057e-16, 0.25881904510252096, 0), (14.7, 16.5, 3.42, 1) ) (
+         aecoDerived = true
+        )
+        token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+         aecoDerived = true
+        )
+       }
+
+       over Mesh "Shell_recognise"
+       {
+        matrix4d xformOp:transform = ( (2.220446049250313e-16, 1, 0, 0), (-0.25881904510252096, 5.746937261686313e-17, 0.9659258262890682, 0), (0.9659258262890682, -2.1447861848524057e-16, 0.25881904510252096, 0), (14.7, 16.5, 3.42, 1) ) (
+         aecoDerived = true
+        )
+        token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+         aecoDerived = true
+        )
+       }
+
+       over Mesh "Shell_observe"
+       {
+        matrix4d xformOp:transform = ( (2.220446049250313e-16, 1, 0, 0), (-0.25881904510252096, 5.746937261686313e-17, 0.9659258262890682, 0), (0.9659258262890682, -2.1447861848524057e-16, 0.25881904510252096, 0), (14.7, 16.5, 3.42, 1) ) (
+         aecoDerived = true
+        )
+        token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+         aecoDerived = true
+        )
+       }
+
+       over Mesh "Coverage_Privacy"
+       {
+        matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (0, 0, 0, 1) ) (
+         aecoDerived = true
+        )
+        token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+         aecoDerived = true
+        )
+       }
+      }
+     }
+
+     over "sec_cam_corr_corr_spine_3"
+     {
+      over Camera "Sensor_0"
+      {
+       matrix4d xformOp:transform = ( (2.220446049250313e-16, -1, 0, 0), (0.25881904510252096, 5.746937261686313e-17, 0.9659258262890682, 0), (-0.9659258262890682, -2.1447861848524057e-16, 0.25881904510252096, 0), (28.9, 16.5, 3.42, 1) ) (
+        aecoDerived = true
+       )
+       token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+        aecoDerived = true
+       )
+
+       over Mesh "Sector"
+       {
+        matrix4d xformOp:transform = ( (2.220446049250313e-16, -1, 0, 0), (0.25881904510252096, 5.746937261686313e-17, 0.9659258262890682, 0), (-0.9659258262890682, -2.1447861848524057e-16, 0.25881904510252096, 0), (28.9, 16.5, 3.42, 1) ) (
+         aecoDerived = true
+        )
+        token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+         aecoDerived = true
+        )
+       }
+
+       over Mesh "Shell_identify"
+       {
+        matrix4d xformOp:transform = ( (2.220446049250313e-16, -1, 0, 0), (0.25881904510252096, 5.746937261686313e-17, 0.9659258262890682, 0), (-0.9659258262890682, -2.1447861848524057e-16, 0.25881904510252096, 0), (28.9, 16.5, 3.42, 1) ) (
+         aecoDerived = true
+        )
+        token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+         aecoDerived = true
+        )
+       }
+
+       over Mesh "Shell_recognise"
+       {
+        matrix4d xformOp:transform = ( (2.220446049250313e-16, -1, 0, 0), (0.25881904510252096, 5.746937261686313e-17, 0.9659258262890682, 0), (-0.9659258262890682, -2.1447861848524057e-16, 0.25881904510252096, 0), (28.9, 16.5, 3.42, 1) ) (
+         aecoDerived = true
+        )
+        token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+         aecoDerived = true
+        )
+       }
+
+       over Mesh "Shell_observe"
+       {
+        matrix4d xformOp:transform = ( (2.220446049250313e-16, -1, 0, 0), (0.25881904510252096, 5.746937261686313e-17, 0.9659258262890682, 0), (-0.9659258262890682, -2.1447861848524057e-16, 0.25881904510252096, 0), (28.9, 16.5, 3.42, 1) ) (
+         aecoDerived = true
+        )
+        token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+         aecoDerived = true
+        )
+       }
+
+       over Mesh "Coverage_Privacy"
+       {
+        matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (0, 0, 0, 1) ) (
+         aecoDerived = true
+        )
+        token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+         aecoDerived = true
+        )
+       }
+      }
+     }
+
+     over "sec_cam_corr_corr_spine_5"
+     {
+      over Camera "Sensor_0"
+      {
+       matrix4d xformOp:transform = ( (2.220446049250313e-16, -1, 0, 0), (0.25881904510252096, 5.746937261686313e-17, 0.9659258262890682, 0), (-0.9659258262890682, -2.1447861848524057e-16, 0.25881904510252096, 0), (57.3, 16.5, 3.42, 1) ) (
+        aecoDerived = true
+       )
+       token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+        aecoDerived = true
+       )
+
+       over Mesh "Sector"
+       {
+        matrix4d xformOp:transform = ( (2.220446049250313e-16, -1, 0, 0), (0.25881904510252096, 5.746937261686313e-17, 0.9659258262890682, 0), (-0.9659258262890682, -2.1447861848524057e-16, 0.25881904510252096, 0), (57.3, 16.5, 3.42, 1) ) (
+         aecoDerived = true
+        )
+        token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+         aecoDerived = true
+        )
+       }
+
+       over Mesh "Shell_identify"
+       {
+        matrix4d xformOp:transform = ( (2.220446049250313e-16, -1, 0, 0), (0.25881904510252096, 5.746937261686313e-17, 0.9659258262890682, 0), (-0.9659258262890682, -2.1447861848524057e-16, 0.25881904510252096, 0), (57.3, 16.5, 3.42, 1) ) (
+         aecoDerived = true
+        )
+        token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+         aecoDerived = true
+        )
+       }
+
+       over Mesh "Shell_recognise"
+       {
+        matrix4d xformOp:transform = ( (2.220446049250313e-16, -1, 0, 0), (0.25881904510252096, 5.746937261686313e-17, 0.9659258262890682, 0), (-0.9659258262890682, -2.1447861848524057e-16, 0.25881904510252096, 0), (57.3, 16.5, 3.42, 1) ) (
+         aecoDerived = true
+        )
+        token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+         aecoDerived = true
+        )
+       }
+
+       over Mesh "Shell_observe"
+       {
+        matrix4d xformOp:transform = ( (2.220446049250313e-16, -1, 0, 0), (0.25881904510252096, 5.746937261686313e-17, 0.9659258262890682, 0), (-0.9659258262890682, -2.1447861848524057e-16, 0.25881904510252096, 0), (57.3, 16.5, 3.42, 1) ) (
+         aecoDerived = true
+        )
+        token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+         aecoDerived = true
+        )
+       }
+
+       over Mesh "Coverage_Privacy"
+       {
+        matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (0, 0, 0, 1) ) (
+         aecoDerived = true
+        )
+        token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+         aecoDerived = true
+        )
+       }
+      }
+     }
+
+     over "sec_cam_door_hall_a_s"
+     {
+      over Camera "Sensor_0"
+      {
+       matrix4d xformOp:transform = ( (0.8221921916437787, 0.5692099788303083, 0, 0), (-0.4929503017546496, 0.712039324756716, 0.49999999999999994, 0), (0.2846049894151541, -0.4110960958218893, 0.8660254037844387, 0), (8.45, 17.35, 2.92, 1) ) (
+        aecoDerived = true
+       )
+       token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+        aecoDerived = true
+       )
+
+       over Mesh "Sector"
+       {
+        matrix4d xformOp:transform = ( (0.8221921916437787, 0.5692099788303083, 0, 0), (-0.4929503017546496, 0.712039324756716, 0.49999999999999994, 0), (0.2846049894151541, -0.4110960958218893, 0.8660254037844387, 0), (8.45, 17.35, 2.92, 1) ) (
+         aecoDerived = true
+        )
+        token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+         aecoDerived = true
+        )
+       }
+
+       over Mesh "Shell_identify"
+       {
+        matrix4d xformOp:transform = ( (0.8221921916437787, 0.5692099788303083, 0, 0), (-0.4929503017546496, 0.712039324756716, 0.49999999999999994, 0), (0.2846049894151541, -0.4110960958218893, 0.8660254037844387, 0), (8.45, 17.35, 2.92, 1) ) (
+         aecoDerived = true
+        )
+        token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+         aecoDerived = true
+        )
+       }
+
+       over Mesh "Shell_recognise"
+       {
+        matrix4d xformOp:transform = ( (0.8221921916437787, 0.5692099788303083, 0, 0), (-0.4929503017546496, 0.712039324756716, 0.49999999999999994, 0), (0.2846049894151541, -0.4110960958218893, 0.8660254037844387, 0), (8.45, 17.35, 2.92, 1) ) (
+         aecoDerived = true
+        )
+        token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+         aecoDerived = true
+        )
+       }
+
+       over Mesh "Coverage_CriticalDoors"
+       {
+        matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (0, 0, 0, 1) ) (
+         aecoDerived = true
+        )
+        token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+         aecoDerived = true
+        )
+       }
+
+       over Mesh "Coverage_Privacy"
+       {
+        matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (0, 0, 0, 1) ) (
+         aecoDerived = true
+        )
+        token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+         aecoDerived = true
+        )
+       }
+      }
+     }
+
+     over "sec_cam_door_hall_b_s"
+     {
+      over Camera "Sensor_0"
+      {
+       matrix4d xformOp:transform = ( (0.8221921916437762, 0.5692099788303118, 0, 0), (-0.49295030175465254, 0.7120393247567139, 0.49999999999999994, 0), (0.28460498941515583, -0.41109609582188805, 0.8660254037844387, 0), (45.45, 17.35, 2.92, 1) ) (
+        aecoDerived = true
+       )
+       token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+        aecoDerived = true
+       )
+
+       over Mesh "Sector"
+       {
+        matrix4d xformOp:transform = ( (0.8221921916437762, 0.5692099788303118, 0, 0), (-0.49295030175465254, 0.7120393247567139, 0.49999999999999994, 0), (0.28460498941515583, -0.41109609582188805, 0.8660254037844387, 0), (45.45, 17.35, 2.92, 1) ) (
+         aecoDerived = true
+        )
+        token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+         aecoDerived = true
+        )
+       }
+
+       over Mesh "Shell_identify"
+       {
+        matrix4d xformOp:transform = ( (0.8221921916437762, 0.5692099788303118, 0, 0), (-0.49295030175465254, 0.7120393247567139, 0.49999999999999994, 0), (0.28460498941515583, -0.41109609582188805, 0.8660254037844387, 0), (45.45, 17.35, 2.92, 1) ) (
+         aecoDerived = true
+        )
+        token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+         aecoDerived = true
+        )
+       }
+
+       over Mesh "Shell_recognise"
+       {
+        matrix4d xformOp:transform = ( (0.8221921916437762, 0.5692099788303118, 0, 0), (-0.49295030175465254, 0.7120393247567139, 0.49999999999999994, 0), (0.28460498941515583, -0.41109609582188805, 0.8660254037844387, 0), (45.45, 17.35, 2.92, 1) ) (
+         aecoDerived = true
+        )
+        token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+         aecoDerived = true
+        )
+       }
+
+       over Mesh "Coverage_CriticalDoors"
+       {
+        matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (0, 0, 0, 1) ) (
+         aecoDerived = true
+        )
+        token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+         aecoDerived = true
+        )
+       }
+
+       over Mesh "Coverage_Privacy"
+       {
+        matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (0, 0, 0, 1) ) (
+         aecoDerived = true
+        )
+        token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+         aecoDerived = true
+        )
+       }
+      }
+     }
+
+     over "sec_cam_corr_corr_spine_1"
+     {
+      over Camera "Sensor_0"
+      {
+       matrix4d xformOp:transform = ( (2.220446049250313e-16, -1, 0, 0), (0.25881904510252096, 5.746937261686313e-17, 0.9659258262890682, 0), (-0.9659258262890682, -2.1447861848524057e-16, 0.25881904510252096, 0), (0.5, 16.5, 3.42, 1) ) (
+        aecoDerived = true
+       )
+       token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+        aecoDerived = true
+       )
+
+       over Mesh "Sector"
+       {
+        matrix4d xformOp:transform = ( (2.220446049250313e-16, -1, 0, 0), (0.25881904510252096, 5.746937261686313e-17, 0.9659258262890682, 0), (-0.9659258262890682, -2.1447861848524057e-16, 0.25881904510252096, 0), (0.5, 16.5, 3.42, 1) ) (
+         aecoDerived = true
+        )
+        token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+         aecoDerived = true
+        )
+       }
+
+       over Mesh "Shell_identify"
+       {
+        matrix4d xformOp:transform = ( (2.220446049250313e-16, -1, 0, 0), (0.25881904510252096, 5.746937261686313e-17, 0.9659258262890682, 0), (-0.9659258262890682, -2.1447861848524057e-16, 0.25881904510252096, 0), (0.5, 16.5, 3.42, 1) ) (
+         aecoDerived = true
+        )
+        token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+         aecoDerived = true
+        )
+       }
+
+       over Mesh "Shell_recognise"
+       {
+        matrix4d xformOp:transform = ( (2.220446049250313e-16, -1, 0, 0), (0.25881904510252096, 5.746937261686313e-17, 0.9659258262890682, 0), (-0.9659258262890682, -2.1447861848524057e-16, 0.25881904510252096, 0), (0.5, 16.5, 3.42, 1) ) (
+         aecoDerived = true
+        )
+        token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+         aecoDerived = true
+        )
+       }
+
+       over Mesh "Shell_observe"
+       {
+        matrix4d xformOp:transform = ( (2.220446049250313e-16, -1, 0, 0), (0.25881904510252096, 5.746937261686313e-17, 0.9659258262890682, 0), (-0.9659258262890682, -2.1447861848524057e-16, 0.25881904510252096, 0), (0.5, 16.5, 3.42, 1) ) (
+         aecoDerived = true
+        )
+        token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+         aecoDerived = true
+        )
+       }
+
+       over Mesh "Coverage_Privacy"
+       {
+        matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (0, 0, 0, 1) ) (
+         aecoDerived = true
+        )
+        token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+         aecoDerived = true
+        )
+       }
+      }
+     }
+
+     over "Iris_Scanner_door_elec_b"
+     {
+      over Xform "ComplianceEnvelope"
+      {
+       matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (0, 0, 0, 1) ) (
+        aecoDerived = true
+       )
+       token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+        aecoDerived = true
+       )
+
+       over Mesh "accessibility"
+       {
+        matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (0, 0, 0, 1) ) (
+         aecoDerived = true
+        )
+        token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+         aecoDerived = true
+        )
+       }
+
+       over Mesh "employer_security"
+       {
+        matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (0, 0, 0, 1) ) (
+         aecoDerived = true
+        )
+        token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+         aecoDerived = true
+        )
+       }
+
+       over Mesh "reader_datasheet"
+       {
+        matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (0, 0, 0, 1) ) (
+         aecoDerived = true
+        )
+        token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+         aecoDerived = true
+        )
+       }
+
+       over Mesh "Status"
+       {
+        matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (0, 0, 0, 1) ) (
+         aecoDerived = true
+        )
+        token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+         aecoDerived = true
+        )
+       }
+      }
+     }
+
+     over "Iris_Scanner_door_elec_a"
+     {
+      over Xform "ComplianceEnvelope"
+      {
+       matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (0, 0, 0, 1) ) (
+        aecoDerived = true
+       )
+       token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+        aecoDerived = true
+       )
+
+       over Mesh "accessibility"
+       {
+        matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (0, 0, 0, 1) ) (
+         aecoDerived = true
+        )
+        token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+         aecoDerived = true
+        )
+       }
+
+       over Mesh "employer_security"
+       {
+        matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (0, 0, 0, 1) ) (
+         aecoDerived = true
+        )
+        token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+         aecoDerived = true
+        )
+       }
+
+       over Mesh "reader_datasheet"
+       {
+        matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (0, 0, 0, 1) ) (
+         aecoDerived = true
+        )
+        token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+         aecoDerived = true
+        )
+       }
+
+       over Mesh "Status"
+       {
+        matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (0, 0, 0, 1) ) (
+         aecoDerived = true
+        )
+        token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+         aecoDerived = true
+        )
+       }
+      }
+     }
+
+     over "Iris_Scanner_door_mmr_2"
+     {
+      over Xform "ComplianceEnvelope"
+      {
+       matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (0, 0, 0, 1) ) (
+        aecoDerived = true
+       )
+       token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+        aecoDerived = true
+       )
+
+       over Mesh "accessibility"
+       {
+        matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (0, 0, 0, 1) ) (
+         aecoDerived = true
+        )
+        token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+         aecoDerived = true
+        )
+       }
+
+       over Mesh "employer_security"
+       {
+        matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (0, 0, 0, 1) ) (
+         aecoDerived = true
+        )
+        token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+         aecoDerived = true
+        )
+       }
+
+       over Mesh "reader_datasheet"
+       {
+        matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (0, 0, 0, 1) ) (
+         aecoDerived = true
+        )
+        token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+         aecoDerived = true
+        )
+       }
+
+       over Mesh "Status"
+       {
+        matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (0, 0, 0, 1) ) (
+         aecoDerived = true
+        )
+        token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+         aecoDerived = true
+        )
+       }
+      }
+     }
+
+     over "Iris_Scanner_door_hall_b_s"
+     {
+      over Xform "ComplianceEnvelope"
+      {
+       matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (0, 0, 0, 1) ) (
+        aecoDerived = true
+       )
+       token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+        aecoDerived = true
+       )
+
+       over Mesh "accessibility"
+       {
+        matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (0, 0, 0, 1) ) (
+         aecoDerived = true
+        )
+        token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+         aecoDerived = true
+        )
+       }
+
+       over Mesh "employer_security"
+       {
+        matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (0, 0, 0, 1) ) (
+         aecoDerived = true
+        )
+        token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+         aecoDerived = true
+        )
+       }
+
+       over Mesh "reader_datasheet"
+       {
+        matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (0, 0, 0, 1) ) (
+         aecoDerived = true
+        )
+        token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+         aecoDerived = true
+        )
+       }
+
+       over Mesh "Status"
+       {
+        matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (0, 0, 0, 1) ) (
+         aecoDerived = true
+        )
+        token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+         aecoDerived = true
+        )
+       }
+      }
+     }
+
+     over "Iris_Scanner_door_hall_a_s"
+     {
+      over Xform "ComplianceEnvelope"
+      {
+       matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (0, 0, 0, 1) ) (
+        aecoDerived = true
+       )
+       token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+        aecoDerived = true
+       )
+
+       over Mesh "accessibility"
+       {
+        matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (0, 0, 0, 1) ) (
+         aecoDerived = true
+        )
+        token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+         aecoDerived = true
+        )
+       }
+
+       over Mesh "employer_security"
+       {
+        matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (0, 0, 0, 1) ) (
+         aecoDerived = true
+        )
+        token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+         aecoDerived = true
+        )
+       }
+
+       over Mesh "reader_datasheet"
+       {
+        matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (0, 0, 0, 1) ) (
+         aecoDerived = true
+        )
+        token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+         aecoDerived = true
+        )
+       }
+
+       over Mesh "Status"
+       {
+        matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (0, 0, 0, 1) ) (
+         aecoDerived = true
+        )
+        token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+         aecoDerived = true
+        )
+       }
+      }
+     }
+    }
+
+    over "Corridor_South"
+    {
+     over "sec_cam_corr_corr_s_1"
+     {
+      over Camera "Sensor_0"
+      {
+       matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 0.25881904510252096, 0.9659258262890682, 0), (0, -0.9659258262890682, 0.25881904510252096, 0), (15, 0.5, 3.42, 1) ) (
+        aecoDerived = true
+       )
+       token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+        aecoDerived = true
+       )
+
+       over Mesh "Sector"
+       {
+        matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 0.25881904510252096, 0.9659258262890682, 0), (0, -0.9659258262890682, 0.25881904510252096, 0), (15, 0.5, 3.42, 1) ) (
+         aecoDerived = true
+        )
+        token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+         aecoDerived = true
+        )
+       }
+
+       over Mesh "Shell_identify"
+       {
+        matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 0.25881904510252096, 0.9659258262890682, 0), (0, -0.9659258262890682, 0.25881904510252096, 0), (15, 0.5, 3.42, 1) ) (
+         aecoDerived = true
+        )
+        token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+         aecoDerived = true
+        )
+       }
+
+       over Mesh "Shell_recognise"
+       {
+        matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 0.25881904510252096, 0.9659258262890682, 0), (0, -0.9659258262890682, 0.25881904510252096, 0), (15, 0.5, 3.42, 1) ) (
+         aecoDerived = true
+        )
+        token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+         aecoDerived = true
+        )
+       }
+
+       over Mesh "Shell_observe"
+       {
+        matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 0.25881904510252096, 0.9659258262890682, 0), (0, -0.9659258262890682, 0.25881904510252096, 0), (15, 0.5, 3.42, 1) ) (
+         aecoDerived = true
+        )
+        token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+         aecoDerived = true
+        )
+       }
+
+       over Mesh "Coverage_Privacy"
+       {
+        matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (0, 0, 0, 1) ) (
+         aecoDerived = true
+        )
+        token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+         aecoDerived = true
+        )
+       }
+      }
+     }
+
+     over "sec_cam_door_office_link"
+     {
+      over Camera "Sensor_0"
+      {
+       matrix4d xformOp:transform = ( (-0.8221921916437791, -0.5692099788303078, 0, 0), (0.4929503017546491, -0.7120393247567164, 0.49999999999999994, 0), (-0.28460498941515383, 0.4110960958218895, 0.8660254037844387, 0), (16.05, 0.6500000000000004, 2.92, 1) ) (
+        aecoDerived = true
+       )
+       token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+        aecoDerived = true
+       )
+
+       over Mesh "Sector"
+       {
+        matrix4d xformOp:transform = ( (-0.8221921916437791, -0.5692099788303078, 0, 0), (0.4929503017546491, -0.7120393247567164, 0.49999999999999994, 0), (-0.28460498941515383, 0.4110960958218895, 0.8660254037844387, 0), (16.05, 0.6500000000000004, 2.92, 1) ) (
+         aecoDerived = true
+        )
+        token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+         aecoDerived = true
+        )
+       }
+
+       over Mesh "Shell_identify"
+       {
+        matrix4d xformOp:transform = ( (-0.8221921916437791, -0.5692099788303078, 0, 0), (0.4929503017546491, -0.7120393247567164, 0.49999999999999994, 0), (-0.28460498941515383, 0.4110960958218895, 0.8660254037844387, 0), (16.05, 0.6500000000000004, 2.92, 1) ) (
+         aecoDerived = true
+        )
+        token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+         aecoDerived = true
+        )
+       }
+
+       over Mesh "Shell_recognise"
+       {
+        matrix4d xformOp:transform = ( (-0.8221921916437791, -0.5692099788303078, 0, 0), (0.4929503017546491, -0.7120393247567164, 0.49999999999999994, 0), (-0.28460498941515383, 0.4110960958218895, 0.8660254037844387, 0), (16.05, 0.6500000000000004, 2.92, 1) ) (
+         aecoDerived = true
+        )
+        token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+         aecoDerived = true
+        )
+       }
+
+       over Mesh "Coverage_CriticalDoors"
+       {
+        matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (0, 0, 0, 1) ) (
+         aecoDerived = true
+        )
+        token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+         aecoDerived = true
+        )
+       }
+
+       over Mesh "Coverage_Privacy"
+       {
+        matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (0, 0, 0, 1) ) (
+         aecoDerived = true
+        )
+        token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+         aecoDerived = true
+        )
+       }
+      }
+     }
+
+     over "sec_cam_corr_corr_s_2"
+     {
+      over Camera "Sensor_0"
+      {
+       matrix4d xformOp:transform = ( (-1, 1.2246467991473532e-16, 0, 0), (-3.1696191514317674e-17, -0.25881904510252096, 0.9659258262890682, 0), (1.1829179713786696e-16, 0.9659258262890682, 0.25881904510252096, 0), (15, 14.5, 3.42, 1) ) (
+        aecoDerived = true
+       )
+       token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+        aecoDerived = true
+       )
+
+       over Mesh "Sector"
+       {
+        matrix4d xformOp:transform = ( (-1, 1.2246467991473532e-16, 0, 0), (-3.1696191514317674e-17, -0.25881904510252096, 0.9659258262890682, 0), (1.1829179713786696e-16, 0.9659258262890682, 0.25881904510252096, 0), (15, 14.5, 3.42, 1) ) (
+         aecoDerived = true
+        )
+        token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+         aecoDerived = true
+        )
+       }
+
+       over Mesh "Shell_identify"
+       {
+        matrix4d xformOp:transform = ( (-1, 1.2246467991473532e-16, 0, 0), (-3.1696191514317674e-17, -0.25881904510252096, 0.9659258262890682, 0), (1.1829179713786696e-16, 0.9659258262890682, 0.25881904510252096, 0), (15, 14.5, 3.42, 1) ) (
+         aecoDerived = true
+        )
+        token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+         aecoDerived = true
+        )
+       }
+
+       over Mesh "Shell_recognise"
+       {
+        matrix4d xformOp:transform = ( (-1, 1.2246467991473532e-16, 0, 0), (-3.1696191514317674e-17, -0.25881904510252096, 0.9659258262890682, 0), (1.1829179713786696e-16, 0.9659258262890682, 0.25881904510252096, 0), (15, 14.5, 3.42, 1) ) (
+         aecoDerived = true
+        )
+        token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+         aecoDerived = true
+        )
+       }
+
+       over Mesh "Shell_observe"
+       {
+        matrix4d xformOp:transform = ( (-1, 1.2246467991473532e-16, 0, 0), (-3.1696191514317674e-17, -0.25881904510252096, 0.9659258262890682, 0), (1.1829179713786696e-16, 0.9659258262890682, 0.25881904510252096, 0), (15, 14.5, 3.42, 1) ) (
+         aecoDerived = true
+        )
+        token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+         aecoDerived = true
+        )
+       }
+
+       over Mesh "Coverage_Privacy"
+       {
+        matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (0, 0, 0, 1) ) (
+         aecoDerived = true
+        )
+        token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+         aecoDerived = true
+        )
+       }
+      }
+     }
+
+     over "sec_cam_door_mmr_1"
+     {
+      over Camera "Sensor_0"
+      {
+       matrix4d xformOp:transform = ( (0.5692099788303084, -0.8221921916437784, 0, 0), (0.7120393247567158, 0.49295030175464966, 0.49999999999999994, 0), (-0.41109609582188916, -0.28460498941515416, 0.8660254037844387, 0), (17.35, 9.55, 2.92, 1) ) (
+        aecoDerived = true
+       )
+       token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+        aecoDerived = true
+       )
+
+       over Mesh "Sector"
+       {
+        matrix4d xformOp:transform = ( (0.5692099788303084, -0.8221921916437784, 0, 0), (0.7120393247567158, 0.49295030175464966, 0.49999999999999994, 0), (-0.41109609582188916, -0.28460498941515416, 0.8660254037844387, 0), (17.35, 9.55, 2.92, 1) ) (
+         aecoDerived = true
+        )
+        token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+         aecoDerived = true
+        )
+       }
+
+       over Mesh "Shell_identify"
+       {
+        matrix4d xformOp:transform = ( (0.5692099788303084, -0.8221921916437784, 0, 0), (0.7120393247567158, 0.49295030175464966, 0.49999999999999994, 0), (-0.41109609582188916, -0.28460498941515416, 0.8660254037844387, 0), (17.35, 9.55, 2.92, 1) ) (
+         aecoDerived = true
+        )
+        token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+         aecoDerived = true
+        )
+       }
+
+       over Mesh "Shell_recognise"
+       {
+        matrix4d xformOp:transform = ( (0.5692099788303084, -0.8221921916437784, 0, 0), (0.7120393247567158, 0.49295030175464966, 0.49999999999999994, 0), (-0.41109609582188916, -0.28460498941515416, 0.8660254037844387, 0), (17.35, 9.55, 2.92, 1) ) (
+         aecoDerived = true
+        )
+        token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+         aecoDerived = true
+        )
+       }
+
+       over Mesh "Coverage_CriticalDoors"
+       {
+        matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (0, 0, 0, 1) ) (
+         aecoDerived = true
+        )
+        token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+         aecoDerived = true
+        )
+       }
+
+       over Mesh "Coverage_Privacy"
+       {
+        matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (0, 0, 0, 1) ) (
+         aecoDerived = true
+        )
+        token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+         aecoDerived = true
+        )
+       }
+      }
+     }
+
+     over "Iris_Scanner_door_office_link"
+     {
+      over Xform "ComplianceEnvelope"
+      {
+       matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (0, 0, 0, 1) ) (
+        aecoDerived = true
+       )
+       token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+        aecoDerived = true
+       )
+
+       over Mesh "accessibility"
+       {
+        matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (0, 0, 0, 1) ) (
+         aecoDerived = true
+        )
+        token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+         aecoDerived = true
+        )
+       }
+
+       over Mesh "employer_security"
+       {
+        matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (0, 0, 0, 1) ) (
+         aecoDerived = true
+        )
+        token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+         aecoDerived = true
+        )
+       }
+
+       over Mesh "reader_datasheet"
+       {
+        matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (0, 0, 0, 1) ) (
+         aecoDerived = true
+        )
+        token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+         aecoDerived = true
+        )
+       }
+
+       over Mesh "Status"
+       {
+        matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (0, 0, 0, 1) ) (
+         aecoDerived = true
+        )
+        token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+         aecoDerived = true
+        )
+       }
+      }
+     }
+
+     over "Iris_Scanner_door_mmr_1"
+     {
+      over Xform "ComplianceEnvelope"
+      {
+       matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (0, 0, 0, 1) ) (
+        aecoDerived = true
+       )
+       token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+        aecoDerived = true
+       )
+
+       over Mesh "accessibility"
+       {
+        matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (0, 0, 0, 1) ) (
+         aecoDerived = true
+        )
+        token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+         aecoDerived = true
+        )
+       }
+
+       over Mesh "employer_security"
+       {
+        matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (0, 0, 0, 1) ) (
+         aecoDerived = true
+        )
+        token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+         aecoDerived = true
+        )
+       }
+
+       over Mesh "reader_datasheet"
+       {
+        matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (0, 0, 0, 1) ) (
+         aecoDerived = true
+        )
+        token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+         aecoDerived = true
+        )
+       }
+
+       over Mesh "Status"
+       {
+        matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (0, 0, 0, 1) ) (
+         aecoDerived = true
+        )
+        token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+         aecoDerived = true
+        )
+       }
+      }
+     }
+    }
+
+    over "Corridor_Centre"
+    {
+     over "sec_cam_door_hall_b_w"
+     {
+      over Camera "Sensor_0"
+      {
+       matrix4d xformOp:transform = ( (0.5692099788303084, -0.8221921916437784, 0, 0), (0.7120393247567158, 0.49295030175464966, 0.49999999999999994, 0), (-0.41109609582188916, -0.28460498941515416, 0.8660254037844387, 0), (37.35, 26.55, 2.92, 1) ) (
+        aecoDerived = true
+       )
+       token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+        aecoDerived = true
+       )
+
+       over Mesh "Sector"
+       {
+        matrix4d xformOp:transform = ( (0.5692099788303084, -0.8221921916437784, 0, 0), (0.7120393247567158, 0.49295030175464966, 0.49999999999999994, 0), (-0.41109609582188916, -0.28460498941515416, 0.8660254037844387, 0), (37.35, 26.55, 2.92, 1) ) (
+         aecoDerived = true
+        )
+        token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+         aecoDerived = true
+        )
+       }
+
+       over Mesh "Shell_identify"
+       {
+        matrix4d xformOp:transform = ( (0.5692099788303084, -0.8221921916437784, 0, 0), (0.7120393247567158, 0.49295030175464966, 0.49999999999999994, 0), (-0.41109609582188916, -0.28460498941515416, 0.8660254037844387, 0), (37.35, 26.55, 2.92, 1) ) (
+         aecoDerived = true
+        )
+        token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+         aecoDerived = true
+        )
+       }
+
+       over Mesh "Shell_recognise"
+       {
+        matrix4d xformOp:transform = ( (0.5692099788303084, -0.8221921916437784, 0, 0), (0.7120393247567158, 0.49295030175464966, 0.49999999999999994, 0), (-0.41109609582188916, -0.28460498941515416, 0.8660254037844387, 0), (37.35, 26.55, 2.92, 1) ) (
+         aecoDerived = true
+        )
+        token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+         aecoDerived = true
+        )
+       }
+
+       over Mesh "Coverage_CriticalDoors"
+       {
+        matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (0, 0, 0, 1) ) (
+         aecoDerived = true
+        )
+        token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+         aecoDerived = true
+        )
+       }
+
+       over Mesh "Coverage_Privacy"
+       {
+        matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (0, 0, 0, 1) ) (
+         aecoDerived = true
+        )
+        token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+         aecoDerived = true
+        )
+       }
+      }
+     }
+
+     over "sec_cam_corr_corr_c_2"
+     {
+      over Camera "Sensor_0"
+      {
+       matrix4d xformOp:transform = ( (-1, 1.2246467991473532e-16, 0, 0), (-3.1696191514317674e-17, -0.25881904510252096, 0.9659258262890682, 0), (1.1829179713786696e-16, 0.9659258262890682, 0.25881904510252096, 0), (36, 35.5, 3.42, 1) ) (
+        aecoDerived = true
+       )
+       token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+        aecoDerived = true
+       )
+
+       over Mesh "Sector"
+       {
+        matrix4d xformOp:transform = ( (-1, 1.2246467991473532e-16, 0, 0), (-3.1696191514317674e-17, -0.25881904510252096, 0.9659258262890682, 0), (1.1829179713786696e-16, 0.9659258262890682, 0.25881904510252096, 0), (36, 35.5, 3.42, 1) ) (
+         aecoDerived = true
+        )
+        token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+         aecoDerived = true
+        )
+       }
+
+       over Mesh "Shell_identify"
+       {
+        matrix4d xformOp:transform = ( (-1, 1.2246467991473532e-16, 0, 0), (-3.1696191514317674e-17, -0.25881904510252096, 0.9659258262890682, 0), (1.1829179713786696e-16, 0.9659258262890682, 0.25881904510252096, 0), (36, 35.5, 3.42, 1) ) (
+         aecoDerived = true
+        )
+        token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+         aecoDerived = true
+        )
+       }
+
+       over Mesh "Shell_recognise"
+       {
+        matrix4d xformOp:transform = ( (-1, 1.2246467991473532e-16, 0, 0), (-3.1696191514317674e-17, -0.25881904510252096, 0.9659258262890682, 0), (1.1829179713786696e-16, 0.9659258262890682, 0.25881904510252096, 0), (36, 35.5, 3.42, 1) ) (
+         aecoDerived = true
+        )
+        token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+         aecoDerived = true
+        )
+       }
+
+       over Mesh "Shell_observe"
+       {
+        matrix4d xformOp:transform = ( (-1, 1.2246467991473532e-16, 0, 0), (-3.1696191514317674e-17, -0.25881904510252096, 0.9659258262890682, 0), (1.1829179713786696e-16, 0.9659258262890682, 0.25881904510252096, 0), (36, 35.5, 3.42, 1) ) (
+         aecoDerived = true
+        )
+        token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+         aecoDerived = true
+        )
+       }
+
+       over Mesh "Coverage_Privacy"
+       {
+        matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (0, 0, 0, 1) ) (
+         aecoDerived = true
+        )
+        token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+         aecoDerived = true
+        )
+       }
+      }
+     }
+
+     over "sec_cam_door_hall_a_e"
+     {
+      over Camera "Sensor_0"
+      {
+       matrix4d xformOp:transform = ( (-0.5692099788303087, 0.8221921916437784, 0, 0), (-0.7120393247567158, -0.4929503017546499, 0.49999999999999994, 0), (0.41109609582188916, 0.2846049894151543, 0.8660254037844387, 0), (34.65, 27.45, 2.92, 1) ) (
+        aecoDerived = true
+       )
+       token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+        aecoDerived = true
+       )
+
+       over Mesh "Sector"
+       {
+        matrix4d xformOp:transform = ( (-0.5692099788303087, 0.8221921916437784, 0, 0), (-0.7120393247567158, -0.4929503017546499, 0.49999999999999994, 0), (0.41109609582188916, 0.2846049894151543, 0.8660254037844387, 0), (34.65, 27.45, 2.92, 1) ) (
+         aecoDerived = true
+        )
+        token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+         aecoDerived = true
+        )
+       }
+
+       over Mesh "Shell_identify"
+       {
+        matrix4d xformOp:transform = ( (-0.5692099788303087, 0.8221921916437784, 0, 0), (-0.7120393247567158, -0.4929503017546499, 0.49999999999999994, 0), (0.41109609582188916, 0.2846049894151543, 0.8660254037844387, 0), (34.65, 27.45, 2.92, 1) ) (
+         aecoDerived = true
+        )
+        token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+         aecoDerived = true
+        )
+       }
+
+       over Mesh "Shell_recognise"
+       {
+        matrix4d xformOp:transform = ( (-0.5692099788303087, 0.8221921916437784, 0, 0), (-0.7120393247567158, -0.4929503017546499, 0.49999999999999994, 0), (0.41109609582188916, 0.2846049894151543, 0.8660254037844387, 0), (34.65, 27.45, 2.92, 1) ) (
+         aecoDerived = true
+        )
+        token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+         aecoDerived = true
+        )
+       }
+
+       over Mesh "Coverage_CriticalDoors"
+       {
+        matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (0, 0, 0, 1) ) (
+         aecoDerived = true
+        )
+        token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+         aecoDerived = true
+        )
+       }
+
+       over Mesh "Coverage_Privacy"
+       {
+        matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (0, 0, 0, 1) ) (
+         aecoDerived = true
+        )
+        token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+         aecoDerived = true
+        )
+       }
+      }
+     }
+
+     over "sec_cam_corr_corr_c_1"
+     {
+      over Camera "Sensor_0"
+      {
+       matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 0.25881904510252096, 0.9659258262890682, 0), (0, -0.9659258262890682, 0.25881904510252096, 0), (36, 18.5, 3.42, 1) ) (
+        aecoDerived = true
+       )
+       token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+        aecoDerived = true
+       )
+
+       over Mesh "Sector"
+       {
+        matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 0.25881904510252096, 0.9659258262890682, 0), (0, -0.9659258262890682, 0.25881904510252096, 0), (36, 18.5, 3.42, 1) ) (
+         aecoDerived = true
+        )
+        token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+         aecoDerived = true
+        )
+       }
+
+       over Mesh "Shell_identify"
+       {
+        matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 0.25881904510252096, 0.9659258262890682, 0), (0, -0.9659258262890682, 0.25881904510252096, 0), (36, 18.5, 3.42, 1) ) (
+         aecoDerived = true
+        )
+        token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+         aecoDerived = true
+        )
+       }
+
+       over Mesh "Shell_recognise"
+       {
+        matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 0.25881904510252096, 0.9659258262890682, 0), (0, -0.9659258262890682, 0.25881904510252096, 0), (36, 18.5, 3.42, 1) ) (
+         aecoDerived = true
+        )
+        token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+         aecoDerived = true
+        )
+       }
+
+       over Mesh "Shell_observe"
+       {
+        matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 0.25881904510252096, 0.9659258262890682, 0), (0, -0.9659258262890682, 0.25881904510252096, 0), (36, 18.5, 3.42, 1) ) (
+         aecoDerived = true
+        )
+        token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+         aecoDerived = true
+        )
+       }
+
+       over Mesh "Coverage_Privacy"
+       {
+        matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (0, 0, 0, 1) ) (
+         aecoDerived = true
+        )
+        token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+         aecoDerived = true
+        )
+       }
+      }
+     }
+
+     over "Iris_Scanner_door_hall_b_w"
+     {
+      over Xform "ComplianceEnvelope"
+      {
+       matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (0, 0, 0, 1) ) (
+        aecoDerived = true
+       )
+       token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+        aecoDerived = true
+       )
+
+       over Mesh "accessibility"
+       {
+        matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (0, 0, 0, 1) ) (
+         aecoDerived = true
+        )
+        token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+         aecoDerived = true
+        )
+       }
+
+       over Mesh "employer_security"
+       {
+        matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (0, 0, 0, 1) ) (
+         aecoDerived = true
+        )
+        token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+         aecoDerived = true
+        )
+       }
+
+       over Mesh "reader_datasheet"
+       {
+        matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (0, 0, 0, 1) ) (
+         aecoDerived = true
+        )
+        token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+         aecoDerived = true
+        )
+       }
+
+       over Mesh "Status"
+       {
+        matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (0, 0, 0, 1) ) (
+         aecoDerived = true
+        )
+        token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+         aecoDerived = true
+        )
+       }
+      }
+     }
+
+     over "Iris_Scanner_door_hall_a_e"
+     {
+      over Xform "ComplianceEnvelope"
+      {
+       matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (0, 0, 0, 1) ) (
+        aecoDerived = true
+       )
+       token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+        aecoDerived = true
+       )
+
+       over Mesh "accessibility"
+       {
+        matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (0, 0, 0, 1) ) (
+         aecoDerived = true
+        )
+        token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+         aecoDerived = true
+        )
+       }
+
+       over Mesh "employer_security"
+       {
+        matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (0, 0, 0, 1) ) (
+         aecoDerived = true
+        )
+        token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+         aecoDerived = true
+        )
+       }
+
+       over Mesh "reader_datasheet"
+       {
+        matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (0, 0, 0, 1) ) (
+         aecoDerived = true
+        )
+        token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+         aecoDerived = true
+        )
+       }
+
+       over Mesh "Status"
+       {
+        matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (0, 0, 0, 1) ) (
+         aecoDerived = true
+        )
+        token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+         aecoDerived = true
+        )
+       }
+      }
+     }
+    }
+
+    over "Corridor_West"
+    {
+     over "sec_cam_door_hall_a_w"
+     {
+      over Camera "Sensor_0"
+      {
+       matrix4d xformOp:transform = ( (0.5692099788303078, -0.822192191643779, 0, 0), (0.7120393247567163, 0.4929503017546491, 0.49999999999999994, 0), (-0.41109609582188944, -0.28460498941515383, 0.8660254037844387, 0), (3.35, 26.55, 2.92, 1) ) (
+        aecoDerived = true
+       )
+       token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+        aecoDerived = true
+       )
+
+       over Mesh "Sector"
+       {
+        matrix4d xformOp:transform = ( (0.5692099788303078, -0.822192191643779, 0, 0), (0.7120393247567163, 0.4929503017546491, 0.49999999999999994, 0), (-0.41109609582188944, -0.28460498941515383, 0.8660254037844387, 0), (3.35, 26.55, 2.92, 1) ) (
+         aecoDerived = true
+        )
+        token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+         aecoDerived = true
+        )
+       }
+
+       over Mesh "Shell_identify"
+       {
+        matrix4d xformOp:transform = ( (0.5692099788303078, -0.822192191643779, 0, 0), (0.7120393247567163, 0.4929503017546491, 0.49999999999999994, 0), (-0.41109609582188944, -0.28460498941515383, 0.8660254037844387, 0), (3.35, 26.55, 2.92, 1) ) (
+         aecoDerived = true
+        )
+        token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+         aecoDerived = true
+        )
+       }
+
+       over Mesh "Shell_recognise"
+       {
+        matrix4d xformOp:transform = ( (0.5692099788303078, -0.822192191643779, 0, 0), (0.7120393247567163, 0.4929503017546491, 0.49999999999999994, 0), (-0.41109609582188944, -0.28460498941515383, 0.8660254037844387, 0), (3.35, 26.55, 2.92, 1) ) (
+         aecoDerived = true
+        )
+        token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+         aecoDerived = true
+        )
+       }
+
+       over Mesh "Coverage_CriticalDoors"
+       {
+        matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (0, 0, 0, 1) ) (
+         aecoDerived = true
+        )
+        token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+         aecoDerived = true
+        )
+       }
+
+       over Mesh "Coverage_Privacy"
+       {
+        matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (0, 0, 0, 1) ) (
+         aecoDerived = true
+        )
+        token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+         aecoDerived = true
+        )
+       }
+      }
+     }
+
+     over "sec_cam_corr_corr_w_1"
+     {
+      over Camera "Sensor_0"
+      {
+       matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 0.25881904510252096, 0.9659258262890682, 0), (0, -0.9659258262890682, 0.25881904510252096, 0), (2, 18.5, 3.42, 1) ) (
+        aecoDerived = true
+       )
+       token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+        aecoDerived = true
+       )
+
+       over Mesh "Sector"
+       {
+        matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 0.25881904510252096, 0.9659258262890682, 0), (0, -0.9659258262890682, 0.25881904510252096, 0), (2, 18.5, 3.42, 1) ) (
+         aecoDerived = true
+        )
+        token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+         aecoDerived = true
+        )
+       }
+
+       over Mesh "Shell_identify"
+       {
+        matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 0.25881904510252096, 0.9659258262890682, 0), (0, -0.9659258262890682, 0.25881904510252096, 0), (2, 18.5, 3.42, 1) ) (
+         aecoDerived = true
+        )
+        token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+         aecoDerived = true
+        )
+       }
+
+       over Mesh "Shell_recognise"
+       {
+        matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 0.25881904510252096, 0.9659258262890682, 0), (0, -0.9659258262890682, 0.25881904510252096, 0), (2, 18.5, 3.42, 1) ) (
+         aecoDerived = true
+        )
+        token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+         aecoDerived = true
+        )
+       }
+
+       over Mesh "Shell_observe"
+       {
+        matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 0.25881904510252096, 0.9659258262890682, 0), (0, -0.9659258262890682, 0.25881904510252096, 0), (2, 18.5, 3.42, 1) ) (
+         aecoDerived = true
+        )
+        token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+         aecoDerived = true
+        )
+       }
+
+       over Mesh "Coverage_Privacy"
+       {
+        matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (0, 0, 0, 1) ) (
+         aecoDerived = true
+        )
+        token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+         aecoDerived = true
+        )
+       }
+      }
+     }
+
+     over "sec_cam_corr_corr_w_2"
+     {
+      over Camera "Sensor_0"
+      {
+       matrix4d xformOp:transform = ( (-1, 1.2246467991473532e-16, 0, 0), (-3.1696191514317674e-17, -0.25881904510252096, 0.9659258262890682, 0), (1.1829179713786696e-16, 0.9659258262890682, 0.25881904510252096, 0), (2, 35.5, 3.42, 1) ) (
+        aecoDerived = true
+       )
+       token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+        aecoDerived = true
+       )
+
+       over Mesh "Sector"
+       {
+        matrix4d xformOp:transform = ( (-1, 1.2246467991473532e-16, 0, 0), (-3.1696191514317674e-17, -0.25881904510252096, 0.9659258262890682, 0), (1.1829179713786696e-16, 0.9659258262890682, 0.25881904510252096, 0), (2, 35.5, 3.42, 1) ) (
+         aecoDerived = true
+        )
+        token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+         aecoDerived = true
+        )
+       }
+
+       over Mesh "Shell_identify"
+       {
+        matrix4d xformOp:transform = ( (-1, 1.2246467991473532e-16, 0, 0), (-3.1696191514317674e-17, -0.25881904510252096, 0.9659258262890682, 0), (1.1829179713786696e-16, 0.9659258262890682, 0.25881904510252096, 0), (2, 35.5, 3.42, 1) ) (
+         aecoDerived = true
+        )
+        token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+         aecoDerived = true
+        )
+       }
+
+       over Mesh "Shell_recognise"
+       {
+        matrix4d xformOp:transform = ( (-1, 1.2246467991473532e-16, 0, 0), (-3.1696191514317674e-17, -0.25881904510252096, 0.9659258262890682, 0), (1.1829179713786696e-16, 0.9659258262890682, 0.25881904510252096, 0), (2, 35.5, 3.42, 1) ) (
+         aecoDerived = true
+        )
+        token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+         aecoDerived = true
+        )
+       }
+
+       over Mesh "Shell_observe"
+       {
+        matrix4d xformOp:transform = ( (-1, 1.2246467991473532e-16, 0, 0), (-3.1696191514317674e-17, -0.25881904510252096, 0.9659258262890682, 0), (1.1829179713786696e-16, 0.9659258262890682, 0.25881904510252096, 0), (2, 35.5, 3.42, 1) ) (
+         aecoDerived = true
+        )
+        token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+         aecoDerived = true
+        )
+       }
+
+       over Mesh "Coverage_Privacy"
+       {
+        matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (0, 0, 0, 1) ) (
+         aecoDerived = true
+        )
+        token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+         aecoDerived = true
+        )
+       }
+      }
+     }
+
+     over "Iris_Scanner_door_hall_a_w"
+     {
+      over Xform "ComplianceEnvelope"
+      {
+       matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (0, 0, 0, 1) ) (
+        aecoDerived = true
+       )
+       token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+        aecoDerived = true
+       )
+
+       over Mesh "accessibility"
+       {
+        matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (0, 0, 0, 1) ) (
+         aecoDerived = true
+        )
+        token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+         aecoDerived = true
+        )
+       }
+
+       over Mesh "employer_security"
+       {
+        matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (0, 0, 0, 1) ) (
+         aecoDerived = true
+        )
+        token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+         aecoDerived = true
+        )
+       }
+
+       over Mesh "reader_datasheet"
+       {
+        matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (0, 0, 0, 1) ) (
+         aecoDerived = true
+        )
+        token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+         aecoDerived = true
+        )
+       }
+
+       over Mesh "Status"
+       {
+        matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (0, 0, 0, 1) ) (
+         aecoDerived = true
+        )
+        token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+         aecoDerived = true
+        )
+       }
+      }
+     }
+    }
+
+    over "Entrance_Lobby"
+    {
+     over "sec_cam_lobby"
+     {
+      over Camera "Sensor_0"
+      {
+       matrix4d xformOp:transform = ( (-0.8479983040050878, -0.5299989400031805, 0, 0), (0.1796971899168188, -0.2875155038669097, 0.9407676413292263, 0), (-0.4986058526937822, 0.7977693643100506, 0.3390519798317718, 0), (12.5, -3.5, 3.3, 1) ) (
+        aecoDerived = true
+       )
+       matrix4d xformOp:transform.timeSamples = {
+        0: ( (-0.8479983040050878, -0.5299989400031805, 0, 0), (0.1796971899168188, -0.2875155038669097, 0.9407676413292263, 0), (-0.4986058526937822, 0.7977693643100506, 0.3390519798317718, 0), (12.5, -3.5, 3.3, 1) ),
+        84: ( (-0.8479983040050878, -0.5299989400031805, 0, 0), (0.1796971899168188, -0.2875155038669097, 0.9407676413292263, 0), (-0.4986058526937822, 0.7977693643100506, 0.3390519798317718, 0), (12.5, -3.5, 3.3, 1) ),
+        96: ( (-0.9593655015712705, -0.2821663239915504, 0, 0), (0.05317023471089933, -0.18077879801705757, 0.9820855117189622, 0), (-0.27711145868710024, 0.9421789595361401, 0.18843579190722823, 0), (12.5, -3.5, 3.3, 1) ),
+        180: ( (-0.9593655015712705, -0.2821663239915504, 0, 0), (0.05317023471089933, -0.18077879801705757, 0.9820855117189622, 0), (-0.27711145868710024, 0.9421789595361401, 0.18843579190722823, 0), (12.5, -3.5, 3.3, 1) ),
+        192: ( (0.124034734589208, -0.992277876713668, 0, 0), (0.38557712728261573, 0.04819714091032677, 0.9214159291680146, 0), (-0.914300641764989, -0.11428758022062317, 0.38857777275012045, 0), (12.5, -3.5, 3.3, 1) ),
+        276: ( (0.124034734589208, -0.992277876713668, 0, 0), (0.38557712728261573, 0.04819714091032677, 0.9214159291680146, 0), (-0.914300641764989, -0.11428758022062317, 0.38857777275012045, 0), (12.5, -3.5, 3.3, 1) ),
+        288: ( (-0.8479983040050878, -0.5299989400031805, 0, 0), (0.1796971899168188, -0.2875155038669097, 0.9407676413292263, 0), (-0.4986058526937822, 0.7977693643100506, 0.3390519798317718, 0), (12.5, -3.5, 3.3, 1) ),
+       }
+       token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+        aecoDerived = true
+       )
+
+       over Mesh "Sector"
+       {
+        matrix4d xformOp:transform = ( (-0.8479983040050878, -0.5299989400031805, 0, 0), (0.1796971899168188, -0.2875155038669097, 0.9407676413292263, 0), (-0.4986058526937822, 0.7977693643100506, 0.3390519798317718, 0), (12.5, -3.5, 3.3, 1) ) (
+         aecoDerived = true
+        )
+        matrix4d xformOp:transform.timeSamples = {
+         0: ( (-0.8479983040050878, -0.5299989400031805, 0, 0), (0.1796971899168188, -0.2875155038669097, 0.9407676413292263, 0), (-0.4986058526937822, 0.7977693643100506, 0.3390519798317718, 0), (12.5, -3.5, 3.3, 1) ),
+         84: ( (-0.8479983040050878, -0.5299989400031805, 0, 0), (0.1796971899168188, -0.2875155038669097, 0.9407676413292263, 0), (-0.4986058526937822, 0.7977693643100506, 0.3390519798317718, 0), (12.5, -3.5, 3.3, 1) ),
+         96: ( (-0.9593655015712705, -0.2821663239915504, 0, 0), (0.05317023471089933, -0.18077879801705757, 0.9820855117189622, 0), (-0.27711145868710024, 0.9421789595361401, 0.18843579190722823, 0), (12.5, -3.5, 3.3, 1) ),
+         180: ( (-0.9593655015712705, -0.2821663239915504, 0, 0), (0.05317023471089933, -0.18077879801705757, 0.9820855117189622, 0), (-0.27711145868710024, 0.9421789595361401, 0.18843579190722823, 0), (12.5, -3.5, 3.3, 1) ),
+         192: ( (0.124034734589208, -0.992277876713668, 0, 0), (0.38557712728261573, 0.04819714091032677, 0.9214159291680146, 0), (-0.914300641764989, -0.11428758022062317, 0.38857777275012045, 0), (12.5, -3.5, 3.3, 1) ),
+         276: ( (0.124034734589208, -0.992277876713668, 0, 0), (0.38557712728261573, 0.04819714091032677, 0.9214159291680146, 0), (-0.914300641764989, -0.11428758022062317, 0.38857777275012045, 0), (12.5, -3.5, 3.3, 1) ),
+         288: ( (-0.8479983040050878, -0.5299989400031805, 0, 0), (0.1796971899168188, -0.2875155038669097, 0.9407676413292263, 0), (-0.4986058526937822, 0.7977693643100506, 0.3390519798317718, 0), (12.5, -3.5, 3.3, 1) ),
+        }
+        token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+         aecoDerived = true
+        )
+       }
+
+       over Mesh "Shell_identify"
+       {
+        matrix4d xformOp:transform = ( (-0.8479983040050878, -0.5299989400031805, 0, 0), (0.1796971899168188, -0.2875155038669097, 0.9407676413292263, 0), (-0.4986058526937822, 0.7977693643100506, 0.3390519798317718, 0), (12.5, -3.5, 3.3, 1) ) (
+         aecoDerived = true
+        )
+        matrix4d xformOp:transform.timeSamples = {
+         0: ( (-0.8479983040050878, -0.5299989400031805, 0, 0), (0.1796971899168188, -0.2875155038669097, 0.9407676413292263, 0), (-0.4986058526937822, 0.7977693643100506, 0.3390519798317718, 0), (12.5, -3.5, 3.3, 1) ),
+         84: ( (-0.8479983040050878, -0.5299989400031805, 0, 0), (0.1796971899168188, -0.2875155038669097, 0.9407676413292263, 0), (-0.4986058526937822, 0.7977693643100506, 0.3390519798317718, 0), (12.5, -3.5, 3.3, 1) ),
+         96: ( (-0.9593655015712705, -0.2821663239915504, 0, 0), (0.05317023471089933, -0.18077879801705757, 0.9820855117189622, 0), (-0.27711145868710024, 0.9421789595361401, 0.18843579190722823, 0), (12.5, -3.5, 3.3, 1) ),
+         180: ( (-0.9593655015712705, -0.2821663239915504, 0, 0), (0.05317023471089933, -0.18077879801705757, 0.9820855117189622, 0), (-0.27711145868710024, 0.9421789595361401, 0.18843579190722823, 0), (12.5, -3.5, 3.3, 1) ),
+         192: ( (0.124034734589208, -0.992277876713668, 0, 0), (0.38557712728261573, 0.04819714091032677, 0.9214159291680146, 0), (-0.914300641764989, -0.11428758022062317, 0.38857777275012045, 0), (12.5, -3.5, 3.3, 1) ),
+         276: ( (0.124034734589208, -0.992277876713668, 0, 0), (0.38557712728261573, 0.04819714091032677, 0.9214159291680146, 0), (-0.914300641764989, -0.11428758022062317, 0.38857777275012045, 0), (12.5, -3.5, 3.3, 1) ),
+         288: ( (-0.8479983040050878, -0.5299989400031805, 0, 0), (0.1796971899168188, -0.2875155038669097, 0.9407676413292263, 0), (-0.4986058526937822, 0.7977693643100506, 0.3390519798317718, 0), (12.5, -3.5, 3.3, 1) ),
+        }
+        token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+         aecoDerived = true
+        )
+       }
+
+       over Mesh "Envelope"
+       {
+        matrix4d xformOp:transform = ( (0.9999999999999999, -5.551115123125783e-17, 0, 0), (5.551115123125783e-17, 1, 0, 0), (0, 0, 1, 0), (12.5, -3.5, 3.3, 1) ) (
+         aecoDerived = true
+        )
+        matrix4d xformOp:transform.timeSamples = {
+         0: ( (0.9999999999999999, -5.551115123125783e-17, 0, 0), (5.551115123125783e-17, 1, 0, 0), (0, 0, 1, 0), (12.5, -3.5, 3.3, 1) ),
+         84: ( (0.9999999999999999, -5.551115123125783e-17, 0, 0), (5.551115123125783e-17, 1, 0, 0), (0, 0, 1, 0), (12.5, -3.5, 3.3, 1) ),
+         96: ( (1, 0, 0, 0), (0, 1, 0, 0), (6.938893903907228e-18, 0, 1, 0), (12.5, -3.5, 3.3, 1) ),
+         180: ( (1, 0, 0, 0), (0, 1, 0, 0), (6.938893903907228e-18, 0, 1, 0), (12.5, -3.5, 3.3, 1) ),
+         192: ( (0.9999999999999999, 1.3877787807814457e-17, 0, 0), (1.3877787807814457e-17, 0.9999999999999999, -6.938893903907228e-18, 0), (0, -6.938893903907228e-18, 0.9999999999999998, 0), (12.499999999999996, -3.499999999999999, 3.299999999999999, 0.9999999999999998) ),
+         276: ( (0.9999999999999999, 1.3877787807814457e-17, 0, 0), (1.3877787807814457e-17, 0.9999999999999999, -6.938893903907228e-18, 0), (0, -6.938893903907228e-18, 0.9999999999999998, 0), (12.499999999999996, -3.499999999999999, 3.299999999999999, 0.9999999999999998) ),
+         288: ( (0.9999999999999999, -5.551115123125783e-17, 0, 0), (5.551115123125783e-17, 1, 0, 0), (0, 0, 1, 0), (12.5, -3.5, 3.3, 1) ),
+        }
+        token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+         aecoDerived = true
+        )
+       }
+
+       over Mesh "Coverage_Privacy_Home"
+       {
+        matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (0, 0, 0, 1) ) (
+         aecoDerived = true
+        )
+        matrix4d xformOp:transform.timeSamples = {
+         0: ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (0, 0, 0, 1) ),
+         84: ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (0, 0, 0, 1) ),
+         96: ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (0, 0, 0, 1) ),
+         180: ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (0, 0, 0, 1) ),
+         192: ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (0, 0, 0, 1) ),
+         276: ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (0, 0, 0, 1) ),
+         288: ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (0, 0, 0, 1) ),
+        }
+        token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+         aecoDerived = true
+        )
+       }
+
+       over Mesh "Coverage_Privacy_LobbyCorridor"
+       {
+        matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (0, 0, 0, 1) ) (
+         aecoDerived = true
+        )
+        matrix4d xformOp:transform.timeSamples = {
+         0: ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (0, 0, 0, 1) ),
+         84: ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (0, 0, 0, 1) ),
+         96: ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (0, 0, 0, 1) ),
+         180: ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (0, 0, 0, 1) ),
+         192: ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (0, 0, 0, 1) ),
+         276: ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (0, 0, 0, 1) ),
+         288: ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (0, 0, 0, 1) ),
+        }
+        token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+         aecoDerived = true
+        )
+       }
+
+       over Mesh "Coverage_Privacy_MainDoor"
+       {
+        matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (0, 0, 0, 1) ) (
+         aecoDerived = true
+        )
+        matrix4d xformOp:transform.timeSamples = {
+         0: ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (0, 0, 0, 1) ),
+         84: ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (0, 0, 0, 1) ),
+         96: ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (0, 0, 0, 1) ),
+         180: ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (0, 0, 0, 1) ),
+         192: ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (0, 0, 0, 1) ),
+         276: ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (0, 0, 0, 1) ),
+         288: ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (0, 0, 0, 1) ),
+        }
+        token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+         aecoDerived = true
+        )
+       }
+      }
+
+      over BrepArray "BodyExact"
+      {
+       matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (12.5, -3.5, 3.3, 1) ) (
+        aecoDerived = true
+       )
+       token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+        aecoDerived = true
+       )
+      }
+
+      over Mesh "Body"
+      {
+       matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (12.5, -3.5, 3.3, 1) ) (
+        aecoDerived = true
+       )
+       token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+        aecoDerived = true
+       )
+      }
+
+      over BasisCurves "Edges"
+      {
+       matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (12.5, -3.5, 3.3, 1) ) (
+        aecoDerived = true
+       )
+       token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+        aecoDerived = true
+       )
+      }
+     }
+
+     over "sec_cam_lobby_fixed_1"
+     {
+      over Camera "Sensor_0"
+      {
+       matrix4d xformOp:transform = ( (0.8411784753765537, -0.5407575913134987, 0, 0), (0.22853403326399846, 0.35549738507733103, 0.9063077870366498, 0), (-0.4900928159066061, -0.7623666025213874, 0.42261826174069966, 0), (12.3, -11.7, 3.2199999999999998, 1) ) (
+        aecoDerived = true
+       )
+       token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+        aecoDerived = true
+       )
+
+       over Mesh "Sector"
+       {
+        matrix4d xformOp:transform = ( (0.8411784753765537, -0.5407575913134987, 0, 0), (0.22853403326399846, 0.35549738507733103, 0.9063077870366498, 0), (-0.4900928159066061, -0.7623666025213874, 0.42261826174069966, 0), (12.3, -11.7, 3.2199999999999998, 1) ) (
+         aecoDerived = true
+        )
+        token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+         aecoDerived = true
+        )
+       }
+
+       over Mesh "Shell_identify"
+       {
+        matrix4d xformOp:transform = ( (0.8411784753765537, -0.5407575913134987, 0, 0), (0.22853403326399846, 0.35549738507733103, 0.9063077870366498, 0), (-0.4900928159066061, -0.7623666025213874, 0.42261826174069966, 0), (12.3, -11.7, 3.2199999999999998, 1) ) (
+         aecoDerived = true
+        )
+        token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+         aecoDerived = true
+        )
+       }
+
+       over Mesh "Shell_recognise"
+       {
+        matrix4d xformOp:transform = ( (0.8411784753765537, -0.5407575913134987, 0, 0), (0.22853403326399846, 0.35549738507733103, 0.9063077870366498, 0), (-0.4900928159066061, -0.7623666025213874, 0.42261826174069966, 0), (12.3, -11.7, 3.2199999999999998, 1) ) (
+         aecoDerived = true
+        )
+        token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+         aecoDerived = true
+        )
+       }
+
+       over Mesh "Coverage_Privacy"
+       {
+        matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (0, 0, 0, 1) ) (
+         aecoDerived = true
+        )
+        token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+         aecoDerived = true
+        )
+       }
+      }
+
+      over BrepArray "BodyExact"
+      {
+       matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (12.3, -11.7, 3.3, 1) ) (
+        aecoDerived = true
+       )
+       token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+        aecoDerived = true
+       )
+      }
+
+      over Mesh "Body"
+      {
+       matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (12.3, -11.7, 3.3, 1) ) (
+        aecoDerived = true
+       )
+       token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+        aecoDerived = true
+       )
+      }
+
+      over BasisCurves "Edges"
+      {
+       matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (12.3, -11.7, 3.3, 1) ) (
+        aecoDerived = true
+       )
+       token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+        aecoDerived = true
+       )
+      }
+     }
+
+     over "sec_cam_lobby_fixed_2"
+     {
+      over Camera "Sensor_0"
+      {
+       matrix4d xformOp:transform = ( (-0.8411784753765541, 0.5407575913134982, 0, 0), (-0.2285340332639983, -0.35549738507733125, 0.9063077870366498, 0), (0.49009281590660564, 0.7623666025213878, 0.42261826174069966, 0), (17.7, -3.3000000000000007, 3.2199999999999998, 1) ) (
+        aecoDerived = true
+       )
+       token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+        aecoDerived = true
+       )
+
+       over Mesh "Sector"
+       {
+        matrix4d xformOp:transform = ( (-0.8411784753765541, 0.5407575913134982, 0, 0), (-0.2285340332639983, -0.35549738507733125, 0.9063077870366498, 0), (0.49009281590660564, 0.7623666025213878, 0.42261826174069966, 0), (17.7, -3.3000000000000007, 3.2199999999999998, 1) ) (
+         aecoDerived = true
+        )
+        token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+         aecoDerived = true
+        )
+       }
+
+       over Mesh "Shell_identify"
+       {
+        matrix4d xformOp:transform = ( (-0.8411784753765541, 0.5407575913134982, 0, 0), (-0.2285340332639983, -0.35549738507733125, 0.9063077870366498, 0), (0.49009281590660564, 0.7623666025213878, 0.42261826174069966, 0), (17.7, -3.3000000000000007, 3.2199999999999998, 1) ) (
+         aecoDerived = true
+        )
+        token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+         aecoDerived = true
+        )
+       }
+
+       over Mesh "Shell_recognise"
+       {
+        matrix4d xformOp:transform = ( (-0.8411784753765541, 0.5407575913134982, 0, 0), (-0.2285340332639983, -0.35549738507733125, 0.9063077870366498, 0), (0.49009281590660564, 0.7623666025213878, 0.42261826174069966, 0), (17.7, -3.3000000000000007, 3.2199999999999998, 1) ) (
+         aecoDerived = true
+        )
+        token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+         aecoDerived = true
+        )
+       }
+
+       over Mesh "Coverage_Privacy"
+       {
+        matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (0, 0, 0, 1) ) (
+         aecoDerived = true
+        )
+        token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+         aecoDerived = true
+        )
+       }
+      }
+
+      over BrepArray "BodyExact"
+      {
+       matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (17.7, -3.3000000000000007, 3.3, 1) ) (
+        aecoDerived = true
+       )
+       token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+        aecoDerived = true
+       )
+      }
+
+      over Mesh "Body"
+      {
+       matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (17.7, -3.3000000000000007, 3.3, 1) ) (
+        aecoDerived = true
+       )
+       token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+        aecoDerived = true
+       )
+      }
+
+      over BasisCurves "Edges"
+      {
+       matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (17.7, -3.3000000000000007, 3.3, 1) ) (
+        aecoDerived = true
+       )
+       token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+        aecoDerived = true
+       )
+      }
+     }
+
+     over "AVA_Entrance_Lobby"
+     {
+      over BrepArray "BodyExact"
+      {
+       matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (15, -7.5, 3.45, 1) ) (
+        aecoDerived = true
+       )
+       token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+        aecoDerived = true
+       )
+      }
+
+      over Mesh "Body"
+      {
+       matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (15, -7.5, 3.45, 1) ) (
+        aecoDerived = true
+       )
+       token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+        aecoDerived = true
+       )
+      }
+
+      over BasisCurves "Edges"
+      {
+       matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (15, -7.5, 3.45, 1) ) (
+        aecoDerived = true
+       )
+       token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+        aecoDerived = true
+       )
+      }
+     }
+    }
+   }
+
+   over "L02_Office"
+   {
+    over "Office_Corridor_L01"
+    {
+     over "sec_cam_corr_ocorr_1_2_1"
+     {
+      over Camera "Sensor_0"
+      {
+       matrix4d xformOp:transform = ( (2.220446049250313e-16, -1, 0, 0), (0.25881904510252096, 5.746937261686313e-17, 0.9659258262890682, 0), (-0.9659258262890682, -2.1447861848524057e-16, 0.25881904510252096, 0), (15.5, -1.5, 9.82, 1) ) (
+        aecoDerived = true
+       )
+       token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+        aecoDerived = true
+       )
+
+       over Mesh "Sector"
+       {
+        matrix4d xformOp:transform = ( (2.220446049250313e-16, -1, 0, 0), (0.25881904510252096, 5.746937261686313e-17, 0.9659258262890682, 0), (-0.9659258262890682, -2.1447861848524057e-16, 0.25881904510252096, 0), (15.5, -1.5, 9.82, 1) ) (
+         aecoDerived = true
+        )
+        token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+         aecoDerived = true
+        )
+       }
+
+       over Mesh "Shell_identify"
+       {
+        matrix4d xformOp:transform = ( (2.220446049250313e-16, -1, 0, 0), (0.25881904510252096, 5.746937261686313e-17, 0.9659258262890682, 0), (-0.9659258262890682, -2.1447861848524057e-16, 0.25881904510252096, 0), (15.5, -1.5, 9.82, 1) ) (
+         aecoDerived = true
+        )
+        token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+         aecoDerived = true
+        )
+       }
+
+       over Mesh "Shell_recognise"
+       {
+        matrix4d xformOp:transform = ( (2.220446049250313e-16, -1, 0, 0), (0.25881904510252096, 5.746937261686313e-17, 0.9659258262890682, 0), (-0.9659258262890682, -2.1447861848524057e-16, 0.25881904510252096, 0), (15.5, -1.5, 9.82, 1) ) (
+         aecoDerived = true
+        )
+        token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+         aecoDerived = true
+        )
+       }
+
+       over Mesh "Shell_observe"
+       {
+        matrix4d xformOp:transform = ( (2.220446049250313e-16, -1, 0, 0), (0.25881904510252096, 5.746937261686313e-17, 0.9659258262890682, 0), (-0.9659258262890682, -2.1447861848524057e-16, 0.25881904510252096, 0), (15.5, -1.5, 9.82, 1) ) (
+         aecoDerived = true
+        )
+        token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+         aecoDerived = true
+        )
+       }
+
+       over Mesh "Coverage_Privacy"
+       {
+        matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (0, 0, 0, 1) ) (
+         aecoDerived = true
+        )
+        token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+         aecoDerived = true
+        )
+       }
+      }
+     }
+
+     over "sec_cam_corr_ocorr_1_2_2"
+     {
+      over Camera "Sensor_0"
+      {
+       matrix4d xformOp:transform = ( (2.220446049250313e-16, 1, 0, 0), (-0.25881904510252096, 5.746937261686313e-17, 0.9659258262890682, 0), (0.9659258262890682, -2.1447861848524057e-16, 0.25881904510252096, 0), (29.5, -1.5, 9.82, 1) ) (
+        aecoDerived = true
+       )
+       token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+        aecoDerived = true
+       )
+
+       over Mesh "Sector"
+       {
+        matrix4d xformOp:transform = ( (2.220446049250313e-16, 1, 0, 0), (-0.25881904510252096, 5.746937261686313e-17, 0.9659258262890682, 0), (0.9659258262890682, -2.1447861848524057e-16, 0.25881904510252096, 0), (29.5, -1.5, 9.82, 1) ) (
+         aecoDerived = true
+        )
+        token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+         aecoDerived = true
+        )
+       }
+
+       over Mesh "Shell_identify"
+       {
+        matrix4d xformOp:transform = ( (2.220446049250313e-16, 1, 0, 0), (-0.25881904510252096, 5.746937261686313e-17, 0.9659258262890682, 0), (0.9659258262890682, -2.1447861848524057e-16, 0.25881904510252096, 0), (29.5, -1.5, 9.82, 1) ) (
+         aecoDerived = true
+        )
+        token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+         aecoDerived = true
+        )
+       }
+
+       over Mesh "Shell_recognise"
+       {
+        matrix4d xformOp:transform = ( (2.220446049250313e-16, 1, 0, 0), (-0.25881904510252096, 5.746937261686313e-17, 0.9659258262890682, 0), (0.9659258262890682, -2.1447861848524057e-16, 0.25881904510252096, 0), (29.5, -1.5, 9.82, 1) ) (
+         aecoDerived = true
+        )
+        token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+         aecoDerived = true
+        )
+       }
+
+       over Mesh "Shell_observe"
+       {
+        matrix4d xformOp:transform = ( (2.220446049250313e-16, 1, 0, 0), (-0.25881904510252096, 5.746937261686313e-17, 0.9659258262890682, 0), (0.9659258262890682, -2.1447861848524057e-16, 0.25881904510252096, 0), (29.5, -1.5, 9.82, 1) ) (
+         aecoDerived = true
+        )
+        token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+         aecoDerived = true
+        )
+       }
+
+       over Mesh "Coverage_Privacy"
+       {
+        matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (0, 0, 0, 1) ) (
+         aecoDerived = true
+        )
+        token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+         aecoDerived = true
+        )
+       }
+      }
+     }
+    }
+   }
+  }
+
+  over "Generator_Yard_B"
+  {
+   over "sec_cam_yard_gen_b_fixed_1"
+   {
+    over Camera "Sensor_0"
+    {
+     matrix4d xformOp:transform = ( (0.7633862853691146, -0.6459422414661738, 0, 0), (0.370497248948775, 0.43786038512127956, 0.8191520442889917, 0), (-0.5291249075896298, -0.6253294362422898, 0.5735764363510463, 0), (74.5, 2.5, 6.5, 1) ) (
+      aecoDerived = true
+     )
+     token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+      aecoDerived = true
+     )
+
+     over Mesh "Sector"
+     {
+      matrix4d xformOp:transform = ( (0.7633862853691146, -0.6459422414661738, 0, 0), (0.370497248948775, 0.43786038512127956, 0.8191520442889917, 0), (-0.5291249075896298, -0.6253294362422898, 0.5735764363510463, 0), (74.5, 2.5, 6.5, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+
+     over Mesh "Shell_identify"
+     {
+      matrix4d xformOp:transform = ( (0.7633862853691146, -0.6459422414661738, 0, 0), (0.370497248948775, 0.43786038512127956, 0.8191520442889917, 0), (-0.5291249075896298, -0.6253294362422898, 0.5735764363510463, 0), (74.5, 2.5, 6.5, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+
+     over Mesh "Shell_recognise"
+     {
+      matrix4d xformOp:transform = ( (0.7633862853691146, -0.6459422414661738, 0, 0), (0.370497248948775, 0.43786038512127956, 0.8191520442889917, 0), (-0.5291249075896298, -0.6253294362422898, 0.5735764363510463, 0), (74.5, 2.5, 6.5, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+
+     over Mesh "Shell_observe"
+     {
+      matrix4d xformOp:transform = ( (0.7633862853691146, -0.6459422414661738, 0, 0), (0.370497248948775, 0.43786038512127956, 0.8191520442889917, 0), (-0.5291249075896298, -0.6253294362422898, 0.5735764363510463, 0), (74.5, 2.5, 6.5, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+
+     over Mesh "Coverage_Privacy"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (0, 0, 0, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+   }
+
+   over "sec_cam_yard_b"
+   {
+    over Camera "Sensor_0"
+    {
+     matrix4d xformOp:transform = ( (0.7633862853691146, -0.6459422414661738, 0, 0), (0.29653990367663563, 0.3504562497996603, 0.8883943395271099, 0), (-0.5738514309800025, -0.6781880547945484, 0.4590811447840024, 0), (74.5, 2.5, 6, 1) ) (
+      aecoDerived = true
+     )
+     matrix4d xformOp:transform.timeSamples = {
+      0: ( (0.7633862853691146, -0.6459422414661738, 0, 0), (0.29653990367663563, 0.3504562497996603, 0.8883943395271099, 0), (-0.5738514309800025, -0.6781880547945484, 0.4590811447840024, 0), (74.5, 2.5, 6, 1) ),
+      84: ( (0.7633862853691146, -0.6459422414661738, 0, 0), (0.29653990367663563, 0.3504562497996603, 0.8883943395271099, 0), (-0.5738514309800025, -0.6781880547945484, 0.4590811447840024, 0), (74.5, 2.5, 6, 1) ),
+      96: ( (0.7633862853691146, -0.6459422414661738, 0, 0), (0.35933090732641676, 0.4246637995675835, 0.8309885416639615, 0), (-0.5367706012351263, -0.6343652560051493, 0.5562895321891314, 0), (74.5, 2.5, 6, 1) ),
+      180: ( (0.7633862853691146, -0.6459422414661738, 0, 0), (0.35933090732641676, 0.4246637995675835, 0.8309885416639615, 0), (-0.5367706012351263, -0.6343652560051493, 0.5562895321891314, 0), (74.5, 2.5, 6, 1) ),
+      192: ( (0.7633862853691146, -0.6459422414661738, 0, 0), (0.29653990367663563, 0.3504562497996603, 0.8883943395271099, 0), (-0.5738514309800025, -0.6781880547945484, 0.4590811447840024, 0), (74.5, 2.5, 6, 1) ),
+     }
+     token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+      aecoDerived = true
+     )
+
+     over Mesh "Sector"
+     {
+      matrix4d xformOp:transform = ( (0.7633862853691146, -0.6459422414661738, 0, 0), (0.29653990367663563, 0.3504562497996603, 0.8883943395271099, 0), (-0.5738514309800025, -0.6781880547945484, 0.4590811447840024, 0), (74.5, 2.5, 6, 1) ) (
+       aecoDerived = true
+      )
+      matrix4d xformOp:transform.timeSamples = {
+       0: ( (0.7633862853691146, -0.6459422414661738, 0, 0), (0.29653990367663563, 0.3504562497996603, 0.8883943395271099, 0), (-0.5738514309800025, -0.6781880547945484, 0.4590811447840024, 0), (74.5, 2.5, 6, 1) ),
+       84: ( (0.7633862853691146, -0.6459422414661738, 0, 0), (0.29653990367663563, 0.3504562497996603, 0.8883943395271099, 0), (-0.5738514309800025, -0.6781880547945484, 0.4590811447840024, 0), (74.5, 2.5, 6, 1) ),
+       96: ( (0.7633862853691146, -0.6459422414661738, 0, 0), (0.35933090732641676, 0.4246637995675835, 0.8309885416639615, 0), (-0.5367706012351263, -0.6343652560051493, 0.5562895321891314, 0), (74.5, 2.5, 6, 1) ),
+       180: ( (0.7633862853691146, -0.6459422414661738, 0, 0), (0.35933090732641676, 0.4246637995675835, 0.8309885416639615, 0), (-0.5367706012351263, -0.6343652560051493, 0.5562895321891314, 0), (74.5, 2.5, 6, 1) ),
+       192: ( (0.7633862853691146, -0.6459422414661738, 0, 0), (0.29653990367663563, 0.3504562497996603, 0.8883943395271099, 0), (-0.5738514309800025, -0.6781880547945484, 0.4590811447840024, 0), (74.5, 2.5, 6, 1) ),
+      }
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+
+     over Mesh "Shell_identify"
+     {
+      matrix4d xformOp:transform = ( (0.7633862853691146, -0.6459422414661738, 0, 0), (0.29653990367663563, 0.3504562497996603, 0.8883943395271099, 0), (-0.5738514309800025, -0.6781880547945484, 0.4590811447840024, 0), (74.5, 2.5, 6, 1) ) (
+       aecoDerived = true
+      )
+      matrix4d xformOp:transform.timeSamples = {
+       0: ( (0.7633862853691146, -0.6459422414661738, 0, 0), (0.29653990367663563, 0.3504562497996603, 0.8883943395271099, 0), (-0.5738514309800025, -0.6781880547945484, 0.4590811447840024, 0), (74.5, 2.5, 6, 1) ),
+       84: ( (0.7633862853691146, -0.6459422414661738, 0, 0), (0.29653990367663563, 0.3504562497996603, 0.8883943395271099, 0), (-0.5738514309800025, -0.6781880547945484, 0.4590811447840024, 0), (74.5, 2.5, 6, 1) ),
+       96: ( (0.7633862853691146, -0.6459422414661738, 0, 0), (0.35933090732641676, 0.4246637995675835, 0.8309885416639615, 0), (-0.5367706012351263, -0.6343652560051493, 0.5562895321891314, 0), (74.5, 2.5, 6, 1) ),
+       180: ( (0.7633862853691146, -0.6459422414661738, 0, 0), (0.35933090732641676, 0.4246637995675835, 0.8309885416639615, 0), (-0.5367706012351263, -0.6343652560051493, 0.5562895321891314, 0), (74.5, 2.5, 6, 1) ),
+       192: ( (0.7633862853691146, -0.6459422414661738, 0, 0), (0.29653990367663563, 0.3504562497996603, 0.8883943395271099, 0), (-0.5738514309800025, -0.6781880547945484, 0.4590811447840024, 0), (74.5, 2.5, 6, 1) ),
+      }
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+
+     over Mesh "Envelope"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1.0000000000000002, 0), (74.50000000000001, 2.5000000000000004, 6.000000000000002, 1.0000000000000002) ) (
+       aecoDerived = true
+      )
+      matrix4d xformOp:transform.timeSamples = {
+       0: ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1.0000000000000002, 0), (74.50000000000001, 2.5000000000000004, 6.000000000000002, 1.0000000000000002) ),
+       84: ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1.0000000000000002, 0), (74.50000000000001, 2.5000000000000004, 6.000000000000002, 1.0000000000000002) ),
+       96: ( (1, 0, 0, 0), (-5.551115123125783e-17, 1, 0, 0), (0, -5.551115123125783e-17, 1, 0), (74.49999999999999, 2.4999999999999996, 5.999999999999998, 0.9999999999999998) ),
+       180: ( (1, 0, 0, 0), (-5.551115123125783e-17, 1, 0, 0), (0, -5.551115123125783e-17, 1, 0), (74.49999999999999, 2.4999999999999996, 5.999999999999998, 0.9999999999999998) ),
+       192: ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1.0000000000000002, 0), (74.50000000000001, 2.5000000000000004, 6.000000000000002, 1.0000000000000002) ),
+      }
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+
+     over Mesh "Coverage_Privacy_Home"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (0, 0, 0, 1) ) (
+       aecoDerived = true
+      )
+      matrix4d xformOp:transform.timeSamples = {
+       0: ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (0, 0, 0, 1) ),
+       84: ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (0, 0, 0, 1) ),
+       96: ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (0, 0, 0, 1) ),
+       180: ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (0, 0, 0, 1) ),
+       192: ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (0, 0, 0, 1) ),
+      }
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+
+     over Mesh "Coverage_Privacy_Pad_gen_b"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (0, 0, 0, 1) ) (
+       aecoDerived = true
+      )
+      matrix4d xformOp:transform.timeSamples = {
+       0: ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (0, 0, 0, 1) ),
+       84: ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (0, 0, 0, 1) ),
+       96: ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (0, 0, 0, 1) ),
+       180: ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (0, 0, 0, 1) ),
+       192: ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (0, 0, 0, 1) ),
+      }
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+   }
+
+   over "sec_cam_ext_gen_b"
+   {
+    over Camera "Sensor_0"
+    {
+     matrix4d xformOp:transform = ( (2.220446049250313e-16, 1, 0, 0), (-0.8191520442889919, 1.8188829204768096e-16, 0.5735764363510459, 0), (0.5735764363510459, -1.2735955320387536e-16, 0.8191520442889919, 0), (73.7, 10.5, 3.5, 1) ) (
+      aecoDerived = true
+     )
+     token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+      aecoDerived = true
+     )
+
+     over Mesh "Sector"
+     {
+      matrix4d xformOp:transform = ( (2.220446049250313e-16, 1, 0, 0), (-0.8191520442889919, 1.8188829204768096e-16, 0.5735764363510459, 0), (0.5735764363510459, -1.2735955320387536e-16, 0.8191520442889919, 0), (73.7, 10.5, 3.5, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+
+     over Mesh "Shell_identify"
+     {
+      matrix4d xformOp:transform = ( (2.220446049250313e-16, 1, 0, 0), (-0.8191520442889919, 1.8188829204768096e-16, 0.5735764363510459, 0), (0.5735764363510459, -1.2735955320387536e-16, 0.8191520442889919, 0), (73.7, 10.5, 3.5, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+
+     over Mesh "Shell_recognise"
+     {
+      matrix4d xformOp:transform = ( (2.220446049250313e-16, 1, 0, 0), (-0.8191520442889919, 1.8188829204768096e-16, 0.5735764363510459, 0), (0.5735764363510459, -1.2735955320387536e-16, 0.8191520442889919, 0), (73.7, 10.5, 3.5, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+
+     over Mesh "Shell_observe"
+     {
+      matrix4d xformOp:transform = ( (2.220446049250313e-16, 1, 0, 0), (-0.8191520442889919, 1.8188829204768096e-16, 0.5735764363510459, 0), (0.5735764363510459, -1.2735955320387536e-16, 0.8191520442889919, 0), (73.7, 10.5, 3.5, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+
+     over Mesh "Coverage_Privacy"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (0, 0, 0, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+   }
+
+   over "sec_cam_yard_gen_b_fixed_2"
+   {
+    over Camera "Sensor_0"
+    {
+     matrix4d xformOp:transform = ( (-0.7633862853691149, 0.6459422414661737, 0, 0), (-0.37049724894877495, -0.4378603851212798, 0.8191520442889917, 0), (0.5291249075896297, 0.6253294362422901, 0.5735764363510463, 0), (85.5, 15.5, 6.5, 1) ) (
+      aecoDerived = true
+     )
+     token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+      aecoDerived = true
+     )
+
+     over Mesh "Sector"
+     {
+      matrix4d xformOp:transform = ( (-0.7633862853691149, 0.6459422414661737, 0, 0), (-0.37049724894877495, -0.4378603851212798, 0.8191520442889917, 0), (0.5291249075896297, 0.6253294362422901, 0.5735764363510463, 0), (85.5, 15.5, 6.5, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+
+     over Mesh "Shell_identify"
+     {
+      matrix4d xformOp:transform = ( (-0.7633862853691149, 0.6459422414661737, 0, 0), (-0.37049724894877495, -0.4378603851212798, 0.8191520442889917, 0), (0.5291249075896297, 0.6253294362422901, 0.5735764363510463, 0), (85.5, 15.5, 6.5, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+
+     over Mesh "Shell_recognise"
+     {
+      matrix4d xformOp:transform = ( (-0.7633862853691149, 0.6459422414661737, 0, 0), (-0.37049724894877495, -0.4378603851212798, 0.8191520442889917, 0), (0.5291249075896297, 0.6253294362422901, 0.5735764363510463, 0), (85.5, 15.5, 6.5, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+
+     over Mesh "Shell_observe"
+     {
+      matrix4d xformOp:transform = ( (-0.7633862853691149, 0.6459422414661737, 0, 0), (-0.37049724894877495, -0.4378603851212798, 0.8191520442889917, 0), (0.5291249075896297, 0.6253294362422901, 0.5735764363510463, 0), (85.5, 15.5, 6.5, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+
+     over Mesh "Coverage_Privacy"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (0, 0, 0, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+   }
+  }
+
+  over "Generator_Yard_A"
+  {
+   over "sec_cam_ext_gen_a"
+   {
+    over Camera "Sensor_0"
+    {
+     matrix4d xformOp:transform = ( (2.220446049250313e-16, -1, 0, 0), (0.8191520442889919, 1.8188829204768096e-16, 0.5735764363510459, 0), (-0.5735764363510459, -1.2735955320387536e-16, 0.8191520442889919, 0), (-1.7000000000000002, 10.5, 3.5, 1) ) (
+      aecoDerived = true
+     )
+     token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+      aecoDerived = true
+     )
+
+     over Mesh "Sector"
+     {
+      matrix4d xformOp:transform = ( (2.220446049250313e-16, -1, 0, 0), (0.8191520442889919, 1.8188829204768096e-16, 0.5735764363510459, 0), (-0.5735764363510459, -1.2735955320387536e-16, 0.8191520442889919, 0), (-1.7000000000000002, 10.5, 3.5, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+
+     over Mesh "Shell_identify"
+     {
+      matrix4d xformOp:transform = ( (2.220446049250313e-16, -1, 0, 0), (0.8191520442889919, 1.8188829204768096e-16, 0.5735764363510459, 0), (-0.5735764363510459, -1.2735955320387536e-16, 0.8191520442889919, 0), (-1.7000000000000002, 10.5, 3.5, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+
+     over Mesh "Shell_recognise"
+     {
+      matrix4d xformOp:transform = ( (2.220446049250313e-16, -1, 0, 0), (0.8191520442889919, 1.8188829204768096e-16, 0.5735764363510459, 0), (-0.5735764363510459, -1.2735955320387536e-16, 0.8191520442889919, 0), (-1.7000000000000002, 10.5, 3.5, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+
+     over Mesh "Shell_observe"
+     {
+      matrix4d xformOp:transform = ( (2.220446049250313e-16, -1, 0, 0), (0.8191520442889919, 1.8188829204768096e-16, 0.5735764363510459, 0), (-0.5735764363510459, -1.2735955320387536e-16, 0.8191520442889919, 0), (-1.7000000000000002, 10.5, 3.5, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+
+     over Mesh "Coverage_Privacy"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (0, 0, 0, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+   }
+
+   over "sec_cam_yard_a"
+   {
+    over Camera "Sensor_0"
+    {
+     matrix4d xformOp:transform = ( (0.7633862853691146, -0.6459422414661738, 0, 0), (0.29653990367663563, 0.3504562497996603, 0.8883943395271099, 0), (-0.5738514309800025, -0.6781880547945484, 0.4590811447840024, 0), (-13.5, 2.5, 6, 1) ) (
+      aecoDerived = true
+     )
+     matrix4d xformOp:transform.timeSamples = {
+      0: ( (0.7633862853691146, -0.6459422414661738, 0, 0), (0.29653990367663563, 0.3504562497996603, 0.8883943395271099, 0), (-0.5738514309800025, -0.6781880547945484, 0.4590811447840024, 0), (-13.5, 2.5, 6, 1) ),
+      84: ( (0.7633862853691146, -0.6459422414661738, 0, 0), (0.29653990367663563, 0.3504562497996603, 0.8883943395271099, 0), (-0.5738514309800025, -0.6781880547945484, 0.4590811447840024, 0), (-13.5, 2.5, 6, 1) ),
+      96: ( (0.7633862853691146, -0.6459422414661738, 0, 0), (0.35933090732641676, 0.4246637995675835, 0.8309885416639615, 0), (-0.5367706012351263, -0.6343652560051493, 0.5562895321891314, 0), (-13.5, 2.5, 6, 1) ),
+      180: ( (0.7633862853691146, -0.6459422414661738, 0, 0), (0.35933090732641676, 0.4246637995675835, 0.8309885416639615, 0), (-0.5367706012351263, -0.6343652560051493, 0.5562895321891314, 0), (-13.5, 2.5, 6, 1) ),
+      192: ( (0.7633862853691146, -0.6459422414661738, 0, 0), (0.29653990367663563, 0.3504562497996603, 0.8883943395271099, 0), (-0.5738514309800025, -0.6781880547945484, 0.4590811447840024, 0), (-13.5, 2.5, 6, 1) ),
+     }
+     token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+      aecoDerived = true
+     )
+
+     over Mesh "Sector"
+     {
+      matrix4d xformOp:transform = ( (0.7633862853691146, -0.6459422414661738, 0, 0), (0.29653990367663563, 0.3504562497996603, 0.8883943395271099, 0), (-0.5738514309800025, -0.6781880547945484, 0.4590811447840024, 0), (-13.5, 2.5, 6, 1) ) (
+       aecoDerived = true
+      )
+      matrix4d xformOp:transform.timeSamples = {
+       0: ( (0.7633862853691146, -0.6459422414661738, 0, 0), (0.29653990367663563, 0.3504562497996603, 0.8883943395271099, 0), (-0.5738514309800025, -0.6781880547945484, 0.4590811447840024, 0), (-13.5, 2.5, 6, 1) ),
+       84: ( (0.7633862853691146, -0.6459422414661738, 0, 0), (0.29653990367663563, 0.3504562497996603, 0.8883943395271099, 0), (-0.5738514309800025, -0.6781880547945484, 0.4590811447840024, 0), (-13.5, 2.5, 6, 1) ),
+       96: ( (0.7633862853691146, -0.6459422414661738, 0, 0), (0.35933090732641676, 0.4246637995675835, 0.8309885416639615, 0), (-0.5367706012351263, -0.6343652560051493, 0.5562895321891314, 0), (-13.5, 2.5, 6, 1) ),
+       180: ( (0.7633862853691146, -0.6459422414661738, 0, 0), (0.35933090732641676, 0.4246637995675835, 0.8309885416639615, 0), (-0.5367706012351263, -0.6343652560051493, 0.5562895321891314, 0), (-13.5, 2.5, 6, 1) ),
+       192: ( (0.7633862853691146, -0.6459422414661738, 0, 0), (0.29653990367663563, 0.3504562497996603, 0.8883943395271099, 0), (-0.5738514309800025, -0.6781880547945484, 0.4590811447840024, 0), (-13.5, 2.5, 6, 1) ),
+      }
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+
+     over Mesh "Shell_identify"
+     {
+      matrix4d xformOp:transform = ( (0.7633862853691146, -0.6459422414661738, 0, 0), (0.29653990367663563, 0.3504562497996603, 0.8883943395271099, 0), (-0.5738514309800025, -0.6781880547945484, 0.4590811447840024, 0), (-13.5, 2.5, 6, 1) ) (
+       aecoDerived = true
+      )
+      matrix4d xformOp:transform.timeSamples = {
+       0: ( (0.7633862853691146, -0.6459422414661738, 0, 0), (0.29653990367663563, 0.3504562497996603, 0.8883943395271099, 0), (-0.5738514309800025, -0.6781880547945484, 0.4590811447840024, 0), (-13.5, 2.5, 6, 1) ),
+       84: ( (0.7633862853691146, -0.6459422414661738, 0, 0), (0.29653990367663563, 0.3504562497996603, 0.8883943395271099, 0), (-0.5738514309800025, -0.6781880547945484, 0.4590811447840024, 0), (-13.5, 2.5, 6, 1) ),
+       96: ( (0.7633862853691146, -0.6459422414661738, 0, 0), (0.35933090732641676, 0.4246637995675835, 0.8309885416639615, 0), (-0.5367706012351263, -0.6343652560051493, 0.5562895321891314, 0), (-13.5, 2.5, 6, 1) ),
+       180: ( (0.7633862853691146, -0.6459422414661738, 0, 0), (0.35933090732641676, 0.4246637995675835, 0.8309885416639615, 0), (-0.5367706012351263, -0.6343652560051493, 0.5562895321891314, 0), (-13.5, 2.5, 6, 1) ),
+       192: ( (0.7633862853691146, -0.6459422414661738, 0, 0), (0.29653990367663563, 0.3504562497996603, 0.8883943395271099, 0), (-0.5738514309800025, -0.6781880547945484, 0.4590811447840024, 0), (-13.5, 2.5, 6, 1) ),
+      }
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+
+     over Mesh "Envelope"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1.0000000000000002, 0), (-13.500000000000004, 2.5000000000000004, 6.000000000000002, 1.0000000000000002) ) (
+       aecoDerived = true
+      )
+      matrix4d xformOp:transform.timeSamples = {
+       0: ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1.0000000000000002, 0), (-13.500000000000004, 2.5000000000000004, 6.000000000000002, 1.0000000000000002) ),
+       84: ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1.0000000000000002, 0), (-13.500000000000004, 2.5000000000000004, 6.000000000000002, 1.0000000000000002) ),
+       96: ( (1, 0, 0, 0), (-5.551115123125783e-17, 1, 0, 0), (0, -5.551115123125783e-17, 1, 0), (-13.499999999999996, 2.4999999999999996, 5.999999999999998, 0.9999999999999998) ),
+       180: ( (1, 0, 0, 0), (-5.551115123125783e-17, 1, 0, 0), (0, -5.551115123125783e-17, 1, 0), (-13.499999999999996, 2.4999999999999996, 5.999999999999998, 0.9999999999999998) ),
+       192: ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1.0000000000000002, 0), (-13.500000000000004, 2.5000000000000004, 6.000000000000002, 1.0000000000000002) ),
+      }
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+
+     over Mesh "Coverage_Privacy_Home"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (0, 0, 0, 1) ) (
+       aecoDerived = true
+      )
+      matrix4d xformOp:transform.timeSamples = {
+       0: ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (0, 0, 0, 1) ),
+       84: ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (0, 0, 0, 1) ),
+       96: ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (0, 0, 0, 1) ),
+       180: ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (0, 0, 0, 1) ),
+       192: ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (0, 0, 0, 1) ),
+      }
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+
+     over Mesh "Coverage_Privacy_Pad_gen_a"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (0, 0, 0, 1) ) (
+       aecoDerived = true
+      )
+      matrix4d xformOp:transform.timeSamples = {
+       0: ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (0, 0, 0, 1) ),
+       84: ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (0, 0, 0, 1) ),
+       96: ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (0, 0, 0, 1) ),
+       180: ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (0, 0, 0, 1) ),
+       192: ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (0, 0, 0, 1) ),
+      }
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+   }
+
+   over "sec_cam_yard_gen_a_fixed_1"
+   {
+    over Camera "Sensor_0"
+    {
+     matrix4d xformOp:transform = ( (-0.7633862853691149, -0.6459422414661735, 0, 0), (0.37049724894877484, -0.4378603851212798, 0.8191520442889917, 0), (-0.5291249075896295, 0.6253294362422901, 0.5735764363510463, 0), (-13.5, 15.5, 6.5, 1) ) (
+      aecoDerived = true
+     )
+     token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+      aecoDerived = true
+     )
+
+     over Mesh "Sector"
+     {
+      matrix4d xformOp:transform = ( (-0.7633862853691149, -0.6459422414661735, 0, 0), (0.37049724894877484, -0.4378603851212798, 0.8191520442889917, 0), (-0.5291249075896295, 0.6253294362422901, 0.5735764363510463, 0), (-13.5, 15.5, 6.5, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+
+     over Mesh "Shell_identify"
+     {
+      matrix4d xformOp:transform = ( (-0.7633862853691149, -0.6459422414661735, 0, 0), (0.37049724894877484, -0.4378603851212798, 0.8191520442889917, 0), (-0.5291249075896295, 0.6253294362422901, 0.5735764363510463, 0), (-13.5, 15.5, 6.5, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+
+     over Mesh "Shell_recognise"
+     {
+      matrix4d xformOp:transform = ( (-0.7633862853691149, -0.6459422414661735, 0, 0), (0.37049724894877484, -0.4378603851212798, 0.8191520442889917, 0), (-0.5291249075896295, 0.6253294362422901, 0.5735764363510463, 0), (-13.5, 15.5, 6.5, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+
+     over Mesh "Shell_observe"
+     {
+      matrix4d xformOp:transform = ( (-0.7633862853691149, -0.6459422414661735, 0, 0), (0.37049724894877484, -0.4378603851212798, 0.8191520442889917, 0), (-0.5291249075896295, 0.6253294362422901, 0.5735764363510463, 0), (-13.5, 15.5, 6.5, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+
+     over Mesh "Coverage_Privacy"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (0, 0, 0, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+   }
+
+   over "sec_cam_yard_gen_a_fixed_2"
+   {
+    over Camera "Sensor_0"
+    {
+     matrix4d xformOp:transform = ( (0.7633862853691147, 0.6459422414661737, 0, 0), (-0.37049724894877495, 0.43786038512127967, 0.8191520442889917, 0), (0.5291249075896297, -0.6253294362422899, 0.5735764363510463, 0), (-2.5, 2.5, 6.5, 1) ) (
+      aecoDerived = true
+     )
+     token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+      aecoDerived = true
+     )
+
+     over Mesh "Sector"
+     {
+      matrix4d xformOp:transform = ( (0.7633862853691147, 0.6459422414661737, 0, 0), (-0.37049724894877495, 0.43786038512127967, 0.8191520442889917, 0), (0.5291249075896297, -0.6253294362422899, 0.5735764363510463, 0), (-2.5, 2.5, 6.5, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+
+     over Mesh "Shell_identify"
+     {
+      matrix4d xformOp:transform = ( (0.7633862853691147, 0.6459422414661737, 0, 0), (-0.37049724894877495, 0.43786038512127967, 0.8191520442889917, 0), (0.5291249075896297, -0.6253294362422899, 0.5735764363510463, 0), (-2.5, 2.5, 6.5, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+
+     over Mesh "Shell_recognise"
+     {
+      matrix4d xformOp:transform = ( (0.7633862853691147, 0.6459422414661737, 0, 0), (-0.37049724894877495, 0.43786038512127967, 0.8191520442889917, 0), (0.5291249075896297, -0.6253294362422899, 0.5735764363510463, 0), (-2.5, 2.5, 6.5, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+
+     over Mesh "Shell_observe"
+     {
+      matrix4d xformOp:transform = ( (0.7633862853691147, 0.6459422414661737, 0, 0), (-0.37049724894877495, 0.43786038512127967, 0.8191520442889917, 0), (0.5291249075896297, -0.6253294362422899, 0.5735764363510463, 0), (-2.5, 2.5, 6.5, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+
+     over Mesh "Coverage_Privacy"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (0, 0, 0, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+   }
+  }
+
+  over "Heat_Rejection_Yard"
+  {
+   over "sec_cam_yard_hr_fixed_2"
+   {
+    over Camera "Sensor_0"
+    {
+     matrix4d xformOp:transform = ( (-0.4705882352941173, 0.882352941176471, 0, 0), (-0.5060968556038646, -0.2699183229887275, 0.8191520442889917, 0), (0.7227812155491107, 0.3854833149595252, 0.5735764363510463, 0), (47.5, -2.5, 6.5, 1) ) (
+      aecoDerived = true
+     )
+     token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+      aecoDerived = true
+     )
+
+     over Mesh "Sector"
+     {
+      matrix4d xformOp:transform = ( (-0.4705882352941173, 0.882352941176471, 0, 0), (-0.5060968556038646, -0.2699183229887275, 0.8191520442889917, 0), (0.7227812155491107, 0.3854833149595252, 0.5735764363510463, 0), (47.5, -2.5, 6.5, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+
+     over Mesh "Shell_identify"
+     {
+      matrix4d xformOp:transform = ( (-0.4705882352941173, 0.882352941176471, 0, 0), (-0.5060968556038646, -0.2699183229887275, 0.8191520442889917, 0), (0.7227812155491107, 0.3854833149595252, 0.5735764363510463, 0), (47.5, -2.5, 6.5, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+
+     over Mesh "Shell_recognise"
+     {
+      matrix4d xformOp:transform = ( (-0.4705882352941173, 0.882352941176471, 0, 0), (-0.5060968556038646, -0.2699183229887275, 0.8191520442889917, 0), (0.7227812155491107, 0.3854833149595252, 0.5735764363510463, 0), (47.5, -2.5, 6.5, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+
+     over Mesh "Shell_observe"
+     {
+      matrix4d xformOp:transform = ( (-0.4705882352941173, 0.882352941176471, 0, 0), (-0.5060968556038646, -0.2699183229887275, 0.8191520442889917, 0), (0.7227812155491107, 0.3854833149595252, 0.5735764363510463, 0), (47.5, -2.5, 6.5, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+
+     over Mesh "Coverage_Privacy"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (0, 0, 0, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+   }
+
+   over "sec_cam_ext_plant_ext"
+   {
+    over Camera "Sensor_0"
+    {
+     matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 0.8191520442889919, 0.5735764363510459, 0), (0, -0.5735764363510459, 0.8191520442889919, 0), (40, -1.7000000000000002, 3.5, 1) ) (
+      aecoDerived = true
+     )
+     token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+      aecoDerived = true
+     )
+
+     over Mesh "Sector"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 0.8191520442889919, 0.5735764363510459, 0), (0, -0.5735764363510459, 0.8191520442889919, 0), (40, -1.7000000000000002, 3.5, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+
+     over Mesh "Shell_identify"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 0.8191520442889919, 0.5735764363510459, 0), (0, -0.5735764363510459, 0.8191520442889919, 0), (40, -1.7000000000000002, 3.5, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+
+     over Mesh "Shell_recognise"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 0.8191520442889919, 0.5735764363510459, 0), (0, -0.5735764363510459, 0.8191520442889919, 0), (40, -1.7000000000000002, 3.5, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+
+     over Mesh "Shell_observe"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 0.8191520442889919, 0.5735764363510459, 0), (0, -0.5735764363510459, 0.8191520442889919, 0), (40, -1.7000000000000002, 3.5, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+
+     over Mesh "Coverage_Privacy"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (0, 0, 0, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+   }
+
+   over "sec_cam_ext_dock"
+   {
+    over Camera "Sensor_0"
+    {
+     matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 0.3491532268561263, 0.9370656456065147, 0), (0, -0.9370656456065147, 0.3491532268561263, 0), (49.375, -18.25, 8, 1) ) (
+      aecoDerived = true
+     )
+     token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+      aecoDerived = true
+     )
+
+     over Mesh "Sector"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 0.3491532268561263, 0.9370656456065147, 0), (0, -0.9370656456065147, 0.3491532268561263, 0), (49.375, -18.25, 8, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+
+     over Mesh "Shell_identify"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 0.3491532268561263, 0.9370656456065147, 0), (0, -0.9370656456065147, 0.3491532268561263, 0), (49.375, -18.25, 8, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+
+     over Mesh "Shell_recognise"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 0.3491532268561263, 0.9370656456065147, 0), (0, -0.9370656456065147, 0.3491532268561263, 0), (49.375, -18.25, 8, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+
+     over Mesh "Coverage_Privacy"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (0, 0, 0, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+   }
+
+   over "sec_cam_ext_main"
+   {
+    over Camera "Sensor_0"
+    {
+     matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 0.8191520442889919, 0.5735764363510459, 0), (0, -0.5735764363510459, 0.8191520442889919, 0), (15, -13.7, 3.5, 1) ) (
+      aecoDerived = true
+     )
+     token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+      aecoDerived = true
+     )
+
+     over Mesh "Sector"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 0.8191520442889919, 0.5735764363510459, 0), (0, -0.5735764363510459, 0.8191520442889919, 0), (15, -13.7, 3.5, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+
+     over Mesh "Shell_identify"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 0.8191520442889919, 0.5735764363510459, 0), (0, -0.5735764363510459, 0.8191520442889919, 0), (15, -13.7, 3.5, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+
+     over Mesh "Shell_recognise"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 0.8191520442889919, 0.5735764363510459, 0), (0, -0.5735764363510459, 0.8191520442889919, 0), (15, -13.7, 3.5, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+
+     over Mesh "Shell_observe"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 0.8191520442889919, 0.5735764363510459, 0), (0, -0.5735764363510459, 0.8191520442889919, 0), (15, -13.7, 3.5, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+
+     over Mesh "Coverage_Privacy"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (0, 0, 0, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+   }
+
+   over "sec_cam_yard_hr_fixed_1"
+   {
+    over Camera "Sensor_0"
+    {
+     matrix4d xformOp:transform = ( (0.47058823529411753, -0.8823529411764707, 0, 0), (0.5060968556038644, 0.2699183229887276, 0.8191520442889917, 0), (-0.7227812155491103, -0.3854833149595254, 0.5735764363510463, 0), (32.5, -10.5, 6.5, 1) ) (
+      aecoDerived = true
+     )
+     token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+      aecoDerived = true
+     )
+
+     over Mesh "Sector"
+     {
+      matrix4d xformOp:transform = ( (0.47058823529411753, -0.8823529411764707, 0, 0), (0.5060968556038644, 0.2699183229887276, 0.8191520442889917, 0), (-0.7227812155491103, -0.3854833149595254, 0.5735764363510463, 0), (32.5, -10.5, 6.5, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+
+     over Mesh "Shell_identify"
+     {
+      matrix4d xformOp:transform = ( (0.47058823529411753, -0.8823529411764707, 0, 0), (0.5060968556038644, 0.2699183229887276, 0.8191520442889917, 0), (-0.7227812155491103, -0.3854833149595254, 0.5735764363510463, 0), (32.5, -10.5, 6.5, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+
+     over Mesh "Shell_recognise"
+     {
+      matrix4d xformOp:transform = ( (0.47058823529411753, -0.8823529411764707, 0, 0), (0.5060968556038644, 0.2699183229887276, 0.8191520442889917, 0), (-0.7227812155491103, -0.3854833149595254, 0.5735764363510463, 0), (32.5, -10.5, 6.5, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+
+     over Mesh "Shell_observe"
+     {
+      matrix4d xformOp:transform = ( (0.47058823529411753, -0.8823529411764707, 0, 0), (0.5060968556038644, 0.2699183229887276, 0.8191520442889917, 0), (-0.7227812155491103, -0.3854833149595254, 0.5735764363510463, 0), (32.5, -10.5, 6.5, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+
+     over Mesh "Coverage_Privacy"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (0, 0, 0, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+   }
+  }
+ }
+}
+

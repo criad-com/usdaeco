@@ -1,0 +1,14 @@
+#usda 1.0
+(
+ customLayerData = {
+  string "aeco:layer:package" = "cctv"
+  string "aeco:layer:producer" = "hook v0.5.6"
+  string "aeco:layer:role" = "analysis"
+  string "aeco:layer:source" = "kind/usdaeco-cctv/examples/datacentre/run.py"
+  string "aeco:layer:sourceSha256" = "20cad38173f7b25d9ecb528dab991cc0e04a445aa0048237ceb51559dc18cee0"
+  string "aeco:layer:tag" = "v0.5.6"
+ }
+ metersPerUnit = 1
+ upAxis = "Z"
+)
+

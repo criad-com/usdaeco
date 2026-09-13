@@ -1,0 +1,82 @@
+#usda 1.0
+(
+ customLayerData = {
+  string "aeco:layer:package" = "compliance"
+  string "aeco:layer:producer" = "hook v0.1.3"
+  string "aeco:layer:role" = "analysis"
+  string "aeco:layer:source" = "kind/usdaeco-compliance/examples/datacentre/run.py"
+  string "aeco:layer:sourceSha256" = "c9ca2d1e189b819ab74c294ca01392402d15e006406857b996b88028b58e6b11"
+  string "aeco:layer:tag" = "v0.1.3"
+ }
+)
+
+def "Renders"
+{
+ def "compliance"
+ {
+  def Camera "elevation"
+  {
+   float4[] clippingPlanes = []
+   float2 clippingRange = (1, 1000000)
+   float focalLength = 50
+   float focusDistance = 0
+   float fStop = 0
+   float horizontalAperture = 170
+   float horizontalApertureOffset = 0
+   token projection = "orthographic"
+   float verticalAperture = 106.25
+   float verticalApertureOffset = 0
+   matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (8, 5, 50, 1) )
+   uniform token[] xformOpOrder = ["xformOp:transform"]
+  }
+
+  def Camera "plan"
+  {
+   float4[] clippingPlanes = []
+   float2 clippingRange = (1, 1000000)
+   float focalLength = 50
+   float focusDistance = 0
+   float fStop = 0
+   float horizontalAperture = 170
+   float horizontalApertureOffset = 0
+   token projection = "orthographic"
+   float verticalAperture = 106.25
+   float verticalApertureOffset = 0
+   matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (38, 5, 50, 1) )
+   uniform token[] xformOpOrder = ["xformOp:transform"]
+  }
+
+  def Camera "facility"
+  {
+   float4[] clippingPlanes = []
+   float2 clippingRange = (57.6, 1000)
+   float focalLength = 50
+   float focusDistance = 0
+   float fStop = 0
+   float horizontalAperture = 880
+   float horizontalApertureOffset = 0
+   token projection = "orthographic"
+   float verticalAperture = 550
+   float verticalApertureOffset = 0
+   matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (36, 12, 60, 1) )
+   uniform token[] xformOpOrder = ["xformOp:transform"]
+  }
+
+  def Camera "overview"
+  {
+   float4[] clippingPlanes = []
+   float2 clippingRange = (1, 1000000)
+   float focalLength = 50
+   float focusDistance = 0
+   float fStop = 0
+   float horizontalAperture = 65
+   float horizontalApertureOffset = 0
+   token projection = "orthographic"
+   float verticalAperture = 40.625
+   float verticalApertureOffset = 0
+   matrix4d xformOp:transform = ( (-0.9203309184584746, -0.3911406403448515, 1.3877787807814457e-17, 0), (0.12378524019747981, -0.2912593886999526, 0.9486016987141559, 0), (-0.3710366758672689, 0.8730274726288684, 0.31647245882796476, 0), (15.5, 3.9999999999999996, 2.6, 1) )
+   uniform token[] xformOpOrder = ["xformOp:transform"]
+  }
+ }
+}
+

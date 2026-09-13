@@ -1,0 +1,271 @@
+[
+  {
+    "counts": {
+      "elements": 3009,
+      "levels": 3,
+      "meshes": 3050,
+      "ports": 6244,
+      "spaces": 41
+    },
+    "expected": {
+      "elements": 3009,
+      "levels": 3,
+      "meshes": 3050,
+      "ports": 6244,
+      "spaces": 41
+    },
+    "name": "SourceCensus"
+  },
+  {
+    "all_changes": {
+      "changed": 1,
+      "extra": 1,
+      "missing": 26
+    },
+    "declared_deviations": 0,
+    "extra_doors": 1,
+    "moved_walls": 0,
+    "name": "FloorDrift"
+  },
+  {
+    "doors": 1.0,
+    "name": "ScheduleDelta",
+    "partition_length_L01_m": 43.0,
+    "partition_length_L02_m": 46.2,
+    "partition_length_m": 3.200000000000003
+  },
+  {
+    "addition_lines": 50,
+    "max_error": 8.881784197001252e-16,
+    "name": "Composition",
+    "occurrence_lines": 686,
+    "over_lines": 451,
+    "prims_checked": 71,
+    "reference_count": 1,
+    "vertices_checked": 944
+  },
+  {
+    "message": "changed: /demo_datacentre_01/demo_datacentre_01_Site/demo_datacentre_01/L02_Office/wall_l2_v_016",
+    "name": "RepeatDrift",
+    "paths": [
+      "/demo_datacentre_01/demo_datacentre_01_Site/demo_datacentre_01/L02_Office"
+    ],
+    "severity": "error"
+  },
+  {
+    "message": "extra: /demo_datacentre_01/demo_datacentre_01_Site/demo_datacentre_01/L02_Office/Additional_Meeting_Access",
+    "name": "RepeatDrift",
+    "paths": [
+      "/demo_datacentre_01/demo_datacentre_01_Site/demo_datacentre_01/L02_Office"
+    ],
+    "severity": "error"
+  },
+  {
+    "message": "missing: /demo_datacentre_01/demo_datacentre_01_Site/demo_datacentre_01/L01_Office/Office_Corridor_L01/Corridor_ceiling_void/pipe_chw_void_f",
+    "name": "RepeatDrift",
+    "paths": [
+      "/demo_datacentre_01/demo_datacentre_01_Site/demo_datacentre_01/L02_Office"
+    ],
+    "severity": "error"
+  },
+  {
+    "message": "missing: /demo_datacentre_01/demo_datacentre_01_Site/demo_datacentre_01/L01_Office/Office_Corridor_L01/Corridor_ceiling_void/pipe_chw_void_r",
+    "name": "RepeatDrift",
+    "paths": [
+      "/demo_datacentre_01/demo_datacentre_01_Site/demo_datacentre_01/L02_Office"
+    ],
+    "severity": "error"
+  },
+  {
+    "message": "missing: /demo_datacentre_01/demo_datacentre_01_Site/demo_datacentre_01/L01_Office/Office_Corridor_L01/Corridor_ceiling_void/pipe_clash_hard",
+    "name": "RepeatDrift",
+    "paths": [
+      "/demo_datacentre_01/demo_datacentre_01_Site/demo_datacentre_01/L02_Office"
+    ],
+    "severity": "error"
+  },
+  {
+    "message": "missing: /demo_datacentre_01/demo_datacentre_01_Site/demo_datacentre_01/L01_Office/Office_Corridor_L01/Corridor_ceiling_void/pipe_clash_near",
+    "name": "RepeatDrift",
+    "paths": [
+      "/demo_datacentre_01/demo_datacentre_01_Site/demo_datacentre_01/L02_Office"
+    ],
+    "severity": "error"
+  },
+  {
+    "message": "missing: /demo_datacentre_01/demo_datacentre_01_Site/demo_datacentre_01/L01_Office/Office_Corridor_L01/Corridor_ceiling_void/pipe_clash_tangent",
+    "name": "RepeatDrift",
+    "paths": [
+      "/demo_datacentre_01/demo_datacentre_01_Site/demo_datacentre_01/L02_Office"
+    ],
+    "severity": "error"
+  },
+  {
+    "message": "missing: /demo_datacentre_01/demo_datacentre_01_Site/demo_datacentre_01/L01_Office/Office_Corridor_L01/Corridor_ceiling_void/tray_void_ocorr_1",
+    "name": "RepeatDrift",
+    "paths": [
+      "/demo_datacentre_01/demo_datacentre_01_Site/demo_datacentre_01/L02_Office"
+    ],
+    "severity": "error"
+  },
+  {
+    "message": "missing: /demo_datacentre_01/demo_datacentre_01_Site/demo_datacentre_01/L01_Office/Office_Corridor_L01/clg_ocorr_1",
+    "name": "RepeatDrift",
+    "paths": [
+      "/demo_datacentre_01/demo_datacentre_01_Site/demo_datacentre_01/L02_Office"
+    ],
+    "severity": "error"
+  },
+  {
+    "message": "missing: /demo_datacentre_01/demo_datacentre_01_Site/demo_datacentre_01/L01_Office/Office_Corridor_L01/pod_wc_temp",
+    "name": "RepeatDrift",
+    "paths": [
+      "/demo_datacentre_01/demo_datacentre_01_Site/demo_datacentre_01/L02_Office"
+    ],
+    "severity": "error"
+  },
+  {
+    "message": "missing: /demo_datacentre_01/demo_datacentre_01_Site/demo_datacentre_01/L01_Office/Open_Office/Office_ceiling_void/cnd_void_office_1",
+    "name": "RepeatDrift",
+    "paths": [
+      "/demo_datacentre_01/demo_datacentre_01_Site/demo_datacentre_01/L02_Office"
+    ],
+    "severity": "error"
+  },
+  {
+    "message": "missing: /demo_datacentre_01/demo_datacentre_01_Site/demo_datacentre_01/L01_Office/Open_Office/Office_ceiling_void/cnd_void_office_2",
+    "name": "RepeatDrift",
+    "paths": [
+      "/demo_datacentre_01/demo_datacentre_01_Site/demo_datacentre_01/L02_Office"
+    ],
+    "severity": "error"
+  },
+  {
+    "message": "missing: /demo_datacentre_01/demo_datacentre_01_Site/demo_datacentre_01/L01_Office/Open_Office/Office_ceiling_void/fcu_office_1",
+    "name": "RepeatDrift",
+    "paths": [
+      "/demo_datacentre_01/demo_datacentre_01_Site/demo_datacentre_01/L02_Office"
+    ],
+    "severity": "error"
+  },
+  {
+    "message": "missing: /demo_datacentre_01/demo_datacentre_01_Site/demo_datacentre_01/L01_Office/Open_Office/clg_office",
+    "name": "RepeatDrift",
+    "paths": [
+      "/demo_datacentre_01/demo_datacentre_01_Site/demo_datacentre_01/L02_Office"
+    ],
+    "severity": "error"
+  },
+  {
+    "message": "missing: /demo_datacentre_01/demo_datacentre_01_Site/demo_datacentre_01/L01_Office/Open_Office/grl_office_1",
+    "name": "RepeatDrift",
+    "paths": [
+      "/demo_datacentre_01/demo_datacentre_01_Site/demo_datacentre_01/L02_Office"
+    ],
+    "severity": "error"
+  },
+  {
+    "message": "missing: /demo_datacentre_01/demo_datacentre_01_Site/demo_datacentre_01/L01_Office/Open_Office/grl_office_2",
+    "name": "RepeatDrift",
+    "paths": [
+      "/demo_datacentre_01/demo_datacentre_01_Site/demo_datacentre_01/L02_Office"
+    ],
+    "severity": "error"
+  },
+  {
+    "message": "missing: /demo_datacentre_01/demo_datacentre_01_Site/demo_datacentre_01/L01_Office/Open_Office/grl_office_3",
+    "name": "RepeatDrift",
+    "paths": [
+      "/demo_datacentre_01/demo_datacentre_01_Site/demo_datacentre_01/L02_Office"
+    ],
+    "severity": "error"
+  },
+  {
+    "message": "missing: /demo_datacentre_01/demo_datacentre_01_Site/demo_datacentre_01/L01_Office/Open_Office/grl_office_4",
+    "name": "RepeatDrift",
+    "paths": [
+      "/demo_datacentre_01/demo_datacentre_01_Site/demo_datacentre_01/L02_Office"
+    ],
+    "severity": "error"
+  },
+  {
+    "message": "missing: /demo_datacentre_01/demo_datacentre_01_Site/demo_datacentre_01/L01_Office/Open_Office/lum_office_1",
+    "name": "RepeatDrift",
+    "paths": [
+      "/demo_datacentre_01/demo_datacentre_01_Site/demo_datacentre_01/L02_Office"
+    ],
+    "severity": "error"
+  },
+  {
+    "message": "missing: /demo_datacentre_01/demo_datacentre_01_Site/demo_datacentre_01/L01_Office/Open_Office/lum_office_2",
+    "name": "RepeatDrift",
+    "paths": [
+      "/demo_datacentre_01/demo_datacentre_01_Site/demo_datacentre_01/L02_Office"
+    ],
+    "severity": "error"
+  },
+  {
+    "message": "missing: /demo_datacentre_01/demo_datacentre_01_Site/demo_datacentre_01/L01_Office/Open_Office/lum_office_3",
+    "name": "RepeatDrift",
+    "paths": [
+      "/demo_datacentre_01/demo_datacentre_01_Site/demo_datacentre_01/L02_Office"
+    ],
+    "severity": "error"
+  },
+  {
+    "message": "missing: /demo_datacentre_01/demo_datacentre_01_Site/demo_datacentre_01/L01_Office/Open_Office/lum_office_4",
+    "name": "RepeatDrift",
+    "paths": [
+      "/demo_datacentre_01/demo_datacentre_01_Site/demo_datacentre_01/L02_Office"
+    ],
+    "severity": "error"
+  },
+  {
+    "message": "missing: /demo_datacentre_01/demo_datacentre_01_Site/demo_datacentre_01/L01_Office/Open_Office/lum_office_5",
+    "name": "RepeatDrift",
+    "paths": [
+      "/demo_datacentre_01/demo_datacentre_01_Site/demo_datacentre_01/L02_Office"
+    ],
+    "severity": "error"
+  },
+  {
+    "message": "missing: /demo_datacentre_01/demo_datacentre_01_Site/demo_datacentre_01/L01_Office/Open_Office/lum_office_6",
+    "name": "RepeatDrift",
+    "paths": [
+      "/demo_datacentre_01/demo_datacentre_01_Site/demo_datacentre_01/L02_Office"
+    ],
+    "severity": "error"
+  },
+  {
+    "message": "missing: /demo_datacentre_01/demo_datacentre_01_Site/demo_datacentre_01/L01_Office/WC/pipe_drain_pod",
+    "name": "RepeatDrift",
+    "paths": [
+      "/demo_datacentre_01/demo_datacentre_01_Site/demo_datacentre_01/L02_Office"
+    ],
+    "severity": "error"
+  },
+  {
+    "message": "missing: /demo_datacentre_01/demo_datacentre_01_Site/demo_datacentre_01/L01_Office/WC/pod_wc",
+    "name": "RepeatDrift",
+    "paths": [
+      "/demo_datacentre_01/demo_datacentre_01_Site/demo_datacentre_01/L02_Office"
+    ],
+    "severity": "error"
+  },
+  {
+    "message": "missing: /demo_datacentre_01/demo_datacentre_01_Site/demo_datacentre_01/L01_Office/WC/san_pod_1",
+    "name": "RepeatDrift",
+    "paths": [
+      "/demo_datacentre_01/demo_datacentre_01_Site/demo_datacentre_01/L02_Office"
+    ],
+    "severity": "error"
+  },
+  {
+    "message": "missing: /demo_datacentre_01/demo_datacentre_01_Site/demo_datacentre_01/L01_Office/WC/san_pod_2",
+    "name": "RepeatDrift",
+    "paths": [
+      "/demo_datacentre_01/demo_datacentre_01_Site/demo_datacentre_01/L02_Office"
+    ],
+    "severity": "error"
+  }
+]

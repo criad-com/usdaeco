@@ -1,0 +1,528 @@
+#usda 1.0
+(
+ customLayerData = {
+  string "aeco:layer:package" = "structure"
+  string "aeco:layer:producer" = "usdAECO suite"
+  string "aeco:layer:role" = "drivers"
+  string "aeco:layer:source" = "data/usdaeco-datacentre/dist/full/structure.semantics.usda"
+  string "aeco:layer:sourceSha256" = "de4e4520989fe3a78161f177e3eaf0c8e3b68d0304b84ce9ed61feea2aaca401"
+  string "aeco:layer:tag" = "v0.5.1"
+ }
+)
+
+over "demo_datacentre_01"
+{
+ over "demo_datacentre_01_Site"
+ {
+  over "demo_datacentre_01"
+  {
+   over "L00_Ground"
+   {
+    over "col_049" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/RC_Column_400x400>
+    )
+    {
+    }
+
+    over "col_021" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/RC_Column_400x400>
+    )
+    {
+    }
+
+    over "Ring_Beam_W" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/RC_Ring_Beam_400x600>
+    )
+    {
+    }
+
+    over "col_039" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/RC_Column_400x400>
+    )
+    {
+    }
+
+    over "col_074" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/RC_Column_400x400>
+    )
+    {
+    }
+
+    over "col_029" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/RC_Column_400x400>
+    )
+    {
+    }
+
+    over "col_064" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/RC_Column_400x400>
+    )
+    {
+    }
+
+    over "col_077" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/RC_Column_400x400>
+    )
+    {
+    }
+
+    over "col_063" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/RC_Column_400x400>
+    )
+    {
+    }
+
+    over "col_004" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/RC_Column_400x400>
+    )
+    {
+    }
+
+    over "col_026" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/RC_Column_400x400>
+    )
+    {
+    }
+
+    over "col_051" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/RC_Column_400x400>
+    )
+    {
+    }
+
+    over "col_008" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/RC_Column_400x400>
+    )
+    {
+    }
+
+    over "col_013" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/RC_Column_400x400>
+    )
+    {
+    }
+
+    over "col_011" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/RC_Column_400x400>
+    )
+    {
+    }
+
+    over "col_054" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/RC_Column_400x400>
+    )
+    {
+    }
+
+    over "col_038" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/RC_Column_400x400>
+    )
+    {
+    }
+
+    over "col_079" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/RC_Column_400x400>
+    )
+    {
+    }
+
+    over "col_058" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/RC_Column_400x400>
+    )
+    {
+    }
+
+    over "col_069" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/RC_Column_400x400>
+    )
+    {
+    }
+
+    over "col_005" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/RC_Column_400x400>
+    )
+    {
+    }
+
+    over "col_062" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/RC_Column_400x400>
+    )
+    {
+    }
+
+    over "col_003" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/RC_Column_400x400>
+    )
+    {
+    }
+
+    over "col_053" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/RC_Column_400x400>
+    )
+    {
+    }
+
+    over "col_047" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/RC_Column_400x400>
+    )
+    {
+    }
+
+    over "Ring_Beam_E" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/RC_Ring_Beam_400x600>
+    )
+    {
+    }
+
+    over "col_040" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/RC_Column_400x400>
+    )
+    {
+    }
+
+    over "col_055" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/RC_Column_400x400>
+    )
+    {
+    }
+
+    over "col_045" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/RC_Column_400x400>
+    )
+    {
+    }
+
+    over "col_016" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/RC_Column_400x400>
+    )
+    {
+    }
+
+    over "col_017" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/RC_Column_400x400>
+    )
+    {
+    }
+
+    over "col_032" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/RC_Column_400x400>
+    )
+    {
+    }
+
+    over "col_014" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/RC_Column_400x400>
+    )
+    {
+    }
+
+    over "col_080" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/RC_Column_400x400>
+    )
+    {
+    }
+
+    over "col_060" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/RC_Column_400x400>
+    )
+    {
+    }
+
+    over "col_022" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/RC_Column_400x400>
+    )
+    {
+    }
+
+    over "col_044" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/RC_Column_400x400>
+    )
+    {
+    }
+
+    over "col_041" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/RC_Column_400x400>
+    )
+    {
+    }
+
+    over "col_034" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/RC_Column_400x400>
+    )
+    {
+    }
+
+    over "col_075" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/RC_Column_400x400>
+    )
+    {
+    }
+
+    over "col_028" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/RC_Column_400x400>
+    )
+    {
+    }
+
+    over "col_056" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/RC_Column_400x400>
+    )
+    {
+    }
+
+    over "col_065" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/RC_Column_400x400>
+    )
+    {
+    }
+
+    over "col_001" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/RC_Column_400x400>
+    )
+    {
+    }
+
+    over "col_031" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/RC_Column_400x400>
+    )
+    {
+    }
+
+    over "col_073" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/RC_Column_400x400>
+    )
+    {
+    }
+
+    over "col_009" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/RC_Column_400x400>
+    )
+    {
+    }
+
+    over "col_025" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/RC_Column_400x400>
+    )
+    {
+    }
+
+    over "col_052" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/RC_Column_400x400>
+    )
+    {
+    }
+
+    over "col_027" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/RC_Column_400x400>
+    )
+    {
+    }
+
+    over "col_010" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/RC_Column_400x400>
+    )
+    {
+    }
+
+    over "col_019" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/RC_Column_400x400>
+    )
+    {
+    }
+
+    over "col_072" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/RC_Column_400x400>
+    )
+    {
+    }
+
+    over "col_007" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/RC_Column_400x400>
+    )
+    {
+    }
+
+    over "col_023" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/RC_Column_400x400>
+    )
+    {
+    }
+
+    over "col_070" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/RC_Column_400x400>
+    )
+    {
+    }
+
+    over "col_036" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/RC_Column_400x400>
+    )
+    {
+    }
+
+    over "col_067" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/RC_Column_400x400>
+    )
+    {
+    }
+
+    over "Ring_Beam_S" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/RC_Ring_Beam_400x600>
+    )
+    {
+    }
+
+    over "col_030" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/RC_Column_400x400>
+    )
+    {
+    }
+
+    over "col_020" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/RC_Column_400x400>
+    )
+    {
+    }
+
+    over "col_024" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/RC_Column_400x400>
+    )
+    {
+    }
+
+    over "Ring_Beam_N" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/RC_Ring_Beam_400x600>
+    )
+    {
+    }
+
+    over "col_078" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/RC_Column_400x400>
+    )
+    {
+    }
+
+    over "col_043" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/RC_Column_400x400>
+    )
+    {
+    }
+
+    over "col_012" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/RC_Column_400x400>
+    )
+    {
+    }
+
+    over "col_061" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/RC_Column_400x400>
+    )
+    {
+    }
+
+    over "col_033" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/RC_Column_400x400>
+    )
+    {
+    }
+
+    over "col_006" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/RC_Column_400x400>
+    )
+    {
+    }
+
+    over "col_035" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/RC_Column_400x400>
+    )
+    {
+    }
+
+    over "col_046" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/RC_Column_400x400>
+    )
+    {
+    }
+
+    over "col_002" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/RC_Column_400x400>
+    )
+    {
+    }
+
+    over "col_057" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/RC_Column_400x400>
+    )
+    {
+    }
+
+    over "col_018" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/RC_Column_400x400>
+    )
+    {
+    }
+
+    over "col_068" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/RC_Column_400x400>
+    )
+    {
+    }
+
+    over "col_076" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/RC_Column_400x400>
+    )
+    {
+    }
+
+    over "col_059" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/RC_Column_400x400>
+    )
+    {
+    }
+
+    over "col_037" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/RC_Column_400x400>
+    )
+    {
+    }
+
+    over "col_050" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/RC_Column_400x400>
+    )
+    {
+    }
+
+    over "col_071" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/RC_Column_400x400>
+    )
+    {
+    }
+
+    over "col_066" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/RC_Column_400x400>
+    )
+    {
+    }
+
+    over "col_042" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/RC_Column_400x400>
+    )
+    {
+    }
+
+    over "col_048" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/RC_Column_400x400>
+    )
+    {
+    }
+
+    over "col_015" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/RC_Column_400x400>
+    )
+    {
+    }
+   }
+  }
+ }
+}
+

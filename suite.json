@@ -146,7 +146,7 @@
       "tier": "hosts",
       "kind": "integration",
       "library": null,
-      "tag": "v0.2.3",
+      "tag": "v0.3.1",
       "requires": {
         "usdAeco": ">=0.9,<1.0",
         "usdAecoSync": ">=0.5,<0.6",
@@ -237,7 +237,7 @@
       "tier": "data",
       "kind": "data",
       "library": null,
-      "tag": "v0.4.9",
+      "tag": "v0.5.1",
       "requires": {
         "usdaeco-revit": ">=0.1,<0.2"
       }

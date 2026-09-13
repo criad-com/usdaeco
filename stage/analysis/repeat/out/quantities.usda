@@ -1,0 +1,4201 @@
+#usda 1.0
+(
+ customLayerData = {
+  string "aeco:layer:package" = "repeat"
+  string "aeco:layer:producer" = "hook v0.2.1"
+  string "aeco:layer:role" = "analysis"
+  string "aeco:layer:source" = "kind/usdaeco-repeat/examples/datacentre/run.py"
+  string "aeco:layer:sourceSha256" = "1b931ed764ad3b73341738c7ba6d25433424cd5d02c520927466898467965b11"
+  string "aeco:layer:tag" = "v0.2.1"
+ }
+)
+
+over "demo_datacentre_01"
+{
+ over "demo_datacentre_01_Site"
+ {
+  over "demo_datacentre_01"
+  {
+   over "L01_Office"
+   {
+    over "Office_Corridor_L01"
+    {
+     over "Corridor_ceiling_void"
+     {
+      over "pipe_chw_void_f" (
+       prepend apiSchemas = ["AecoQuantityAPI"]
+      )
+      {
+       double aeco:qto:area = 3.0217115299224364 (
+        customData = {
+         dictionary aeco = {
+          dictionary qto = {
+           string method = "body-surface-tessellated"
+           string source = "e230a24f-4b3f-503b-a65d-4641640e8b5a"
+           string stamp = "1b2b9a49f652c7dc41c7ba4a05d4a1d63f3fccd899f5912a72999a937e9f9cfd"
+          }
+         }
+        }
+       )
+       double aeco:qto:count = 1 (
+        customData = {
+         dictionary aeco = {
+          dictionary qto = {
+           string method = "element-occurrence"
+           string source = "e230a24f-4b3f-503b-a65d-4641640e8b5a"
+           string stamp = "1b2b9a49f652c7dc41c7ba4a05d4a1d63f3fccd899f5912a72999a937e9f9cfd"
+          }
+         }
+        }
+       )
+       double aeco:qto:length = 3.8 (
+        customData = {
+         dictionary aeco = {
+          dictionary qto = {
+           string method = "axis-line"
+           string source = "e230a24f-4b3f-503b-a65d-4641640e8b5a"
+           string stamp = "1b2b9a49f652c7dc41c7ba4a05d4a1d63f3fccd899f5912a72999a937e9f9cfd"
+          }
+         }
+        }
+       )
+       double aeco:qto:volume = 0.04496627458668438 (
+        customData = {
+         dictionary aeco = {
+          dictionary qto = {
+           string method = "body-volume-closed-tessellated"
+           string source = "e230a24f-4b3f-503b-a65d-4641640e8b5a"
+           string stamp = "1b2b9a49f652c7dc41c7ba4a05d4a1d63f3fccd899f5912a72999a937e9f9cfd"
+          }
+         }
+        }
+       )
+      }
+
+      over "pipe_chw_void_r" (
+       prepend apiSchemas = ["AecoQuantityAPI"]
+      )
+      {
+       double aeco:qto:area = 2.9366703461634303 (
+        customData = {
+         dictionary aeco = {
+          dictionary qto = {
+           string method = "body-surface-tessellated"
+           string source = "f197c006-1d48-5d32-9aab-55f6e27f7a11"
+           string stamp = "3bb17ef10b9f96f9904daefe5bd526a5c4d115a668f39527c609e0c803e76397"
+          }
+         }
+        }
+       )
+       double aeco:qto:count = 1 (
+        customData = {
+         dictionary aeco = {
+          dictionary qto = {
+           string method = "element-occurrence"
+           string source = "f197c006-1d48-5d32-9aab-55f6e27f7a11"
+           string stamp = "3bb17ef10b9f96f9904daefe5bd526a5c4d115a668f39527c609e0c803e76397"
+          }
+         }
+        }
+       )
+       double aeco:qto:length = 3.8 (
+        customData = {
+         dictionary aeco = {
+          dictionary qto = {
+           string method = "axis-line"
+           string source = "f197c006-1d48-5d32-9aab-55f6e27f7a11"
+           string stamp = "3bb17ef10b9f96f9904daefe5bd526a5c4d115a668f39527c609e0c803e76397"
+          }
+         }
+        }
+       )
+       double aeco:qto:volume = 0.043693608800284445 (
+        customData = {
+         dictionary aeco = {
+          dictionary qto = {
+           string method = "body-volume-closed-tessellated"
+           string source = "f197c006-1d48-5d32-9aab-55f6e27f7a11"
+           string stamp = "3bb17ef10b9f96f9904daefe5bd526a5c4d115a668f39527c609e0c803e76397"
+          }
+         }
+        }
+       )
+      }
+
+      over "pipe_clash_hard" (
+       prepend apiSchemas = ["AecoQuantityAPI"]
+      )
+      {
+       double aeco:qto:area = 0.3836126334441258 (
+        customData = {
+         dictionary aeco = {
+          dictionary qto = {
+           string method = "body-surface-tessellated"
+           string source = "5c1bcae1-aed8-5d1a-bffe-e8eb8bc50f6f"
+           string stamp = "5a9cd7b572bb7b8c3a9f72a2b085b9a812909a1c15315cd4381ad32cc1c618a6"
+          }
+         }
+        }
+       )
+       double aeco:qto:count = 1 (
+        customData = {
+         dictionary aeco = {
+          dictionary qto = {
+           string method = "element-occurrence"
+           string source = "5c1bcae1-aed8-5d1a-bffe-e8eb8bc50f6f"
+           string stamp = "5a9cd7b572bb7b8c3a9f72a2b085b9a812909a1c15315cd4381ad32cc1c618a6"
+          }
+         }
+        }
+       )
+       double aeco:qto:length = 2 (
+        customData = {
+         dictionary aeco = {
+          dictionary qto = {
+           string method = "axis-line"
+           string source = "5c1bcae1-aed8-5d1a-bffe-e8eb8bc50f6f"
+           string stamp = "5a9cd7b572bb7b8c3a9f72a2b085b9a812909a1c15315cd4381ad32cc1c618a6"
+          }
+         }
+        }
+       )
+       double aeco:qto:volume = 0.0056561755682196235 (
+        customData = {
+         dictionary aeco = {
+          dictionary qto = {
+           string method = "body-volume-closed-tessellated"
+           string source = "5c1bcae1-aed8-5d1a-bffe-e8eb8bc50f6f"
+           string stamp = "5a9cd7b572bb7b8c3a9f72a2b085b9a812909a1c15315cd4381ad32cc1c618a6"
+          }
+         }
+        }
+       )
+      }
+
+      over "pipe_clash_near" (
+       prepend apiSchemas = ["AecoQuantityAPI"]
+      )
+      {
+       double aeco:qto:area = 0.3587583151645036 (
+        customData = {
+         dictionary aeco = {
+          dictionary qto = {
+           string method = "body-surface-tessellated"
+           string source = "6e5a2055-fc33-5dd4-8df1-af4a6e337adb"
+           string stamp = "75b28408a1b819b21ecfe94ac123829d32d3e4e3384d8ec0fb743e9bed02eee5"
+          }
+         }
+        }
+       )
+       double aeco:qto:count = 1 (
+        customData = {
+         dictionary aeco = {
+          dictionary qto = {
+           string method = "element-occurrence"
+           string source = "6e5a2055-fc33-5dd4-8df1-af4a6e337adb"
+           string stamp = "75b28408a1b819b21ecfe94ac123829d32d3e4e3384d8ec0fb743e9bed02eee5"
+          }
+         }
+        }
+       )
+       double aeco:qto:length = 2 (
+        customData = {
+         dictionary aeco = {
+          dictionary qto = {
+           string method = "axis-line"
+           string source = "6e5a2055-fc33-5dd4-8df1-af4a6e337adb"
+           string stamp = "75b28408a1b819b21ecfe94ac123829d32d3e4e3384d8ec0fb743e9bed02eee5"
+          }
+         }
+        }
+       )
+       double aeco:qto:volume = 0.004322686223417804 (
+        customData = {
+         dictionary aeco = {
+          dictionary qto = {
+           string method = "body-volume-closed-tessellated"
+           string source = "6e5a2055-fc33-5dd4-8df1-af4a6e337adb"
+           string stamp = "75b28408a1b819b21ecfe94ac123829d32d3e4e3384d8ec0fb743e9bed02eee5"
+          }
+         }
+        }
+       )
+      }
+
+      over "pipe_clash_tangent" (
+       prepend apiSchemas = ["AecoQuantityAPI"]
+      )
+      {
+       double aeco:qto:area = 0.39362077638761195 (
+        customData = {
+         dictionary aeco = {
+          dictionary qto = {
+           string method = "body-surface-tessellated"
+           string source = "f48386c3-5bfd-55b0-8010-7c0321905d51"
+           string stamp = "ede439a3b1a4d0d8cc84d158619029c263fee080d3200fc9daef77ffeb166e4b"
+          }
+         }
+        }
+       )
+       double aeco:qto:count = 1 (
+        customData = {
+         dictionary aeco = {
+          dictionary qto = {
+           string method = "element-occurrence"
+           string source = "f48386c3-5bfd-55b0-8010-7c0321905d51"
+           string stamp = "ede439a3b1a4d0d8cc84d158619029c263fee080d3200fc9daef77ffeb166e4b"
+          }
+         }
+        }
+       )
+       double aeco:qto:length = 2 (
+        customData = {
+         dictionary aeco = {
+          dictionary qto = {
+           string method = "axis-line"
+           string source = "f48386c3-5bfd-55b0-8010-7c0321905d51"
+           string stamp = "ede439a3b1a4d0d8cc84d158619029c263fee080d3200fc9daef77ffeb166e4b"
+          }
+         }
+        }
+       )
+       double aeco:qto:volume = 0.005845694445724803 (
+        customData = {
+         dictionary aeco = {
+          dictionary qto = {
+           string method = "body-volume-closed-tessellated"
+           string source = "f48386c3-5bfd-55b0-8010-7c0321905d51"
+           string stamp = "ede439a3b1a4d0d8cc84d158619029c263fee080d3200fc9daef77ffeb166e4b"
+          }
+         }
+        }
+       )
+      }
+
+      over "tray_void_ocorr_1" (
+       prepend apiSchemas = ["AecoQuantityAPI"]
+      )
+      {
+       double aeco:qto:area = 10.459996213912973 (
+        customData = {
+         dictionary aeco = {
+          dictionary qto = {
+           string method = "body-surface-tessellated"
+           string source = "2df12127-2bce-58a4-b767-5f0747057b63"
+           string stamp = "08e6f2397a1850c205c0336df9b453ebb901b845a7c59619670b45a0015e0864"
+          }
+         }
+        }
+       )
+       double aeco:qto:count = 1 (
+        customData = {
+         dictionary aeco = {
+          dictionary qto = {
+           string method = "element-occurrence"
+           string source = "2df12127-2bce-58a4-b767-5f0747057b63"
+           string stamp = "08e6f2397a1850c205c0336df9b453ebb901b845a7c59619670b45a0015e0864"
+          }
+         }
+        }
+       )
+       double aeco:qto:length = 13 (
+        customData = {
+         dictionary aeco = {
+          dictionary qto = {
+           string method = "axis-line"
+           string source = "2df12127-2bce-58a4-b767-5f0747057b63"
+           string stamp = "08e6f2397a1850c205c0336df9b453ebb901b845a7c59619670b45a0015e0864"
+          }
+         }
+        }
+       )
+       double aeco:qto:volume = 0.38999956607824515 (
+        customData = {
+         dictionary aeco = {
+          dictionary qto = {
+           string method = "body-volume-closed-tessellated"
+           string source = "2df12127-2bce-58a4-b767-5f0747057b63"
+           string stamp = "08e6f2397a1850c205c0336df9b453ebb901b845a7c59619670b45a0015e0864"
+          }
+         }
+        }
+       )
+      }
+     }
+
+     over "clg_ocorr_1" (
+      prepend apiSchemas = ["AecoQuantityAPI"]
+     )
+     {
+      double aeco:qto:area = 90.45000000670552 (
+       customData = {
+        dictionary aeco = {
+         dictionary qto = {
+          string method = "body-surface-tessellated"
+          string source = "e3359946-0dce-571b-9dd2-a86326da37f8"
+          string stamp = "24ebd3836f1b3c3a4a06dd66717bbd1482d56ac7b9bfa07875397d9c592005cd"
+         }
+        }
+       }
+      )
+      double aeco:qto:count = 1 (
+       customData = {
+        dictionary aeco = {
+         dictionary qto = {
+          string method = "element-occurrence"
+          string source = "e3359946-0dce-571b-9dd2-a86326da37f8"
+          string stamp = "24ebd3836f1b3c3a4a06dd66717bbd1482d56ac7b9bfa07875397d9c592005cd"
+         }
+        }
+       }
+      )
+      double aeco:qto:length = 15 (
+       customData = {
+        dictionary aeco = {
+         dictionary qto = {
+          string method = "body-local-major-dimension"
+          string source = "e3359946-0dce-571b-9dd2-a86326da37f8"
+          string stamp = "24ebd3836f1b3c3a4a06dd66717bbd1482d56ac7b9bfa07875397d9c592005cd"
+         }
+        }
+       }
+      )
+      double aeco:qto:volume = 0.5625000083819032 (
+       customData = {
+        dictionary aeco = {
+         dictionary qto = {
+          string method = "body-volume-closed-tessellated"
+          string source = "e3359946-0dce-571b-9dd2-a86326da37f8"
+          string stamp = "24ebd3836f1b3c3a4a06dd66717bbd1482d56ac7b9bfa07875397d9c592005cd"
+         }
+        }
+       }
+      )
+     }
+
+     over "pod_wc_temp" (
+      prepend apiSchemas = ["AecoQuantityAPI"]
+     )
+     {
+      double aeco:qto:area = 47.28000022888182 (
+       customData = {
+        dictionary aeco = {
+         dictionary qto = {
+          string method = "body-surface-tessellated"
+          string source = "5c25d9bf-d000-5d3b-b4ed-f199bda623a7"
+          string stamp = "a385b0b053684462ff23a3d041ef43b292157d3495640d934a9f9ba4bed3b0bc"
+         }
+        }
+       }
+      )
+      double aeco:qto:count = 1 (
+       customData = {
+        dictionary aeco = {
+         dictionary qto = {
+          string method = "element-occurrence"
+          string source = "5c25d9bf-d000-5d3b-b4ed-f199bda623a7"
+          string stamp = "a385b0b053684462ff23a3d041ef43b292157d3495640d934a9f9ba4bed3b0bc"
+         }
+        }
+       }
+      )
+      double aeco:qto:length = 3.5999999046325684 (
+       customData = {
+        dictionary aeco = {
+         dictionary qto = {
+          string method = "body-local-major-dimension"
+          string source = "5c25d9bf-d000-5d3b-b4ed-f199bda623a7"
+          string stamp = "a385b0b053684462ff23a3d041ef43b292157d3495640d934a9f9ba4bed3b0bc"
+         }
+        }
+       }
+      )
+      double aeco:qto:volume = 21.600000286102272 (
+       customData = {
+        dictionary aeco = {
+         dictionary qto = {
+          string method = "body-volume-closed-tessellated"
+          string source = "5c25d9bf-d000-5d3b-b4ed-f199bda623a7"
+          string stamp = "a385b0b053684462ff23a3d041ef43b292157d3495640d934a9f9ba4bed3b0bc"
+         }
+        }
+       }
+      )
+     }
+
+     over "sec_cam_corr_ocorr_1_1" (
+      prepend apiSchemas = ["AecoQuantityAPI"]
+     )
+     {
+      double aeco:qto:area = 0.11519999723434449 (
+       customData = {
+        dictionary aeco = {
+         dictionary qto = {
+          string method = "body-surface-tessellated"
+          string source = "85ef0c56-c408-588b-8c84-7efbe9dd3b53"
+          string stamp = "aeadc8815c14788216e52b8b3d7c5001da5cd39c77df1aca4f9e48fdb1405124"
+         }
+        }
+       }
+      )
+      double aeco:qto:count = 1 (
+       customData = {
+        dictionary aeco = {
+         dictionary qto = {
+          string method = "element-occurrence"
+          string source = "85ef0c56-c408-588b-8c84-7efbe9dd3b53"
+          string stamp = "aeadc8815c14788216e52b8b3d7c5001da5cd39c77df1aca4f9e48fdb1405124"
+         }
+        }
+       }
+      )
+      double aeco:qto:length = 0.1599999964237213 (
+       customData = {
+        dictionary aeco = {
+         dictionary qto = {
+          string method = "body-local-major-dimension"
+          string source = "85ef0c56-c408-588b-8c84-7efbe9dd3b53"
+          string stamp = "aeadc8815c14788216e52b8b3d7c5001da5cd39c77df1aca4f9e48fdb1405124"
+         }
+        }
+       }
+      )
+      double aeco:qto:volume = 0.002559999923706054 (
+       customData = {
+        dictionary aeco = {
+         dictionary qto = {
+          string method = "body-volume-closed-tessellated"
+          string source = "85ef0c56-c408-588b-8c84-7efbe9dd3b53"
+          string stamp = "aeadc8815c14788216e52b8b3d7c5001da5cd39c77df1aca4f9e48fdb1405124"
+         }
+        }
+       }
+      )
+     }
+
+     over "sec_cam_corr_ocorr_1_2" (
+      prepend apiSchemas = ["AecoQuantityAPI"]
+     )
+     {
+      double aeco:qto:area = 0.11519999723434449 (
+       customData = {
+        dictionary aeco = {
+         dictionary qto = {
+          string method = "body-surface-tessellated"
+          string source = "5c516ad4-57b5-5ffe-9468-cf14e42e9ae0"
+          string stamp = "9d792f9930e712b7f3ad9049d00563c2f76e974234161f955e3aeac9a2d6ecf0"
+         }
+        }
+       }
+      )
+      double aeco:qto:count = 1 (
+       customData = {
+        dictionary aeco = {
+         dictionary qto = {
+          string method = "element-occurrence"
+          string source = "5c516ad4-57b5-5ffe-9468-cf14e42e9ae0"
+          string stamp = "9d792f9930e712b7f3ad9049d00563c2f76e974234161f955e3aeac9a2d6ecf0"
+         }
+        }
+       }
+      )
+      double aeco:qto:length = 0.1599999964237213 (
+       customData = {
+        dictionary aeco = {
+         dictionary qto = {
+          string method = "body-local-major-dimension"
+          string source = "5c516ad4-57b5-5ffe-9468-cf14e42e9ae0"
+          string stamp = "9d792f9930e712b7f3ad9049d00563c2f76e974234161f955e3aeac9a2d6ecf0"
+         }
+        }
+       }
+      )
+      double aeco:qto:volume = 0.002559999923706054 (
+       customData = {
+        dictionary aeco = {
+         dictionary qto = {
+          string method = "body-volume-closed-tessellated"
+          string source = "5c516ad4-57b5-5ffe-9468-cf14e42e9ae0"
+          string stamp = "9d792f9930e712b7f3ad9049d00563c2f76e974234161f955e3aeac9a2d6ecf0"
+         }
+        }
+       }
+      )
+     }
+    }
+
+    over "Open_Office"
+    {
+     over "Office_ceiling_void"
+     {
+      over "cnd_void_office_1" (
+       prepend apiSchemas = ["AecoQuantityAPI"]
+      )
+      {
+       double aeco:qto:area = 0.6277643570450829 (
+        customData = {
+         dictionary aeco = {
+          dictionary qto = {
+           string method = "body-surface-tessellated"
+           string source = "6f112a2a-4c87-5137-8c68-d0e86d9ff833"
+           string stamp = "52203769924de44b5cb71a2a1d8c70b73463f58ff978cc5d86a0eebdf9305424"
+          }
+         }
+        }
+       )
+       double aeco:qto:count = 1 (
+        customData = {
+         dictionary aeco = {
+          dictionary qto = {
+           string method = "element-occurrence"
+           string source = "6f112a2a-4c87-5137-8c68-d0e86d9ff833"
+           string stamp = "52203769924de44b5cb71a2a1d8c70b73463f58ff978cc5d86a0eebdf9305424"
+          }
+         }
+        }
+       )
+       double aeco:qto:length = 8 (
+        customData = {
+         dictionary aeco = {
+          dictionary qto = {
+           string method = "axis-line"
+           string source = "6f112a2a-4c87-5137-8c68-d0e86d9ff833"
+           string stamp = "52203769924de44b5cb71a2a1d8c70b73463f58ff978cc5d86a0eebdf9305424"
+          }
+         }
+        }
+       )
+       double aeco:qto:volume = 0.003888896839271183 (
+        customData = {
+         dictionary aeco = {
+          dictionary qto = {
+           string method = "body-volume-closed-tessellated"
+           string source = "6f112a2a-4c87-5137-8c68-d0e86d9ff833"
+           string stamp = "52203769924de44b5cb71a2a1d8c70b73463f58ff978cc5d86a0eebdf9305424"
+          }
+         }
+        }
+       )
+      }
+
+      over "cnd_void_office_2" (
+       prepend apiSchemas = ["AecoQuantityAPI"]
+      )
+      {
+       double aeco:qto:area = 0.6277628707413887 (
+        customData = {
+         dictionary aeco = {
+          dictionary qto = {
+           string method = "body-surface-tessellated"
+           string source = "81e9ca85-7c2f-5b47-8eac-b89408b7c6bc"
+           string stamp = "d83fe3ec5cf8efb3ef1d1a82021ceef0047d74223521423a1e778dbc8220ba2f"
+          }
+         }
+        }
+       )
+       double aeco:qto:count = 1 (
+        customData = {
+         dictionary aeco = {
+          dictionary qto = {
+           string method = "element-occurrence"
+           string source = "81e9ca85-7c2f-5b47-8eac-b89408b7c6bc"
+           string stamp = "d83fe3ec5cf8efb3ef1d1a82021ceef0047d74223521423a1e778dbc8220ba2f"
+          }
+         }
+        }
+       )
+       double aeco:qto:length = 8 (
+        customData = {
+         dictionary aeco = {
+          dictionary qto = {
+           string method = "axis-line"
+           string source = "81e9ca85-7c2f-5b47-8eac-b89408b7c6bc"
+           string stamp = "d83fe3ec5cf8efb3ef1d1a82021ceef0047d74223521423a1e778dbc8220ba2f"
+          }
+         }
+        }
+       )
+       double aeco:qto:volume = 0.0038888784474693226 (
+        customData = {
+         dictionary aeco = {
+          dictionary qto = {
+           string method = "body-volume-closed-tessellated"
+           string source = "81e9ca85-7c2f-5b47-8eac-b89408b7c6bc"
+           string stamp = "d83fe3ec5cf8efb3ef1d1a82021ceef0047d74223521423a1e778dbc8220ba2f"
+          }
+         }
+        }
+       )
+      }
+
+      over "fcu_office_1" (
+       prepend apiSchemas = ["AecoQuantityAPI"]
+      )
+      {
+       double aeco:qto:area = 1.8400000667572023 (
+        customData = {
+         dictionary aeco = {
+          dictionary qto = {
+           string method = "body-surface-tessellated"
+           string source = "2fe22371-268e-5c7b-8e4c-d6fe6fd52e15"
+           string stamp = "55426dfd6a5bb8e4c5438a7e0ce35724aa6eb2b7a3cc37b0f657dcaa55ad8ff8"
+          }
+         }
+        }
+       )
+       double aeco:qto:count = 1 (
+        customData = {
+         dictionary aeco = {
+          dictionary qto = {
+           string method = "element-occurrence"
+           string source = "2fe22371-268e-5c7b-8e4c-d6fe6fd52e15"
+           string stamp = "55426dfd6a5bb8e4c5438a7e0ce35724aa6eb2b7a3cc37b0f657dcaa55ad8ff8"
+          }
+         }
+        }
+       )
+       double aeco:qto:length = 1 (
+        customData = {
+         dictionary aeco = {
+          dictionary qto = {
+           string method = "body-local-major-dimension"
+           string source = "2fe22371-268e-5c7b-8e4c-d6fe6fd52e15"
+           string stamp = "55426dfd6a5bb8e4c5438a7e0ce35724aa6eb2b7a3cc37b0f657dcaa55ad8ff8"
+          }
+         }
+        }
+       )
+       double aeco:qto:volume = 0.12000000655651101 (
+        customData = {
+         dictionary aeco = {
+          dictionary qto = {
+           string method = "body-volume-closed-tessellated"
+           string source = "2fe22371-268e-5c7b-8e4c-d6fe6fd52e15"
+           string stamp = "55426dfd6a5bb8e4c5438a7e0ce35724aa6eb2b7a3cc37b0f657dcaa55ad8ff8"
+          }
+         }
+        }
+       )
+      }
+     }
+
+     over "clg_office" (
+      prepend apiSchemas = ["AecoQuantityAPI"]
+     )
+     {
+      double aeco:qto:area = 180.47500000707805 (
+       customData = {
+        dictionary aeco = {
+         dictionary qto = {
+          string method = "body-surface-tessellated"
+          string source = "6e39f114-9566-58cd-8ca5-d54269132687"
+          string stamp = "19535b26886cb64e93078bad887d73d4c9fe43cdaf31a93169d781b18b283d48"
+         }
+        }
+       }
+      )
+      double aeco:qto:count = 1 (
+       customData = {
+        dictionary aeco = {
+         dictionary qto = {
+          string method = "element-occurrence"
+          string source = "6e39f114-9566-58cd-8ca5-d54269132687"
+          string stamp = "19535b26886cb64e93078bad887d73d4c9fe43cdaf31a93169d781b18b283d48"
+         }
+        }
+       }
+      )
+      double aeco:qto:length = 10 (
+       customData = {
+        dictionary aeco = {
+         dictionary qto = {
+          string method = "body-local-major-dimension"
+          string source = "6e39f114-9566-58cd-8ca5-d54269132687"
+          string stamp = "19535b26886cb64e93078bad887d73d4c9fe43cdaf31a93169d781b18b283d48"
+         }
+        }
+       }
+      )
+      double aeco:qto:volume = 1.1250000167638063 (
+       customData = {
+        dictionary aeco = {
+         dictionary qto = {
+          string method = "body-volume-closed-tessellated"
+          string source = "6e39f114-9566-58cd-8ca5-d54269132687"
+          string stamp = "19535b26886cb64e93078bad887d73d4c9fe43cdaf31a93169d781b18b283d48"
+         }
+        }
+       }
+      )
+     }
+
+     over "grl_office_1" (
+      prepend apiSchemas = ["AecoQuantityAPI"]
+     )
+     {
+      double aeco:qto:area = 0.38000001281499873 (
+       customData = {
+        dictionary aeco = {
+         dictionary qto = {
+          string method = "body-surface-tessellated"
+          string source = "200afa6b-627f-59ac-86ed-4125edf30004"
+          string stamp = "4018e497e68e0f517f4d55d9f3a36e23756ffc89805ee88d1c6eef152df265f3"
+         }
+        }
+       }
+      )
+      double aeco:qto:count = 1 (
+       customData = {
+        dictionary aeco = {
+         dictionary qto = {
+          string method = "element-occurrence"
+          string source = "200afa6b-627f-59ac-86ed-4125edf30004"
+          string stamp = "4018e497e68e0f517f4d55d9f3a36e23756ffc89805ee88d1c6eef152df265f3"
+         }
+        }
+       }
+      )
+      double aeco:qto:length = 0.4000000059604645 (
+       customData = {
+        dictionary aeco = {
+         dictionary qto = {
+          string method = "body-local-major-dimension"
+          string source = "200afa6b-627f-59ac-86ed-4125edf30004"
+          string stamp = "4018e497e68e0f517f4d55d9f3a36e23756ffc89805ee88d1c6eef152df265f3"
+         }
+        }
+       }
+      )
+      double aeco:qto:volume = 0.006000000417232523 (
+       customData = {
+        dictionary aeco = {
+         dictionary qto = {
+          string method = "body-volume-closed-tessellated"
+          string source = "200afa6b-627f-59ac-86ed-4125edf30004"
+          string stamp = "4018e497e68e0f517f4d55d9f3a36e23756ffc89805ee88d1c6eef152df265f3"
+         }
+        }
+       }
+      )
+     }
+
+     over "grl_office_2" (
+      prepend apiSchemas = ["AecoQuantityAPI"]
+     )
+     {
+      double aeco:qto:area = 0.38000001281499873 (
+       customData = {
+        dictionary aeco = {
+         dictionary qto = {
+          string method = "body-surface-tessellated"
+          string source = "8c2b777c-50db-5e0f-a278-85413b30c991"
+          string stamp = "3426ab2ababd60bf525766ea92cf09ac87800df903377add490f786eda5539b7"
+         }
+        }
+       }
+      )
+      double aeco:qto:count = 1 (
+       customData = {
+        dictionary aeco = {
+         dictionary qto = {
+          string method = "element-occurrence"
+          string source = "8c2b777c-50db-5e0f-a278-85413b30c991"
+          string stamp = "3426ab2ababd60bf525766ea92cf09ac87800df903377add490f786eda5539b7"
+         }
+        }
+       }
+      )
+      double aeco:qto:length = 0.4000000059604645 (
+       customData = {
+        dictionary aeco = {
+         dictionary qto = {
+          string method = "body-local-major-dimension"
+          string source = "8c2b777c-50db-5e0f-a278-85413b30c991"
+          string stamp = "3426ab2ababd60bf525766ea92cf09ac87800df903377add490f786eda5539b7"
+         }
+        }
+       }
+      )
+      double aeco:qto:volume = 0.006000000417232523 (
+       customData = {
+        dictionary aeco = {
+         dictionary qto = {
+          string method = "body-volume-closed-tessellated"
+          string source = "8c2b777c-50db-5e0f-a278-85413b30c991"
+          string stamp = "3426ab2ababd60bf525766ea92cf09ac87800df903377add490f786eda5539b7"
+         }
+        }
+       }
+      )
+     }
+
+     over "grl_office_3" (
+      prepend apiSchemas = ["AecoQuantityAPI"]
+     )
+     {
+      double aeco:qto:area = 0.38000001281499873 (
+       customData = {
+        dictionary aeco = {
+         dictionary qto = {
+          string method = "body-surface-tessellated"
+          string source = "375f15c5-74dd-5039-849e-3b71530db1d0"
+          string stamp = "a00c091cde683abe84c51575d5515469516941fff1e19795557881fb2b2af0fe"
+         }
+        }
+       }
+      )
+      double aeco:qto:count = 1 (
+       customData = {
+        dictionary aeco = {
+         dictionary qto = {
+          string method = "element-occurrence"
+          string source = "375f15c5-74dd-5039-849e-3b71530db1d0"
+          string stamp = "a00c091cde683abe84c51575d5515469516941fff1e19795557881fb2b2af0fe"
+         }
+        }
+       }
+      )
+      double aeco:qto:length = 0.4000000059604645 (
+       customData = {
+        dictionary aeco = {
+         dictionary qto = {
+          string method = "body-local-major-dimension"
+          string source = "375f15c5-74dd-5039-849e-3b71530db1d0"
+          string stamp = "a00c091cde683abe84c51575d5515469516941fff1e19795557881fb2b2af0fe"
+         }
+        }
+       }
+      )
+      double aeco:qto:volume = 0.006000000417232523 (
+       customData = {
+        dictionary aeco = {
+         dictionary qto = {
+          string method = "body-volume-closed-tessellated"
+          string source = "375f15c5-74dd-5039-849e-3b71530db1d0"
+          string stamp = "a00c091cde683abe84c51575d5515469516941fff1e19795557881fb2b2af0fe"
+         }
+        }
+       }
+      )
+     }
+
+     over "grl_office_4" (
+      prepend apiSchemas = ["AecoQuantityAPI"]
+     )
+     {
+      double aeco:qto:area = 0.38000001281499873 (
+       customData = {
+        dictionary aeco = {
+         dictionary qto = {
+          string method = "body-surface-tessellated"
+          string source = "3592dab5-80a1-58a1-931a-10aa42d6c6fd"
+          string stamp = "3bb2ea466d08675f7ae903cc488e9a056cc3dec1ca85359d951c51505f46a467"
+         }
+        }
+       }
+      )
+      double aeco:qto:count = 1 (
+       customData = {
+        dictionary aeco = {
+         dictionary qto = {
+          string method = "element-occurrence"
+          string source = "3592dab5-80a1-58a1-931a-10aa42d6c6fd"
+          string stamp = "3bb2ea466d08675f7ae903cc488e9a056cc3dec1ca85359d951c51505f46a467"
+         }
+        }
+       }
+      )
+      double aeco:qto:length = 0.4000000059604645 (
+       customData = {
+        dictionary aeco = {
+         dictionary qto = {
+          string method = "body-local-major-dimension"
+          string source = "3592dab5-80a1-58a1-931a-10aa42d6c6fd"
+          string stamp = "3bb2ea466d08675f7ae903cc488e9a056cc3dec1ca85359d951c51505f46a467"
+         }
+        }
+       }
+      )
+      double aeco:qto:volume = 0.006000000417232523 (
+       customData = {
+        dictionary aeco = {
+         dictionary qto = {
+          string method = "body-volume-closed-tessellated"
+          string source = "3592dab5-80a1-58a1-931a-10aa42d6c6fd"
+          string stamp = "3bb2ea466d08675f7ae903cc488e9a056cc3dec1ca85359d951c51505f46a467"
+         }
+        }
+       }
+      )
+     }
+
+     over "lum_office_1" (
+      prepend apiSchemas = ["AecoQuantityAPI"]
+     )
+     {
+      double aeco:qto:area = 0.8340000603199016 (
+       customData = {
+        dictionary aeco = {
+         dictionary qto = {
+          string method = "body-surface-tessellated"
+          string source = "63ad1f8d-6555-5ff5-be23-79cd82b39dae"
+          string stamp = "7b1190d92971242591b0af2bdfc3ee69fe361c47fb387fdcff62c788ba525263"
+         }
+        }
+       }
+      )
+      double aeco:qto:count = 1 (
+       customData = {
+        dictionary aeco = {
+         dictionary qto = {
+          string method = "element-occurrence"
+          string source = "63ad1f8d-6555-5ff5-be23-79cd82b39dae"
+          string stamp = "7b1190d92971242591b0af2bdfc3ee69fe361c47fb387fdcff62c788ba525263"
+         }
+        }
+       }
+      )
+      double aeco:qto:length = 0.6000000238418579 (
+       customData = {
+        dictionary aeco = {
+         dictionary qto = {
+          string method = "body-local-major-dimension"
+          string source = "63ad1f8d-6555-5ff5-be23-79cd82b39dae"
+          string stamp = "7b1190d92971242591b0af2bdfc3ee69fe361c47fb387fdcff62c788ba525263"
+         }
+        }
+       }
+      )
+      double aeco:qto:volume = 0.01710000114440919 (
+       customData = {
+        dictionary aeco = {
+         dictionary qto = {
+          string method = "body-volume-closed-tessellated"
+          string source = "63ad1f8d-6555-5ff5-be23-79cd82b39dae"
+          string stamp = "7b1190d92971242591b0af2bdfc3ee69fe361c47fb387fdcff62c788ba525263"
+         }
+        }
+       }
+      )
+     }
+
+     over "lum_office_2" (
+      prepend apiSchemas = ["AecoQuantityAPI"]
+     )
+     {
+      double aeco:qto:area = 0.8340000603199016 (
+       customData = {
+        dictionary aeco = {
+         dictionary qto = {
+          string method = "body-surface-tessellated"
+          string source = "5db6b31c-420a-51d0-8087-e08cd3d96828"
+          string stamp = "80d779e52d9c3126085a5e063097a5d9a2b151d17d7327108e9494af521b9c15"
+         }
+        }
+       }
+      )
+      double aeco:qto:count = 1 (
+       customData = {
+        dictionary aeco = {
+         dictionary qto = {
+          string method = "element-occurrence"
+          string source = "5db6b31c-420a-51d0-8087-e08cd3d96828"
+          string stamp = "80d779e52d9c3126085a5e063097a5d9a2b151d17d7327108e9494af521b9c15"
+         }
+        }
+       }
+      )
+      double aeco:qto:length = 0.6000000238418579 (
+       customData = {
+        dictionary aeco = {
+         dictionary qto = {
+          string method = "body-local-major-dimension"
+          string source = "5db6b31c-420a-51d0-8087-e08cd3d96828"
+          string stamp = "80d779e52d9c3126085a5e063097a5d9a2b151d17d7327108e9494af521b9c15"
+         }
+        }
+       }
+      )
+      double aeco:qto:volume = 0.01710000114440919 (
+       customData = {
+        dictionary aeco = {
+         dictionary qto = {
+          string method = "body-volume-closed-tessellated"
+          string source = "5db6b31c-420a-51d0-8087-e08cd3d96828"
+          string stamp = "80d779e52d9c3126085a5e063097a5d9a2b151d17d7327108e9494af521b9c15"
+         }
+        }
+       }
+      )
+     }
+
+     over "lum_office_3" (
+      prepend apiSchemas = ["AecoQuantityAPI"]
+     )
+     {
+      double aeco:qto:area = 0.8340000603199016 (
+       customData = {
+        dictionary aeco = {
+         dictionary qto = {
+          string method = "body-surface-tessellated"
+          string source = "9353edbf-0717-5a0b-8ef3-59bcb0ebe324"
+          string stamp = "c42c0bf8ba0e772ec6663e5d1035cadd701ee05aba2025f15824659f773912eb"
+         }
+        }
+       }
+      )
+      double aeco:qto:count = 1 (
+       customData = {
+        dictionary aeco = {
+         dictionary qto = {
+          string method = "element-occurrence"
+          string source = "9353edbf-0717-5a0b-8ef3-59bcb0ebe324"
+          string stamp = "c42c0bf8ba0e772ec6663e5d1035cadd701ee05aba2025f15824659f773912eb"
+         }
+        }
+       }
+      )
+      double aeco:qto:length = 0.6000000238418579 (
+       customData = {
+        dictionary aeco = {
+         dictionary qto = {
+          string method = "body-local-major-dimension"
+          string source = "9353edbf-0717-5a0b-8ef3-59bcb0ebe324"
+          string stamp = "c42c0bf8ba0e772ec6663e5d1035cadd701ee05aba2025f15824659f773912eb"
+         }
+        }
+       }
+      )
+      double aeco:qto:volume = 0.01710000114440919 (
+       customData = {
+        dictionary aeco = {
+         dictionary qto = {
+          string method = "body-volume-closed-tessellated"
+          string source = "9353edbf-0717-5a0b-8ef3-59bcb0ebe324"
+          string stamp = "c42c0bf8ba0e772ec6663e5d1035cadd701ee05aba2025f15824659f773912eb"
+         }
+        }
+       }
+      )
+     }
+
+     over "lum_office_4" (
+      prepend apiSchemas = ["AecoQuantityAPI"]
+     )
+     {
+      double aeco:qto:area = 0.8340000603199016 (
+       customData = {
+        dictionary aeco = {
+         dictionary qto = {
+          string method = "body-surface-tessellated"
+          string source = "b56f1757-5239-5fb4-b0a3-b8eec425b08c"
+          string stamp = "9f9b227e7ce2ee9df9254d723e925e84dfafd3a59bdfc859dc85380b4ab1f7c6"
+         }
+        }
+       }
+      )
+      double aeco:qto:count = 1 (
+       customData = {
+        dictionary aeco = {
+         dictionary qto = {
+          string method = "element-occurrence"
+          string source = "b56f1757-5239-5fb4-b0a3-b8eec425b08c"
+          string stamp = "9f9b227e7ce2ee9df9254d723e925e84dfafd3a59bdfc859dc85380b4ab1f7c6"
+         }
+        }
+       }
+      )
+      double aeco:qto:length = 0.6000000238418579 (
+       customData = {
+        dictionary aeco = {
+         dictionary qto = {
+          string method = "body-local-major-dimension"
+          string source = "b56f1757-5239-5fb4-b0a3-b8eec425b08c"
+          string stamp = "9f9b227e7ce2ee9df9254d723e925e84dfafd3a59bdfc859dc85380b4ab1f7c6"
+         }
+        }
+       }
+      )
+      double aeco:qto:volume = 0.01710000114440919 (
+       customData = {
+        dictionary aeco = {
+         dictionary qto = {
+          string method = "body-volume-closed-tessellated"
+          string source = "b56f1757-5239-5fb4-b0a3-b8eec425b08c"
+          string stamp = "9f9b227e7ce2ee9df9254d723e925e84dfafd3a59bdfc859dc85380b4ab1f7c6"
+         }
+        }
+       }
+      )
+     }
+
+     over "lum_office_5" (
+      prepend apiSchemas = ["AecoQuantityAPI"]
+     )
+     {
+      double aeco:qto:area = 0.8340000603199016 (
+       customData = {
+        dictionary aeco = {
+         dictionary qto = {
+          string method = "body-surface-tessellated"
+          string source = "d8fdb98a-f141-50d7-813c-543c49947890"
+          string stamp = "6aa31a7380528a6b11f8e753111cee69e68c094ed4f061b340e47482e0616425"
+         }
+        }
+       }
+      )
+      double aeco:qto:count = 1 (
+       customData = {
+        dictionary aeco = {
+         dictionary qto = {
+          string method = "element-occurrence"
+          string source = "d8fdb98a-f141-50d7-813c-543c49947890"
+          string stamp = "6aa31a7380528a6b11f8e753111cee69e68c094ed4f061b340e47482e0616425"
+         }
+        }
+       }
+      )
+      double aeco:qto:length = 0.6000000238418579 (
+       customData = {
+        dictionary aeco = {
+         dictionary qto = {
+          string method = "body-local-major-dimension"
+          string source = "d8fdb98a-f141-50d7-813c-543c49947890"
+          string stamp = "6aa31a7380528a6b11f8e753111cee69e68c094ed4f061b340e47482e0616425"
+         }
+        }
+       }
+      )
+      double aeco:qto:volume = 0.01710000114440919 (
+       customData = {
+        dictionary aeco = {
+         dictionary qto = {
+          string method = "body-volume-closed-tessellated"
+          string source = "d8fdb98a-f141-50d7-813c-543c49947890"
+          string stamp = "6aa31a7380528a6b11f8e753111cee69e68c094ed4f061b340e47482e0616425"
+         }
+        }
+       }
+      )
+     }
+
+     over "lum_office_6" (
+      prepend apiSchemas = ["AecoQuantityAPI"]
+     )
+     {
+      double aeco:qto:area = 0.8340000603199016 (
+       customData = {
+        dictionary aeco = {
+         dictionary qto = {
+          string method = "body-surface-tessellated"
+          string source = "b09c11f2-2de8-5904-9ae7-1802a2a783e2"
+          string stamp = "7bea91b9785c231ca8c7d061cc4a565699a4d60e824d59599a1984f6b5bf7048"
+         }
+        }
+       }
+      )
+      double aeco:qto:count = 1 (
+       customData = {
+        dictionary aeco = {
+         dictionary qto = {
+          string method = "element-occurrence"
+          string source = "b09c11f2-2de8-5904-9ae7-1802a2a783e2"
+          string stamp = "7bea91b9785c231ca8c7d061cc4a565699a4d60e824d59599a1984f6b5bf7048"
+         }
+        }
+       }
+      )
+      double aeco:qto:length = 0.6000000238418579 (
+       customData = {
+        dictionary aeco = {
+         dictionary qto = {
+          string method = "body-local-major-dimension"
+          string source = "b09c11f2-2de8-5904-9ae7-1802a2a783e2"
+          string stamp = "7bea91b9785c231ca8c7d061cc4a565699a4d60e824d59599a1984f6b5bf7048"
+         }
+        }
+       }
+      )
+      double aeco:qto:volume = 0.01710000114440919 (
+       customData = {
+        dictionary aeco = {
+         dictionary qto = {
+          string method = "body-volume-closed-tessellated"
+          string source = "b09c11f2-2de8-5904-9ae7-1802a2a783e2"
+          string stamp = "7bea91b9785c231ca8c7d061cc4a565699a4d60e824d59599a1984f6b5bf7048"
+         }
+        }
+       }
+      )
+     }
+    }
+
+    over "Stair_L01"
+    {
+     over "Office_Stair" (
+      prepend apiSchemas = ["AecoQuantityAPI"]
+     )
+     {
+      double aeco:qto:area = 12.9328538225853 (
+       customData = {
+        dictionary aeco = {
+         dictionary qto = {
+          string method = "body-surface-tessellated"
+          string source = "433acb7c-dbba-5481-96c6-de9afd976ddd"
+          string stamp = "ef55d58c784f9b65c772b6420ae567d20bf72b5889a8d94fc9c0c9d5504150a8"
+         }
+        }
+       }
+      )
+      double aeco:qto:count = 1 (
+       customData = {
+        dictionary aeco = {
+         dictionary qto = {
+          string method = "element-occurrence"
+          string source = "433acb7c-dbba-5481-96c6-de9afd976ddd"
+          string stamp = "ef55d58c784f9b65c772b6420ae567d20bf72b5889a8d94fc9c0c9d5504150a8"
+         }
+        }
+       }
+      )
+      double aeco:qto:length = 3 (
+       customData = {
+        dictionary aeco = {
+         dictionary qto = {
+          string method = "body-local-major-dimension"
+          string source = "433acb7c-dbba-5481-96c6-de9afd976ddd"
+          string stamp = "ef55d58c784f9b65c772b6420ae567d20bf72b5889a8d94fc9c0c9d5504150a8"
+         }
+        }
+       }
+      )
+      double aeco:qto:volume = 1.0079999163150766 (
+       customData = {
+        dictionary aeco = {
+         dictionary qto = {
+          string method = "body-volume-closed-tessellated"
+          string source = "433acb7c-dbba-5481-96c6-de9afd976ddd"
+          string stamp = "ef55d58c784f9b65c772b6420ae567d20bf72b5889a8d94fc9c0c9d5504150a8"
+         }
+        }
+       }
+      )
+     }
+    }
+
+    over "WC"
+    {
+     over "pipe_drain_pod" (
+      prepend apiSchemas = ["AecoQuantityAPI"]
+     )
+     {
+      double aeco:qto:area = 3.191972735612474 (
+       customData = {
+        dictionary aeco = {
+         dictionary qto = {
+          string method = "body-surface-tessellated"
+          string source = "48a8a942-99cd-5139-a9d6-41575476d93f"
+          string stamp = "edf27eaeaa5585896499cdd0ad3040da1100a307ebe228a28f1a0b37aa3de511"
+         }
+        }
+       }
+      )
+      double aeco:qto:count = 1 (
+       customData = {
+        dictionary aeco = {
+         dictionary qto = {
+          string method = "element-occurrence"
+          string source = "48a8a942-99cd-5139-a9d6-41575476d93f"
+          string stamp = "edf27eaeaa5585896499cdd0ad3040da1100a307ebe228a28f1a0b37aa3de511"
+         }
+        }
+       }
+      )
+      double aeco:qto:length = 6 (
+       customData = {
+        dictionary aeco = {
+         dictionary qto = {
+          string method = "axis-line"
+          string source = "48a8a942-99cd-5139-a9d6-41575476d93f"
+          string stamp = "edf27eaeaa5585896499cdd0ad3040da1100a307ebe228a28f1a0b37aa3de511"
+         }
+        }
+       }
+      )
+      double aeco:qto:volume = 0.08611167459340202 (
+       customData = {
+        dictionary aeco = {
+         dictionary qto = {
+          string method = "body-volume-closed-tessellated"
+          string source = "48a8a942-99cd-5139-a9d6-41575476d93f"
+          string stamp = "edf27eaeaa5585896499cdd0ad3040da1100a307ebe228a28f1a0b37aa3de511"
+         }
+        }
+       }
+      )
+     }
+
+     over "pod_wc" (
+      prepend apiSchemas = ["AecoQuantityAPI"]
+     )
+     {
+      double aeco:qto:area = 47.28000022888182 (
+       customData = {
+        dictionary aeco = {
+         dictionary qto = {
+          string method = "body-surface-tessellated"
+          string source = "b5bde906-c097-5af5-bf4e-03cee37f130b"
+          string stamp = "e5eb817aa21cec75ef768e0d4a3377e8750a477fbd31702d6ebbc9cda55f1298"
+         }
+        }
+       }
+      )
+      double aeco:qto:count = 1 (
+       customData = {
+        dictionary aeco = {
+         dictionary qto = {
+          string method = "element-occurrence"
+          string source = "b5bde906-c097-5af5-bf4e-03cee37f130b"
+          string stamp = "e5eb817aa21cec75ef768e0d4a3377e8750a477fbd31702d6ebbc9cda55f1298"
+         }
+        }
+       }
+      )
+      double aeco:qto:length = 3.5999999046325684 (
+       customData = {
+        dictionary aeco = {
+         dictionary qto = {
+          string method = "body-local-major-dimension"
+          string source = "b5bde906-c097-5af5-bf4e-03cee37f130b"
+          string stamp = "e5eb817aa21cec75ef768e0d4a3377e8750a477fbd31702d6ebbc9cda55f1298"
+         }
+        }
+       }
+      )
+      double aeco:qto:volume = 21.600000286102272 (
+       customData = {
+        dictionary aeco = {
+         dictionary qto = {
+          string method = "body-volume-closed-tessellated"
+          string source = "b5bde906-c097-5af5-bf4e-03cee37f130b"
+          string stamp = "e5eb817aa21cec75ef768e0d4a3377e8750a477fbd31702d6ebbc9cda55f1298"
+         }
+        }
+       }
+      )
+     }
+
+     over "san_pod_1" (
+      prepend apiSchemas = ["AecoQuantityAPI"]
+     )
+     {
+      double aeco:qto:area = 2.9200000691413877 (
+       customData = {
+        dictionary aeco = {
+         dictionary qto = {
+          string method = "body-surface-tessellated"
+          string source = "09a08952-f90d-5507-bdf2-99b440b02104"
+          string stamp = "f262d9f804d6bd5f3726930990acdfbee051399fe8444fbe735341f932899578"
+         }
+        }
+       }
+      )
+      double aeco:qto:count = 1 (
+       customData = {
+        dictionary aeco = {
+         dictionary qto = {
+          string method = "element-occurrence"
+          string source = "09a08952-f90d-5507-bdf2-99b440b02104"
+          string stamp = "f262d9f804d6bd5f3726930990acdfbee051399fe8444fbe735341f932899578"
+         }
+        }
+       }
+      )
+      double aeco:qto:length = 0.800000011920929 (
+       customData = {
+        dictionary aeco = {
+         dictionary qto = {
+          string method = "body-local-major-dimension"
+          string source = "09a08952-f90d-5507-bdf2-99b440b02104"
+          string stamp = "f262d9f804d6bd5f3726930990acdfbee051399fe8444fbe735341f932899578"
+         }
+        }
+       }
+      )
+      double aeco:qto:volume = 0.3360000126361845 (
+       customData = {
+        dictionary aeco = {
+         dictionary qto = {
+          string method = "body-volume-closed-tessellated"
+          string source = "09a08952-f90d-5507-bdf2-99b440b02104"
+          string stamp = "f262d9f804d6bd5f3726930990acdfbee051399fe8444fbe735341f932899578"
+         }
+        }
+       }
+      )
+     }
+
+     over "san_pod_2" (
+      prepend apiSchemas = ["AecoQuantityAPI"]
+     )
+     {
+      double aeco:qto:area = 2.9200000691413877 (
+       customData = {
+        dictionary aeco = {
+         dictionary qto = {
+          string method = "body-surface-tessellated"
+          string source = "78ff9628-38c7-5c69-b583-632c816608bb"
+          string stamp = "c9b753c835f42fb97e1e9aa06c5adb4b93137f746406b16d3b55fc017bdff19b"
+         }
+        }
+       }
+      )
+      double aeco:qto:count = 1 (
+       customData = {
+        dictionary aeco = {
+         dictionary qto = {
+          string method = "element-occurrence"
+          string source = "78ff9628-38c7-5c69-b583-632c816608bb"
+          string stamp = "c9b753c835f42fb97e1e9aa06c5adb4b93137f746406b16d3b55fc017bdff19b"
+         }
+        }
+       }
+      )
+      double aeco:qto:length = 0.800000011920929 (
+       customData = {
+        dictionary aeco = {
+         dictionary qto = {
+          string method = "body-local-major-dimension"
+          string source = "78ff9628-38c7-5c69-b583-632c816608bb"
+          string stamp = "c9b753c835f42fb97e1e9aa06c5adb4b93137f746406b16d3b55fc017bdff19b"
+         }
+        }
+       }
+      )
+      double aeco:qto:volume = 0.3360000126361845 (
+       customData = {
+        dictionary aeco = {
+         dictionary qto = {
+          string method = "body-volume-closed-tessellated"
+          string source = "78ff9628-38c7-5c69-b583-632c816608bb"
+          string stamp = "c9b753c835f42fb97e1e9aa06c5adb4b93137f746406b16d3b55fc017bdff19b"
+         }
+        }
+       }
+      )
+     }
+    }
+
+    over "door_kitchen" (
+     prepend apiSchemas = ["AecoQuantityAPI"]
+    )
+    {
+     double aeco:qto:area = 6.545999418018406 (
+      customData = {
+       dictionary aeco = {
+        dictionary qto = {
+         string method = "body-surface-tessellated"
+         string source = "7a6ebc2a-94b2-5cf5-8a2e-dac1e35b76c1"
+         string stamp = "958c4c0d40463e3cc6490c74fa600a5f6e1c35aac5f042d756528f23b53f21c6"
+        }
+       }
+      }
+     )
+     double aeco:qto:count = 1 (
+      customData = {
+       dictionary aeco = {
+        dictionary qto = {
+         string method = "element-occurrence"
+         string source = "7a6ebc2a-94b2-5cf5-8a2e-dac1e35b76c1"
+         string stamp = "958c4c0d40463e3cc6490c74fa600a5f6e1c35aac5f042d756528f23b53f21c6"
+        }
+       }
+      }
+     )
+     double aeco:qto:length = 2.125 (
+      customData = {
+       dictionary aeco = {
+        dictionary qto = {
+         string method = "body-local-major-dimension"
+         string source = "7a6ebc2a-94b2-5cf5-8a2e-dac1e35b76c1"
+         string stamp = "958c4c0d40463e3cc6490c74fa600a5f6e1c35aac5f042d756528f23b53f21c6"
+        }
+       }
+      }
+     )
+     double aeco:qto:volume = 0.0756744902300406 (
+      customData = {
+       dictionary aeco = {
+        dictionary qto = {
+         string method = "body-volume-closed-tessellated"
+         string source = "7a6ebc2a-94b2-5cf5-8a2e-dac1e35b76c1"
+         string stamp = "958c4c0d40463e3cc6490c74fa600a5f6e1c35aac5f042d756528f23b53f21c6"
+        }
+       }
+      }
+     )
+    }
+
+    over "door_meeting_1" (
+     prepend apiSchemas = ["AecoQuantityAPI"]
+    )
+    {
+     double aeco:qto:area = 6.545999418018406 (
+      customData = {
+       dictionary aeco = {
+        dictionary qto = {
+         string method = "body-surface-tessellated"
+         string source = "e58cf07c-9dfc-59dd-b09f-07f776552645"
+         string stamp = "f09def57a1ae9fccdcc8447c24a2670d6bc7d7fc104088cb9c43c7b1949d8bc2"
+        }
+       }
+      }
+     )
+     double aeco:qto:count = 1 (
+      customData = {
+       dictionary aeco = {
+        dictionary qto = {
+         string method = "element-occurrence"
+         string source = "e58cf07c-9dfc-59dd-b09f-07f776552645"
+         string stamp = "f09def57a1ae9fccdcc8447c24a2670d6bc7d7fc104088cb9c43c7b1949d8bc2"
+        }
+       }
+      }
+     )
+     double aeco:qto:length = 2.125 (
+      customData = {
+       dictionary aeco = {
+        dictionary qto = {
+         string method = "body-local-major-dimension"
+         string source = "e58cf07c-9dfc-59dd-b09f-07f776552645"
+         string stamp = "f09def57a1ae9fccdcc8447c24a2670d6bc7d7fc104088cb9c43c7b1949d8bc2"
+        }
+       }
+      }
+     )
+     double aeco:qto:volume = 0.0756744902300406 (
+      customData = {
+       dictionary aeco = {
+        dictionary qto = {
+         string method = "body-volume-closed-tessellated"
+         string source = "e58cf07c-9dfc-59dd-b09f-07f776552645"
+         string stamp = "f09def57a1ae9fccdcc8447c24a2670d6bc7d7fc104088cb9c43c7b1949d8bc2"
+        }
+       }
+      }
+     )
+    }
+
+    over "door_office_1" (
+     prepend apiSchemas = ["AecoQuantityAPI"]
+    )
+    {
+     double aeco:qto:area = 11.151159396959635 (
+      customData = {
+       dictionary aeco = {
+        dictionary qto = {
+         string method = "body-surface-tessellated"
+         string source = "a1fa5d26-090b-510d-959c-da041182dd8c"
+         string stamp = "ab318f9dbe1ca862ac3536fad74c4edf5db624fdd74117f25999d0b8949fcfd8"
+        }
+       }
+      }
+     )
+     double aeco:qto:count = 1 (
+      customData = {
+       dictionary aeco = {
+        dictionary qto = {
+         string method = "element-occurrence"
+         string source = "a1fa5d26-090b-510d-959c-da041182dd8c"
+         string stamp = "ab318f9dbe1ca862ac3536fad74c4edf5db624fdd74117f25999d0b8949fcfd8"
+        }
+       }
+      }
+     )
+     double aeco:qto:length = 2.125 (
+      customData = {
+       dictionary aeco = {
+        dictionary qto = {
+         string method = "body-local-major-dimension"
+         string source = "a1fa5d26-090b-510d-959c-da041182dd8c"
+         string stamp = "ab318f9dbe1ca862ac3536fad74c4edf5db624fdd74117f25999d0b8949fcfd8"
+        }
+       }
+      }
+     )
+     double aeco:qto:volume = 0.14471798125243365 (
+      customData = {
+       dictionary aeco = {
+        dictionary qto = {
+         string method = "body-volume-closed-tessellated"
+         string source = "a1fa5d26-090b-510d-959c-da041182dd8c"
+         string stamp = "ab318f9dbe1ca862ac3536fad74c4edf5db624fdd74117f25999d0b8949fcfd8"
+        }
+       }
+      }
+     )
+    }
+
+    over "door_stair_1" (
+     prepend apiSchemas = ["AecoQuantityAPI"]
+    )
+    {
+     double aeco:qto:area = 6.545999418018406 (
+      customData = {
+       dictionary aeco = {
+        dictionary qto = {
+         string method = "body-surface-tessellated"
+         string source = "9321b2ab-7e62-5a34-bd1b-4dd41c818ca2"
+         string stamp = "a804d8db552eac6d5f4c52f1de4539cddef9846f95a6e35069c1281481e1861f"
+        }
+       }
+      }
+     )
+     double aeco:qto:count = 1 (
+      customData = {
+       dictionary aeco = {
+        dictionary qto = {
+         string method = "element-occurrence"
+         string source = "9321b2ab-7e62-5a34-bd1b-4dd41c818ca2"
+         string stamp = "a804d8db552eac6d5f4c52f1de4539cddef9846f95a6e35069c1281481e1861f"
+        }
+       }
+      }
+     )
+     double aeco:qto:length = 2.125 (
+      customData = {
+       dictionary aeco = {
+        dictionary qto = {
+         string method = "body-local-major-dimension"
+         string source = "9321b2ab-7e62-5a34-bd1b-4dd41c818ca2"
+         string stamp = "a804d8db552eac6d5f4c52f1de4539cddef9846f95a6e35069c1281481e1861f"
+        }
+       }
+      }
+     )
+     double aeco:qto:volume = 0.0756744902300406 (
+      customData = {
+       dictionary aeco = {
+        dictionary qto = {
+         string method = "body-volume-closed-tessellated"
+         string source = "9321b2ab-7e62-5a34-bd1b-4dd41c818ca2"
+         string stamp = "a804d8db552eac6d5f4c52f1de4539cddef9846f95a6e35069c1281481e1861f"
+        }
+       }
+      }
+     )
+    }
+
+    over "door_wc" (
+     prepend apiSchemas = ["AecoQuantityAPI"]
+    )
+    {
+     double aeco:qto:area = 6.545999418018406 (
+      customData = {
+       dictionary aeco = {
+        dictionary qto = {
+         string method = "body-surface-tessellated"
+         string source = "d955b4e4-b067-5b71-a32a-02acae314fe7"
+         string stamp = "09cf71204d991b65db142202752b2d76c3e9eacc8d6547273c74ead16c01ba46"
+        }
+       }
+      }
+     )
+     double aeco:qto:count = 1 (
+      customData = {
+       dictionary aeco = {
+        dictionary qto = {
+         string method = "element-occurrence"
+         string source = "d955b4e4-b067-5b71-a32a-02acae314fe7"
+         string stamp = "09cf71204d991b65db142202752b2d76c3e9eacc8d6547273c74ead16c01ba46"
+        }
+       }
+      }
+     )
+     double aeco:qto:length = 2.125 (
+      customData = {
+       dictionary aeco = {
+        dictionary qto = {
+         string method = "body-local-major-dimension"
+         string source = "d955b4e4-b067-5b71-a32a-02acae314fe7"
+         string stamp = "09cf71204d991b65db142202752b2d76c3e9eacc8d6547273c74ead16c01ba46"
+        }
+       }
+      }
+     )
+     double aeco:qto:volume = 0.0756744902300406 (
+      customData = {
+       dictionary aeco = {
+        dictionary qto = {
+         string method = "body-volume-closed-tessellated"
+         string source = "d955b4e4-b067-5b71-a32a-02acae314fe7"
+         string stamp = "09cf71204d991b65db142202752b2d76c3e9eacc8d6547273c74ead16c01ba46"
+        }
+       }
+      }
+     )
+    }
+
+    over "slab_l1_office" (
+     prepend apiSchemas = ["AecoQuantityAPI"]
+    )
+    {
+     double aeco:qto:area = 429 (
+      customData = {
+       dictionary aeco = {
+        dictionary qto = {
+         string method = "body-surface-tessellated"
+         string source = "74510da6-0878-5d0a-b122-2a3e782686ae"
+         string stamp = "1e341d48f217393caf9f8d96420033267351d4ef5819c16d58428b413b13346d"
+        }
+       }
+      }
+     )
+     double aeco:qto:count = 1 (
+      customData = {
+       dictionary aeco = {
+        dictionary qto = {
+         string method = "element-occurrence"
+         string source = "74510da6-0878-5d0a-b122-2a3e782686ae"
+         string stamp = "1e341d48f217393caf9f8d96420033267351d4ef5819c16d58428b413b13346d"
+        }
+       }
+      }
+     )
+     double aeco:qto:length = 18 (
+      customData = {
+       dictionary aeco = {
+        dictionary qto = {
+         string method = "body-local-major-dimension"
+         string source = "74510da6-0878-5d0a-b122-2a3e782686ae"
+         string stamp = "1e341d48f217393caf9f8d96420033267351d4ef5819c16d58428b413b13346d"
+        }
+       }
+      }
+     )
+     double aeco:qto:volume = 51.75 (
+      customData = {
+       dictionary aeco = {
+        dictionary qto = {
+         string method = "body-volume-closed-tessellated"
+         string source = "74510da6-0878-5d0a-b122-2a3e782686ae"
+         string stamp = "1e341d48f217393caf9f8d96420033267351d4ef5819c16d58428b413b13346d"
+        }
+       }
+      }
+     )
+    }
+
+    over "wall_l1_h_001" (
+     prepend apiSchemas = ["AecoQuantityAPI"]
+    )
+    {
+     double aeco:qto:area = 30 (
+      customData = {
+       dictionary aeco = {
+        dictionary qto = {
+         string method = "axis-body-height-gross"
+         string source = "1aba178f-cac6-5655-9fb3-22c675cc2dd7"
+         string stamp = "21af8ec507522e5997ea7c8b590a518b5a1810e76114a68084e36cd4b411e037"
+        }
+       }
+      }
+     )
+     double aeco:qto:count = 1 (
+      customData = {
+       dictionary aeco = {
+        dictionary qto = {
+         string method = "element-occurrence"
+         string source = "1aba178f-cac6-5655-9fb3-22c675cc2dd7"
+         string stamp = "21af8ec507522e5997ea7c8b590a518b5a1810e76114a68084e36cd4b411e037"
+        }
+       }
+      }
+     )
+     double aeco:qto:length = 10 (
+      customData = {
+       dictionary aeco = {
+        dictionary qto = {
+         string method = "axis-line"
+         string source = "1aba178f-cac6-5655-9fb3-22c675cc2dd7"
+         string stamp = "21af8ec507522e5997ea7c8b590a518b5a1810e76114a68084e36cd4b411e037"
+        }
+       }
+      }
+     )
+     double aeco:qto:volume = 9 (
+      customData = {
+       dictionary aeco = {
+        dictionary qto = {
+         string method = "axis-build-up-body-height-gross"
+         string source = "1aba178f-cac6-5655-9fb3-22c675cc2dd7"
+         string stamp = "21af8ec507522e5997ea7c8b590a518b5a1810e76114a68084e36cd4b411e037"
+        }
+       }
+      }
+     )
+    }
+
+    over "wall_l1_h_002" (
+     prepend apiSchemas = ["AecoQuantityAPI"]
+    )
+    {
+     double aeco:qto:area = 12 (
+      customData = {
+       dictionary aeco = {
+        dictionary qto = {
+         string method = "axis-body-height-gross"
+         string source = "4556958a-1b5c-5eeb-89a9-7cf49af08c5a"
+         string stamp = "1497c5f51a7a29c9b86fdd57445270cc167693232811ac912b052e642d40f9bc"
+        }
+       }
+      }
+     )
+     double aeco:qto:count = 1 (
+      customData = {
+       dictionary aeco = {
+        dictionary qto = {
+         string method = "element-occurrence"
+         string source = "4556958a-1b5c-5eeb-89a9-7cf49af08c5a"
+         string stamp = "1497c5f51a7a29c9b86fdd57445270cc167693232811ac912b052e642d40f9bc"
+        }
+       }
+      }
+     )
+     double aeco:qto:length = 4 (
+      customData = {
+       dictionary aeco = {
+        dictionary qto = {
+         string method = "axis-line"
+         string source = "4556958a-1b5c-5eeb-89a9-7cf49af08c5a"
+         string stamp = "1497c5f51a7a29c9b86fdd57445270cc167693232811ac912b052e642d40f9bc"
+        }
+       }
+      }
+     )
+     double aeco:qto:volume = 3.5999999999999996 (
+      customData = {
+       dictionary aeco = {
+        dictionary qto = {
+         string method = "axis-build-up-body-height-gross"
+         string source = "4556958a-1b5c-5eeb-89a9-7cf49af08c5a"
+         string stamp = "1497c5f51a7a29c9b86fdd57445270cc167693232811ac912b052e642d40f9bc"
+        }
+       }
+      }
+     )
+    }
+
+    over "wall_l1_h_003" (
+     prepend apiSchemas = ["AecoQuantityAPI"]
+    )
+    {
+     double aeco:qto:area = 12 (
+      customData = {
+       dictionary aeco = {
+        dictionary qto = {
+         string method = "axis-body-height-gross"
+         string source = "aeedc717-acaa-5458-8d1e-acd1bcfa095d"
+         string stamp = "49d12d8618ac4041a3b051f23bfef073a2ef4952e86982c6a4cfd53ca4742872"
+        }
+       }
+      }
+     )
+     double aeco:qto:count = 1 (
+      customData = {
+       dictionary aeco = {
+        dictionary qto = {
+         string method = "element-occurrence"
+         string source = "aeedc717-acaa-5458-8d1e-acd1bcfa095d"
+         string stamp = "49d12d8618ac4041a3b051f23bfef073a2ef4952e86982c6a4cfd53ca4742872"
+        }
+       }
+      }
+     )
+     double aeco:qto:length = 4 (
+      customData = {
+       dictionary aeco = {
+        dictionary qto = {
+         string method = "axis-line"
+         string source = "aeedc717-acaa-5458-8d1e-acd1bcfa095d"
+         string stamp = "49d12d8618ac4041a3b051f23bfef073a2ef4952e86982c6a4cfd53ca4742872"
+        }
+       }
+      }
+     )
+     double aeco:qto:volume = 3.5999999999999996 (
+      customData = {
+       dictionary aeco = {
+        dictionary qto = {
+         string method = "axis-build-up-body-height-gross"
+         string source = "aeedc717-acaa-5458-8d1e-acd1bcfa095d"
+         string stamp = "49d12d8618ac4041a3b051f23bfef073a2ef4952e86982c6a4cfd53ca4742872"
+        }
+       }
+      }
+     )
+    }
+
+    over "wall_l1_h_004" (
+     prepend apiSchemas = ["AecoQuantityAPI"]
+    )
+    {
+     double aeco:qto:area = 12 (
+      customData = {
+       dictionary aeco = {
+        dictionary qto = {
+         string method = "axis-body-height-gross"
+         string source = "9765b9c4-40bb-5ff7-a2a5-cdebad75b0bc"
+         string stamp = "c8fda66d1f5b4b7b49ffb3b63a416486ac3cd700bb67365bab2c2864750348bb"
+        }
+       }
+      }
+     )
+     double aeco:qto:count = 1 (
+      customData = {
+       dictionary aeco = {
+        dictionary qto = {
+         string method = "element-occurrence"
+         string source = "9765b9c4-40bb-5ff7-a2a5-cdebad75b0bc"
+         string stamp = "c8fda66d1f5b4b7b49ffb3b63a416486ac3cd700bb67365bab2c2864750348bb"
+        }
+       }
+      }
+     )
+     double aeco:qto:length = 4 (
+      customData = {
+       dictionary aeco = {
+        dictionary qto = {
+         string method = "axis-line"
+         string source = "9765b9c4-40bb-5ff7-a2a5-cdebad75b0bc"
+         string stamp = "c8fda66d1f5b4b7b49ffb3b63a416486ac3cd700bb67365bab2c2864750348bb"
+        }
+       }
+      }
+     )
+     double aeco:qto:volume = 1.7999999999999998 (
+      customData = {
+       dictionary aeco = {
+        dictionary qto = {
+         string method = "axis-build-up-body-height-gross"
+         string source = "9765b9c4-40bb-5ff7-a2a5-cdebad75b0bc"
+         string stamp = "c8fda66d1f5b4b7b49ffb3b63a416486ac3cd700bb67365bab2c2864750348bb"
+        }
+       }
+      }
+     )
+    }
+
+    over "wall_l1_h_005" (
+     prepend apiSchemas = ["AecoQuantityAPI"]
+    )
+    {
+     double aeco:qto:area = 9 (
+      customData = {
+       dictionary aeco = {
+        dictionary qto = {
+         string method = "axis-body-height-gross"
+         string source = "e045c7cd-b953-5b4a-936b-b64d2bda214d"
+         string stamp = "e30bba51780b11d2a71e6b363763db9a5281af6fc1c161ec40b49bc42854f65b"
+        }
+       }
+      }
+     )
+     double aeco:qto:count = 1 (
+      customData = {
+       dictionary aeco = {
+        dictionary qto = {
+         string method = "element-occurrence"
+         string source = "e045c7cd-b953-5b4a-936b-b64d2bda214d"
+         string stamp = "e30bba51780b11d2a71e6b363763db9a5281af6fc1c161ec40b49bc42854f65b"
+        }
+       }
+      }
+     )
+     double aeco:qto:length = 3 (
+      customData = {
+       dictionary aeco = {
+        dictionary qto = {
+         string method = "axis-line"
+         string source = "e045c7cd-b953-5b4a-936b-b64d2bda214d"
+         string stamp = "e30bba51780b11d2a71e6b363763db9a5281af6fc1c161ec40b49bc42854f65b"
+        }
+       }
+      }
+     )
+     double aeco:qto:volume = 1.35 (
+      customData = {
+       dictionary aeco = {
+        dictionary qto = {
+         string method = "axis-build-up-body-height-gross"
+         string source = "e045c7cd-b953-5b4a-936b-b64d2bda214d"
+         string stamp = "e30bba51780b11d2a71e6b363763db9a5281af6fc1c161ec40b49bc42854f65b"
+        }
+       }
+      }
+     )
+    }
+
+    over "wall_l1_h_006" (
+     prepend apiSchemas = ["AecoQuantityAPI"]
+    )
+    {
+     double aeco:qto:area = 21 (
+      customData = {
+       dictionary aeco = {
+        dictionary qto = {
+         string method = "axis-body-height-gross"
+         string source = "93888444-e546-5ddb-a4ba-166a6073c262"
+         string stamp = "ec0aa156ed4ed612d07748058b90ed07ccf4ce4bcc31f89d2e30661c096005ee"
+        }
+       }
+      }
+     )
+     double aeco:qto:count = 1 (
+      customData = {
+       dictionary aeco = {
+        dictionary qto = {
+         string method = "element-occurrence"
+         string source = "93888444-e546-5ddb-a4ba-166a6073c262"
+         string stamp = "ec0aa156ed4ed612d07748058b90ed07ccf4ce4bcc31f89d2e30661c096005ee"
+        }
+       }
+      }
+     )
+     double aeco:qto:length = 7 (
+      customData = {
+       dictionary aeco = {
+        dictionary qto = {
+         string method = "axis-line"
+         string source = "93888444-e546-5ddb-a4ba-166a6073c262"
+         string stamp = "ec0aa156ed4ed612d07748058b90ed07ccf4ce4bcc31f89d2e30661c096005ee"
+        }
+       }
+      }
+     )
+     double aeco:qto:volume = 3.1500000000000004 (
+      customData = {
+       dictionary aeco = {
+        dictionary qto = {
+         string method = "axis-build-up-body-height-gross"
+         string source = "93888444-e546-5ddb-a4ba-166a6073c262"
+         string stamp = "ec0aa156ed4ed612d07748058b90ed07ccf4ce4bcc31f89d2e30661c096005ee"
+        }
+       }
+      }
+     )
+    }
+
+    over "wall_l1_h_007" (
+     prepend apiSchemas = ["AecoQuantityAPI"]
+    )
+    {
+     double aeco:qto:area = 12 (
+      customData = {
+       dictionary aeco = {
+        dictionary qto = {
+         string method = "axis-body-height-gross"
+         string source = "51468e7f-5fca-54c5-9547-9c7f5cb51055"
+         string stamp = "d2a66d8274b81554e050fb5ad2d317b0559255e167974d8082d49820cbe7d0ea"
+        }
+       }
+      }
+     )
+     double aeco:qto:count = 1 (
+      customData = {
+       dictionary aeco = {
+        dictionary qto = {
+         string method = "element-occurrence"
+         string source = "51468e7f-5fca-54c5-9547-9c7f5cb51055"
+         string stamp = "d2a66d8274b81554e050fb5ad2d317b0559255e167974d8082d49820cbe7d0ea"
+        }
+       }
+      }
+     )
+     double aeco:qto:length = 4 (
+      customData = {
+       dictionary aeco = {
+        dictionary qto = {
+         string method = "axis-line"
+         string source = "51468e7f-5fca-54c5-9547-9c7f5cb51055"
+         string stamp = "d2a66d8274b81554e050fb5ad2d317b0559255e167974d8082d49820cbe7d0ea"
+        }
+       }
+      }
+     )
+     double aeco:qto:volume = 1.8000000000000003 (
+      customData = {
+       dictionary aeco = {
+        dictionary qto = {
+         string method = "axis-build-up-body-height-gross"
+         string source = "51468e7f-5fca-54c5-9547-9c7f5cb51055"
+         string stamp = "d2a66d8274b81554e050fb5ad2d317b0559255e167974d8082d49820cbe7d0ea"
+        }
+       }
+      }
+     )
+    }
+
+    over "wall_l1_h_008" (
+     prepend apiSchemas = ["AecoQuantityAPI"]
+    )
+    {
+     double aeco:qto:area = 12 (
+      customData = {
+       dictionary aeco = {
+        dictionary qto = {
+         string method = "axis-body-height-gross"
+         string source = "43540151-c12f-56c9-b032-2b64fd66c8e4"
+         string stamp = "aae575975e9df0927f1b4c147fefb21e09db2b63e93772b18ed37000006c01c7"
+        }
+       }
+      }
+     )
+     double aeco:qto:count = 1 (
+      customData = {
+       dictionary aeco = {
+        dictionary qto = {
+         string method = "element-occurrence"
+         string source = "43540151-c12f-56c9-b032-2b64fd66c8e4"
+         string stamp = "aae575975e9df0927f1b4c147fefb21e09db2b63e93772b18ed37000006c01c7"
+        }
+       }
+      }
+     )
+     double aeco:qto:length = 4 (
+      customData = {
+       dictionary aeco = {
+        dictionary qto = {
+         string method = "axis-line"
+         string source = "43540151-c12f-56c9-b032-2b64fd66c8e4"
+         string stamp = "aae575975e9df0927f1b4c147fefb21e09db2b63e93772b18ed37000006c01c7"
+        }
+       }
+      }
+     )
+     double aeco:qto:volume = 1.8000000000000003 (
+      customData = {
+       dictionary aeco = {
+        dictionary qto = {
+         string method = "axis-build-up-body-height-gross"
+         string source = "43540151-c12f-56c9-b032-2b64fd66c8e4"
+         string stamp = "aae575975e9df0927f1b4c147fefb21e09db2b63e93772b18ed37000006c01c7"
+        }
+       }
+      }
+     )
+    }
+
+    over "wall_l1_h_009" (
+     prepend apiSchemas = ["AecoQuantityAPI"]
+    )
+    {
+     double aeco:qto:area = 9 (
+      customData = {
+       dictionary aeco = {
+        dictionary qto = {
+         string method = "axis-body-height-gross"
+         string source = "cc8f6368-1f30-53e5-a842-8fd3461d0ac6"
+         string stamp = "5299296fab898e891f3c751f63a578a013caa213c82229fd04c0a5047bffb8ee"
+        }
+       }
+      }
+     )
+     double aeco:qto:count = 1 (
+      customData = {
+       dictionary aeco = {
+        dictionary qto = {
+         string method = "element-occurrence"
+         string source = "cc8f6368-1f30-53e5-a842-8fd3461d0ac6"
+         string stamp = "5299296fab898e891f3c751f63a578a013caa213c82229fd04c0a5047bffb8ee"
+        }
+       }
+      }
+     )
+     double aeco:qto:length = 3 (
+      customData = {
+       dictionary aeco = {
+        dictionary qto = {
+         string method = "axis-line"
+         string source = "cc8f6368-1f30-53e5-a842-8fd3461d0ac6"
+         string stamp = "5299296fab898e891f3c751f63a578a013caa213c82229fd04c0a5047bffb8ee"
+        }
+       }
+      }
+     )
+     double aeco:qto:volume = 2.6999999999999997 (
+      customData = {
+       dictionary aeco = {
+        dictionary qto = {
+         string method = "axis-build-up-body-height-gross"
+         string source = "cc8f6368-1f30-53e5-a842-8fd3461d0ac6"
+         string stamp = "5299296fab898e891f3c751f63a578a013caa213c82229fd04c0a5047bffb8ee"
+        }
+       }
+      }
+     )
+    }
+
+    over "wall_l1_h_010" (
+     prepend apiSchemas = ["AecoQuantityAPI"]
+    )
+    {
+     double aeco:qto:area = 45 (
+      customData = {
+       dictionary aeco = {
+        dictionary qto = {
+         string method = "axis-body-height-gross"
+         string source = "46bb8ddc-66ac-5ee6-ba2f-72feb5bf8844"
+         string stamp = "acafc2d6b9dff4a3f36fa20be7c960af10e18bb22bcd86043c28520cb90615d0"
+        }
+       }
+      }
+     )
+     double aeco:qto:count = 1 (
+      customData = {
+       dictionary aeco = {
+        dictionary qto = {
+         string method = "element-occurrence"
+         string source = "46bb8ddc-66ac-5ee6-ba2f-72feb5bf8844"
+         string stamp = "acafc2d6b9dff4a3f36fa20be7c960af10e18bb22bcd86043c28520cb90615d0"
+        }
+       }
+      }
+     )
+     double aeco:qto:length = 15 (
+      customData = {
+       dictionary aeco = {
+        dictionary qto = {
+         string method = "axis-line"
+         string source = "46bb8ddc-66ac-5ee6-ba2f-72feb5bf8844"
+         string stamp = "acafc2d6b9dff4a3f36fa20be7c960af10e18bb22bcd86043c28520cb90615d0"
+        }
+       }
+      }
+     )
+     double aeco:qto:volume = 13.5 (
+      customData = {
+       dictionary aeco = {
+        dictionary qto = {
+         string method = "axis-build-up-body-height-gross"
+         string source = "46bb8ddc-66ac-5ee6-ba2f-72feb5bf8844"
+         string stamp = "acafc2d6b9dff4a3f36fa20be7c960af10e18bb22bcd86043c28520cb90615d0"
+        }
+       }
+      }
+     )
+    }
+
+    over "wall_l1_v_011" (
+     prepend apiSchemas = ["AecoQuantityAPI"]
+    )
+    {
+     double aeco:qto:area = 27 (
+      customData = {
+       dictionary aeco = {
+        dictionary qto = {
+         string method = "axis-body-height-gross"
+         string source = "dd5cf3a2-629b-502e-bc90-de3eee629131"
+         string stamp = "6b29cc046388bdbb8ef219f0aed0aa733a3518543033140c3e6b625a51626751"
+        }
+       }
+      }
+     )
+     double aeco:qto:count = 1 (
+      customData = {
+       dictionary aeco = {
+        dictionary qto = {
+         string method = "element-occurrence"
+         string source = "dd5cf3a2-629b-502e-bc90-de3eee629131"
+         string stamp = "6b29cc046388bdbb8ef219f0aed0aa733a3518543033140c3e6b625a51626751"
+        }
+       }
+      }
+     )
+     double aeco:qto:length = 9 (
+      customData = {
+       dictionary aeco = {
+        dictionary qto = {
+         string method = "axis-line"
+         string source = "dd5cf3a2-629b-502e-bc90-de3eee629131"
+         string stamp = "6b29cc046388bdbb8ef219f0aed0aa733a3518543033140c3e6b625a51626751"
+        }
+       }
+      }
+     )
+     double aeco:qto:volume = 8.1 (
+      customData = {
+       dictionary aeco = {
+        dictionary qto = {
+         string method = "axis-build-up-body-height-gross"
+         string source = "dd5cf3a2-629b-502e-bc90-de3eee629131"
+         string stamp = "6b29cc046388bdbb8ef219f0aed0aa733a3518543033140c3e6b625a51626751"
+        }
+       }
+      }
+     )
+    }
+
+    over "wall_l1_v_012" (
+     prepend apiSchemas = ["AecoQuantityAPI"]
+    )
+    {
+     double aeco:qto:area = 9 (
+      customData = {
+       dictionary aeco = {
+        dictionary qto = {
+         string method = "axis-body-height-gross"
+         string source = "64c0b776-f5b1-556b-8a27-116d0f4e1b6f"
+         string stamp = "4d0ed23bdaa6b8d3c9483ca3f5cd4f7f67d82b82b7fed3cb64d786de33d00411"
+        }
+       }
+      }
+     )
+     double aeco:qto:count = 1 (
+      customData = {
+       dictionary aeco = {
+        dictionary qto = {
+         string method = "element-occurrence"
+         string source = "64c0b776-f5b1-556b-8a27-116d0f4e1b6f"
+         string stamp = "4d0ed23bdaa6b8d3c9483ca3f5cd4f7f67d82b82b7fed3cb64d786de33d00411"
+        }
+       }
+      }
+     )
+     double aeco:qto:length = 3 (
+      customData = {
+       dictionary aeco = {
+        dictionary qto = {
+         string method = "axis-line"
+         string source = "64c0b776-f5b1-556b-8a27-116d0f4e1b6f"
+         string stamp = "4d0ed23bdaa6b8d3c9483ca3f5cd4f7f67d82b82b7fed3cb64d786de33d00411"
+        }
+       }
+      }
+     )
+     double aeco:qto:volume = 2.6999999999999997 (
+      customData = {
+       dictionary aeco = {
+        dictionary qto = {
+         string method = "axis-build-up-body-height-gross"
+         string source = "64c0b776-f5b1-556b-8a27-116d0f4e1b6f"
+         string stamp = "4d0ed23bdaa6b8d3c9483ca3f5cd4f7f67d82b82b7fed3cb64d786de33d00411"
+        }
+       }
+      }
+     )
+    }
+
+    over "wall_l1_v_013" (
+     prepend apiSchemas = ["AecoQuantityAPI"]
+    )
+    {
+     double aeco:qto:area = 9 (
+      customData = {
+       dictionary aeco = {
+        dictionary qto = {
+         string method = "axis-body-height-gross"
+         string source = "54f3cd30-3297-5932-8281-adfb776aab7d"
+         string stamp = "96381ad614aada108d74e74261850c14b7258a36240e6783b3955d40dd4c5628"
+        }
+       }
+      }
+     )
+     double aeco:qto:count = 1 (
+      customData = {
+       dictionary aeco = {
+        dictionary qto = {
+         string method = "element-occurrence"
+         string source = "54f3cd30-3297-5932-8281-adfb776aab7d"
+         string stamp = "96381ad614aada108d74e74261850c14b7258a36240e6783b3955d40dd4c5628"
+        }
+       }
+      }
+     )
+     double aeco:qto:length = 3 (
+      customData = {
+       dictionary aeco = {
+        dictionary qto = {
+         string method = "axis-line"
+         string source = "54f3cd30-3297-5932-8281-adfb776aab7d"
+         string stamp = "96381ad614aada108d74e74261850c14b7258a36240e6783b3955d40dd4c5628"
+        }
+       }
+      }
+     )
+     double aeco:qto:volume = 1.35 (
+      customData = {
+       dictionary aeco = {
+        dictionary qto = {
+         string method = "axis-build-up-body-height-gross"
+         string source = "54f3cd30-3297-5932-8281-adfb776aab7d"
+         string stamp = "96381ad614aada108d74e74261850c14b7258a36240e6783b3955d40dd4c5628"
+        }
+       }
+      }
+     )
+    }
+
+    over "wall_l1_v_014" (
+     prepend apiSchemas = ["AecoQuantityAPI"]
+    )
+    {
+     double aeco:qto:area = 27 (
+      customData = {
+       dictionary aeco = {
+        dictionary qto = {
+         string method = "axis-body-height-gross"
+         string source = "2a39d1c5-51fc-50c0-b5ab-579342c7c597"
+         string stamp = "fe431c064e5547a632d05ad105e5da641590c1ba00c129e298a117d1cf2f6b96"
+        }
+       }
+      }
+     )
+     double aeco:qto:count = 1 (
+      customData = {
+       dictionary aeco = {
+        dictionary qto = {
+         string method = "element-occurrence"
+         string source = "2a39d1c5-51fc-50c0-b5ab-579342c7c597"
+         string stamp = "fe431c064e5547a632d05ad105e5da641590c1ba00c129e298a117d1cf2f6b96"
+        }
+       }
+      }
+     )
+     double aeco:qto:length = 9 (
+      customData = {
+       dictionary aeco = {
+        dictionary qto = {
+         string method = "axis-line"
+         string source = "2a39d1c5-51fc-50c0-b5ab-579342c7c597"
+         string stamp = "fe431c064e5547a632d05ad105e5da641590c1ba00c129e298a117d1cf2f6b96"
+        }
+       }
+      }
+     )
+     double aeco:qto:volume = 4.050000000000001 (
+      customData = {
+       dictionary aeco = {
+        dictionary qto = {
+         string method = "axis-build-up-body-height-gross"
+         string source = "2a39d1c5-51fc-50c0-b5ab-579342c7c597"
+         string stamp = "fe431c064e5547a632d05ad105e5da641590c1ba00c129e298a117d1cf2f6b96"
+        }
+       }
+      }
+     )
+    }
+
+    over "wall_l1_v_015" (
+     prepend apiSchemas = ["AecoQuantityAPI"]
+    )
+    {
+     double aeco:qto:area = 12 (
+      customData = {
+       dictionary aeco = {
+        dictionary qto = {
+         string method = "axis-body-height-gross"
+         string source = "c46e4871-96dd-54c4-af2b-1a161d7f1f55"
+         string stamp = "d5d0f29487c13fe37dc58781fee41f0dd8c55c6eb4a641b543d3a15778573700"
+        }
+       }
+      }
+     )
+     double aeco:qto:count = 1 (
+      customData = {
+       dictionary aeco = {
+        dictionary qto = {
+         string method = "element-occurrence"
+         string source = "c46e4871-96dd-54c4-af2b-1a161d7f1f55"
+         string stamp = "d5d0f29487c13fe37dc58781fee41f0dd8c55c6eb4a641b543d3a15778573700"
+        }
+       }
+      }
+     )
+     double aeco:qto:length = 4 (
+      customData = {
+       dictionary aeco = {
+        dictionary qto = {
+         string method = "axis-line"
+         string source = "c46e4871-96dd-54c4-af2b-1a161d7f1f55"
+         string stamp = "d5d0f29487c13fe37dc58781fee41f0dd8c55c6eb4a641b543d3a15778573700"
+        }
+       }
+      }
+     )
+     double aeco:qto:volume = 1.7999999999999998 (
+      customData = {
+       dictionary aeco = {
+        dictionary qto = {
+         string method = "axis-build-up-body-height-gross"
+         string source = "c46e4871-96dd-54c4-af2b-1a161d7f1f55"
+         string stamp = "d5d0f29487c13fe37dc58781fee41f0dd8c55c6eb4a641b543d3a15778573700"
+        }
+       }
+      }
+     )
+    }
+
+    over "wall_l1_v_016" (
+     prepend apiSchemas = ["AecoQuantityAPI"]
+    )
+    {
+     double aeco:qto:area = 15 (
+      customData = {
+       dictionary aeco = {
+        dictionary qto = {
+         string method = "axis-body-height-gross"
+         string source = "d008ead2-8996-54f8-9ced-7345cc4a0a8d"
+         string stamp = "3cf027e68493c5cd15cf0936cade5b10c702a7369cee2648af7a29183b57a4c6"
+        }
+       }
+      }
+     )
+     double aeco:qto:count = 1 (
+      customData = {
+       dictionary aeco = {
+        dictionary qto = {
+         string method = "element-occurrence"
+         string source = "d008ead2-8996-54f8-9ced-7345cc4a0a8d"
+         string stamp = "3cf027e68493c5cd15cf0936cade5b10c702a7369cee2648af7a29183b57a4c6"
+        }
+       }
+      }
+     )
+     double aeco:qto:length = 5 (
+      customData = {
+       dictionary aeco = {
+        dictionary qto = {
+         string method = "axis-line"
+         string source = "d008ead2-8996-54f8-9ced-7345cc4a0a8d"
+         string stamp = "3cf027e68493c5cd15cf0936cade5b10c702a7369cee2648af7a29183b57a4c6"
+        }
+       }
+      }
+     )
+     double aeco:qto:volume = 2.2500000000000004 (
+      customData = {
+       dictionary aeco = {
+        dictionary qto = {
+         string method = "axis-build-up-body-height-gross"
+         string source = "d008ead2-8996-54f8-9ced-7345cc4a0a8d"
+         string stamp = "3cf027e68493c5cd15cf0936cade5b10c702a7369cee2648af7a29183b57a4c6"
+        }
+       }
+      }
+     )
+    }
+
+    over "wall_l1_v_017" (
+     prepend apiSchemas = ["AecoQuantityAPI"]
+    )
+    {
+     double aeco:qto:area = 12 (
+      customData = {
+       dictionary aeco = {
+        dictionary qto = {
+         string method = "axis-body-height-gross"
+         string source = "17fabf2a-db55-5b3d-acbe-4cc963ed34b0"
+         string stamp = "538a6cae01e22f050a7702155985e33a1c0a388c19a4434f214fd7ee3b1a6710"
+        }
+       }
+      }
+     )
+     double aeco:qto:count = 1 (
+      customData = {
+       dictionary aeco = {
+        dictionary qto = {
+         string method = "element-occurrence"
+         string source = "17fabf2a-db55-5b3d-acbe-4cc963ed34b0"
+         string stamp = "538a6cae01e22f050a7702155985e33a1c0a388c19a4434f214fd7ee3b1a6710"
+        }
+       }
+      }
+     )
+     double aeco:qto:length = 4 (
+      customData = {
+       dictionary aeco = {
+        dictionary qto = {
+         string method = "axis-line"
+         string source = "17fabf2a-db55-5b3d-acbe-4cc963ed34b0"
+         string stamp = "538a6cae01e22f050a7702155985e33a1c0a388c19a4434f214fd7ee3b1a6710"
+        }
+       }
+      }
+     )
+     double aeco:qto:volume = 3.5999999999999996 (
+      customData = {
+       dictionary aeco = {
+        dictionary qto = {
+         string method = "axis-build-up-body-height-gross"
+         string source = "17fabf2a-db55-5b3d-acbe-4cc963ed34b0"
+         string stamp = "538a6cae01e22f050a7702155985e33a1c0a388c19a4434f214fd7ee3b1a6710"
+        }
+       }
+      }
+     )
+    }
+
+    over "wall_l1_v_018" (
+     prepend apiSchemas = ["AecoQuantityAPI"]
+    )
+    {
+     double aeco:qto:area = 15 (
+      customData = {
+       dictionary aeco = {
+        dictionary qto = {
+         string method = "axis-body-height-gross"
+         string source = "b8ad6534-0347-5bac-9654-5ba0bb28183a"
+         string stamp = "60baf9ac291f2a3ebd9ebc4914674d7f2dc18b5095e8f3ed3c3d46026a3432a8"
+        }
+       }
+      }
+     )
+     double aeco:qto:count = 1 (
+      customData = {
+       dictionary aeco = {
+        dictionary qto = {
+         string method = "element-occurrence"
+         string source = "b8ad6534-0347-5bac-9654-5ba0bb28183a"
+         string stamp = "60baf9ac291f2a3ebd9ebc4914674d7f2dc18b5095e8f3ed3c3d46026a3432a8"
+        }
+       }
+      }
+     )
+     double aeco:qto:length = 5 (
+      customData = {
+       dictionary aeco = {
+        dictionary qto = {
+         string method = "axis-line"
+         string source = "b8ad6534-0347-5bac-9654-5ba0bb28183a"
+         string stamp = "60baf9ac291f2a3ebd9ebc4914674d7f2dc18b5095e8f3ed3c3d46026a3432a8"
+        }
+       }
+      }
+     )
+     double aeco:qto:volume = 4.5 (
+      customData = {
+       dictionary aeco = {
+        dictionary qto = {
+         string method = "axis-build-up-body-height-gross"
+         string source = "b8ad6534-0347-5bac-9654-5ba0bb28183a"
+         string stamp = "60baf9ac291f2a3ebd9ebc4914674d7f2dc18b5095e8f3ed3c3d46026a3432a8"
+        }
+       }
+      }
+     )
+    }
+
+    over "wall_l1_v_019" (
+     prepend apiSchemas = ["AecoQuantityAPI"]
+    )
+    {
+     double aeco:qto:area = 9 (
+      customData = {
+       dictionary aeco = {
+        dictionary qto = {
+         string method = "axis-body-height-gross"
+         string source = "6401b4a1-b2f1-5eb6-9378-29e500fe9c37"
+         string stamp = "2b6e1c91d8833e3dc0ed7f69f9fd066bc70442ec1121ee962958f75f5575272c"
+        }
+       }
+      }
+     )
+     double aeco:qto:count = 1 (
+      customData = {
+       dictionary aeco = {
+        dictionary qto = {
+         string method = "element-occurrence"
+         string source = "6401b4a1-b2f1-5eb6-9378-29e500fe9c37"
+         string stamp = "2b6e1c91d8833e3dc0ed7f69f9fd066bc70442ec1121ee962958f75f5575272c"
+        }
+       }
+      }
+     )
+     double aeco:qto:length = 3 (
+      customData = {
+       dictionary aeco = {
+        dictionary qto = {
+         string method = "axis-line"
+         string source = "6401b4a1-b2f1-5eb6-9378-29e500fe9c37"
+         string stamp = "2b6e1c91d8833e3dc0ed7f69f9fd066bc70442ec1121ee962958f75f5575272c"
+        }
+       }
+      }
+     )
+     double aeco:qto:volume = 2.6999999999999997 (
+      customData = {
+       dictionary aeco = {
+        dictionary qto = {
+         string method = "axis-build-up-body-height-gross"
+         string source = "6401b4a1-b2f1-5eb6-9378-29e500fe9c37"
+         string stamp = "2b6e1c91d8833e3dc0ed7f69f9fd066bc70442ec1121ee962958f75f5575272c"
+        }
+       }
+      }
+     )
+    }
+   }
+
+   over "L02_Office"
+   {
+    over "Additional_Meeting_Access" (
+     prepend apiSchemas = ["AecoQuantityAPI"]
+    )
+    {
+     double aeco:qto:area = 6.545999418018406 (
+      customData = {
+       dictionary aeco = {
+        dictionary qto = {
+         string method = "body-surface-tessellated"
+         string source = "3ca0f7bb-160c-52ca-b9b5-52db8a894f1c"
+         string stamp = "28caa4e555e9be8cce86839baa488dc8e0ada6551b97e9210b9e6f725ddc9796"
+        }
+       }
+      }
+     )
+     double aeco:qto:count = 1 (
+      customData = {
+       dictionary aeco = {
+        dictionary qto = {
+         string method = "element-occurrence"
+         string source = "3ca0f7bb-160c-52ca-b9b5-52db8a894f1c"
+         string stamp = "28caa4e555e9be8cce86839baa488dc8e0ada6551b97e9210b9e6f725ddc9796"
+        }
+       }
+      }
+     )
+     double aeco:qto:length = 2.125 (
+      customData = {
+       dictionary aeco = {
+        dictionary qto = {
+         string method = "body-local-major-dimension"
+         string source = "3ca0f7bb-160c-52ca-b9b5-52db8a894f1c"
+         string stamp = "28caa4e555e9be8cce86839baa488dc8e0ada6551b97e9210b9e6f725ddc9796"
+        }
+       }
+      }
+     )
+     double aeco:qto:volume = 0.0756744902300406 (
+      customData = {
+       dictionary aeco = {
+        dictionary qto = {
+         string method = "body-volume-closed-tessellated"
+         string source = "3ca0f7bb-160c-52ca-b9b5-52db8a894f1c"
+         string stamp = "28caa4e555e9be8cce86839baa488dc8e0ada6551b97e9210b9e6f725ddc9796"
+        }
+       }
+      }
+     )
+    }
+
+    over "Office_Corridor_L01"
+    {
+     over "sec_cam_corr_ocorr_1_2_1" (
+      prepend apiSchemas = ["AecoQuantityAPI"]
+     )
+     {
+      double aeco:qto:area = 0.11519999723434449 (
+       customData = {
+        dictionary aeco = {
+         dictionary qto = {
+          string method = "body-surface-tessellated"
+          string source = "9450e28b-3295-58d3-9227-46ce3ced05f6"
+          string stamp = "f58d67c6130fc52b8e9856c53ce3e2a8c7f698a6eea33f73b7528a17135b433d"
+         }
+        }
+       }
+      )
+      double aeco:qto:count = 1 (
+       customData = {
+        dictionary aeco = {
+         dictionary qto = {
+          string method = "element-occurrence"
+          string source = "9450e28b-3295-58d3-9227-46ce3ced05f6"
+          string stamp = "f58d67c6130fc52b8e9856c53ce3e2a8c7f698a6eea33f73b7528a17135b433d"
+         }
+        }
+       }
+      )
+      double aeco:qto:length = 0.1599999964237213 (
+       customData = {
+        dictionary aeco = {
+         dictionary qto = {
+          string method = "body-local-major-dimension"
+          string source = "9450e28b-3295-58d3-9227-46ce3ced05f6"
+          string stamp = "f58d67c6130fc52b8e9856c53ce3e2a8c7f698a6eea33f73b7528a17135b433d"
+         }
+        }
+       }
+      )
+      double aeco:qto:volume = 0.002559999923706054 (
+       customData = {
+        dictionary aeco = {
+         dictionary qto = {
+          string method = "body-volume-closed-tessellated"
+          string source = "9450e28b-3295-58d3-9227-46ce3ced05f6"
+          string stamp = "f58d67c6130fc52b8e9856c53ce3e2a8c7f698a6eea33f73b7528a17135b433d"
+         }
+        }
+       }
+      )
+     }
+
+     over "sec_cam_corr_ocorr_1_2_2" (
+      prepend apiSchemas = ["AecoQuantityAPI"]
+     )
+     {
+      double aeco:qto:area = 0.11519999723434449 (
+       customData = {
+        dictionary aeco = {
+         dictionary qto = {
+          string method = "body-surface-tessellated"
+          string source = "cf0e90a2-9077-5579-84fb-c34662f92afe"
+          string stamp = "633dc498c2f2f71de3f01b5bcb0b6764f5d7f272b752c117fa70a74901137b95"
+         }
+        }
+       }
+      )
+      double aeco:qto:count = 1 (
+       customData = {
+        dictionary aeco = {
+         dictionary qto = {
+          string method = "element-occurrence"
+          string source = "cf0e90a2-9077-5579-84fb-c34662f92afe"
+          string stamp = "633dc498c2f2f71de3f01b5bcb0b6764f5d7f272b752c117fa70a74901137b95"
+         }
+        }
+       }
+      )
+      double aeco:qto:length = 0.1599999964237213 (
+       customData = {
+        dictionary aeco = {
+         dictionary qto = {
+          string method = "body-local-major-dimension"
+          string source = "cf0e90a2-9077-5579-84fb-c34662f92afe"
+          string stamp = "633dc498c2f2f71de3f01b5bcb0b6764f5d7f272b752c117fa70a74901137b95"
+         }
+        }
+       }
+      )
+      double aeco:qto:volume = 0.002559999923706054 (
+       customData = {
+        dictionary aeco = {
+         dictionary qto = {
+          string method = "body-volume-closed-tessellated"
+          string source = "cf0e90a2-9077-5579-84fb-c34662f92afe"
+          string stamp = "633dc498c2f2f71de3f01b5bcb0b6764f5d7f272b752c117fa70a74901137b95"
+         }
+        }
+       }
+      )
+     }
+    }
+
+    over "Stair_L01"
+    {
+     over "Office_Stair" (
+      prepend apiSchemas = ["AecoQuantityAPI"]
+     )
+     {
+      double aeco:qto:area = 12.9328538225853 (
+       customData = {
+        dictionary aeco = {
+         dictionary qto = {
+          string method = "body-surface-tessellated"
+          string source = "a6fd82c6-ba88-5b32-a6e9-77684acf0845"
+          string stamp = "ebef8a34c5b0308afd49473f04a7a877c5d87153a7f4693efcb6deaa3954aea6"
+         }
+        }
+       }
+      )
+      double aeco:qto:count = 1 (
+       customData = {
+        dictionary aeco = {
+         dictionary qto = {
+          string method = "element-occurrence"
+          string source = "a6fd82c6-ba88-5b32-a6e9-77684acf0845"
+          string stamp = "ebef8a34c5b0308afd49473f04a7a877c5d87153a7f4693efcb6deaa3954aea6"
+         }
+        }
+       }
+      )
+      double aeco:qto:length = 3 (
+       customData = {
+        dictionary aeco = {
+         dictionary qto = {
+          string method = "body-local-major-dimension"
+          string source = "a6fd82c6-ba88-5b32-a6e9-77684acf0845"
+          string stamp = "ebef8a34c5b0308afd49473f04a7a877c5d87153a7f4693efcb6deaa3954aea6"
+         }
+        }
+       }
+      )
+      double aeco:qto:volume = 1.0079999163150766 (
+       customData = {
+        dictionary aeco = {
+         dictionary qto = {
+          string method = "body-volume-closed-tessellated"
+          string source = "a6fd82c6-ba88-5b32-a6e9-77684acf0845"
+          string stamp = "ebef8a34c5b0308afd49473f04a7a877c5d87153a7f4693efcb6deaa3954aea6"
+         }
+        }
+       }
+      )
+     }
+    }
+
+    over "door_kitchen_2" (
+     prepend apiSchemas = ["AecoQuantityAPI"]
+    )
+    {
+     double aeco:qto:area = 6.545999418018406 (
+      customData = {
+       dictionary aeco = {
+        dictionary qto = {
+         string method = "body-surface-tessellated"
+         string source = "95a6e681-5760-59ba-9a76-86f5fdbea074"
+         string stamp = "27430d2d591fa70fbb0d81c337b925c31a8406ca6e6f2ff68c939046d800c909"
+        }
+       }
+      }
+     )
+     double aeco:qto:count = 1 (
+      customData = {
+       dictionary aeco = {
+        dictionary qto = {
+         string method = "element-occurrence"
+         string source = "95a6e681-5760-59ba-9a76-86f5fdbea074"
+         string stamp = "27430d2d591fa70fbb0d81c337b925c31a8406ca6e6f2ff68c939046d800c909"
+        }
+       }
+      }
+     )
+     double aeco:qto:length = 2.125 (
+      customData = {
+       dictionary aeco = {
+        dictionary qto = {
+         string method = "body-local-major-dimension"
+         string source = "95a6e681-5760-59ba-9a76-86f5fdbea074"
+         string stamp = "27430d2d591fa70fbb0d81c337b925c31a8406ca6e6f2ff68c939046d800c909"
+        }
+       }
+      }
+     )
+     double aeco:qto:volume = 0.0756744902300406 (
+      customData = {
+       dictionary aeco = {
+        dictionary qto = {
+         string method = "body-volume-closed-tessellated"
+         string source = "95a6e681-5760-59ba-9a76-86f5fdbea074"
+         string stamp = "27430d2d591fa70fbb0d81c337b925c31a8406ca6e6f2ff68c939046d800c909"
+        }
+       }
+      }
+     )
+    }
+
+    over "door_meeting_1_2" (
+     prepend apiSchemas = ["AecoQuantityAPI"]
+    )
+    {
+     double aeco:qto:area = 6.545999418018406 (
+      customData = {
+       dictionary aeco = {
+        dictionary qto = {
+         string method = "body-surface-tessellated"
+         string source = "8a801a9f-9592-5604-9aba-b0d9a7df759c"
+         string stamp = "8ad7d49e16972626ae43f4f11d5e0c83f7fbca94347f4bc16f7b7d9a9c96d925"
+        }
+       }
+      }
+     )
+     double aeco:qto:count = 1 (
+      customData = {
+       dictionary aeco = {
+        dictionary qto = {
+         string method = "element-occurrence"
+         string source = "8a801a9f-9592-5604-9aba-b0d9a7df759c"
+         string stamp = "8ad7d49e16972626ae43f4f11d5e0c83f7fbca94347f4bc16f7b7d9a9c96d925"
+        }
+       }
+      }
+     )
+     double aeco:qto:length = 2.125 (
+      customData = {
+       dictionary aeco = {
+        dictionary qto = {
+         string method = "body-local-major-dimension"
+         string source = "8a801a9f-9592-5604-9aba-b0d9a7df759c"
+         string stamp = "8ad7d49e16972626ae43f4f11d5e0c83f7fbca94347f4bc16f7b7d9a9c96d925"
+        }
+       }
+      }
+     )
+     double aeco:qto:volume = 0.0756744902300406 (
+      customData = {
+       dictionary aeco = {
+        dictionary qto = {
+         string method = "body-volume-closed-tessellated"
+         string source = "8a801a9f-9592-5604-9aba-b0d9a7df759c"
+         string stamp = "8ad7d49e16972626ae43f4f11d5e0c83f7fbca94347f4bc16f7b7d9a9c96d925"
+        }
+       }
+      }
+     )
+    }
+
+    over "door_office_1_2" (
+     prepend apiSchemas = ["AecoQuantityAPI"]
+    )
+    {
+     double aeco:qto:area = 11.151159396959635 (
+      customData = {
+       dictionary aeco = {
+        dictionary qto = {
+         string method = "body-surface-tessellated"
+         string source = "69f8bcf0-4e05-5593-8188-b4ae53affe14"
+         string stamp = "c2496342d083bab1005cde18acf7442ad471023e29c0617bcc911a6beb8843cf"
+        }
+       }
+      }
+     )
+     double aeco:qto:count = 1 (
+      customData = {
+       dictionary aeco = {
+        dictionary qto = {
+         string method = "element-occurrence"
+         string source = "69f8bcf0-4e05-5593-8188-b4ae53affe14"
+         string stamp = "c2496342d083bab1005cde18acf7442ad471023e29c0617bcc911a6beb8843cf"
+        }
+       }
+      }
+     )
+     double aeco:qto:length = 2.125 (
+      customData = {
+       dictionary aeco = {
+        dictionary qto = {
+         string method = "body-local-major-dimension"
+         string source = "69f8bcf0-4e05-5593-8188-b4ae53affe14"
+         string stamp = "c2496342d083bab1005cde18acf7442ad471023e29c0617bcc911a6beb8843cf"
+        }
+       }
+      }
+     )
+     double aeco:qto:volume = 0.14471798125243365 (
+      customData = {
+       dictionary aeco = {
+        dictionary qto = {
+         string method = "body-volume-closed-tessellated"
+         string source = "69f8bcf0-4e05-5593-8188-b4ae53affe14"
+         string stamp = "c2496342d083bab1005cde18acf7442ad471023e29c0617bcc911a6beb8843cf"
+        }
+       }
+      }
+     )
+    }
+
+    over "door_stair_1_2" (
+     prepend apiSchemas = ["AecoQuantityAPI"]
+    )
+    {
+     double aeco:qto:area = 6.545999418018406 (
+      customData = {
+       dictionary aeco = {
+        dictionary qto = {
+         string method = "body-surface-tessellated"
+         string source = "96372576-0384-5ed8-ae02-bc1c935a4edf"
+         string stamp = "59ccdd8d1a94bf663b63f0869d547c3bd882f93822768682bc446ca8cf067e06"
+        }
+       }
+      }
+     )
+     double aeco:qto:count = 1 (
+      customData = {
+       dictionary aeco = {
+        dictionary qto = {
+         string method = "element-occurrence"
+         string source = "96372576-0384-5ed8-ae02-bc1c935a4edf"
+         string stamp = "59ccdd8d1a94bf663b63f0869d547c3bd882f93822768682bc446ca8cf067e06"
+        }
+       }
+      }
+     )
+     double aeco:qto:length = 2.125 (
+      customData = {
+       dictionary aeco = {
+        dictionary qto = {
+         string method = "body-local-major-dimension"
+         string source = "96372576-0384-5ed8-ae02-bc1c935a4edf"
+         string stamp = "59ccdd8d1a94bf663b63f0869d547c3bd882f93822768682bc446ca8cf067e06"
+        }
+       }
+      }
+     )
+     double aeco:qto:volume = 0.0756744902300406 (
+      customData = {
+       dictionary aeco = {
+        dictionary qto = {
+         string method = "body-volume-closed-tessellated"
+         string source = "96372576-0384-5ed8-ae02-bc1c935a4edf"
+         string stamp = "59ccdd8d1a94bf663b63f0869d547c3bd882f93822768682bc446ca8cf067e06"
+        }
+       }
+      }
+     )
+    }
+
+    over "door_wc_2" (
+     prepend apiSchemas = ["AecoQuantityAPI"]
+    )
+    {
+     double aeco:qto:area = 6.545999418018406 (
+      customData = {
+       dictionary aeco = {
+        dictionary qto = {
+         string method = "body-surface-tessellated"
+         string source = "e51fdf9e-1c04-5728-b18d-09972be43701"
+         string stamp = "a72a5fa75ddec2710b4b931a216e3d31c1bd35359cd05d293c16585b2544b3b9"
+        }
+       }
+      }
+     )
+     double aeco:qto:count = 1 (
+      customData = {
+       dictionary aeco = {
+        dictionary qto = {
+         string method = "element-occurrence"
+         string source = "e51fdf9e-1c04-5728-b18d-09972be43701"
+         string stamp = "a72a5fa75ddec2710b4b931a216e3d31c1bd35359cd05d293c16585b2544b3b9"
+        }
+       }
+      }
+     )
+     double aeco:qto:length = 2.125 (
+      customData = {
+       dictionary aeco = {
+        dictionary qto = {
+         string method = "body-local-major-dimension"
+         string source = "e51fdf9e-1c04-5728-b18d-09972be43701"
+         string stamp = "a72a5fa75ddec2710b4b931a216e3d31c1bd35359cd05d293c16585b2544b3b9"
+        }
+       }
+      }
+     )
+     double aeco:qto:volume = 0.0756744902300406 (
+      customData = {
+       dictionary aeco = {
+        dictionary qto = {
+         string method = "body-volume-closed-tessellated"
+         string source = "e51fdf9e-1c04-5728-b18d-09972be43701"
+         string stamp = "a72a5fa75ddec2710b4b931a216e3d31c1bd35359cd05d293c16585b2544b3b9"
+        }
+       }
+      }
+     )
+    }
+
+    over "slab_l2_office" (
+     prepend apiSchemas = ["AecoQuantityAPI"]
+    )
+    {
+     double aeco:qto:area = 429 (
+      customData = {
+       dictionary aeco = {
+        dictionary qto = {
+         string method = "body-surface-tessellated"
+         string source = "8c7be0f3-759d-57ff-b96c-fa5ef52d4717"
+         string stamp = "ce554d65fbd70db43935c8493a1f12361684b559b79e8e6780ec0249c946648a"
+        }
+       }
+      }
+     )
+     double aeco:qto:count = 1 (
+      customData = {
+       dictionary aeco = {
+        dictionary qto = {
+         string method = "element-occurrence"
+         string source = "8c7be0f3-759d-57ff-b96c-fa5ef52d4717"
+         string stamp = "ce554d65fbd70db43935c8493a1f12361684b559b79e8e6780ec0249c946648a"
+        }
+       }
+      }
+     )
+     double aeco:qto:length = 18 (
+      customData = {
+       dictionary aeco = {
+        dictionary qto = {
+         string method = "body-local-major-dimension"
+         string source = "8c7be0f3-759d-57ff-b96c-fa5ef52d4717"
+         string stamp = "ce554d65fbd70db43935c8493a1f12361684b559b79e8e6780ec0249c946648a"
+        }
+       }
+      }
+     )
+     double aeco:qto:volume = 51.75 (
+      customData = {
+       dictionary aeco = {
+        dictionary qto = {
+         string method = "body-volume-closed-tessellated"
+         string source = "8c7be0f3-759d-57ff-b96c-fa5ef52d4717"
+         string stamp = "ce554d65fbd70db43935c8493a1f12361684b559b79e8e6780ec0249c946648a"
+        }
+       }
+      }
+     )
+    }
+
+    over "wall_l2_h_001" (
+     prepend apiSchemas = ["AecoQuantityAPI"]
+    )
+    {
+     double aeco:qto:area = 30 (
+      customData = {
+       dictionary aeco = {
+        dictionary qto = {
+         string method = "axis-body-height-gross"
+         string source = "e43db3b9-6938-52c8-998e-f6c797544a01"
+         string stamp = "271617b94f21c8716049f756178bc0708996197c5abcdc61d56f3ec816ed8ab2"
+        }
+       }
+      }
+     )
+     double aeco:qto:count = 1 (
+      customData = {
+       dictionary aeco = {
+        dictionary qto = {
+         string method = "element-occurrence"
+         string source = "e43db3b9-6938-52c8-998e-f6c797544a01"
+         string stamp = "271617b94f21c8716049f756178bc0708996197c5abcdc61d56f3ec816ed8ab2"
+        }
+       }
+      }
+     )
+     double aeco:qto:length = 10 (
+      customData = {
+       dictionary aeco = {
+        dictionary qto = {
+         string method = "axis-line"
+         string source = "e43db3b9-6938-52c8-998e-f6c797544a01"
+         string stamp = "271617b94f21c8716049f756178bc0708996197c5abcdc61d56f3ec816ed8ab2"
+        }
+       }
+      }
+     )
+     double aeco:qto:volume = 9 (
+      customData = {
+       dictionary aeco = {
+        dictionary qto = {
+         string method = "axis-build-up-body-height-gross"
+         string source = "e43db3b9-6938-52c8-998e-f6c797544a01"
+         string stamp = "271617b94f21c8716049f756178bc0708996197c5abcdc61d56f3ec816ed8ab2"
+        }
+       }
+      }
+     )
+    }
+
+    over "wall_l2_h_002" (
+     prepend apiSchemas = ["AecoQuantityAPI"]
+    )
+    {
+     double aeco:qto:area = 12 (
+      customData = {
+       dictionary aeco = {
+        dictionary qto = {
+         string method = "axis-body-height-gross"
+         string source = "e7fb50b9-0347-530c-b1d8-4ec9c3462f69"
+         string stamp = "e6df5936c0b6330d06f7a740ed5c96ae9ae5d56225d5e13175d5928f89d275ea"
+        }
+       }
+      }
+     )
+     double aeco:qto:count = 1 (
+      customData = {
+       dictionary aeco = {
+        dictionary qto = {
+         string method = "element-occurrence"
+         string source = "e7fb50b9-0347-530c-b1d8-4ec9c3462f69"
+         string stamp = "e6df5936c0b6330d06f7a740ed5c96ae9ae5d56225d5e13175d5928f89d275ea"
+        }
+       }
+      }
+     )
+     double aeco:qto:length = 4 (
+      customData = {
+       dictionary aeco = {
+        dictionary qto = {
+         string method = "axis-line"
+         string source = "e7fb50b9-0347-530c-b1d8-4ec9c3462f69"
+         string stamp = "e6df5936c0b6330d06f7a740ed5c96ae9ae5d56225d5e13175d5928f89d275ea"
+        }
+       }
+      }
+     )
+     double aeco:qto:volume = 3.5999999999999996 (
+      customData = {
+       dictionary aeco = {
+        dictionary qto = {
+         string method = "axis-build-up-body-height-gross"
+         string source = "e7fb50b9-0347-530c-b1d8-4ec9c3462f69"
+         string stamp = "e6df5936c0b6330d06f7a740ed5c96ae9ae5d56225d5e13175d5928f89d275ea"
+        }
+       }
+      }
+     )
+    }
+
+    over "wall_l2_h_003" (
+     prepend apiSchemas = ["AecoQuantityAPI"]
+    )
+    {
+     double aeco:qto:area = 12 (
+      customData = {
+       dictionary aeco = {
+        dictionary qto = {
+         string method = "axis-body-height-gross"
+         string source = "053a6aa8-4184-5dc8-b5c3-16545485e242"
+         string stamp = "0948f05731eb0910a813527c35e6ce8f15bd9a3e0cba1a9a5dc5560cccb4f754"
+        }
+       }
+      }
+     )
+     double aeco:qto:count = 1 (
+      customData = {
+       dictionary aeco = {
+        dictionary qto = {
+         string method = "element-occurrence"
+         string source = "053a6aa8-4184-5dc8-b5c3-16545485e242"
+         string stamp = "0948f05731eb0910a813527c35e6ce8f15bd9a3e0cba1a9a5dc5560cccb4f754"
+        }
+       }
+      }
+     )
+     double aeco:qto:length = 4 (
+      customData = {
+       dictionary aeco = {
+        dictionary qto = {
+         string method = "axis-line"
+         string source = "053a6aa8-4184-5dc8-b5c3-16545485e242"
+         string stamp = "0948f05731eb0910a813527c35e6ce8f15bd9a3e0cba1a9a5dc5560cccb4f754"
+        }
+       }
+      }
+     )
+     double aeco:qto:volume = 3.5999999999999996 (
+      customData = {
+       dictionary aeco = {
+        dictionary qto = {
+         string method = "axis-build-up-body-height-gross"
+         string source = "053a6aa8-4184-5dc8-b5c3-16545485e242"
+         string stamp = "0948f05731eb0910a813527c35e6ce8f15bd9a3e0cba1a9a5dc5560cccb4f754"
+        }
+       }
+      }
+     )
+    }
+
+    over "wall_l2_h_004" (
+     prepend apiSchemas = ["AecoQuantityAPI"]
+    )
+    {
+     double aeco:qto:area = 12 (
+      customData = {
+       dictionary aeco = {
+        dictionary qto = {
+         string method = "axis-body-height-gross"
+         string source = "707d9d9d-6751-55eb-b18b-8fbe7637bb8e"
+         string stamp = "871586b8022865a48c575fd538910ddf0ac06f036ab14998b5c9e9d22b25185c"
+        }
+       }
+      }
+     )
+     double aeco:qto:count = 1 (
+      customData = {
+       dictionary aeco = {
+        dictionary qto = {
+         string method = "element-occurrence"
+         string source = "707d9d9d-6751-55eb-b18b-8fbe7637bb8e"
+         string stamp = "871586b8022865a48c575fd538910ddf0ac06f036ab14998b5c9e9d22b25185c"
+        }
+       }
+      }
+     )
+     double aeco:qto:length = 4 (
+      customData = {
+       dictionary aeco = {
+        dictionary qto = {
+         string method = "axis-line"
+         string source = "707d9d9d-6751-55eb-b18b-8fbe7637bb8e"
+         string stamp = "871586b8022865a48c575fd538910ddf0ac06f036ab14998b5c9e9d22b25185c"
+        }
+       }
+      }
+     )
+     double aeco:qto:volume = 1.7999999999999998 (
+      customData = {
+       dictionary aeco = {
+        dictionary qto = {
+         string method = "axis-build-up-body-height-gross"
+         string source = "707d9d9d-6751-55eb-b18b-8fbe7637bb8e"
+         string stamp = "871586b8022865a48c575fd538910ddf0ac06f036ab14998b5c9e9d22b25185c"
+        }
+       }
+      }
+     )
+    }
+
+    over "wall_l2_h_005" (
+     prepend apiSchemas = ["AecoQuantityAPI"]
+    )
+    {
+     double aeco:qto:area = 9 (
+      customData = {
+       dictionary aeco = {
+        dictionary qto = {
+         string method = "axis-body-height-gross"
+         string source = "b6fb5c1f-2d68-5197-9480-79e819221f06"
+         string stamp = "4b906c571b0ee345cab8f34af9924dcd42f152e3748df147218f4c40df8f86ff"
+        }
+       }
+      }
+     )
+     double aeco:qto:count = 1 (
+      customData = {
+       dictionary aeco = {
+        dictionary qto = {
+         string method = "element-occurrence"
+         string source = "b6fb5c1f-2d68-5197-9480-79e819221f06"
+         string stamp = "4b906c571b0ee345cab8f34af9924dcd42f152e3748df147218f4c40df8f86ff"
+        }
+       }
+      }
+     )
+     double aeco:qto:length = 3 (
+      customData = {
+       dictionary aeco = {
+        dictionary qto = {
+         string method = "axis-line"
+         string source = "b6fb5c1f-2d68-5197-9480-79e819221f06"
+         string stamp = "4b906c571b0ee345cab8f34af9924dcd42f152e3748df147218f4c40df8f86ff"
+        }
+       }
+      }
+     )
+     double aeco:qto:volume = 1.35 (
+      customData = {
+       dictionary aeco = {
+        dictionary qto = {
+         string method = "axis-build-up-body-height-gross"
+         string source = "b6fb5c1f-2d68-5197-9480-79e819221f06"
+         string stamp = "4b906c571b0ee345cab8f34af9924dcd42f152e3748df147218f4c40df8f86ff"
+        }
+       }
+      }
+     )
+    }
+
+    over "wall_l2_h_006" (
+     prepend apiSchemas = ["AecoQuantityAPI"]
+    )
+    {
+     double aeco:qto:area = 21 (
+      customData = {
+       dictionary aeco = {
+        dictionary qto = {
+         string method = "axis-body-height-gross"
+         string source = "92583644-fb81-568e-9d67-db570ddfbc35"
+         string stamp = "5a461e144ea53976f564df4125e99180ae91ba615859aaf8c4fb1594a940c318"
+        }
+       }
+      }
+     )
+     double aeco:qto:count = 1 (
+      customData = {
+       dictionary aeco = {
+        dictionary qto = {
+         string method = "element-occurrence"
+         string source = "92583644-fb81-568e-9d67-db570ddfbc35"
+         string stamp = "5a461e144ea53976f564df4125e99180ae91ba615859aaf8c4fb1594a940c318"
+        }
+       }
+      }
+     )
+     double aeco:qto:length = 7 (
+      customData = {
+       dictionary aeco = {
+        dictionary qto = {
+         string method = "axis-line"
+         string source = "92583644-fb81-568e-9d67-db570ddfbc35"
+         string stamp = "5a461e144ea53976f564df4125e99180ae91ba615859aaf8c4fb1594a940c318"
+        }
+       }
+      }
+     )
+     double aeco:qto:volume = 3.1500000000000004 (
+      customData = {
+       dictionary aeco = {
+        dictionary qto = {
+         string method = "axis-build-up-body-height-gross"
+         string source = "92583644-fb81-568e-9d67-db570ddfbc35"
+         string stamp = "5a461e144ea53976f564df4125e99180ae91ba615859aaf8c4fb1594a940c318"
+        }
+       }
+      }
+     )
+    }
+
+    over "wall_l2_h_007" (
+     prepend apiSchemas = ["AecoQuantityAPI"]
+    )
+    {
+     double aeco:qto:area = 12 (
+      customData = {
+       dictionary aeco = {
+        dictionary qto = {
+         string method = "axis-body-height-gross"
+         string source = "0302fe84-3c81-5885-a93b-c43def48d49b"
+         string stamp = "2a0b7b60dd47f15a19ca8f32d9457148197d4154548f6bf9a131dab0a4eea38e"
+        }
+       }
+      }
+     )
+     double aeco:qto:count = 1 (
+      customData = {
+       dictionary aeco = {
+        dictionary qto = {
+         string method = "element-occurrence"
+         string source = "0302fe84-3c81-5885-a93b-c43def48d49b"
+         string stamp = "2a0b7b60dd47f15a19ca8f32d9457148197d4154548f6bf9a131dab0a4eea38e"
+        }
+       }
+      }
+     )
+     double aeco:qto:length = 4 (
+      customData = {
+       dictionary aeco = {
+        dictionary qto = {
+         string method = "axis-line"
+         string source = "0302fe84-3c81-5885-a93b-c43def48d49b"
+         string stamp = "2a0b7b60dd47f15a19ca8f32d9457148197d4154548f6bf9a131dab0a4eea38e"
+        }
+       }
+      }
+     )
+     double aeco:qto:volume = 1.8000000000000003 (
+      customData = {
+       dictionary aeco = {
+        dictionary qto = {
+         string method = "axis-build-up-body-height-gross"
+         string source = "0302fe84-3c81-5885-a93b-c43def48d49b"
+         string stamp = "2a0b7b60dd47f15a19ca8f32d9457148197d4154548f6bf9a131dab0a4eea38e"
+        }
+       }
+      }
+     )
+    }
+
+    over "wall_l2_h_008" (
+     prepend apiSchemas = ["AecoQuantityAPI"]
+    )
+    {
+     double aeco:qto:area = 12 (
+      customData = {
+       dictionary aeco = {
+        dictionary qto = {
+         string method = "axis-body-height-gross"
+         string source = "530201f9-f6d4-5b5e-9d79-94bbc0ed39b0"
+         string stamp = "e00e94e601dca0b8c9dc42e5ae2274719cb93c14f320d2a774810f4310f0ed02"
+        }
+       }
+      }
+     )
+     double aeco:qto:count = 1 (
+      customData = {
+       dictionary aeco = {
+        dictionary qto = {
+         string method = "element-occurrence"
+         string source = "530201f9-f6d4-5b5e-9d79-94bbc0ed39b0"
+         string stamp = "e00e94e601dca0b8c9dc42e5ae2274719cb93c14f320d2a774810f4310f0ed02"
+        }
+       }
+      }
+     )
+     double aeco:qto:length = 4 (
+      customData = {
+       dictionary aeco = {
+        dictionary qto = {
+         string method = "axis-line"
+         string source = "530201f9-f6d4-5b5e-9d79-94bbc0ed39b0"
+         string stamp = "e00e94e601dca0b8c9dc42e5ae2274719cb93c14f320d2a774810f4310f0ed02"
+        }
+       }
+      }
+     )
+     double aeco:qto:volume = 1.8000000000000003 (
+      customData = {
+       dictionary aeco = {
+        dictionary qto = {
+         string method = "axis-build-up-body-height-gross"
+         string source = "530201f9-f6d4-5b5e-9d79-94bbc0ed39b0"
+         string stamp = "e00e94e601dca0b8c9dc42e5ae2274719cb93c14f320d2a774810f4310f0ed02"
+        }
+       }
+      }
+     )
+    }
+
+    over "wall_l2_h_009" (
+     prepend apiSchemas = ["AecoQuantityAPI"]
+    )
+    {
+     double aeco:qto:area = 9 (
+      customData = {
+       dictionary aeco = {
+        dictionary qto = {
+         string method = "axis-body-height-gross"
+         string source = "e5c92fc0-698f-534a-8475-92dee2e044f5"
+         string stamp = "6b2d02f32ce662b37462a63cb8874050a98c42fb1eea91e5ea21a3372d17a58e"
+        }
+       }
+      }
+     )
+     double aeco:qto:count = 1 (
+      customData = {
+       dictionary aeco = {
+        dictionary qto = {
+         string method = "element-occurrence"
+         string source = "e5c92fc0-698f-534a-8475-92dee2e044f5"
+         string stamp = "6b2d02f32ce662b37462a63cb8874050a98c42fb1eea91e5ea21a3372d17a58e"
+        }
+       }
+      }
+     )
+     double aeco:qto:length = 3 (
+      customData = {
+       dictionary aeco = {
+        dictionary qto = {
+         string method = "axis-line"
+         string source = "e5c92fc0-698f-534a-8475-92dee2e044f5"
+         string stamp = "6b2d02f32ce662b37462a63cb8874050a98c42fb1eea91e5ea21a3372d17a58e"
+        }
+       }
+      }
+     )
+     double aeco:qto:volume = 2.6999999999999997 (
+      customData = {
+       dictionary aeco = {
+        dictionary qto = {
+         string method = "axis-build-up-body-height-gross"
+         string source = "e5c92fc0-698f-534a-8475-92dee2e044f5"
+         string stamp = "6b2d02f32ce662b37462a63cb8874050a98c42fb1eea91e5ea21a3372d17a58e"
+        }
+       }
+      }
+     )
+    }
+
+    over "wall_l2_h_010" (
+     prepend apiSchemas = ["AecoQuantityAPI"]
+    )
+    {
+     double aeco:qto:area = 45 (
+      customData = {
+       dictionary aeco = {
+        dictionary qto = {
+         string method = "axis-body-height-gross"
+         string source = "48299598-bfc7-5763-ada4-afcbcd8810d4"
+         string stamp = "397315bd7317a19c36f92ae5ded9e62c4877e89308c12ed4bb18d2f413f5a399"
+        }
+       }
+      }
+     )
+     double aeco:qto:count = 1 (
+      customData = {
+       dictionary aeco = {
+        dictionary qto = {
+         string method = "element-occurrence"
+         string source = "48299598-bfc7-5763-ada4-afcbcd8810d4"
+         string stamp = "397315bd7317a19c36f92ae5ded9e62c4877e89308c12ed4bb18d2f413f5a399"
+        }
+       }
+      }
+     )
+     double aeco:qto:length = 15 (
+      customData = {
+       dictionary aeco = {
+        dictionary qto = {
+         string method = "axis-line"
+         string source = "48299598-bfc7-5763-ada4-afcbcd8810d4"
+         string stamp = "397315bd7317a19c36f92ae5ded9e62c4877e89308c12ed4bb18d2f413f5a399"
+        }
+       }
+      }
+     )
+     double aeco:qto:volume = 13.5 (
+      customData = {
+       dictionary aeco = {
+        dictionary qto = {
+         string method = "axis-build-up-body-height-gross"
+         string source = "48299598-bfc7-5763-ada4-afcbcd8810d4"
+         string stamp = "397315bd7317a19c36f92ae5ded9e62c4877e89308c12ed4bb18d2f413f5a399"
+        }
+       }
+      }
+     )
+    }
+
+    over "wall_l2_v_011" (
+     prepend apiSchemas = ["AecoQuantityAPI"]
+    )
+    {
+     double aeco:qto:area = 27 (
+      customData = {
+       dictionary aeco = {
+        dictionary qto = {
+         string method = "axis-body-height-gross"
+         string source = "9c86f5b4-b28a-537d-921a-7d491e761eef"
+         string stamp = "84b2d1e374b7d98070cc00d684af57426f8d0ddeec75ef2e6fb971cd2d80d254"
+        }
+       }
+      }
+     )
+     double aeco:qto:count = 1 (
+      customData = {
+       dictionary aeco = {
+        dictionary qto = {
+         string method = "element-occurrence"
+         string source = "9c86f5b4-b28a-537d-921a-7d491e761eef"
+         string stamp = "84b2d1e374b7d98070cc00d684af57426f8d0ddeec75ef2e6fb971cd2d80d254"
+        }
+       }
+      }
+     )
+     double aeco:qto:length = 9 (
+      customData = {
+       dictionary aeco = {
+        dictionary qto = {
+         string method = "axis-line"
+         string source = "9c86f5b4-b28a-537d-921a-7d491e761eef"
+         string stamp = "84b2d1e374b7d98070cc00d684af57426f8d0ddeec75ef2e6fb971cd2d80d254"
+        }
+       }
+      }
+     )
+     double aeco:qto:volume = 8.1 (
+      customData = {
+       dictionary aeco = {
+        dictionary qto = {
+         string method = "axis-build-up-body-height-gross"
+         string source = "9c86f5b4-b28a-537d-921a-7d491e761eef"
+         string stamp = "84b2d1e374b7d98070cc00d684af57426f8d0ddeec75ef2e6fb971cd2d80d254"
+        }
+       }
+      }
+     )
+    }
+
+    over "wall_l2_v_012" (
+     prepend apiSchemas = ["AecoQuantityAPI"]
+    )
+    {
+     double aeco:qto:area = 9 (
+      customData = {
+       dictionary aeco = {
+        dictionary qto = {
+         string method = "axis-body-height-gross"
+         string source = "93bc6518-e4e4-5b31-9ed8-57d271460047"
+         string stamp = "be2a0c57027ee14f9bf3533a56f4abefbb9318d02b27c4f037843e5aff77546e"
+        }
+       }
+      }
+     )
+     double aeco:qto:count = 1 (
+      customData = {
+       dictionary aeco = {
+        dictionary qto = {
+         string method = "element-occurrence"
+         string source = "93bc6518-e4e4-5b31-9ed8-57d271460047"
+         string stamp = "be2a0c57027ee14f9bf3533a56f4abefbb9318d02b27c4f037843e5aff77546e"
+        }
+       }
+      }
+     )
+     double aeco:qto:length = 3 (
+      customData = {
+       dictionary aeco = {
+        dictionary qto = {
+         string method = "axis-line"
+         string source = "93bc6518-e4e4-5b31-9ed8-57d271460047"
+         string stamp = "be2a0c57027ee14f9bf3533a56f4abefbb9318d02b27c4f037843e5aff77546e"
+        }
+       }
+      }
+     )
+     double aeco:qto:volume = 2.6999999999999997 (
+      customData = {
+       dictionary aeco = {
+        dictionary qto = {
+         string method = "axis-build-up-body-height-gross"
+         string source = "93bc6518-e4e4-5b31-9ed8-57d271460047"
+         string stamp = "be2a0c57027ee14f9bf3533a56f4abefbb9318d02b27c4f037843e5aff77546e"
+        }
+       }
+      }
+     )
+    }
+
+    over "wall_l2_v_013" (
+     prepend apiSchemas = ["AecoQuantityAPI"]
+    )
+    {
+     double aeco:qto:area = 9 (
+      customData = {
+       dictionary aeco = {
+        dictionary qto = {
+         string method = "axis-body-height-gross"
+         string source = "7b1263c6-f269-5ad7-b2a4-d7d6d2798e30"
+         string stamp = "e01017ecd0cfc14e2c01e47933ce70b56445a3a9d85dcc2026fc605991335dd9"
+        }
+       }
+      }
+     )
+     double aeco:qto:count = 1 (
+      customData = {
+       dictionary aeco = {
+        dictionary qto = {
+         string method = "element-occurrence"
+         string source = "7b1263c6-f269-5ad7-b2a4-d7d6d2798e30"
+         string stamp = "e01017ecd0cfc14e2c01e47933ce70b56445a3a9d85dcc2026fc605991335dd9"
+        }
+       }
+      }
+     )
+     double aeco:qto:length = 3 (
+      customData = {
+       dictionary aeco = {
+        dictionary qto = {
+         string method = "axis-line"
+         string source = "7b1263c6-f269-5ad7-b2a4-d7d6d2798e30"
+         string stamp = "e01017ecd0cfc14e2c01e47933ce70b56445a3a9d85dcc2026fc605991335dd9"
+        }
+       }
+      }
+     )
+     double aeco:qto:volume = 1.35 (
+      customData = {
+       dictionary aeco = {
+        dictionary qto = {
+         string method = "axis-build-up-body-height-gross"
+         string source = "7b1263c6-f269-5ad7-b2a4-d7d6d2798e30"
+         string stamp = "e01017ecd0cfc14e2c01e47933ce70b56445a3a9d85dcc2026fc605991335dd9"
+        }
+       }
+      }
+     )
+    }
+
+    over "wall_l2_v_014" (
+     prepend apiSchemas = ["AecoQuantityAPI"]
+    )
+    {
+     double aeco:qto:area = 27 (
+      customData = {
+       dictionary aeco = {
+        dictionary qto = {
+         string method = "axis-body-height-gross"
+         string source = "446e8413-727f-5c83-b63c-b41018bc5c7a"
+         string stamp = "e0000bf40634572669d9d082b252ccd32ddf16cde6b11287f91f4ef47eeb7000"
+        }
+       }
+      }
+     )
+     double aeco:qto:count = 1 (
+      customData = {
+       dictionary aeco = {
+        dictionary qto = {
+         string method = "element-occurrence"
+         string source = "446e8413-727f-5c83-b63c-b41018bc5c7a"
+         string stamp = "e0000bf40634572669d9d082b252ccd32ddf16cde6b11287f91f4ef47eeb7000"
+        }
+       }
+      }
+     )
+     double aeco:qto:length = 9 (
+      customData = {
+       dictionary aeco = {
+        dictionary qto = {
+         string method = "axis-line"
+         string source = "446e8413-727f-5c83-b63c-b41018bc5c7a"
+         string stamp = "e0000bf40634572669d9d082b252ccd32ddf16cde6b11287f91f4ef47eeb7000"
+        }
+       }
+      }
+     )
+     double aeco:qto:volume = 4.050000000000001 (
+      customData = {
+       dictionary aeco = {
+        dictionary qto = {
+         string method = "axis-build-up-body-height-gross"
+         string source = "446e8413-727f-5c83-b63c-b41018bc5c7a"
+         string stamp = "e0000bf40634572669d9d082b252ccd32ddf16cde6b11287f91f4ef47eeb7000"
+        }
+       }
+      }
+     )
+    }
+
+    over "wall_l2_v_015" (
+     prepend apiSchemas = ["AecoQuantityAPI"]
+    )
+    {
+     double aeco:qto:area = 12 (
+      customData = {
+       dictionary aeco = {
+        dictionary qto = {
+         string method = "axis-body-height-gross"
+         string source = "9a5d68d2-9185-559d-beaa-a8501b814fc9"
+         string stamp = "e0788c1dc2d4ad4d40f7d9533ff22405ad709b0f9e61f7dc9be949ab856daa8f"
+        }
+       }
+      }
+     )
+     double aeco:qto:count = 1 (
+      customData = {
+       dictionary aeco = {
+        dictionary qto = {
+         string method = "element-occurrence"
+         string source = "9a5d68d2-9185-559d-beaa-a8501b814fc9"
+         string stamp = "e0788c1dc2d4ad4d40f7d9533ff22405ad709b0f9e61f7dc9be949ab856daa8f"
+        }
+       }
+      }
+     )
+     double aeco:qto:length = 4 (
+      customData = {
+       dictionary aeco = {
+        dictionary qto = {
+         string method = "axis-line"
+         string source = "9a5d68d2-9185-559d-beaa-a8501b814fc9"
+         string stamp = "e0788c1dc2d4ad4d40f7d9533ff22405ad709b0f9e61f7dc9be949ab856daa8f"
+        }
+       }
+      }
+     )
+     double aeco:qto:volume = 1.7999999999999998 (
+      customData = {
+       dictionary aeco = {
+        dictionary qto = {
+         string method = "axis-build-up-body-height-gross"
+         string source = "9a5d68d2-9185-559d-beaa-a8501b814fc9"
+         string stamp = "e0788c1dc2d4ad4d40f7d9533ff22405ad709b0f9e61f7dc9be949ab856daa8f"
+        }
+       }
+      }
+     )
+    }
+
+    over "wall_l2_v_016" (
+     prepend apiSchemas = ["AecoQuantityAPI"]
+    )
+    {
+     double aeco:qto:area = 24.599999999999998 (
+      customData = {
+       dictionary aeco = {
+        dictionary qto = {
+         string method = "axis-body-height-gross"
+         string source = "8f507a9f-9bfb-516d-9f0c-89509e1ef5d9"
+         string stamp = "462b5114904ea546c174f7485b0d6dd51c6fd111e5d7a736f06957f38d43fdf0"
+        }
+       }
+      }
+     )
+     double aeco:qto:count = 1 (
+      customData = {
+       dictionary aeco = {
+        dictionary qto = {
+         string method = "element-occurrence"
+         string source = "8f507a9f-9bfb-516d-9f0c-89509e1ef5d9"
+         string stamp = "462b5114904ea546c174f7485b0d6dd51c6fd111e5d7a736f06957f38d43fdf0"
+        }
+       }
+      }
+     )
+     double aeco:qto:length = 8.2 (
+      customData = {
+       dictionary aeco = {
+        dictionary qto = {
+         string method = "axis-line"
+         string source = "8f507a9f-9bfb-516d-9f0c-89509e1ef5d9"
+         string stamp = "462b5114904ea546c174f7485b0d6dd51c6fd111e5d7a736f06957f38d43fdf0"
+        }
+       }
+      }
+     )
+     double aeco:qto:volume = 3.6900000000000004 (
+      customData = {
+       dictionary aeco = {
+        dictionary qto = {
+         string method = "axis-build-up-body-height-gross"
+         string source = "8f507a9f-9bfb-516d-9f0c-89509e1ef5d9"
+         string stamp = "462b5114904ea546c174f7485b0d6dd51c6fd111e5d7a736f06957f38d43fdf0"
+        }
+       }
+      }
+     )
+    }
+
+    over "wall_l2_v_017" (
+     prepend apiSchemas = ["AecoQuantityAPI"]
+    )
+    {
+     double aeco:qto:area = 12 (
+      customData = {
+       dictionary aeco = {
+        dictionary qto = {
+         string method = "axis-body-height-gross"
+         string source = "d6b075b8-4846-5ff9-88b7-cf553d4327f0"
+         string stamp = "685498c43b8d8ceb574e8a00f9a04fd1444e86c2980e760e18874a897254c7b9"
+        }
+       }
+      }
+     )
+     double aeco:qto:count = 1 (
+      customData = {
+       dictionary aeco = {
+        dictionary qto = {
+         string method = "element-occurrence"
+         string source = "d6b075b8-4846-5ff9-88b7-cf553d4327f0"
+         string stamp = "685498c43b8d8ceb574e8a00f9a04fd1444e86c2980e760e18874a897254c7b9"
+        }
+       }
+      }
+     )
+     double aeco:qto:length = 4 (
+      customData = {
+       dictionary aeco = {
+        dictionary qto = {
+         string method = "axis-line"
+         string source = "d6b075b8-4846-5ff9-88b7-cf553d4327f0"
+         string stamp = "685498c43b8d8ceb574e8a00f9a04fd1444e86c2980e760e18874a897254c7b9"
+        }
+       }
+      }
+     )
+     double aeco:qto:volume = 3.5999999999999996 (
+      customData = {
+       dictionary aeco = {
+        dictionary qto = {
+         string method = "axis-build-up-body-height-gross"
+         string source = "d6b075b8-4846-5ff9-88b7-cf553d4327f0"
+         string stamp = "685498c43b8d8ceb574e8a00f9a04fd1444e86c2980e760e18874a897254c7b9"
+        }
+       }
+      }
+     )
+    }
+
+    over "wall_l2_v_018" (
+     prepend apiSchemas = ["AecoQuantityAPI"]
+    )
+    {
+     double aeco:qto:area = 15 (
+      customData = {
+       dictionary aeco = {
+        dictionary qto = {
+         string method = "axis-body-height-gross"
+         string source = "973c7b4b-3366-5de0-936c-7d07380d4074"
+         string stamp = "e88c1c20ef7e9a4484cb8fdd74dfc84af07a5f613593c3d3fab8ab1f8d92d074"
+        }
+       }
+      }
+     )
+     double aeco:qto:count = 1 (
+      customData = {
+       dictionary aeco = {
+        dictionary qto = {
+         string method = "element-occurrence"
+         string source = "973c7b4b-3366-5de0-936c-7d07380d4074"
+         string stamp = "e88c1c20ef7e9a4484cb8fdd74dfc84af07a5f613593c3d3fab8ab1f8d92d074"
+        }
+       }
+      }
+     )
+     double aeco:qto:length = 5 (
+      customData = {
+       dictionary aeco = {
+        dictionary qto = {
+         string method = "axis-line"
+         string source = "973c7b4b-3366-5de0-936c-7d07380d4074"
+         string stamp = "e88c1c20ef7e9a4484cb8fdd74dfc84af07a5f613593c3d3fab8ab1f8d92d074"
+        }
+       }
+      }
+     )
+     double aeco:qto:volume = 4.5 (
+      customData = {
+       dictionary aeco = {
+        dictionary qto = {
+         string method = "axis-build-up-body-height-gross"
+         string source = "973c7b4b-3366-5de0-936c-7d07380d4074"
+         string stamp = "e88c1c20ef7e9a4484cb8fdd74dfc84af07a5f613593c3d3fab8ab1f8d92d074"
+        }
+       }
+      }
+     )
+    }
+
+    over "wall_l2_v_019" (
+     prepend apiSchemas = ["AecoQuantityAPI"]
+    )
+    {
+     double aeco:qto:area = 9 (
+      customData = {
+       dictionary aeco = {
+        dictionary qto = {
+         string method = "axis-body-height-gross"
+         string source = "14c8a6ad-3fac-55a7-9dd1-06df33865f5c"
+         string stamp = "cdd9e9a46819444237a84ffd750b87d2e6c884da69d17a4db3aea5d27556d546"
+        }
+       }
+      }
+     )
+     double aeco:qto:count = 1 (
+      customData = {
+       dictionary aeco = {
+        dictionary qto = {
+         string method = "element-occurrence"
+         string source = "14c8a6ad-3fac-55a7-9dd1-06df33865f5c"
+         string stamp = "cdd9e9a46819444237a84ffd750b87d2e6c884da69d17a4db3aea5d27556d546"
+        }
+       }
+      }
+     )
+     double aeco:qto:length = 3 (
+      customData = {
+       dictionary aeco = {
+        dictionary qto = {
+         string method = "axis-line"
+         string source = "14c8a6ad-3fac-55a7-9dd1-06df33865f5c"
+         string stamp = "cdd9e9a46819444237a84ffd750b87d2e6c884da69d17a4db3aea5d27556d546"
+        }
+       }
+      }
+     )
+     double aeco:qto:volume = 2.6999999999999997 (
+      customData = {
+       dictionary aeco = {
+        dictionary qto = {
+         string method = "axis-build-up-body-height-gross"
+         string source = "14c8a6ad-3fac-55a7-9dd1-06df33865f5c"
+         string stamp = "cdd9e9a46819444237a84ffd750b87d2e6c884da69d17a4db3aea5d27556d546"
+        }
+       }
+      }
+     )
+    }
+   }
+  }
+ }
+}
+

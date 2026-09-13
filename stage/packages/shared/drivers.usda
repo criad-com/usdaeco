@@ -1,0 +1,12 @@
+#usda 1.0
+(
+ customLayerData = {
+  string "aeco:layer:package" = "shared"
+  string "aeco:layer:producer" = "usdAECO suite"
+  string "aeco:layer:role" = "drivers"
+  string "aeco:layer:source" = "data/usdaeco-datacentre/dist/full/shared.semantics.usda"
+  string "aeco:layer:sourceSha256" = "cfb56f6ee6a514f9d9645cbf46570bcdeca7c8b0e93ede18b3f8cb4ff1cbb959"
+  string "aeco:layer:tag" = "v0.5.1"
+ }
+)
+

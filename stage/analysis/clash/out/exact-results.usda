@@ -1,0 +1,91 @@
+#usda 1.0
+(
+ customLayerData = {
+  string "aeco:clash:layer" = "derived clash results"
+  string "aeco:layer:package" = "clash"
+  string "aeco:layer:producer" = "committed result v0.2.3"
+  string "aeco:layer:role" = "analysis"
+  string "aeco:layer:source" = "kind/usdaeco-clash/examples/datacentre/result/layers/out/exact-results.usda"
+  string "aeco:layer:sourceSha256" = "4298bb524a5bdc587a9e687ee6cf810ca6194de93d2fc9fcf051fc0ec4856938"
+  string "aeco:layer:tag" = "v0.2.3"
+ }
+ fallbackPrimTypes = {
+  token[] AecoClashResult = ["Scope"]
+  token[] AecoClashTest = ["Scope"]
+ }
+ metersPerUnit = 1
+ upAxis = "Z"
+)
+
+def "Clash"
+{
+ def "Pinned"
+ {
+  def AecoClashResult "ExactResult_b87e3bc1e7f95c218e8540962036139e"
+  {
+   double aeco:clash:distance = 0.005000000000000782
+   rel aeco:clash:elements = [
+    </demo_datacentre_01/demo_datacentre_01_Site/demo_datacentre_01/L01_Office/Office_Corridor_L01/Corridor_ceiling_void/pipe_clash_near>,
+    </demo_datacentre_01/demo_datacentre_01_Site/demo_datacentre_01/L01_Office/Office_Corridor_L01/Corridor_ceiling_void/tray_void_ocorr_1>,
+   ]
+   string aeco:clash:evidence = '{"band_decides":true,"bodies":[{"approx":"exact","body":"/demo_datacentre_01/demo_datacentre_01_Site/demo_datacentre_01/L01_Office/Office_Corridor_L01/Corridor_ceiling_void/pipe_clash_near/BodyExact","role":"body","stamp":"aeco-ifc-exact 0.2.0 occt 7.9.3 sha256=e37e58f29d60fe733dc12cad081fe540fc0adc76e5c089cbce45bc918e9f2499","uncertainty":1e-05,"uncertainty_method":"aeco:derived:tolerance"},{"approx":"exact","body":"/demo_datacentre_01/demo_datacentre_01_Site/demo_datacentre_01/L01_Office/Office_Corridor_L01/Corridor_ceiling_void/tray_void_ocorr_1/BodyExact","role":"body","stamp":"aeco-ifc-exact 0.2.0 occt 7.9.3 sha256=2ee1b5467b9ccaff177fff96feb556c72f50f6099e70c15d3c7d9f997c311f20","uncertainty":1e-05,"uncertainty_method":"aeco:derived:tolerance"}],"measurement":"BRepAlgoAPI_Common volume; BRepExtrema_DistShapeShape separation, negative zero for overlap; no penetration depth","method":"exact","point_method":"midpoint of element bounds for camera framing; bridge does not expose extrema witnesses","tolerance":0.001}'
+   uniform token aeco:clash:kind = "clearance"
+   point3d aeco:clash:point = (23.25, -1.5, 6.842574954032898)
+   double aeco:clash:uncertainty = 0.00002
+   double aeco:clash:volume = 0
+
+   def Camera "Camera"
+   {
+    float2 clippingRange = (0.001, 100)
+    float focalLength = 45
+    matrix4d xformOp:transform = ( (0.7071067811865479, 0.7071067811865469, 0, 0), (-0.408248290463863, 0.4082482904638636, 0.8164965809277255, -0), (0.5773502691896251, -0.5773502691896258, 0.5773502691896263, 0), (24.15, -2.3999999999999977, 7.742574954032897, 1) )
+    uniform token[] xformOpOrder = ["xformOp:transform"]
+   }
+  }
+
+  def AecoClashResult "ExactResult_dd098bb17c5a54249e4da88ead318732"
+  {
+   double aeco:clash:distance = 0
+   rel aeco:clash:elements = [
+    </demo_datacentre_01/demo_datacentre_01_Site/demo_datacentre_01/L01_Office/Office_Corridor_L01/Corridor_ceiling_void/pipe_clash_tangent>,
+    </demo_datacentre_01/demo_datacentre_01_Site/demo_datacentre_01/L01_Office/wall_l1_h_007>,
+   ]
+   string aeco:clash:evidence = '{"band_decides":true,"bodies":[{"approx":"exact","body":"/demo_datacentre_01/demo_datacentre_01_Site/demo_datacentre_01/L01_Office/Office_Corridor_L01/Corridor_ceiling_void/pipe_clash_tangent/BodyExact","role":"body","stamp":"aeco-ifc-exact 0.2.0 occt 7.9.3 sha256=c3cd2e07e5038efa355741d704e10f4019477f5ad229451084c88d10a881abff","uncertainty":1e-05,"uncertainty_method":"aeco:derived:tolerance"},{"approx":"exact","body":"/demo_datacentre_01/demo_datacentre_01_Site/demo_datacentre_01/L01_Office/wall_l1_h_007/BodyExact","role":"body","stamp":"aeco-ifc-exact 0.2.0 occt 7.9.3 sha256=2d90b2bce9a580f221aa55b5b89613efc56240b8e846d6b2e05aa21191bb76d7","uncertainty":1.0000000000314e-05,"uncertainty_method":"aeco:derived:tolerance"}],"measurement":"BRepAlgoAPI_Common volume; BRepExtrema_DistShapeShape separation, negative zero for overlap; no penetration depth","method":"exact","point_method":"midpoint of element bounds for camera framing; bridge does not expose extrema witnesses","tolerance":0.001}'
+   uniform token aeco:clash:kind = "touching"
+   point3d aeco:clash:point = (24, -2.9474250078201294, 6.149999976158142)
+   double aeco:clash:uncertainty = 0.000020000000000314
+   double aeco:clash:volume = 0
+
+   def Camera "Camera"
+   {
+    float2 clippingRange = (0.001, 100)
+    float focalLength = 45
+    matrix4d xformOp:transform = ( (0.7071067811865479, 0.7071067811865469, 0, 0), (-0.408248290463863, 0.4082482904638636, 0.8164965809277255, -0), (0.5773502691896251, -0.5773502691896258, 0.5773502691896263, 0), (24.899999999999995, -3.847425007820126, 7.0499999761581424, 1) )
+    uniform token[] xformOpOrder = ["xformOp:transform"]
+   }
+  }
+
+  def AecoClashResult "ExactResult_e871d6a8fd345356bd8b5d7dc4bbe3d5"
+  {
+   double aeco:clash:distance = -0
+   rel aeco:clash:elements = [
+    </demo_datacentre_01/demo_datacentre_01_Site/demo_datacentre_01/L01_Office/Office_Corridor_L01/Corridor_ceiling_void/pipe_clash_hard>,
+    </demo_datacentre_01/demo_datacentre_01_Site/demo_datacentre_01/L01_Office/wall_l1_h_007>,
+   ]
+   string aeco:clash:evidence = '{"band_decides":true,"bodies":[{"approx":"exact","body":"/demo_datacentre_01/demo_datacentre_01_Site/demo_datacentre_01/L01_Office/Office_Corridor_L01/Corridor_ceiling_void/pipe_clash_hard/BodyExact","role":"body","stamp":"aeco-ifc-exact 0.2.0 occt 7.9.3 sha256=1038b690b67728624fbba9bf00e7ab75e8380afbe0f45f2e10bb1b5351805d19","uncertainty":1e-05,"uncertainty_method":"aeco:derived:tolerance"},{"approx":"exact","body":"/demo_datacentre_01/demo_datacentre_01_Site/demo_datacentre_01/L01_Office/wall_l1_h_007/BodyExact","role":"body","stamp":"aeco-ifc-exact 0.2.0 occt 7.9.3 sha256=2d90b2bce9a580f221aa55b5b89613efc56240b8e846d6b2e05aa21191bb76d7","uncertainty":1.0000000000314e-05,"uncertainty_method":"aeco:derived:tolerance"}],"measurement":"BRepAlgoAPI_Common volume; BRepExtrema_DistShapeShape separation, negative zero for overlap; no penetration depth","method":"exact","point_method":"midpoint of element bounds for camera framing; bridge does not expose extrema witnesses","tolerance":0.001}'
+   uniform token aeco:clash:kind = "hard"
+   point3d aeco:clash:point = (24, -2.9999999701976776, 6.149999976158142)
+   double aeco:clash:uncertainty = 0.000020000000000314
+   double aeco:clash:volume = 0.00042836676119217495
+
+   def Camera "Camera"
+   {
+    float2 clippingRange = (0.001, 100)
+    float focalLength = 45
+    matrix4d xformOp:transform = ( (0.7071067811865479, 0.7071067811865469, 0, 0), (-0.408248290463863, 0.4082482904638636, 0.8164965809277255, -0), (0.5773502691896251, -0.5773502691896258, 0.5773502691896263, 0), (24.9, -3.8999999701976744, 7.049999976158141, 1) )
+    uniform token[] xformOpOrder = ["xformOp:transform"]
+   }
+  }
+ }
+}
+

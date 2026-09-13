@@ -1,0 +1,6358 @@
+#usda 1.0
+(
+ customLayerData = {
+  string "aeco:layer:package" = "cooling"
+  string "aeco:layer:producer" = "usdAECO suite representation placement"
+  string "aeco:layer:role" = "derived"
+  string "aeco:layer:source" = "kind/usdaeco-pipe/examples/datacentre/run.py"
+  string "aeco:layer:sourceSha256" = "f83472499f2702101fc9d97fe6a59d634baf4c21500a2865bcc8807d543bba61"
+  string "aeco:layer:tag" = "v0.2.5"
+ }
+)
+
+over "demo_datacentre_01"
+{
+ over "demo_datacentre_01_Site"
+ {
+  over "demo_datacentre_01"
+  {
+   over "L01_Office"
+   {
+    over "Office_Corridor_L01"
+    {
+     over "Corridor_ceiling_void"
+     {
+      over "pipe_clash_hard"
+      {
+       over BrepArray "BodyExact"
+       {
+        matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (0, 0, 0, 1) ) (
+         aecoDerived = true
+        )
+        token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+         aecoDerived = true
+        )
+       }
+
+       over Mesh "Body"
+       {
+        matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (0, 0, 0, 1) ) (
+         aecoDerived = true
+        )
+        token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+         aecoDerived = true
+        )
+       }
+
+       over BasisCurves "Edges"
+       {
+        matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (0, 0, 0, 1) ) (
+         aecoDerived = true
+        )
+        token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+         aecoDerived = true
+        )
+       }
+
+       over BasisCurves "RepeatHighlight"
+       {
+        matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (0, 0, 0, 1) ) (
+         aecoDerived = true
+        )
+        token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+         aecoDerived = true
+        )
+       }
+
+       over Mesh "EdgeDisplay"
+       {
+        matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (0, 0, 0, 1) ) (
+         aecoDerived = true
+        )
+        token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+         aecoDerived = true
+        )
+       }
+
+       over BasisCurves "Axis"
+       {
+        matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (0, 0, 0, 1) ) (
+         aecoDerived = true
+        )
+        token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+         aecoDerived = true
+        )
+       }
+      }
+
+      over "pipe_clash_near"
+      {
+       over BrepArray "BodyExact"
+       {
+        matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (0, 0, 0, 1) ) (
+         aecoDerived = true
+        )
+        token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+         aecoDerived = true
+        )
+       }
+
+       over Mesh "Body"
+       {
+        matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (0, 0, 0, 1) ) (
+         aecoDerived = true
+        )
+        token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+         aecoDerived = true
+        )
+       }
+
+       over BasisCurves "Edges"
+       {
+        matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (0, 0, 0, 1) ) (
+         aecoDerived = true
+        )
+        token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+         aecoDerived = true
+        )
+       }
+
+       over BasisCurves "RepeatHighlight"
+       {
+        matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (0, 0, 0, 1) ) (
+         aecoDerived = true
+        )
+        token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+         aecoDerived = true
+        )
+       }
+
+       over Mesh "EdgeDisplay"
+       {
+        matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (0, 0, 0, 1) ) (
+         aecoDerived = true
+        )
+        token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+         aecoDerived = true
+        )
+       }
+
+       over BasisCurves "Axis"
+       {
+        matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (0, 0, 0, 1) ) (
+         aecoDerived = true
+        )
+        token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+         aecoDerived = true
+        )
+       }
+      }
+
+      over "pipe_clash_tangent"
+      {
+       over BrepArray "BodyExact"
+       {
+        matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (0, 0, 0, 1) ) (
+         aecoDerived = true
+        )
+        token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+         aecoDerived = true
+        )
+       }
+
+       over Mesh "Body"
+       {
+        matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (0, 0, 0, 1) ) (
+         aecoDerived = true
+        )
+        token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+         aecoDerived = true
+        )
+       }
+
+       over BasisCurves "Edges"
+       {
+        matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (0, 0, 0, 1) ) (
+         aecoDerived = true
+        )
+        token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+         aecoDerived = true
+        )
+       }
+
+       over BasisCurves "RepeatHighlight"
+       {
+        matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (0, 0, 0, 1) ) (
+         aecoDerived = true
+        )
+        token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+         aecoDerived = true
+        )
+       }
+
+       over Mesh "EdgeDisplay"
+       {
+        matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (0, 0, 0, 1) ) (
+         aecoDerived = true
+        )
+        token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+         aecoDerived = true
+        )
+       }
+
+       over BasisCurves "Axis"
+       {
+        matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (0, 0, 0, 1) ) (
+         aecoDerived = true
+        )
+        token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+         aecoDerived = true
+        )
+       }
+      }
+     }
+    }
+   }
+
+   over "L00_Ground"
+   {
+    over "rack_a_r4_03_Return_Hose"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, -1, 0, 0), (0, 0, -1, 0), (14.5, 32.849999999999994, 4.5, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "clg_man_a_r3_r_Seg_17"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (0, 0, 1, 0), (1, 0, 0, 0), (22.35, 29.25, 4.5, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "rt_clg_cdu_a1_sec_s_Seg_1"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (-1, 0, 0, 0), (0, 0, 1, 0), (0, 1, 0, 0), (12, 19.2, 4.2, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "rack_a_r3_09_Return_Hose"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, -1, 0, 0), (0, 0, -1, 0), (18.1, 29.25, 4.5, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "clg_man_a_r4_s_Seg_11"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (0, 0, 1, 0), (1, 0, 0, 0), (18.75, 31.749999999999996, 4.2, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "rack_a_r2_02_Return_Hose"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, -1, 0, 0), (0, 0, -1, 0), (13.9, 25.650000000000002, 4.5, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "clg_man_a_r3_r_Seg_3"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (0, 0, 1, 0), (1, 0, 0, 0), (13.950000000000001, 29.25, 4.5, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "clg_man_a_r3_r_Seg_7"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (0, 0, 1, 0), (1, 0, 0, 0), (16.35, 29.25, 4.5, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "rt_clg_cdu_a1_pri_r_Seg_1"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (-1, 0, 0, 0), (0, 0, 1, 0), (0, 1, 0, 0), (12, 19.2, 4.8999999999999995, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "clg_man_a_r1_r_Seg_13"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (0, 0, 1, 0), (1, 0, 0, 0), (19.95, 22.05, 4.5, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "rt_clg_chw_hdr_w_s_Seg_1"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (-1, 0, 0, 0), (0, 0, 1, 0), (0, 1, 0, 0), (39.3, 21.825, 5, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "rack_a_r4_04_Return_Hose"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, -1, 0, 0), (0, 0, -1, 0), (15.100000000000001, 32.849999999999994, 4.5, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "rt_clg_fws_yard_r_Seg_1"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (0, 0, 1, 0), (1, 0, 0, 0), (34, -4.5, 1.1, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "rt_clg_fws_main_r_Seg_12"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 0, 1, 0), (0, -1, 0, 0), (40, 1.4, 1.1, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "rack_a_r4_06_Return_Hose"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, -1, 0, 0), (0, 0, -1, 0), (16.3, 32.849999999999994, 4.5, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "clg_man_a_r3_s_Seg_13"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (0, 0, 1, 0), (1, 0, 0, 0), (19.95, 28.15, 4.2, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "rack_a_r2_04_Supply_Hose"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, -1, 0, 0), (0, 0, -1, 0), (15.100000000000001, 24.55, 4.2, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "rack_a_r3_09_Supply_Hose"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, -1, 0, 0), (0, 0, -1, 0), (18.1, 28.15, 4.2, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "clg_man_a_r3_r_Seg_19"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (0, 0, 1, 0), (1, 0, 0, 0), (23.55, 29.25, 4.5, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "rack_a_r3_20_Supply_Hose"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, -1, 0, 0), (0, 0, -1, 0), (24.700000000000003, 28.15, 4.2, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "clg_man_a_r3_r_Seg_2"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (0, 0, 1, 0), (1, 0, 0, 0), (13.350000000000001, 29.25, 4.5, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "rt_clg_chw_main_s_Seg_4"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (-1, 0, 0, 0), (0, 0, 1, 0), (0, 1, 0, 0), (36, 11.575, 5, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "rack_a_r1_18_Supply_Hose"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, -1, 0, 0), (0, 0, -1, 0), (23.5, 20.95, 4.2, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "clg_crah_b4_Feed_Stub"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, -1, 0, 0), (0, 0, -1, 0), (66.7, 21.75, 5, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "clg_man_a_r3_s_Seg_6"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (0, 0, 1, 0), (1, 0, 0, 0), (15.750000000000002, 28.15, 4.2, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "rt_clg_chw_hdr_w_s_Seg_4"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (-1, 0, 0, 0), (0, 0, 1, 0), (0, 1, 0, 0), (39.3, 31.825, 5, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "rack_a_r2_17_Return_Hose"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, -1, 0, 0), (0, 0, -1, 0), (22.9, 25.650000000000002, 4.5, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "rack_a_r2_13_Return_Hose"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, -1, 0, 0), (0, 0, -1, 0), (20.5, 25.650000000000002, 4.5, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "rack_a_r1_05_Supply_Hose"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, -1, 0, 0), (0, 0, -1, 0), (15.700000000000001, 20.95, 4.2, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "clg_man_a_r2_s_Seg_7"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (0, 0, 1, 0), (1, 0, 0, 0), (16.35, 24.55, 4.2, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "rt_clg_chw_hdr_e_s_Seg_1"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 0, 1, 0), (0, -1, 0, 0), (66.7, 34.5, 5, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "clg_man_a_r4_r_Seg_15"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (0, 0, 1, 0), (1, 0, 0, 0), (21.150000000000002, 32.849999999999994, 4.5, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "clg_man_a_r2_r_Seg_18"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (0, 0, 1, 0), (1, 0, 0, 0), (22.95, 25.650000000000002, 4.5, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "clg_man_a_r4_s_Seg_14"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (0, 0, 1, 0), (1, 0, 0, 0), (20.55, 31.749999999999996, 4.2, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "clg_man_a_r3_s_Seg_16"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (0, 0, 1, 0), (1, 0, 0, 0), (21.750000000000004, 28.15, 4.2, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "rack_a_r1_18_Return_Hose"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, -1, 0, 0), (0, 0, -1, 0), (23.5, 22.05, 4.5, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "clg_man_a_r2_s_Seg_6"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (0, 0, 1, 0), (1, 0, 0, 0), (15.750000000000002, 24.55, 4.2, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "clg_man_a_r1_r_Seg_17"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (0, 0, 1, 0), (1, 0, 0, 0), (22.35, 22.05, 4.5, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "clg_man_a_r2_s_Seg_17"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (0, 0, 1, 0), (1, 0, 0, 0), (22.35, 24.55, 4.2, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "rack_a_r3_17_Supply_Hose"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, -1, 0, 0), (0, 0, -1, 0), (22.9, 28.15, 4.2, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "rt_clg_chw_main_r_Seg_2"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 0, 1, 0), (0, -1, 0, 0), (36, 26.925, 5.3, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "rack_a_r4_13_Supply_Hose"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, -1, 0, 0), (0, 0, -1, 0), (20.5, 31.749999999999996, 4.2, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "rt_clg_fws_yard_s_Seg_2"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (0, 0, 1, 0), (1, 0, 0, 0), (38.1, -4.5, 0.8, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "rack_a_r3_02_Return_Hose"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, -1, 0, 0), (0, 0, -1, 0), (13.9, 29.25, 4.5, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "rt_clg_cdu_a4_pri_s_Seg_1"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 0, 1, 0), (0, -1, 0, 0), (27, 20.2, 4.6, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "rt_clg_chw_hdr_w_r_Seg_3"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (-1, 0, 0, 0), (0, 0, 1, 0), (0, 1, 0, 0), (39.3, 27.325, 5.3, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "rt_clg_chw_main_s_Seg_6"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (-1, 0, 0, 0), (0, 0, 1, 0), (0, 1, 0, 0), (36, 12.575, 5, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "clg_man_a_r1_s_Seg_15"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (0, 0, 1, 0), (1, 0, 0, 0), (21.150000000000002, 20.95, 4.2, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "rt_clg_chp_2_r_Riser"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, -1, 0, 0), (1, 0, 0, 0), (0, 0, 1, 0), (46.1, 11.5, 0.9, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "clg_man_a_r3_r_Seg_9"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (0, 0, 1, 0), (1, 0, 0, 0), (17.55, 29.25, 4.5, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "clg_man_a_r2_r_Seg_6"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (0, 0, 1, 0), (1, 0, 0, 0), (15.750000000000002, 25.650000000000002, 4.5, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "clg_man_a_r3_r_Seg_6"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (0, 0, 1, 0), (1, 0, 0, 0), (15.750000000000002, 29.25, 4.5, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "rack_a_r3_03_Return_Hose"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, -1, 0, 0), (0, 0, -1, 0), (14.5, 29.25, 4.5, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "rack_a_r4_07_Return_Hose"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, -1, 0, 0), (0, 0, -1, 0), (16.9, 32.849999999999994, 4.5, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "rack_a_r2_05_Return_Hose"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, -1, 0, 0), (0, 0, -1, 0), (15.700000000000001, 25.650000000000002, 4.5, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "rt_clg_cdu_a4_sec_s_Seg_1"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (-1, 0, 0, 0), (0, 0, 1, 0), (0, 1, 0, 0), (27, 19.2, 4.2, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "clg_man_a_r4_r_Seg_6"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (0, 0, 1, 0), (1, 0, 0, 0), (15.750000000000002, 32.849999999999994, 4.5, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "clg_man_a_r3_s_Seg_18"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (0, 0, 1, 0), (1, 0, 0, 0), (22.95, 28.15, 4.2, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "rack_a_r3_16_Return_Hose"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, -1, 0, 0), (0, 0, -1, 0), (22.3, 29.25, 4.5, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "rt_clg_man_a_r2_feed_s_Seg_1"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (-1, 0, 0, 0), (0, 0, 1, 0), (0, 1, 0, 0), (12, 20.375, 4.2, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "rack_a_r2_04_Return_Hose"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, -1, 0, 0), (0, 0, -1, 0), (15.100000000000001, 25.650000000000002, 4.5, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "rack_a_r3_06_Return_Hose"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, -1, 0, 0), (0, 0, -1, 0), (16.3, 29.25, 4.5, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "clg_man_a_r4_r_Seg_13"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (0, 0, 1, 0), (1, 0, 0, 0), (19.95, 32.849999999999994, 4.5, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "rack_a_r3_18_Return_Hose"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, -1, 0, 0), (0, 0, -1, 0), (23.5, 29.25, 4.5, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "rt_clg_fws_main_r_Seg_8"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 0, 1, 0), (0, -1, 0, 0), (30, 2.9, 4.8999999999999995, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "rt_clg_cdu_a1_pri_s_Seg_1"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 0, 1, 0), (0, -1, 0, 0), (12, 20.3, 4.6, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "rt_clg_cdu_a4_sec_r_Seg_1"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 0, 1, 0), (0, -1, 0, 0), (27, 20.3, 4.5, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "clg_man_a_r2_s_Seg_11"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (0, 0, 1, 0), (1, 0, 0, 0), (18.75, 24.55, 4.2, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "rack_a_r4_11_Return_Hose"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, -1, 0, 0), (0, 0, -1, 0), (19.3, 32.849999999999994, 4.5, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "clg_man_a_r1_s_Seg_12"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (0, 0, 1, 0), (1, 0, 0, 0), (19.35, 20.95, 4.2, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "clg_man_a_r2_r_Seg_19"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (0, 0, 1, 0), (1, 0, 0, 0), (23.55, 25.650000000000002, 4.5, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "rt_clg_fws_yard_s_Seg_1"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (0, 0, 1, 0), (1, 0, 0, 0), (34, -4.5, 0.8, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "rt_clg_tcs_hdr_s_Seg_2"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, -1, 0, 0), (0, 0, 1, 0), (-1, 0, 0, 0), (21.925, 20.3, 4.2, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "rt_clg_fws_yard_r_Seg_2"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (0, 0, 1, 0), (1, 0, 0, 0), (38.1, -4.5, 1.1, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "rt_clg_fws_main_r_Seg_10"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (0, 0, 1, 0), (1, 0, 0, 0), (32.1, 1.5, 4.8999999999999995, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "rt_clg_chw_main_r_Seg_7"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (0, 0, 1, 0), (1, 0, 0, 0), (36.075, 3, 5.3, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "clg_man_a_r2_r_Seg_14"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (0, 0, 1, 0), (1, 0, 0, 0), (20.55, 25.650000000000002, 4.5, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "rt_clg_fws_main_s_Seg_5"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (-1, 0, 0, 0), (0, 0, 1, 0), (0, 1, 0, 0), (30, 1.6, 4.6, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "rt_clg_fws_main_r_Seg_6"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 0, 1, 0), (0, -1, 0, 0), (30, 12.4, 4.8999999999999995, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "rt_clg_chw_hdr_w_r_Seg_1"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (-1, 0, 0, 0), (0, 0, 1, 0), (0, 1, 0, 0), (39.3, 22.325, 5.3, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "clg_man_a_r4_s_Seg_5"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (0, 0, 1, 0), (1, 0, 0, 0), (15.150000000000002, 31.749999999999996, 4.2, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "rack_a_r2_18_Supply_Hose"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, -1, 0, 0), (0, 0, -1, 0), (23.5, 24.55, 4.2, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "rack_a_r3_15_Return_Hose"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, -1, 0, 0), (0, 0, -1, 0), (21.700000000000003, 29.25, 4.5, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "rt_clg_chw_main_r_Seg_3"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 0, 1, 0), (0, -1, 0, 0), (36, 13.425, 5.3, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "rack_a_r3_13_Supply_Hose"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, -1, 0, 0), (0, 0, -1, 0), (20.5, 28.15, 4.2, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "rack_a_r1_13_Return_Hose"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, -1, 0, 0), (0, 0, -1, 0), (20.5, 22.05, 4.5, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "clg_man_a_r1_r_Seg_20"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (0, 0, 1, 0), (1, 0, 0, 0), (24.150000000000002, 22.05, 4.5, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "rack_a_r2_14_Supply_Hose"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, -1, 0, 0), (0, 0, -1, 0), (21.1, 24.55, 4.2, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "clg_man_a_r2_s_Seg_18"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (0, 0, 1, 0), (1, 0, 0, 0), (22.95, 24.55, 4.2, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "rack_a_r4_03_Supply_Hose"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, -1, 0, 0), (0, 0, -1, 0), (14.5, 31.749999999999996, 4.2, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "clg_man_a_r2_s_Seg_13"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (0, 0, 1, 0), (1, 0, 0, 0), (19.95, 24.55, 4.2, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "rack_a_r4_14_Return_Hose"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, -1, 0, 0), (0, 0, -1, 0), (21.1, 32.849999999999994, 4.5, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "rack_a_r1_19_Supply_Hose"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, -1, 0, 0), (0, 0, -1, 0), (24.1, 20.95, 4.2, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "clg_ch_1_Feed_Stub"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, -1, 0, 0), (0, 0, -1, 0), (38.25, 3, 5.3, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "rt_clg_fws_main_s_Seg_8"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (-1, 0, 0, 0), (0, 0, 1, 0), (0, 1, 0, 0), (30, 12.6, 4.6, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "rt_clg_fwp_3_r_Leg"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (-1, 0, 0, 0), (0, 0, 1, 0), (0, 1, 0, 0), (32, 1.6, 4.8999999999999995, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "clg_man_a_r4_r_Seg_2"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (0, 0, 1, 0), (1, 0, 0, 0), (13.350000000000001, 32.849999999999994, 4.5, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "rack_a_r4_08_Return_Hose"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, -1, 0, 0), (0, 0, -1, 0), (17.5, 32.849999999999994, 4.5, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "rt_clg_chw_main_s_Seg_1"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, -1, 0, 0), (0, 0, 1, 0), (-1, 0, 0, 0), (42.675, 3, 5, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "clg_man_a_r1_r_Seg_3"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (0, 0, 1, 0), (1, 0, 0, 0), (13.950000000000001, 22.05, 4.5, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "rt_clg_chp_1_s_Riser"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, -1, 0, 0), (1, 0, 0, 0), (0, 0, 1, 0), (43.9, 11.5, 0.9, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "rt_clg_fws_main_r_Seg_3"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (0, 0, 1, 0), (1, 0, 0, 0), (22.1, 20.3, 4.8999999999999995, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "rack_a_r2_07_Return_Hose"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, -1, 0, 0), (0, 0, -1, 0), (16.9, 25.650000000000002, 4.5, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "clg_man_a_r3_s_Seg_17"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (0, 0, 1, 0), (1, 0, 0, 0), (22.35, 28.15, 4.2, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "rack_a_r3_14_Supply_Hose"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, -1, 0, 0), (0, 0, -1, 0), (21.1, 28.15, 4.2, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "rack_a_r2_16_Return_Hose"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, -1, 0, 0), (0, 0, -1, 0), (22.3, 25.650000000000002, 4.5, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "clg_man_a_r4_s_Seg_8"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (0, 0, 1, 0), (1, 0, 0, 0), (16.95, 31.749999999999996, 4.2, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "clg_man_a_r2_r_Seg_7"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (0, 0, 1, 0), (1, 0, 0, 0), (16.35, 25.650000000000002, 4.5, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "rt_clg_chw_main_s_Seg_7"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (-1, 0, 0, 0), (0, 0, 1, 0), (0, 1, 0, 0), (36, 13.575, 5, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "rack_a_r3_06_Supply_Hose"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, -1, 0, 0), (0, 0, -1, 0), (16.3, 28.15, 4.2, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "rack_a_r4_16_Supply_Hose"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, -1, 0, 0), (0, 0, -1, 0), (22.3, 31.749999999999996, 4.2, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "rack_a_r1_02_Supply_Hose"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, -1, 0, 0), (0, 0, -1, 0), (13.9, 20.95, 4.2, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "rt_clg_ahu_1_s_Seg_1"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, -1, 0, 0), (0, 0, 1, 0), (-1, 0, 0, 0), (35.925, 12.5, 5, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "clg_man_a_r1_r_Seg_1"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (0, 0, 1, 0), (1, 0, 0, 0), (12, 22.05, 4.5, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "rack_a_r1_19_Return_Hose"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, -1, 0, 0), (0, 0, -1, 0), (24.1, 22.05, 4.5, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "rt_clg_chp_1_r_Leg"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (0, 0, 1, 0), (1, 0, 0, 0), (36.075, 11.5, 5.3, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "rt_clg_cdu_a2_pri_s_Seg_1"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 0, 1, 0), (0, -1, 0, 0), (17, 20.2, 4.6, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "rt_clg_fws_main_r_Seg_4"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (0, 0, 1, 0), (1, 0, 0, 0), (27.1, 20.3, 4.8999999999999995, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "clg_man_a_r2_s_Seg_12"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (0, 0, 1, 0), (1, 0, 0, 0), (19.35, 24.55, 4.2, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "rack_a_r1_09_Return_Hose"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, -1, 0, 0), (0, 0, -1, 0), (18.1, 22.05, 4.5, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "clg_ch_1_Riser_Stub"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, -1, 0, 0), (0, 0, -1, 0), (37.75, 3, 5, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "rack_a_r4_08_Supply_Hose"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, -1, 0, 0), (0, 0, -1, 0), (17.5, 31.749999999999996, 4.2, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "clg_man_a_r4_r_Seg_9"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (0, 0, 1, 0), (1, 0, 0, 0), (17.55, 32.849999999999994, 4.5, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "rack_a_r1_20_Supply_Hose"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, -1, 0, 0), (0, 0, -1, 0), (24.700000000000003, 20.95, 4.2, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "rack_a_r2_15_Return_Hose"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, -1, 0, 0), (0, 0, -1, 0), (21.700000000000003, 25.650000000000002, 4.5, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "clg_man_a_r2_s_Seg_8"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (0, 0, 1, 0), (1, 0, 0, 0), (16.95, 24.55, 4.2, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "rt_clg_fwp_3_r_Riser"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, -1, 0, 0), (1, 0, 0, 0), (0, 0, 1, 0), (32, 3.1, 0.9, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "rack_a_r1_06_Return_Hose"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, -1, 0, 0), (0, 0, -1, 0), (16.3, 22.05, 4.5, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "rt_clg_chp_3_r_Riser"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, -1, 0, 0), (1, 0, 0, 0), (0, 0, 1, 0), (44.1, 13.5, 0.9, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "rack_a_r3_02_Supply_Hose"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, -1, 0, 0), (0, 0, -1, 0), (13.9, 28.15, 4.2, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "rt_clg_chp_2_s_Leg"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, -1, 0, 0), (0, 0, 1, 0), (-1, 0, 0, 0), (45.8675, 11.5, 5, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "rack_a_r2_20_Supply_Hose"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, -1, 0, 0), (0, 0, -1, 0), (24.700000000000003, 24.55, 4.2, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "rt_clg_drc_2_s_Seg_1"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (-1, 0, 0, 0), (0, 0, 1, 0), (0, 1, 0, 0), (38, -6.5, 0.8, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "clg_man_a_r1_s_Seg_6"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (0, 0, 1, 0), (1, 0, 0, 0), (15.750000000000002, 20.95, 4.2, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "rt_clg_tcs_hdr_s_Seg_3"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, -1, 0, 0), (0, 0, 1, 0), (-1, 0, 0, 0), (16.925, 20.3, 4.2, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "clg_man_a_r4_r_Seg_8"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (0, 0, 1, 0), (1, 0, 0, 0), (16.95, 32.849999999999994, 4.5, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "rack_a_r3_10_Supply_Hose"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, -1, 0, 0), (0, 0, -1, 0), (18.7, 28.15, 4.2, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "rt_clg_cdu_a3_sec_r_Seg_1"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 0, 1, 0), (0, -1, 0, 0), (22, 20.225, 4.5, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "clg_man_a_r3_s_Seg_12"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (0, 0, 1, 0), (1, 0, 0, 0), (19.35, 28.15, 4.2, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "rack_a_r4_01_Return_Hose"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, -1, 0, 0), (0, 0, -1, 0), (13.3, 32.849999999999994, 4.5, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "rt_clg_chw_hdr_n_r_Seg_1"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, -1, 0, 0), (0, 0, 1, 0), (-1, 0, 0, 0), (66.7, 34.5, 5.3, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "rack_a_r1_04_Supply_Hose"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, -1, 0, 0), (0, 0, -1, 0), (15.100000000000001, 20.95, 4.2, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "clg_man_a_r1_r_Seg_8"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (0, 0, 1, 0), (1, 0, 0, 0), (16.95, 22.05, 4.5, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "clg_man_a_r4_s_Seg_2"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (0, 0, 1, 0), (1, 0, 0, 0), (13.350000000000001, 31.749999999999996, 4.2, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "clg_crah_b3_Riser_Stub"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, -1, 0, 0), (0, 0, -1, 0), (39.3, 32.25, 5.3, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "rack_a_r3_08_Return_Hose"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, -1, 0, 0), (0, 0, -1, 0), (17.5, 29.25, 4.5, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "rack_a_r3_08_Supply_Hose"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, -1, 0, 0), (0, 0, -1, 0), (17.5, 28.15, 4.2, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "rt_clg_chw_hdr_w_s_Seg_3"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (-1, 0, 0, 0), (0, 0, 1, 0), (0, 1, 0, 0), (39.3, 27.075, 5, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "rt_clg_chw_main_s_Seg_2"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, -1, 0, 0), (0, 0, 1, 0), (-1, 0, 0, 0), (37.675, 3, 5, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "rack_a_r2_11_Return_Hose"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, -1, 0, 0), (0, 0, -1, 0), (19.3, 25.650000000000002, 4.5, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "clg_man_a_r4_r_Seg_18"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (0, 0, 1, 0), (1, 0, 0, 0), (22.95, 32.849999999999994, 4.5, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "rt_clg_chp_1_s_Leg"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, -1, 0, 0), (0, 0, 1, 0), (-1, 0, 0, 0), (43.8675, 11.5, 5, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "rack_a_r1_08_Supply_Hose"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, -1, 0, 0), (0, 0, -1, 0), (17.5, 20.95, 4.2, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "rack_a_r2_05_Supply_Hose"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, -1, 0, 0), (0, 0, -1, 0), (15.700000000000001, 24.55, 4.2, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "clg_man_a_r4_s_Seg_16"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (0, 0, 1, 0), (1, 0, 0, 0), (21.750000000000004, 31.749999999999996, 4.2, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "clg_man_a_r2_s_Seg_3"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (0, 0, 1, 0), (1, 0, 0, 0), (13.950000000000001, 24.55, 4.2, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "rt_clg_fws_yard_s_Seg_4"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (0, 0, 1, 0), (1, 0, 0, 0), (42.1, -4.5, 0.8, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "rack_a_r4_07_Supply_Hose"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, -1, 0, 0), (0, 0, -1, 0), (16.9, 31.749999999999996, 4.2, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "rack_a_r3_18_Supply_Hose"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, -1, 0, 0), (0, 0, -1, 0), (23.5, 28.15, 4.2, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "clg_ch_2_Riser_Stub"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, -1, 0, 0), (0, 0, -1, 0), (42.75, 3, 5, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "clg_man_a_r3_r_Seg_5"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (0, 0, 1, 0), (1, 0, 0, 0), (15.150000000000002, 29.25, 4.5, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "rack_a_r1_07_Supply_Hose"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, -1, 0, 0), (0, 0, -1, 0), (16.9, 20.95, 4.2, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "clg_man_a_r3_r_Seg_20"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (0, 0, 1, 0), (1, 0, 0, 0), (24.150000000000002, 29.25, 4.5, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "rack_a_r1_17_Return_Hose"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, -1, 0, 0), (0, 0, -1, 0), (22.9, 22.05, 4.5, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "rt_clg_fws_main_s_Seg_2"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, -1, 0, 0), (1, 0, 0, 0), (0, 0, 1, 0), (40, 1.5, 0.9, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "rt_clg_drc_3_s_Seg_1"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (-1, 0, 0, 0), (0, 0, 1, 0), (0, 1, 0, 0), (42, -6.5, 0.8, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "rt_clg_drc_4_s_Seg_1"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (-1, 0, 0, 0), (0, 0, 1, 0), (0, 1, 0, 0), (46, -6.5, 0.8, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "clg_man_a_r2_r_Seg_11"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (0, 0, 1, 0), (1, 0, 0, 0), (18.75, 25.650000000000002, 4.5, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "rt_clg_dos_1_s_Seg_1"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, -1, 0, 0), (0, 0, 1, 0), (-1, 0, 0, 0), (29.9, 12.5, 4.6, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "rt_clg_fws_yard_s_Seg_3"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (0, 0, 1, 0), (1, 0, 0, 0), (40.1, -4.5, 0.8, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "clg_man_a_r3_s_Seg_11"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (0, 0, 1, 0), (1, 0, 0, 0), (18.75, 28.15, 4.2, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "rack_a_r4_10_Supply_Hose"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, -1, 0, 0), (0, 0, -1, 0), (18.7, 31.749999999999996, 4.2, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "clg_man_a_r1_r_Seg_14"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (0, 0, 1, 0), (1, 0, 0, 0), (20.55, 22.05, 4.5, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "clg_man_a_r4_s_Seg_9"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (0, 0, 1, 0), (1, 0, 0, 0), (17.55, 31.749999999999996, 4.2, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "clg_man_a_r4_r_Seg_10"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (0, 0, 1, 0), (1, 0, 0, 0), (18.150000000000002, 32.849999999999994, 4.5, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "clg_man_a_r3_r_Seg_11"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (0, 0, 1, 0), (1, 0, 0, 0), (18.75, 29.25, 4.5, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "clg_man_a_r4_s_Seg_12"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (0, 0, 1, 0), (1, 0, 0, 0), (19.35, 31.749999999999996, 4.2, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "clg_man_a_r2_s_Seg_16"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (0, 0, 1, 0), (1, 0, 0, 0), (21.750000000000004, 24.55, 4.2, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "rt_clg_chw_hdr_e_s_Seg_2"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 0, 1, 0), (0, -1, 0, 0), (66.7, 31.675, 5, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "rt_clg_fws_yard_r_Seg_4"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (0, 0, 1, 0), (1, 0, 0, 0), (42.1, -4.5, 1.1, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "clg_man_a_r4_s_Seg_6"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (0, 0, 1, 0), (1, 0, 0, 0), (15.750000000000002, 31.749999999999996, 4.2, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "rt_clg_chw_hdr_w_r_Seg_2"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (-1, 0, 0, 0), (0, 0, 1, 0), (0, 1, 0, 0), (39.3, 27.075, 5.3, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "rack_a_r2_15_Supply_Hose"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, -1, 0, 0), (0, 0, -1, 0), (21.700000000000003, 24.55, 4.2, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "rack_a_r2_02_Supply_Hose"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, -1, 0, 0), (0, 0, -1, 0), (13.9, 24.55, 4.2, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "rack_a_r3_17_Return_Hose"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, -1, 0, 0), (0, 0, -1, 0), (22.9, 29.25, 4.5, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "rack_a_r4_19_Supply_Hose"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, -1, 0, 0), (0, 0, -1, 0), (24.1, 31.749999999999996, 4.2, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "clg_man_a_r3_r_Seg_15"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (0, 0, 1, 0), (1, 0, 0, 0), (21.150000000000002, 29.25, 4.5, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "rack_a_r2_03_Supply_Hose"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, -1, 0, 0), (0, 0, -1, 0), (14.5, 24.55, 4.2, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "clg_man_a_r2_r_Seg_8"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (0, 0, 1, 0), (1, 0, 0, 0), (16.95, 25.650000000000002, 4.5, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "rack_a_r4_12_Supply_Hose"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, -1, 0, 0), (0, 0, -1, 0), (19.9, 31.749999999999996, 4.2, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "rack_a_r4_02_Supply_Hose"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, -1, 0, 0), (0, 0, -1, 0), (13.9, 31.749999999999996, 4.2, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "rack_a_r1_11_Return_Hose"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, -1, 0, 0), (0, 0, -1, 0), (19.3, 22.05, 4.5, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "clg_man_a_r4_s_Seg_1"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (0, 0, 1, 0), (1, 0, 0, 0), (12, 31.749999999999996, 4.2, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "rack_a_r3_14_Return_Hose"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, -1, 0, 0), (0, 0, -1, 0), (21.1, 29.25, 4.5, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "rt_clg_drc_1_r_Seg_1"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 0, 1, 0), (0, -1, 0, 0), (34, -4.5, 1.1, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "rack_a_r1_10_Supply_Hose"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, -1, 0, 0), (0, 0, -1, 0), (18.7, 20.95, 4.2, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "clg_man_a_r2_s_Seg_20"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (0, 0, 1, 0), (1, 0, 0, 0), (24.150000000000002, 24.55, 4.2, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "rt_clg_chw_main_r_Seg_8"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (0, 0, 1, 0), (1, 0, 0, 0), (38.325, 3, 5.3, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "clg_crah_b1_Riser_Stub"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, -1, 0, 0), (0, 0, -1, 0), (39.3, 22.25, 5.3, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "rack_a_r1_10_Return_Hose"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, -1, 0, 0), (0, 0, -1, 0), (18.7, 22.05, 4.5, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "clg_man_a_r3_s_Seg_1"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (0, 0, 1, 0), (1, 0, 0, 0), (12, 28.15, 4.2, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "rack_a_r1_02_Return_Hose"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, -1, 0, 0), (0, 0, -1, 0), (13.9, 22.05, 4.5, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "rack_a_r1_16_Supply_Hose"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, -1, 0, 0), (0, 0, -1, 0), (22.3, 20.95, 4.2, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "clg_man_a_r1_r_Seg_19"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (0, 0, 1, 0), (1, 0, 0, 0), (23.55, 22.05, 4.5, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "clg_man_a_r3_r_Seg_8"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (0, 0, 1, 0), (1, 0, 0, 0), (16.95, 29.25, 4.5, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "clg_man_a_r4_s_Seg_13"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (0, 0, 1, 0), (1, 0, 0, 0), (19.95, 31.749999999999996, 4.2, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "clg_man_a_r1_s_Seg_7"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (0, 0, 1, 0), (1, 0, 0, 0), (16.35, 20.95, 4.2, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "rack_a_r4_01_Supply_Hose"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, -1, 0, 0), (0, 0, -1, 0), (13.3, 31.749999999999996, 4.2, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "clg_man_a_r3_r_Seg_18"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (0, 0, 1, 0), (1, 0, 0, 0), (22.95, 29.25, 4.5, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "rack_a_r2_12_Return_Hose"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, -1, 0, 0), (0, 0, -1, 0), (19.9, 25.650000000000002, 4.5, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "rack_a_r3_07_Return_Hose"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, -1, 0, 0), (0, 0, -1, 0), (16.9, 29.25, 4.5, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "clg_man_a_r4_s_Seg_4"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (0, 0, 1, 0), (1, 0, 0, 0), (14.55, 31.749999999999996, 4.2, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "rack_a_r4_17_Return_Hose"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, -1, 0, 0), (0, 0, -1, 0), (22.9, 32.849999999999994, 4.5, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "rt_clg_chp_2_s_Riser"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, -1, 0, 0), (1, 0, 0, 0), (0, 0, 1, 0), (45.9, 11.5, 0.9, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "rack_a_r2_18_Return_Hose"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, -1, 0, 0), (0, 0, -1, 0), (23.5, 25.650000000000002, 4.5, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "clg_man_a_r3_r_Seg_1"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (0, 0, 1, 0), (1, 0, 0, 0), (12, 29.25, 4.5, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "rt_clg_fws_yard_r_Seg_3"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (0, 0, 1, 0), (1, 0, 0, 0), (40.1, -4.5, 1.1, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "rack_a_r4_14_Supply_Hose"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, -1, 0, 0), (0, 0, -1, 0), (21.1, 31.749999999999996, 4.2, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "clg_man_a_r3_s_Seg_10"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (0, 0, 1, 0), (1, 0, 0, 0), (18.150000000000002, 28.15, 4.2, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "rt_clg_chw_main_r_Seg_1"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, -1, 0, 0), (0, 0, 1, 0), (-1, 0, 0, 0), (39.224999999999994, 27, 5.3, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "rt_clg_chp_3_r_Leg"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (0, 0, 1, 0), (1, 0, 0, 0), (36.075, 13.5, 5.3, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "rack_a_r2_03_Return_Hose"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, -1, 0, 0), (0, 0, -1, 0), (14.5, 25.650000000000002, 4.5, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "rt_clg_fwp_2_s_Leg"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (0, 0, 1, 0), (1, 0, 0, 0), (29.150000000000002, 3, 4.6, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "rt_clg_cdu_a3_pri_s_Seg_1"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 0, 1, 0), (0, -1, 0, 0), (22, 20.2, 4.6, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "clg_man_a_r1_s_Seg_3"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (0, 0, 1, 0), (1, 0, 0, 0), (13.950000000000001, 20.95, 4.2, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "rack_a_r1_09_Supply_Hose"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, -1, 0, 0), (0, 0, -1, 0), (18.1, 20.95, 4.2, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "rt_clg_hx_1_chw_s_Seg_1"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, -1, 0, 0), (0, 0, 1, 0), (-1, 0, 0, 0), (35.925, 12, 5, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "clg_man_a_r3_s_Seg_8"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (0, 0, 1, 0), (1, 0, 0, 0), (16.95, 28.15, 4.2, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "rack_a_r4_09_Return_Hose"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, -1, 0, 0), (0, 0, -1, 0), (18.1, 32.849999999999994, 4.5, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "clg_man_a_r2_r_Seg_3"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (0, 0, 1, 0), (1, 0, 0, 0), (13.950000000000001, 25.650000000000002, 4.5, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "rack_a_r4_05_Supply_Hose"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, -1, 0, 0), (0, 0, -1, 0), (15.700000000000001, 31.749999999999996, 4.2, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "clg_man_a_r2_s_Seg_14"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (0, 0, 1, 0), (1, 0, 0, 0), (20.55, 24.55, 4.2, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "clg_man_a_r3_r_Seg_4"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (0, 0, 1, 0), (1, 0, 0, 0), (14.55, 29.25, 4.5, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "rt_clg_chw_main_s_Seg_8"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (0, 0, 1, 0), (1, 0, 0, 0), (36.075, 27, 5, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "rt_clg_chw_hdr_e_r_Seg_2"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (-1, 0, 0, 0), (0, 0, 1, 0), (0, 1, 0, 0), (66.7, 27.325, 5.3, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "rack_a_r4_13_Return_Hose"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, -1, 0, 0), (0, 0, -1, 0), (20.5, 32.849999999999994, 4.5, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "clg_man_a_r2_r_Seg_20"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (0, 0, 1, 0), (1, 0, 0, 0), (24.150000000000002, 25.650000000000002, 4.5, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "clg_man_a_r4_r_Seg_11"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (0, 0, 1, 0), (1, 0, 0, 0), (18.75, 32.849999999999994, 4.5, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "rt_clg_fwp_2_s_Riser"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, -1, 0, 0), (1, 0, 0, 0), (0, 0, 1, 0), (29.1, 3, 0.9, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "clg_man_a_r4_s_Seg_17"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (0, 0, 1, 0), (1, 0, 0, 0), (22.35, 31.749999999999996, 4.2, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "rt_clg_fws_main_s_Seg_11"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, -1, 0, 0), (0, 0, 1, 0), (-1, 0, 0, 0), (21.9, 20.3, 4.6, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "rt_clg_chw_hdr_e_r_Seg_3"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (-1, 0, 0, 0), (0, 0, 1, 0), (0, 1, 0, 0), (66.7, 32.325, 5.3, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "rack_a_r3_07_Supply_Hose"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, -1, 0, 0), (0, 0, -1, 0), (16.9, 28.15, 4.2, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "rt_clg_chp_2_r_Leg"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (0, 0, 1, 0), (1, 0, 0, 0), (36.075, 11.5, 5.3, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "rack_a_r2_06_Return_Hose"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, -1, 0, 0), (0, 0, -1, 0), (16.3, 25.650000000000002, 4.5, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "clg_man_a_r1_s_Seg_8"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (0, 0, 1, 0), (1, 0, 0, 0), (16.95, 20.95, 4.2, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "rack_a_r2_17_Supply_Hose"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, -1, 0, 0), (0, 0, -1, 0), (22.9, 24.55, 4.2, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "rack_a_r4_12_Return_Hose"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, -1, 0, 0), (0, 0, -1, 0), (19.9, 32.849999999999994, 4.5, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "rack_a_r3_12_Supply_Hose"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, -1, 0, 0), (0, 0, -1, 0), (19.9, 28.15, 4.2, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "rack_a_r1_05_Return_Hose"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, -1, 0, 0), (0, 0, -1, 0), (15.700000000000001, 22.05, 4.5, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "clg_man_a_r1_r_Seg_12"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (0, 0, 1, 0), (1, 0, 0, 0), (19.35, 22.05, 4.5, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "rack_a_r1_14_Return_Hose"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, -1, 0, 0), (0, 0, -1, 0), (21.1, 22.05, 4.5, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "rt_clg_fws_main_s_Seg_1"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (-1, 0, 0, 0), (0, 0, 1, 0), (0, 1, 0, 0), (40, -4.4, 0.8, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "clg_man_a_r1_s_Seg_19"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (0, 0, 1, 0), (1, 0, 0, 0), (23.55, 20.95, 4.2, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "rt_clg_tcs_hdr_r_Seg_3"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (0, 0, 1, 0), (1, 0, 0, 0), (22.075, 20.3, 4.5, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "clg_man_a_r4_r_Seg_3"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (0, 0, 1, 0), (1, 0, 0, 0), (13.950000000000001, 32.849999999999994, 4.5, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "rack_a_r4_20_Supply_Hose"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, -1, 0, 0), (0, 0, -1, 0), (24.700000000000003, 31.749999999999996, 4.2, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "rt_clg_cdu_a3_pri_r_Seg_1"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (-1, 0, 0, 0), (0, 0, 1, 0), (0, 1, 0, 0), (22, 19.2, 4.8999999999999995, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "rack_a_r1_12_Return_Hose"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, -1, 0, 0), (0, 0, -1, 0), (19.9, 22.05, 4.5, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "rack_a_r2_07_Supply_Hose"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, -1, 0, 0), (0, 0, -1, 0), (16.9, 24.55, 4.2, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "rack_a_r4_05_Return_Hose"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, -1, 0, 0), (0, 0, -1, 0), (15.700000000000001, 32.849999999999994, 4.5, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "clg_man_a_r1_r_Seg_5"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (0, 0, 1, 0), (1, 0, 0, 0), (15.150000000000002, 22.05, 4.5, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "clg_man_a_r3_r_Seg_13"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (0, 0, 1, 0), (1, 0, 0, 0), (19.95, 29.25, 4.5, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "clg_man_a_r3_r_Seg_16"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (0, 0, 1, 0), (1, 0, 0, 0), (21.750000000000004, 29.25, 4.5, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "clg_crah_b5_Feed_Stub"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, -1, 0, 0), (0, 0, -1, 0), (66.7, 26.75, 5, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "clg_crah_b5_Riser_Stub"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, -1, 0, 0), (0, 0, -1, 0), (66.7, 27.25, 5.3, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "rt_clg_chw_hdr_n_s_Seg_1"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (0, 0, 1, 0), (1, 0, 0, 0), (39.3, 34.5, 5, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "rack_a_r3_05_Supply_Hose"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, -1, 0, 0), (0, 0, -1, 0), (15.700000000000001, 28.15, 4.2, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "clg_man_a_r1_s_Seg_16"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (0, 0, 1, 0), (1, 0, 0, 0), (21.750000000000004, 20.95, 4.2, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "clg_man_a_r1_r_Seg_7"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (0, 0, 1, 0), (1, 0, 0, 0), (16.35, 22.05, 4.5, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "rack_a_r1_07_Return_Hose"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, -1, 0, 0), (0, 0, -1, 0), (16.9, 22.05, 4.5, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "rack_a_r3_04_Supply_Hose"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, -1, 0, 0), (0, 0, -1, 0), (15.100000000000001, 28.15, 4.2, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "clg_man_a_r4_r_Seg_1"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (0, 0, 1, 0), (1, 0, 0, 0), (12, 32.849999999999994, 4.5, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "clg_man_a_r2_s_Seg_5"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (0, 0, 1, 0), (1, 0, 0, 0), (15.150000000000002, 24.55, 4.2, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "rack_a_r2_19_Return_Hose"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, -1, 0, 0), (0, 0, -1, 0), (24.1, 25.650000000000002, 4.5, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "rt_clg_man_a_r1_feed_r_Seg_1"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 0, 1, 0), (0, -1, 0, 0), (12, 22.05, 4.5, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "clg_man_a_r4_s_Seg_19"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (0, 0, 1, 0), (1, 0, 0, 0), (23.55, 31.749999999999996, 4.2, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "clg_man_a_r2_r_Seg_4"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (0, 0, 1, 0), (1, 0, 0, 0), (14.55, 25.650000000000002, 4.5, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "rack_a_r1_04_Return_Hose"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, -1, 0, 0), (0, 0, -1, 0), (15.100000000000001, 22.05, 4.5, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "clg_man_a_r4_s_Seg_15"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (0, 0, 1, 0), (1, 0, 0, 0), (21.150000000000002, 31.749999999999996, 4.2, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "rack_a_r1_01_Return_Hose"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, -1, 0, 0), (0, 0, -1, 0), (13.3, 22.05, 4.5, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "rack_a_r2_20_Return_Hose"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, -1, 0, 0), (0, 0, -1, 0), (24.700000000000003, 25.650000000000002, 4.5, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "clg_man_a_r1_r_Seg_4"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (0, 0, 1, 0), (1, 0, 0, 0), (14.55, 22.05, 4.5, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "clg_crah_b3_Feed_Stub"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, -1, 0, 0), (0, 0, -1, 0), (39.3, 31.75, 5, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "clg_man_a_r4_r_Seg_14"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (0, 0, 1, 0), (1, 0, 0, 0), (20.55, 32.849999999999994, 4.5, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "clg_man_a_r1_r_Seg_11"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (0, 0, 1, 0), (1, 0, 0, 0), (18.75, 22.05, 4.5, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "rack_a_r4_15_Supply_Hose"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, -1, 0, 0), (0, 0, -1, 0), (21.700000000000003, 31.749999999999996, 4.2, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "clg_man_a_r1_r_Seg_6"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (0, 0, 1, 0), (1, 0, 0, 0), (15.750000000000002, 22.05, 4.5, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "rack_a_r1_17_Supply_Hose"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, -1, 0, 0), (0, 0, -1, 0), (22.9, 20.95, 4.2, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "rt_clg_fwp_2_r_Riser"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, -1, 0, 0), (1, 0, 0, 0), (0, 0, 1, 0), (28.9, 3, 0.9, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "rack_a_r1_06_Supply_Hose"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, -1, 0, 0), (0, 0, -1, 0), (16.3, 20.95, 4.2, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "clg_man_a_r1_s_Seg_9"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (0, 0, 1, 0), (1, 0, 0, 0), (17.55, 20.95, 4.2, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "clg_man_a_r2_r_Seg_12"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (0, 0, 1, 0), (1, 0, 0, 0), (19.35, 25.650000000000002, 4.5, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "rack_a_r2_09_Supply_Hose"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, -1, 0, 0), (0, 0, -1, 0), (18.1, 24.55, 4.2, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "rack_a_r2_09_Return_Hose"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, -1, 0, 0), (0, 0, -1, 0), (18.1, 25.650000000000002, 4.5, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "clg_man_a_r1_s_Seg_14"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (0, 0, 1, 0), (1, 0, 0, 0), (20.55, 20.95, 4.2, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "clg_man_a_r3_s_Seg_5"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (0, 0, 1, 0), (1, 0, 0, 0), (15.150000000000002, 28.15, 4.2, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "clg_man_a_r4_r_Seg_5"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (0, 0, 1, 0), (1, 0, 0, 0), (15.150000000000002, 32.849999999999994, 4.5, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "clg_man_a_r2_r_Seg_9"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (0, 0, 1, 0), (1, 0, 0, 0), (17.55, 25.650000000000002, 4.5, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "clg_man_a_r2_s_Seg_15"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (0, 0, 1, 0), (1, 0, 0, 0), (21.150000000000002, 24.55, 4.2, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "clg_crah_b6_Feed_Stub"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, -1, 0, 0), (0, 0, -1, 0), (66.7, 31.75, 5, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "rt_clg_fws_main_s_Seg_6"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (-1, 0, 0, 0), (0, 0, 1, 0), (0, 1, 0, 0), (30, 3.1, 4.6, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "clg_man_a_r1_r_Seg_2"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (0, 0, 1, 0), (1, 0, 0, 0), (13.350000000000001, 22.05, 4.5, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "rt_clg_cdu_a2_pri_r_Seg_1"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (-1, 0, 0, 0), (0, 0, 1, 0), (0, 1, 0, 0), (17, 19.2, 4.8999999999999995, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "clg_man_a_r1_r_Seg_9"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (0, 0, 1, 0), (1, 0, 0, 0), (17.55, 22.05, 4.5, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "rt_clg_man_a_r2_feed_r_Seg_1"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 0, 1, 0), (0, -1, 0, 0), (12, 25.650000000000002, 4.5, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "rack_a_r3_04_Return_Hose"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, -1, 0, 0), (0, 0, -1, 0), (15.100000000000001, 29.25, 4.5, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "clg_man_a_r1_s_Seg_4"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (0, 0, 1, 0), (1, 0, 0, 0), (14.55, 20.95, 4.2, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "rack_a_r3_01_Return_Hose"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, -1, 0, 0), (0, 0, -1, 0), (13.3, 29.25, 4.5, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "rack_a_r1_13_Supply_Hose"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, -1, 0, 0), (0, 0, -1, 0), (20.5, 20.95, 4.2, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "rack_a_r3_16_Supply_Hose"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, -1, 0, 0), (0, 0, -1, 0), (22.3, 28.15, 4.2, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "rack_a_r2_08_Supply_Hose"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, -1, 0, 0), (0, 0, -1, 0), (17.5, 24.55, 4.2, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "rt_clg_man_a_r3_feed_s_Seg_1"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (-1, 0, 0, 0), (0, 0, 1, 0), (0, 1, 0, 0), (12, 20.375, 4.2, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "clg_man_a_r2_s_Seg_2"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (0, 0, 1, 0), (1, 0, 0, 0), (13.350000000000001, 24.55, 4.2, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "rt_clg_ahu_1_r_Seg_1"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (0, 0, 1, 0), (1, 0, 0, 0), (30.5, 12.5, 5.3, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "clg_man_a_r4_s_Seg_18"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (0, 0, 1, 0), (1, 0, 0, 0), (22.95, 31.749999999999996, 4.2, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "rack_a_r3_19_Return_Hose"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, -1, 0, 0), (0, 0, -1, 0), (24.1, 29.25, 4.5, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "rack_a_r1_15_Supply_Hose"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, -1, 0, 0), (0, 0, -1, 0), (21.700000000000003, 20.95, 4.2, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "rt_clg_chw_hdr_e_r_Seg_1"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (-1, 0, 0, 0), (0, 0, 1, 0), (0, 1, 0, 0), (66.7, 22.325, 5.3, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "rt_clg_chw_main_s_Seg_3"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (-1, 0, 0, 0), (0, 0, 1, 0), (0, 1, 0, 0), (36, 3.075, 5, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "rt_clg_fws_main_s_Seg_3"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, -1, 0, 0), (0, 0, 1, 0), (-1, 0, 0, 0), (39.9, 1.5, 4.6, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "rack_a_r3_11_Supply_Hose"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, -1, 0, 0), (0, 0, -1, 0), (19.3, 28.15, 4.2, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "rack_a_r2_13_Supply_Hose"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, -1, 0, 0), (0, 0, -1, 0), (20.5, 24.55, 4.2, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "rt_clg_chp_3_s_Leg"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, -1, 0, 0), (0, 0, 1, 0), (-1, 0, 0, 0), (43.8675, 13.5, 5, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "rt_clg_chw_hdr_w_r_Seg_4"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (-1, 0, 0, 0), (0, 0, 1, 0), (0, 1, 0, 0), (39.3, 32.325, 5.3, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "rt_clg_fwp_1_r_Riser"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, -1, 0, 0), (1, 0, 0, 0), (0, 0, 1, 0), (25.9, 3, 0.9, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "rack_a_r2_10_Return_Hose"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, -1, 0, 0), (0, 0, -1, 0), (18.7, 25.650000000000002, 4.5, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "clg_man_a_r1_s_Seg_13"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (0, 0, 1, 0), (1, 0, 0, 0), (19.95, 20.95, 4.2, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "clg_man_a_r2_r_Seg_16"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (0, 0, 1, 0), (1, 0, 0, 0), (21.750000000000004, 25.650000000000002, 4.5, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "clg_crah_b2_Riser_Stub"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, -1, 0, 0), (0, 0, -1, 0), (39.3, 27.25, 5.3, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "clg_man_a_r3_r_Seg_10"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (0, 0, 1, 0), (1, 0, 0, 0), (18.150000000000002, 29.25, 4.5, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "clg_man_a_r3_s_Seg_7"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (0, 0, 1, 0), (1, 0, 0, 0), (16.35, 28.15, 4.2, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "clg_man_a_r4_r_Seg_19"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (0, 0, 1, 0), (1, 0, 0, 0), (23.55, 32.849999999999994, 4.5, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "clg_man_a_r2_s_Seg_1"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (0, 0, 1, 0), (1, 0, 0, 0), (12, 24.55, 4.2, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "rt_clg_tcs_hdr_r_Seg_2"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (0, 0, 1, 0), (1, 0, 0, 0), (17.075, 20.3, 4.5, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "rt_clg_cdu_a2_sec_r_Seg_1"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 0, 1, 0), (0, -1, 0, 0), (17, 20.225, 4.5, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "rack_a_r2_06_Supply_Hose"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, -1, 0, 0), (0, 0, -1, 0), (16.3, 24.55, 4.2, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "clg_man_a_r1_r_Seg_10"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (0, 0, 1, 0), (1, 0, 0, 0), (18.150000000000002, 22.05, 4.5, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "rt_clg_man_a_r4_feed_r_Seg_1"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 0, 1, 0), (0, -1, 0, 0), (12, 32.849999999999994, 4.5, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "rack_a_r2_10_Supply_Hose"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, -1, 0, 0), (0, 0, -1, 0), (18.7, 24.55, 4.2, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "rack_a_r1_15_Return_Hose"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, -1, 0, 0), (0, 0, -1, 0), (21.700000000000003, 22.05, 4.5, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "rt_clg_bt_1_s_Seg_1"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, -1, 0, 0), (0, 0, 1, 0), (-1, 0, 0, 0), (29.9, 12, 4.6, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "rack_a_r2_16_Supply_Hose"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, -1, 0, 0), (0, 0, -1, 0), (22.3, 24.55, 4.2, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "rt_clg_drc_4_r_Seg_1"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 0, 1, 0), (0, -1, 0, 0), (46, -4.5, 1.1, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "rack_a_r1_03_Return_Hose"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, -1, 0, 0), (0, 0, -1, 0), (14.5, 22.05, 4.5, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "clg_man_a_r3_r_Seg_14"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (0, 0, 1, 0), (1, 0, 0, 0), (20.55, 29.25, 4.5, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "clg_man_a_r4_s_Seg_20"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (0, 0, 1, 0), (1, 0, 0, 0), (24.150000000000002, 31.749999999999996, 4.2, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "rack_a_r1_11_Supply_Hose"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, -1, 0, 0), (0, 0, -1, 0), (19.3, 20.95, 4.2, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "rack_a_r1_12_Supply_Hose"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, -1, 0, 0), (0, 0, -1, 0), (19.9, 20.95, 4.2, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "rt_clg_chw_hdr_w_s_Seg_2"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (-1, 0, 0, 0), (0, 0, 1, 0), (0, 1, 0, 0), (39.3, 26.825, 5, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "rack_a_r4_02_Return_Hose"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, -1, 0, 0), (0, 0, -1, 0), (13.9, 32.849999999999994, 4.5, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "clg_man_a_r2_r_Seg_1"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (0, 0, 1, 0), (1, 0, 0, 0), (12, 25.650000000000002, 4.5, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "clg_man_a_r2_r_Seg_10"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (0, 0, 1, 0), (1, 0, 0, 0), (18.150000000000002, 25.650000000000002, 4.5, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "clg_man_a_r4_s_Seg_10"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (0, 0, 1, 0), (1, 0, 0, 0), (18.150000000000002, 31.749999999999996, 4.2, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "clg_man_a_r3_s_Seg_2"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (0, 0, 1, 0), (1, 0, 0, 0), (13.350000000000001, 28.15, 4.2, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "clg_man_a_r2_s_Seg_19"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (0, 0, 1, 0), (1, 0, 0, 0), (23.55, 24.55, 4.2, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "rt_clg_chp_3_s_Riser"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, -1, 0, 0), (1, 0, 0, 0), (0, 0, 1, 0), (43.9, 13.5, 0.9, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "rack_a_r4_20_Return_Hose"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, -1, 0, 0), (0, 0, -1, 0), (24.700000000000003, 32.849999999999994, 4.5, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "rack_a_r1_20_Return_Hose"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, -1, 0, 0), (0, 0, -1, 0), (24.700000000000003, 22.05, 4.5, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "rt_clg_fwp_2_r_Leg"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, -1, 0, 0), (0, 0, 1, 0), (-1, 0, 0, 0), (29.9, 3, 4.8999999999999995, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "rt_clg_chw_main_r_Seg_4"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 0, 1, 0), (0, -1, 0, 0), (36, 12.425, 5.3, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "clg_man_a_r2_s_Seg_9"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (0, 0, 1, 0), (1, 0, 0, 0), (17.55, 24.55, 4.2, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "rt_clg_fws_main_s_Seg_10"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, -1, 0, 0), (0, 0, 1, 0), (-1, 0, 0, 0), (26.9, 20.3, 4.6, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "rt_clg_hx_1_r_Seg_1"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, -1, 0, 0), (0, 0, 1, 0), (-1, 0, 0, 0), (35, 12, 4.8999999999999995, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "rt_clg_cdu_a1_sec_r_Seg_1"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 0, 1, 0), (0, -1, 0, 0), (12, 20.225, 4.5, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "rt_clg_hx_1_s_Seg_1"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (0, 0, 1, 0), (1, 0, 0, 0), (30.1, 12, 4.6, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "rt_clg_drc_1_s_Seg_1"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (-1, 0, 0, 0), (0, 0, 1, 0), (0, 1, 0, 0), (34, -6.5, 0.8, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "clg_crah_b1_Feed_Stub"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, -1, 0, 0), (0, 0, -1, 0), (39.3, 21.75, 5, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "rt_clg_chw_hdr_e_s_Seg_3"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 0, 1, 0), (0, -1, 0, 0), (66.7, 26.675, 5, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "rt_clg_fws_main_r_Seg_5"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 0, 1, 0), (0, -1, 0, 0), (30, 20.2, 4.8999999999999995, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "rt_clg_hx_1_chw_r_Seg_1"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (0, 0, 1, 0), (1, 0, 0, 0), (35, 12, 5.3, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "clg_ch_2_Feed_Stub"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, -1, 0, 0), (0, 0, -1, 0), (43.25, 3, 5.3, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "rack_a_r4_19_Return_Hose"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, -1, 0, 0), (0, 0, -1, 0), (24.1, 32.849999999999994, 4.5, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "rack_a_r4_10_Return_Hose"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, -1, 0, 0), (0, 0, -1, 0), (18.7, 32.849999999999994, 4.5, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "clg_man_a_r4_s_Seg_7"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (0, 0, 1, 0), (1, 0, 0, 0), (16.35, 31.749999999999996, 4.2, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "clg_man_a_r3_s_Seg_15"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (0, 0, 1, 0), (1, 0, 0, 0), (21.150000000000002, 28.15, 4.2, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "rt_clg_fws_main_s_Seg_4"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, -1, 0, 0), (0, 0, 1, 0), (-1, 0, 0, 0), (31.9, 1.5, 4.6, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "clg_man_a_r1_s_Seg_18"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (0, 0, 1, 0), (1, 0, 0, 0), (22.95, 20.95, 4.2, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "clg_crah_b4_Riser_Stub"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, -1, 0, 0), (0, 0, -1, 0), (66.7, 22.25, 5.3, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "rack_a_r4_17_Supply_Hose"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, -1, 0, 0), (0, 0, -1, 0), (22.9, 31.749999999999996, 4.2, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "clg_man_a_r4_r_Seg_7"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (0, 0, 1, 0), (1, 0, 0, 0), (16.35, 32.849999999999994, 4.5, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "clg_man_a_r1_r_Seg_18"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (0, 0, 1, 0), (1, 0, 0, 0), (22.95, 22.05, 4.5, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "rt_clg_chw_main_r_Seg_5"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 0, 1, 0), (0, -1, 0, 0), (36, 11.925, 5.3, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "rt_clg_fwp_3_s_Riser"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, -1, 0, 0), (1, 0, 0, 0), (0, 0, 1, 0), (32, 2.9, 0.9, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "rt_clg_fws_main_r_Seg_11"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (1, 0, 0, 0), (0, 0, -1, 0), (40, 1.5, 4.8, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "clg_man_a_r2_r_Seg_15"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (0, 0, 1, 0), (1, 0, 0, 0), (21.150000000000002, 25.650000000000002, 4.5, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "clg_man_a_r3_s_Seg_20"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (0, 0, 1, 0), (1, 0, 0, 0), (24.150000000000002, 28.15, 4.2, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "rack_a_r4_16_Return_Hose"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, -1, 0, 0), (0, 0, -1, 0), (22.3, 32.849999999999994, 4.5, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "clg_man_a_r4_r_Seg_20"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (0, 0, 1, 0), (1, 0, 0, 0), (24.150000000000002, 32.849999999999994, 4.5, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "rack_a_r3_12_Return_Hose"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, -1, 0, 0), (0, 0, -1, 0), (19.9, 29.25, 4.5, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "rack_a_r3_13_Return_Hose"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, -1, 0, 0), (0, 0, -1, 0), (20.5, 29.25, 4.5, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "rt_clg_fws_main_s_Seg_7"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (-1, 0, 0, 0), (0, 0, 1, 0), (0, 1, 0, 0), (30, 12.1, 4.6, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "clg_man_a_r1_s_Seg_11"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (0, 0, 1, 0), (1, 0, 0, 0), (18.75, 20.95, 4.2, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "rt_clg_fws_main_r_Seg_7"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 0, 1, 0), (0, -1, 0, 0), (30, 11.9, 4.8999999999999995, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "clg_man_a_r2_r_Seg_13"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (0, 0, 1, 0), (1, 0, 0, 0), (19.95, 25.650000000000002, 4.5, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "rack_a_r2_08_Return_Hose"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, -1, 0, 0), (0, 0, -1, 0), (17.5, 25.650000000000002, 4.5, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "clg_man_a_r2_r_Seg_17"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (0, 0, 1, 0), (1, 0, 0, 0), (22.35, 25.650000000000002, 4.5, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "rack_a_r4_09_Supply_Hose"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, -1, 0, 0), (0, 0, -1, 0), (18.1, 31.749999999999996, 4.2, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "rack_a_r2_12_Supply_Hose"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, -1, 0, 0), (0, 0, -1, 0), (19.9, 24.55, 4.2, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "rack_a_r1_03_Supply_Hose"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, -1, 0, 0), (0, 0, -1, 0), (14.5, 20.95, 4.2, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "rack_a_r4_18_Supply_Hose"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, -1, 0, 0), (0, 0, -1, 0), (23.5, 31.749999999999996, 4.2, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "clg_man_a_r4_r_Seg_12"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (0, 0, 1, 0), (1, 0, 0, 0), (19.35, 32.849999999999994, 4.5, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "clg_man_a_r1_s_Seg_2"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (0, 0, 1, 0), (1, 0, 0, 0), (13.350000000000001, 20.95, 4.2, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "clg_man_a_r3_r_Seg_12"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (0, 0, 1, 0), (1, 0, 0, 0), (19.35, 29.25, 4.5, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "rack_a_r3_10_Return_Hose"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, -1, 0, 0), (0, 0, -1, 0), (18.7, 29.25, 4.5, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "rt_clg_drc_3_r_Seg_1"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 0, 1, 0), (0, -1, 0, 0), (42, -4.6, 1.1, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "rt_clg_fws_main_s_Seg_12"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, -1, 0, 0), (0, 0, 1, 0), (-1, 0, 0, 0), (16.9, 20.3, 4.6, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "rack_a_r2_19_Supply_Hose"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, -1, 0, 0), (0, 0, -1, 0), (24.1, 24.55, 4.2, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "clg_man_a_r2_r_Seg_5"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (0, 0, 1, 0), (1, 0, 0, 0), (15.150000000000002, 25.650000000000002, 4.5, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "rt_clg_fwp_1_s_Riser"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, -1, 0, 0), (1, 0, 0, 0), (0, 0, 1, 0), (26.1, 3, 0.9, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "rt_clg_man_a_r4_feed_s_Seg_1"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (-1, 0, 0, 0), (0, 0, 1, 0), (0, 1, 0, 0), (12, 20.375, 4.2, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "rt_clg_chw_main_s_Seg_5"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (-1, 0, 0, 0), (0, 0, 1, 0), (0, 1, 0, 0), (36, 12.075, 5, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "rt_clg_cdu_a3_sec_s_Seg_1"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (-1, 0, 0, 0), (0, 0, 1, 0), (0, 1, 0, 0), (22, 19.2, 4.2, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "clg_man_a_r4_r_Seg_16"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (0, 0, 1, 0), (1, 0, 0, 0), (21.750000000000004, 32.849999999999994, 4.5, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "rack_a_r2_01_Supply_Hose"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, -1, 0, 0), (0, 0, -1, 0), (13.3, 24.55, 4.2, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "clg_man_a_r1_s_Seg_17"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (0, 0, 1, 0), (1, 0, 0, 0), (22.35, 20.95, 4.2, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "rack_a_r4_06_Supply_Hose"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, -1, 0, 0), (0, 0, -1, 0), (16.3, 31.749999999999996, 4.2, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "rack_a_r1_16_Return_Hose"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, -1, 0, 0), (0, 0, -1, 0), (22.3, 22.05, 4.5, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "rt_clg_fws_main_r_Seg_9"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (0, 0, 1, 0), (1, 0, 0, 0), (30.1, 1.5, 4.8999999999999995, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "rt_clg_bt_1_r_Seg_1"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (0, 0, 1, 0), (1, 0, 0, 0), (25.5, 12, 4.8999999999999995, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "rack_a_r4_04_Supply_Hose"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, -1, 0, 0), (0, 0, -1, 0), (15.100000000000001, 31.749999999999996, 4.2, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "rt_clg_fwp_1_s_Leg"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (0, 0, 1, 0), (1, 0, 0, 0), (26.150000000000002, 3, 4.6, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "clg_man_a_r4_s_Seg_3"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (0, 0, 1, 0), (1, 0, 0, 0), (13.950000000000001, 31.749999999999996, 4.2, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "rack_a_r3_19_Supply_Hose"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, -1, 0, 0), (0, 0, -1, 0), (24.1, 28.15, 4.2, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "rack_a_r2_14_Return_Hose"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, -1, 0, 0), (0, 0, -1, 0), (21.1, 25.650000000000002, 4.5, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "rt_clg_man_a_r1_feed_s_Seg_1"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (-1, 0, 0, 0), (0, 0, 1, 0), (0, 1, 0, 0), (12, 20.375, 4.2, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "rt_clg_dos_1_r_Seg_1"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (0, 0, 1, 0), (1, 0, 0, 0), (28.5, 12.5, 4.8999999999999995, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "rt_clg_tcs_hdr_s_Seg_1"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, -1, 0, 0), (0, 0, 1, 0), (-1, 0, 0, 0), (27, 20.3, 4.2, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "rt_clg_fwp_1_r_Leg"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, -1, 0, 0), (0, 0, 1, 0), (-1, 0, 0, 0), (29.9, 3, 4.8999999999999995, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "rt_clg_man_a_r3_feed_r_Seg_1"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 0, 1, 0), (0, -1, 0, 0), (12, 29.25, 4.5, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "rack_a_r4_18_Return_Hose"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, -1, 0, 0), (0, 0, -1, 0), (23.5, 32.849999999999994, 4.5, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "rack_a_r4_11_Supply_Hose"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, -1, 0, 0), (0, 0, -1, 0), (19.3, 31.749999999999996, 4.2, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "clg_man_a_r1_s_Seg_20"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (0, 0, 1, 0), (1, 0, 0, 0), (24.150000000000002, 20.95, 4.2, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "rack_a_r3_15_Supply_Hose"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, -1, 0, 0), (0, 0, -1, 0), (21.700000000000003, 28.15, 4.2, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "rack_a_r3_05_Return_Hose"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, -1, 0, 0), (0, 0, -1, 0), (15.700000000000001, 29.25, 4.5, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "rt_clg_tcs_hdr_r_Seg_1"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (0, 0, 1, 0), (1, 0, 0, 0), (12.075, 20.3, 4.5, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "rt_clg_cdu_a4_pri_r_Seg_1"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (-1, 0, 0, 0), (0, 0, 1, 0), (0, 1, 0, 0), (27, 19.2, 4.8999999999999995, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "clg_man_a_r3_s_Seg_3"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (0, 0, 1, 0), (1, 0, 0, 0), (13.950000000000001, 28.15, 4.2, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "rack_a_r1_14_Supply_Hose"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, -1, 0, 0), (0, 0, -1, 0), (21.1, 20.95, 4.2, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "clg_man_a_r3_s_Seg_9"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (0, 0, 1, 0), (1, 0, 0, 0), (17.55, 28.15, 4.2, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "rt_clg_fws_main_s_Seg_9"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, -1, 0, 0), (0, 0, 1, 0), (-1, 0, 0, 0), (29.9, 20.3, 4.6, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "rt_clg_fwp_3_s_Leg"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 0, 1, 0), (0, -1, 0, 0), (32, 2.85, 4.6, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "clg_man_a_r4_r_Seg_4"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (0, 0, 1, 0), (1, 0, 0, 0), (14.55, 32.849999999999994, 4.5, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "rt_clg_chw_main_r_Seg_6"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 0, 1, 0), (0, -1, 0, 0), (36, 11.425, 5.3, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "clg_man_a_r2_s_Seg_10"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (0, 0, 1, 0), (1, 0, 0, 0), (18.150000000000002, 24.55, 4.2, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "clg_man_a_r3_s_Seg_19"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (0, 0, 1, 0), (1, 0, 0, 0), (23.55, 28.15, 4.2, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "rt_clg_fws_main_r_Seg_2"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (0, 0, 1, 0), (1, 0, 0, 0), (17.1, 20.3, 4.8999999999999995, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "rack_a_r4_15_Return_Hose"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, -1, 0, 0), (0, 0, -1, 0), (21.700000000000003, 32.849999999999994, 4.5, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "clg_man_a_r4_r_Seg_17"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (0, 0, 1, 0), (1, 0, 0, 0), (22.35, 32.849999999999994, 4.5, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "rt_clg_drc_2_r_Seg_1"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 0, 1, 0), (0, -1, 0, 0), (38, -4.6, 1.1, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "rack_a_r3_01_Supply_Hose"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, -1, 0, 0), (0, 0, -1, 0), (13.3, 28.15, 4.2, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "clg_man_a_r1_r_Seg_16"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (0, 0, 1, 0), (1, 0, 0, 0), (21.750000000000004, 22.05, 4.5, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "rack_a_r3_11_Return_Hose"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, -1, 0, 0), (0, 0, -1, 0), (19.3, 29.25, 4.5, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "rack_a_r3_20_Return_Hose"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, -1, 0, 0), (0, 0, -1, 0), (24.700000000000003, 29.25, 4.5, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "rt_clg_chp_1_r_Riser"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, -1, 0, 0), (1, 0, 0, 0), (0, 0, 1, 0), (44.1, 11.5, 0.9, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "rack_a_r2_01_Return_Hose"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, -1, 0, 0), (0, 0, -1, 0), (13.3, 25.650000000000002, 4.5, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "clg_man_a_r3_s_Seg_14"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (0, 0, 1, 0), (1, 0, 0, 0), (20.55, 28.15, 4.2, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "clg_man_a_r2_s_Seg_4"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (0, 0, 1, 0), (1, 0, 0, 0), (14.55, 24.55, 4.2, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "rack_a_r1_08_Return_Hose"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, -1, 0, 0), (0, 0, -1, 0), (17.5, 22.05, 4.5, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "clg_crah_b2_Feed_Stub"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, -1, 0, 0), (0, 0, -1, 0), (39.3, 26.75, 5, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "rack_a_r1_01_Supply_Hose"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, -1, 0, 0), (0, 0, -1, 0), (13.3, 20.95, 4.2, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "clg_man_a_r3_s_Seg_4"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (0, 0, 1, 0), (1, 0, 0, 0), (14.55, 28.15, 4.2, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "rack_a_r2_11_Supply_Hose"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, -1, 0, 0), (0, 0, -1, 0), (19.3, 24.55, 4.2, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "rt_clg_cdu_a2_sec_s_Seg_1"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (-1, 0, 0, 0), (0, 0, 1, 0), (0, 1, 0, 0), (17, 19.2, 4.2, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "rack_a_r3_03_Supply_Hose"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, -1, 0, 0), (0, 0, -1, 0), (14.5, 28.15, 4.2, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "clg_man_a_r1_s_Seg_10"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (0, 0, 1, 0), (1, 0, 0, 0), (18.150000000000002, 20.95, 4.2, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "clg_man_a_r2_r_Seg_2"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (0, 0, 1, 0), (1, 0, 0, 0), (13.350000000000001, 25.650000000000002, 4.5, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "clg_crah_b6_Riser_Stub"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, -1, 0, 0), (0, 0, -1, 0), (66.7, 32.25, 5.3, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "clg_man_a_r1_s_Seg_5"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (0, 0, 1, 0), (1, 0, 0, 0), (15.150000000000002, 20.95, 4.2, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "clg_man_a_r1_r_Seg_15"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (0, 0, 1, 0), (1, 0, 0, 0), (21.150000000000002, 22.05, 4.5, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "rt_clg_fws_main_r_Seg_1"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (0, 0, 1, 0), (1, 0, 0, 0), (12, 20.3, 4.8999999999999995, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "clg_man_a_r1_s_Seg_1"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (0, 0, 1, 0), (1, 0, 0, 0), (12, 20.95, 4.2, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+   }
+  }
+ }
+}
+

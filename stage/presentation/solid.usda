@@ -1,0 +1,1765 @@
+#usda 1.0
+(
+ customLayerData = {
+  string "aeco:layer:package" = "solid"
+  string "aeco:layer:producer" = "committed result v0.1.5"
+  string "aeco:layer:role" = "presentation"
+  string "aeco:layer:source" = "kind/usdaeco-solid/examples/datacentre/manifest.json"
+  string "aeco:layer:sourceSha256" = "25c3c3e9a71d1cf0432d0483f03346b52a3b3c3973dcf045f56563b034b101af"
+  string "aeco:layer:tag" = "v0.1.5"
+ }
+)
+
+over "demo_datacentre_01"
+{
+ over "demo_datacentre_01_Site"
+ {
+  over "demo_datacentre_01"
+  {
+   over "L00_Ground"
+   {
+    over "wall_l0_v_051"
+    {
+     over "Body"
+     {
+      color3f[] primvars:displayColor = [(0.86, 0.86, 0.84)]
+      token visibility = "invisible"
+     }
+
+     over "Edges"
+     {
+      color3f[] primvars:displayColor = [(0.04, 0.08, 0.12)]
+      token visibility = "invisible"
+     }
+    }
+
+    over "Entrance_Lobby"
+    {
+     over "sec_cam_lobby"
+     {
+      over "Edges"
+      {
+       color3f[] primvars:displayColor = [(0.04, 0.08, 0.12)]
+       token visibility = "invisible"
+      }
+
+      over "Body"
+      {
+       token visibility = "invisible"
+      }
+     }
+
+     over "sec_cam_lobby_fixed_1"
+     {
+      over "Edges"
+      {
+       color3f[] primvars:displayColor = [(0.04, 0.08, 0.12)]
+       token visibility = "invisible"
+      }
+
+      over "Body"
+      {
+       token visibility = "invisible"
+      }
+     }
+
+     over "sec_cam_lobby_fixed_2"
+     {
+      over "Edges"
+      {
+       color3f[] primvars:displayColor = [(0.04, 0.08, 0.12)]
+       token visibility = "invisible"
+      }
+
+      over "Body"
+      {
+       token visibility = "invisible"
+      }
+     }
+
+     over "AVA_Entrance_Lobby"
+     {
+      over "Body"
+      {
+       color3f[] primvars:displayColor = [(0.45, 0.2, 0.55)]
+       token visibility = "invisible"
+      }
+
+      over "Edges"
+      {
+       color3f[] primvars:displayColor = [(0.04, 0.08, 0.12)]
+       token visibility = "invisible"
+      }
+     }
+    }
+
+    over "Office_Corridor_L00"
+    {
+     over "sec_cam_corr_ocorr_0_1"
+     {
+      over "Edges"
+      {
+       color3f[] primvars:displayColor = [(0.04, 0.08, 0.12)]
+       token visibility = "invisible"
+      }
+
+      over "Body"
+      {
+       token visibility = "invisible"
+      }
+     }
+
+     over "sec_cam_corr_ocorr_0_2"
+     {
+      over "Edges"
+      {
+       color3f[] primvars:displayColor = [(0.04, 0.08, 0.12)]
+       token visibility = "invisible"
+      }
+
+      over "Body"
+      {
+       token visibility = "invisible"
+      }
+     }
+    }
+
+    over "door_stair_0"
+    {
+     over "Body"
+     {
+      color3f[] primvars:displayColor = [(0.45, 0.47, 0.5)]
+      token visibility = "invisible"
+     }
+
+     over "Edges"
+     {
+      color3f[] primvars:displayColor = [(0.04, 0.08, 0.12)]
+      token visibility = "invisible"
+     }
+    }
+
+    over "door_noc"
+    {
+     over "Body"
+     {
+      color3f[] primvars:displayColor = [(0.45, 0.47, 0.5)]
+      token visibility = "invisible"
+     }
+
+     over "Edges"
+     {
+      color3f[] primvars:displayColor = [(0.04, 0.08, 0.12)]
+      token visibility = "invisible"
+     }
+    }
+
+    over "wall_l0_v_058"
+    {
+     over "Body"
+     {
+      color3f[] primvars:displayColor = [(0.58, 0.58, 0.56)]
+      token visibility = "invisible"
+     }
+
+     over "Edges"
+     {
+      color3f[] primvars:displayColor = [(0.04, 0.08, 0.12)]
+      token visibility = "invisible"
+     }
+    }
+
+    over "col_029"
+    {
+     over "Body"
+     {
+      color3f[] primvars:displayColor = [(0.62, 0.62, 0.6)]
+      token visibility = "invisible"
+     }
+
+     over "Edges"
+     {
+      color3f[] primvars:displayColor = [(0.04, 0.08, 0.12)]
+      token visibility = "invisible"
+     }
+    }
+
+    over "wall_l0_h_010"
+    {
+     over "Body"
+     {
+      color3f[] primvars:displayColor = [(0.58, 0.58, 0.56)]
+      token visibility = "invisible"
+     }
+
+     over "Edges"
+     {
+      color3f[] primvars:displayColor = [(0.04, 0.08, 0.12)]
+      token visibility = "invisible"
+     }
+    }
+
+    over "wall_l0_h_008"
+    {
+     over "Body"
+     {
+      color3f[] primvars:displayColor = [(0.86, 0.86, 0.84)]
+      token visibility = "invisible"
+     }
+
+     over "Edges"
+     {
+      color3f[] primvars:displayColor = [(0.04, 0.08, 0.12)]
+      token visibility = "invisible"
+     }
+    }
+
+    over "col_013"
+    {
+     over "Body"
+     {
+      color3f[] primvars:displayColor = [(0.62, 0.62, 0.6)]
+      token visibility = "invisible"
+     }
+
+     over "Edges"
+     {
+      color3f[] primvars:displayColor = [(0.04, 0.08, 0.12)]
+      token visibility = "invisible"
+     }
+    }
+
+    over "Office_Comms_Room"
+    {
+     over "Office_Comms_Rack_2"
+     {
+      over "Body"
+      {
+       color3f[] primvars:displayColor = [(0.15, 0.15, 0.18)]
+       token visibility = "invisible"
+      }
+
+      over "Edges"
+      {
+       color3f[] primvars:displayColor = [(0.04, 0.08, 0.12)]
+       token visibility = "invisible"
+      }
+     }
+
+     over "Office_Comms_Rack_1"
+     {
+      over "Body"
+      {
+       color3f[] primvars:displayColor = [(0.15, 0.15, 0.18)]
+       token visibility = "invisible"
+      }
+
+      over "Edges"
+      {
+       color3f[] primvars:displayColor = [(0.04, 0.08, 0.12)]
+       token visibility = "invisible"
+      }
+     }
+    }
+
+    over "door_security"
+    {
+     over "Body"
+     {
+      color3f[] primvars:displayColor = [(0.45, 0.47, 0.5)]
+      token visibility = "invisible"
+     }
+
+     over "Edges"
+     {
+      color3f[] primvars:displayColor = [(0.04, 0.08, 0.12)]
+      token visibility = "invisible"
+     }
+    }
+
+    over "wall_l0_v_052"
+    {
+     over "Body"
+     {
+      color3f[] primvars:displayColor = [(0.86, 0.86, 0.84)]
+      token visibility = "invisible"
+     }
+
+     over "Edges"
+     {
+      color3f[] primvars:displayColor = [(0.04, 0.08, 0.12)]
+      token visibility = "invisible"
+     }
+    }
+
+    over "door_noc_meeting"
+    {
+     over "Body"
+     {
+      color3f[] primvars:displayColor = [(0.45, 0.47, 0.5)]
+      token visibility = "invisible"
+     }
+
+     over "Edges"
+     {
+      color3f[] primvars:displayColor = [(0.04, 0.08, 0.12)]
+      token visibility = "invisible"
+     }
+    }
+
+    over "wall_l0_h_011"
+    {
+     over "Body"
+     {
+      color3f[] primvars:displayColor = [(0.58, 0.58, 0.56)]
+      token visibility = "invisible"
+     }
+
+     over "Edges"
+     {
+      color3f[] primvars:displayColor = [(0.04, 0.08, 0.12)]
+      token visibility = "invisible"
+     }
+    }
+
+    over "wall_l0_h_005"
+    {
+     over "Body"
+     {
+      color3f[] primvars:displayColor = [(0.86, 0.86, 0.84)]
+      token visibility = "invisible"
+     }
+
+     over "Edges"
+     {
+      color3f[] primvars:displayColor = [(0.04, 0.08, 0.12)]
+      token visibility = "invisible"
+     }
+    }
+
+    over "wall_l0_v_055"
+    {
+     over "Body"
+     {
+      color3f[] primvars:displayColor = [(0.86, 0.86, 0.84)]
+      token visibility = "invisible"
+     }
+
+     over "Edges"
+     {
+      color3f[] primvars:displayColor = [(0.04, 0.08, 0.12)]
+      token visibility = "invisible"
+     }
+    }
+
+    over "wall_l0_h_002"
+    {
+     over "Body"
+     {
+      color3f[] primvars:displayColor = [(0.72, 0.72, 0.7)]
+      token visibility = "invisible"
+     }
+
+     over "Edges"
+     {
+      color3f[] primvars:displayColor = [(0.04, 0.08, 0.12)]
+      token visibility = "invisible"
+     }
+    }
+
+    over "wall_l0_v_049"
+    {
+     over "Body"
+     {
+      color3f[] primvars:displayColor = [(0.86, 0.86, 0.84)]
+      token visibility = "invisible"
+     }
+
+     over "Edges"
+     {
+      color3f[] primvars:displayColor = [(0.04, 0.08, 0.12)]
+      token visibility = "invisible"
+     }
+    }
+
+    over "col_014"
+    {
+     over "Body"
+     {
+      color3f[] primvars:displayColor = [(0.62, 0.62, 0.6)]
+      token visibility = "invisible"
+     }
+
+     over "Edges"
+     {
+      color3f[] primvars:displayColor = [(0.04, 0.08, 0.12)]
+      token visibility = "invisible"
+     }
+    }
+
+    over "wall_l0_h_003"
+    {
+     over "Body"
+     {
+      color3f[] primvars:displayColor = [(0.72, 0.72, 0.7)]
+      token visibility = "invisible"
+     }
+
+     over "Edges"
+     {
+      color3f[] primvars:displayColor = [(0.04, 0.08, 0.12)]
+      token visibility = "invisible"
+     }
+    }
+
+    over "wall_l0_h_012"
+    {
+     over "Body"
+     {
+      color3f[] primvars:displayColor = [(0.58, 0.58, 0.56)]
+      token visibility = "invisible"
+     }
+
+     over "Edges"
+     {
+      color3f[] primvars:displayColor = [(0.04, 0.08, 0.12)]
+      token visibility = "invisible"
+     }
+    }
+
+    over "Office_Data_Tray_Seg_1"
+    {
+     over "Body"
+     {
+      color3f[] primvars:displayColor = [(0.8, 0.7, 0.2)]
+      token visibility = "invisible"
+     }
+
+     over "Edges"
+     {
+      color3f[] primvars:displayColor = [(0.04, 0.08, 0.12)]
+      token visibility = "invisible"
+     }
+    }
+
+    over "col_031"
+    {
+     over "Body"
+     {
+      color3f[] primvars:displayColor = [(0.62, 0.62, 0.6)]
+      token visibility = "invisible"
+     }
+
+     over "Edges"
+     {
+      color3f[] primvars:displayColor = [(0.04, 0.08, 0.12)]
+      token visibility = "invisible"
+     }
+    }
+
+    over "wall_l0_h_014"
+    {
+     over "Body"
+     {
+      color3f[] primvars:displayColor = [(0.58, 0.58, 0.56)]
+      token visibility = "invisible"
+     }
+
+     over "Edges"
+     {
+      color3f[] primvars:displayColor = [(0.04, 0.08, 0.12)]
+      token visibility = "invisible"
+     }
+    }
+
+    over "wall_l0_h_007"
+    {
+     over "Body"
+     {
+      color3f[] primvars:displayColor = [(0.86, 0.86, 0.84)]
+      token visibility = "invisible"
+     }
+
+     over "Edges"
+     {
+      color3f[] primvars:displayColor = [(0.04, 0.08, 0.12)]
+      token visibility = "invisible"
+     }
+    }
+
+    over "wall_l0_v_060"
+    {
+     over "Body"
+     {
+      color3f[] primvars:displayColor = [(0.72, 0.72, 0.7)]
+      token visibility = "invisible"
+     }
+
+     over "Edges"
+     {
+      color3f[] primvars:displayColor = [(0.04, 0.08, 0.12)]
+      token visibility = "invisible"
+     }
+    }
+
+    over "col_025"
+    {
+     over "Body"
+     {
+      color3f[] primvars:displayColor = [(0.62, 0.62, 0.6)]
+      token visibility = "invisible"
+     }
+
+     over "Edges"
+     {
+      color3f[] primvars:displayColor = [(0.04, 0.08, 0.12)]
+      token visibility = "invisible"
+     }
+    }
+
+    over "slab_ground_office"
+    {
+     over "Body"
+     {
+      color3f[] primvars:displayColor = [(0.62, 0.62, 0.6)]
+      token visibility = "invisible"
+     }
+
+     over "Edges"
+     {
+      color3f[] primvars:displayColor = [(0.04, 0.08, 0.12)]
+      token visibility = "invisible"
+     }
+    }
+
+    over "col_019"
+    {
+     over "Body"
+     {
+      color3f[] primvars:displayColor = [(0.62, 0.62, 0.6)]
+      token visibility = "invisible"
+     }
+
+     over "Edges"
+     {
+      color3f[] primvars:displayColor = [(0.04, 0.08, 0.12)]
+      token visibility = "invisible"
+     }
+    }
+
+    over "door_lobby_corr"
+    {
+     over "Body"
+     {
+      color3f[] primvars:displayColor = [(0.45, 0.47, 0.5)]
+      token visibility = "invisible"
+     }
+
+     over "Edges"
+     {
+      color3f[] primvars:displayColor = [(0.04, 0.08, 0.12)]
+      token visibility = "invisible"
+     }
+    }
+
+    over "door_meeting"
+    {
+     over "Body"
+     {
+      color3f[] primvars:displayColor = [(0.45, 0.47, 0.5)]
+      token visibility = "invisible"
+     }
+
+     over "Edges"
+     {
+      color3f[] primvars:displayColor = [(0.04, 0.08, 0.12)]
+      token visibility = "invisible"
+     }
+    }
+
+    over "Stair_L00"
+    {
+     over "Office_Stair"
+     {
+      over "Body"
+      {
+       color3f[] primvars:displayColor = [(0.62, 0.62, 0.6)]
+       token visibility = "invisible"
+      }
+
+      over "Edges"
+      {
+       color3f[] primvars:displayColor = [(0.04, 0.08, 0.12)]
+       token visibility = "invisible"
+      }
+     }
+    }
+
+    over "col_030"
+    {
+     over "Body"
+     {
+      color3f[] primvars:displayColor = [(0.62, 0.62, 0.6)]
+      token visibility = "invisible"
+     }
+
+     over "Edges"
+     {
+      color3f[] primvars:displayColor = [(0.04, 0.08, 0.12)]
+      token visibility = "invisible"
+     }
+    }
+
+    over "wall_l0_h_013"
+    {
+     over "Body"
+     {
+      color3f[] primvars:displayColor = [(0.58, 0.58, 0.56)]
+      token visibility = "invisible"
+     }
+
+     over "Edges"
+     {
+      color3f[] primvars:displayColor = [(0.04, 0.08, 0.12)]
+      token visibility = "invisible"
+     }
+    }
+
+    over "wall_l0_v_045"
+    {
+     over "Body"
+     {
+      color3f[] primvars:displayColor = [(0.72, 0.72, 0.7)]
+      token visibility = "invisible"
+     }
+
+     over "Edges"
+     {
+      color3f[] primvars:displayColor = [(0.04, 0.08, 0.12)]
+      token visibility = "invisible"
+     }
+    }
+
+    over "col_020"
+    {
+     over "Body"
+     {
+      color3f[] primvars:displayColor = [(0.62, 0.62, 0.6)]
+      token visibility = "invisible"
+     }
+
+     over "Edges"
+     {
+      color3f[] primvars:displayColor = [(0.04, 0.08, 0.12)]
+      token visibility = "invisible"
+     }
+    }
+
+    over "Main_Entrance"
+    {
+     over "Body"
+     {
+      color3f[] primvars:displayColor = [(0.45, 0.47, 0.5)]
+      token visibility = "invisible"
+     }
+
+     over "Edges"
+     {
+      color3f[] primvars:displayColor = [(0.04, 0.08, 0.12)]
+      token visibility = "invisible"
+     }
+    }
+
+    over "col_024"
+    {
+     over "Body"
+     {
+      color3f[] primvars:displayColor = [(0.62, 0.62, 0.6)]
+      token visibility = "invisible"
+     }
+
+     over "Edges"
+     {
+      color3f[] primvars:displayColor = [(0.04, 0.08, 0.12)]
+      token visibility = "invisible"
+     }
+    }
+
+    over "wall_l0_h_006"
+    {
+     over "Body"
+     {
+      color3f[] primvars:displayColor = [(0.58, 0.58, 0.56)]
+      token visibility = "invisible"
+     }
+
+     over "Edges"
+     {
+      color3f[] primvars:displayColor = [(0.04, 0.08, 0.12)]
+      token visibility = "invisible"
+     }
+    }
+
+    over "wall_l0_v_050"
+    {
+     over "Body"
+     {
+      color3f[] primvars:displayColor = [(0.86, 0.86, 0.84)]
+      token visibility = "invisible"
+     }
+
+     over "Edges"
+     {
+      color3f[] primvars:displayColor = [(0.04, 0.08, 0.12)]
+      token visibility = "invisible"
+     }
+    }
+
+    over "wall_l0_h_001"
+    {
+     over "Body"
+     {
+      color3f[] primvars:displayColor = [(0.72, 0.72, 0.7)]
+      token visibility = "invisible"
+     }
+
+     over "Edges"
+     {
+      color3f[] primvars:displayColor = [(0.04, 0.08, 0.12)]
+      token visibility = "invisible"
+     }
+    }
+
+    over "Office_Data_Tray_Seg_2"
+    {
+     over "Body"
+     {
+      color3f[] primvars:displayColor = [(0.8, 0.7, 0.2)]
+      token visibility = "invisible"
+     }
+
+     over "Edges"
+     {
+      color3f[] primvars:displayColor = [(0.04, 0.08, 0.12)]
+      token visibility = "invisible"
+     }
+    }
+
+    over "wall_l0_v_046"
+    {
+     over "Body"
+     {
+      color3f[] primvars:displayColor = [(0.72, 0.72, 0.7)]
+      token visibility = "invisible"
+     }
+
+     over "Edges"
+     {
+      color3f[] primvars:displayColor = [(0.04, 0.08, 0.12)]
+      token visibility = "invisible"
+     }
+    }
+
+    over "wall_l0_h_004"
+    {
+     over "Body"
+     {
+      color3f[] primvars:displayColor = [(0.86, 0.86, 0.84)]
+      token visibility = "invisible"
+     }
+
+     over "Edges"
+     {
+      color3f[] primvars:displayColor = [(0.04, 0.08, 0.12)]
+      token visibility = "invisible"
+     }
+    }
+
+    over "wall_l0_v_059"
+    {
+     over "Body"
+     {
+      color3f[] primvars:displayColor = [(0.72, 0.72, 0.7)]
+      token visibility = "invisible"
+     }
+
+     over "Edges"
+     {
+      color3f[] primvars:displayColor = [(0.04, 0.08, 0.12)]
+      token visibility = "invisible"
+     }
+    }
+
+    over "Office_Data_Tray_Bend_1"
+    {
+     over "Body"
+     {
+      color3f[] primvars:displayColor = [(0.8, 0.7, 0.2)]
+      token visibility = "invisible"
+     }
+
+     over "Edges"
+     {
+      color3f[] primvars:displayColor = [(0.04, 0.08, 0.12)]
+      token visibility = "invisible"
+     }
+    }
+
+    over "door_noc_comms"
+    {
+     over "Body"
+     {
+      color3f[] primvars:displayColor = [(0.45, 0.47, 0.5)]
+      token visibility = "invisible"
+     }
+
+     over "Edges"
+     {
+      color3f[] primvars:displayColor = [(0.04, 0.08, 0.12)]
+      token visibility = "invisible"
+     }
+    }
+
+    over "col_015"
+    {
+     over "Body"
+     {
+      color3f[] primvars:displayColor = [(0.62, 0.62, 0.6)]
+      token visibility = "invisible"
+     }
+
+     over "Edges"
+     {
+      color3f[] primvars:displayColor = [(0.04, 0.08, 0.12)]
+      token visibility = "invisible"
+     }
+    }
+
+    over "slab_roof_main"
+    {
+     over "Geom"
+     {
+      token visibility = "invisible"
+     }
+    }
+   }
+
+   over "L01_Office"
+   {
+    over "Open_Office"
+    {
+     over "grl_office_1"
+     {
+      over "Body"
+      {
+       color3f[] primvars:displayColor = [(0.72, 0.77, 0.8)]
+       token visibility = "invisible"
+      }
+
+      over "Edges"
+      {
+       color3f[] primvars:displayColor = [(0.04, 0.08, 0.12)]
+       token visibility = "invisible"
+      }
+     }
+
+     over "Office_ceiling_void"
+     {
+      over "fcu_office_1"
+      {
+       over "Body"
+       {
+        color3f[] primvars:displayColor = [(0.72, 0.77, 0.8)]
+        token visibility = "invisible"
+       }
+
+       over "Edges"
+       {
+        color3f[] primvars:displayColor = [(0.04, 0.08, 0.12)]
+        token visibility = "invisible"
+       }
+      }
+
+      over "cnd_void_office_1"
+      {
+       over "Body"
+       {
+        color3f[] primvars:displayColor = [(0.72, 0.77, 0.8)]
+        token visibility = "invisible"
+       }
+
+       over "Edges"
+       {
+        color3f[] primvars:displayColor = [(0.04, 0.08, 0.12)]
+        token visibility = "invisible"
+       }
+      }
+
+      over "cnd_void_office_2"
+      {
+       over "Body"
+       {
+        color3f[] primvars:displayColor = [(0.72, 0.77, 0.8)]
+        token visibility = "invisible"
+       }
+
+       over "Edges"
+       {
+        color3f[] primvars:displayColor = [(0.04, 0.08, 0.12)]
+        token visibility = "invisible"
+       }
+      }
+     }
+
+     over "grl_office_4"
+     {
+      over "Body"
+      {
+       color3f[] primvars:displayColor = [(0.72, 0.77, 0.8)]
+       token visibility = "invisible"
+      }
+
+      over "Edges"
+      {
+       color3f[] primvars:displayColor = [(0.04, 0.08, 0.12)]
+       token visibility = "invisible"
+      }
+     }
+
+     over "grl_office_3"
+     {
+      over "Body"
+      {
+       color3f[] primvars:displayColor = [(0.72, 0.77, 0.8)]
+       token visibility = "invisible"
+      }
+
+      over "Edges"
+      {
+       color3f[] primvars:displayColor = [(0.04, 0.08, 0.12)]
+       token visibility = "invisible"
+      }
+     }
+
+     over "lum_office_2"
+     {
+      over "Body"
+      {
+       color3f[] primvars:displayColor = [(0.72, 0.77, 0.8)]
+       token visibility = "invisible"
+      }
+
+      over "Edges"
+      {
+       color3f[] primvars:displayColor = [(0.04, 0.08, 0.12)]
+       token visibility = "invisible"
+      }
+     }
+
+     over "lum_office_1"
+     {
+      over "Body"
+      {
+       color3f[] primvars:displayColor = [(0.72, 0.77, 0.8)]
+       token visibility = "invisible"
+      }
+
+      over "Edges"
+      {
+       color3f[] primvars:displayColor = [(0.04, 0.08, 0.12)]
+       token visibility = "invisible"
+      }
+     }
+
+     over "clg_office"
+     {
+      over "Body"
+      {
+       color3f[] primvars:displayColor = [(0.72, 0.77, 0.8)]
+       token visibility = "invisible"
+      }
+
+      over "Edges"
+      {
+       color3f[] primvars:displayColor = [(0.04, 0.08, 0.12)]
+       token visibility = "invisible"
+      }
+     }
+
+     over "grl_office_2"
+     {
+      over "Body"
+      {
+       color3f[] primvars:displayColor = [(0.72, 0.77, 0.8)]
+       token visibility = "invisible"
+      }
+
+      over "Edges"
+      {
+       color3f[] primvars:displayColor = [(0.04, 0.08, 0.12)]
+       token visibility = "invisible"
+      }
+     }
+
+     over "lum_office_3"
+     {
+      over "Body"
+      {
+       color3f[] primvars:displayColor = [(0.72, 0.77, 0.8)]
+       token visibility = "invisible"
+      }
+
+      over "Edges"
+      {
+       color3f[] primvars:displayColor = [(0.04, 0.08, 0.12)]
+       token visibility = "invisible"
+      }
+     }
+
+     over "lum_office_6"
+     {
+      over "Body"
+      {
+       color3f[] primvars:displayColor = [(0.72, 0.77, 0.8)]
+       token visibility = "invisible"
+      }
+
+      over "Edges"
+      {
+       color3f[] primvars:displayColor = [(0.04, 0.08, 0.12)]
+       token visibility = "invisible"
+      }
+     }
+
+     over "lum_office_4"
+     {
+      over "Body"
+      {
+       color3f[] primvars:displayColor = [(0.72, 0.77, 0.8)]
+       token visibility = "invisible"
+      }
+
+      over "Edges"
+      {
+       color3f[] primvars:displayColor = [(0.04, 0.08, 0.12)]
+       token visibility = "invisible"
+      }
+     }
+
+     over "lum_office_5"
+     {
+      over "Body"
+      {
+       color3f[] primvars:displayColor = [(0.72, 0.77, 0.8)]
+       token visibility = "invisible"
+      }
+
+      over "Edges"
+      {
+       color3f[] primvars:displayColor = [(0.04, 0.08, 0.12)]
+       token visibility = "invisible"
+      }
+     }
+    }
+
+    over "WC"
+    {
+     over "san_pod_1"
+     {
+      over "Body"
+      {
+       color3f[] primvars:displayColor = [(0.72, 0.77, 0.8)]
+       token visibility = "invisible"
+      }
+
+      over "Edges"
+      {
+       color3f[] primvars:displayColor = [(0.04, 0.08, 0.12)]
+       token visibility = "invisible"
+      }
+     }
+
+     over "pipe_drain_pod"
+     {
+      over "Body"
+      {
+       color3f[] primvars:displayColor = [(0.72, 0.77, 0.8)]
+       token visibility = "invisible"
+      }
+
+      over "Edges"
+      {
+       color3f[] primvars:displayColor = [(0.04, 0.08, 0.12)]
+       token visibility = "invisible"
+      }
+     }
+
+     over "san_pod_2"
+     {
+      over "Body"
+      {
+       color3f[] primvars:displayColor = [(0.72, 0.77, 0.8)]
+       token visibility = "invisible"
+      }
+
+      over "Edges"
+      {
+       color3f[] primvars:displayColor = [(0.04, 0.08, 0.12)]
+       token visibility = "invisible"
+      }
+     }
+
+     over "pod_wc"
+     {
+      over "Body"
+      {
+       color3f[] primvars:displayColor = [(0.72, 0.77, 0.8)]
+       token visibility = "invisible"
+      }
+
+      over "Edges"
+      {
+       color3f[] primvars:displayColor = [(0.04, 0.08, 0.12)]
+       token visibility = "invisible"
+      }
+     }
+    }
+
+    over "wall_l1_v_017"
+    {
+     over "Body"
+     {
+      color3f[] primvars:displayColor = [(0.72, 0.72, 0.7)]
+      token visibility = "invisible"
+     }
+
+     over "Edges"
+     {
+      color3f[] primvars:displayColor = [(0.04, 0.08, 0.12)]
+      token visibility = "invisible"
+     }
+    }
+
+    over "wall_l1_h_001"
+    {
+     over "Body"
+     {
+      color3f[] primvars:displayColor = [(0.72, 0.72, 0.7)]
+      token visibility = "invisible"
+     }
+
+     over "Edges"
+     {
+      color3f[] primvars:displayColor = [(0.04, 0.08, 0.12)]
+      token visibility = "invisible"
+     }
+    }
+
+    over "Office_Corridor_L01"
+    {
+     over "Corridor_ceiling_void"
+     {
+      over "tray_void_ocorr_1"
+      {
+       over "Body"
+       {
+        color3f[] primvars:displayColor = [(0.05, 0.32, 0.4)]
+        token visibility = "inherited"
+       }
+
+       over "Edges"
+       {
+        color3f[] primvars:displayColor = [(0.04, 0.08, 0.12)]
+        token visibility = "inherited"
+       }
+
+       over "EdgeDisplay"
+       {
+        color3f[] primvars:displayColor = [(0.65, 0.32, 0.035)]
+       }
+      }
+
+      over "pipe_clash_hard"
+      {
+       over "Body"
+       {
+        color3f[] primvars:displayColor = [(0.05, 0.32, 0.4)]
+        token visibility = "inherited"
+       }
+
+       over "Edges"
+       {
+        color3f[] primvars:displayColor = [(0.04, 0.08, 0.12)]
+        token visibility = "inherited"
+       }
+
+       over "EdgeDisplay"
+       {
+        color3f[] primvars:displayColor = [(0.65, 0.32, 0.035)]
+       }
+      }
+
+      over "pipe_clash_near"
+      {
+       over "Body"
+       {
+        color3f[] primvars:displayColor = [(0.05, 0.32, 0.4)]
+        token visibility = "inherited"
+       }
+
+       over "Edges"
+       {
+        color3f[] primvars:displayColor = [(0.04, 0.08, 0.12)]
+        token visibility = "inherited"
+       }
+
+       over "EdgeDisplay"
+       {
+        color3f[] primvars:displayColor = [(0.65, 0.32, 0.035)]
+       }
+      }
+
+      over "pipe_chw_void_f"
+      {
+       over "Body"
+       {
+        color3f[] primvars:displayColor = [(0.72, 0.77, 0.8)]
+        token visibility = "invisible"
+       }
+
+       over "Edges"
+       {
+        color3f[] primvars:displayColor = [(0.04, 0.08, 0.12)]
+        token visibility = "invisible"
+       }
+      }
+
+      over "pipe_chw_void_r"
+      {
+       over "Body"
+       {
+        color3f[] primvars:displayColor = [(0.72, 0.77, 0.8)]
+        token visibility = "invisible"
+       }
+
+       over "Edges"
+       {
+        color3f[] primvars:displayColor = [(0.04, 0.08, 0.12)]
+        token visibility = "invisible"
+       }
+      }
+
+      over "pipe_clash_tangent"
+      {
+       over "Body"
+       {
+        color3f[] primvars:displayColor = [(0.05, 0.32, 0.4)]
+        token visibility = "inherited"
+       }
+
+       over "Edges"
+       {
+        color3f[] primvars:displayColor = [(0.04, 0.08, 0.12)]
+        token visibility = "inherited"
+       }
+
+       over "EdgeDisplay"
+       {
+        color3f[] primvars:displayColor = [(0.65, 0.32, 0.035)]
+       }
+      }
+     }
+
+     over "pod_wc_temp"
+     {
+      over "Body"
+      {
+       color3f[] primvars:displayColor = [(0.72, 0.77, 0.8)]
+       token visibility = "invisible"
+      }
+
+      over "Edges"
+      {
+       color3f[] primvars:displayColor = [(0.04, 0.08, 0.12)]
+       token visibility = "invisible"
+      }
+     }
+
+     over "sec_cam_corr_ocorr_1_2"
+     {
+      over "Edges"
+      {
+       color3f[] primvars:displayColor = [(0.04, 0.08, 0.12)]
+       token visibility = "invisible"
+      }
+
+      over "Body"
+      {
+       token visibility = "invisible"
+      }
+     }
+
+     over "sec_cam_corr_ocorr_1_1"
+     {
+      over "Edges"
+      {
+       color3f[] primvars:displayColor = [(0.04, 0.08, 0.12)]
+       token visibility = "invisible"
+      }
+
+      over "Body"
+      {
+       token visibility = "invisible"
+      }
+     }
+
+     over "clg_ocorr_1"
+     {
+      over "Body"
+      {
+       color3f[] primvars:displayColor = [(0.72, 0.77, 0.8)]
+       token visibility = "invisible"
+      }
+
+      over "Edges"
+      {
+       color3f[] primvars:displayColor = [(0.04, 0.08, 0.12)]
+       token visibility = "invisible"
+      }
+     }
+    }
+
+    over "wall_l1_v_014"
+    {
+     over "Body"
+     {
+      color3f[] primvars:displayColor = [(0.86, 0.86, 0.84)]
+      token visibility = "invisible"
+     }
+
+     over "Edges"
+     {
+      color3f[] primvars:displayColor = [(0.04, 0.08, 0.12)]
+      token visibility = "invisible"
+     }
+    }
+
+    over "wall_l1_h_008"
+    {
+     over "Body"
+     {
+      color3f[] primvars:displayColor = [(0.86, 0.86, 0.84)]
+      token visibility = "invisible"
+     }
+
+     over "Edges"
+     {
+      color3f[] primvars:displayColor = [(0.04, 0.08, 0.12)]
+      token visibility = "invisible"
+     }
+    }
+
+    over "wall_l1_h_002"
+    {
+     over "Body"
+     {
+      color3f[] primvars:displayColor = [(0.72, 0.72, 0.7)]
+      token visibility = "invisible"
+     }
+
+     over "Edges"
+     {
+      color3f[] primvars:displayColor = [(0.04, 0.08, 0.12)]
+      token visibility = "invisible"
+     }
+    }
+
+    over "wall_l1_h_010"
+    {
+     over "Body"
+     {
+      color3f[] primvars:displayColor = [(0.72, 0.72, 0.7)]
+      token visibility = "invisible"
+     }
+
+     over "Edges"
+     {
+      color3f[] primvars:displayColor = [(0.04, 0.08, 0.12)]
+      token visibility = "invisible"
+     }
+    }
+
+    over "wall_l1_h_007"
+    {
+     over "Body"
+     {
+      color3f[] primvars:displayColor = [(0.24, 0.29, 0.32)]
+      token visibility = "inherited"
+     }
+
+     over "Edges"
+     {
+      color3f[] primvars:displayColor = [(0.04, 0.08, 0.12)]
+      token visibility = "inherited"
+     }
+
+     over "EdgeDisplay"
+     {
+      color3f[] primvars:displayColor = [(0.65, 0.32, 0.035)]
+     }
+    }
+
+    over "wall_l1_v_013"
+    {
+     over "Body"
+     {
+      color3f[] primvars:displayColor = [(0.86, 0.86, 0.84)]
+      token visibility = "invisible"
+     }
+
+     over "Edges"
+     {
+      color3f[] primvars:displayColor = [(0.04, 0.08, 0.12)]
+      token visibility = "invisible"
+     }
+    }
+
+    over "wall_l1_v_019"
+    {
+     over "Body"
+     {
+      color3f[] primvars:displayColor = [(0.72, 0.72, 0.7)]
+      token visibility = "invisible"
+     }
+
+     over "Edges"
+     {
+      color3f[] primvars:displayColor = [(0.04, 0.08, 0.12)]
+      token visibility = "invisible"
+     }
+    }
+
+    over "wall_l1_v_012"
+    {
+     over "Body"
+     {
+      color3f[] primvars:displayColor = [(0.72, 0.72, 0.7)]
+      token visibility = "invisible"
+     }
+
+     over "Edges"
+     {
+      color3f[] primvars:displayColor = [(0.04, 0.08, 0.12)]
+      token visibility = "invisible"
+     }
+    }
+
+    over "slab_roof_office"
+    {
+     over "Body"
+     {
+      color3f[] primvars:displayColor = [(0.62, 0.62, 0.6)]
+      token visibility = "invisible"
+     }
+
+     over "Edges"
+     {
+      color3f[] primvars:displayColor = [(0.04, 0.08, 0.12)]
+      token visibility = "invisible"
+     }
+
+     over "Geom"
+     {
+      token visibility = "invisible"
+     }
+    }
+
+    over "door_kitchen"
+    {
+     over "Body"
+     {
+      color3f[] primvars:displayColor = [(0.45, 0.47, 0.5)]
+      token visibility = "invisible"
+     }
+
+     over "Edges"
+     {
+      color3f[] primvars:displayColor = [(0.04, 0.08, 0.12)]
+      token visibility = "invisible"
+     }
+    }
+
+    over "slab_l1_office_n"
+    {
+     over "Body"
+     {
+      color3f[] primvars:displayColor = [(0.62, 0.62, 0.6)]
+      token visibility = "invisible"
+     }
+
+     over "Edges"
+     {
+      color3f[] primvars:displayColor = [(0.04, 0.08, 0.12)]
+      token visibility = "invisible"
+     }
+
+     over "Geom"
+     {
+      token visibility = "invisible"
+     }
+    }
+
+    over "door_stair_1"
+    {
+     over "Body"
+     {
+      color3f[] primvars:displayColor = [(0.45, 0.47, 0.5)]
+      token visibility = "invisible"
+     }
+
+     over "Edges"
+     {
+      color3f[] primvars:displayColor = [(0.04, 0.08, 0.12)]
+      token visibility = "invisible"
+     }
+    }
+
+    over "wall_l1_h_006"
+    {
+     over "Body"
+     {
+      color3f[] primvars:displayColor = [(0.86, 0.86, 0.84)]
+      token visibility = "invisible"
+     }
+
+     over "Edges"
+     {
+      color3f[] primvars:displayColor = [(0.04, 0.08, 0.12)]
+      token visibility = "invisible"
+     }
+    }
+
+    over "wall_l1_h_004"
+    {
+     over "Body"
+     {
+      color3f[] primvars:displayColor = [(0.86, 0.86, 0.84)]
+      token visibility = "invisible"
+     }
+
+     over "Edges"
+     {
+      color3f[] primvars:displayColor = [(0.04, 0.08, 0.12)]
+      token visibility = "invisible"
+     }
+    }
+
+    over "slab_l1_office_s"
+    {
+     over "Body"
+     {
+      color3f[] primvars:displayColor = [(0.62, 0.62, 0.6)]
+      token visibility = "invisible"
+     }
+
+     over "Edges"
+     {
+      color3f[] primvars:displayColor = [(0.04, 0.08, 0.12)]
+      token visibility = "invisible"
+     }
+
+     over "Geom"
+     {
+      token visibility = "invisible"
+     }
+    }
+
+    over "door_office_1"
+    {
+     over "Body"
+     {
+      color3f[] primvars:displayColor = [(0.45, 0.47, 0.5)]
+      token visibility = "invisible"
+     }
+
+     over "Edges"
+     {
+      color3f[] primvars:displayColor = [(0.04, 0.08, 0.12)]
+      token visibility = "invisible"
+     }
+    }
+
+    over "wall_l1_h_003"
+    {
+     over "Body"
+     {
+      color3f[] primvars:displayColor = [(0.72, 0.72, 0.7)]
+      token visibility = "invisible"
+     }
+
+     over "Edges"
+     {
+      color3f[] primvars:displayColor = [(0.04, 0.08, 0.12)]
+      token visibility = "invisible"
+     }
+    }
+
+    over "wall_l1_v_018"
+    {
+     over "Body"
+     {
+      color3f[] primvars:displayColor = [(0.72, 0.72, 0.7)]
+      token visibility = "invisible"
+     }
+
+     over "Edges"
+     {
+      color3f[] primvars:displayColor = [(0.04, 0.08, 0.12)]
+      token visibility = "invisible"
+     }
+    }
+
+    over "wall_l1_v_015"
+    {
+     over "Body"
+     {
+      color3f[] primvars:displayColor = [(0.86, 0.86, 0.84)]
+      token visibility = "invisible"
+     }
+
+     over "Edges"
+     {
+      color3f[] primvars:displayColor = [(0.04, 0.08, 0.12)]
+      token visibility = "invisible"
+     }
+    }
+
+    over "wall_l1_h_009"
+    {
+     over "Body"
+     {
+      color3f[] primvars:displayColor = [(0.72, 0.72, 0.7)]
+      token visibility = "invisible"
+     }
+
+     over "Edges"
+     {
+      color3f[] primvars:displayColor = [(0.04, 0.08, 0.12)]
+      token visibility = "invisible"
+     }
+    }
+
+    over "wall_l1_v_016"
+    {
+     over "Body"
+     {
+      color3f[] primvars:displayColor = [(0.86, 0.86, 0.84)]
+      token visibility = "invisible"
+     }
+
+     over "Edges"
+     {
+      color3f[] primvars:displayColor = [(0.04, 0.08, 0.12)]
+      token visibility = "invisible"
+     }
+    }
+
+    over "door_wc"
+    {
+     over "Body"
+     {
+      color3f[] primvars:displayColor = [(0.45, 0.47, 0.5)]
+      token visibility = "invisible"
+     }
+
+     over "Edges"
+     {
+      color3f[] primvars:displayColor = [(0.04, 0.08, 0.12)]
+      token visibility = "invisible"
+     }
+    }
+
+    over "wall_l1_v_011"
+    {
+     over "Body"
+     {
+      color3f[] primvars:displayColor = [(0.72, 0.72, 0.7)]
+      token visibility = "invisible"
+     }
+
+     over "Edges"
+     {
+      color3f[] primvars:displayColor = [(0.04, 0.08, 0.12)]
+      token visibility = "invisible"
+     }
+    }
+
+    over "wall_l1_h_005"
+    {
+     over "Body"
+     {
+      color3f[] primvars:displayColor = [(0.86, 0.86, 0.84)]
+      token visibility = "invisible"
+     }
+
+     over "Edges"
+     {
+      color3f[] primvars:displayColor = [(0.04, 0.08, 0.12)]
+      token visibility = "invisible"
+     }
+    }
+
+    over "door_meeting_1"
+    {
+     over "Body"
+     {
+      color3f[] primvars:displayColor = [(0.45, 0.47, 0.5)]
+      token visibility = "invisible"
+     }
+
+     over "Edges"
+     {
+      color3f[] primvars:displayColor = [(0.04, 0.08, 0.12)]
+      token visibility = "invisible"
+     }
+    }
+   }
+  }
+ }
+}
+
+over "__ExactPrototypes"
+{
+ over "p_0e4a26dc6ab921b8"
+ {
+  over "Body"
+  {
+   color3f[] primvars:displayColor = [(0.45, 0.2, 0.55)]
+  }
+ }
+
+ over "p_2e609093e8e708b8"
+ {
+  over "Body"
+  {
+   color3f[] primvars:displayColor = [(0.45, 0.2, 0.55)]
+  }
+ }
+}
+
+over "Renders"
+{
+ over "solid"
+ {
+  over "MeasuredClearance"
+  {
+   color3f[] primvars:displayColor = [(0.04, 0.13, 0.19)]
+  }
+
+  over "MeasuredClearanceDisplay"
+  {
+   color3f[] primvars:displayColor = [(0.65, 0.32, 0.035)]
+  }
+ }
+}
+

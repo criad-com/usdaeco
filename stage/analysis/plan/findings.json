@@ -1,0 +1,71 @@
+[
+  {
+    "counts": {
+      "elements": 3009,
+      "levels": 3,
+      "meshes": 3050,
+      "ports": 6244,
+      "spaces": 41
+    },
+    "name": "SourceCounts"
+  },
+  {
+    "message": "Required access extends after enclosure starts.",
+    "name": "AccessAfterEnclosure",
+    "occurrences": 4,
+    "paths": [
+      "/Programme/Fitout/Services/act_ceiling_corridor_fa7147c488",
+      "/Programme/Fitout/Services/act_ceiling_office_ac37b5a243",
+      "/Programme/Fitout/Services/act_first_2172921906",
+      "/Programme/Fitout/Services/act_inspect_03ca3cdbdd",
+      "/demo_datacentre_01/demo_datacentre_01_Site/demo_datacentre_01/L01_Office/Office_Corridor_L01/Corridor_ceiling_void",
+      "/demo_datacentre_01/demo_datacentre_01_Site/demo_datacentre_01/L01_Office/Open_Office/Office_ceiling_void"
+    ],
+    "programme": "A",
+    "severity": "error"
+  },
+  {
+    "message": "Required workspace overlaps an occupancy interval.",
+    "name": "WorkspaceOccupied",
+    "occurrences": 1,
+    "paths": [
+      "/Programme/Fitout/Logistics/act_pod_park_9716c78a83",
+      "/Programme/Fitout/Services/act_ceiling_corridor_fa7147c488",
+      "/demo_datacentre_01/demo_datacentre_01_Site/demo_datacentre_01/L01_Office/Office_Corridor_L01"
+    ],
+    "programme": "A",
+    "severity": "error"
+  },
+  {
+    "message": "Enclosure lacks a completed inspection predecessor over this region.",
+    "name": "EnclosureBeforeInspection",
+    "occurrences": 2,
+    "paths": [
+      "/Programme/Fitout/Services/act_ceiling_corridor_fa7147c488",
+      "/Programme/Fitout/Services/act_ceiling_office_ac37b5a243",
+      "/Programme/Fitout/Services/act_inspect_03ca3cdbdd",
+      "/demo_datacentre_01/demo_datacentre_01_Site/demo_datacentre_01/L01_Office/Office_Corridor_L01/Corridor_ceiling_void",
+      "/demo_datacentre_01/demo_datacentre_01_Site/demo_datacentre_01/L01_Office/Open_Office/Office_ceiling_void"
+    ],
+    "programme": "A",
+    "severity": "warn"
+  },
+  {
+    "activities": 10,
+    "linkInstances": 9,
+    "name": "ProgrammeEvidence",
+    "normalizedEqual": true,
+    "programme": "A",
+    "uniqueTargets": 9,
+    "visibilityTargets": 23
+  },
+  {
+    "activities": 10,
+    "linkInstances": 10,
+    "name": "ProgrammeEvidence",
+    "normalizedEqual": true,
+    "programme": "B",
+    "uniqueTargets": 10,
+    "visibilityTargets": 23
+  }
+]

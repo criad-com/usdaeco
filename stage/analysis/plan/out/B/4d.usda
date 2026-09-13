@@ -1,0 +1,18 @@
+#usda 1.0
+(
+ customLayerData = {
+  string "aeco:layer:package" = "plan"
+  string "aeco:layer:producer" = "hook v0.1.4"
+  string "aeco:layer:role" = "analysis"
+  string "aeco:layer:source" = "kind/usdaeco-plan/examples/datacentre/run.py"
+  string "aeco:layer:sourceSha256" = "3eb75431d86cb884a3ef78789066e83df407a3c47155bb6bd3287537d724e0b5"
+  string "aeco:layer:tag" = "v0.1.4"
+  bool "aeco:plan:derived" = 1
+  string "aeco:plan:epoch" = "2027-03-01"
+  double "aeco:plan:timeCodesPerDay" = 1
+ }
+ endTimeCode = 69
+ startTimeCode = 0
+ timeCodesPerSecond = 24
+)
+

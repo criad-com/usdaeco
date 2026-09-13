@@ -1,54 +1,43 @@
 # Verification scope
 
-The source gate checks this superproject's files and its recorded submodule
-commits. It does not rebuild or recursively re-lint released repositories.
-The submodules retain their release evidence, licences and documentation.
+The source gate checks the usdAECO suite's own files, recorded release gitlinks,
+portable paths and vocabulary. It does not rebuild or recursively lint released
+submodules. Their licences and release evidence remain with their sources.
 
-S01–S05 are adapted to the suite's root files, vocabulary, `suite` kind and
-tier, `suite.json` pin list and generated flake inputs. S25 uses the pinned
-toolchain's term patterns plus suite vocabulary and portable-path checks.
-Only the exact required geometry-kit URLs and technical CSS/font syntax have
-narrow syntax exceptions. All other files and lines remain subject to the
-sweep, including tracked files even if they match an ignore rule.
+The 23 pins follow the scenarios release index except for two explicitly released
+advances in `suite-overrides.json`: the full data-centre delivery and its IFC
+reader. Tag commits, clean checkouts, the indexed gitlinks, generated `suite.json`,
+flake inputs and [suite map](suite.md) are checked independently.
 
-S06–S24 and S27–S29 use the toolchain's applicability rules: this superproject
-defines no schema or built example. S26 runs the toolchain's check-entry-point
-contract. The gate also resolves each release tag in its initialized submodule,
-compares HEAD and the indexed gitlink, rejects dirty submodules, checks generated
-file freshness and verifies documentation targets and image inventory.
+The skeleton gate applies the toolchain's applicability rules to the superproject.
+Its suite adaptations check metadata, source layout, documentation targets,
+image inventory and sanitization. The integrated artifact has its own
+[stage gate and operating guide](../stage/README.md). It measures both forms,
+stock composition and rendering, all registered validators, delivery and analysis
+muting, source provenance, package ownership, views, size caps and reconstruction.
+The manifest preserves raw validator severities and all stated deviations.
 
-The older `aeco-toolchain` tag has no root `library.json`. Its kind, schema-domain
-slot and requirements come from the scenarios release-index card; its tag and
-commit are still independently resolved and checked. The other 22 entries read
-their submodule metadata.
+The older `aeco-toolchain` tag has no root `library.json`; its metadata card comes
+from the release index. All other entries read their own committed metadata.
+The imported schema guide's source hashes and narrow terminology substitutions
+remain recorded in [site.json](site.json).
 
-The imported guide has two prose terminology substitutions. Three assets are
-byte-identical to their supplied originals; the schema guide otherwise retains
-all bytes. Source and imported hashes are recorded in [site.json](site.json).
+Nix packaging for this change is **not proven**. The single attempt used the
+external registry documented by the toolchain and `--no-write-lock-file --no-build`.
+It stopped when the public `usdSolid v0.1.6` input lookup returned HTTP 404.
+No package was built and no lockfile was written. Native stage proofs use
+existing development outputs, whose required ABI relationships are documented
+in the stage guide.
 
-The Nix pin comparison is a pure evaluation assertion, also exposed as
-`lib.pins`. Standard flake checks require a derivation, so `checks.<system>.pins`
-wraps that assertion in a trivial stamp derivation. Use `--no-build` to evaluate
-it without building the stamp or any package. The Python gate independently
-verifies all 23 declared URL/tag pairs offline.
+Run the two gates and tests from the suite root:
 
-The single Nix attempt passed on `aarch64-darwin` in **12.68 seconds**, exit 0,
-with `--offline --no-write-lock-file --no-build`. It used 23 explicit local
-source overrides, the external registry described by the toolchain, and cached
-upstream inputs. Both the pin-check derivation and default dev-shell derivation
-evaluated. **Zero packages were built and no lockfile was written.** Nix omitted
-`x86_64-linux`; that system and a realized dev shell are not proven. Public input
-fetches were not exercised. Local Nix configuration emitted two unsupported-setting
-warnings; neither prevented evaluation. No second attempt was made.
+```sh
+env -u PYTHONPATH "$PYTHON" check.py
+env -u PYTHONPATH "$PYTHON" -m pytest -q
+env -u PYTHONPATH "$PYTHON" stage/check.py --record --rebuild
+```
 
-The source gate reports **56 checks, 0 failed, 0 not run**. Of its 29 skeleton
-rows, 22 report not applicable to this suite; the other 7 execute suite or shared
-checks. It verifies 23 clean release gitlinks, 3 fresh generated files, matching
-versions, 6 documentation files with 119 resolved local links/fragments and
-34 external references that were not fetched. The 4 site assets total
-155,793 bytes; the original 1280×800 PNG is non-uniform and meets the image caps.
-Pytest reports **37 passed** across pin drift, tag resolution, checkout preflight,
-documentation failures and sanitization regressions.
-
-Integrated-stage proofs remain not run; see the
-[stage contract](../stage/README.md).
+The last command needs the native environment described in the stage guide.
+The delivered manifest records actual counts, per-rule warnings, per-folder
+sizes and the reconstruction comparison rather than inferring success from
+source checks alone.

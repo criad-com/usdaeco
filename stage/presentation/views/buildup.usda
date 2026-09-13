@@ -1,0 +1,308 @@
+#usda 1.0
+(
+ customLayerData = {
+  string "aeco:layer:package" = "buildup"
+  string "aeco:layer:producer" = "hook v0.2.5"
+  string "aeco:layer:role" = "presentation"
+  string "aeco:layer:source" = "section/usdaeco-buildup/examples/datacentre/run.py"
+  string "aeco:layer:sourceSha256" = "53d0e90d16eadda33bd1bf08425246b4ad0d2062a740cd107110c42a8e658f84"
+  string "aeco:layer:tag" = "v0.2.5"
+ }
+)
+
+over "demo_datacentre_01"
+{
+ over "demo_datacentre_01_Site"
+ {
+  over "demo_datacentre_01"
+  {
+   over "L00_Ground"
+   {
+    over "wall_l0_h_004"
+    {
+     over "Geom"
+     {
+      token visibility = "invisible"
+     }
+    }
+
+    over "wall_l0_h_005"
+    {
+     over "Geom"
+     {
+      token visibility = "invisible"
+     }
+    }
+
+    over "wall_l0_h_006"
+    {
+     over "Geom"
+     {
+      token visibility = "invisible"
+     }
+    }
+
+    over "wall_l0_v_058"
+    {
+     over "Geom"
+     {
+      token visibility = "invisible"
+     }
+    }
+
+    over "wall_l0_h_002"
+    {
+     over "Geom"
+     {
+      token visibility = "invisible"
+     }
+    }
+
+    over "wall_l0_h_003"
+    {
+     over "Geom"
+     {
+      token visibility = "invisible"
+     }
+    }
+
+    over "wall_l0_v_060"
+    {
+     over "Geom"
+     {
+      token visibility = "invisible"
+     }
+    }
+
+    over "wall_l0_v_045"
+    {
+     over "Geom"
+     {
+      token visibility = "invisible"
+     }
+    }
+
+    over "wall_l0_h_001"
+    {
+     over "Geom"
+     {
+      token visibility = "invisible"
+     }
+    }
+
+    over "wall_l0_v_046"
+    {
+     over "Geom"
+     {
+      token visibility = "invisible"
+     }
+    }
+
+    over "wall_l0_v_059"
+    {
+     over "Geom"
+     {
+      token visibility = "invisible"
+     }
+    }
+   }
+
+   over "L01_Office"
+   {
+    over "wall_l1_h_004"
+    {
+     over "Geom"
+     {
+      token visibility = "invisible"
+     }
+    }
+
+    over "wall_l1_v_015"
+    {
+     over "Geom"
+     {
+      token visibility = "invisible"
+     }
+    }
+
+    over "Open_Office"
+    {
+     over "clg_office"
+     {
+      over "Geom"
+      {
+       token visibility = "invisible"
+      }
+     }
+    }
+
+    over "Office_Corridor_L01"
+    {
+     over "clg_ocorr_1"
+     {
+      over "Geom"
+      {
+       token visibility = "invisible"
+      }
+     }
+    }
+
+    over "wall_l1_v_017"
+    {
+     over "Geom"
+     {
+      token visibility = "invisible"
+     }
+    }
+
+    over "wall_l1_h_001"
+    {
+     over "Geom"
+     {
+      token visibility = "invisible"
+     }
+    }
+
+    over "wall_l1_h_002"
+    {
+     over "Geom"
+     {
+      token visibility = "invisible"
+     }
+    }
+
+    over "wall_l1_v_019"
+    {
+     over "Geom"
+     {
+      token visibility = "invisible"
+     }
+    }
+
+    over "wall_l1_v_012"
+    {
+     over "Geom"
+     {
+      token visibility = "invisible"
+     }
+    }
+
+    over "slab_l1_office"
+    {
+     over "Geom"
+     {
+      token visibility = "invisible"
+     }
+    }
+
+    over "wall_l1_h_003"
+    {
+     over "Geom"
+     {
+      token visibility = "invisible"
+     }
+    }
+
+    over "wall_l1_v_018"
+    {
+     over "Geom"
+     {
+      token visibility = "invisible"
+     }
+    }
+
+    over "wall_l1_v_011"
+    {
+     over "Geom"
+     {
+      token visibility = "invisible"
+     }
+    }
+   }
+
+   over "L02_Office"
+   {
+    over "wall_l2_h_003"
+    {
+     over "Geom"
+     {
+      token visibility = "invisible"
+     }
+    }
+
+    over "wall_l2_v_019"
+    {
+     over "Geom"
+     {
+      token visibility = "invisible"
+     }
+    }
+
+    over "wall_l2_v_012"
+    {
+     over "Geom"
+     {
+      token visibility = "invisible"
+     }
+    }
+
+    over "wall_l2_v_018"
+    {
+     over "Geom"
+     {
+      token visibility = "invisible"
+     }
+    }
+
+    over "wall_l2_v_011"
+    {
+     over "Geom"
+     {
+      token visibility = "invisible"
+     }
+    }
+
+    over "wall_l2_v_017"
+    {
+     over "Geom"
+     {
+      token visibility = "invisible"
+     }
+    }
+
+    over "wall_l2_h_001"
+    {
+     over "Geom"
+     {
+      token visibility = "invisible"
+     }
+    }
+
+    over "wall_l2_h_002"
+    {
+     over "Geom"
+     {
+      token visibility = "invisible"
+     }
+    }
+   }
+
+   over "slab_roof_office"
+   {
+    over "Geom"
+    {
+     token visibility = "invisible"
+    }
+   }
+
+   over "slab_roof_main"
+   {
+    over "Geom"
+    {
+     token visibility = "invisible"
+    }
+   }
+  }
+ }
+}
+

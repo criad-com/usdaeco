@@ -1,44 +1,43 @@
 # usdaeco — the usdAECO suite
 
 The usdAECO suite brings 23 released repositories into one Git superproject:
-schema domains, tools, integrations, data, checks and the [HTML guide](docs/index.html).
-[suite.json](suite.json) selects release train `aeco-0.8.1`; Git records each
-submodule's full commit ID. The [suite map](docs/suite.md) links every README
-and documentation folder.
+schema domains, tools, integrations, a federated demo facility and the
+[HTML guide](docs/index.html). [suite.json](suite.json) lists the pins;
+[the suite map](docs/suite.md) links their documentation.
 
 ## Use case
 
-Use one checkout to navigate the suite and reproduce its selected releases.
-Submodules keep each repository independently versioned. The directory tiers
-make their roles visible; they do not introduce a second USD spatial hierarchy.
-
-The planned integrated example follows a construction delivery: one shared
-spatial structure, discipline packages such as architecture and cooling, then
-analyses and presentation layers. Each package carries its delivered IFC file
-beside a USD twin. A producer stamp records whether a package came from a
-generator, Revit or Bonsai; all three use the same IFC delivery route.
+Open and inspect one building assembled from independently delivered packages,
+then select its security, clash, programme, compliance or representation studies.
+Every discipline has an IFC delivery beside its USD twin. The layer stack records
+who supplied each delivery and which library produced each analysis.
 
 ## The schema on an index card
 
-The suite introduces no schema. Its schema domains extend the closed core
-through applied APIs: one identity, kind through classification, drivers as
-inputs and derived geometry as outputs. Namespace describes location, layers
-describe delivery and ownership, and collections describe groups. See the
+The suite introduces no schema. Its domains extend the closed core through
+applied APIs: one identity, kind through classification, drivers as inputs and
+representations as outputs. Namespace describes location, layers describe
+ownership, and collections describe groups. See the
 [design model](core/usdaeco-core/docs/03-design-model.md) and
 [schema reference](core/usdaeco-core/docs/04-schema-reference.md).
 
 ## The example
 
-The [integrated stage](stage/README.md) is **not built yet**. The contract
-defines three forms of `demo-datacentre-01`: a connected root reading IFC
-packages through `usdIfc`, a self-contained flattened crate, and the same
-layer stack over USD twins that composes without plugins. Discipline and
-analysis layers can be muted independently, with shared transforms preserved.
+The [integrated stage](stage/README.md) contains the `full` facility: three
+storeys, 41 spaces and 3,009 elements, delivered as a shared spatial structure
+and eight discipline packages. Nine analysis directories contain recomputed
+studies and explicitly identified committed exact results.
 
-The target facility combines the base, extra floors, pods, planted pipe clashes
-and security readers into one federated `full` variant. The pinned data release
-currently supplies the separate variants. Existing examples remain available
-through the submodule READMEs in the [suite map](docs/suite.md).
+```sh
+usdview stage/demo-datacentre-01.usd-only.usda
+usdview stage/views/architecture.usda
+usdview stage/views/plan-B.usda
+```
+
+Form C uses portable USD twins and opens without suite plugins. Form A,
+`stage/demo-datacentre-01.usda`, substitutes delivered IFC through the `usdIfc`
+reader. Both use the same analysis and presentation stack. The flattened
+Form B is not included in this release.
 
 ## Build and check
 
@@ -47,106 +46,96 @@ Clone from your Git service's suite URL:
 ```sh
 git clone --recurse-submodules <suite-repository-url> usdaeco
 cd usdaeco
-```
-
-For an existing clone, run `git submodule update --init --recursive`.
-Relative submodule URLs resolve against the superproject's origin. Public
-publication must translate gitlinks to the corresponding public tag commits
-and the two geometry-kit URLs to their public owner before distributing a clone.
-
-Use an existing Python 3.11+ environment with pytest and Pillow. Run directly
-from source; tests insert `tools/` into `sys.path`, with no installed package
-or setuptools dependency. The source gate does not build submodules or load USD.
-
-```sh
 export PYTHON=python3
 env -u PYTHONPATH "$PYTHON" check.py
 env -u PYTHONPATH "$PYTHON" -m pytest -q
-env -u PYTHONPATH "$PYTHON" tools/usdaeco_suite/pins.py --check
-env -u PYTHONPATH "$PYTHON" tools/usdaeco_suite/checkout.py
 ```
 
-The gate prints `N checks, M failed, K not run`. It checks the release index,
-submodule HEADs and gitlinks, generated metadata, matching flake tags, local
-documentation links, site assets, sanitization and version agreement. The
-checkout command reports every pin; `--apply` restores clean submodules to the
-recorded tags after preflighting all of them. It never fetches or discards edits.
-The root `build.sh` currently runs pin freshness and source verification only;
-it explicitly reports that the integrated stage is not built yet.
+For an existing clone, run `git submodule update --init --recursive`.
+Relative URLs resolve against the superproject's origin. Public publication
+must translate gitlinks to the corresponding public tag commits and translate
+the two geometry-kit URLs to their public owner.
 
-Nix inputs use public release tags. The dev shell selects the schema toolchain's
-Python environment. To evaluate the pin assertion without package builds:
+Use Python 3.11+ with pytest and Pillow for source checks. Stage computation
+also needs USD 26.8, numpy, packaging and the execution dependencies described
+in the pinned repositories. Run from source; tests insert `tools/` into
+`sys.path` and require no installed package or setuptools.
+
+The [stage guide](stage/README.md) explains native runtime selection and the
+complete build and proof commands. After configuring those existing runtimes:
 
 ```sh
-nix flake check --no-write-lock-file --no-build
-nix develop
+env -u PYTHONPATH "$PYTHON" stage/build.py
+env -u PYTHONPATH "$PYTHON" stage/check.py --record --rebuild
+env -u PYTHONPATH "$PYTHON" tools/usdaeco_suite/traverse.py --summary
 ```
 
-For private mirrors, follow the toolchain's
-[external registry and input-override instructions](kits/usdaeco-toolchain/README.md#build-and-check).
-Keep deployment mappings outside the checkout and do not commit a lockfile.
-Nix resolution and shell availability are reported separately in
-[verification notes](docs/verification.md).
+Both gates print `N checks, M failed`. The source gate verifies pins, structure,
+versions, documentation links and sanitization. The stage gate records composition,
+reader parity, validators, mute drills, rendering, inventory and reproduction.
+Illustrative domain errors retain their original severities; their counts and
+acceptance deviations are documented in the stage guide and manifest.
 
-To update a pin, fetch the desired release into its submodule and check out its
-tag, for example `git -C section/usdaeco-axis checkout --detach refs/tags/<tag>`.
-Then regenerate the suite, flake input block and documentation map:
+`build.sh` verifies the source and builds Forms A and C. Nix inputs use public
+release tags. The measured Nix attempt failed to resolve a public input;
+Nix packaging remains not proven. Follow the toolchain's
+[external registry instructions](kits/usdaeco-toolchain/README.md#build-and-check)
+for local mirrors. Do not commit a lockfile.
+
+To change a pin, fetch and check out its released tag, update any explicit
+[suite advance](suite-overrides.json), and regenerate the metadata:
 
 ```sh
 env -u PYTHONPATH "$PYTHON" tools/usdaeco_suite/pins.py
-git add section/usdaeco-axis suite.json flake.nix docs/suite.md
+git add suite.json flake.nix docs/suite.md <changed-submodule-path>
 env -u PYTHONPATH "$PYTHON" check.py
-env -u PYTHONPATH "$PYTHON" -m pytest -q
 ```
 
-Stage the gitlink before checking: the gate compares the recorded index to
-HEAD. Pins must form a released train; advance `gate/usdaeco-scenarios` to the
-release whose index names the new tags, update the affected submodules, and
-regenerate together. An isolated tag bump against an older train fails by design.
+Stage the gitlink before checking: the gate compares the index to HEAD.
+`tools/usdaeco_suite/checkout.py` reports every pin; `--apply` restores clean
+submodules only after preflighting the entire selection. It never fetches or
+discards edits.
 
 ## Suite
 
-Each entry in [suite.json](suite.json) records the repository, path, layout
-tier, repository kind, schema domain (or null), exact tag and supported
-requirements. Layout tiers group integrations under `hosts`, tools under
-`kits`, and release checks under `gate`; repository kinds retain their original
-metadata values. The generator reads `library.json` and resolves the tag inside
-each submodule. The older `aeco-toolchain` release has no root metadata, so its
-entry uses the scenarios release-index card.
+The baseline is release train `aeco-0.8.1`. Two explicit advances select the
+federated data release `v0.5.1` and IFC reader `v0.3.1`.
+Each override records a released tag, its full revision and a reason.
+Other pins must still agree with the baseline index.
 
-The [HTML guide](docs/index.html) explains the schema domains; the
-[repository map](docs/suite.md) covers the whole suite. The source checker
-adapts S01–S05 and S25 for the suite kind, release list and relative kit URLs.
-The remaining skeleton rules use the pinned toolchain; schema/example-only
-rules report their inapplicability. See [verification notes](docs/verification.md).
+Each generated entry records its path, tier, repository kind, schema domain,
+exact tag and supported requirements. `library.json` supplies metadata; the
+older processing-toolchain kit uses its release-index card. All 23 submodules
+remain independent repositories at their recorded tags.
 
 ## Layout
 
 | Path | Contents |
 |---|---|
 | core/ | Closed built-environment schema domain |
-| section/ | Shared path and layered-section schema domains |
-| kind/ | Element and analysis schema domains and examples |
+| section/ | Shared path and layered-section domains |
+| kind/ | Element and analysis domains and examples |
 | record/ | Host synchronization records |
 | hosts/ | IFC, Revit and Bonsai integrations |
-| kits/ | Build/check tools, execution and exact-geometry kits |
-| data/ | Released demo facility variants |
+| kits/ | Build/check, execution and exact-geometry tools |
+| data/ | Released demo facility |
 | gate/ | Release scenarios and suite board |
 | docs/ | HTML guide, suite map and verification notes |
-| stage/ | Planned integrated-stage contract |
-| tools/usdaeco_suite/ | Source utilities |
-| tests/ | Source-only pytest checks |
-| testenv/ | Standalone smoke entry point |
-| suite.json | Generated release pins and supported requirements |
-| flake.nix | Matching inputs, evaluated pin assertion and Python shell |
-| build.sh | Source verification entry point; stage build remains planned |
+| stage/ | Connected and USD-only roots, deliveries, analyses, views and proofs |
+| tools/usdaeco_suite/ | Pin, build, traversal and verification utilities |
+| tests/ | Tests executed directly from source |
+| testenv/ | Standalone source smoke entry point |
+| suite.json | Generated repository pins |
+| suite-overrides.json | Explicit advances beyond the baseline train |
+| flake.nix | Matching public inputs and Python shell |
+| build.sh | Source verification and stage build |
 
 ## Status
 
-Version 0.1.0 supplies the superproject and documentation. It proves release
-pin consistency and source structure. Integrated composition, conversion,
-rendering, muting, flattening and reconstruction are not proven by this release;
-their required acceptance checks are in the [stage contract](stage/README.md).
+Version 0.2.0 supplies the integrated stage. Its [guide](stage/README.md)
+records what was run, what uses committed results, and the limits of the
+expected analysis findings and mute-validation deviations. The complete measured
+record is [stage/manifest.json](stage/manifest.json).
 
 ## Licence
 

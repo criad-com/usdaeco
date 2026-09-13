@@ -27,7 +27,7 @@
     usdaeco-solid.flake = false;
     usdaeco-sync.url = "github:criad-com/usdaeco-sync?ref=v0.5.5";
     usdaeco-sync.flake = false;
-    usdaeco-ifc.url = "github:criad-com/usdaeco-ifc?ref=v0.2.3";
+    usdaeco-ifc.url = "github:criad-com/usdaeco-ifc?ref=v0.3.1";
     usdaeco-ifc.flake = false;
     usdaeco-revit.url = "github:criad-com/usdaeco-revit?ref=v0.1.5";
     usdaeco-revit.flake = false;
@@ -41,7 +41,7 @@
     usdSolid.flake = false;
     usdSolidOcct.url = "github:criad-com/usdSolidOcct?ref=v0.1.5";
     usdSolidOcct.flake = false;
-    usdaeco-datacentre.url = "github:criad-com/usdaeco-datacentre?ref=v0.4.9";
+    usdaeco-datacentre.url = "github:criad-com/usdaeco-datacentre?ref=v0.5.1";
     usdaeco-datacentre.flake = false;
     usdaeco-scenarios.url = "github:criad-com/usdaeco-scenarios?ref=v0.8.1";
     usdaeco-scenarios.flake = false;

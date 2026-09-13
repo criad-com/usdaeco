@@ -1,0 +1,15 @@
+{
+  "adaptations": [
+    "Published-source adapter verifies the full delivery hashes and counts."
+  ],
+  "differences": [
+    "findings differ (values, fields or multiplicity outside tolerance)"
+  ],
+  "expectedFindings": 5,
+  "findings": 5,
+  "producer": "hook v0.2.5",
+  "run": true,
+  "source": "kind/usdaeco-wall/examples/datacentre/run.py",
+  "sourceSha256": "9e18f0a19e4439b31ec3dbb5c225b2806f76e62202406a6d905bac191b147479",
+  "tag": "v0.2.5"
+}

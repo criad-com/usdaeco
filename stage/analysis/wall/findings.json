@@ -1,0 +1,42 @@
+[
+  {
+    "counts": {
+      "elements": 3009,
+      "levels": 3,
+      "meshes": 3050,
+      "ports": 6244,
+      "spaces": 41,
+      "unclassified": 2,
+      "unparented": 0
+    },
+    "name": "PublishedCounts"
+  },
+  {
+    "counts": {
+      "AecoBuildUpAPI": 3,
+      "AecoOpeningAPI": 0,
+      "AecoWallAPI": 111,
+      "axesReused": 111,
+      "equivalentSections": 3,
+      "joinTargets": 0,
+      "missingAxes": 0,
+      "missingHeights": 0,
+      "missingWidths": 0,
+      "propsBlocked": 666
+    },
+    "name": "WallPromotion"
+  },
+  {
+    "count": 19,
+    "name": "OfficeWallAxes"
+  },
+  {
+    "count": 0,
+    "findings": [],
+    "name": "ValidatorFindings"
+  },
+  {
+    "count": 41,
+    "name": "ReviewExtentGuidesExcluded"
+  }
+]

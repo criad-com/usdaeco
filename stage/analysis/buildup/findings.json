@@ -1,0 +1,47 @@
+[
+  {
+    "counts": {
+      "elements": 3009,
+      "levels": 3,
+      "meshes": 3050,
+      "ports": 6244,
+      "spaces": 41,
+      "unclassified": 2,
+      "unparented": 0
+    },
+    "name": "PublishedCounts",
+    "source_prims": 12425
+  },
+  {
+    "by_recipe": {
+      "Blockwork": 2,
+      "PlasterboardPartition": 23,
+      "WcLining": 4
+    },
+    "name": "BuildUpPromotion",
+    "types": 3,
+    "walls": 29
+  },
+  {
+    "bodies": 20,
+    "name": "DerivedLayers",
+    "walls": 6
+  },
+  {
+    "name": "FacilityCutaway",
+    "office_facade_and_upper_floor_bodies": 24,
+    "roof_and_ceiling_bodies": 4
+  },
+  {
+    "buildup_rules": 2,
+    "core_rules": 8,
+    "errors": 0,
+    "findings": [
+      {
+        "count": 2,
+        "name": "proxyClassified"
+      }
+    ],
+    "name": "Validation"
+  }
+]

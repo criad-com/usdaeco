@@ -1,0 +1,348 @@
+#usda 1.0
+(
+ customLayerData = {
+  string "aeco:layer:package" = "cctv"
+  string "aeco:layer:producer" = "hook v0.5.6"
+  string "aeco:layer:role" = "analysis"
+  string "aeco:layer:source" = "kind/usdaeco-cctv/examples/datacentre/run.py"
+  string "aeco:layer:sourceSha256" = "20cad38173f7b25d9ecb528dab991cc0e04a445aa0048237ceb51559dc18cee0"
+  string "aeco:layer:tag" = "v0.5.6"
+ }
+)
+
+over "demo_datacentre_01"
+{
+ over "demo_datacentre_01_Site"
+ {
+  over "demo_datacentre_01"
+  {
+   over "L01_Office"
+   {
+    over "Office_Corridor_L01"
+    {
+     over "sec_cam_corr_ocorr_1_2" (
+      prepend apiSchemas = ["AecoCctvCameraTypeAPI", "AecoCctvCameraAPI"]
+     )
+     {
+     }
+
+     over "sec_cam_corr_ocorr_1_1" (
+      prepend apiSchemas = ["AecoCctvCameraTypeAPI", "AecoCctvCameraAPI"]
+     )
+     {
+     }
+    }
+   }
+
+   over "L00_Ground"
+   {
+    over "Office_Corridor_L00"
+    {
+     over "sec_cam_corr_ocorr_0_1" (
+      prepend apiSchemas = ["AecoCctvCameraTypeAPI", "AecoCctvCameraAPI"]
+     )
+     {
+     }
+
+     over "sec_cam_corr_ocorr_0_2" (
+      prepend apiSchemas = ["AecoCctvCameraTypeAPI", "AecoCctvCameraAPI"]
+     )
+     {
+     }
+    }
+
+    over "Corridor_East"
+    {
+     over "sec_cam_corr_corr_e_2" (
+      prepend apiSchemas = ["AecoCctvCameraTypeAPI", "AecoCctvCameraAPI"]
+     )
+     {
+     }
+
+     over "sec_cam_corr_corr_e_1" (
+      prepend apiSchemas = ["AecoCctvCameraTypeAPI", "AecoCctvCameraAPI"]
+     )
+     {
+     }
+
+     over "sec_cam_door_hall_b_e" (
+      prepend apiSchemas = ["AecoCctvCameraTypeAPI", "AecoCctvCameraAPI"]
+     )
+     {
+     }
+    }
+
+    over "Corridor_Spine"
+    {
+     over "sec_cam_corr_corr_spine_6" (
+      prepend apiSchemas = ["AecoCctvCameraTypeAPI", "AecoCctvCameraAPI"]
+     )
+     {
+     }
+
+     over "sec_cam_corr_corr_spine_4" (
+      prepend apiSchemas = ["AecoCctvCameraTypeAPI", "AecoCctvCameraAPI"]
+     )
+     {
+     }
+
+     over "sec_cam_door_mmr_2" (
+      prepend apiSchemas = ["AecoCctvCameraTypeAPI", "AecoCctvCameraAPI"]
+     )
+     {
+     }
+
+     over "sec_cam_door_elec_a" (
+      prepend apiSchemas = ["AecoCctvCameraTypeAPI", "AecoCctvCameraAPI"]
+     )
+     {
+     }
+
+     over "sec_cam_door_elec_b" (
+      prepend apiSchemas = ["AecoCctvCameraTypeAPI", "AecoCctvCameraAPI"]
+     )
+     {
+     }
+
+     over "sec_cam_corr_corr_spine_2" (
+      prepend apiSchemas = ["AecoCctvCameraTypeAPI", "AecoCctvCameraAPI"]
+     )
+     {
+     }
+
+     over "sec_cam_corr_corr_spine_3" (
+      prepend apiSchemas = ["AecoCctvCameraTypeAPI", "AecoCctvCameraAPI"]
+     )
+     {
+     }
+
+     over "sec_cam_corr_corr_spine_5" (
+      prepend apiSchemas = ["AecoCctvCameraTypeAPI", "AecoCctvCameraAPI"]
+     )
+     {
+     }
+
+     over "sec_cam_door_hall_a_s" (
+      prepend apiSchemas = ["AecoCctvCameraTypeAPI", "AecoCctvCameraAPI"]
+     )
+     {
+     }
+
+     over "sec_cam_door_hall_b_s" (
+      prepend apiSchemas = ["AecoCctvCameraTypeAPI", "AecoCctvCameraAPI"]
+     )
+     {
+     }
+
+     over "sec_cam_corr_corr_spine_1" (
+      prepend apiSchemas = ["AecoCctvCameraTypeAPI", "AecoCctvCameraAPI"]
+     )
+     {
+     }
+    }
+
+    over "Corridor_South"
+    {
+     over "sec_cam_corr_corr_s_1" (
+      prepend apiSchemas = ["AecoCctvCameraTypeAPI", "AecoCctvCameraAPI"]
+     )
+     {
+     }
+
+     over "sec_cam_door_office_link" (
+      prepend apiSchemas = ["AecoCctvCameraTypeAPI", "AecoCctvCameraAPI"]
+     )
+     {
+     }
+
+     over "sec_cam_corr_corr_s_2" (
+      prepend apiSchemas = ["AecoCctvCameraTypeAPI", "AecoCctvCameraAPI"]
+     )
+     {
+     }
+
+     over "sec_cam_door_mmr_1" (
+      prepend apiSchemas = ["AecoCctvCameraTypeAPI", "AecoCctvCameraAPI"]
+     )
+     {
+     }
+    }
+
+    over "Corridor_Centre"
+    {
+     over "sec_cam_door_hall_b_w" (
+      prepend apiSchemas = ["AecoCctvCameraTypeAPI", "AecoCctvCameraAPI"]
+     )
+     {
+     }
+
+     over "sec_cam_corr_corr_c_2" (
+      prepend apiSchemas = ["AecoCctvCameraTypeAPI", "AecoCctvCameraAPI"]
+     )
+     {
+     }
+
+     over "sec_cam_door_hall_a_e" (
+      prepend apiSchemas = ["AecoCctvCameraTypeAPI", "AecoCctvCameraAPI"]
+     )
+     {
+     }
+
+     over "sec_cam_corr_corr_c_1" (
+      prepend apiSchemas = ["AecoCctvCameraTypeAPI", "AecoCctvCameraAPI"]
+     )
+     {
+     }
+    }
+
+    over "Corridor_West"
+    {
+     over "sec_cam_door_hall_a_w" (
+      prepend apiSchemas = ["AecoCctvCameraTypeAPI", "AecoCctvCameraAPI"]
+     )
+     {
+     }
+
+     over "sec_cam_corr_corr_w_1" (
+      prepend apiSchemas = ["AecoCctvCameraTypeAPI", "AecoCctvCameraAPI"]
+     )
+     {
+     }
+
+     over "sec_cam_corr_corr_w_2" (
+      prepend apiSchemas = ["AecoCctvCameraTypeAPI", "AecoCctvCameraAPI"]
+     )
+     {
+     }
+    }
+
+    over "Entrance_Lobby"
+    {
+     over "sec_cam_lobby" (
+      prepend apiSchemas = ["AecoCctvCameraTypeAPI", "AecoCctvCameraAPI"]
+     )
+     {
+     }
+
+     over "sec_cam_lobby_fixed_1" (
+      prepend apiSchemas = ["AecoCctvCameraTypeAPI", "AecoCctvCameraAPI"]
+     )
+     {
+     }
+
+     over "sec_cam_lobby_fixed_2" (
+      prepend apiSchemas = ["AecoCctvCameraTypeAPI", "AecoCctvCameraAPI"]
+     )
+     {
+     }
+    }
+   }
+
+   over "L02_Office"
+   {
+    over "Office_Corridor_L01"
+    {
+     over "sec_cam_corr_ocorr_1_2_1" (
+      prepend apiSchemas = ["AecoCctvCameraTypeAPI", "AecoCctvCameraAPI"]
+     )
+     {
+     }
+
+     over "sec_cam_corr_ocorr_1_2_2" (
+      prepend apiSchemas = ["AecoCctvCameraTypeAPI", "AecoCctvCameraAPI"]
+     )
+     {
+     }
+    }
+   }
+  }
+
+  over "Generator_Yard_B"
+  {
+   over "sec_cam_yard_gen_b_fixed_1" (
+    prepend apiSchemas = ["AecoCctvCameraTypeAPI", "AecoCctvCameraAPI"]
+   )
+   {
+   }
+
+   over "sec_cam_yard_b" (
+    prepend apiSchemas = ["AecoCctvCameraTypeAPI", "AecoCctvCameraAPI"]
+   )
+   {
+   }
+
+   over "sec_cam_ext_gen_b" (
+    prepend apiSchemas = ["AecoCctvCameraTypeAPI", "AecoCctvCameraAPI"]
+   )
+   {
+   }
+
+   over "sec_cam_yard_gen_b_fixed_2" (
+    prepend apiSchemas = ["AecoCctvCameraTypeAPI", "AecoCctvCameraAPI"]
+   )
+   {
+   }
+  }
+
+  over "Generator_Yard_A"
+  {
+   over "sec_cam_ext_gen_a" (
+    prepend apiSchemas = ["AecoCctvCameraTypeAPI", "AecoCctvCameraAPI"]
+   )
+   {
+   }
+
+   over "sec_cam_yard_a" (
+    prepend apiSchemas = ["AecoCctvCameraTypeAPI", "AecoCctvCameraAPI"]
+   )
+   {
+   }
+
+   over "sec_cam_yard_gen_a_fixed_1" (
+    prepend apiSchemas = ["AecoCctvCameraTypeAPI", "AecoCctvCameraAPI"]
+   )
+   {
+   }
+
+   over "sec_cam_yard_gen_a_fixed_2" (
+    prepend apiSchemas = ["AecoCctvCameraTypeAPI", "AecoCctvCameraAPI"]
+   )
+   {
+   }
+  }
+
+  over "Heat_Rejection_Yard"
+  {
+   over "sec_cam_yard_hr_fixed_2" (
+    prepend apiSchemas = ["AecoCctvCameraTypeAPI", "AecoCctvCameraAPI"]
+   )
+   {
+   }
+
+   over "sec_cam_ext_plant_ext" (
+    prepend apiSchemas = ["AecoCctvCameraTypeAPI", "AecoCctvCameraAPI"]
+   )
+   {
+   }
+
+   over "sec_cam_ext_dock" (
+    prepend apiSchemas = ["AecoCctvCameraTypeAPI", "AecoCctvCameraAPI"]
+   )
+   {
+   }
+
+   over "sec_cam_ext_main" (
+    prepend apiSchemas = ["AecoCctvCameraTypeAPI", "AecoCctvCameraAPI"]
+   )
+   {
+   }
+
+   over "sec_cam_yard_hr_fixed_1" (
+    prepend apiSchemas = ["AecoCctvCameraTypeAPI", "AecoCctvCameraAPI"]
+   )
+   {
+   }
+  }
+ }
+}
+

@@ -1,0 +1,243 @@
+#usda 1.0
+(
+ customLayerData = {
+  string "aeco:layer:package" = "buildup"
+  string "aeco:layer:producer" = "hook v0.2.5"
+  string "aeco:layer:role" = "analysis"
+  string "aeco:layer:source" = "section/usdaeco-buildup/examples/datacentre/run.py"
+  string "aeco:layer:sourceSha256" = "53d0e90d16eadda33bd1bf08425246b4ad0d2062a740cd107110c42a8e658f84"
+  string "aeco:layer:tag" = "v0.2.5"
+ }
+)
+
+over "demo_datacentre_01"
+{
+ over "_TypeCatalog"
+ {
+  class "OfficeBuildUp_PlasterboardPartition" (
+   prepend apiSchemas = ["AecoBuildUpAPI"]
+   displayName = "Plasterboard partition — 150 mm"
+   prepend inherits = </demo_datacentre_01/_TypeCatalog/Internal_Wall_150>
+  )
+  {
+   token[] aeco:buildUp:functions = ["finish", "structure", "finish"]
+   string[] aeco:buildUp:materials = ["Plasterboard", "Metal stud and insulation zone", "Plasterboard"]
+   int[] aeco:buildUp:priorities = [10, 50, 10]
+   double[] aeco:buildUp:thicknesses = [0.025, 0.1, 0.025]
+  }
+
+  class "OfficeBuildUp_Blockwork" (
+   prepend apiSchemas = ["AecoBuildUpAPI"]
+   displayName = "Finished blockwork — 200 mm"
+   prepend inherits = </demo_datacentre_01/_TypeCatalog/Fire_Wall_200>
+  )
+  {
+   token[] aeco:buildUp:functions = ["finish", "structure", "finish"]
+   string[] aeco:buildUp:materials = ["Plaster", "Dense concrete blockwork", "Plaster"]
+   int[] aeco:buildUp:priorities = [10, 50, 10]
+   double[] aeco:buildUp:thicknesses = [0.015, 0.17, 0.015]
+  }
+
+  class "OfficeBuildUp_WcLining" (
+   prepend apiSchemas = ["AecoBuildUpAPI"]
+   displayName = "WC lined partition — 150 mm"
+   prepend inherits = </demo_datacentre_01/_TypeCatalog/Internal_Wall_150>
+  )
+  {
+   token[] aeco:buildUp:functions = ["finish", "structure", "substrate", "finish"]
+   string[] aeco:buildUp:materials = ["Plasterboard", "Metal stud and insulation zone", "Moisture-resistant board", "Tile finish"]
+   int[] aeco:buildUp:priorities = [10, 50, 20, 10]
+   double[] aeco:buildUp:thicknesses = [0.025, 0.1, 0.015, 0.01]
+  }
+ }
+
+ over "demo_datacentre_01_Site"
+ {
+  over "demo_datacentre_01"
+  {
+   over "L00_Ground"
+   {
+    over "wall_l0_h_004" (
+     inherits = </demo_datacentre_01/_TypeCatalog/OfficeBuildUp_PlasterboardPartition>
+    )
+    {
+    }
+
+    over "wall_l0_h_005" (
+     inherits = </demo_datacentre_01/_TypeCatalog/OfficeBuildUp_PlasterboardPartition>
+    )
+    {
+    }
+
+    over "wall_l0_h_006" (
+     inherits = </demo_datacentre_01/_TypeCatalog/OfficeBuildUp_Blockwork>
+    )
+    {
+    }
+
+    over "wall_l0_h_007" (
+     inherits = </demo_datacentre_01/_TypeCatalog/OfficeBuildUp_PlasterboardPartition>
+    )
+    {
+    }
+
+    over "wall_l0_h_008" (
+     inherits = </demo_datacentre_01/_TypeCatalog/OfficeBuildUp_PlasterboardPartition>
+    )
+    {
+    }
+
+    over "wall_l0_v_049" (
+     inherits = </demo_datacentre_01/_TypeCatalog/OfficeBuildUp_PlasterboardPartition>
+    )
+    {
+    }
+
+    over "wall_l0_v_050" (
+     inherits = </demo_datacentre_01/_TypeCatalog/OfficeBuildUp_PlasterboardPartition>
+    )
+    {
+    }
+
+    over "wall_l0_v_051" (
+     inherits = </demo_datacentre_01/_TypeCatalog/OfficeBuildUp_PlasterboardPartition>
+    )
+    {
+    }
+
+    over "wall_l0_v_052" (
+     inherits = </demo_datacentre_01/_TypeCatalog/OfficeBuildUp_PlasterboardPartition>
+    )
+    {
+    }
+
+    over "wall_l0_v_055" (
+     inherits = </demo_datacentre_01/_TypeCatalog/OfficeBuildUp_PlasterboardPartition>
+    )
+    {
+    }
+
+    over "wall_l0_v_058" (
+     inherits = </demo_datacentre_01/_TypeCatalog/OfficeBuildUp_Blockwork>
+    )
+    {
+    }
+   }
+
+   over "L01_Office"
+   {
+    over "wall_l1_h_004" (
+     inherits = </demo_datacentre_01/_TypeCatalog/OfficeBuildUp_WcLining>
+    )
+    {
+    }
+
+    over "wall_l1_h_005" (
+     inherits = </demo_datacentre_01/_TypeCatalog/OfficeBuildUp_PlasterboardPartition>
+    )
+    {
+    }
+
+    over "wall_l1_h_006" (
+     inherits = </demo_datacentre_01/_TypeCatalog/OfficeBuildUp_PlasterboardPartition>
+    )
+    {
+    }
+
+    over "wall_l1_h_007" (
+     inherits = </demo_datacentre_01/_TypeCatalog/OfficeBuildUp_PlasterboardPartition>
+    )
+    {
+    }
+
+    over "wall_l1_h_008" (
+     inherits = </demo_datacentre_01/_TypeCatalog/OfficeBuildUp_PlasterboardPartition>
+    )
+    {
+    }
+
+    over "wall_l1_v_013" (
+     inherits = </demo_datacentre_01/_TypeCatalog/OfficeBuildUp_PlasterboardPartition>
+    )
+    {
+    }
+
+    over "wall_l1_v_014" (
+     inherits = </demo_datacentre_01/_TypeCatalog/OfficeBuildUp_PlasterboardPartition>
+    )
+    {
+    }
+
+    over "wall_l1_v_015" (
+     inherits = </demo_datacentre_01/_TypeCatalog/OfficeBuildUp_WcLining>
+    )
+    {
+    }
+
+    over "wall_l1_v_016" (
+     inherits = </demo_datacentre_01/_TypeCatalog/OfficeBuildUp_PlasterboardPartition>
+    )
+    {
+    }
+   }
+
+   over "L02_Office"
+   {
+    over "wall_l2_h_004" (
+     inherits = </demo_datacentre_01/_TypeCatalog/OfficeBuildUp_WcLining>
+    )
+    {
+    }
+
+    over "wall_l2_h_005" (
+     inherits = </demo_datacentre_01/_TypeCatalog/OfficeBuildUp_PlasterboardPartition>
+    )
+    {
+    }
+
+    over "wall_l2_h_006" (
+     inherits = </demo_datacentre_01/_TypeCatalog/OfficeBuildUp_PlasterboardPartition>
+    )
+    {
+    }
+
+    over "wall_l2_h_007" (
+     inherits = </demo_datacentre_01/_TypeCatalog/OfficeBuildUp_PlasterboardPartition>
+    )
+    {
+    }
+
+    over "wall_l2_h_008" (
+     inherits = </demo_datacentre_01/_TypeCatalog/OfficeBuildUp_PlasterboardPartition>
+    )
+    {
+    }
+
+    over "wall_l2_v_013" (
+     inherits = </demo_datacentre_01/_TypeCatalog/OfficeBuildUp_PlasterboardPartition>
+    )
+    {
+    }
+
+    over "wall_l2_v_014" (
+     inherits = </demo_datacentre_01/_TypeCatalog/OfficeBuildUp_PlasterboardPartition>
+    )
+    {
+    }
+
+    over "wall_l2_v_015" (
+     inherits = </demo_datacentre_01/_TypeCatalog/OfficeBuildUp_WcLining>
+    )
+    {
+    }
+
+    over "wall_l2_v_016" (
+     inherits = </demo_datacentre_01/_TypeCatalog/OfficeBuildUp_PlasterboardPartition>
+    )
+    {
+    }
+   }
+  }
+ }
+}
+

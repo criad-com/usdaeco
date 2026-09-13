@@ -1,134 +1,238 @@
-# Integrated stage — not built yet
+# Integrated demo data centre
 
-This is the contract for a future integrated `demo-datacentre-01` stage.
-**No roots, packages, analysis results, manifest, build tools or proofs below
-have been built yet.** The current suite pins the existing separate examples.
+Open **`demo-datacentre-01.usd-only.usda`** to inspect the complete usdAECO suite
+stage without installing its plugins. The delivered facility has **3,009
+elements, 41 spaces and three levels**, shared by all analyses. A [stock USD render](vanilla.png) is included.
 
-The facility will be the `full` union of the base, floors, pod, clash and iris
-fixtures: three storeys, pods and fix products, the planted pipes and security
-readers. It will arrive as a shared spatial spine plus eight discipline packages:
-architecture (`arch`), structure, cooling, electrical, IT (`it`), fitout, security
-and site. The data repository's federated `dist/full` release and the IFC
-repository's `usdIfc` reader are prerequisites; neither is in the current pins.
-
-## Three forms
-
-| Form | Planned root | Contract |
+| Form | File | Runtime |
 |---|---|---|
-| A | `demo-datacentre-01.usda` | Connected: sublayers delivered IFC files directly through the `usdIfc` Sdf file-format plugin |
-| B | `demo-datacentre-01.flat.usdc` | `Usd.Stage.Flatten` of A; self-contained, opens without plugins; manifest records its hash |
-| C | `demo-datacentre-01.usd-only.usda` | The same layer stack over committed USD twins; composes without plugins, enriched by optional schema domains |
+| A | `demo-datacentre-01.usda` | ABI-matched `usdIfc` file-format reader |
+| C | `demo-datacentre-01.usd-only.usda` | Stock USD; optional schema plugins enrich queries |
 
-The IFC reader accepts `spine=over|def` (default `def`) and `geometry=0|1`.
-Connected discipline inputs use `spine=over`; only the shared package defines
-the spatial prims. A connected layer identifier will have the shape
-`@packages/cooling/cooling.ifc:SDF_FORMAT_ARGS:spine=over@`.
-Its twin is `packages/cooling/cooling.usda`, with semantic and geometry layers
-beside it. Form C avoids external-source connections; all authored `Aeco*`
-typed prims carry stock USD fallbacks. Form B resolves composition and assets.
+The flattened Form B is not supplied here. The source is
+`usdaeco-datacentre v0.5.1`; the reader is `usdaeco-ifc v0.3.1`.
 
-## Planned layout
+## Open, select and mute
 
-```text
-stage/
-  demo-datacentre-01.usda
-  demo-datacentre-01.flat.usdc
-  demo-datacentre-01.usd-only.usda
-  packages/
-    shared/                         shared.ifc + shared.usda + semantic/geometry layers
-    arch/                           arch.ifc + arch.usda + semantic/geometry layers
-    structure/                      structure.ifc + structure.usda + semantic/geometry layers
-    cooling/                        cooling.ifc + cooling.usda + semantic/geometry layers
-    electrical/                     electrical.ifc + electrical.usda + semantic/geometry layers
-    it/                             it.ifc + it.usda + semantic/geometry layers
-    fitout/                         fitout.ifc + fitout.usda + semantic/geometry layers
-    security/                       security.ifc + security.usda + semantic/geometry layers
-    site/                           site.ifc + site.usda + semantic/geometry layers
-  analysis/
-    cctv/                           kind, derived, studies, findings
-    clash/                          results, exact-results
-    plan/                           programme A and B, 4D, playback
-    compliance/                     requirements and findings
-    repeat/                         composition and quantities
-    solid/                          exact bodies and display twins
-  presentation/<library>.usda
-  views/<view>.usda
-  manifest.json
-  build.py
-  check.py
-  README.md
+Run these commands from the suite root:
+
+```sh
+usdview stage/demo-datacentre-01.usd-only.usda
+usdview stage/views/shell.usda
+usdview stage/views/architecture.usda
+usdview stage/views/mep.usda
+usdview stage/views/cctv.usda
+usdview stage/views/plan-A.usda
+usdview stage/views/plan-B.usda
 ```
 
-Each package folder also has `README.md`, `drivers.usda`, `derived.usda` and
-`presentation.usda`. Delivered files and twins are copied from `dist/full`
-with source hashes recorded. The shared package alone defines project, site,
-facility, levels, spaces and zones. Disciplines `over` that spine and define
-only their own elements, types, systems and ports. Space extents are guides.
+Package views are `shell`, `site`, `architecture`, `structure`, `mep`,
+`electrical`, `it`, `fitout` and `security`. Analysis views are `cctv`, `clash`,
+`plan`, `plan-A`, `plan-B`, `compliance`, `repeat`, `solid`, `wall`, `pipe` and
+`buildup`. `all` opens Form C. The `plan-A` and `plan-B` views span frames 0–77 at 24 fps;
+the integrated root spans 0–288, including the CCTV tours.
 
-Every layer stamps `customLayerData` keys
-`aeco:layer:{role,package,producer,source,sourceSha256,tag}`. Package READMEs
-identify the producer. The generator supplies all packages first; subsequent
-Revit or Bonsai IFC exports replace a delivery and its producer stamp without
-changing how it composes. Live synchronization sessions remain in the integration
-repositories' examples.
+In usdview's layer browser, mute `packages/cooling/cooling.usda` to remove that
+delivery, or `analysis/cctv/root.usda` to remove the CCTV analysis. In Form A,
+mute the corresponding `cooling.ifc` layer. Each package also has separately
+mutable presentation, catalog drivers and, where needed, representation
+placement layers. A study's display opinions remain independently selectable.
 
-## Composition and ownership
+Open a different small root under `views/` to switch selections. Each package
+view includes the shared spatial structure. Analysis views use the full
+facility. Their cutaway visibility is in `presentation/views/`; the integrated
+root keeps the delivered building visible. Cameras have distinct paths such as
+`/Renders/cctv/overview` and `/Renders/plan/B`.
 
-From strongest to weakest, A and C stack presentation layers, analysis layers,
-each discipline's presentation/derived/drivers/delivery layers, then the shared
-package. A uses IFC deliveries; C substitutes their USD twins. Each discipline
-and analysis has layers that can be muted independently and declares its ownership.
-Muting a package or analysis must leave the remaining geometry's world
-transforms unchanged. Cross-package port dependencies are named in the manifest.
+The spatial traversal starts at the site's actual path below
+`/demo_datacentre_01`. The catalog and systems also sit below that project root.
+The traversal utility reports levels, spaces, elements and the package owning
+the defining spec; a stronger analysis overlay cannot claim ownership:
 
-There is one building namespace under `/demo_datacentre_01_Site`. Analyses have
-their own roots outside the building. Systems and zones live under `/Systems`
-and `/Zones`, with catalog classes under `/_TypeCatalog`. One `Usd.PrimRange`
-traversal identifies spatial prims through `IsA(AecoSpatialBase)` and elements
-through `HasAPI(AecoElementAPI)`. A future suite traversal utility reports level,
-space, element and the package that owns the element's defining spec.
+```sh
+export PYTHON=python3
+env -u PYTHONPATH "$PYTHON" tools/usdaeco_suite/traverse.py --summary
+env -u PYTHONPATH "$PYTHON" tools/usdaeco_suite/traverse.py --package cooling
+```
 
-The root declares `defaultPrim = demo_datacentre_01`, metres, Z-up, the union of
-all required `fallbackPrimTypes`, start time 0 and the union end time. Individual
-4D views declare their own time ranges. Schema plugins register core first;
-derived properties declare `aecoDerived = true` in schema definitions. Editors
-write drivers; derivations author separate layers and mark derived gprims.
+## Deliveries and layer order
 
-Analyses are recomputed on `full` using hooks from the pinned submodules.
-Committed example results may be used only as a declared fallback with their
-run/not-run status in the manifest. Presentation layers contain cameras,
-visibility and display colour. Cameras move to `/Renders/<library>/<camera>`
-to remove name collisions; presentation never changes building transforms.
+`packages/` contains `shared`, `site`, `arch`, `structure`, `cooling`,
+`electrical`, `it`, `fitout` and `security`. Each directory contains its IFC,
+USD root, semantic layer, geometry crate, README and local overlays.
+The shared delivery alone defines the spatial structure. Other deliveries
+overlay it and define their elements, catalog types, systems and ports.
 
-## Views, manifest and reproduction
+The 36 delivered IFC/USD files are copied byte for byte. Their source stamps
+retain the original production tag, while the suite manifest records the
+release that supplied those bytes. `dc.manifest.json` is the unchanged source
+publication manifest. Package READMEs include the producer and measured census.
 
-Small root layers select subsets of the same stack: `shell`, `architecture`,
-`structure`, `mep`, `electrical`, `it`, `fitout`, `security`, `site`, `cctv`,
-`clash`, `plan-A`, `plan-B`, `compliance`, `repeat`, `solid` and `all`.
-Views use sublayer lists and documented muting, with no view variant set.
+Strongest first, the roots compose presentation, analysis roots, then each
+package's presentation, optional derived placement, catalog drivers and delivery.
+Shared is last. Form A replaces each USD delivery with
+`<discipline>.ifc:SDF_FORMAT_ARGS:spine=over&geometry=1`; shared uses ordinary
+`shared.ifc`. All roots declare the union of 17 stock fallback types.
 
-The manifest inventories every layer, role, package, producer, source hash,
-counts, executed or unexecuted computation, release tag and cross-package port
-link. The build reconstructs outputs from the pinned repositories. The suite
-`build.sh` entry point will be extended to produce the flattened crate: commit it if it
-is at most 10,000,000 bytes, otherwise publish a release asset. Record both its
-file hash and deterministic `sdf-usda-v1` normalized hash. The federated source
-publication has a separate 40 MB cap including delivered IFC files.
+The IFC reader flattens each materialization. Package driver layers restore
+catalog inheritance, and analysis inheritance overlays propagate introduced
+type APIs to occurrences. This lets upper-layer type refinements reach both
+forms. No copied delivery is rewritten. Bulk analysis geometry uses `.usdc` crates;
+drivers, findings and small roots remain readable USDA.
 
-## Required proofs — all not run
+Computed representation placements belong to their delivering package. They
+use world anchors, retaining authored animation samples, so independently
+muted analysis fragments do not remove another representation's placement.
+Render camera definitions and their final poses live together in each analysis's
+`cameras.usda`; presentation layers contain only visibility and display colour.
+Programme pod relocation is restricted to programme views; the integrated
+facility retains its delivered placement.
 
-1. Form C without plugins and A with only `usdIfc` have identical prim counts
-   and world transforms. Relocation and stock rendering meet S27/S28.
-2. A and C with all suite plugins run every registered validator: zero errors,
-   with warnings recorded against the suite profile.
-3. Muting each package and analysis in turn still composes, preserves every
-   remaining world transform and introduces no validation error except named
-   dangling cross-package port links already listed in the manifest.
-4. B equals `Flatten(A)`, has a deterministic normalized hash, opens without
-   plugins and obeys the crate size/publication rule.
-5. Every layer has its required stamps; the manifest matches the tree; each
-   IFC delivery read through `usdIfc` matches its USD twin's census and transforms.
-6. Rebuilding from the recorded tags produces byte-identical text layers.
+## Analyses and findings
 
-These are acceptance requirements, not evidence from version 0.1.0. The
-[suite verification notes](../docs/verification.md) describe what is checked now.
+| Analysis | Production |
+|---|---|
+| CCTV | Full-facility import, camera derivation and two coverage studies |
+| Clash | Mesh study recomputed; committed exact bodies and exact findings retained |
+| Plan | Both XER/MSPDI programmes recomputed; B selected in the integrated root |
+| Compliance | Reader clauses evaluated; receipts refreshed against the final stack |
+| Repeat | Floor comparison, reconstruction and quantities; quantities refreshed after other promotions |
+| Solid | Committed exact result, rebased over the full facility |
+| Wall | Wall promotion and office axes recomputed |
+| Pipe | Pipe promotion and axis derivation recomputed |
+| BuildUp | Wall recipes and representative layered bodies recomputed |
+| Axis | Executed through the Wall and Pipe hooks; no standalone data-centre hook exists |
+
+Each directory has `findings.json` and `receipt.json`. The latter compares the
+real findings with the pinned example's expected shape; changed counts are
+reported, not forced to match the smaller source fixture. `integration.json`
+records computations refreshed against the final combined stack.
+
+The released hooks contain fixture assumptions. The suite's bounded adapters
+use the full publication's camera census, source hashes and counts, select
+among multiple WC spaces, and exclude prototype-only spatial extents before
+running Repeat's original reconstruction proof. The submodules are unchanged.
+
+Exact material face subsets on `BrepArray` have no stock USD element domain;
+the integration omits those material-only subsets, retaining the mesh twins'
+appearance and the exact geometry. Empty material-binding opinions are omitted
+and authored bindings declare `MaterialBindingAPI`. Equivalent world placement
+changes refresh exact/twin correlation stamps without claiming new tessellation.
+
+## Reproduce and verify
+
+For computation, use the converter Python with USD 26.8, numpy, packaging,
+IfcOpenShell, Pillow and the dependencies supplied by the pinned repositories.
+No package installation is required. Source imports come from each submodule's
+`tools/` directory.
+
+Build `usdIfc` against an **existing** toolchain USD development output:
+
+```sh
+export USD_DEV="$USD_DEV_OUTPUT"
+export BUILD_DIR="$PWD/hosts/usdaeco-ifc/out/build"
+export PREFIX="$PWD/hosts/usdaeco-ifc/out"
+bash hosts/usdaeco-ifc/build.sh
+```
+
+The native consumer and its Python must match that USD ABI. Select the existing
+native schema and validator resources and a Python environment containing its
+USD bindings, numpy and packaging:
+
+```sh
+export USDAECO_VALIDATION_PYTHON="$NATIVE_PYTHON"
+export USDAECO_VALIDATION_PYTHONPATH="$NATIVE_PYTHON_SITE"
+export USDAECO_NATIVE_PLUGINPATH="$USD_SOLID_SCHEMA/lib/usdSolid/resources:$USD_SOLID_VALIDATORS/lib/usdSolidValidators/resources"
+export USD_SOLID_OCCT_RUNTIME="$EXACT_RUNTIME"
+export AECO_EXACT_CACHE="$PWD/out/exact-cache"
+export USDRECORD="$STOCK_USD/bin/usdrecord"
+env -u PYTHONPATH "$PYTHON" stage/build.py
+env -u PYTHONPATH "$PYTHON" stage/check.py --record --rebuild
+env -u PYTHONPATH "$PYTHON" check.py
+env -u PYTHONPATH "$PYTHON" -m pytest -q
+```
+
+These variables name existing outputs, not downloads. `NATIVE_PYTHON_SITE` is
+a path list containing the matching USD, numpy and packaging modules. Use the
+pinned `usdSolid` schema and validators. The exact runtime's `paths.json` supplies
+its ABI-matched bridge consumer. The checker reads the IFC consumer Python
+from `USD_DEV/pxrConfig.cmake` and keeps materialization caches under `out/`.
+See the [reader setup](../hosts/usdaeco-ifc/docs/file-format.md).
+
+To open Form A in a matching USD process:
+
+```sh
+export USDAECO_IFC_PYTHON="$PWD/hosts/usdaeco-ifc/tools/ifc-python"
+export USDAECO_IFC_SOURCE_PYTHON="$PYTHON"
+export USDAECO_IFC_CACHE="$PWD/out/ifc-cache"
+export CORE_PLUGIN_DIR="$PWD/core/usdaeco-core/usdAeco"
+export AXIS_PLUGIN_DIR="$PWD/section/usdaeco-axis/usdAecoAxis"
+export PXR_PLUGINPATH_NAME="$PWD/hosts/usdaeco-ifc/out/plugins/usdIfc/resources"
+usdview stage/demo-datacentre-01.usda
+```
+
+Optional schema registration is performed before opening stages, with core
+first. The source resource directories are used directly; only the IFC reader
+and native kit libraries require compiled binaries.
+
+`stage/build.py --smoke` selects CCTV only. `--output` builds a separate copy.
+The development option `--reuse-hooks` only rearchives existing work; it is not
+a reconstruction proof. Normal builds rerun hooks. The checker can reuse a
+successful probe with `--use-evidence` only when its stage, probe code and runtime
+receipt match. `--rebuild` reruns the hooks and compares all text layers. If a separate build
+has just completed, `--compare-rebuild out/stage-rebuilt` compares that output
+without repeating its computations.
+
+## Acceptance and deviations
+
+The manifest contains the measured prim and mesh census, per-rule warnings,
+per-layer mute table (default and authored transform samples), strict checker result, plugin-free render and byte comparison.
+Copied source hashes, every authored layer's role and producer, and file sizes
+are checked. The stage cap is 80,000,000 bytes; each analysis USDA is capped at
+2,000,000 bytes and each analysis publication at 10,000,000 bytes.
+
+| Measured proof | Result |
+|---|---:|
+| Connected and USD-only prims | 15,576 each; identical |
+| Compared meshes | 3,583; two declared exclusions |
+| Plugin-free views | 21 |
+| Registered validators executed | 124 |
+| Unexpected integration errors | 0 |
+| Expected findings (error severity) | 55 |
+| Animated prims / transform samples | 19 / 109 |
+| Mute cases / placement changes | 117 / 0 |
+| Predicted and observed dangling port sites | 1,008 each |
+| Stage gate | 10 checks, 0 failed |
+| Text layers in the rebuild comparison | 177 |
+| Source gate | 56 checks, 0 failed |
+| Pytest | 43 passed |
+
+The published analyses encode expected findings with validator error severity:
+2 `MisplacedDevice` results from Compliance and 53 `RepeatDrift` results from
+Repeat. `expectedFindings` names each rule, count, producing library and its
+`integrated-findings.json`. The gate independently cross-checks those analysis
+findings and requires the validator error multiset to match exactly. Any extra
+error, including `ComplianceStale`, fails. The final full-plugin computation
+has no stale compliance receipts; `integrationFindings` is empty.
+
+The mute table covers 97 used layers (including 19 empty layers) and 20
+view-only layers absent from the integrated stack. Sixty cases expose
+additional analysis dependency errors.
+
+Muting source or analysis dependencies can invalidate persisted derived receipts
+and proxy links. The mute table retains those diagnostic counts separately from
+composition, transform changes and the source manifest's predicted cross-package
+port links. This is a deviation from the port-only diagnostic requirement; it does not
+claim that a muted study remains current.
+
+Nine upstream USD source stamps (the three twin layers for cooling, electrical
+and IT) do not match their delivered IFC hashes. Those source bytes are retained
+exactly; `sourceStampDifferences` records the mismatch separately from the
+verified copy hashes and the suite-authored provenance.
+
+The exact producer hooks remain tied to their original native generation
+recipes; their committed results are identified explicitly. Full-facility exact
+recomputation is not proven. Nix packaging is not proven: the single attempt
+stopped at a public input lookup returning HTTP 404. The measured stock CPU
+renderer uses USD 25.05.01; connected reads and strict checks use the supplied
+USD 26.11 runtime, while plugin-free composition is also checked with USD 26.8.

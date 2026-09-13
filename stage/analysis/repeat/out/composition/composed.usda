@@ -1,0 +1,40 @@
+#usda 1.0
+(
+ customLayerData = {
+  string "aeco:layer:package" = "repeat"
+  string "aeco:layer:producer" = "hook v0.2.1"
+  string "aeco:layer:role" = "analysis"
+  string "aeco:layer:source" = "kind/usdaeco-repeat/examples/datacentre/run.py"
+  string "aeco:layer:sourceSha256" = "1b931ed764ad3b73341738c7ba6d25433424cd5d02c520927466898467965b11"
+  string "aeco:layer:tag" = "v0.2.1"
+ }
+ defaultPrim = "demo_datacentre_01"
+ fallbackPrimTypes = {
+  token[] AecoActivity = ["Scope"]
+  token[] AecoClashResult = ["Scope"]
+  token[] AecoClashTest = ["Scope"]
+  token[] AecoFacility = ["Xform"]
+  token[] AecoFacilityPart = ["Xform"]
+  token[] AecoLevel = ["Xform"]
+  token[] AecoMilestone = ["Scope"]
+  token[] AecoPort = ["Xform"]
+  token[] AecoProgramme = ["Scope"]
+  token[] AecoRequirement = ["Scope"]
+  token[] AecoSite = ["Xform"]
+  token[] AecoSpace = ["Xform"]
+  token[] AecoSpecification = ["Scope"]
+  token[] AecoSyncDiagnostic = ["Scope"]
+  token[] AecoSystem = ["Scope"]
+  token[] AecoZone = ["Scope"]
+  token[] BrepArray = ["Xform"]
+ }
+ metersPerUnit = 1
+ subLayers = [
+  @deviations.usda@,
+  @occurrences.usda@,
+  @additions.usda@,
+  @prototype.usda@
+ ]
+ upAxis = "Z"
+)
+

@@ -1,0 +1,16 @@
+{
+  "adaptations": [
+    "Fixed floors source lookup aliases the full publication.",
+    "Deactivate prototype-only spatial extents absent from the occurrence, then run the original exact subtree proof."
+  ],
+  "differences": [
+    "findings differ (values, fields or multiplicity outside tolerance)"
+  ],
+  "expectedFindings": 6,
+  "findings": 32,
+  "producer": "hook v0.2.1",
+  "run": true,
+  "source": "kind/usdaeco-repeat/examples/datacentre/run.py",
+  "sourceSha256": "1b931ed764ad3b73341738c7ba6d25433424cd5d02c520927466898467965b11",
+  "tag": "v0.2.1"
+}

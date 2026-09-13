@@ -1,0 +1,652 @@
+#usda 1.0
+(
+ customLayerData = {
+  string "aeco:layer:package" = "repeat"
+  string "aeco:layer:producer" = "hook v0.2.1"
+  string "aeco:layer:role" = "analysis"
+  string "aeco:layer:source" = "kind/usdaeco-repeat/examples/datacentre/run.py"
+  string "aeco:layer:sourceSha256" = "1b931ed764ad3b73341738c7ba6d25433424cd5d02c520927466898467965b11"
+  string "aeco:layer:tag" = "v0.2.1"
+  string description = "Office cutaway: only its roof is hidden; amber is the changed partition, green the extra door. Source geometry and identity are preserved; derived outlines emphasize the subjects."
+ }
+)
+
+over "demo_datacentre_01"
+{
+ over "demo_datacentre_01_Site"
+ {
+  over "demo_datacentre_01"
+  {
+   over "L01_Office"
+   {
+    over "Open_Office"
+    {
+     over "Office_ceiling_void"
+     {
+      over "fcu_office_1"
+      {
+       def BasisCurves "RepeatHighlight" (
+        prepend apiSchemas = ["AecoDerivedGeometryAPI"]
+       )
+       {
+        uniform token aeco:derived:approx = "bbox"
+        rel aeco:derived:from = </demo_datacentre_01/demo_datacentre_01_Site/demo_datacentre_01/L01_Office/Open_Office/Office_ceiling_void/fcu_office_1/Geom>
+        uniform token aeco:derived:role = "symbol"
+        string aeco:derived:source = "2fe22371-268e-5c7b-8e4c-d6fe6fd52e15"
+        string aeco:derived:stamp = "repeat-highlight-v1"
+        int[] curveVertexCounts = [4]
+        point3f[] points = [(-0.68, -0.48000002, 0.28), (0.68, -0.48000002, 0.28), (0.68, 0.48000002, 0.28), (-0.68, 0.48000002, 0.28)]
+        uniform token type = "linear"
+        float[] widths = [0.18] (
+         interpolation = "constant"
+        )
+        uniform token wrap = "periodic"
+       }
+      }
+
+      over "cnd_void_office_1"
+      {
+       def BasisCurves "RepeatHighlight" (
+        prepend apiSchemas = ["AecoDerivedGeometryAPI"]
+       )
+       {
+        uniform token aeco:derived:approx = "bbox"
+        rel aeco:derived:from = </demo_datacentre_01/demo_datacentre_01_Site/demo_datacentre_01/L01_Office/Open_Office/Office_ceiling_void/cnd_void_office_1/Geom>
+        uniform token aeco:derived:role = "symbol"
+        string aeco:derived:source = "6f112a2a-4c87-5137-8c68-d0e86d9ff833"
+        string aeco:derived:stamp = "repeat-highlight-v1"
+        int[] curveVertexCounts = [4]
+        point3f[] points = [(12.82, -6.6924996, 6.892409), (21.18, -6.6924996, 6.892409), (21.18, -6.3075004, 6.892409), (12.82, -6.3075004, 6.892409)]
+        uniform token type = "linear"
+        float[] widths = [0.18] (
+         interpolation = "constant"
+        )
+        uniform token wrap = "periodic"
+       }
+      }
+
+      over "cnd_void_office_2"
+      {
+       def BasisCurves "RepeatHighlight" (
+        prepend apiSchemas = ["AecoDerivedGeometryAPI"]
+       )
+       {
+        uniform token aeco:derived:approx = "bbox"
+        rel aeco:derived:from = </demo_datacentre_01/demo_datacentre_01_Site/demo_datacentre_01/L01_Office/Open_Office/Office_ceiling_void/cnd_void_office_2/Geom>
+        uniform token aeco:derived:role = "symbol"
+        string aeco:derived:source = "81e9ca85-7c2f-5b47-8eac-b89408b7c6bc"
+        string aeco:derived:stamp = "repeat-highlight-v1"
+        int[] curveVertexCounts = [4]
+        point3f[] points = [(12.82, -8.6925, 6.892409), (21.18, -8.6925, 6.892409), (21.18, -8.3075, 6.892409), (12.82, -8.3075, 6.892409)]
+        uniform token type = "linear"
+        float[] widths = [0.18] (
+         interpolation = "constant"
+        )
+        uniform token wrap = "periodic"
+       }
+      }
+     }
+
+     over "grl_office_1"
+     {
+      def BasisCurves "RepeatHighlight" (
+       prepend apiSchemas = ["AecoDerivedGeometryAPI"]
+      )
+      {
+       uniform token aeco:derived:approx = "bbox"
+       rel aeco:derived:from = </demo_datacentre_01/demo_datacentre_01_Site/demo_datacentre_01/L01_Office/Open_Office/grl_office_1/Geom>
+       uniform token aeco:derived:role = "symbol"
+       string aeco:derived:source = "200afa6b-627f-59ac-86ed-4125edf30004"
+       string aeco:derived:stamp = "repeat-highlight-v1"
+       int[] curveVertexCounts = [4]
+       point3f[] points = [(-0.38, -0.38, 0.1175), (0.38, -0.38, 0.1175), (0.38, 0.38, 0.1175), (-0.38, 0.38, 0.1175)]
+       uniform token type = "linear"
+       float[] widths = [0.18] (
+        interpolation = "constant"
+       )
+       uniform token wrap = "periodic"
+      }
+     }
+
+     over "grl_office_4"
+     {
+      def BasisCurves "RepeatHighlight" (
+       prepend apiSchemas = ["AecoDerivedGeometryAPI"]
+      )
+      {
+       uniform token aeco:derived:approx = "bbox"
+       rel aeco:derived:from = </demo_datacentre_01/demo_datacentre_01_Site/demo_datacentre_01/L01_Office/Open_Office/grl_office_4/Geom>
+       uniform token aeco:derived:role = "symbol"
+       string aeco:derived:source = "3592dab5-80a1-58a1-931a-10aa42d6c6fd"
+       string aeco:derived:stamp = "repeat-highlight-v1"
+       int[] curveVertexCounts = [4]
+       point3f[] points = [(-0.38, -0.38, 0.1175), (0.38, -0.38, 0.1175), (0.38, 0.38, 0.1175), (-0.38, 0.38, 0.1175)]
+       uniform token type = "linear"
+       float[] widths = [0.18] (
+        interpolation = "constant"
+       )
+       uniform token wrap = "periodic"
+      }
+     }
+
+     over "grl_office_3"
+     {
+      def BasisCurves "RepeatHighlight" (
+       prepend apiSchemas = ["AecoDerivedGeometryAPI"]
+      )
+      {
+       uniform token aeco:derived:approx = "bbox"
+       rel aeco:derived:from = </demo_datacentre_01/demo_datacentre_01_Site/demo_datacentre_01/L01_Office/Open_Office/grl_office_3/Geom>
+       uniform token aeco:derived:role = "symbol"
+       string aeco:derived:source = "375f15c5-74dd-5039-849e-3b71530db1d0"
+       string aeco:derived:stamp = "repeat-highlight-v1"
+       int[] curveVertexCounts = [4]
+       point3f[] points = [(-0.38, -0.38, 0.1175), (0.38, -0.38, 0.1175), (0.38, 0.38, 0.1175), (-0.38, 0.38, 0.1175)]
+       uniform token type = "linear"
+       float[] widths = [0.18] (
+        interpolation = "constant"
+       )
+       uniform token wrap = "periodic"
+      }
+     }
+
+     over "lum_office_2"
+     {
+      def BasisCurves "RepeatHighlight" (
+       prepend apiSchemas = ["AecoDerivedGeometryAPI"]
+      )
+      {
+       uniform token aeco:derived:approx = "bbox"
+       rel aeco:derived:from = </demo_datacentre_01/demo_datacentre_01_Site/demo_datacentre_01/L01_Office/Open_Office/lum_office_2/Geom>
+       uniform token aeco:derived:role = "symbol"
+       string aeco:derived:source = "5db6b31c-420a-51d0-8087-e08cd3d96828"
+       string aeco:derived:stamp = "repeat-highlight-v1"
+       int[] curveVertexCounts = [4]
+       point3f[] points = [(-0.48000002, -0.48000002, 0.1275), (0.48000002, -0.48000002, 0.1275), (0.48000002, 0.48000002, 0.1275), (-0.48000002, 0.48000002, 0.1275)]
+       uniform token type = "linear"
+       float[] widths = [0.18] (
+        interpolation = "constant"
+       )
+       uniform token wrap = "periodic"
+      }
+     }
+
+     over "lum_office_1"
+     {
+      def BasisCurves "RepeatHighlight" (
+       prepend apiSchemas = ["AecoDerivedGeometryAPI"]
+      )
+      {
+       uniform token aeco:derived:approx = "bbox"
+       rel aeco:derived:from = </demo_datacentre_01/demo_datacentre_01_Site/demo_datacentre_01/L01_Office/Open_Office/lum_office_1/Geom>
+       uniform token aeco:derived:role = "symbol"
+       string aeco:derived:source = "63ad1f8d-6555-5ff5-be23-79cd82b39dae"
+       string aeco:derived:stamp = "repeat-highlight-v1"
+       int[] curveVertexCounts = [4]
+       point3f[] points = [(-0.48000002, -0.48000002, 0.1275), (0.48000002, -0.48000002, 0.1275), (0.48000002, 0.48000002, 0.1275), (-0.48000002, 0.48000002, 0.1275)]
+       uniform token type = "linear"
+       float[] widths = [0.18] (
+        interpolation = "constant"
+       )
+       uniform token wrap = "periodic"
+      }
+     }
+
+     over "clg_office"
+     {
+      def BasisCurves "RepeatHighlight" (
+       prepend apiSchemas = ["AecoDerivedGeometryAPI"]
+      )
+      {
+       uniform token aeco:derived:approx = "bbox"
+       rel aeco:derived:from = </demo_datacentre_01/demo_datacentre_01_Site/demo_datacentre_01/L01_Office/Open_Office/clg_office/Geom>
+       uniform token aeco:derived:role = "symbol"
+       string aeco:derived:source = "6e39f114-9566-58cd-8ca5-d54269132687"
+       string aeco:derived:stamp = "repeat-highlight-v1"
+       int[] curveVertexCounts = [4]
+       point3f[] points = [(-5.18, -4.68, 0.0925), (5.18, -4.68, 0.0925), (5.18, 4.68, 0.0925), (-5.18, 4.68, 0.0925)]
+       uniform token type = "linear"
+       float[] widths = [0.18] (
+        interpolation = "constant"
+       )
+       uniform token wrap = "periodic"
+      }
+     }
+
+     over "grl_office_2"
+     {
+      def BasisCurves "RepeatHighlight" (
+       prepend apiSchemas = ["AecoDerivedGeometryAPI"]
+      )
+      {
+       uniform token aeco:derived:approx = "bbox"
+       rel aeco:derived:from = </demo_datacentre_01/demo_datacentre_01_Site/demo_datacentre_01/L01_Office/Open_Office/grl_office_2/Geom>
+       uniform token aeco:derived:role = "symbol"
+       string aeco:derived:source = "8c2b777c-50db-5e0f-a278-85413b30c991"
+       string aeco:derived:stamp = "repeat-highlight-v1"
+       int[] curveVertexCounts = [4]
+       point3f[] points = [(-0.38, -0.38, 0.1175), (0.38, -0.38, 0.1175), (0.38, 0.38, 0.1175), (-0.38, 0.38, 0.1175)]
+       uniform token type = "linear"
+       float[] widths = [0.18] (
+        interpolation = "constant"
+       )
+       uniform token wrap = "periodic"
+      }
+     }
+
+     over "lum_office_3"
+     {
+      def BasisCurves "RepeatHighlight" (
+       prepend apiSchemas = ["AecoDerivedGeometryAPI"]
+      )
+      {
+       uniform token aeco:derived:approx = "bbox"
+       rel aeco:derived:from = </demo_datacentre_01/demo_datacentre_01_Site/demo_datacentre_01/L01_Office/Open_Office/lum_office_3/Geom>
+       uniform token aeco:derived:role = "symbol"
+       string aeco:derived:source = "9353edbf-0717-5a0b-8ef3-59bcb0ebe324"
+       string aeco:derived:stamp = "repeat-highlight-v1"
+       int[] curveVertexCounts = [4]
+       point3f[] points = [(-0.48000002, -0.48000002, 0.1275), (0.48000002, -0.48000002, 0.1275), (0.48000002, 0.48000002, 0.1275), (-0.48000002, 0.48000002, 0.1275)]
+       uniform token type = "linear"
+       float[] widths = [0.18] (
+        interpolation = "constant"
+       )
+       uniform token wrap = "periodic"
+      }
+     }
+
+     over "lum_office_6"
+     {
+      def BasisCurves "RepeatHighlight" (
+       prepend apiSchemas = ["AecoDerivedGeometryAPI"]
+      )
+      {
+       uniform token aeco:derived:approx = "bbox"
+       rel aeco:derived:from = </demo_datacentre_01/demo_datacentre_01_Site/demo_datacentre_01/L01_Office/Open_Office/lum_office_6/Geom>
+       uniform token aeco:derived:role = "symbol"
+       string aeco:derived:source = "b09c11f2-2de8-5904-9ae7-1802a2a783e2"
+       string aeco:derived:stamp = "repeat-highlight-v1"
+       int[] curveVertexCounts = [4]
+       point3f[] points = [(-0.48000002, -0.48000002, 0.1275), (0.48000002, -0.48000002, 0.1275), (0.48000002, 0.48000002, 0.1275), (-0.48000002, 0.48000002, 0.1275)]
+       uniform token type = "linear"
+       float[] widths = [0.18] (
+        interpolation = "constant"
+       )
+       uniform token wrap = "periodic"
+      }
+     }
+
+     over "lum_office_4"
+     {
+      def BasisCurves "RepeatHighlight" (
+       prepend apiSchemas = ["AecoDerivedGeometryAPI"]
+      )
+      {
+       uniform token aeco:derived:approx = "bbox"
+       rel aeco:derived:from = </demo_datacentre_01/demo_datacentre_01_Site/demo_datacentre_01/L01_Office/Open_Office/lum_office_4/Geom>
+       uniform token aeco:derived:role = "symbol"
+       string aeco:derived:source = "b56f1757-5239-5fb4-b0a3-b8eec425b08c"
+       string aeco:derived:stamp = "repeat-highlight-v1"
+       int[] curveVertexCounts = [4]
+       point3f[] points = [(-0.48000002, -0.48000002, 0.1275), (0.48000002, -0.48000002, 0.1275), (0.48000002, 0.48000002, 0.1275), (-0.48000002, 0.48000002, 0.1275)]
+       uniform token type = "linear"
+       float[] widths = [0.18] (
+        interpolation = "constant"
+       )
+       uniform token wrap = "periodic"
+      }
+     }
+
+     over "lum_office_5"
+     {
+      def BasisCurves "RepeatHighlight" (
+       prepend apiSchemas = ["AecoDerivedGeometryAPI"]
+      )
+      {
+       uniform token aeco:derived:approx = "bbox"
+       rel aeco:derived:from = </demo_datacentre_01/demo_datacentre_01_Site/demo_datacentre_01/L01_Office/Open_Office/lum_office_5/Geom>
+       uniform token aeco:derived:role = "symbol"
+       string aeco:derived:source = "d8fdb98a-f141-50d7-813c-543c49947890"
+       string aeco:derived:stamp = "repeat-highlight-v1"
+       int[] curveVertexCounts = [4]
+       point3f[] points = [(-0.48000002, -0.48000002, 0.1275), (0.48000002, -0.48000002, 0.1275), (0.48000002, 0.48000002, 0.1275), (-0.48000002, 0.48000002, 0.1275)]
+       uniform token type = "linear"
+       float[] widths = [0.18] (
+        interpolation = "constant"
+       )
+       uniform token wrap = "periodic"
+      }
+     }
+    }
+
+    over "Office_Corridor_L01"
+    {
+     over "Corridor_ceiling_void"
+     {
+      over "tray_void_ocorr_1"
+      {
+       def BasisCurves "RepeatHighlight" (
+        prepend apiSchemas = ["AecoDerivedGeometryAPI"]
+       )
+       {
+        uniform token aeco:derived:approx = "bbox"
+        rel aeco:derived:from = </demo_datacentre_01/demo_datacentre_01_Site/demo_datacentre_01/L01_Office/Office_Corridor_L01/Corridor_ceiling_void/tray_void_ocorr_1/Geom>
+        uniform token aeco:derived:role = "symbol"
+        string aeco:derived:source = "2df12127-2bce-58a4-b767-5f0747057b63"
+        string aeco:derived:stamp = "repeat-highlight-v1"
+        int[] curveVertexCounts = [4]
+        point3f[] points = [(15.82, -1.8299999, 6.93), (29.18, -1.8299999, 6.93), (29.18, -1.1700001, 6.93), (15.82, -1.1700001, 6.93)]
+        uniform token type = "linear"
+        float[] widths = [0.18] (
+         interpolation = "constant"
+        )
+        uniform token wrap = "periodic"
+       }
+      }
+
+      over "pipe_chw_void_f"
+      {
+       def BasisCurves "RepeatHighlight" (
+        prepend apiSchemas = ["AecoDerivedGeometryAPI"]
+       )
+       {
+        uniform token aeco:derived:approx = "bbox"
+        rel aeco:derived:from = </demo_datacentre_01/demo_datacentre_01_Site/demo_datacentre_01/L01_Office/Office_Corridor_L01/Corridor_ceiling_void/pipe_chw_void_f/Geom>
+        uniform token aeco:derived:role = "symbol"
+        string aeco:derived:source = "e230a24f-4b3f-503b-a65d-4641640e8b5a"
+        string aeco:derived:stamp = "repeat-highlight-v1"
+        int[] curveVertexCounts = [4]
+        point3f[] points = [(19.28985, -5.68, 6.90993), (28.20993, -5.68, 6.90993), (28.20993, -1.6898501, 6.90993), (19.28985, -1.6898501, 6.90993)]
+        uniform token type = "linear"
+        float[] widths = [0.18] (
+         interpolation = "constant"
+        )
+        uniform token wrap = "periodic"
+       }
+      }
+
+      over "pipe_chw_void_r"
+      {
+       def BasisCurves "RepeatHighlight" (
+        prepend apiSchemas = ["AecoDerivedGeometryAPI"]
+       )
+       {
+        uniform token aeco:derived:approx = "bbox"
+        rel aeco:derived:from = </demo_datacentre_01/demo_datacentre_01_Site/demo_datacentre_01/L01_Office/Office_Corridor_L01/Corridor_ceiling_void/pipe_chw_void_r/Geom>
+        uniform token aeco:derived:role = "symbol"
+        string aeco:derived:source = "f197c006-1d48-5d32-9aab-55f6e27f7a11"
+        string aeco:derived:stamp = "repeat-highlight-v1"
+        int[] curveVertexCounts = [4]
+        point3f[] points = [(19.48985, -5.68, 6.90993), (28.20993, -5.68, 6.90993), (28.20993, -1.93985, 6.90993), (19.48985, -1.93985, 6.90993)]
+        uniform token type = "linear"
+        float[] widths = [0.18] (
+         interpolation = "constant"
+        )
+        uniform token wrap = "periodic"
+       }
+      }
+
+      over "pipe_clash_hard"
+      {
+       def BasisCurves "RepeatHighlight" (
+        prepend apiSchemas = ["AecoDerivedGeometryAPI"]
+       )
+       {
+        uniform token aeco:derived:approx = "bbox"
+        rel aeco:derived:from = </demo_datacentre_01/demo_datacentre_01_Site/demo_datacentre_01/L01_Office/Office_Corridor_L01/Corridor_ceiling_void/pipe_clash_hard/Geom>
+        uniform token aeco:derived:role = "symbol"
+        string aeco:derived:source = "5c1bcae1-aed8-5d1a-bffe-e8eb8bc50f6f"
+        string aeco:derived:stamp = "repeat-highlight-v1"
+        int[] curveVertexCounts = [4]
+        point3f[] points = [(23.78985, -4.18, 6.90993), (24.21015, -4.18, 6.90993), (24.21015, -1.82, 6.90993), (23.78985, -1.82, 6.90993)]
+        uniform token type = "linear"
+        float[] widths = [0.18] (
+         interpolation = "constant"
+        )
+        uniform token wrap = "periodic"
+       }
+      }
+
+      over "pipe_clash_near"
+      {
+       def BasisCurves "RepeatHighlight" (
+        prepend apiSchemas = ["AecoDerivedGeometryAPI"]
+       )
+       {
+        uniform token aeco:derived:approx = "bbox"
+        rel aeco:derived:from = </demo_datacentre_01/demo_datacentre_01_Site/demo_datacentre_01/L01_Office/Office_Corridor_L01/Corridor_ceiling_void/pipe_clash_near/Geom>
+        uniform token aeco:derived:role = "symbol"
+        string aeco:derived:source = "6e5a2055-fc33-5dd4-8df1-af4a6e337adb"
+        string aeco:derived:stamp = "repeat-highlight-v1"
+        int[] curveVertexCounts = [4]
+        point3f[] points = [(22.82, -1.7086743, 6.989542), (25.18, -1.7086743, 6.989542), (25.18, -1.2913257, 6.989542), (22.82, -1.2913257, 6.989542)]
+        uniform token type = "linear"
+        float[] widths = [0.18] (
+         interpolation = "constant"
+        )
+        uniform token wrap = "periodic"
+       }
+      }
+
+      over "pipe_clash_tangent"
+      {
+       def BasisCurves "RepeatHighlight" (
+        prepend apiSchemas = ["AecoDerivedGeometryAPI"]
+       )
+       {
+        uniform token aeco:derived:approx = "bbox"
+        rel aeco:derived:from = </demo_datacentre_01/demo_datacentre_01_Site/demo_datacentre_01/L01_Office/Office_Corridor_L01/Corridor_ceiling_void/pipe_clash_tangent/Geom>
+        uniform token aeco:derived:role = "symbol"
+        string aeco:derived:source = "f48386c3-5bfd-55b0-8010-7c0321905d51"
+        string aeco:derived:stamp = "repeat-highlight-v1"
+        int[] curveVertexCounts = [4]
+        point3f[] points = [(22.82, -3.1060636, 6.9112134), (25.18, -3.1060636, 6.9112134), (25.18, -2.6836364, 6.9112134), (22.82, -2.6836364, 6.9112134)]
+        uniform token type = "linear"
+        float[] widths = [0.18] (
+         interpolation = "constant"
+        )
+        uniform token wrap = "periodic"
+       }
+      }
+     }
+
+     over "pod_wc_temp"
+     {
+      def BasisCurves "RepeatHighlight" (
+       prepend apiSchemas = ["AecoDerivedGeometryAPI"]
+      )
+      {
+       uniform token aeco:derived:approx = "bbox"
+       rel aeco:derived:from = </demo_datacentre_01/demo_datacentre_01_Site/demo_datacentre_01/L01_Office/Office_Corridor_L01/pod_wc_temp/Geom>
+       uniform token aeco:derived:role = "symbol"
+       string aeco:derived:source = "5c25d9bf-d000-5d3b-b4ed-f199bda623a7"
+       string aeco:derived:stamp = "repeat-highlight-v1"
+       int[] curveVertexCounts = [4]
+       point3f[] points = [(-1.38, -1.9799999, 2.58), (1.38, -1.9799999, 2.58), (1.38, 1.9799999, 2.58), (-1.38, 1.9799999, 2.58)]
+       uniform token type = "linear"
+       float[] widths = [0.18] (
+        interpolation = "constant"
+       )
+       uniform token wrap = "periodic"
+      }
+     }
+
+     over "clg_ocorr_1"
+     {
+      def BasisCurves "RepeatHighlight" (
+       prepend apiSchemas = ["AecoDerivedGeometryAPI"]
+      )
+      {
+       uniform token aeco:derived:approx = "bbox"
+       rel aeco:derived:from = </demo_datacentre_01/demo_datacentre_01_Site/demo_datacentre_01/L01_Office/Office_Corridor_L01/clg_ocorr_1/Geom>
+       uniform token aeco:derived:role = "symbol"
+       string aeco:derived:source = "e3359946-0dce-571b-9dd2-a86326da37f8"
+       string aeco:derived:stamp = "repeat-highlight-v1"
+       int[] curveVertexCounts = [4]
+       point3f[] points = [(-7.68, -1.68, 0.0925), (7.68, -1.68, 0.0925), (7.68, 1.68, 0.0925), (-7.68, 1.68, 0.0925)]
+       uniform token type = "linear"
+       float[] widths = [0.18] (
+        interpolation = "constant"
+       )
+       uniform token wrap = "periodic"
+      }
+     }
+    }
+
+    over "WC"
+    {
+     over "san_pod_1"
+     {
+      def BasisCurves "RepeatHighlight" (
+       prepend apiSchemas = ["AecoDerivedGeometryAPI"]
+      )
+      {
+       uniform token aeco:derived:approx = "bbox"
+       rel aeco:derived:from = </demo_datacentre_01/demo_datacentre_01_Site/demo_datacentre_01/L01_Office/WC/san_pod_1/Geom>
+       uniform token aeco:derived:role = "symbol"
+       string aeco:derived:source = "09a08952-f90d-5507-bdf2-99b440b02104"
+       string aeco:derived:stamp = "repeat-highlight-v1"
+       int[] curveVertexCounts = [4]
+       point3f[] points = [(-0.48000002, -0.53, 0.88), (0.48000002, -0.53, 0.88), (0.48000002, 0.53, 0.88), (-0.48000002, 0.53, 0.88)]
+       uniform token type = "linear"
+       float[] widths = [0.18] (
+        interpolation = "constant"
+       )
+       uniform token wrap = "periodic"
+      }
+     }
+
+     over "pipe_drain_pod"
+     {
+      def BasisCurves "RepeatHighlight" (
+       prepend apiSchemas = ["AecoDerivedGeometryAPI"]
+      )
+      {
+       uniform token aeco:derived:approx = "bbox"
+       rel aeco:derived:from = </demo_datacentre_01/demo_datacentre_01_Site/demo_datacentre_01/L01_Office/WC/pipe_drain_pod/Geom>
+       uniform token aeco:derived:role = "symbol"
+       string aeco:derived:source = "48a8a942-99cd-5139-a9d6-41575476d93f"
+       string aeco:derived:stamp = "repeat-highlight-v1"
+       int[] curveVertexCounts = [4]
+       point3f[] points = [(27.164999, -10.18, 4.284599), (27.635, -10.18, 4.284599), (27.635, -3.7649999, 4.284599), (27.164999, -3.7649999, 4.284599)]
+       uniform token type = "linear"
+       float[] widths = [0.18] (
+        interpolation = "constant"
+       )
+       uniform token wrap = "periodic"
+      }
+     }
+
+     over "san_pod_2"
+     {
+      def BasisCurves "RepeatHighlight" (
+       prepend apiSchemas = ["AecoDerivedGeometryAPI"]
+      )
+      {
+       uniform token aeco:derived:approx = "bbox"
+       rel aeco:derived:from = </demo_datacentre_01/demo_datacentre_01_Site/demo_datacentre_01/L01_Office/WC/san_pod_2/Geom>
+       uniform token aeco:derived:role = "symbol"
+       string aeco:derived:source = "78ff9628-38c7-5c69-b583-632c816608bb"
+       string aeco:derived:stamp = "repeat-highlight-v1"
+       int[] curveVertexCounts = [4]
+       point3f[] points = [(-0.48000002, -0.53, 0.88), (0.48000002, -0.53, 0.88), (0.48000002, 0.53, 0.88), (-0.48000002, 0.53, 0.88)]
+       uniform token type = "linear"
+       float[] widths = [0.18] (
+        interpolation = "constant"
+       )
+       uniform token wrap = "periodic"
+      }
+     }
+
+     over "pod_wc"
+     {
+      def BasisCurves "RepeatHighlight" (
+       prepend apiSchemas = ["AecoDerivedGeometryAPI"]
+      )
+      {
+       uniform token aeco:derived:approx = "bbox"
+       rel aeco:derived:from = </demo_datacentre_01/demo_datacentre_01_Site/demo_datacentre_01/L01_Office/WC/pod_wc/Geom>
+       uniform token aeco:derived:role = "symbol"
+       string aeco:derived:source = "b5bde906-c097-5af5-bf4e-03cee37f130b"
+       string aeco:derived:stamp = "repeat-highlight-v1"
+       int[] curveVertexCounts = [4]
+       point3f[] points = [(-1.38, -1.9799999, 2.58), (1.38, -1.9799999, 2.58), (1.38, 1.9799999, 2.58), (-1.38, 1.9799999, 2.58)]
+       uniform token type = "linear"
+       float[] widths = [0.18] (
+        interpolation = "constant"
+       )
+       uniform token wrap = "periodic"
+      }
+     }
+    }
+
+    over "wall_l1_v_016"
+    {
+     def BasisCurves "RepeatHighlight" (
+      prepend apiSchemas = ["AecoDerivedGeometryAPI"]
+     )
+     {
+      uniform token aeco:derived:approx = "bbox"
+      rel aeco:derived:from = </demo_datacentre_01/demo_datacentre_01_Site/demo_datacentre_01/L01_Office/wall_l1_v_016/Geom>
+      uniform token aeco:derived:role = "symbol"
+      string aeco:derived:source = "d008ead2-8996-54f8-9ced-7345cc4a0a8d"
+      string aeco:derived:stamp = "repeat-highlight-v1"
+      int[] curveVertexCounts = [4]
+      point3f[] points = [(-0.18, -0.255, 3.08), (5.18, -0.255, 3.08), (5.18, 0.255, 3.08), (-0.18, 0.255, 3.08)]
+      uniform token type = "linear"
+      float[] widths = [0.18] (
+       interpolation = "constant"
+      )
+      uniform token wrap = "periodic"
+     }
+    }
+   }
+
+   over "L02_Office"
+   {
+    over "Additional_Meeting_Access"
+    {
+     def BasisCurves "RepeatHighlight" (
+      prepend apiSchemas = ["AecoDerivedGeometryAPI"]
+     )
+     {
+      uniform token aeco:derived:approx = "bbox"
+      rel aeco:derived:from = </demo_datacentre_01/demo_datacentre_01_Site/demo_datacentre_01/L02_Office/Additional_Meeting_Access/Geom>
+      uniform token aeco:derived:role = "symbol"
+      string aeco:derived:source = "3ca0f7bb-160c-52ca-b9b5-52db8a894f1c"
+      string aeco:derived:stamp = "repeat-highlight-v1"
+      int[] curveVertexCounts = [4]
+      point3f[] points = [(-0.205, -0.195, 2.205), (1.105, -0.195, 2.205), (1.105, 0.28, 2.205), (-0.205, 0.28, 2.205)]
+      uniform token type = "linear"
+      float[] widths = [0.18] (
+       interpolation = "constant"
+      )
+      uniform token wrap = "periodic"
+     }
+    }
+
+    over "wall_l2_v_016"
+    {
+     def BasisCurves "RepeatHighlight" (
+      prepend apiSchemas = ["AecoDerivedGeometryAPI"]
+     )
+     {
+      uniform token aeco:derived:approx = "bbox"
+      rel aeco:derived:from = </demo_datacentre_01/demo_datacentre_01_Site/demo_datacentre_01/L02_Office/wall_l2_v_016/Geom>
+      uniform token aeco:derived:role = "symbol"
+      string aeco:derived:source = "8f507a9f-9bfb-516d-9f0c-89509e1ef5d9"
+      string aeco:derived:stamp = "repeat-highlight-v1"
+      int[] curveVertexCounts = [4]
+      point3f[] points = [(-0.18, -0.255, 3.08), (8.38, -0.255, 3.08), (8.38, 0.255, 3.08), (-0.18, 0.255, 3.08)]
+      uniform token type = "linear"
+      float[] widths = [0.18] (
+       interpolation = "constant"
+      )
+      uniform token wrap = "periodic"
+     }
+    }
+   }
+  }
+ }
+}
+

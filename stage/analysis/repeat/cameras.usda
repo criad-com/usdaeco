@@ -1,0 +1,66 @@
+#usda 1.0
+(
+ customLayerData = {
+  string "aeco:layer:package" = "repeat"
+  string "aeco:layer:producer" = "hook v0.2.1"
+  string "aeco:layer:role" = "analysis"
+  string "aeco:layer:source" = "kind/usdaeco-repeat/examples/datacentre/run.py"
+  string "aeco:layer:sourceSha256" = "1b931ed764ad3b73341738c7ba6d25433424cd5d02c520927466898467965b11"
+  string "aeco:layer:tag" = "v0.2.1"
+ }
+)
+
+def "Renders"
+{
+ def "repeat"
+ {
+  def Camera "overview"
+  {
+   float4[] clippingPlanes = []
+   float2 clippingRange = (0.1, 1000)
+   float focalLength = 50
+   float focusDistance = 0
+   float fStop = 0
+   float horizontalAperture = 1414.9755
+   float horizontalApertureOffset = 0
+   token projection = "orthographic"
+   float verticalAperture = 884.3597
+   float verticalApertureOffset = 0
+   matrix4d xformOp:transform = ( (0.894427190999916, 0.447213595499958, 0, 0), (-0.3614163144825182, 0.7228326289650364, 0.588974734712252, 0), (0.2633975087693001, -0.5267950175386003, 0.8081514473603525, 0), (80.00000000000001, -79.04999999888243, 139.86000000000004, 1) )
+   uniform token[] xformOpOrder = ["xformOp:transform"]
+  }
+
+  def Camera "l01"
+  {
+   float4[] clippingPlanes = []
+   float2 clippingRange = (0.01, 2.9)
+   float focalLength = 50
+   float focusDistance = 0
+   float fStop = 0
+   float horizontalAperture = 230
+   float horizontalApertureOffset = 0
+   token projection = "orthographic"
+   float verticalAperture = 143.75
+   float verticalApertureOffset = 0
+   matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (21, -6, 6.5, 1) )
+   uniform token[] xformOpOrder = ["xformOp:transform"]
+  }
+
+  def Camera "l02"
+  {
+   float4[] clippingPlanes = []
+   float2 clippingRange = (0.01, 2.9)
+   float focalLength = 50
+   float focusDistance = 0
+   float fStop = 0
+   float horizontalAperture = 230
+   float horizontalApertureOffset = 0
+   token projection = "orthographic"
+   float verticalAperture = 143.75
+   float verticalApertureOffset = 0
+   matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (21, -6, 9.5, 1) )
+   uniform token[] xformOpOrder = ["xformOp:transform"]
+  }
+ }
+}
+

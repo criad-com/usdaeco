@@ -1,0 +1,7572 @@
+#usda 1.0
+(
+ customLayerData = {
+  string "aeco:layer:package" = "electrical"
+  string "aeco:layer:producer" = "usdAECO suite"
+  string "aeco:layer:role" = "drivers"
+  string "aeco:layer:source" = "data/usdaeco-datacentre/dist/full/electrical.semantics.usda"
+  string "aeco:layer:sourceSha256" = "f2a1c9fa76db9e76b5ec007e19852173a86c56a4dfc2230dd673a347b6e10454"
+  string "aeco:layer:tag" = "v0.5.1"
+ }
+)
+
+over "demo_datacentre_01"
+{
+ over "demo_datacentre_01_Site"
+ {
+  over "Generator_Yard_B"
+  {
+   over "TX_B" (
+    prepend inherits = </demo_datacentre_01/_TypeCatalog/Cast_Resin_Transformer_11kV_400V>
+   )
+   {
+   }
+
+   over "UTIL_B" (
+    prepend inherits = </demo_datacentre_01/_TypeCatalog/Utility_Intake>
+   )
+   {
+   }
+
+   over "GEN_B" (
+    prepend inherits = </demo_datacentre_01/_TypeCatalog/Standby_Diesel_Generator>
+   )
+   {
+   }
+
+   over "FT_B" (
+    prepend inherits = </demo_datacentre_01/_TypeCatalog/Diesel_Fuel_Tank>
+   )
+   {
+   }
+  }
+
+  over "Generator_Yard_A"
+  {
+   over "TX_A" (
+    prepend inherits = </demo_datacentre_01/_TypeCatalog/Cast_Resin_Transformer_11kV_400V>
+   )
+   {
+   }
+
+   over "GEN_A" (
+    prepend inherits = </demo_datacentre_01/_TypeCatalog/Standby_Diesel_Generator>
+   )
+   {
+   }
+
+   over "FT_A" (
+    prepend inherits = </demo_datacentre_01/_TypeCatalog/Diesel_Fuel_Tank>
+   )
+   {
+   }
+
+   over "UTIL_A" (
+    prepend inherits = </demo_datacentre_01/_TypeCatalog/Utility_Intake>
+   )
+   {
+   }
+  }
+
+  over "demo_datacentre_01"
+  {
+   over "L00_Ground"
+   {
+    over "Electrical_Room_A"
+    {
+     over "MSB_A" (
+      prepend inherits = </demo_datacentre_01/_TypeCatalog/Main_LV_Switchboard>
+     )
+     {
+     }
+
+     over "UPS_A3" (
+      prepend inherits = </demo_datacentre_01/_TypeCatalog/UPS_Module>
+     )
+     {
+     }
+
+     over "UPS_A1" (
+      prepend inherits = </demo_datacentre_01/_TypeCatalog/UPS_Module>
+     )
+     {
+     }
+
+     over "MCC_A" (
+      prepend inherits = </demo_datacentre_01/_TypeCatalog/Motor_Control_Centre>
+     )
+     {
+     }
+
+     over "UOB_A" (
+      prepend inherits = </demo_datacentre_01/_TypeCatalog/UPS_Output_Board>
+     )
+     {
+     }
+
+     over "UPS_A4" (
+      prepend inherits = </demo_datacentre_01/_TypeCatalog/UPS_Module>
+     )
+     {
+     }
+
+     over "HDB_A" (
+      prepend inherits = </demo_datacentre_01/_TypeCatalog/House_Distribution_Board>
+     )
+     {
+     }
+
+     over "UPS_A2" (
+      prepend inherits = </demo_datacentre_01/_TypeCatalog/UPS_Module>
+     )
+     {
+     }
+
+     over "RMU_A" (
+      prepend inherits = </demo_datacentre_01/_TypeCatalog/Ring_Main_Unit_11kV>
+     )
+     {
+     }
+    }
+
+    over "Battery_Room_A"
+    {
+     over "BAT_A1" (
+      prepend inherits = </demo_datacentre_01/_TypeCatalog/Battery_String>
+     )
+     {
+     }
+
+     over "BAT_A3" (
+      prepend inherits = </demo_datacentre_01/_TypeCatalog/Battery_String>
+     )
+     {
+     }
+
+     over "BAT_A4" (
+      prepend inherits = </demo_datacentre_01/_TypeCatalog/Battery_String>
+     )
+     {
+     }
+
+     over "BAT_A2" (
+      prepend inherits = </demo_datacentre_01/_TypeCatalog/Battery_String>
+     )
+     {
+     }
+    }
+
+    over "Electrical_Room_B"
+    {
+     over "UPS_B1" (
+      prepend inherits = </demo_datacentre_01/_TypeCatalog/UPS_Module>
+     )
+     {
+     }
+
+     over "UOB_B" (
+      prepend inherits = </demo_datacentre_01/_TypeCatalog/UPS_Output_Board>
+     )
+     {
+     }
+
+     over "MSB_B" (
+      prepend inherits = </demo_datacentre_01/_TypeCatalog/Main_LV_Switchboard>
+     )
+     {
+     }
+
+     over "UPS_B3" (
+      prepend inherits = </demo_datacentre_01/_TypeCatalog/UPS_Module>
+     )
+     {
+     }
+
+     over "UPS_B2" (
+      prepend inherits = </demo_datacentre_01/_TypeCatalog/UPS_Module>
+     )
+     {
+     }
+
+     over "MCC_B" (
+      prepend inherits = </demo_datacentre_01/_TypeCatalog/Motor_Control_Centre>
+     )
+     {
+     }
+
+     over "HDB_B" (
+      prepend inherits = </demo_datacentre_01/_TypeCatalog/House_Distribution_Board>
+     )
+     {
+     }
+
+     over "UPS_B4" (
+      prepend inherits = </demo_datacentre_01/_TypeCatalog/UPS_Module>
+     )
+     {
+     }
+
+     over "RMU_B" (
+      prepend inherits = </demo_datacentre_01/_TypeCatalog/Ring_Main_Unit_11kV>
+     )
+     {
+     }
+    }
+
+    over "Data_Hall_B"
+    {
+     over "PDU_A_B2" (
+      prepend inherits = </demo_datacentre_01/_TypeCatalog/Power_Distribution_Unit>
+     )
+     {
+     }
+
+     over "PDU_B_B4" (
+      prepend inherits = </demo_datacentre_01/_TypeCatalog/Power_Distribution_Unit>
+     )
+     {
+     }
+
+     over "PDU_B_B3" (
+      prepend inherits = </demo_datacentre_01/_TypeCatalog/Power_Distribution_Unit>
+     )
+     {
+     }
+
+     over "PDU_A_B4" (
+      prepend inherits = </demo_datacentre_01/_TypeCatalog/Power_Distribution_Unit>
+     )
+     {
+     }
+
+     over "PDU_B_B1" (
+      prepend inherits = </demo_datacentre_01/_TypeCatalog/Power_Distribution_Unit>
+     )
+     {
+     }
+
+     over "PDU_A_B3" (
+      prepend inherits = </demo_datacentre_01/_TypeCatalog/Power_Distribution_Unit>
+     )
+     {
+     }
+
+     over "PDU_A_B1" (
+      prepend inherits = </demo_datacentre_01/_TypeCatalog/Power_Distribution_Unit>
+     )
+     {
+     }
+
+     over "PDU_B_B2" (
+      prepend inherits = </demo_datacentre_01/_TypeCatalog/Power_Distribution_Unit>
+     )
+     {
+     }
+    }
+
+    over "Data_Hall_A"
+    {
+     over "PDU_A_A1" (
+      prepend inherits = </demo_datacentre_01/_TypeCatalog/Power_Distribution_Unit>
+     )
+     {
+     }
+
+     over "PDU_B_A1" (
+      prepend inherits = </demo_datacentre_01/_TypeCatalog/Power_Distribution_Unit>
+     )
+     {
+     }
+
+     over "PDU_A_A4" (
+      prepend inherits = </demo_datacentre_01/_TypeCatalog/Power_Distribution_Unit>
+     )
+     {
+     }
+
+     over "PDU_B_A4" (
+      prepend inherits = </demo_datacentre_01/_TypeCatalog/Power_Distribution_Unit>
+     )
+     {
+     }
+
+     over "PDU_B_A3" (
+      prepend inherits = </demo_datacentre_01/_TypeCatalog/Power_Distribution_Unit>
+     )
+     {
+     }
+
+     over "PDU_B_A2" (
+      prepend inherits = </demo_datacentre_01/_TypeCatalog/Power_Distribution_Unit>
+     )
+     {
+     }
+
+     over "PDU_A_A3" (
+      prepend inherits = </demo_datacentre_01/_TypeCatalog/Power_Distribution_Unit>
+     )
+     {
+     }
+
+     over "PDU_A_A2" (
+      prepend inherits = </demo_datacentre_01/_TypeCatalog/Power_Distribution_Unit>
+     )
+     {
+     }
+    }
+
+    over "Battery_Room_B"
+    {
+     over "BAT_B3" (
+      prepend inherits = </demo_datacentre_01/_TypeCatalog/Battery_String>
+     )
+     {
+     }
+
+     over "BAT_B4" (
+      prepend inherits = </demo_datacentre_01/_TypeCatalog/Battery_String>
+     )
+     {
+     }
+
+     over "BAT_B2" (
+      prepend inherits = </demo_datacentre_01/_TypeCatalog/Battery_String>
+     )
+     {
+     }
+
+     over "BAT_B1" (
+      prepend inherits = </demo_datacentre_01/_TypeCatalog/Battery_String>
+     )
+     {
+     }
+    }
+
+    over "Busway_A_A4_Seg_6" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busbar_Trunking>
+    )
+    {
+    }
+
+    over "Busway_B_B4_Drop_18" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Rack_Power_Cord>
+    )
+    {
+    }
+
+    over "Busway_B_B4_Seg_1" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busbar_Trunking>
+    )
+    {
+    }
+
+    over "Busway_B_A4_Seg_6" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busbar_Trunking>
+    )
+    {
+    }
+
+    over "Busway_A_A2_Tap_11" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busway_Tap_Off_Junction>
+    )
+    {
+    }
+
+    over "Busway_B_A1_Seg_3" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busbar_Trunking>
+    )
+    {
+    }
+
+    over "LV_Cable_MSB_B_HDB_B_Seg_1" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/LV_Power_Cable>
+    )
+    {
+    }
+
+    over "Busway_A_A4_Tap_20" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busway_Tap_Off_Junction>
+    )
+    {
+    }
+
+    over "Busway_A_B4_Seg_18" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busbar_Trunking>
+    )
+    {
+    }
+
+    over "Busway_B_A4_Seg_20" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busbar_Trunking>
+    )
+    {
+    }
+
+    over "Busway_A_A2_Seg_5" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busbar_Trunking>
+    )
+    {
+    }
+
+    over "Busway_A_B4_Tap_8" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busway_Tap_Off_Junction>
+    )
+    {
+    }
+
+    over "Busway_B_A2_Drop_10" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Rack_Power_Cord>
+    )
+    {
+    }
+
+    over "Busway_B_B2_Drop_8" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Rack_Power_Cord>
+    )
+    {
+    }
+
+    over "Busway_A_A2_Drop_20" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Rack_Power_Cord>
+    )
+    {
+    }
+
+    over "Busway_B_B4_Drop_3" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Rack_Power_Cord>
+    )
+    {
+    }
+
+    over "Busway_B_A4_Drop_18" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Rack_Power_Cord>
+    )
+    {
+    }
+
+    over "Busway_A_A1_Drop_8" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Rack_Power_Cord>
+    )
+    {
+    }
+
+    over "Busway_B_B2_Seg_18" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busbar_Trunking>
+    )
+    {
+    }
+
+    over "LV_Cable_UOB_B_PDU_B_A3_Bend_1" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Cable_Junction>
+    )
+    {
+    }
+
+    over "Busway_B_B3_Tap_14" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busway_Tap_Off_Junction>
+    )
+    {
+    }
+
+    over "LV_Cable_UOB_B_PDU_B_A3_Seg_1" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/LV_Power_Cable>
+    )
+    {
+    }
+
+    over "Busway_A_A1_Drop_19" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Rack_Power_Cord>
+    )
+    {
+    }
+
+    over "Busway_A_B3_Tap_7" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busway_Tap_Off_Junction>
+    )
+    {
+    }
+
+    over "Busway_A_A3_Tap_5" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busway_Tap_Off_Junction>
+    )
+    {
+    }
+
+    over "Busway_B_B2_Drop_4" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Rack_Power_Cord>
+    )
+    {
+    }
+
+    over "Busway_B_B3_Tap_5" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busway_Tap_Off_Junction>
+    )
+    {
+    }
+
+    over "Busway_A_A2_Seg_2" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busbar_Trunking>
+    )
+    {
+    }
+
+    over "Busway_A_B3_Drop_8" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Rack_Power_Cord>
+    )
+    {
+    }
+
+    over "Busway_A_B1_Drop_2" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Rack_Power_Cord>
+    )
+    {
+    }
+
+    over "Busway_B_A1_Drop_12" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Rack_Power_Cord>
+    )
+    {
+    }
+
+    over "Busway_A_B4_Seg_10" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busbar_Trunking>
+    )
+    {
+    }
+
+    over "LV_Cable_MCC_B_clg_ch_2_Seg_2" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/LV_Power_Cable>
+    )
+    {
+    }
+
+    over "Busway_B_A4_Drop_14" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Rack_Power_Cord>
+    )
+    {
+    }
+
+    over "Busway_B_A1_Seg_16" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busbar_Trunking>
+    )
+    {
+    }
+
+    over "Busway_B_B2_Seg_19" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busbar_Trunking>
+    )
+    {
+    }
+
+    over "Busway_B_A1_Drop_5" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Rack_Power_Cord>
+    )
+    {
+    }
+
+    over "Busway_A_A3_Seg_15" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busbar_Trunking>
+    )
+    {
+    }
+
+    over "Busway_A_B3_Seg_8" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busbar_Trunking>
+    )
+    {
+    }
+
+    over "Busway_A_B4_Tap_12" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busway_Tap_Off_Junction>
+    )
+    {
+    }
+
+    over "Busway_A_A3_Drop_5" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Rack_Power_Cord>
+    )
+    {
+    }
+
+    over "Busway_A_A2_Drop_19" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Rack_Power_Cord>
+    )
+    {
+    }
+
+    over "DC_Cable_BAT_A2_UPS_A2_Seg_1" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/DC_Battery_Cable>
+    )
+    {
+    }
+
+    over "Busway_A_B4_Drop_15" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Rack_Power_Cord>
+    )
+    {
+    }
+
+    over "LV_Cable_UPS_B1_UOB_B_Seg_1" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/LV_Power_Cable>
+    )
+    {
+    }
+
+    over "LV_Cable_MCC_B_clg_drc_3_Seg_2" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/LV_Power_Cable>
+    )
+    {
+    }
+
+    over "Busway_B_A3_Tap_9" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busway_Tap_Off_Junction>
+    )
+    {
+    }
+
+    over "Busway_A_B4_Tap_2" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busway_Tap_Off_Junction>
+    )
+    {
+    }
+
+    over "Busway_A_B4_Tap_14" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busway_Tap_Off_Junction>
+    )
+    {
+    }
+
+    over "Busway_B_B3_Tap_3" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busway_Tap_Off_Junction>
+    )
+    {
+    }
+
+    over "Busway_A_A1_Tap_2" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busway_Tap_Off_Junction>
+    )
+    {
+    }
+
+    over "Busway_B_A2_Seg_3" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busbar_Trunking>
+    )
+    {
+    }
+
+    over "Busway_A_B3_Tap_19" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busway_Tap_Off_Junction>
+    )
+    {
+    }
+
+    over "Busway_A_B2_Drop_9" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Rack_Power_Cord>
+    )
+    {
+    }
+
+    over "Busway_B_B4_Tap_13" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busway_Tap_Off_Junction>
+    )
+    {
+    }
+
+    over "Busway_B_B2_Seg_5" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busbar_Trunking>
+    )
+    {
+    }
+
+    over "LV_Cable_TX_B_MSB_B_Seg_1" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/LV_Power_Cable>
+    )
+    {
+    }
+
+    over "Busway_B_A4_Seg_5" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busbar_Trunking>
+    )
+    {
+    }
+
+    over "Busway_B_A3_Tap_11" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busway_Tap_Off_Junction>
+    )
+    {
+    }
+
+    over "LV_Cable_MCC_A_clg_cdu_a2_Seg_1" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/LV_Power_Cable>
+    )
+    {
+    }
+
+    over "Busway_B_B4_Drop_9" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Rack_Power_Cord>
+    )
+    {
+    }
+
+    over "Busway_B_A4_Seg_19" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busbar_Trunking>
+    )
+    {
+    }
+
+    over "Busway_A_B4_Drop_19" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Rack_Power_Cord>
+    )
+    {
+    }
+
+    over "Busway_B_A1_Drop_8" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Rack_Power_Cord>
+    )
+    {
+    }
+
+    over "Busway_A_A4_Drop_20" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Rack_Power_Cord>
+    )
+    {
+    }
+
+    over "LV_Cable_GEN_B_MSB_B_Seg_1" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/LV_Power_Cable>
+    )
+    {
+    }
+
+    over "Busway_B_A4_Tap_19" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busway_Tap_Off_Junction>
+    )
+    {
+    }
+
+    over "HV_Cable_UTIL_A_RMU_A_Seg_2" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/HV_Power_Cable_11kV>
+    )
+    {
+    }
+
+    over "Busway_A_B4_Drop_13" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Rack_Power_Cord>
+    )
+    {
+    }
+
+    over "Busway_B_B1_Drop_18" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Rack_Power_Cord>
+    )
+    {
+    }
+
+    over "Busway_A_A4_Tap_7" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busway_Tap_Off_Junction>
+    )
+    {
+    }
+
+    over "Busway_B_B2_Tap_17" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busway_Tap_Off_Junction>
+    )
+    {
+    }
+
+    over "Busway_A_A1_Tap_16" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busway_Tap_Off_Junction>
+    )
+    {
+    }
+
+    over "Busway_B_B3_Tap_18" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busway_Tap_Off_Junction>
+    )
+    {
+    }
+
+    over "Busway_A_B1_Seg_6" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busbar_Trunking>
+    )
+    {
+    }
+
+    over "Busway_A_B3_Drop_14" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Rack_Power_Cord>
+    )
+    {
+    }
+
+    over "Busway_B_A4_Drop_13" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Rack_Power_Cord>
+    )
+    {
+    }
+
+    over "Busway_A_A2_Seg_16" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busbar_Trunking>
+    )
+    {
+    }
+
+    over "LV_Cable_UOB_A_PDU_A_A2_Bend_1" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Cable_Junction>
+    )
+    {
+    }
+
+    over "Busway_B_A3_Seg_17" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busbar_Trunking>
+    )
+    {
+    }
+
+    over "Busway_A_B4_Tap_6" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busway_Tap_Off_Junction>
+    )
+    {
+    }
+
+    over "Busway_B_A1_Drop_20" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Rack_Power_Cord>
+    )
+    {
+    }
+
+    over "Busway_B_A3_Drop_8" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Rack_Power_Cord>
+    )
+    {
+    }
+
+    over "Busway_B_B2_Tap_4" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busway_Tap_Off_Junction>
+    )
+    {
+    }
+
+    over "Busway_B_B1_Seg_6" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busbar_Trunking>
+    )
+    {
+    }
+
+    over "Busway_B_B1_Drop_1" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Rack_Power_Cord>
+    )
+    {
+    }
+
+    over "LV_Cable_MCC_B_clg_drc_4_Seg_1" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/LV_Power_Cable>
+    )
+    {
+    }
+
+    over "Busway_B_A4_Tap_15" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busway_Tap_Off_Junction>
+    )
+    {
+    }
+
+    over "Busway_A_A2_Drop_11" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Rack_Power_Cord>
+    )
+    {
+    }
+
+    over "Busway_B_B1_Tap_10" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busway_Tap_Off_Junction>
+    )
+    {
+    }
+
+    over "LV_Cable_UPS_A4_UOB_A_Bend_1" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Cable_Junction>
+    )
+    {
+    }
+
+    over "Busway_A_B4_Tap_10" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busway_Tap_Off_Junction>
+    )
+    {
+    }
+
+    over "Busway_B_B2_Drop_10" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Rack_Power_Cord>
+    )
+    {
+    }
+
+    over "Busway_A_A4_Tap_11" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busway_Tap_Off_Junction>
+    )
+    {
+    }
+
+    over "Busway_A_A4_Drop_1" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Rack_Power_Cord>
+    )
+    {
+    }
+
+    over "Busway_A_B3_Tap_6" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busway_Tap_Off_Junction>
+    )
+    {
+    }
+
+    over "Busway_B_B4_Drop_6" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Rack_Power_Cord>
+    )
+    {
+    }
+
+    over "LV_Cable_MCC_B_clg_chp_2_Seg_2" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/LV_Power_Cable>
+    )
+    {
+    }
+
+    over "Busway_B_A4_Seg_8" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busbar_Trunking>
+    )
+    {
+    }
+
+    over "Busway_A_A3_Seg_20" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busbar_Trunking>
+    )
+    {
+    }
+
+    over "Busway_B_B2_Tap_9" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busway_Tap_Off_Junction>
+    )
+    {
+    }
+
+    over "LV_Cable_MSB_A_UPS_A1_Bend_1" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Cable_Junction>
+    )
+    {
+    }
+
+    over "LV_Cable_UOB_B_PDU_B_A3_Bend_2" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Cable_Junction>
+    )
+    {
+    }
+
+    over "Busway_A_B3_Tap_12" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busway_Tap_Off_Junction>
+    )
+    {
+    }
+
+    over "Busway_B_B2_Seg_11" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busbar_Trunking>
+    )
+    {
+    }
+
+    over "Busway_B_B3_Tap_20" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busway_Tap_Off_Junction>
+    )
+    {
+    }
+
+    over "Busway_A_A2_Seg_4" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busbar_Trunking>
+    )
+    {
+    }
+
+    over "Busway_B_B1_Drop_20" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Rack_Power_Cord>
+    )
+    {
+    }
+
+    over "Busway_A_B2_Seg_13" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busbar_Trunking>
+    )
+    {
+    }
+
+    over "Busway_B_B3_Drop_4" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Rack_Power_Cord>
+    )
+    {
+    }
+
+    over "Busway_B_A2_Tap_12" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busway_Tap_Off_Junction>
+    )
+    {
+    }
+
+    over "LV_Cable_UOB_A_PDU_A_B2_Seg_3" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/LV_Power_Cable>
+    )
+    {
+    }
+
+    over "Busway_B_B3_Seg_8" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busbar_Trunking>
+    )
+    {
+    }
+
+    over "Busway_B_B4_Seg_20" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busbar_Trunking>
+    )
+    {
+    }
+
+    over "Busway_B_A4_Tap_1" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busway_Tap_Off_Junction>
+    )
+    {
+    }
+
+    over "LV_Cable_MCC_A_clg_cdu_a1_Seg_1" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/LV_Power_Cable>
+    )
+    {
+    }
+
+    over "Busway_B_A3_Tap_8" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busway_Tap_Off_Junction>
+    )
+    {
+    }
+
+    over "Busway_B_B1_Tap_17" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busway_Tap_Off_Junction>
+    )
+    {
+    }
+
+    over "Busway_A_B4_Tap_13" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busway_Tap_Off_Junction>
+    )
+    {
+    }
+
+    over "Busway_A_A4_Seg_12" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busbar_Trunking>
+    )
+    {
+    }
+
+    over "LV_Cable_MCC_A_clg_fwp_1_Bend_1" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Cable_Junction>
+    )
+    {
+    }
+
+    over "Busway_B_A1_Drop_15" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Rack_Power_Cord>
+    )
+    {
+    }
+
+    over "Busway_A_A2_Seg_12" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busbar_Trunking>
+    )
+    {
+    }
+
+    over "Busway_A_B1_Tap_11" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busway_Tap_Off_Junction>
+    )
+    {
+    }
+
+    over "Busway_A_A2_Drop_14" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Rack_Power_Cord>
+    )
+    {
+    }
+
+    over "Busway_B_B3_Drop_14" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Rack_Power_Cord>
+    )
+    {
+    }
+
+    over "Busway_A_A4_Drop_14" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Rack_Power_Cord>
+    )
+    {
+    }
+
+    over "Busway_A_A4_Tap_19" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busway_Tap_Off_Junction>
+    )
+    {
+    }
+
+    over "Busway_A_A3_Drop_1" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Rack_Power_Cord>
+    )
+    {
+    }
+
+    over "Busway_A_B2_Tap_13" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busway_Tap_Off_Junction>
+    )
+    {
+    }
+
+    over "LV_Cable_UOB_A_PDU_A_B3_Seg_1" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/LV_Power_Cable>
+    )
+    {
+    }
+
+    over "Busway_A_A4_Seg_7" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busbar_Trunking>
+    )
+    {
+    }
+
+    over "Busway_B_A4_Drop_10" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Rack_Power_Cord>
+    )
+    {
+    }
+
+    over "Busway_B_B1_Drop_19" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Rack_Power_Cord>
+    )
+    {
+    }
+
+    over "Busway_A_B2_Tap_3" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busway_Tap_Off_Junction>
+    )
+    {
+    }
+
+    over "LV_Cable_UOB_B_PDU_B_A2_Seg_3" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/LV_Power_Cable>
+    )
+    {
+    }
+
+    over "LV_Cable_MSB_B_UPS_B4_Bend_1" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Cable_Junction>
+    )
+    {
+    }
+
+    over "Busway_A_B1_Seg_3" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busbar_Trunking>
+    )
+    {
+    }
+
+    over "Busway_B_B3_Drop_8" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Rack_Power_Cord>
+    )
+    {
+    }
+
+    over "Busway_A_A2_Drop_10" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Rack_Power_Cord>
+    )
+    {
+    }
+
+    over "Busway_A_A1_Seg_17" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busbar_Trunking>
+    )
+    {
+    }
+
+    over "Busway_B_A4_Drop_6" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Rack_Power_Cord>
+    )
+    {
+    }
+
+    over "LV_Cable_MCC_A_clg_crah_b1_Seg_1" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/LV_Power_Cable>
+    )
+    {
+    }
+
+    over "Busway_B_B4_Tap_5" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busway_Tap_Off_Junction>
+    )
+    {
+    }
+
+    over "Busway_A_B3_Drop_13" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Rack_Power_Cord>
+    )
+    {
+    }
+
+    over "Busway_A_A4_Seg_9" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busbar_Trunking>
+    )
+    {
+    }
+
+    over "Busway_A_B1_Seg_17" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busbar_Trunking>
+    )
+    {
+    }
+
+    over "LV_Cable_UOB_B_PDU_B_B1_Seg_1" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/LV_Power_Cable>
+    )
+    {
+    }
+
+    over "Busway_A_B1_Seg_9" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busbar_Trunking>
+    )
+    {
+    }
+
+    over "Busway_A_B1_Tap_17" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busway_Tap_Off_Junction>
+    )
+    {
+    }
+
+    over "Busway_B_A3_Seg_10" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busbar_Trunking>
+    )
+    {
+    }
+
+    over "LV_Cable_UPS_A1_UOB_A_Seg_1" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/LV_Power_Cable>
+    )
+    {
+    }
+
+    over "Busway_A_B1_Drop_15" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Rack_Power_Cord>
+    )
+    {
+    }
+
+    over "Busway_B_B1_Seg_5" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busbar_Trunking>
+    )
+    {
+    }
+
+    over "Busway_A_A1_Tap_18" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busway_Tap_Off_Junction>
+    )
+    {
+    }
+
+    over "Busway_A_B3_Tap_8" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busway_Tap_Off_Junction>
+    )
+    {
+    }
+
+    over "Busway_B_B2_Tap_13" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busway_Tap_Off_Junction>
+    )
+    {
+    }
+
+    over "Busway_A_B4_Tap_4" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busway_Tap_Off_Junction>
+    )
+    {
+    }
+
+    over "Busway_A_A3_Drop_19" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Rack_Power_Cord>
+    )
+    {
+    }
+
+    over "Busway_B_A2_Drop_5" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Rack_Power_Cord>
+    )
+    {
+    }
+
+    over "Busway_A_B4_Tap_20" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busway_Tap_Off_Junction>
+    )
+    {
+    }
+
+    over "Busway_A_B2_Drop_10" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Rack_Power_Cord>
+    )
+    {
+    }
+
+    over "Busway_A_A2_Drop_7" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Rack_Power_Cord>
+    )
+    {
+    }
+
+    over "Busway_A_A3_Seg_10" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busbar_Trunking>
+    )
+    {
+    }
+
+    over "Busway_A_A4_Drop_19" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Rack_Power_Cord>
+    )
+    {
+    }
+
+    over "Busway_B_B2_Seg_2" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busbar_Trunking>
+    )
+    {
+    }
+
+    over "Busway_A_A1_Drop_18" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Rack_Power_Cord>
+    )
+    {
+    }
+
+    over "LV_Cable_MCC_B_clg_crah_b6_Seg_1" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/LV_Power_Cable>
+    )
+    {
+    }
+
+    over "Busway_A_B3_Tap_10" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busway_Tap_Off_Junction>
+    )
+    {
+    }
+
+    over "Busway_B_A1_Seg_12" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busbar_Trunking>
+    )
+    {
+    }
+
+    over "Busway_A_B1_Tap_1" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busway_Tap_Off_Junction>
+    )
+    {
+    }
+
+    over "Busway_A_B4_Seg_2" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busbar_Trunking>
+    )
+    {
+    }
+
+    over "Busway_A_B2_Tap_1" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busway_Tap_Off_Junction>
+    )
+    {
+    }
+
+    over "LV_Cable_UOB_A_PDU_A_B2_Bend_2" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Cable_Junction>
+    )
+    {
+    }
+
+    over "Busway_B_A4_Tap_18" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busway_Tap_Off_Junction>
+    )
+    {
+    }
+
+    over "Busway_B_A4_Seg_2" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busbar_Trunking>
+    )
+    {
+    }
+
+    over "Busway_A_B4_Seg_8" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busbar_Trunking>
+    )
+    {
+    }
+
+    over "Busway_A_B2_Seg_12" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busbar_Trunking>
+    )
+    {
+    }
+
+    over "Busway_A_A1_Drop_11" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Rack_Power_Cord>
+    )
+    {
+    }
+
+    over "Busway_B_B3_Tap_10" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busway_Tap_Off_Junction>
+    )
+    {
+    }
+
+    over "Busway_B_A4_Tap_11" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busway_Tap_Off_Junction>
+    )
+    {
+    }
+
+    over "Busway_B_B4_Seg_18" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busbar_Trunking>
+    )
+    {
+    }
+
+    over "Busway_A_A3_Drop_2" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Rack_Power_Cord>
+    )
+    {
+    }
+
+    over "Busway_A_B1_Drop_12" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Rack_Power_Cord>
+    )
+    {
+    }
+
+    over "LV_Cable_MCC_A_clg_crah_b3_Seg_2" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/LV_Power_Cable>
+    )
+    {
+    }
+
+    over "Busway_B_B2_Tap_7" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busway_Tap_Off_Junction>
+    )
+    {
+    }
+
+    over "Busway_B_A3_Drop_13" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Rack_Power_Cord>
+    )
+    {
+    }
+
+    over "Busway_B_B1_Drop_15" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Rack_Power_Cord>
+    )
+    {
+    }
+
+    over "Busway_A_B3_Drop_1" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Rack_Power_Cord>
+    )
+    {
+    }
+
+    over "Busway_B_A3_Tap_19" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busway_Tap_Off_Junction>
+    )
+    {
+    }
+
+    over "Busway_A_A4_Seg_20" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busbar_Trunking>
+    )
+    {
+    }
+
+    over "Busway_B_A1_Tap_10" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busway_Tap_Off_Junction>
+    )
+    {
+    }
+
+    over "Busway_A_A2_Drop_5" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Rack_Power_Cord>
+    )
+    {
+    }
+
+    over "Busway_A_A1_Drop_14" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Rack_Power_Cord>
+    )
+    {
+    }
+
+    over "Busway_A_A3_Seg_3" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busbar_Trunking>
+    )
+    {
+    }
+
+    over "Busway_A_A4_Seg_18" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busbar_Trunking>
+    )
+    {
+    }
+
+    over "Busway_A_B2_Tap_7" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busway_Tap_Off_Junction>
+    )
+    {
+    }
+
+    over "Busway_B_B2_Drop_5" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Rack_Power_Cord>
+    )
+    {
+    }
+
+    over "LV_Cable_UOB_A_PDU_A_A3_Bend_1" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Cable_Junction>
+    )
+    {
+    }
+
+    over "LV_Cable_MCC_B_clg_crah_b6_Seg_2" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/LV_Power_Cable>
+    )
+    {
+    }
+
+    over "Busway_A_B4_Drop_3" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Rack_Power_Cord>
+    )
+    {
+    }
+
+    over "Busway_B_B3_Seg_13" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busbar_Trunking>
+    )
+    {
+    }
+
+    over "Busway_A_B3_Drop_5" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Rack_Power_Cord>
+    )
+    {
+    }
+
+    over "LV_Cable_MCC_B_clg_ch_2_Seg_1" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/LV_Power_Cable>
+    )
+    {
+    }
+
+    over "Busway_A_A3_Tap_14" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busway_Tap_Off_Junction>
+    )
+    {
+    }
+
+    over "Busway_A_B1_Tap_16" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busway_Tap_Off_Junction>
+    )
+    {
+    }
+
+    over "Busway_A_A3_Seg_16" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busbar_Trunking>
+    )
+    {
+    }
+
+    over "Busway_A_A3_Tap_2" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busway_Tap_Off_Junction>
+    )
+    {
+    }
+
+    over "Busway_B_B4_Tap_18" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busway_Tap_Off_Junction>
+    )
+    {
+    }
+
+    over "Busway_A_B2_Drop_3" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Rack_Power_Cord>
+    )
+    {
+    }
+
+    over "Busway_A_B3_Drop_4" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Rack_Power_Cord>
+    )
+    {
+    }
+
+    over "Busway_B_A2_Drop_7" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Rack_Power_Cord>
+    )
+    {
+    }
+
+    over "Busway_B_B2_Drop_18" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Rack_Power_Cord>
+    )
+    {
+    }
+
+    over "Busway_B_B1_Tap_1" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busway_Tap_Off_Junction>
+    )
+    {
+    }
+
+    over "Busway_B_B3_Seg_4" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busbar_Trunking>
+    )
+    {
+    }
+
+    over "HV_Cable_UTIL_B_RMU_B_Bend_1" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Cable_Junction>
+    )
+    {
+    }
+
+    over "Busway_B_B2_Tap_15" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busway_Tap_Off_Junction>
+    )
+    {
+    }
+
+    over "Busway_B_B1_Drop_9" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Rack_Power_Cord>
+    )
+    {
+    }
+
+    over "Busway_A_A3_Tap_19" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busway_Tap_Off_Junction>
+    )
+    {
+    }
+
+    over "Busway_B_B2_Seg_16" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busbar_Trunking>
+    )
+    {
+    }
+
+    over "LV_Cable_UPS_A4_UOB_A_Seg_1" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/LV_Power_Cable>
+    )
+    {
+    }
+
+    over "Busway_A_A1_Tap_8" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busway_Tap_Off_Junction>
+    )
+    {
+    }
+
+    over "LV_Cable_MCC_A_clg_crah_b3_Bend_1" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Cable_Junction>
+    )
+    {
+    }
+
+    over "Busway_A_B2_Tap_16" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busway_Tap_Off_Junction>
+    )
+    {
+    }
+
+    over "HV_Cable_UTIL_B_RMU_B_Seg_2" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/HV_Power_Cable_11kV>
+    )
+    {
+    }
+
+    over "Busway_A_B1_Seg_13" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busbar_Trunking>
+    )
+    {
+    }
+
+    over "Busway_B_A3_Drop_14" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Rack_Power_Cord>
+    )
+    {
+    }
+
+    over "Busway_B_A4_Tap_16" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busway_Tap_Off_Junction>
+    )
+    {
+    }
+
+    over "Busway_B_A2_Seg_13" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busbar_Trunking>
+    )
+    {
+    }
+
+    over "Busway_A_A4_Drop_5" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Rack_Power_Cord>
+    )
+    {
+    }
+
+    over "LV_Cable_MSB_B_UPS_B4_Seg_1" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/LV_Power_Cable>
+    )
+    {
+    }
+
+    over "Busway_B_B2_Drop_14" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Rack_Power_Cord>
+    )
+    {
+    }
+
+    over "LV_Cable_UOB_A_PDU_A_A4_Bend_1" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Cable_Junction>
+    )
+    {
+    }
+
+    over "LV_Cable_MSB_A_UPS_A3_Bend_1" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Cable_Junction>
+    )
+    {
+    }
+
+    over "LV_Cable_UOB_B_PDU_B_B1_Seg_2" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/LV_Power_Cable>
+    )
+    {
+    }
+
+    over "DC_Cable_BAT_B3_UPS_B3_Seg_1" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/DC_Battery_Cable>
+    )
+    {
+    }
+
+    over "Busway_B_A3_Seg_8" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busbar_Trunking>
+    )
+    {
+    }
+
+    over "Busway_A_A2_Seg_3" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busbar_Trunking>
+    )
+    {
+    }
+
+    over "Busway_A_B2_Seg_8" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busbar_Trunking>
+    )
+    {
+    }
+
+    over "Busway_A_B4_Seg_16" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busbar_Trunking>
+    )
+    {
+    }
+
+    over "Busway_B_A2_Drop_9" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Rack_Power_Cord>
+    )
+    {
+    }
+
+    over "Busway_A_B1_Tap_7" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busway_Tap_Off_Junction>
+    )
+    {
+    }
+
+    over "Busway_A_B4_Drop_17" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Rack_Power_Cord>
+    )
+    {
+    }
+
+    over "LV_Cable_UOB_B_PDU_B_B2_Bend_1" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Cable_Junction>
+    )
+    {
+    }
+
+    over "Busway_B_B1_Seg_13" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busbar_Trunking>
+    )
+    {
+    }
+
+    over "Busway_B_A2_Drop_17" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Rack_Power_Cord>
+    )
+    {
+    }
+
+    over "LV_Cable_MCC_A_clg_chp_1_Seg_1" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/LV_Power_Cable>
+    )
+    {
+    }
+
+    over "LV_Cable_UOB_A_PDU_A_A4_Bend_2" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Cable_Junction>
+    )
+    {
+    }
+
+    over "Busway_B_A2_Seg_2" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busbar_Trunking>
+    )
+    {
+    }
+
+    over "Busway_B_B4_Seg_13" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busbar_Trunking>
+    )
+    {
+    }
+
+    over "Busway_B_B3_Seg_17" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busbar_Trunking>
+    )
+    {
+    }
+
+    over "Busway_B_A1_Seg_4" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busbar_Trunking>
+    )
+    {
+    }
+
+    over "Busway_A_B1_Tap_2" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busway_Tap_Off_Junction>
+    )
+    {
+    }
+
+    over "Busway_A_B1_Tap_6" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busway_Tap_Off_Junction>
+    )
+    {
+    }
+
+    over "Busway_A_A1_Tap_19" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busway_Tap_Off_Junction>
+    )
+    {
+    }
+
+    over "Busway_B_B4_Tap_4" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busway_Tap_Off_Junction>
+    )
+    {
+    }
+
+    over "Busway_B_A1_Seg_20" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busbar_Trunking>
+    )
+    {
+    }
+
+    over "Busway_B_A2_Drop_15" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Rack_Power_Cord>
+    )
+    {
+    }
+
+    over "Busway_A_B1_Seg_8" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busbar_Trunking>
+    )
+    {
+    }
+
+    over "Busway_A_B1_Tap_12" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busway_Tap_Off_Junction>
+    )
+    {
+    }
+
+    over "Busway_A_A4_Drop_9" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Rack_Power_Cord>
+    )
+    {
+    }
+
+    over "Busway_B_A1_Drop_17" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Rack_Power_Cord>
+    )
+    {
+    }
+
+    over "Busway_A_A3_Seg_2" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busbar_Trunking>
+    )
+    {
+    }
+
+    over "LV_Cable_MCC_B_clg_cdu_a4_Seg_2" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/LV_Power_Cable>
+    )
+    {
+    }
+
+    over "Busway_B_B1_Seg_1" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busbar_Trunking>
+    )
+    {
+    }
+
+    over "Busway_B_A4_Drop_15" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Rack_Power_Cord>
+    )
+    {
+    }
+
+    over "Busway_A_A2_Drop_1" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Rack_Power_Cord>
+    )
+    {
+    }
+
+    over "Busway_B_A4_Seg_14" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busbar_Trunking>
+    )
+    {
+    }
+
+    over "Busway_A_B2_Drop_16" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Rack_Power_Cord>
+    )
+    {
+    }
+
+    over "Busway_B_A3_Seg_12" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busbar_Trunking>
+    )
+    {
+    }
+
+    over "Busway_B_A3_Tap_6" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busway_Tap_Off_Junction>
+    )
+    {
+    }
+
+    over "Busway_A_B1_Drop_18" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Rack_Power_Cord>
+    )
+    {
+    }
+
+    over "Busway_A_B3_Drop_12" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Rack_Power_Cord>
+    )
+    {
+    }
+
+    over "Fuel_Line_FT_A_GEN_A_Seg_2" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Fuel_Line_DN80>
+    )
+    {
+    }
+
+    over "Busway_B_B4_Drop_13" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Rack_Power_Cord>
+    )
+    {
+    }
+
+    over "Busway_A_A3_Drop_6" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Rack_Power_Cord>
+    )
+    {
+    }
+
+    over "Busway_B_B4_Tap_6" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busway_Tap_Off_Junction>
+    )
+    {
+    }
+
+    over "Busway_B_B4_Drop_4" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Rack_Power_Cord>
+    )
+    {
+    }
+
+    over "LV_Cable_UOB_B_PDU_B_A1_Seg_2" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/LV_Power_Cable>
+    )
+    {
+    }
+
+    over "Busway_B_B4_Tap_20" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busway_Tap_Off_Junction>
+    )
+    {
+    }
+
+    over "LV_Cable_UOB_A_PDU_A_B1_Bend_1" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Cable_Junction>
+    )
+    {
+    }
+
+    over "Busway_A_B2_Tap_8" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busway_Tap_Off_Junction>
+    )
+    {
+    }
+
+    over "Busway_A_B3_Seg_12" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busbar_Trunking>
+    )
+    {
+    }
+
+    over "Busway_B_A2_Tap_13" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busway_Tap_Off_Junction>
+    )
+    {
+    }
+
+    over "Busway_B_B1_Drop_10" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Rack_Power_Cord>
+    )
+    {
+    }
+
+    over "Busway_B_A3_Drop_12" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Rack_Power_Cord>
+    )
+    {
+    }
+
+    over "Busway_A_A3_Seg_4" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busbar_Trunking>
+    )
+    {
+    }
+
+    over "Busway_B_A4_Drop_3" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Rack_Power_Cord>
+    )
+    {
+    }
+
+    over "Busway_A_A2_Seg_13" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busbar_Trunking>
+    )
+    {
+    }
+
+    over "Busway_A_A2_Drop_12" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Rack_Power_Cord>
+    )
+    {
+    }
+
+    over "HV_Cable_UTIL_A_RMU_A_Seg_1" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/HV_Power_Cable_11kV>
+    )
+    {
+    }
+
+    over "LV_Cable_UOB_B_PDU_B_A4_Bend_1" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Cable_Junction>
+    )
+    {
+    }
+
+    over "LV_Cable_MCC_B_clg_cdu_a3_Seg_1" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/LV_Power_Cable>
+    )
+    {
+    }
+
+    over "Busway_A_A2_Tap_5" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busway_Tap_Off_Junction>
+    )
+    {
+    }
+
+    over "Busway_A_B2_Tap_17" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busway_Tap_Off_Junction>
+    )
+    {
+    }
+
+    over "Busway_B_B1_Drop_2" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Rack_Power_Cord>
+    )
+    {
+    }
+
+    over "Busway_A_A4_Tap_14" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busway_Tap_Off_Junction>
+    )
+    {
+    }
+
+    over "LV_Cable_UOB_A_PDU_A_B4_Seg_1" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/LV_Power_Cable>
+    )
+    {
+    }
+
+    over "Busway_A_A3_Drop_15" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Rack_Power_Cord>
+    )
+    {
+    }
+
+    over "Busway_B_A4_Seg_3" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busbar_Trunking>
+    )
+    {
+    }
+
+    over "Busway_A_A1_Tap_6" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busway_Tap_Off_Junction>
+    )
+    {
+    }
+
+    over "LV_Cable_UOB_B_PDU_B_A4_Seg_1" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/LV_Power_Cable>
+    )
+    {
+    }
+
+    over "LV_Cable_UOB_A_PDU_A_B2_Bend_1" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Cable_Junction>
+    )
+    {
+    }
+
+    over "Busway_A_B4_Seg_9" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busbar_Trunking>
+    )
+    {
+    }
+
+    over "LV_Cable_MCC_B_clg_cdu_a3_Seg_2" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/LV_Power_Cable>
+    )
+    {
+    }
+
+    over "Busway_B_A2_Drop_12" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Rack_Power_Cord>
+    )
+    {
+    }
+
+    over "Busway_B_B4_Seg_19" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busbar_Trunking>
+    )
+    {
+    }
+
+    over "Busway_B_B2_Drop_3" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Rack_Power_Cord>
+    )
+    {
+    }
+
+    over "Busway_B_A4_Tap_6" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busway_Tap_Off_Junction>
+    )
+    {
+    }
+
+    over "Busway_A_A4_Tap_18" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busway_Tap_Off_Junction>
+    )
+    {
+    }
+
+    over "Busway_A_A1_Tap_13" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busway_Tap_Off_Junction>
+    )
+    {
+    }
+
+    over "Busway_A_B4_Seg_12" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busbar_Trunking>
+    )
+    {
+    }
+
+    over "Busway_A_A1_Seg_11" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busbar_Trunking>
+    )
+    {
+    }
+
+    over "Busway_A_B3_Drop_18" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Rack_Power_Cord>
+    )
+    {
+    }
+
+    over "Busway_B_B3_Seg_18" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busbar_Trunking>
+    )
+    {
+    }
+
+    over "Busway_B_A1_Tap_11" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busway_Tap_Off_Junction>
+    )
+    {
+    }
+
+    over "Busway_A_B3_Tap_13" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busway_Tap_Off_Junction>
+    )
+    {
+    }
+
+    over "LV_Cable_UPS_A1_UOB_A_Bend_1" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Cable_Junction>
+    )
+    {
+    }
+
+    over "Busway_B_A1_Drop_18" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Rack_Power_Cord>
+    )
+    {
+    }
+
+    over "Busway_B_A3_Drop_7" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Rack_Power_Cord>
+    )
+    {
+    }
+
+    over "Busway_B_A1_Tap_12" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busway_Tap_Off_Junction>
+    )
+    {
+    }
+
+    over "Busway_A_B1_Tap_15" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busway_Tap_Off_Junction>
+    )
+    {
+    }
+
+    over "Busway_B_B1_Seg_19" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busbar_Trunking>
+    )
+    {
+    }
+
+    over "Busway_B_B4_Seg_16" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busbar_Trunking>
+    )
+    {
+    }
+
+    over "LV_Cable_MSB_A_HDB_A_Seg_2" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/LV_Power_Cable>
+    )
+    {
+    }
+
+    over "LV_Cable_UPS_B4_UOB_B_Bend_1" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Cable_Junction>
+    )
+    {
+    }
+
+    over "HV_Cable_RMU_A_TX_A_Bend_1" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Cable_Junction>
+    )
+    {
+    }
+
+    over "Busway_B_B1_Seg_8" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busbar_Trunking>
+    )
+    {
+    }
+
+    over "Busway_B_B3_Seg_10" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busbar_Trunking>
+    )
+    {
+    }
+
+    over "Busway_A_B2_Seg_5" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busbar_Trunking>
+    )
+    {
+    }
+
+    over "Busway_B_A3_Tap_16" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busway_Tap_Off_Junction>
+    )
+    {
+    }
+
+    over "Busway_B_A2_Drop_3" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Rack_Power_Cord>
+    )
+    {
+    }
+
+    over "LV_Cable_UOB_B_PDU_B_A1_Bend_1" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Cable_Junction>
+    )
+    {
+    }
+
+    over "Busway_A_A3_Seg_5" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busbar_Trunking>
+    )
+    {
+    }
+
+    over "DC_Cable_BAT_A4_UPS_A4_Seg_1" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/DC_Battery_Cable>
+    )
+    {
+    }
+
+    over "Busway_A_A3_Drop_16" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Rack_Power_Cord>
+    )
+    {
+    }
+
+    over "Busway_B_A1_Drop_2" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Rack_Power_Cord>
+    )
+    {
+    }
+
+    over "Busway_A_B1_Tap_4" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busway_Tap_Off_Junction>
+    )
+    {
+    }
+
+    over "Busway_B_A4_Drop_1" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Rack_Power_Cord>
+    )
+    {
+    }
+
+    over "Busway_A_A3_Drop_12" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Rack_Power_Cord>
+    )
+    {
+    }
+
+    over "Busway_A_B4_Seg_3" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busbar_Trunking>
+    )
+    {
+    }
+
+    over "LV_Cable_MCC_B_clg_drc_4_Seg_2" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/LV_Power_Cable>
+    )
+    {
+    }
+
+    over "Busway_B_A1_Tap_20" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busway_Tap_Off_Junction>
+    )
+    {
+    }
+
+    over "Busway_B_B1_Tap_3" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busway_Tap_Off_Junction>
+    )
+    {
+    }
+
+    over "Busway_A_B3_Tap_17" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busway_Tap_Off_Junction>
+    )
+    {
+    }
+
+    over "Busway_B_B1_Tap_14" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busway_Tap_Off_Junction>
+    )
+    {
+    }
+
+    over "Busway_B_B1_Seg_4" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busbar_Trunking>
+    )
+    {
+    }
+
+    over "Busway_B_B2_Seg_9" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busbar_Trunking>
+    )
+    {
+    }
+
+    over "Busway_B_A2_Tap_9" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busway_Tap_Off_Junction>
+    )
+    {
+    }
+
+    over "Busway_A_B2_Seg_1" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busbar_Trunking>
+    )
+    {
+    }
+
+    over "Busway_B_A2_Drop_4" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Rack_Power_Cord>
+    )
+    {
+    }
+
+    over "Busway_A_B4_Drop_20" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Rack_Power_Cord>
+    )
+    {
+    }
+
+    over "Busway_B_A3_Tap_14" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busway_Tap_Off_Junction>
+    )
+    {
+    }
+
+    over "LV_Cable_MCC_B_clg_drc_3_Bend_1" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Cable_Junction>
+    )
+    {
+    }
+
+    over "Busway_B_A4_Drop_12" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Rack_Power_Cord>
+    )
+    {
+    }
+
+    over "LV_Cable_MSB_B_UPS_B1_Seg_2" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/LV_Power_Cable>
+    )
+    {
+    }
+
+    over "Busway_A_B1_Tap_5" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busway_Tap_Off_Junction>
+    )
+    {
+    }
+
+    over "Busway_A_A4_Seg_11" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busbar_Trunking>
+    )
+    {
+    }
+
+    over "Busway_B_B3_Seg_11" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busbar_Trunking>
+    )
+    {
+    }
+
+    over "Busway_A_B2_Tap_12" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busway_Tap_Off_Junction>
+    )
+    {
+    }
+
+    over "Busway_A_B1_Tap_18" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busway_Tap_Off_Junction>
+    )
+    {
+    }
+
+    over "LV_Cable_UOB_B_PDU_B_A4_Bend_2" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Cable_Junction>
+    )
+    {
+    }
+
+    over "Busway_A_B3_Tap_2" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busway_Tap_Off_Junction>
+    )
+    {
+    }
+
+    over "Busway_A_B3_Drop_16" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Rack_Power_Cord>
+    )
+    {
+    }
+
+    over "Busway_A_A2_Drop_17" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Rack_Power_Cord>
+    )
+    {
+    }
+
+    over "Busway_A_A4_Seg_3" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busbar_Trunking>
+    )
+    {
+    }
+
+    over "Busway_A_B3_Tap_4" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busway_Tap_Off_Junction>
+    )
+    {
+    }
+
+    over "Busway_A_A1_Seg_19" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busbar_Trunking>
+    )
+    {
+    }
+
+    over "Busway_A_B2_Tap_11" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busway_Tap_Off_Junction>
+    )
+    {
+    }
+
+    over "Busway_A_B2_Tap_5" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busway_Tap_Off_Junction>
+    )
+    {
+    }
+
+    over "Busway_B_A2_Tap_16" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busway_Tap_Off_Junction>
+    )
+    {
+    }
+
+    over "LV_Cable_UOB_B_PDU_B_B1_Bend_1" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Cable_Junction>
+    )
+    {
+    }
+
+    over "Busway_A_B3_Drop_19" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Rack_Power_Cord>
+    )
+    {
+    }
+
+    over "Busway_B_A2_Tap_17" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busway_Tap_Off_Junction>
+    )
+    {
+    }
+
+    over "Busway_B_A4_Seg_9" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busbar_Trunking>
+    )
+    {
+    }
+
+    over "Busway_A_A2_Tap_10" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busway_Tap_Off_Junction>
+    )
+    {
+    }
+
+    over "Busway_B_A1_Drop_13" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Rack_Power_Cord>
+    )
+    {
+    }
+
+    over "Busway_B_B2_Drop_13" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Rack_Power_Cord>
+    )
+    {
+    }
+
+    over "Busway_B_B1_Tap_6" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busway_Tap_Off_Junction>
+    )
+    {
+    }
+
+    over "Busway_A_B1_Drop_7" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Rack_Power_Cord>
+    )
+    {
+    }
+
+    over "Busway_A_B2_Drop_15" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Rack_Power_Cord>
+    )
+    {
+    }
+
+    over "Busway_A_B3_Drop_17" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Rack_Power_Cord>
+    )
+    {
+    }
+
+    over "Busway_B_B1_Drop_11" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Rack_Power_Cord>
+    )
+    {
+    }
+
+    over "Busway_A_B2_Seg_6" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busbar_Trunking>
+    )
+    {
+    }
+
+    over "Busway_A_A1_Tap_15" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busway_Tap_Off_Junction>
+    )
+    {
+    }
+
+    over "HV_Cable_RMU_B_TX_B_Seg_1" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/HV_Power_Cable_11kV>
+    )
+    {
+    }
+
+    over "Busway_A_A4_Drop_13" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Rack_Power_Cord>
+    )
+    {
+    }
+
+    over "LV_Cable_UOB_A_PDU_A_A3_Seg_1" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/LV_Power_Cable>
+    )
+    {
+    }
+
+    over "Busway_A_B2_Tap_2" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busway_Tap_Off_Junction>
+    )
+    {
+    }
+
+    over "LV_Cable_UOB_A_PDU_A_B2_Seg_1" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/LV_Power_Cable>
+    )
+    {
+    }
+
+    over "Busway_B_A1_Seg_17" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busbar_Trunking>
+    )
+    {
+    }
+
+    over "Busway_B_A4_Tap_2" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busway_Tap_Off_Junction>
+    )
+    {
+    }
+
+    over "Busway_B_A2_Seg_11" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busbar_Trunking>
+    )
+    {
+    }
+
+    over "LV_Cable_UOB_B_PDU_B_A1_Seg_3" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/LV_Power_Cable>
+    )
+    {
+    }
+
+    over "Busway_A_A4_Drop_12" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Rack_Power_Cord>
+    )
+    {
+    }
+
+    over "Busway_B_A3_Seg_19" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busbar_Trunking>
+    )
+    {
+    }
+
+    over "Busway_B_A1_Drop_9" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Rack_Power_Cord>
+    )
+    {
+    }
+
+    over "Busway_B_B1_Tap_2" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busway_Tap_Off_Junction>
+    )
+    {
+    }
+
+    over "LV_Cable_MSB_B_UPS_B3_Bend_1" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Cable_Junction>
+    )
+    {
+    }
+
+    over "Fuel_Line_FT_B_GEN_B_Bend_1" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Fuel_Line_Bend_DN80>
+    )
+    {
+    }
+
+    over "Busway_A_A1_Drop_6" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Rack_Power_Cord>
+    )
+    {
+    }
+
+    over "LV_Cable_MSB_A_UPS_A1_Seg_1" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/LV_Power_Cable>
+    )
+    {
+    }
+
+    over "Busway_B_B3_Tap_6" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busway_Tap_Off_Junction>
+    )
+    {
+    }
+
+    over "Busway_A_B3_Seg_9" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busbar_Trunking>
+    )
+    {
+    }
+
+    over "Busway_B_A4_Tap_10" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busway_Tap_Off_Junction>
+    )
+    {
+    }
+
+    over "Busway_A_B4_Seg_17" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busbar_Trunking>
+    )
+    {
+    }
+
+    over "LV_Cable_MCC_B_clg_cdu_a3_Bend_1" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Cable_Junction>
+    )
+    {
+    }
+
+    over "Busway_B_B2_Tap_5" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busway_Tap_Off_Junction>
+    )
+    {
+    }
+
+    over "LV_Cable_UOB_A_PDU_A_A2_Bend_2" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Cable_Junction>
+    )
+    {
+    }
+
+    over "Busway_B_B1_Tap_15" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busway_Tap_Off_Junction>
+    )
+    {
+    }
+
+    over "Busway_A_A4_Drop_2" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Rack_Power_Cord>
+    )
+    {
+    }
+
+    over "LV_Cable_UPS_A4_UOB_A_Seg_2" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/LV_Power_Cable>
+    )
+    {
+    }
+
+    over "Busway_B_B1_Seg_15" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busbar_Trunking>
+    )
+    {
+    }
+
+    over "Busway_A_B2_Tap_6" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busway_Tap_Off_Junction>
+    )
+    {
+    }
+
+    over "Busway_A_B3_Seg_4" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busbar_Trunking>
+    )
+    {
+    }
+
+    over "Busway_B_A4_Tap_8" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busway_Tap_Off_Junction>
+    )
+    {
+    }
+
+    over "Busway_B_B3_Drop_17" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Rack_Power_Cord>
+    )
+    {
+    }
+
+    over "Busway_A_B2_Tap_10" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busway_Tap_Off_Junction>
+    )
+    {
+    }
+
+    over "Busway_B_A1_Tap_6" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busway_Tap_Off_Junction>
+    )
+    {
+    }
+
+    over "Busway_A_B1_Seg_2" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busbar_Trunking>
+    )
+    {
+    }
+
+    over "Busway_A_B3_Seg_13" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busbar_Trunking>
+    )
+    {
+    }
+
+    over "Busway_A_A4_Drop_10" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Rack_Power_Cord>
+    )
+    {
+    }
+
+    over "Busway_A_B3_Drop_15" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Rack_Power_Cord>
+    )
+    {
+    }
+
+    over "Busway_B_A1_Seg_5" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busbar_Trunking>
+    )
+    {
+    }
+
+    over "LV_Cable_UOB_A_PDU_A_B1_Bend_2" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Cable_Junction>
+    )
+    {
+    }
+
+    over "Busway_B_B3_Tap_16" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busway_Tap_Off_Junction>
+    )
+    {
+    }
+
+    over "Busway_B_B4_Seg_5" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busbar_Trunking>
+    )
+    {
+    }
+
+    over "Busway_A_A2_Drop_13" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Rack_Power_Cord>
+    )
+    {
+    }
+
+    over "Busway_A_B4_Seg_14" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busbar_Trunking>
+    )
+    {
+    }
+
+    over "Busway_A_B3_Tap_20" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busway_Tap_Off_Junction>
+    )
+    {
+    }
+
+    over "Busway_B_B2_Drop_19" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Rack_Power_Cord>
+    )
+    {
+    }
+
+    over "Busway_B_B1_Drop_7" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Rack_Power_Cord>
+    )
+    {
+    }
+
+    over "Busway_A_B4_Drop_6" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Rack_Power_Cord>
+    )
+    {
+    }
+
+    over "Busway_A_B2_Seg_9" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busbar_Trunking>
+    )
+    {
+    }
+
+    over "LV_Cable_UOB_A_PDU_A_B4_Bend_2" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Cable_Junction>
+    )
+    {
+    }
+
+    over "LV_Cable_UPS_B1_UOB_B_Seg_2" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/LV_Power_Cable>
+    )
+    {
+    }
+
+    over "Busway_A_A3_Drop_13" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Rack_Power_Cord>
+    )
+    {
+    }
+
+    over "Busway_A_B4_Drop_2" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Rack_Power_Cord>
+    )
+    {
+    }
+
+    over "Busway_A_B1_Tap_9" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busway_Tap_Off_Junction>
+    )
+    {
+    }
+
+    over "Busway_B_B2_Tap_2" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busway_Tap_Off_Junction>
+    )
+    {
+    }
+
+    over "Busway_B_A2_Seg_4" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busbar_Trunking>
+    )
+    {
+    }
+
+    over "Busway_A_B2_Drop_2" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Rack_Power_Cord>
+    )
+    {
+    }
+
+    over "Busway_A_B3_Seg_10" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busbar_Trunking>
+    )
+    {
+    }
+
+    over "Busway_B_A1_Tap_17" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busway_Tap_Off_Junction>
+    )
+    {
+    }
+
+    over "LV_Cable_MCC_B_clg_cdu_a4_Seg_1" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/LV_Power_Cable>
+    )
+    {
+    }
+
+    over "Busway_A_A4_Seg_8" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busbar_Trunking>
+    )
+    {
+    }
+
+    over "Busway_B_B1_Tap_19" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busway_Tap_Off_Junction>
+    )
+    {
+    }
+
+    over "LV_Cable_MCC_A_clg_cdu_a1_Bend_1" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Cable_Junction>
+    )
+    {
+    }
+
+    over "LV_Cable_MCC_A_clg_drc_1_Bend_1" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Cable_Junction>
+    )
+    {
+    }
+
+    over "Busway_B_A3_Seg_14" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busbar_Trunking>
+    )
+    {
+    }
+
+    over "Busway_B_A1_Tap_16" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busway_Tap_Off_Junction>
+    )
+    {
+    }
+
+    over "Busway_B_B4_Tap_16" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busway_Tap_Off_Junction>
+    )
+    {
+    }
+
+    over "LV_Cable_TX_A_MSB_A_Seg_1" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/LV_Power_Cable>
+    )
+    {
+    }
+
+    over "LV_Cable_MCC_A_clg_crah_b2_Seg_2" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/LV_Power_Cable>
+    )
+    {
+    }
+
+    over "Busway_A_A2_Drop_2" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Rack_Power_Cord>
+    )
+    {
+    }
+
+    over "Busway_A_A2_Tap_14" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busway_Tap_Off_Junction>
+    )
+    {
+    }
+
+    over "Busway_A_B2_Tap_9" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busway_Tap_Off_Junction>
+    )
+    {
+    }
+
+    over "Busway_B_B1_Seg_9" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busbar_Trunking>
+    )
+    {
+    }
+
+    over "LV_Cable_GEN_A_MSB_A_Seg_2" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/LV_Power_Cable>
+    )
+    {
+    }
+
+    over "Busway_A_A3_Drop_17" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Rack_Power_Cord>
+    )
+    {
+    }
+
+    over "LV_Cable_UOB_A_PDU_A_B3_Bend_1" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Cable_Junction>
+    )
+    {
+    }
+
+    over "LV_Cable_MCC_B_clg_crah_b4_Seg_1" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/LV_Power_Cable>
+    )
+    {
+    }
+
+    over "Busway_B_B2_Drop_6" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Rack_Power_Cord>
+    )
+    {
+    }
+
+    over "Busway_B_A2_Seg_14" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busbar_Trunking>
+    )
+    {
+    }
+
+    over "Busway_B_B2_Drop_12" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Rack_Power_Cord>
+    )
+    {
+    }
+
+    over "Busway_B_A3_Drop_18" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Rack_Power_Cord>
+    )
+    {
+    }
+
+    over "Busway_A_A3_Tap_15" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busway_Tap_Off_Junction>
+    )
+    {
+    }
+
+    over "Busway_B_B1_Seg_17" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busbar_Trunking>
+    )
+    {
+    }
+
+    over "LV_Cable_MSB_B_UPS_B4_Seg_2" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/LV_Power_Cable>
+    )
+    {
+    }
+
+    over "Busway_B_A2_Drop_16" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Rack_Power_Cord>
+    )
+    {
+    }
+
+    over "Busway_B_B1_Tap_20" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busway_Tap_Off_Junction>
+    )
+    {
+    }
+
+    over "Busway_B_A3_Drop_16" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Rack_Power_Cord>
+    )
+    {
+    }
+
+    over "Busway_B_B1_Drop_3" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Rack_Power_Cord>
+    )
+    {
+    }
+
+    over "Busway_B_A2_Drop_14" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Rack_Power_Cord>
+    )
+    {
+    }
+
+    over "Busway_B_B4_Tap_12" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busway_Tap_Off_Junction>
+    )
+    {
+    }
+
+    over "Busway_A_A4_Tap_1" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busway_Tap_Off_Junction>
+    )
+    {
+    }
+
+    over "Busway_B_A4_Drop_19" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Rack_Power_Cord>
+    )
+    {
+    }
+
+    over "Busway_B_A3_Seg_9" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busbar_Trunking>
+    )
+    {
+    }
+
+    over "Busway_A_A4_Drop_3" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Rack_Power_Cord>
+    )
+    {
+    }
+
+    over "Busway_A_A1_Seg_16" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busbar_Trunking>
+    )
+    {
+    }
+
+    over "Busway_B_A2_Seg_20" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busbar_Trunking>
+    )
+    {
+    }
+
+    over "Busway_A_A2_Tap_3" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busway_Tap_Off_Junction>
+    )
+    {
+    }
+
+    over "Busway_B_B1_Drop_13" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Rack_Power_Cord>
+    )
+    {
+    }
+
+    over "LV_Cable_UOB_A_PDU_A_A4_Seg_3" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/LV_Power_Cable>
+    )
+    {
+    }
+
+    over "Busway_B_B1_Tap_4" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busway_Tap_Off_Junction>
+    )
+    {
+    }
+
+    over "Busway_B_A4_Seg_12" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busbar_Trunking>
+    )
+    {
+    }
+
+    over "Busway_A_B1_Drop_1" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Rack_Power_Cord>
+    )
+    {
+    }
+
+    over "Busway_A_A3_Tap_9" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busway_Tap_Off_Junction>
+    )
+    {
+    }
+
+    over "Busway_B_A1_Drop_19" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Rack_Power_Cord>
+    )
+    {
+    }
+
+    over "LV_Cable_UPS_B3_UOB_B_Bend_1" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Cable_Junction>
+    )
+    {
+    }
+
+    over "Busway_A_A4_Drop_7" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Rack_Power_Cord>
+    )
+    {
+    }
+
+    over "Busway_B_A3_Tap_7" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busway_Tap_Off_Junction>
+    )
+    {
+    }
+
+    over "Busway_A_A1_Seg_1" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busbar_Trunking>
+    )
+    {
+    }
+
+    over "Busway_A_A4_Seg_2" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busbar_Trunking>
+    )
+    {
+    }
+
+    over "LV_Cable_MCC_B_clg_fwp_2_Seg_1" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/LV_Power_Cable>
+    )
+    {
+    }
+
+    over "LV_Cable_MSB_B_UPS_B1_Bend_1" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Cable_Junction>
+    )
+    {
+    }
+
+    over "Busway_B_B4_Tap_3" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busway_Tap_Off_Junction>
+    )
+    {
+    }
+
+    over "LV_Cable_TX_B_MSB_B_Bend_1" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Cable_Junction>
+    )
+    {
+    }
+
+    over "Busway_B_B2_Tap_12" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busway_Tap_Off_Junction>
+    )
+    {
+    }
+
+    over "LV_Cable_UOB_A_PDU_A_A1_Seg_2" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/LV_Power_Cable>
+    )
+    {
+    }
+
+    over "Busway_A_B4_Seg_4" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busbar_Trunking>
+    )
+    {
+    }
+
+    over "Busway_A_B3_Tap_11" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busway_Tap_Off_Junction>
+    )
+    {
+    }
+
+    over "Busway_B_B4_Seg_14" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busbar_Trunking>
+    )
+    {
+    }
+
+    over "Busway_B_B4_Drop_17" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Rack_Power_Cord>
+    )
+    {
+    }
+
+    over "Busway_A_A1_Drop_3" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Rack_Power_Cord>
+    )
+    {
+    }
+
+    over "Busway_B_A4_Tap_4" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busway_Tap_Off_Junction>
+    )
+    {
+    }
+
+    over "Busway_B_B2_Tap_1" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busway_Tap_Off_Junction>
+    )
+    {
+    }
+
+    over "Busway_B_A4_Tap_17" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busway_Tap_Off_Junction>
+    )
+    {
+    }
+
+    over "Busway_B_A1_Tap_13" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busway_Tap_Off_Junction>
+    )
+    {
+    }
+
+    over "Busway_A_A2_Drop_18" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Rack_Power_Cord>
+    )
+    {
+    }
+
+    over "Busway_B_B2_Tap_14" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busway_Tap_Off_Junction>
+    )
+    {
+    }
+
+    over "Busway_B_A3_Drop_9" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Rack_Power_Cord>
+    )
+    {
+    }
+
+    over "Busway_B_A1_Drop_4" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Rack_Power_Cord>
+    )
+    {
+    }
+
+    over "Busway_B_A4_Tap_14" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busway_Tap_Off_Junction>
+    )
+    {
+    }
+
+    over "LV_Cable_UOB_B_PDU_B_A2_Seg_2" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/LV_Power_Cable>
+    )
+    {
+    }
+
+    over "Busway_B_B4_Seg_2" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busbar_Trunking>
+    )
+    {
+    }
+
+    over "Busway_A_A3_Drop_18" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Rack_Power_Cord>
+    )
+    {
+    }
+
+    over "Busway_B_A3_Drop_2" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Rack_Power_Cord>
+    )
+    {
+    }
+
+    over "LV_Cable_UOB_B_PDU_B_A3_Seg_2" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/LV_Power_Cable>
+    )
+    {
+    }
+
+    over "Busway_A_A2_Drop_4" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Rack_Power_Cord>
+    )
+    {
+    }
+
+    over "LV_Cable_UOB_B_PDU_B_A1_Bend_2" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Cable_Junction>
+    )
+    {
+    }
+
+    over "HV_Cable_UTIL_A_RMU_A_Bend_1" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Cable_Junction>
+    )
+    {
+    }
+
+    over "Busway_B_B2_Tap_16" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busway_Tap_Off_Junction>
+    )
+    {
+    }
+
+    over "Busway_B_A2_Tap_5" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busway_Tap_Off_Junction>
+    )
+    {
+    }
+
+    over "Busway_B_A3_Drop_1" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Rack_Power_Cord>
+    )
+    {
+    }
+
+    over "Busway_B_A1_Seg_6" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busbar_Trunking>
+    )
+    {
+    }
+
+    over "Busway_B_A3_Seg_7" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busbar_Trunking>
+    )
+    {
+    }
+
+    over "LV_Cable_UOB_A_PDU_A_B4_Bend_1" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Cable_Junction>
+    )
+    {
+    }
+
+    over "Busway_A_B2_Drop_5" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Rack_Power_Cord>
+    )
+    {
+    }
+
+    over "Busway_B_B3_Tap_4" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busway_Tap_Off_Junction>
+    )
+    {
+    }
+
+    over "Busway_A_B1_Seg_16" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busbar_Trunking>
+    )
+    {
+    }
+
+    over "LV_Cable_MCC_A_clg_cdu_a2_Seg_2" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/LV_Power_Cable>
+    )
+    {
+    }
+
+    over "Busway_B_B4_Tap_8" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busway_Tap_Off_Junction>
+    )
+    {
+    }
+
+    over "Busway_A_B1_Seg_7" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busbar_Trunking>
+    )
+    {
+    }
+
+    over "Busway_A_B2_Tap_14" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busway_Tap_Off_Junction>
+    )
+    {
+    }
+
+    over "Busway_A_A3_Seg_7" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busbar_Trunking>
+    )
+    {
+    }
+
+    over "LV_Cable_GEN_A_MSB_A_Seg_1" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/LV_Power_Cable>
+    )
+    {
+    }
+
+    over "LV_Cable_UOB_B_PDU_B_B1_Seg_3" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/LV_Power_Cable>
+    )
+    {
+    }
+
+    over "Busway_B_B4_Tap_9" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busway_Tap_Off_Junction>
+    )
+    {
+    }
+
+    over "Busway_B_B1_Seg_2" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busbar_Trunking>
+    )
+    {
+    }
+
+    over "LV_Cable_MSB_A_UPS_A1_Seg_2" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/LV_Power_Cable>
+    )
+    {
+    }
+
+    over "LV_Cable_MCC_A_clg_crah_b3_Seg_1" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/LV_Power_Cable>
+    )
+    {
+    }
+
+    over "Busway_A_B1_Seg_10" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busbar_Trunking>
+    )
+    {
+    }
+
+    over "Busway_A_A4_Tap_2" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busway_Tap_Off_Junction>
+    )
+    {
+    }
+
+    over "LV_Cable_MSB_A_UPS_A3_Seg_1" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/LV_Power_Cable>
+    )
+    {
+    }
+
+    over "Busway_A_A1_Drop_1" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Rack_Power_Cord>
+    )
+    {
+    }
+
+    over "Busway_B_A1_Drop_10" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Rack_Power_Cord>
+    )
+    {
+    }
+
+    over "Busway_B_B3_Drop_7" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Rack_Power_Cord>
+    )
+    {
+    }
+
+    over "Busway_A_B4_Drop_14" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Rack_Power_Cord>
+    )
+    {
+    }
+
+    over "Busway_A_A3_Seg_8" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busbar_Trunking>
+    )
+    {
+    }
+
+    over "Busway_B_A3_Drop_5" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Rack_Power_Cord>
+    )
+    {
+    }
+
+    over "Busway_B_A4_Tap_7" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busway_Tap_Off_Junction>
+    )
+    {
+    }
+
+    over "Busway_A_B4_Tap_1" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busway_Tap_Off_Junction>
+    )
+    {
+    }
+
+    over "LV_Cable_UOB_A_PDU_A_A1_Seg_1" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/LV_Power_Cable>
+    )
+    {
+    }
+
+    over "Busway_A_A2_Seg_8" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busbar_Trunking>
+    )
+    {
+    }
+
+    over "Fuel_Line_FT_A_GEN_A_Seg_1" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Fuel_Line_DN80>
+    )
+    {
+    }
+
+    over "Busway_A_B4_Seg_19" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busbar_Trunking>
+    )
+    {
+    }
+
+    over "Busway_B_A2_Tap_11" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busway_Tap_Off_Junction>
+    )
+    {
+    }
+
+    over "Busway_A_B4_Drop_18" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Rack_Power_Cord>
+    )
+    {
+    }
+
+    over "LV_Cable_MSB_B_UPS_B2_Seg_2" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/LV_Power_Cable>
+    )
+    {
+    }
+
+    over "Busway_B_A1_Tap_14" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busway_Tap_Off_Junction>
+    )
+    {
+    }
+
+    over "Busway_A_A2_Tap_6" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busway_Tap_Off_Junction>
+    )
+    {
+    }
+
+    over "Busway_B_A2_Seg_19" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busbar_Trunking>
+    )
+    {
+    }
+
+    over "LV_Cable_MCC_B_clg_fwp_3_Seg_2" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/LV_Power_Cable>
+    )
+    {
+    }
+
+    over "Busway_B_A3_Tap_20" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busway_Tap_Off_Junction>
+    )
+    {
+    }
+
+    over "Busway_A_A2_Drop_6" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Rack_Power_Cord>
+    )
+    {
+    }
+
+    over "Busway_B_B3_Seg_16" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busbar_Trunking>
+    )
+    {
+    }
+
+    over "Busway_A_A3_Seg_14" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busbar_Trunking>
+    )
+    {
+    }
+
+    over "Fuel_Line_FT_B_GEN_B_Seg_1" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Fuel_Line_DN80>
+    )
+    {
+    }
+
+    over "Busway_A_B1_Drop_5" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Rack_Power_Cord>
+    )
+    {
+    }
+
+    over "LV_Cable_MCC_A_clg_ch_1_Seg_2" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/LV_Power_Cable>
+    )
+    {
+    }
+
+    over "Busway_A_A1_Tap_5" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busway_Tap_Off_Junction>
+    )
+    {
+    }
+
+    over "Busway_B_B2_Drop_17" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Rack_Power_Cord>
+    )
+    {
+    }
+
+    over "Busway_A_B4_Tap_11" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busway_Tap_Off_Junction>
+    )
+    {
+    }
+
+    over "LV_Cable_UOB_B_PDU_B_B4_Seg_1" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/LV_Power_Cable>
+    )
+    {
+    }
+
+    over "Busway_A_A2_Seg_6" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busbar_Trunking>
+    )
+    {
+    }
+
+    over "Busway_B_B1_Drop_5" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Rack_Power_Cord>
+    )
+    {
+    }
+
+    over "Busway_B_A2_Drop_13" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Rack_Power_Cord>
+    )
+    {
+    }
+
+    over "Busway_B_A4_Seg_13" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busbar_Trunking>
+    )
+    {
+    }
+
+    over "Busway_B_B3_Tap_19" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busway_Tap_Off_Junction>
+    )
+    {
+    }
+
+    over "Busway_A_A1_Seg_14" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busbar_Trunking>
+    )
+    {
+    }
+
+    over "Busway_B_B4_Drop_19" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Rack_Power_Cord>
+    )
+    {
+    }
+
+    over "Busway_A_B2_Seg_18" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busbar_Trunking>
+    )
+    {
+    }
+
+    over "Busway_B_B3_Drop_1" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Rack_Power_Cord>
+    )
+    {
+    }
+
+    over "Busway_A_A1_Drop_10" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Rack_Power_Cord>
+    )
+    {
+    }
+
+    over "Busway_A_B2_Drop_17" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Rack_Power_Cord>
+    )
+    {
+    }
+
+    over "Busway_B_A2_Drop_8" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Rack_Power_Cord>
+    )
+    {
+    }
+
+    over "Busway_A_A1_Tap_4" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busway_Tap_Off_Junction>
+    )
+    {
+    }
+
+    over "Busway_B_B1_Seg_12" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busbar_Trunking>
+    )
+    {
+    }
+
+    over "Busway_B_B1_Drop_14" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Rack_Power_Cord>
+    )
+    {
+    }
+
+    over "Busway_B_B3_Tap_13" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busway_Tap_Off_Junction>
+    )
+    {
+    }
+
+    over "Busway_A_B2_Seg_2" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busbar_Trunking>
+    )
+    {
+    }
+
+    over "Busway_B_A1_Tap_9" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busway_Tap_Off_Junction>
+    )
+    {
+    }
+
+    over "Busway_A_B3_Drop_7" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Rack_Power_Cord>
+    )
+    {
+    }
+
+    over "LV_Cable_UOB_A_PDU_A_B3_Seg_2" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/LV_Power_Cable>
+    )
+    {
+    }
+
+    over "Busway_A_B3_Seg_7" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busbar_Trunking>
+    )
+    {
+    }
+
+    over "Busway_A_A1_Tap_1" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busway_Tap_Off_Junction>
+    )
+    {
+    }
+
+    over "Busway_B_B3_Seg_5" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busbar_Trunking>
+    )
+    {
+    }
+
+    over "Busway_B_A4_Drop_11" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Rack_Power_Cord>
+    )
+    {
+    }
+
+    over "Busway_B_A1_Drop_6" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Rack_Power_Cord>
+    )
+    {
+    }
+
+    over "Busway_A_B4_Seg_5" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busbar_Trunking>
+    )
+    {
+    }
+
+    over "Busway_A_A3_Seg_12" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busbar_Trunking>
+    )
+    {
+    }
+
+    over "Busway_A_A1_Seg_3" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busbar_Trunking>
+    )
+    {
+    }
+
+    over "LV_Cable_GEN_B_MSB_B_Seg_2" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/LV_Power_Cable>
+    )
+    {
+    }
+
+    over "Busway_B_A2_Drop_18" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Rack_Power_Cord>
+    )
+    {
+    }
+
+    over "Busway_A_A3_Tap_6" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busway_Tap_Off_Junction>
+    )
+    {
+    }
+
+    over "Busway_B_A3_Drop_10" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Rack_Power_Cord>
+    )
+    {
+    }
+
+    over "Busway_A_A2_Seg_17" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busbar_Trunking>
+    )
+    {
+    }
+
+    over "LV_Cable_MCC_A_clg_dos_1_Bend_1" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Cable_Junction>
+    )
+    {
+    }
+
+    over "LV_Cable_MCC_A_clg_crah_b1_Seg_2" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/LV_Power_Cable>
+    )
+    {
+    }
+
+    over "Busway_B_A1_Tap_18" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busway_Tap_Off_Junction>
+    )
+    {
+    }
+
+    over "DC_Cable_BAT_B2_UPS_B2_Seg_1" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/DC_Battery_Cable>
+    )
+    {
+    }
+
+    over "Busway_A_B3_Tap_1" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busway_Tap_Off_Junction>
+    )
+    {
+    }
+
+    over "Busway_B_A4_Seg_7" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busbar_Trunking>
+    )
+    {
+    }
+
+    over "LV_Cable_UOB_A_PDU_A_A4_Seg_2" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/LV_Power_Cable>
+    )
+    {
+    }
+
+    over "LV_Cable_UOB_A_PDU_A_A3_Seg_3" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/LV_Power_Cable>
+    )
+    {
+    }
+
+    over "Busway_A_A3_Tap_13" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busway_Tap_Off_Junction>
+    )
+    {
+    }
+
+    over "LV_Cable_MCC_A_clg_dos_1_Seg_1" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/LV_Power_Cable>
+    )
+    {
+    }
+
+    over "Busway_B_B4_Seg_6" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busbar_Trunking>
+    )
+    {
+    }
+
+    over "Busway_B_A2_Tap_18" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busway_Tap_Off_Junction>
+    )
+    {
+    }
+
+    over "Busway_A_A1_Seg_13" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busbar_Trunking>
+    )
+    {
+    }
+
+    over "LV_Cable_MCC_A_clg_crah_b2_Seg_1" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/LV_Power_Cable>
+    )
+    {
+    }
+
+    over "Busway_A_B4_Tap_5" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busway_Tap_Off_Junction>
+    )
+    {
+    }
+
+    over "Busway_A_A2_Seg_14" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busbar_Trunking>
+    )
+    {
+    }
+
+    over "Busway_B_B3_Drop_16" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Rack_Power_Cord>
+    )
+    {
+    }
+
+    over "Busway_B_A2_Drop_1" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Rack_Power_Cord>
+    )
+    {
+    }
+
+    over "LV_Cable_UOB_B_PDU_B_A4_Seg_2" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/LV_Power_Cable>
+    )
+    {
+    }
+
+    over "Busway_A_A2_Tap_18" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busway_Tap_Off_Junction>
+    )
+    {
+    }
+
+    over "Busway_A_B3_Tap_18" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busway_Tap_Off_Junction>
+    )
+    {
+    }
+
+    over "Busway_A_A3_Tap_1" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busway_Tap_Off_Junction>
+    )
+    {
+    }
+
+    over "LV_Cable_MCC_B_clg_fwp_2_Seg_2" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/LV_Power_Cable>
+    )
+    {
+    }
+
+    over "Busway_B_B3_Seg_1" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busbar_Trunking>
+    )
+    {
+    }
+
+    over "Busway_B_B4_Seg_8" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busbar_Trunking>
+    )
+    {
+    }
+
+    over "Busway_A_A1_Tap_11" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busway_Tap_Off_Junction>
+    )
+    {
+    }
+
+    over "Busway_A_B2_Drop_18" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Rack_Power_Cord>
+    )
+    {
+    }
+
+    over "Busway_A_A2_Seg_11" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busbar_Trunking>
+    )
+    {
+    }
+
+    over "Busway_A_B3_Drop_2" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Rack_Power_Cord>
+    )
+    {
+    }
+
+    over "Busway_B_A3_Tap_2" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busway_Tap_Off_Junction>
+    )
+    {
+    }
+
+    over "Busway_B_A1_Drop_11" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Rack_Power_Cord>
+    )
+    {
+    }
+
+    over "Busway_B_B2_Drop_7" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Rack_Power_Cord>
+    )
+    {
+    }
+
+    over "Busway_A_A2_Drop_15" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Rack_Power_Cord>
+    )
+    {
+    }
+
+    over "Busway_A_A4_Seg_5" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busbar_Trunking>
+    )
+    {
+    }
+
+    over "Busway_A_A2_Seg_9" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busbar_Trunking>
+    )
+    {
+    }
+
+    over "Busway_A_A4_Seg_1" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busbar_Trunking>
+    )
+    {
+    }
+
+    over "Busway_B_B3_Tap_2" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busway_Tap_Off_Junction>
+    )
+    {
+    }
+
+    over "LV_Cable_UOB_B_PDU_B_A1_Seg_1" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/LV_Power_Cable>
+    )
+    {
+    }
+
+    over "Busway_A_B4_Seg_6" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busbar_Trunking>
+    )
+    {
+    }
+
+    over "LV_Cable_MCC_A_clg_chp_1_Seg_2" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/LV_Power_Cable>
+    )
+    {
+    }
+
+    over "LV_Cable_GEN_A_MSB_A_Bend_1" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Cable_Junction>
+    )
+    {
+    }
+
+    over "Busway_A_B3_Drop_20" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Rack_Power_Cord>
+    )
+    {
+    }
+
+    over "Busway_A_A3_Drop_14" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Rack_Power_Cord>
+    )
+    {
+    }
+
+    over "Busway_B_A1_Seg_18" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busbar_Trunking>
+    )
+    {
+    }
+
+    over "LV_Cable_MCC_B_clg_drc_3_Seg_1" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/LV_Power_Cable>
+    )
+    {
+    }
+
+    over "Busway_A_B2_Drop_4" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Rack_Power_Cord>
+    )
+    {
+    }
+
+    over "Busway_A_A1_Tap_9" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busway_Tap_Off_Junction>
+    )
+    {
+    }
+
+    over "LV_Cable_UOB_A_PDU_A_A4_Seg_1" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/LV_Power_Cable>
+    )
+    {
+    }
+
+    over "Busway_B_B1_Tap_16" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busway_Tap_Off_Junction>
+    )
+    {
+    }
+
+    over "Busway_B_B4_Tap_2" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busway_Tap_Off_Junction>
+    )
+    {
+    }
+
+    over "Busway_A_A1_Drop_4" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Rack_Power_Cord>
+    )
+    {
+    }
+
+    over "Busway_A_B4_Drop_5" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Rack_Power_Cord>
+    )
+    {
+    }
+
+    over "Busway_A_A1_Drop_13" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Rack_Power_Cord>
+    )
+    {
+    }
+
+    over "Busway_A_B1_Tap_14" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busway_Tap_Off_Junction>
+    )
+    {
+    }
+
+    over "Busway_A_A1_Drop_12" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Rack_Power_Cord>
+    )
+    {
+    }
+
+    over "Busway_A_B1_Drop_3" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Rack_Power_Cord>
+    )
+    {
+    }
+
+    over "LV_Cable_MCC_B_clg_crah_b5_Seg_2" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/LV_Power_Cable>
+    )
+    {
+    }
+
+    over "Busway_B_A1_Tap_8" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busway_Tap_Off_Junction>
+    )
+    {
+    }
+
+    over "LV_Cable_MCC_B_clg_crah_b6_Bend_1" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Cable_Junction>
+    )
+    {
+    }
+
+    over "Busway_B_B2_Tap_11" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busway_Tap_Off_Junction>
+    )
+    {
+    }
+
+    over "LV_Cable_UOB_A_PDU_A_A3_Bend_2" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Cable_Junction>
+    )
+    {
+    }
+
+    over "Busway_A_B3_Seg_18" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busbar_Trunking>
+    )
+    {
+    }
+
+    over "Busway_A_B3_Seg_20" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busbar_Trunking>
+    )
+    {
+    }
+
+    over "Busway_A_A1_Drop_2" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Rack_Power_Cord>
+    )
+    {
+    }
+
+    over "Busway_A_B1_Drop_10" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Rack_Power_Cord>
+    )
+    {
+    }
+
+    over "Busway_A_A4_Drop_6" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Rack_Power_Cord>
+    )
+    {
+    }
+
+    over "Busway_A_B4_Seg_7" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busbar_Trunking>
+    )
+    {
+    }
+
+    over "Busway_B_A3_Tap_17" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busway_Tap_Off_Junction>
+    )
+    {
+    }
+
+    over "Busway_A_B1_Seg_18" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busbar_Trunking>
+    )
+    {
+    }
+
+    over "Busway_A_A2_Tap_20" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busway_Tap_Off_Junction>
+    )
+    {
+    }
+
+    over "Busway_B_B4_Drop_16" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Rack_Power_Cord>
+    )
+    {
+    }
+
+    over "Busway_A_B4_Tap_19" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busway_Tap_Off_Junction>
+    )
+    {
+    }
+
+    over "LV_Cable_MCC_B_clg_ahu_1_Seg_2" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/LV_Power_Cable>
+    )
+    {
+    }
+
+    over "Busway_A_A1_Drop_15" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Rack_Power_Cord>
+    )
+    {
+    }
+
+    over "Busway_B_B3_Tap_12" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busway_Tap_Off_Junction>
+    )
+    {
+    }
+
+    over "Busway_A_B3_Seg_16" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busbar_Trunking>
+    )
+    {
+    }
+
+    over "Busway_A_A2_Seg_1" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busbar_Trunking>
+    )
+    {
+    }
+
+    over "LV_Cable_MCC_A_clg_cdu_a1_Seg_2" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/LV_Power_Cable>
+    )
+    {
+    }
+
+    over "Busway_A_A3_Tap_20" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busway_Tap_Off_Junction>
+    )
+    {
+    }
+
+    over "Busway_B_B3_Tap_8" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busway_Tap_Off_Junction>
+    )
+    {
+    }
+
+    over "LV_Cable_MCC_A_clg_dos_1_Seg_2" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/LV_Power_Cable>
+    )
+    {
+    }
+
+    over "Busway_B_A4_Tap_20" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busway_Tap_Off_Junction>
+    )
+    {
+    }
+
+    over "LV_Cable_MSB_A_UPS_A2_Seg_1" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/LV_Power_Cable>
+    )
+    {
+    }
+
+    over "Busway_A_A1_Seg_10" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busbar_Trunking>
+    )
+    {
+    }
+
+    over "Busway_A_A4_Drop_11" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Rack_Power_Cord>
+    )
+    {
+    }
+
+    over "Busway_A_B3_Seg_15" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busbar_Trunking>
+    )
+    {
+    }
+
+    over "Busway_A_B3_Seg_1" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busbar_Trunking>
+    )
+    {
+    }
+
+    over "LV_Cable_MCC_B_clg_fwp_3_Seg_1" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/LV_Power_Cable>
+    )
+    {
+    }
+
+    over "LV_Cable_MCC_B_clg_chp_2_Seg_1" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/LV_Power_Cable>
+    )
+    {
+    }
+
+    over "Busway_B_A2_Tap_1" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busway_Tap_Off_Junction>
+    )
+    {
+    }
+
+    over "Busway_B_A2_Seg_7" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busbar_Trunking>
+    )
+    {
+    }
+
+    over "Busway_B_A3_Tap_5" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busway_Tap_Off_Junction>
+    )
+    {
+    }
+
+    over "LV_Cable_MCC_A_clg_drc_2_Seg_2" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/LV_Power_Cable>
+    )
+    {
+    }
+
+    over "Busway_A_B1_Drop_19" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Rack_Power_Cord>
+    )
+    {
+    }
+
+    over "Busway_A_A3_Seg_11" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busbar_Trunking>
+    )
+    {
+    }
+
+    over "Busway_B_A3_Drop_17" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Rack_Power_Cord>
+    )
+    {
+    }
+
+    over "Busway_B_B2_Tap_10" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busway_Tap_Off_Junction>
+    )
+    {
+    }
+
+    over "Fuel_Line_FT_B_GEN_B_Seg_2" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Fuel_Line_DN80>
+    )
+    {
+    }
+
+    over "Busway_A_A4_Tap_4" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busway_Tap_Off_Junction>
+    )
+    {
+    }
+
+    over "LV_Cable_MSB_B_UPS_B2_Bend_1" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Cable_Junction>
+    )
+    {
+    }
+
+    over "Busway_A_A4_Drop_18" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Rack_Power_Cord>
+    )
+    {
+    }
+
+    over "LV_Cable_UOB_B_PDU_B_A2_Bend_2" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Cable_Junction>
+    )
+    {
+    }
+
+    over "Busway_A_A1_Seg_7" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busbar_Trunking>
+    )
+    {
+    }
+
+    over "Busway_B_A1_Tap_3" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busway_Tap_Off_Junction>
+    )
+    {
+    }
+
+    over "Busway_A_A4_Drop_4" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Rack_Power_Cord>
+    )
+    {
+    }
+
+    over "Busway_B_A3_Tap_10" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busway_Tap_Off_Junction>
+    )
+    {
+    }
+
+    over "Busway_B_A4_Tap_12" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busway_Tap_Off_Junction>
+    )
+    {
+    }
+
+    over "LV_Cable_MSB_B_MCC_B_Seg_1" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/LV_Power_Cable>
+    )
+    {
+    }
+
+    over "Busway_A_B4_Tap_9" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busway_Tap_Off_Junction>
+    )
+    {
+    }
+
+    over "Busway_B_B4_Drop_7" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Rack_Power_Cord>
+    )
+    {
+    }
+
+    over "Busway_A_B4_Tap_3" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busway_Tap_Off_Junction>
+    )
+    {
+    }
+
+    over "Busway_A_B1_Drop_9" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Rack_Power_Cord>
+    )
+    {
+    }
+
+    over "Busway_B_A4_Drop_8" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Rack_Power_Cord>
+    )
+    {
+    }
+
+    over "LV_Cable_UOB_B_PDU_B_A3_Seg_3" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/LV_Power_Cable>
+    )
+    {
+    }
+
+    over "Busway_A_B1_Tap_19" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busway_Tap_Off_Junction>
+    )
+    {
+    }
+
+    over "Busway_A_A1_Tap_14" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busway_Tap_Off_Junction>
+    )
+    {
+    }
+
+    over "Busway_A_B3_Tap_16" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busway_Tap_Off_Junction>
+    )
+    {
+    }
+
+    over "LV_Cable_UOB_B_PDU_B_B3_Seg_2" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/LV_Power_Cable>
+    )
+    {
+    }
+
+    over "Busway_A_B2_Seg_11" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busbar_Trunking>
+    )
+    {
+    }
+
+    over "Busway_B_B2_Seg_8" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busbar_Trunking>
+    )
+    {
+    }
+
+    over "Busway_B_B3_Drop_18" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Rack_Power_Cord>
+    )
+    {
+    }
+
+    over "Busway_A_A2_Drop_3" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Rack_Power_Cord>
+    )
+    {
+    }
+
+    over "LV_Cable_MCC_B_clg_fwp_3_Bend_1" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Cable_Junction>
+    )
+    {
+    }
+
+    over "Busway_B_B2_Tap_6" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busway_Tap_Off_Junction>
+    )
+    {
+    }
+
+    over "LV_Cable_UOB_B_PDU_B_B4_Seg_2" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/LV_Power_Cable>
+    )
+    {
+    }
+
+    over "Busway_A_B1_Drop_6" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Rack_Power_Cord>
+    )
+    {
+    }
+
+    over "Busway_A_A1_Tap_3" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busway_Tap_Off_Junction>
+    )
+    {
+    }
+
+    over "LV_Cable_MCC_A_clg_chp_1_Bend_1" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Cable_Junction>
+    )
+    {
+    }
+
+    over "Busway_B_A2_Tap_14" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busway_Tap_Off_Junction>
+    )
+    {
+    }
+
+    over "LV_Cable_UOB_B_PDU_B_A2_Bend_1" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Cable_Junction>
+    )
+    {
+    }
+
+    over "Busway_B_B2_Seg_17" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busbar_Trunking>
+    )
+    {
+    }
+
+    over "Busway_B_B3_Drop_20" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Rack_Power_Cord>
+    )
+    {
+    }
+
+    over "Busway_A_B1_Drop_11" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Rack_Power_Cord>
+    )
+    {
+    }
+
+    over "Busway_B_B2_Seg_10" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busbar_Trunking>
+    )
+    {
+    }
+
+    over "Busway_B_B4_Drop_11" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Rack_Power_Cord>
+    )
+    {
+    }
+
+    over "DC_Cable_BAT_B1_UPS_B1_Seg_1" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/DC_Battery_Cable>
+    )
+    {
+    }
+
+    over "LV_Cable_UOB_B_PDU_B_B2_Seg_3" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/LV_Power_Cable>
+    )
+    {
+    }
+
+    over "Busway_B_A4_Drop_4" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Rack_Power_Cord>
+    )
+    {
+    }
+
+    over "Busway_A_B2_Seg_16" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busbar_Trunking>
+    )
+    {
+    }
+
+    over "Busway_A_A4_Seg_19" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busbar_Trunking>
+    )
+    {
+    }
+
+    over "LV_Cable_MSB_A_MCC_A_Seg_1" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/LV_Power_Cable>
+    )
+    {
+    }
+
+    over "Busway_A_B2_Tap_4" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busway_Tap_Off_Junction>
+    )
+    {
+    }
+
+    over "Busway_B_A1_Seg_9" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busbar_Trunking>
+    )
+    {
+    }
+
+    over "Busway_A_A1_Seg_6" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busbar_Trunking>
+    )
+    {
+    }
+
+    over "Busway_B_A2_Seg_6" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busbar_Trunking>
+    )
+    {
+    }
+
+    over "Busway_B_B4_Seg_3" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busbar_Trunking>
+    )
+    {
+    }
+
+    over "Busway_B_A1_Tap_5" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busway_Tap_Off_Junction>
+    )
+    {
+    }
+
+    over "Busway_A_B3_Seg_5" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busbar_Trunking>
+    )
+    {
+    }
+
+    over "LV_Cable_UOB_A_PDU_A_A2_Seg_3" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/LV_Power_Cable>
+    )
+    {
+    }
+
+    over "LV_Cable_UPS_B3_UOB_B_Seg_2" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/LV_Power_Cable>
+    )
+    {
+    }
+
+    over "LV_Cable_MCC_A_clg_drc_1_Seg_2" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/LV_Power_Cable>
+    )
+    {
+    }
+
+    over "Busway_B_A3_Drop_19" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Rack_Power_Cord>
+    )
+    {
+    }
+
+    over "Busway_A_A1_Seg_20" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busbar_Trunking>
+    )
+    {
+    }
+
+    over "Busway_A_A2_Tap_4" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busway_Tap_Off_Junction>
+    )
+    {
+    }
+
+    over "Busway_B_A3_Drop_6" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Rack_Power_Cord>
+    )
+    {
+    }
+
+    over "Busway_A_B4_Tap_18" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busway_Tap_Off_Junction>
+    )
+    {
+    }
+
+    over "Busway_B_A2_Seg_15" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busbar_Trunking>
+    )
+    {
+    }
+
+    over "Busway_B_B3_Seg_9" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busbar_Trunking>
+    )
+    {
+    }
+
+    over "Busway_A_B2_Drop_11" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Rack_Power_Cord>
+    )
+    {
+    }
+
+    over "Busway_A_A4_Tap_9" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busway_Tap_Off_Junction>
+    )
+    {
+    }
+
+    over "Busway_A_B4_Tap_17" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busway_Tap_Off_Junction>
+    )
+    {
+    }
+
+    over "Busway_B_B1_Seg_14" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busbar_Trunking>
+    )
+    {
+    }
+
+    over "Busway_A_B1_Seg_11" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busbar_Trunking>
+    )
+    {
+    }
+
+    over "Busway_B_B1_Tap_11" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busway_Tap_Off_Junction>
+    )
+    {
+    }
+
+    over "LV_Cable_MCC_A_clg_ch_1_Seg_1" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/LV_Power_Cable>
+    )
+    {
+    }
+
+    over "Busway_B_A2_Seg_16" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busbar_Trunking>
+    )
+    {
+    }
+
+    over "Busway_B_A3_Seg_4" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busbar_Trunking>
+    )
+    {
+    }
+
+    over "Busway_B_B3_Drop_11" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Rack_Power_Cord>
+    )
+    {
+    }
+
+    over "Busway_A_A1_Seg_8" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busbar_Trunking>
+    )
+    {
+    }
+
+    over "Busway_A_B3_Tap_15" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busway_Tap_Off_Junction>
+    )
+    {
+    }
+
+    over "Busway_B_A2_Tap_4" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busway_Tap_Off_Junction>
+    )
+    {
+    }
+
+    over "Busway_A_B4_Tap_16" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busway_Tap_Off_Junction>
+    )
+    {
+    }
+
+    over "Busway_A_A4_Seg_10" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busbar_Trunking>
+    )
+    {
+    }
+
+    over "Busway_A_A3_Tap_10" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busway_Tap_Off_Junction>
+    )
+    {
+    }
+
+    over "LV_Cable_UOB_A_PDU_A_A2_Seg_2" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/LV_Power_Cable>
+    )
+    {
+    }
+
+    over "Busway_A_A2_Tap_17" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busway_Tap_Off_Junction>
+    )
+    {
+    }
+
+    over "Busway_A_B1_Tap_8" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busway_Tap_Off_Junction>
+    )
+    {
+    }
+
+    over "Busway_A_B3_Drop_6" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Rack_Power_Cord>
+    )
+    {
+    }
+
+    over "LV_Cable_UOB_A_PDU_A_B3_Bend_2" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Cable_Junction>
+    )
+    {
+    }
+
+    over "Busway_A_A1_Tap_17" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busway_Tap_Off_Junction>
+    )
+    {
+    }
+
+    over "Busway_B_B3_Drop_15" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Rack_Power_Cord>
+    )
+    {
+    }
+
+    over "LV_Cable_UOB_A_PDU_A_A1_Bend_1" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Cable_Junction>
+    )
+    {
+    }
+
+    over "Busway_B_B4_Tap_11" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busway_Tap_Off_Junction>
+    )
+    {
+    }
+
+    over "Busway_B_A3_Seg_3" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busbar_Trunking>
+    )
+    {
+    }
+
+    over "LV_Cable_MCC_A_clg_fwp_1_Seg_1" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/LV_Power_Cable>
+    )
+    {
+    }
+
+    over "Busway_B_A2_Seg_10" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busbar_Trunking>
+    )
+    {
+    }
+
+    over "Busway_A_A1_Seg_2" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busbar_Trunking>
+    )
+    {
+    }
+
+    over "LV_Cable_UPS_A2_UOB_A_Seg_1" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/LV_Power_Cable>
+    )
+    {
+    }
+
+    over "HV_Cable_RMU_B_TX_B_Seg_2" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/HV_Power_Cable_11kV>
+    )
+    {
+    }
+
+    over "Busway_A_B3_Seg_2" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busbar_Trunking>
+    )
+    {
+    }
+
+    over "Busway_B_B2_Drop_9" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Rack_Power_Cord>
+    )
+    {
+    }
+
+    over "Busway_A_B3_Seg_14" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busbar_Trunking>
+    )
+    {
+    }
+
+    over "Busway_B_B3_Seg_19" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busbar_Trunking>
+    )
+    {
+    }
+
+    over "Busway_B_A1_Tap_1" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busway_Tap_Off_Junction>
+    )
+    {
+    }
+
+    over "Busway_A_A4_Seg_4" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busbar_Trunking>
+    )
+    {
+    }
+
+    over "LV_Cable_UPS_A3_UOB_A_Seg_2" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/LV_Power_Cable>
+    )
+    {
+    }
+
+    over "Busway_B_B3_Seg_2" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busbar_Trunking>
+    )
+    {
+    }
+
+    over "Busway_A_B4_Drop_16" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Rack_Power_Cord>
+    )
+    {
+    }
+
+    over "Busway_B_B4_Drop_5" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Rack_Power_Cord>
+    )
+    {
+    }
+
+    over "Busway_A_B2_Seg_20" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busbar_Trunking>
+    )
+    {
+    }
+
+    over "Busway_A_B2_Seg_19" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busbar_Trunking>
+    )
+    {
+    }
+
+    over "Busway_A_B4_Drop_8" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Rack_Power_Cord>
+    )
+    {
+    }
+
+    over "Busway_B_B2_Seg_20" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busbar_Trunking>
+    )
+    {
+    }
+
+    over "Busway_A_A1_Seg_18" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busbar_Trunking>
+    )
+    {
+    }
+
+    over "Busway_A_B1_Tap_3" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busway_Tap_Off_Junction>
+    )
+    {
+    }
+
+    over "Busway_A_B2_Drop_6" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Rack_Power_Cord>
+    )
+    {
+    }
+
+    over "Busway_A_A2_Tap_8" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busway_Tap_Off_Junction>
+    )
+    {
+    }
+
+    over "Busway_A_A3_Seg_13" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busbar_Trunking>
+    )
+    {
+    }
+
+    over "LV_Cable_UPS_B3_UOB_B_Seg_1" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/LV_Power_Cable>
+    )
+    {
+    }
+
+    over "Busway_B_A2_Tap_3" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busway_Tap_Off_Junction>
+    )
+    {
+    }
+
+    over "Busway_A_A1_Tap_7" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busway_Tap_Off_Junction>
+    )
+    {
+    }
+
+    over "Busway_B_B2_Tap_3" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busway_Tap_Off_Junction>
+    )
+    {
+    }
+
+    over "Busway_A_A3_Tap_7" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busway_Tap_Off_Junction>
+    )
+    {
+    }
+
+    over "Busway_B_A3_Tap_1" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busway_Tap_Off_Junction>
+    )
+    {
+    }
+
+    over "Busway_B_B1_Seg_20" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busbar_Trunking>
+    )
+    {
+    }
+
+    over "Busway_B_B2_Seg_3" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busbar_Trunking>
+    )
+    {
+    }
+
+    over "Busway_A_B1_Drop_14" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Rack_Power_Cord>
+    )
+    {
+    }
+
+    over "Busway_A_A1_Drop_17" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Rack_Power_Cord>
+    )
+    {
+    }
+
+    over "Busway_A_A2_Tap_12" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busway_Tap_Off_Junction>
+    )
+    {
+    }
+
+    over "Busway_B_A1_Drop_14" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Rack_Power_Cord>
+    )
+    {
+    }
+
+    over "Busway_A_A1_Drop_20" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Rack_Power_Cord>
+    )
+    {
+    }
+
+    over "Busway_B_A2_Drop_20" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Rack_Power_Cord>
+    )
+    {
+    }
+
+    over "Busway_A_B2_Drop_20" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Rack_Power_Cord>
+    )
+    {
+    }
+
+    over "Busway_B_A3_Seg_16" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busbar_Trunking>
+    )
+    {
+    }
+
+    over "Busway_A_B2_Tap_19" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busway_Tap_Off_Junction>
+    )
+    {
+    }
+
+    over "Busway_B_B4_Tap_14" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busway_Tap_Off_Junction>
+    )
+    {
+    }
+
+    over "Busway_B_A2_Drop_2" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Rack_Power_Cord>
+    )
+    {
+    }
+
+    over "Busway_B_A1_Seg_7" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busbar_Trunking>
+    )
+    {
+    }
+
+    over "Busway_A_B4_Drop_7" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Rack_Power_Cord>
+    )
+    {
+    }
+
+    over "Busway_B_B1_Tap_12" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busway_Tap_Off_Junction>
+    )
+    {
+    }
+
+    over "LV_Cable_UOB_B_PDU_B_A4_Seg_3" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/LV_Power_Cable>
+    )
+    {
+    }
+
+    over "LV_Cable_MSB_A_UPS_A4_Seg_2" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/LV_Power_Cable>
+    )
+    {
+    }
+
+    over "Busway_B_A4_Seg_16" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busbar_Trunking>
+    )
+    {
+    }
+
+    over "Busway_B_B4_Seg_12" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busbar_Trunking>
+    )
+    {
+    }
+
+    over "Busway_A_A4_Seg_13" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busbar_Trunking>
+    )
+    {
+    }
+
+    over "Busway_A_A4_Tap_8" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busway_Tap_Off_Junction>
+    )
+    {
+    }
+
+    over "Busway_B_B3_Drop_12" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Rack_Power_Cord>
+    )
+    {
+    }
+
+    over "Busway_B_B1_Seg_11" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busbar_Trunking>
+    )
+    {
+    }
+
+    over "Busway_B_A3_Tap_12" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busway_Tap_Off_Junction>
+    )
+    {
+    }
+
+    over "Busway_A_A3_Drop_3" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Rack_Power_Cord>
+    )
+    {
+    }
+
+    over "DC_Cable_BAT_A3_UPS_A3_Seg_1" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/DC_Battery_Cable>
+    )
+    {
+    }
+
+    over "Busway_B_B2_Seg_1" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busbar_Trunking>
+    )
+    {
+    }
+
+    over "Busway_B_A3_Tap_4" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busway_Tap_Off_Junction>
+    )
+    {
+    }
+
+    over "Busway_A_A3_Tap_3" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busway_Tap_Off_Junction>
+    )
+    {
+    }
+
+    over "Busway_B_B3_Drop_2" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Rack_Power_Cord>
+    )
+    {
+    }
+
+    over "Busway_A_B4_Seg_1" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busbar_Trunking>
+    )
+    {
+    }
+
+    over "LV_Cable_MCC_A_clg_drc_2_Seg_1" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/LV_Power_Cable>
+    )
+    {
+    }
+
+    over "Busway_A_B3_Drop_3" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Rack_Power_Cord>
+    )
+    {
+    }
+
+    over "Busway_A_B2_Drop_1" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Rack_Power_Cord>
+    )
+    {
+    }
+
+    over "Busway_A_B4_Drop_10" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Rack_Power_Cord>
+    )
+    {
+    }
+
+    over "Busway_B_A2_Drop_19" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Rack_Power_Cord>
+    )
+    {
+    }
+
+    over "Busway_A_B1_Tap_10" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busway_Tap_Off_Junction>
+    )
+    {
+    }
+
+    over "LV_Cable_TX_A_MSB_A_Seg_2" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/LV_Power_Cable>
+    )
+    {
+    }
+
+    over "Busway_B_B2_Drop_20" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Rack_Power_Cord>
+    )
+    {
+    }
+
+    over "LV_Cable_UOB_B_PDU_B_B4_Bend_1" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Cable_Junction>
+    )
+    {
+    }
+
+    over "Busway_A_A2_Tap_1" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busway_Tap_Off_Junction>
+    )
+    {
+    }
+
+    over "Busway_A_B4_Seg_15" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busbar_Trunking>
+    )
+    {
+    }
+
+    over "DC_Cable_BAT_A1_UPS_A1_Seg_1" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/DC_Battery_Cable>
+    )
+    {
+    }
+
+    over "Busway_B_B1_Tap_13" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busway_Tap_Off_Junction>
+    )
+    {
+    }
+
+    over "LV_Cable_MSB_A_UPS_A2_Bend_1" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Cable_Junction>
+    )
+    {
+    }
+
+    over "Busway_A_B1_Drop_13" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Rack_Power_Cord>
+    )
+    {
+    }
+
+    over "LV_Cable_MCC_B_clg_ch_2_Bend_1" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Cable_Junction>
+    )
+    {
+    }
+
+    over "LV_Cable_MCC_B_clg_ahu_1_Seg_1" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/LV_Power_Cable>
+    )
+    {
+    }
+
+    over "Busway_A_A1_Seg_15" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busbar_Trunking>
+    )
+    {
+    }
+
+    over "Busway_A_B1_Drop_16" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Rack_Power_Cord>
+    )
+    {
+    }
+
+    over "LV_Cable_UOB_B_PDU_B_B3_Bend_2" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Cable_Junction>
+    )
+    {
+    }
+
+    over "Busway_B_B3_Seg_12" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busbar_Trunking>
+    )
+    {
+    }
+
+    over "Busway_B_B1_Drop_8" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Rack_Power_Cord>
+    )
+    {
+    }
+
+    over "Busway_A_B4_Drop_9" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Rack_Power_Cord>
+    )
+    {
+    }
+
+    over "Busway_A_A1_Seg_4" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busbar_Trunking>
+    )
+    {
+    }
+
+    over "HV_Cable_RMU_A_TX_A_Seg_1" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/HV_Power_Cable_11kV>
+    )
+    {
+    }
+
+    over "Busway_A_A3_Tap_18" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busway_Tap_Off_Junction>
+    )
+    {
+    }
+
+    over "LV_Cable_MSB_A_UPS_A3_Seg_2" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/LV_Power_Cable>
+    )
+    {
+    }
+
+    over "Busway_A_B4_Tap_7" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busway_Tap_Off_Junction>
+    )
+    {
+    }
+
+    over "Busway_B_A3_Seg_2" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busbar_Trunking>
+    )
+    {
+    }
+
+    over "Busway_B_B4_Drop_12" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Rack_Power_Cord>
+    )
+    {
+    }
+
+    over "Busway_A_A1_Drop_5" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Rack_Power_Cord>
+    )
+    {
+    }
+
+    over "Busway_B_A4_Drop_20" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Rack_Power_Cord>
+    )
+    {
+    }
+
+    over "Busway_B_A4_Seg_17" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busbar_Trunking>
+    )
+    {
+    }
+
+    over "Busway_A_B2_Drop_19" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Rack_Power_Cord>
+    )
+    {
+    }
+
+    over "Busway_B_A3_Seg_5" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busbar_Trunking>
+    )
+    {
+    }
+
+    over "Busway_B_A4_Seg_15" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busbar_Trunking>
+    )
+    {
+    }
+
+    over "Busway_A_A1_Seg_9" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busbar_Trunking>
+    )
+    {
+    }
+
+    over "Busway_A_A3_Seg_9" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busbar_Trunking>
+    )
+    {
+    }
+
+    over "Busway_B_B1_Seg_16" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busbar_Trunking>
+    )
+    {
+    }
+
+    over "Busway_B_A1_Seg_14" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busbar_Trunking>
+    )
+    {
+    }
+
+    over "Busway_B_A3_Seg_13" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busbar_Trunking>
+    )
+    {
+    }
+
+    over "Busway_B_B3_Drop_10" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Rack_Power_Cord>
+    )
+    {
+    }
+
+    over "Busway_A_B4_Drop_1" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Rack_Power_Cord>
+    )
+    {
+    }
+
+    over "Busway_B_B2_Tap_20" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busway_Tap_Off_Junction>
+    )
+    {
+    }
+
+    over "Busway_B_B1_Seg_18" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busbar_Trunking>
+    )
+    {
+    }
+
+    over "Busway_B_B1_Drop_17" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Rack_Power_Cord>
+    )
+    {
+    }
+
+    over "DC_Cable_BAT_B4_UPS_B4_Seg_1" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/DC_Battery_Cable>
+    )
+    {
+    }
+
+    over "Busway_B_B4_Tap_1" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busway_Tap_Off_Junction>
+    )
+    {
+    }
+
+    over "Busway_A_B1_Seg_14" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busbar_Trunking>
+    )
+    {
+    }
+
+    over "Busway_A_A2_Drop_16" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Rack_Power_Cord>
+    )
+    {
+    }
+
+    over "Busway_A_A1_Tap_10" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busway_Tap_Off_Junction>
+    )
+    {
+    }
+
+    over "Busway_A_B1_Seg_15" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busbar_Trunking>
+    )
+    {
+    }
+
+    over "Busway_B_A2_Drop_6" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Rack_Power_Cord>
+    )
+    {
+    }
+
+    over "Busway_B_B4_Drop_15" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Rack_Power_Cord>
+    )
+    {
+    }
+
+    over "Busway_A_B1_Tap_13" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busway_Tap_Off_Junction>
+    )
+    {
+    }
+
+    over "LV_Cable_UPS_B1_UOB_B_Bend_1" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Cable_Junction>
+    )
+    {
+    }
+
+    over "LV_Cable_MCC_A_clg_crah_b2_Bend_1" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Cable_Junction>
+    )
+    {
+    }
+
+    over "Busway_A_A4_Seg_16" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busbar_Trunking>
+    )
+    {
+    }
+
+    over "Busway_A_B3_Tap_5" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busway_Tap_Off_Junction>
+    )
+    {
+    }
+
+    over "Busway_A_A3_Tap_4" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busway_Tap_Off_Junction>
+    )
+    {
+    }
+
+    over "LV_Cable_UOB_B_PDU_B_B2_Bend_2" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Cable_Junction>
+    )
+    {
+    }
+
+    over "Busway_B_A3_Drop_3" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Rack_Power_Cord>
+    )
+    {
+    }
+
+    over "Busway_B_B2_Drop_2" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Rack_Power_Cord>
+    )
+    {
+    }
+
+    over "Busway_B_B4_Seg_11" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busbar_Trunking>
+    )
+    {
+    }
+
+    over "LV_Cable_UOB_B_PDU_B_B4_Bend_2" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Cable_Junction>
+    )
+    {
+    }
+
+    over "Busway_B_B4_Tap_15" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busway_Tap_Off_Junction>
+    )
+    {
+    }
+
+    over "Busway_B_B4_Tap_17" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busway_Tap_Off_Junction>
+    )
+    {
+    }
+
+    over "Busway_B_A2_Drop_11" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Rack_Power_Cord>
+    )
+    {
+    }
+
+    over "Busway_A_A2_Drop_9" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Rack_Power_Cord>
+    )
+    {
+    }
+
+    over "Busway_A_B2_Tap_18" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busway_Tap_Off_Junction>
+    )
+    {
+    }
+
+    over "Busway_A_A4_Tap_13" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busway_Tap_Off_Junction>
+    )
+    {
+    }
+
+    over "Busway_B_A4_Seg_10" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busbar_Trunking>
+    )
+    {
+    }
+
+    over "Busway_B_A4_Tap_9" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busway_Tap_Off_Junction>
+    )
+    {
+    }
+
+    over "LV_Cable_UOB_A_PDU_A_B1_Seg_3" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/LV_Power_Cable>
+    )
+    {
+    }
+
+    over "Busway_A_B3_Seg_17" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busbar_Trunking>
+    )
+    {
+    }
+
+    over "LV_Cable_TX_A_MSB_A_Bend_1" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Cable_Junction>
+    )
+    {
+    }
+
+    over "Busway_B_A2_Tap_8" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busway_Tap_Off_Junction>
+    )
+    {
+    }
+
+    over "Busway_B_A2_Seg_1" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busbar_Trunking>
+    )
+    {
+    }
+
+    over "Busway_A_A1_Tap_20" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busway_Tap_Off_Junction>
+    )
+    {
+    }
+
+    over "Busway_A_A2_Seg_7" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busbar_Trunking>
+    )
+    {
+    }
+
+    over "Busway_A_A3_Tap_8" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busway_Tap_Off_Junction>
+    )
+    {
+    }
+
+    over "Busway_A_B3_Tap_9" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busway_Tap_Off_Junction>
+    )
+    {
+    }
+
+    over "Busway_B_B4_Seg_15" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busbar_Trunking>
+    )
+    {
+    }
+
+    over "Busway_A_A3_Tap_17" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busway_Tap_Off_Junction>
+    )
+    {
+    }
+
+    over "LV_Cable_MSB_B_HDB_B_Bend_1" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Cable_Junction>
+    )
+    {
+    }
+
+    over "LV_Cable_UOB_B_PDU_B_B4_Seg_3" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/LV_Power_Cable>
+    )
+    {
+    }
+
+    over "LV_Cable_UOB_A_PDU_A_A2_Seg_1" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/LV_Power_Cable>
+    )
+    {
+    }
+
+    over "Busway_B_B4_Tap_7" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busway_Tap_Off_Junction>
+    )
+    {
+    }
+
+    over "Busway_B_A3_Drop_15" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Rack_Power_Cord>
+    )
+    {
+    }
+
+    over "Busway_B_A3_Tap_3" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busway_Tap_Off_Junction>
+    )
+    {
+    }
+
+    over "Busway_B_B3_Drop_6" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Rack_Power_Cord>
+    )
+    {
+    }
+
+    over "Busway_B_A4_Drop_17" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Rack_Power_Cord>
+    )
+    {
+    }
+
+    over "Busway_B_A4_Drop_7" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Rack_Power_Cord>
+    )
+    {
+    }
+
+    over "Busway_B_B1_Tap_18" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busway_Tap_Off_Junction>
+    )
+    {
+    }
+
+    over "Busway_B_B1_Drop_6" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Rack_Power_Cord>
+    )
+    {
+    }
+
+    over "LV_Cable_MSB_A_HDB_A_Bend_1" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Cable_Junction>
+    )
+    {
+    }
+
+    over "Busway_A_A1_Drop_9" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Rack_Power_Cord>
+    )
+    {
+    }
+
+    over "Busway_B_B4_Seg_7" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busbar_Trunking>
+    )
+    {
+    }
+
+    over "Busway_B_A1_Seg_8" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busbar_Trunking>
+    )
+    {
+    }
+
+    over "Busway_A_B3_Seg_3" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busbar_Trunking>
+    )
+    {
+    }
+
+    over "Busway_B_B2_Seg_6" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busbar_Trunking>
+    )
+    {
+    }
+
+    over "Busway_A_A4_Seg_15" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busbar_Trunking>
+    )
+    {
+    }
+
+    over "Busway_A_A3_Seg_17" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busbar_Trunking>
+    )
+    {
+    }
+
+    over "Busway_A_A3_Tap_16" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busway_Tap_Off_Junction>
+    )
+    {
+    }
+
+    over "Busway_A_A2_Tap_13" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busway_Tap_Off_Junction>
+    )
+    {
+    }
+
+    over "Busway_B_A4_Drop_2" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Rack_Power_Cord>
+    )
+    {
+    }
+
+    over "Busway_A_A1_Tap_12" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busway_Tap_Off_Junction>
+    )
+    {
+    }
+
+    over "LV_Cable_UOB_B_PDU_B_B2_Seg_2" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/LV_Power_Cable>
+    )
+    {
+    }
+
+    over "Busway_B_B3_Tap_15" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busway_Tap_Off_Junction>
+    )
+    {
+    }
+
+    over "Busway_A_A1_Drop_7" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Rack_Power_Cord>
+    )
+    {
+    }
+
+    over "Busway_B_A1_Seg_10" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busbar_Trunking>
+    )
+    {
+    }
+
+    over "Busway_A_A2_Seg_10" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busbar_Trunking>
+    )
+    {
+    }
+
+    over "Busway_A_B2_Seg_15" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busbar_Trunking>
+    )
+    {
+    }
+
+    over "Busway_B_A4_Drop_16" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Rack_Power_Cord>
+    )
+    {
+    }
+
+    over "Busway_B_B2_Seg_12" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busbar_Trunking>
+    )
+    {
+    }
+
+    over "Busway_A_A3_Drop_10" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Rack_Power_Cord>
+    )
+    {
+    }
+
+    over "Busway_A_A4_Tap_15" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busway_Tap_Off_Junction>
+    )
+    {
+    }
+
+    over "Busway_A_A4_Tap_17" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busway_Tap_Off_Junction>
+    )
+    {
+    }
+
+    over "Busway_B_A1_Drop_16" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Rack_Power_Cord>
+    )
+    {
+    }
+
+    over "Busway_A_A2_Tap_19" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busway_Tap_Off_Junction>
+    )
+    {
+    }
+
+    over "LV_Cable_GEN_B_MSB_B_Bend_1" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Cable_Junction>
+    )
+    {
+    }
+
+    over "Busway_B_B4_Drop_2" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Rack_Power_Cord>
+    )
+    {
+    }
+
+    over "Busway_B_B3_Drop_13" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Rack_Power_Cord>
+    )
+    {
+    }
+
+    over "LV_Cable_UOB_B_PDU_B_B3_Seg_3" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/LV_Power_Cable>
+    )
+    {
+    }
+
+    over "Busway_A_B1_Seg_4" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busbar_Trunking>
+    )
+    {
+    }
+
+    over "Busway_A_B1_Seg_12" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busbar_Trunking>
+    )
+    {
+    }
+
+    over "LV_Cable_UOB_B_PDU_B_A2_Seg_1" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/LV_Power_Cable>
+    )
+    {
+    }
+
+    over "LV_Cable_MCC_A_clg_crah_b1_Bend_1" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Cable_Junction>
+    )
+    {
+    }
+
+    over "Busway_B_A3_Tap_15" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busway_Tap_Off_Junction>
+    )
+    {
+    }
+
+    over "Busway_B_A2_Tap_7" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busway_Tap_Off_Junction>
+    )
+    {
+    }
+
+    over "LV_Cable_MSB_B_HDB_B_Seg_2" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/LV_Power_Cable>
+    )
+    {
+    }
+
+    over "Busway_B_A2_Seg_5" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busbar_Trunking>
+    )
+    {
+    }
+
+    over "LV_Cable_MCC_B_clg_fwp_2_Bend_1" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Cable_Junction>
+    )
+    {
+    }
+
+    over "Busway_B_B3_Tap_11" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busway_Tap_Off_Junction>
+    )
+    {
+    }
+
+    over "Busway_B_B1_Drop_16" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Rack_Power_Cord>
+    )
+    {
+    }
+
+    over "Busway_A_B3_Drop_11" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Rack_Power_Cord>
+    )
+    {
+    }
+
+    over "Busway_B_A1_Tap_2" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busway_Tap_Off_Junction>
+    )
+    {
+    }
+
+    over "Busway_B_B3_Seg_7" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busbar_Trunking>
+    )
+    {
+    }
+
+    over "Busway_A_A4_Tap_6" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busway_Tap_Off_Junction>
+    )
+    {
+    }
+
+    over "Busway_A_A4_Tap_16" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busway_Tap_Off_Junction>
+    )
+    {
+    }
+
+    over "Busway_A_B3_Seg_6" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busbar_Trunking>
+    )
+    {
+    }
+
+    over "Busway_B_A3_Drop_4" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Rack_Power_Cord>
+    )
+    {
+    }
+
+    over "LV_Cable_UOB_B_PDU_B_B1_Bend_2" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Cable_Junction>
+    )
+    {
+    }
+
+    over "Busway_B_A1_Drop_3" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Rack_Power_Cord>
+    )
+    {
+    }
+
+    over "LV_Cable_UOB_A_PDU_A_B1_Seg_1" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/LV_Power_Cable>
+    )
+    {
+    }
+
+    over "LV_Cable_MCC_B_clg_drc_4_Bend_1" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Cable_Junction>
+    )
+    {
+    }
+
+    over "Busway_B_B4_Seg_10" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busbar_Trunking>
+    )
+    {
+    }
+
+    over "Busway_B_A3_Seg_11" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busbar_Trunking>
+    )
+    {
+    }
+
+    over "Fuel_Line_FT_A_GEN_A_Bend_1" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Fuel_Line_Bend_DN80>
+    )
+    {
+    }
+
+    over "Busway_A_B2_Seg_17" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busbar_Trunking>
+    )
+    {
+    }
+
+    over "Busway_A_B3_Tap_14" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busway_Tap_Off_Junction>
+    )
+    {
+    }
+
+    over "Busway_A_A3_Drop_9" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Rack_Power_Cord>
+    )
+    {
+    }
+
+    over "Busway_A_B1_Drop_17" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Rack_Power_Cord>
+    )
+    {
+    }
+
+    over "Busway_B_B4_Seg_17" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busbar_Trunking>
+    )
+    {
+    }
+
+    over "Busway_A_A3_Seg_6" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busbar_Trunking>
+    )
+    {
+    }
+
+    over "Busway_A_B1_Drop_4" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Rack_Power_Cord>
+    )
+    {
+    }
+
+    over "Busway_B_B3_Seg_6" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busbar_Trunking>
+    )
+    {
+    }
+
+    over "Busway_B_B1_Tap_5" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busway_Tap_Off_Junction>
+    )
+    {
+    }
+
+    over "Busway_B_A2_Tap_2" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busway_Tap_Off_Junction>
+    )
+    {
+    }
+
+    over "Busway_B_A1_Seg_19" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busbar_Trunking>
+    )
+    {
+    }
+
+    over "Busway_B_B1_Drop_4" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Rack_Power_Cord>
+    )
+    {
+    }
+
+    over "Busway_A_A2_Drop_8" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Rack_Power_Cord>
+    )
+    {
+    }
+
+    over "Busway_B_A2_Tap_6" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busway_Tap_Off_Junction>
+    )
+    {
+    }
+
+    over "Busway_A_A3_Drop_4" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Rack_Power_Cord>
+    )
+    {
+    }
+
+    over "LV_Cable_MCC_B_clg_chp_3_Seg_1" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/LV_Power_Cable>
+    )
+    {
+    }
+
+    over "LV_Cable_UPS_A2_UOB_A_Bend_1" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Cable_Junction>
+    )
+    {
+    }
+
+    over "Busway_A_B4_Drop_4" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Rack_Power_Cord>
+    )
+    {
+    }
+
+    over "Busway_A_A4_Drop_16" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Rack_Power_Cord>
+    )
+    {
+    }
+
+    over "Busway_B_A3_Seg_18" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busbar_Trunking>
+    )
+    {
+    }
+
+    over "Busway_B_A4_Seg_4" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busbar_Trunking>
+    )
+    {
+    }
+
+    over "Busway_A_A3_Seg_18" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busbar_Trunking>
+    )
+    {
+    }
+
+    over "Busway_B_B2_Seg_14" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busbar_Trunking>
+    )
+    {
+    }
+
+    over "Busway_B_B1_Seg_10" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busbar_Trunking>
+    )
+    {
+    }
+
+    over "Busway_B_B4_Drop_14" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Rack_Power_Cord>
+    )
+    {
+    }
+
+    over "Busway_B_A3_Drop_20" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Rack_Power_Cord>
+    )
+    {
+    }
+
+    over "LV_Cable_TX_B_MSB_B_Seg_2" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/LV_Power_Cable>
+    )
+    {
+    }
+
+    over "Busway_B_B3_Tap_7" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busway_Tap_Off_Junction>
+    )
+    {
+    }
+
+    over "LV_Cable_UPS_A3_UOB_A_Seg_1" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/LV_Power_Cable>
+    )
+    {
+    }
+
+    over "LV_Cable_MCC_A_clg_fwp_1_Seg_2" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/LV_Power_Cable>
+    )
+    {
+    }
+
+    over "LV_Cable_UOB_A_PDU_A_A3_Seg_2" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/LV_Power_Cable>
+    )
+    {
+    }
+
+    over "Busway_B_B1_Seg_3" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busbar_Trunking>
+    )
+    {
+    }
+
+    over "Busway_B_B1_Tap_9" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busway_Tap_Off_Junction>
+    )
+    {
+    }
+
+    over "Busway_B_A1_Seg_2" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busbar_Trunking>
+    )
+    {
+    }
+
+    over "LV_Cable_UOB_A_PDU_A_B3_Seg_3" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/LV_Power_Cable>
+    )
+    {
+    }
+
+    over "LV_Cable_UPS_B2_UOB_B_Seg_1" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/LV_Power_Cable>
+    )
+    {
+    }
+
+    over "Busway_B_B3_Tap_17" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busway_Tap_Off_Junction>
+    )
+    {
+    }
+
+    over "Busway_B_A4_Tap_13" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busway_Tap_Off_Junction>
+    )
+    {
+    }
+
+    over "Busway_B_A1_Tap_19" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busway_Tap_Off_Junction>
+    )
+    {
+    }
+
+    over "Busway_B_A4_Tap_3" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busway_Tap_Off_Junction>
+    )
+    {
+    }
+
+    over "Busway_B_B4_Drop_10" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Rack_Power_Cord>
+    )
+    {
+    }
+
+    over "Busway_B_B4_Seg_4" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busbar_Trunking>
+    )
+    {
+    }
+
+    over "LV_Cable_UPS_B4_UOB_B_Seg_1" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/LV_Power_Cable>
+    )
+    {
+    }
+
+    over "Busway_B_B3_Seg_14" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busbar_Trunking>
+    )
+    {
+    }
+
+    over "LV_Cable_MCC_B_clg_crah_b4_Seg_2" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/LV_Power_Cable>
+    )
+    {
+    }
+
+    over "Busway_A_A2_Seg_15" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busbar_Trunking>
+    )
+    {
+    }
+
+    over "Busway_B_A1_Seg_13" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busbar_Trunking>
+    )
+    {
+    }
+
+    over "Busway_B_A4_Seg_1" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busbar_Trunking>
+    )
+    {
+    }
+
+    over "Busway_B_B3_Tap_9" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busway_Tap_Off_Junction>
+    )
+    {
+    }
+
+    over "Busway_B_A4_Drop_5" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Rack_Power_Cord>
+    )
+    {
+    }
+
+    over "Busway_A_B1_Tap_20" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busway_Tap_Off_Junction>
+    )
+    {
+    }
+
+    over "Busway_B_A1_Seg_15" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busbar_Trunking>
+    )
+    {
+    }
+
+    over "LV_Cable_MSB_A_HDB_A_Seg_1" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/LV_Power_Cable>
+    )
+    {
+    }
+
+    over "Busway_A_A4_Tap_10" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busway_Tap_Off_Junction>
+    )
+    {
+    }
+
+    over "Busway_B_A1_Seg_11" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busbar_Trunking>
+    )
+    {
+    }
+
+    over "LV_Cable_MSB_B_UPS_B3_Seg_1" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/LV_Power_Cable>
+    )
+    {
+    }
+
+    over "Busway_A_B1_Seg_1" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busbar_Trunking>
+    )
+    {
+    }
+
+    over "LV_Cable_UOB_B_PDU_B_B3_Seg_1" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/LV_Power_Cable>
+    )
+    {
+    }
+
+    over "Busway_B_B2_Seg_4" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busbar_Trunking>
+    )
+    {
+    }
+
+    over "Busway_A_A4_Tap_5" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busway_Tap_Off_Junction>
+    )
+    {
+    }
+
+    over "LV_Cable_MCC_A_clg_drc_1_Seg_1" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/LV_Power_Cable>
+    )
+    {
+    }
+
+    over "Busway_B_A3_Seg_1" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busbar_Trunking>
+    )
+    {
+    }
+
+    over "LV_Cable_UPS_A1_UOB_A_Seg_2" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/LV_Power_Cable>
+    )
+    {
+    }
+
+    over "Busway_A_B1_Drop_20" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Rack_Power_Cord>
+    )
+    {
+    }
+
+    over "Busway_B_B3_Drop_19" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Rack_Power_Cord>
+    )
+    {
+    }
+
+    over "Busway_B_B1_Drop_12" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Rack_Power_Cord>
+    )
+    {
+    }
+
+    over "HV_Cable_UTIL_B_RMU_B_Seg_1" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/HV_Power_Cable_11kV>
+    )
+    {
+    }
+
+    over "LV_Cable_MSB_B_UPS_B3_Seg_2" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/LV_Power_Cable>
+    )
+    {
+    }
+
+    over "Busway_A_A3_Drop_11" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Rack_Power_Cord>
+    )
+    {
+    }
+
+    over "Busway_B_A2_Tap_15" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busway_Tap_Off_Junction>
+    )
+    {
+    }
+
+    over "Busway_B_B2_Seg_15" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busbar_Trunking>
+    )
+    {
+    }
+
+    over "Busway_A_B2_Drop_8" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Rack_Power_Cord>
+    )
+    {
+    }
+
+    over "Busway_A_B2_Seg_10" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busbar_Trunking>
+    )
+    {
+    }
+
+    over "Busway_B_A2_Seg_9" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busbar_Trunking>
+    )
+    {
+    }
+
+    over "Busway_B_B2_Tap_18" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busway_Tap_Off_Junction>
+    )
+    {
+    }
+
+    over "LV_Cable_UOB_B_PDU_B_B2_Seg_1" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/LV_Power_Cable>
+    )
+    {
+    }
+
+    over "LV_Cable_MCC_B_clg_ahu_1_Bend_1" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Cable_Junction>
+    )
+    {
+    }
+
+    over "Busway_B_A3_Tap_13" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busway_Tap_Off_Junction>
+    )
+    {
+    }
+
+    over "Busway_B_B4_Drop_20" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Rack_Power_Cord>
+    )
+    {
+    }
+
+    over "Busway_A_B3_Drop_10" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Rack_Power_Cord>
+    )
+    {
+    }
+
+    over "LV_Cable_MCC_A_clg_drc_2_Bend_1" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Cable_Junction>
+    )
+    {
+    }
+
+    over "Busway_B_A3_Drop_11" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Rack_Power_Cord>
+    )
+    {
+    }
+
+    over "Busway_B_B3_Seg_15" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busbar_Trunking>
+    )
+    {
+    }
+
+    over "HV_Cable_RMU_B_TX_B_Bend_1" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Cable_Junction>
+    )
+    {
+    }
+
+    over "LV_Cable_MSB_B_UPS_B1_Seg_1" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/LV_Power_Cable>
+    )
+    {
+    }
+
+    over "Busway_B_A1_Seg_1" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busbar_Trunking>
+    )
+    {
+    }
+
+    over "Busway_B_A4_Seg_11" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busbar_Trunking>
+    )
+    {
+    }
+
+    over "LV_Cable_MCC_B_clg_crah_b4_Bend_1" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Cable_Junction>
+    )
+    {
+    }
+
+    over "Busway_A_A1_Seg_5" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busbar_Trunking>
+    )
+    {
+    }
+
+    over "Busway_A_A4_Tap_12" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busway_Tap_Off_Junction>
+    )
+    {
+    }
+
+    over "Busway_A_B4_Seg_20" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busbar_Trunking>
+    )
+    {
+    }
+
+    over "Busway_A_B4_Seg_11" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busbar_Trunking>
+    )
+    {
+    }
+
+    over "Busway_A_A2_Tap_15" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busway_Tap_Off_Junction>
+    )
+    {
+    }
+
+    over "Busway_A_B1_Seg_5" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busbar_Trunking>
+    )
+    {
+    }
+
+    over "Busway_B_A1_Tap_4" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busway_Tap_Off_Junction>
+    )
+    {
+    }
+
+    over "Busway_A_A4_Tap_3" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busway_Tap_Off_Junction>
+    )
+    {
+    }
+
+    over "Busway_B_B4_Drop_8" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Rack_Power_Cord>
+    )
+    {
+    }
+
+    over "Busway_A_B2_Drop_13" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Rack_Power_Cord>
+    )
+    {
+    }
+
+    over "Busway_B_A3_Tap_18" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busway_Tap_Off_Junction>
+    )
+    {
+    }
+
+    over "Busway_A_A4_Drop_8" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Rack_Power_Cord>
+    )
+    {
+    }
+
+    over "Busway_A_A2_Tap_2" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busway_Tap_Off_Junction>
+    )
+    {
+    }
+
+    over "LV_Cable_UOB_A_PDU_A_B4_Seg_3" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/LV_Power_Cable>
+    )
+    {
+    }
+
+    over "LV_Cable_UOB_A_PDU_A_A1_Seg_3" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/LV_Power_Cable>
+    )
+    {
+    }
+
+    over "Busway_B_B4_Seg_9" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busbar_Trunking>
+    )
+    {
+    }
+
+    over "LV_Cable_UPS_A2_UOB_A_Seg_2" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/LV_Power_Cable>
+    )
+    {
+    }
+
+    over "Busway_B_B3_Drop_9" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Rack_Power_Cord>
+    )
+    {
+    }
+
+    over "Busway_A_B1_Seg_19" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busbar_Trunking>
+    )
+    {
+    }
+
+    over "Busway_B_A2_Tap_10" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busway_Tap_Off_Junction>
+    )
+    {
+    }
+
+    over "Busway_A_A3_Seg_19" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busbar_Trunking>
+    )
+    {
+    }
+
+    over "Busway_A_B2_Drop_12" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Rack_Power_Cord>
+    )
+    {
+    }
+
+    over "Busway_B_A1_Drop_7" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Rack_Power_Cord>
+    )
+    {
+    }
+
+    over "LV_Cable_MCC_B_clg_cdu_a4_Bend_1" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Cable_Junction>
+    )
+    {
+    }
+
+    over "Busway_A_A2_Tap_9" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busway_Tap_Off_Junction>
+    )
+    {
+    }
+
+    over "Busway_A_A2_Seg_19" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busbar_Trunking>
+    )
+    {
+    }
+
+    over "Busway_A_A2_Tap_7" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busway_Tap_Off_Junction>
+    )
+    {
+    }
+
+    over "Busway_B_B1_Tap_8" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busway_Tap_Off_Junction>
+    )
+    {
+    }
+
+    over "Busway_B_A2_Seg_8" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busbar_Trunking>
+    )
+    {
+    }
+
+    over "Busway_A_A4_Seg_17" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busbar_Trunking>
+    )
+    {
+    }
+
+    over "LV_Cable_MCC_B_clg_chp_2_Bend_1" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Cable_Junction>
+    )
+    {
+    }
+
+    over "Busway_B_B3_Seg_20" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busbar_Trunking>
+    )
+    {
+    }
+
+    over "Busway_B_B1_Seg_7" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busbar_Trunking>
+    )
+    {
+    }
+
+    over "Busway_A_A1_Drop_16" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Rack_Power_Cord>
+    )
+    {
+    }
+
+    over "Busway_B_A2_Tap_19" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busway_Tap_Off_Junction>
+    )
+    {
+    }
+
+    over "Busway_B_B3_Drop_5" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Rack_Power_Cord>
+    )
+    {
+    }
+
+    over "LV_Cable_UPS_A3_UOB_A_Bend_1" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Cable_Junction>
+    )
+    {
+    }
+
+    over "Busway_B_A2_Seg_18" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busbar_Trunking>
+    )
+    {
+    }
+
+    over "Busway_A_B2_Tap_15" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busway_Tap_Off_Junction>
+    )
+    {
+    }
+
+    over "LV_Cable_MCC_A_clg_cdu_a2_Bend_1" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Cable_Junction>
+    )
+    {
+    }
+
+    over "Busway_A_B2_Drop_14" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Rack_Power_Cord>
+    )
+    {
+    }
+
+    over "LV_Cable_UOB_A_PDU_A_B2_Seg_2" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/LV_Power_Cable>
+    )
+    {
+    }
+
+    over "Busway_B_B4_Tap_10" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busway_Tap_Off_Junction>
+    )
+    {
+    }
+
+    over "Busway_A_B3_Seg_19" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busbar_Trunking>
+    )
+    {
+    }
+
+    over "Busway_A_A3_Tap_11" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busway_Tap_Off_Junction>
+    )
+    {
+    }
+
+    over "Busway_A_A3_Drop_8" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Rack_Power_Cord>
+    )
+    {
+    }
+
+    over "Busway_A_B2_Seg_7" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busbar_Trunking>
+    )
+    {
+    }
+
+    over "LV_Cable_UPS_B2_UOB_B_Bend_1" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Cable_Junction>
+    )
+    {
+    }
+
+    over "Busway_A_B4_Drop_11" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Rack_Power_Cord>
+    )
+    {
+    }
+
+    over "LV_Cable_MSB_B_UPS_B2_Seg_1" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/LV_Power_Cable>
+    )
+    {
+    }
+
+    over "Busway_B_B2_Drop_1" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Rack_Power_Cord>
+    )
+    {
+    }
+
+    over "Busway_B_B2_Tap_8" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busway_Tap_Off_Junction>
+    )
+    {
+    }
+
+    over "Busway_B_A4_Tap_5" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busway_Tap_Off_Junction>
+    )
+    {
+    }
+
+    over "Busway_B_B4_Tap_19" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busway_Tap_Off_Junction>
+    )
+    {
+    }
+
+    over "Busway_B_B2_Drop_11" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Rack_Power_Cord>
+    )
+    {
+    }
+
+    over "Busway_B_A3_Seg_20" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busbar_Trunking>
+    )
+    {
+    }
+
+    over "Busway_B_A1_Drop_1" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Rack_Power_Cord>
+    )
+    {
+    }
+
+    over "Busway_A_A4_Seg_14" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busbar_Trunking>
+    )
+    {
+    }
+
+    over "Busway_B_B3_Tap_1" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busway_Tap_Off_Junction>
+    )
+    {
+    }
+
+    over "Busway_B_B2_Drop_16" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Rack_Power_Cord>
+    )
+    {
+    }
+
+    over "LV_Cable_UPS_B2_UOB_B_Seg_2" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/LV_Power_Cable>
+    )
+    {
+    }
+
+    over "Busway_A_A4_Drop_17" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Rack_Power_Cord>
+    )
+    {
+    }
+
+    over "Busway_B_A1_Tap_7" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busway_Tap_Off_Junction>
+    )
+    {
+    }
+
+    over "Busway_B_B3_Seg_3" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busbar_Trunking>
+    )
+    {
+    }
+
+    over "LV_Cable_MCC_B_clg_crah_b5_Bend_1" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Cable_Junction>
+    )
+    {
+    }
+
+    over "Busway_A_B2_Seg_3" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busbar_Trunking>
+    )
+    {
+    }
+
+    over "Busway_A_A2_Tap_16" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busway_Tap_Off_Junction>
+    )
+    {
+    }
+
+    over "LV_Cable_UPS_B4_UOB_B_Seg_2" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/LV_Power_Cable>
+    )
+    {
+    }
+
+    over "Busway_B_A2_Seg_12" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busbar_Trunking>
+    )
+    {
+    }
+
+    over "HV_Cable_RMU_A_TX_A_Seg_2" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/HV_Power_Cable_11kV>
+    )
+    {
+    }
+
+    over "Busway_A_B3_Tap_3" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busway_Tap_Off_Junction>
+    )
+    {
+    }
+
+    over "Busway_A_B1_Drop_8" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Rack_Power_Cord>
+    )
+    {
+    }
+
+    over "LV_Cable_UOB_A_PDU_A_A1_Bend_2" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Cable_Junction>
+    )
+    {
+    }
+
+    over "Busway_A_B3_Seg_11" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busbar_Trunking>
+    )
+    {
+    }
+
+    over "LV_Cable_UOB_B_PDU_B_B3_Bend_1" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Cable_Junction>
+    )
+    {
+    }
+
+    over "LV_Cable_MSB_A_UPS_A4_Seg_1" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/LV_Power_Cable>
+    )
+    {
+    }
+
+    over "Busway_A_B1_Seg_20" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busbar_Trunking>
+    )
+    {
+    }
+
+    over "Busway_B_A4_Drop_9" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Rack_Power_Cord>
+    )
+    {
+    }
+
+    over "Busway_A_B2_Drop_7" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Rack_Power_Cord>
+    )
+    {
+    }
+
+    over "Busway_A_B4_Seg_13" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busbar_Trunking>
+    )
+    {
+    }
+
+    over "Busway_B_B2_Drop_15" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Rack_Power_Cord>
+    )
+    {
+    }
+
+    over "Busway_B_A1_Tap_15" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busway_Tap_Off_Junction>
+    )
+    {
+    }
+
+    over "Busway_A_B3_Drop_9" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Rack_Power_Cord>
+    )
+    {
+    }
+
+    over "Busway_A_B4_Drop_12" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Rack_Power_Cord>
+    )
+    {
+    }
+
+    over "Busway_B_B3_Drop_3" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Rack_Power_Cord>
+    )
+    {
+    }
+
+    over "Busway_B_B4_Drop_1" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Rack_Power_Cord>
+    )
+    {
+    }
+
+    over "Busway_A_A2_Seg_18" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busbar_Trunking>
+    )
+    {
+    }
+
+    over "Busway_B_A3_Seg_15" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busbar_Trunking>
+    )
+    {
+    }
+
+    over "Busway_B_B2_Tap_19" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busway_Tap_Off_Junction>
+    )
+    {
+    }
+
+    over "Busway_A_A4_Drop_15" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Rack_Power_Cord>
+    )
+    {
+    }
+
+    over "Busway_A_B2_Seg_4" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busbar_Trunking>
+    )
+    {
+    }
+
+    over "Busway_B_B2_Seg_7" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busbar_Trunking>
+    )
+    {
+    }
+
+    over "LV_Cable_MCC_A_clg_ch_1_Bend_1" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Cable_Junction>
+    )
+    {
+    }
+
+    over "Busway_A_A3_Tap_12" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busway_Tap_Off_Junction>
+    )
+    {
+    }
+
+    over "LV_Cable_UOB_A_PDU_A_B4_Seg_2" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/LV_Power_Cable>
+    )
+    {
+    }
+
+    over "Busway_B_A2_Tap_20" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busway_Tap_Off_Junction>
+    )
+    {
+    }
+
+    over "Busway_B_A4_Seg_18" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busbar_Trunking>
+    )
+    {
+    }
+
+    over "Busway_B_A2_Seg_17" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busbar_Trunking>
+    )
+    {
+    }
+
+    over "Busway_B_A3_Seg_6" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busbar_Trunking>
+    )
+    {
+    }
+
+    over "Busway_A_B2_Tap_20" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busway_Tap_Off_Junction>
+    )
+    {
+    }
+
+    over "Busway_A_A3_Drop_7" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Rack_Power_Cord>
+    )
+    {
+    }
+
+    over "Busway_A_A1_Seg_12" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busbar_Trunking>
+    )
+    {
+    }
+
+    over "LV_Cable_MSB_A_UPS_A4_Bend_1" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Cable_Junction>
+    )
+    {
+    }
+
+    over "Busway_A_B4_Tap_15" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busway_Tap_Off_Junction>
+    )
+    {
+    }
+
+    over "Busway_A_B2_Seg_14" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busbar_Trunking>
+    )
+    {
+    }
+
+    over "LV_Cable_MCC_B_clg_crah_b5_Seg_1" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/LV_Power_Cable>
+    )
+    {
+    }
+
+    over "Busway_A_A3_Seg_1" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busbar_Trunking>
+    )
+    {
+    }
+
+    over "Busway_A_A2_Seg_20" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busbar_Trunking>
+    )
+    {
+    }
+
+    over "Busway_B_B2_Seg_13" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busbar_Trunking>
+    )
+    {
+    }
+
+    over "LV_Cable_MSB_A_UPS_A2_Seg_2" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/LV_Power_Cable>
+    )
+    {
+    }
+
+    over "Busway_B_B1_Tap_7" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Busway_Tap_Off_Junction>
+    )
+    {
+    }
+
+    over "Busway_A_A3_Drop_20" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/Rack_Power_Cord>
+    )
+    {
+    }
+
+    over "LV_Cable_UOB_A_PDU_A_B1_Seg_2" (
+     prepend inherits = </demo_datacentre_01/_TypeCatalog/LV_Power_Cable>
+    )
+    {
+    }
+   }
+  }
+ }
+}
+

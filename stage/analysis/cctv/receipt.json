@@ -1,0 +1,15 @@
+{
+  "adaptations": [
+    "Base camera census guard uses full manifest count."
+  ],
+  "differences": [
+    "findings differ (values, fields or multiplicity outside tolerance)"
+  ],
+  "expectedFindings": 6,
+  "findings": 6,
+  "producer": "hook v0.5.6",
+  "run": true,
+  "source": "kind/usdaeco-cctv/examples/datacentre/run.py",
+  "sourceSha256": "20cad38173f7b25d9ecb528dab991cc0e04a445aa0048237ceb51559dc18cee0",
+  "tag": "v0.5.6"
+}

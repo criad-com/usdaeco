@@ -68,6 +68,7 @@ def tag_commit(root, tag):
 
 def restore(root, document, *, apply=False):
     """Preflight the whole selection before changing any HEAD; never fetch."""
+    from usdaeco_suite.pins import pin_target
     declared = modules(root)
     planned = []
     for repo in document["repos"]:
@@ -75,7 +76,7 @@ def restore(root, document, *, apply=False):
         if path not in declared:
             raise ValueError("pin path is not a declared submodule")
         checkout = Path(root) / path
-        target = tag_commit(checkout, repo["tag"])
+        target = pin_target(root, repo.get("name", Path(path).name), repo["tag"])
         current = git(checkout, "rev-parse", "HEAD")
         dirty = bool(git(checkout, "status", "--porcelain", "--untracked-files=all"))
         if apply and dirty:
@@ -84,7 +85,7 @@ def restore(root, document, *, apply=False):
     rows = []
     for checkout, path, tag, target, current, dirty in planned:
         if apply and current != target:
-            git(checkout, "checkout", "--detach", f"refs/tags/{tag}")
+            git(checkout, "checkout", "--detach", target)
         state = "dirty" if dirty else "pinned" if current == target or apply else "differs"
         rows.append(f"{path} {tag} {target} {state}")
     return rows

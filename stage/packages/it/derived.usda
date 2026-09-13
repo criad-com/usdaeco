@@ -1,0 +1,4554 @@
+#usda 1.0
+(
+ customLayerData = {
+  string "aeco:layer:package" = "it"
+  string "aeco:layer:producer" = "usdAECO suite representation placement"
+  string "aeco:layer:role" = "derived"
+  string "aeco:layer:source" = "kind/usdaeco-pipe/examples/datacentre/run.py"
+  string "aeco:layer:sourceSha256" = "f83472499f2702101fc9d97fe6a59d634baf4c21500a2865bcc8807d543bba61"
+  string "aeco:layer:tag" = "v0.2.5"
+ }
+)
+
+over "demo_datacentre_01"
+{
+ over "demo_datacentre_01_Site"
+ {
+  over "demo_datacentre_01"
+  {
+   over "L00_Ground"
+   {
+    over "Office_Comms_Room"
+    {
+     over "Office_Comms_Rack_2"
+     {
+      over BrepArray "BodyExact"
+      {
+       matrix4d xformOp:transform = ( (6.123233995736766e-17, 1, 0, 0), (-1, 6.123233995736766e-17, 0, 0), (0, 0, 1, 0), (26.75, -3, 0, 1) ) (
+        aecoDerived = true
+       )
+       token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+        aecoDerived = true
+       )
+      }
+
+      over Mesh "Body"
+      {
+       matrix4d xformOp:transform = ( (6.123233995736766e-17, 1, 0, 0), (-1, 6.123233995736766e-17, 0, 0), (0, 0, 1, 0), (26.75, -3, 0, 1) ) (
+        aecoDerived = true
+       )
+       token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+        aecoDerived = true
+       )
+      }
+
+      over BasisCurves "Edges"
+      {
+       matrix4d xformOp:transform = ( (6.123233995736766e-17, 1, 0, 0), (-1, 6.123233995736766e-17, 0, 0), (0, 0, 1, 0), (26.75, -3, 0, 1) ) (
+        aecoDerived = true
+       )
+       token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+        aecoDerived = true
+       )
+      }
+     }
+
+     over "Office_Comms_Rack_1"
+     {
+      over BrepArray "BodyExact"
+      {
+       matrix4d xformOp:transform = ( (6.123233995736766e-17, 1, 0, 0), (-1, 6.123233995736766e-17, 0, 0), (0, 0, 1, 0), (26.75, -4.5, 0, 1) ) (
+        aecoDerived = true
+       )
+       token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+        aecoDerived = true
+       )
+      }
+
+      over Mesh "Body"
+      {
+       matrix4d xformOp:transform = ( (6.123233995736766e-17, 1, 0, 0), (-1, 6.123233995736766e-17, 0, 0), (0, 0, 1, 0), (26.75, -4.5, 0, 1) ) (
+        aecoDerived = true
+       )
+       token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+        aecoDerived = true
+       )
+      }
+
+      over BasisCurves "Edges"
+      {
+       matrix4d xformOp:transform = ( (6.123233995736766e-17, 1, 0, 0), (-1, 6.123233995736766e-17, 0, 0), (0, 0, 1, 0), (26.75, -4.5, 0, 1) ) (
+        aecoDerived = true
+       )
+       token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+        aecoDerived = true
+       )
+      }
+     }
+    }
+
+    over "Office_Data_Tray_Seg_1"
+    {
+     over BrepArray "BodyExact"
+     {
+      matrix4d xformOp:transform = ( (-1, 0, 0, 0), (0, 0, 1, 0), (0, 1, 0, 0), (28, -4, 3.2, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+
+     over Mesh "Body"
+     {
+      matrix4d xformOp:transform = ( (-1, 0, 0, 0), (0, 0, 1, 0), (0, 1, 0, 0), (28, -4, 3.2, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+
+     over BasisCurves "Edges"
+     {
+      matrix4d xformOp:transform = ( (-1, 0, 0, 0), (0, 0, 1, 0), (0, 1, 0, 0), (28, -4, 3.2, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (-1, 0, 0, 0), (0, 0, 1, 0), (0, 1, 0, 0), (28, -4, 3.2, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "Office_Data_Tray_Seg_2"
+    {
+     over BrepArray "BodyExact"
+     {
+      matrix4d xformOp:transform = ( (0, -1, 0, 0), (0, 0, 1, 0), (-1, 0, 0, 0), (27.775, -1.5, 3.2, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+
+     over Mesh "Body"
+     {
+      matrix4d xformOp:transform = ( (0, -1, 0, 0), (0, 0, 1, 0), (-1, 0, 0, 0), (27.775, -1.5, 3.2, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+
+     over BasisCurves "Edges"
+     {
+      matrix4d xformOp:transform = ( (0, -1, 0, 0), (0, 0, 1, 0), (-1, 0, 0, 0), (27.775, -1.5, 3.2, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, -1, 0, 0), (0, 0, 1, 0), (-1, 0, 0, 0), (27.775, -1.5, 3.2, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "Office_Data_Tray_Bend_1"
+    {
+     over BrepArray "BodyExact"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (28, -1.5, 3.1500000000000004, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+
+     over Mesh "Body"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (28, -1.5, 3.1500000000000004, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+
+     over BasisCurves "Edges"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (28, -1.5, 3.1500000000000004, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "Data_Tray_B1_Drop_13"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, -1, 0, 0), (0, 0, -1, 0), (54.5, 21.5, 2.9, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "Data_Tray_B2_Drop_1"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, -1, 0, 0), (0, 0, -1, 0), (47.3, 25.1, 2.9, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "Data_Tray_A2_Seg_19"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (0, 0, 1, 0), (1, 0, 0, 0), (23.725, 25.1, 2.9, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "Data_Tray_A1_Seg_1"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (0, 0, 1, 0), (1, 0, 0, 0), (13, 21.5, 2.9, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "Data_Tray_A4_Seg_5"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (0, 0, 1, 0), (1, 0, 0, 0), (15.325000000000001, 32.3, 2.9, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "Data_Tray_A4_Seg_20"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (0, 0, 1, 0), (1, 0, 0, 0), (24.325000000000003, 32.3, 2.9, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "Data_Tray_A2_Drop_3"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, -1, 0, 0), (0, 0, -1, 0), (14.5, 25.1, 2.9, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "Data_Tray_B1_Seg_20"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (0, 0, 1, 0), (1, 0, 0, 0), (58.324999999999996, 21.5, 2.9, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "Data_Tray_B1_Seg_3"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (0, 0, 1, 0), (1, 0, 0, 0), (48.125, 21.5, 2.9, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "Data_Tray_B3_Seg_18"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (0, 0, 1, 0), (1, 0, 0, 0), (57.125, 28.7, 2.9, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "Data_Tray_B3_Drop_5"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, -1, 0, 0), (0, 0, -1, 0), (49.699999999999996, 28.7, 2.9, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "Data_Tray_A1_Seg_9"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (0, 0, 1, 0), (1, 0, 0, 0), (17.725, 21.5, 2.9, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "Data_Tray_A1_Seg_15"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (0, 0, 1, 0), (1, 0, 0, 0), (21.325000000000003, 21.5, 2.9, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "Data_Tray_B4_Drop_8"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, -1, 0, 0), (0, 0, -1, 0), (51.5, 32.3, 2.9, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "Data_Tray_A3_Seg_20"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (0, 0, 1, 0), (1, 0, 0, 0), (24.325000000000003, 28.7, 2.9, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "Data_Tray_B1_Seg_14"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (0, 0, 1, 0), (1, 0, 0, 0), (54.725, 21.5, 2.9, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "Data_Tray_A1_Drop_5"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, -1, 0, 0), (0, 0, -1, 0), (15.700000000000001, 21.5, 2.9, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "Data_Tray_A2_Drop_11"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, -1, 0, 0), (0, 0, -1, 0), (19.3, 25.1, 2.9, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "Data_Tray_A1_Drop_15"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, -1, 0, 0), (0, 0, -1, 0), (21.700000000000003, 21.5, 2.9, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "Data_Tray_A2_Drop_15"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, -1, 0, 0), (0, 0, -1, 0), (21.700000000000003, 25.1, 2.9, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "Data_Tray_B1_Seg_2"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (0, 0, 1, 0), (1, 0, 0, 0), (47.525, 21.5, 2.9, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "Data_Tray_A1_Drop_10"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, -1, 0, 0), (0, 0, -1, 0), (18.7, 21.5, 2.9, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "Data_Tray_B4_Drop_4"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, -1, 0, 0), (0, 0, -1, 0), (49.099999999999994, 32.3, 2.9, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "Data_Tray_B3_Drop_15"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, -1, 0, 0), (0, 0, -1, 0), (55.699999999999996, 28.7, 2.9, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "Data_Tray_B3_Seg_3"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (0, 0, 1, 0), (1, 0, 0, 0), (48.125, 28.7, 2.9, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "Data_Tray_A3_Drop_10"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, -1, 0, 0), (0, 0, -1, 0), (18.7, 28.7, 2.9, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "Data_Tray_A1_Seg_20"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (0, 0, 1, 0), (1, 0, 0, 0), (24.325000000000003, 21.5, 2.9, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "Data_Tray_A4_Seg_2"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (0, 0, 1, 0), (1, 0, 0, 0), (13.525, 32.3, 2.9, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "Data_Tray_A2_Seg_8"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (0, 0, 1, 0), (1, 0, 0, 0), (17.125, 25.1, 2.9, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "Data_Tray_B2_Seg_7"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (0, 0, 1, 0), (1, 0, 0, 0), (50.525, 25.1, 2.9, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "Data_Tray_A3_Drop_2"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, -1, 0, 0), (0, 0, -1, 0), (13.9, 28.7, 2.9, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "Data_Spine_A_Seg_2"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (0, 0, 1, 0), (1, 0, 0, 0), (8.3, 16.5, 2.9, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "Data_Tray_B4_Drop_20"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, -1, 0, 0), (0, 0, -1, 0), (58.699999999999996, 32.3, 2.9, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "Data_Tray_B4_Seg_6"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (0, 0, 1, 0), (1, 0, 0, 0), (49.925, 32.3, 2.9, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "Data_Tray_B4_Seg_5"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (0, 0, 1, 0), (1, 0, 0, 0), (49.324999999999996, 32.3, 2.9, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "Data_Tray_B2_Seg_19"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (0, 0, 1, 0), (1, 0, 0, 0), (57.725, 25.1, 2.9, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "Data_Tray_B2_Drop_18"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, -1, 0, 0), (0, 0, -1, 0), (57.5, 25.1, 2.9, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "Data_Tray_A1_Seg_10"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (0, 0, 1, 0), (1, 0, 0, 0), (18.325000000000003, 21.5, 2.9, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "Data_Tray_A1_Seg_4"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (0, 0, 1, 0), (1, 0, 0, 0), (14.725, 21.5, 2.9, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "Data_Tray_B4_Drop_2"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, -1, 0, 0), (0, 0, -1, 0), (47.9, 32.3, 2.9, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "Data_Tray_B4_Seg_18"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (0, 0, 1, 0), (1, 0, 0, 0), (57.125, 32.3, 2.9, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "Data_Tray_A2_Seg_1"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (0, 0, 1, 0), (1, 0, 0, 0), (13, 25.1, 2.9, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "Data_Tray_A3_Drop_13"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, -1, 0, 0), (0, 0, -1, 0), (20.5, 28.7, 2.9, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "Data_Tray_B1_Seg_16"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (0, 0, 1, 0), (1, 0, 0, 0), (55.925, 21.5, 2.9, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "Data_Tray_B2_Drop_19"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, -1, 0, 0), (0, 0, -1, 0), (58.099999999999994, 25.1, 2.9, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "Data_Tray_A2_Seg_10"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (0, 0, 1, 0), (1, 0, 0, 0), (18.325000000000003, 25.1, 2.9, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "Data_Tray_B2_Drop_16"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, -1, 0, 0), (0, 0, -1, 0), (56.3, 25.1, 2.9, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "Data_Tray_A1_Drop_7"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, -1, 0, 0), (0, 0, -1, 0), (16.9, 21.5, 2.9, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "Data_Tray_A1_Drop_12"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, -1, 0, 0), (0, 0, -1, 0), (19.9, 21.5, 2.9, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "Data_Tray_A1_Drop_1"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, -1, 0, 0), (0, 0, -1, 0), (13.3, 21.5, 2.9, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "Data_Tray_B4_Seg_17"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (0, 0, 1, 0), (1, 0, 0, 0), (56.525, 32.3, 2.9, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "Data_Tray_A1_Seg_5"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (0, 0, 1, 0), (1, 0, 0, 0), (15.325000000000001, 21.5, 2.9, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "Data_Tray_A3_Drop_14"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, -1, 0, 0), (0, 0, -1, 0), (21.1, 28.7, 2.9, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "Data_Tray_A1_Seg_17"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (0, 0, 1, 0), (1, 0, 0, 0), (22.525000000000002, 21.5, 2.9, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "Data_Tray_A1_Seg_13"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (0, 0, 1, 0), (1, 0, 0, 0), (20.125, 21.5, 2.9, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "Data_Tray_A4_Drop_2"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, -1, 0, 0), (0, 0, -1, 0), (13.9, 32.3, 2.9, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "Data_Tray_A2_Drop_8"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, -1, 0, 0), (0, 0, -1, 0), (17.5, 25.1, 2.9, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "Data_Tray_A3_Drop_8"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, -1, 0, 0), (0, 0, -1, 0), (17.5, 28.7, 2.9, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "Data_Tray_B3_Drop_17"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, -1, 0, 0), (0, 0, -1, 0), (56.9, 28.7, 2.9, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "Data_Tray_A1_Seg_11"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (0, 0, 1, 0), (1, 0, 0, 0), (18.925, 21.5, 2.9, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "Data_Tray_A2_Seg_7"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (0, 0, 1, 0), (1, 0, 0, 0), (16.525000000000002, 25.1, 2.9, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "Data_Tray_A4_Drop_15"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, -1, 0, 0), (0, 0, -1, 0), (21.700000000000003, 32.3, 2.9, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "Data_Tray_B4_Drop_17"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, -1, 0, 0), (0, 0, -1, 0), (56.9, 32.3, 2.9, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "Data_Tray_B3_Drop_7"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, -1, 0, 0), (0, 0, -1, 0), (50.9, 28.7, 2.9, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "Data_Tray_A3_Seg_11"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (0, 0, 1, 0), (1, 0, 0, 0), (18.925, 28.7, 2.9, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "Data_Tray_A3_Seg_16"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (0, 0, 1, 0), (1, 0, 0, 0), (21.925000000000004, 28.7, 2.9, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "Data_Tray_A1_Seg_14"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (0, 0, 1, 0), (1, 0, 0, 0), (20.725, 21.5, 2.9, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "Data_Tray_B2_Seg_2"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (0, 0, 1, 0), (1, 0, 0, 0), (47.525, 25.1, 2.9, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "Data_Tray_A1_Seg_12"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (0, 0, 1, 0), (1, 0, 0, 0), (19.525000000000002, 21.5, 2.9, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "Data_Tray_A2_Seg_6"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (0, 0, 1, 0), (1, 0, 0, 0), (15.925, 25.1, 2.9, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "Data_Tray_A3_Drop_9"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, -1, 0, 0), (0, 0, -1, 0), (18.1, 28.7, 2.9, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "Data_Tray_B1_Seg_19"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (0, 0, 1, 0), (1, 0, 0, 0), (57.725, 21.5, 2.9, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "Data_Tray_A2_Drop_14"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, -1, 0, 0), (0, 0, -1, 0), (21.1, 25.1, 2.9, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "Data_Tray_B2_Drop_4"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, -1, 0, 0), (0, 0, -1, 0), (49.099999999999994, 25.1, 2.9, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "Data_Tray_B1_Seg_1"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (0, 0, 1, 0), (1, 0, 0, 0), (47, 21.5, 2.9, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "Data_Tray_A1_Drop_4"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, -1, 0, 0), (0, 0, -1, 0), (15.100000000000001, 21.5, 2.9, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "Data_Tray_B4_Seg_15"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (0, 0, 1, 0), (1, 0, 0, 0), (55.324999999999996, 32.3, 2.9, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "Data_Tray_A3_Seg_3"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (0, 0, 1, 0), (1, 0, 0, 0), (14.125, 28.7, 2.9, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "Data_Tray_A3_Drop_5"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, -1, 0, 0), (0, 0, -1, 0), (15.700000000000001, 28.7, 2.9, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "Data_Tray_B1_Drop_2"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, -1, 0, 0), (0, 0, -1, 0), (47.9, 21.5, 2.9, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "Data_Tray_A4_Drop_19"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, -1, 0, 0), (0, 0, -1, 0), (24.1, 32.3, 2.9, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "Data_Tray_B2_Drop_6"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, -1, 0, 0), (0, 0, -1, 0), (50.3, 25.1, 2.9, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "Data_Tray_A3_Drop_16"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, -1, 0, 0), (0, 0, -1, 0), (22.3, 28.7, 2.9, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "Data_Tray_B4_Seg_13"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (0, 0, 1, 0), (1, 0, 0, 0), (54.125, 32.3, 2.9, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "Data_Tray_B1_Drop_12"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, -1, 0, 0), (0, 0, -1, 0), (53.9, 21.5, 2.9, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "Data_Tray_A2_Seg_2"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (0, 0, 1, 0), (1, 0, 0, 0), (13.525, 25.1, 2.9, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "Data_Tray_B3_Drop_4"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, -1, 0, 0), (0, 0, -1, 0), (49.099999999999994, 28.7, 2.9, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "Data_Tray_A2_Drop_10"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, -1, 0, 0), (0, 0, -1, 0), (18.7, 25.1, 2.9, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "Data_Tray_A1_Drop_19"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, -1, 0, 0), (0, 0, -1, 0), (24.1, 21.5, 2.9, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "Data_Tray_B2_Drop_10"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, -1, 0, 0), (0, 0, -1, 0), (52.699999999999996, 25.1, 2.9, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "Data_Tray_A4_Drop_6"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, -1, 0, 0), (0, 0, -1, 0), (16.3, 32.3, 2.9, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "Data_Tray_B1_Drop_4"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, -1, 0, 0), (0, 0, -1, 0), (49.099999999999994, 21.5, 2.9, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "Data_Tray_B4_Drop_6"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, -1, 0, 0), (0, 0, -1, 0), (50.3, 32.3, 2.9, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "Data_Tray_B2_Seg_6"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (0, 0, 1, 0), (1, 0, 0, 0), (49.925, 25.1, 2.9, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "Data_Tray_B1_Seg_17"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (0, 0, 1, 0), (1, 0, 0, 0), (56.525, 21.5, 2.9, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "Data_Tray_A1_Seg_8"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (0, 0, 1, 0), (1, 0, 0, 0), (17.125, 21.5, 2.9, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "Data_Tray_A3_Seg_7"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (0, 0, 1, 0), (1, 0, 0, 0), (16.525000000000002, 28.7, 2.9, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "Data_Tray_B2_Drop_13"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, -1, 0, 0), (0, 0, -1, 0), (54.5, 25.1, 2.9, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "Data_Tray_B2_Drop_9"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, -1, 0, 0), (0, 0, -1, 0), (52.099999999999994, 25.1, 2.9, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "Data_Tray_B1_Drop_16"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, -1, 0, 0), (0, 0, -1, 0), (56.3, 21.5, 2.9, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "Data_Tray_A3_Seg_17"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (0, 0, 1, 0), (1, 0, 0, 0), (22.525000000000002, 28.7, 2.9, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "Data_Tray_A4_Seg_19"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (0, 0, 1, 0), (1, 0, 0, 0), (23.725, 32.3, 2.9, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "Data_Tray_A2_Seg_15"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (0, 0, 1, 0), (1, 0, 0, 0), (21.325000000000003, 25.1, 2.9, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "Data_Tray_A2_Drop_20"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, -1, 0, 0), (0, 0, -1, 0), (24.700000000000003, 25.1, 2.9, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "Data_Tray_A1_Drop_8"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, -1, 0, 0), (0, 0, -1, 0), (17.5, 21.5, 2.9, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "Data_Tray_A2_Drop_13"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, -1, 0, 0), (0, 0, -1, 0), (20.5, 25.1, 2.9, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "Data_Tray_A3_Seg_6"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (0, 0, 1, 0), (1, 0, 0, 0), (15.925, 28.7, 2.9, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "Data_Tray_A3_Seg_19"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (0, 0, 1, 0), (1, 0, 0, 0), (23.725, 28.7, 2.9, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "Data_Tray_B1_Drop_1"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, -1, 0, 0), (0, 0, -1, 0), (47.3, 21.5, 2.9, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "Data_Tray_B3_Drop_12"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, -1, 0, 0), (0, 0, -1, 0), (53.9, 28.7, 2.9, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "Data_Tray_B2_Seg_15"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (0, 0, 1, 0), (1, 0, 0, 0), (55.324999999999996, 25.1, 2.9, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "Data_Tray_A3_Drop_20"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, -1, 0, 0), (0, 0, -1, 0), (24.700000000000003, 28.7, 2.9, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "Data_Tray_A4_Drop_8"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, -1, 0, 0), (0, 0, -1, 0), (17.5, 32.3, 2.9, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "Data_Tray_A3_Seg_18"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (0, 0, 1, 0), (1, 0, 0, 0), (23.125, 28.7, 2.9, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "Data_Tray_B4_Seg_2"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (0, 0, 1, 0), (1, 0, 0, 0), (47.525, 32.3, 2.9, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "Data_Spine_B_Seg_3"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 0, 1, 0), (0, -1, 0, 0), (51, 16.2, 2.9, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "Data_Tray_A4_Drop_4"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, -1, 0, 0), (0, 0, -1, 0), (15.100000000000001, 32.3, 2.9, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "Data_Tray_B2_Drop_11"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, -1, 0, 0), (0, 0, -1, 0), (53.3, 25.1, 2.9, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "Data_Tray_A4_Seg_13"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (0, 0, 1, 0), (1, 0, 0, 0), (20.125, 32.3, 2.9, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "Data_Tray_B4_Seg_19"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (0, 0, 1, 0), (1, 0, 0, 0), (57.725, 32.3, 2.9, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "Data_Tray_B4_Seg_12"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (0, 0, 1, 0), (1, 0, 0, 0), (53.525, 32.3, 2.9, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "Data_Tray_A3_Seg_2"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (0, 0, 1, 0), (1, 0, 0, 0), (13.525, 28.7, 2.9, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "Data_Tray_A4_Drop_20"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, -1, 0, 0), (0, 0, -1, 0), (24.700000000000003, 32.3, 2.9, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "Data_Tray_B4_Drop_15"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, -1, 0, 0), (0, 0, -1, 0), (55.699999999999996, 32.3, 2.9, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "Data_Tray_A1_Seg_6"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (0, 0, 1, 0), (1, 0, 0, 0), (15.925, 21.5, 2.9, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "Data_Tray_B1_Drop_9"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, -1, 0, 0), (0, 0, -1, 0), (52.099999999999994, 21.5, 2.9, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "Data_Tray_B1_Drop_3"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, -1, 0, 0), (0, 0, -1, 0), (48.5, 21.5, 2.9, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "Data_Tray_B1_Drop_5"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, -1, 0, 0), (0, 0, -1, 0), (49.699999999999996, 21.5, 2.9, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "Data_Tray_B3_Drop_18"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, -1, 0, 0), (0, 0, -1, 0), (57.5, 28.7, 2.9, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "Data_Tray_A3_Drop_17"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, -1, 0, 0), (0, 0, -1, 0), (22.9, 28.7, 2.9, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "Data_Tray_A4_Seg_12"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (0, 0, 1, 0), (1, 0, 0, 0), (19.525000000000002, 32.3, 2.9, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "Data_Tray_B1_Seg_11"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (0, 0, 1, 0), (1, 0, 0, 0), (52.925, 21.5, 2.9, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "Data_Tray_A4_Drop_17"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, -1, 0, 0), (0, 0, -1, 0), (22.9, 32.3, 2.9, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "Data_Tray_B3_Seg_4"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (0, 0, 1, 0), (1, 0, 0, 0), (48.725, 28.7, 2.9, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "Spine_Stub_B1_Seg_1"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (0, 0, 1, 0), (1, 0, 0, 0), (42, 21.5, 2.9, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "Data_Spine_A_Seg_1"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 0, 1, 0), (0, -1, 0, 0), (8, 32.3, 2.9, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "Data_Tray_A4_Seg_7"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (0, 0, 1, 0), (1, 0, 0, 0), (16.525000000000002, 32.3, 2.9, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "Data_Tray_B1_Seg_8"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (0, 0, 1, 0), (1, 0, 0, 0), (51.125, 21.5, 2.9, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "Spine_Stub_B3_Seg_1"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (0, 0, 1, 0), (1, 0, 0, 0), (42, 28.7, 2.9, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "Data_Tray_A2_Drop_6"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, -1, 0, 0), (0, 0, -1, 0), (16.3, 25.1, 2.9, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "Data_Tray_B4_Drop_16"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, -1, 0, 0), (0, 0, -1, 0), (56.3, 32.3, 2.9, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "Data_Tray_A3_Seg_4"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (0, 0, 1, 0), (1, 0, 0, 0), (14.725, 28.7, 2.9, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "Data_Tray_B1_Seg_12"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (0, 0, 1, 0), (1, 0, 0, 0), (53.525, 21.5, 2.9, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "Data_Tray_B3_Seg_15"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (0, 0, 1, 0), (1, 0, 0, 0), (55.324999999999996, 28.7, 2.9, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "Data_Tray_B1_Seg_6"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (0, 0, 1, 0), (1, 0, 0, 0), (49.925, 21.5, 2.9, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "Spine_Stub_B2_Seg_1"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (0, 0, 1, 0), (1, 0, 0, 0), (42, 25.1, 2.9, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "Data_Tray_A4_Seg_9"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (0, 0, 1, 0), (1, 0, 0, 0), (17.725, 32.3, 2.9, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "Data_Tray_A2_Seg_18"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (0, 0, 1, 0), (1, 0, 0, 0), (23.125, 25.1, 2.9, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "Data_Tray_A1_Drop_17"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, -1, 0, 0), (0, 0, -1, 0), (22.9, 21.5, 2.9, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "Data_Tray_B2_Seg_10"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (0, 0, 1, 0), (1, 0, 0, 0), (52.324999999999996, 25.1, 2.9, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "Data_Tray_A4_Seg_15"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (0, 0, 1, 0), (1, 0, 0, 0), (21.325000000000003, 32.3, 2.9, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "Data_Tray_A1_Drop_16"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, -1, 0, 0), (0, 0, -1, 0), (22.3, 21.5, 2.9, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "Data_Tray_B3_Drop_13"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, -1, 0, 0), (0, 0, -1, 0), (54.5, 28.7, 2.9, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "Data_Tray_B3_Drop_6"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, -1, 0, 0), (0, 0, -1, 0), (50.3, 28.7, 2.9, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "Data_Tray_A4_Drop_10"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, -1, 0, 0), (0, 0, -1, 0), (18.7, 32.3, 2.9, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "Data_Tray_B1_Drop_15"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, -1, 0, 0), (0, 0, -1, 0), (55.699999999999996, 21.5, 2.9, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "Data_Tray_A2_Seg_4"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (0, 0, 1, 0), (1, 0, 0, 0), (14.725, 25.1, 2.9, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "Data_Tray_A3_Seg_12"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (0, 0, 1, 0), (1, 0, 0, 0), (19.525000000000002, 28.7, 2.9, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "Data_Tray_B3_Drop_3"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, -1, 0, 0), (0, 0, -1, 0), (48.5, 28.7, 2.9, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "Data_Tray_B2_Drop_2"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, -1, 0, 0), (0, 0, -1, 0), (47.9, 25.1, 2.9, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "Data_Tray_A2_Drop_9"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, -1, 0, 0), (0, 0, -1, 0), (18.1, 25.1, 2.9, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "Data_Tray_B4_Drop_1"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, -1, 0, 0), (0, 0, -1, 0), (47.3, 32.3, 2.9, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "Data_Tray_B3_Drop_20"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, -1, 0, 0), (0, 0, -1, 0), (58.699999999999996, 28.7, 2.9, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "Data_Tray_A2_Drop_12"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, -1, 0, 0), (0, 0, -1, 0), (19.9, 25.1, 2.9, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "Data_Tray_B3_Drop_19"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, -1, 0, 0), (0, 0, -1, 0), (58.099999999999994, 28.7, 2.9, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "Data_Tray_A3_Drop_1"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, -1, 0, 0), (0, 0, -1, 0), (13.3, 28.7, 2.9, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "Data_Tray_B4_Seg_3"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (0, 0, 1, 0), (1, 0, 0, 0), (48.125, 32.3, 2.9, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "Data_Tray_B4_Drop_5"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, -1, 0, 0), (0, 0, -1, 0), (49.699999999999996, 32.3, 2.9, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "Data_Tray_B2_Seg_12"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (0, 0, 1, 0), (1, 0, 0, 0), (53.525, 25.1, 2.9, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "Data_Tray_B3_Seg_2"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (0, 0, 1, 0), (1, 0, 0, 0), (47.525, 28.7, 2.9, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "Data_Tray_B2_Drop_14"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, -1, 0, 0), (0, 0, -1, 0), (55.099999999999994, 25.1, 2.9, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "Data_Tray_B2_Drop_12"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, -1, 0, 0), (0, 0, -1, 0), (53.9, 25.1, 2.9, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "Data_Tray_B3_Drop_16"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, -1, 0, 0), (0, 0, -1, 0), (56.3, 28.7, 2.9, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "Data_Tray_A4_Seg_4"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (0, 0, 1, 0), (1, 0, 0, 0), (14.725, 32.3, 2.9, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "Data_Tray_A1_Drop_20"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, -1, 0, 0), (0, 0, -1, 0), (24.700000000000003, 21.5, 2.9, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "Data_Tray_A4_Drop_7"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, -1, 0, 0), (0, 0, -1, 0), (16.9, 32.3, 2.9, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "Data_Tray_B2_Drop_7"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, -1, 0, 0), (0, 0, -1, 0), (50.9, 25.1, 2.9, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "Data_Tray_B3_Drop_14"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, -1, 0, 0), (0, 0, -1, 0), (55.099999999999994, 28.7, 2.9, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "Data_Tray_A1_Seg_16"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (0, 0, 1, 0), (1, 0, 0, 0), (21.925000000000004, 21.5, 2.9, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "Data_Tray_A1_Drop_3"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, -1, 0, 0), (0, 0, -1, 0), (14.5, 21.5, 2.9, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "Data_Tray_A2_Drop_5"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, -1, 0, 0), (0, 0, -1, 0), (15.700000000000001, 25.1, 2.9, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "Data_Tray_A4_Seg_11"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (0, 0, 1, 0), (1, 0, 0, 0), (18.925, 32.3, 2.9, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "Data_Tray_A2_Seg_11"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (0, 0, 1, 0), (1, 0, 0, 0), (18.925, 25.1, 2.9, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "Data_Tray_A3_Drop_15"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, -1, 0, 0), (0, 0, -1, 0), (21.700000000000003, 28.7, 2.9, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "Data_Tray_B4_Drop_10"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, -1, 0, 0), (0, 0, -1, 0), (52.699999999999996, 32.3, 2.9, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "Data_Tray_B3_Seg_14"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (0, 0, 1, 0), (1, 0, 0, 0), (54.725, 28.7, 2.9, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "Data_Tray_B3_Seg_11"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (0, 0, 1, 0), (1, 0, 0, 0), (52.925, 28.7, 2.9, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "Data_Tray_B4_Seg_8"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (0, 0, 1, 0), (1, 0, 0, 0), (51.125, 32.3, 2.9, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "Data_Tray_B1_Drop_20"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, -1, 0, 0), (0, 0, -1, 0), (58.699999999999996, 21.5, 2.9, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "Data_Tray_B4_Drop_7"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, -1, 0, 0), (0, 0, -1, 0), (50.9, 32.3, 2.9, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "Data_Tray_A1_Drop_9"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, -1, 0, 0), (0, 0, -1, 0), (18.1, 21.5, 2.9, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "Data_Tray_B4_Seg_11"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (0, 0, 1, 0), (1, 0, 0, 0), (52.925, 32.3, 2.9, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "Data_Tray_A4_Drop_5"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, -1, 0, 0), (0, 0, -1, 0), (15.700000000000001, 32.3, 2.9, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "Data_Tray_A2_Drop_18"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, -1, 0, 0), (0, 0, -1, 0), (23.5, 25.1, 2.9, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "Data_Tray_B1_Drop_19"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, -1, 0, 0), (0, 0, -1, 0), (58.099999999999994, 21.5, 2.9, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "Data_Tray_A1_Drop_2"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, -1, 0, 0), (0, 0, -1, 0), (13.9, 21.5, 2.9, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "Data_Tray_B3_Seg_20"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (0, 0, 1, 0), (1, 0, 0, 0), (58.324999999999996, 28.7, 2.9, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "Data_Tray_B2_Seg_9"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (0, 0, 1, 0), (1, 0, 0, 0), (51.725, 25.1, 2.9, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "Data_Tray_A3_Drop_3"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, -1, 0, 0), (0, 0, -1, 0), (14.5, 28.7, 2.9, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "Data_Tray_A4_Seg_17"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (0, 0, 1, 0), (1, 0, 0, 0), (22.525000000000002, 32.3, 2.9, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "Data_Tray_A2_Seg_16"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (0, 0, 1, 0), (1, 0, 0, 0), (21.925000000000004, 25.1, 2.9, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "Data_Tray_B3_Drop_8"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, -1, 0, 0), (0, 0, -1, 0), (51.5, 28.7, 2.9, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "Data_Tray_A1_Seg_3"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (0, 0, 1, 0), (1, 0, 0, 0), (14.125, 21.5, 2.9, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "Data_Tray_B4_Drop_13"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, -1, 0, 0), (0, 0, -1, 0), (54.5, 32.3, 2.9, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "Data_Tray_A4_Drop_16"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, -1, 0, 0), (0, 0, -1, 0), (22.3, 32.3, 2.9, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "Data_Tray_A2_Drop_1"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, -1, 0, 0), (0, 0, -1, 0), (13.3, 25.1, 2.9, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "Data_Tray_A4_Drop_18"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, -1, 0, 0), (0, 0, -1, 0), (23.5, 32.3, 2.9, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "Data_Tray_B4_Seg_4"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (0, 0, 1, 0), (1, 0, 0, 0), (48.725, 32.3, 2.9, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "Data_Tray_B3_Drop_2"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, -1, 0, 0), (0, 0, -1, 0), (47.9, 28.7, 2.9, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "Data_Tray_B1_Seg_18"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (0, 0, 1, 0), (1, 0, 0, 0), (57.125, 21.5, 2.9, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "Data_Tray_B4_Drop_3"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, -1, 0, 0), (0, 0, -1, 0), (48.5, 32.3, 2.9, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "Data_Tray_B2_Seg_11"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (0, 0, 1, 0), (1, 0, 0, 0), (52.925, 25.1, 2.9, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "Data_Tray_A2_Drop_17"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, -1, 0, 0), (0, 0, -1, 0), (22.9, 25.1, 2.9, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "Data_Tray_A1_Seg_18"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (0, 0, 1, 0), (1, 0, 0, 0), (23.125, 21.5, 2.9, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "Data_Tray_B4_Drop_19"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, -1, 0, 0), (0, 0, -1, 0), (58.099999999999994, 32.3, 2.9, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "Data_Tray_B4_Seg_10"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (0, 0, 1, 0), (1, 0, 0, 0), (52.324999999999996, 32.3, 2.9, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "Data_Tray_B2_Seg_4"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (0, 0, 1, 0), (1, 0, 0, 0), (48.725, 25.1, 2.9, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "Data_Tray_B4_Drop_18"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, -1, 0, 0), (0, 0, -1, 0), (57.5, 32.3, 2.9, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "Data_Tray_A3_Seg_10"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (0, 0, 1, 0), (1, 0, 0, 0), (18.325000000000003, 28.7, 2.9, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "Data_Tray_A2_Seg_12"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (0, 0, 1, 0), (1, 0, 0, 0), (19.525000000000002, 25.1, 2.9, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "Data_Tray_B1_Drop_6"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, -1, 0, 0), (0, 0, -1, 0), (50.3, 21.5, 2.9, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "Data_Tray_A4_Drop_9"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, -1, 0, 0), (0, 0, -1, 0), (18.1, 32.3, 2.9, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "Data_Tray_B4_Seg_16"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (0, 0, 1, 0), (1, 0, 0, 0), (55.925, 32.3, 2.9, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "Data_Tray_B4_Seg_1"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (0, 0, 1, 0), (1, 0, 0, 0), (47, 32.3, 2.9, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "Data_Tray_A3_Seg_8"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (0, 0, 1, 0), (1, 0, 0, 0), (17.125, 28.7, 2.9, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "Data_Tray_B1_Drop_18"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, -1, 0, 0), (0, 0, -1, 0), (57.5, 21.5, 2.9, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "Data_Spine_B_Seg_2"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (0, 0, 1, 0), (1, 0, 0, 0), (42.3, 16.5, 2.9, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "Data_Tray_A1_Seg_19"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (0, 0, 1, 0), (1, 0, 0, 0), (23.725, 21.5, 2.9, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "Data_Tray_B2_Drop_3"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, -1, 0, 0), (0, 0, -1, 0), (48.5, 25.1, 2.9, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "Data_Tray_B3_Seg_19"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (0, 0, 1, 0), (1, 0, 0, 0), (57.725, 28.7, 2.9, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "Data_Tray_B4_Seg_20"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (0, 0, 1, 0), (1, 0, 0, 0), (58.324999999999996, 32.3, 2.9, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "Data_Tray_B1_Drop_8"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, -1, 0, 0), (0, 0, -1, 0), (51.5, 21.5, 2.9, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "Data_Tray_A4_Drop_11"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, -1, 0, 0), (0, 0, -1, 0), (19.3, 32.3, 2.9, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "Data_Tray_A4_Seg_6"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (0, 0, 1, 0), (1, 0, 0, 0), (15.925, 32.3, 2.9, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "Data_Tray_A2_Seg_20"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (0, 0, 1, 0), (1, 0, 0, 0), (24.325000000000003, 25.1, 2.9, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "Data_Tray_B3_Seg_9"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (0, 0, 1, 0), (1, 0, 0, 0), (51.725, 28.7, 2.9, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "Data_Tray_A3_Seg_9"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (0, 0, 1, 0), (1, 0, 0, 0), (17.725, 28.7, 2.9, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "Data_Tray_A4_Seg_3"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (0, 0, 1, 0), (1, 0, 0, 0), (14.125, 32.3, 2.9, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "Data_Tray_A3_Drop_6"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, -1, 0, 0), (0, 0, -1, 0), (16.3, 28.7, 2.9, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "Data_Tray_A1_Drop_6"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, -1, 0, 0), (0, 0, -1, 0), (16.3, 21.5, 2.9, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "Data_Tray_B3_Seg_16"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (0, 0, 1, 0), (1, 0, 0, 0), (55.925, 28.7, 2.9, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "Data_Tray_B3_Seg_5"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (0, 0, 1, 0), (1, 0, 0, 0), (49.324999999999996, 28.7, 2.9, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "Data_Tray_B3_Drop_1"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, -1, 0, 0), (0, 0, -1, 0), (47.3, 28.7, 2.9, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "Data_Tray_B1_Drop_14"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, -1, 0, 0), (0, 0, -1, 0), (55.099999999999994, 21.5, 2.9, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "Data_Tray_B2_Seg_3"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (0, 0, 1, 0), (1, 0, 0, 0), (48.125, 25.1, 2.9, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "Data_Tray_B3_Seg_7"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (0, 0, 1, 0), (1, 0, 0, 0), (50.525, 28.7, 2.9, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "Data_Tray_A4_Drop_12"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, -1, 0, 0), (0, 0, -1, 0), (19.9, 32.3, 2.9, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "Data_Tray_A2_Seg_13"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (0, 0, 1, 0), (1, 0, 0, 0), (20.125, 25.1, 2.9, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "Data_Tray_B1_Drop_10"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, -1, 0, 0), (0, 0, -1, 0), (52.699999999999996, 21.5, 2.9, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "Data_Tray_A2_Seg_3"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (0, 0, 1, 0), (1, 0, 0, 0), (14.125, 25.1, 2.9, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "Data_Tray_B3_Seg_8"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (0, 0, 1, 0), (1, 0, 0, 0), (51.125, 28.7, 2.9, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "Spine_Stub_B4_Seg_1"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (0, 0, 1, 0), (1, 0, 0, 0), (42, 32.3, 2.9, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "Data_Tray_B3_Drop_9"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, -1, 0, 0), (0, 0, -1, 0), (52.099999999999994, 28.7, 2.9, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "Data_Tray_A1_Drop_18"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, -1, 0, 0), (0, 0, -1, 0), (23.5, 21.5, 2.9, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "Data_Tray_A2_Drop_7"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, -1, 0, 0), (0, 0, -1, 0), (16.9, 25.1, 2.9, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "Data_Tray_B1_Seg_9"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (0, 0, 1, 0), (1, 0, 0, 0), (51.725, 21.5, 2.9, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "Data_Tray_A4_Drop_3"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, -1, 0, 0), (0, 0, -1, 0), (14.5, 32.3, 2.9, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "Data_Tray_A4_Seg_14"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (0, 0, 1, 0), (1, 0, 0, 0), (20.725, 32.3, 2.9, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "Data_Spine_A_Seg_3"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 0, 1, 0), (0, -1, 0, 0), (21, 16.2, 2.9, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "Data_Tray_A4_Seg_10"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (0, 0, 1, 0), (1, 0, 0, 0), (18.325000000000003, 32.3, 2.9, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "Data_Tray_A3_Drop_11"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, -1, 0, 0), (0, 0, -1, 0), (19.3, 28.7, 2.9, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "Data_Tray_B4_Seg_9"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (0, 0, 1, 0), (1, 0, 0, 0), (51.725, 32.3, 2.9, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "Data_Tray_B3_Seg_12"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (0, 0, 1, 0), (1, 0, 0, 0), (53.525, 28.7, 2.9, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "Data_Tray_A2_Drop_19"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, -1, 0, 0), (0, 0, -1, 0), (24.1, 25.1, 2.9, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "Data_Tray_A2_Seg_14"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (0, 0, 1, 0), (1, 0, 0, 0), (20.725, 25.1, 2.9, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "Data_Tray_B2_Drop_17"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, -1, 0, 0), (0, 0, -1, 0), (56.9, 25.1, 2.9, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "Data_Tray_B2_Seg_18"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (0, 0, 1, 0), (1, 0, 0, 0), (57.125, 25.1, 2.9, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "Data_Tray_A3_Drop_19"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, -1, 0, 0), (0, 0, -1, 0), (24.1, 28.7, 2.9, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "Data_Tray_A4_Seg_16"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (0, 0, 1, 0), (1, 0, 0, 0), (21.925000000000004, 32.3, 2.9, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "Data_Tray_B2_Seg_20"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (0, 0, 1, 0), (1, 0, 0, 0), (58.324999999999996, 25.1, 2.9, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "Data_Tray_B2_Seg_8"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (0, 0, 1, 0), (1, 0, 0, 0), (51.125, 25.1, 2.9, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "Data_Tray_B3_Seg_1"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (0, 0, 1, 0), (1, 0, 0, 0), (47, 28.7, 2.9, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "Data_Tray_A1_Seg_7"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (0, 0, 1, 0), (1, 0, 0, 0), (16.525000000000002, 21.5, 2.9, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "Data_Tray_A2_Drop_16"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, -1, 0, 0), (0, 0, -1, 0), (22.3, 25.1, 2.9, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "Data_Tray_A3_Seg_13"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (0, 0, 1, 0), (1, 0, 0, 0), (20.125, 28.7, 2.9, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "Data_Tray_A3_Drop_18"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, -1, 0, 0), (0, 0, -1, 0), (23.5, 28.7, 2.9, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "Data_Tray_B2_Seg_5"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (0, 0, 1, 0), (1, 0, 0, 0), (49.324999999999996, 25.1, 2.9, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "Data_Tray_B1_Seg_7"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (0, 0, 1, 0), (1, 0, 0, 0), (50.525, 21.5, 2.9, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "Data_Tray_A4_Seg_1"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (0, 0, 1, 0), (1, 0, 0, 0), (13, 32.3, 2.9, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "Data_Tray_A1_Drop_13"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, -1, 0, 0), (0, 0, -1, 0), (20.5, 21.5, 2.9, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "Spine_Stub_A1_Seg_1"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (0, 0, 1, 0), (1, 0, 0, 0), (8, 21.5, 2.9, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "Data_Tray_A4_Drop_13"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, -1, 0, 0), (0, 0, -1, 0), (20.5, 32.3, 2.9, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "Data_Tray_B4_Drop_14"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, -1, 0, 0), (0, 0, -1, 0), (55.099999999999994, 32.3, 2.9, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "Data_Tray_B2_Seg_14"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (0, 0, 1, 0), (1, 0, 0, 0), (54.725, 25.1, 2.9, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "Data_Tray_B3_Drop_11"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, -1, 0, 0), (0, 0, -1, 0), (53.3, 28.7, 2.9, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "Data_Tray_B2_Drop_5"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, -1, 0, 0), (0, 0, -1, 0), (49.699999999999996, 25.1, 2.9, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "Data_Tray_B2_Seg_1"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (0, 0, 1, 0), (1, 0, 0, 0), (47, 25.1, 2.9, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "Data_Tray_B3_Seg_6"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (0, 0, 1, 0), (1, 0, 0, 0), (49.925, 28.7, 2.9, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "Data_Tray_B4_Seg_7"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (0, 0, 1, 0), (1, 0, 0, 0), (50.525, 32.3, 2.9, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "Data_Tray_A2_Seg_17"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (0, 0, 1, 0), (1, 0, 0, 0), (22.525000000000002, 25.1, 2.9, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "Data_Tray_A2_Drop_4"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, -1, 0, 0), (0, 0, -1, 0), (15.100000000000001, 25.1, 2.9, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "Data_Tray_B2_Seg_13"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (0, 0, 1, 0), (1, 0, 0, 0), (54.125, 25.1, 2.9, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "Data_Tray_A3_Seg_5"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (0, 0, 1, 0), (1, 0, 0, 0), (15.325000000000001, 28.7, 2.9, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "Data_Tray_B4_Drop_9"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, -1, 0, 0), (0, 0, -1, 0), (52.099999999999994, 32.3, 2.9, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "Data_Tray_A2_Seg_9"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (0, 0, 1, 0), (1, 0, 0, 0), (17.725, 25.1, 2.9, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "Data_Tray_A4_Seg_8"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (0, 0, 1, 0), (1, 0, 0, 0), (17.125, 32.3, 2.9, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "Data_Tray_B1_Drop_17"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, -1, 0, 0), (0, 0, -1, 0), (56.9, 21.5, 2.9, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "Spine_Stub_A4_Seg_1"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (0, 0, 1, 0), (1, 0, 0, 0), (8, 32.3, 2.9, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "Data_Tray_A3_Seg_14"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (0, 0, 1, 0), (1, 0, 0, 0), (20.725, 28.7, 2.9, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "Data_Tray_B4_Drop_11"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, -1, 0, 0), (0, 0, -1, 0), (53.3, 32.3, 2.9, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "Spine_Stub_A3_Seg_1"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (0, 0, 1, 0), (1, 0, 0, 0), (8, 28.7, 2.9, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "Data_Tray_A2_Seg_5"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (0, 0, 1, 0), (1, 0, 0, 0), (15.325000000000001, 25.1, 2.9, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "Data_Tray_A1_Seg_2"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (0, 0, 1, 0), (1, 0, 0, 0), (13.525, 21.5, 2.9, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "Data_Tray_A3_Seg_15"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (0, 0, 1, 0), (1, 0, 0, 0), (21.325000000000003, 28.7, 2.9, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "Data_Tray_B2_Drop_8"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, -1, 0, 0), (0, 0, -1, 0), (51.5, 25.1, 2.9, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "Data_Tray_B1_Seg_15"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (0, 0, 1, 0), (1, 0, 0, 0), (55.324999999999996, 21.5, 2.9, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "Data_Tray_B2_Drop_15"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, -1, 0, 0), (0, 0, -1, 0), (55.699999999999996, 25.1, 2.9, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "Data_Tray_B4_Drop_12"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, -1, 0, 0), (0, 0, -1, 0), (53.9, 32.3, 2.9, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "Data_Tray_B1_Drop_11"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, -1, 0, 0), (0, 0, -1, 0), (53.3, 21.5, 2.9, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "Data_Tray_B1_Seg_10"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (0, 0, 1, 0), (1, 0, 0, 0), (52.324999999999996, 21.5, 2.9, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "Data_Tray_A1_Drop_11"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, -1, 0, 0), (0, 0, -1, 0), (19.3, 21.5, 2.9, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "Data_Tray_B1_Seg_13"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (0, 0, 1, 0), (1, 0, 0, 0), (54.125, 21.5, 2.9, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "Data_Tray_A4_Seg_18"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (0, 0, 1, 0), (1, 0, 0, 0), (23.125, 32.3, 2.9, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "Data_Tray_B3_Seg_17"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (0, 0, 1, 0), (1, 0, 0, 0), (56.525, 28.7, 2.9, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "Data_Tray_A3_Drop_7"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, -1, 0, 0), (0, 0, -1, 0), (16.9, 28.7, 2.9, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "Data_Tray_B1_Seg_5"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (0, 0, 1, 0), (1, 0, 0, 0), (49.324999999999996, 21.5, 2.9, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "Data_Tray_A4_Drop_14"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, -1, 0, 0), (0, 0, -1, 0), (21.1, 32.3, 2.9, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "Data_Tray_A3_Seg_1"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (0, 0, 1, 0), (1, 0, 0, 0), (13, 28.7, 2.9, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "Data_Tray_B4_Seg_14"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (0, 0, 1, 0), (1, 0, 0, 0), (54.725, 32.3, 2.9, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "Data_Spine_B_Seg_1"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 0, 1, 0), (0, -1, 0, 0), (42, 32.3, 2.9, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "Data_Tray_B2_Seg_17"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (0, 0, 1, 0), (1, 0, 0, 0), (56.525, 25.1, 2.9, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "Data_Tray_B2_Drop_20"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, -1, 0, 0), (0, 0, -1, 0), (58.699999999999996, 25.1, 2.9, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "Data_Tray_B3_Seg_13"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (0, 0, 1, 0), (1, 0, 0, 0), (54.125, 28.7, 2.9, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "Data_Tray_B2_Seg_16"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (0, 0, 1, 0), (1, 0, 0, 0), (55.925, 25.1, 2.9, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "Data_Tray_A4_Drop_1"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, -1, 0, 0), (0, 0, -1, 0), (13.3, 32.3, 2.9, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "Spine_Stub_A2_Seg_1"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (0, 0, 1, 0), (1, 0, 0, 0), (8, 25.1, 2.9, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "Data_Tray_B3_Seg_10"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (0, 0, 1, 0), (1, 0, 0, 0), (52.324999999999996, 28.7, 2.9, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "Data_Tray_A3_Drop_12"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, -1, 0, 0), (0, 0, -1, 0), (19.9, 28.7, 2.9, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "Data_Tray_B1_Drop_7"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, -1, 0, 0), (0, 0, -1, 0), (50.9, 21.5, 2.9, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "Data_Tray_A3_Drop_4"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, -1, 0, 0), (0, 0, -1, 0), (15.100000000000001, 28.7, 2.9, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "Data_Tray_B1_Seg_4"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (0, 0, 1, 0), (1, 0, 0, 0), (48.725, 21.5, 2.9, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "Data_Tray_A2_Drop_2"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, -1, 0, 0), (0, 0, -1, 0), (13.9, 25.1, 2.9, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "Data_Tray_A1_Drop_14"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, -1, 0, 0), (0, 0, -1, 0), (21.1, 21.5, 2.9, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "Data_Tray_B3_Drop_10"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, -1, 0, 0), (0, 0, -1, 0), (52.699999999999996, 28.7, 2.9, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+   }
+  }
+ }
+}
+

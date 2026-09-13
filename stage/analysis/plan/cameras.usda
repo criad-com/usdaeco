@@ -1,0 +1,50 @@
+#usda 1.0
+(
+ customLayerData = {
+  string "aeco:layer:package" = "plan"
+  string "aeco:layer:producer" = "hook v0.1.4"
+  string "aeco:layer:role" = "analysis"
+  string "aeco:layer:source" = "kind/usdaeco-plan/examples/datacentre/run.py"
+  string "aeco:layer:sourceSha256" = "3eb75431d86cb884a3ef78789066e83df407a3c47155bb6bd3287537d724e0b5"
+  string "aeco:layer:tag" = "v0.1.4"
+ }
+)
+
+def "Renders"
+{
+ def "plan"
+ {
+  def Camera "B"
+  {
+   float4[] clippingPlanes = []
+   float2 clippingRange = (1, 1000000)
+   float focalLength = 20
+   float focusDistance = 0
+   float fStop = 0
+   float horizontalAperture = 36
+   float horizontalApertureOffset = 0
+   token projection = "perspective"
+   float verticalAperture = 15.2908
+   float verticalApertureOffset = 0
+   matrix4d xformOp:transform = ( (0, -1, 0, 0), (-0.12084692316783537, 0, 0.9926711545929332, 0), (-0.9926711545929332, 0, -0.12084692316783537, 0), (15.5, -1.4999999999999998, 5.500000000000001, 1) )
+   uniform token[] xformOpOrder = ["xformOp:transform"]
+  }
+
+  def Camera "A"
+  {
+   float4[] clippingPlanes = []
+   float2 clippingRange = (1, 1000000)
+   float focalLength = 20
+   float focusDistance = 0
+   float fStop = 0
+   float horizontalAperture = 36
+   float horizontalApertureOffset = 0
+   token projection = "perspective"
+   float verticalAperture = 15.2908
+   float verticalApertureOffset = 0
+   matrix4d xformOp:transform = ( (0, -1, 0, 0), (-0.12084692316783537, 0, 0.9926711545929332, 0), (-0.9926711545929332, 0, -0.12084692316783537, 0), (15.5, -1.4999999999999998, 5.500000000000001, 1) )
+   uniform token[] xformOpOrder = ["xformOp:transform"]
+  }
+ }
+}
+

@@ -1,0 +1,461 @@
+#usda 1.0
+(
+ customLayerData = {
+  string "aeco:layer:package" = "repeat"
+  string "aeco:layer:producer" = "hook v0.2.1"
+  string "aeco:layer:role" = "analysis"
+  string "aeco:layer:source" = "kind/usdaeco-repeat/examples/datacentre/run.py"
+  string "aeco:layer:sourceSha256" = "1b931ed764ad3b73341738c7ba6d25433424cd5d02c520927466898467965b11"
+  string "aeco:layer:tag" = "v0.2.1"
+ }
+)
+
+over "demo_datacentre_01"
+{
+ over "demo_datacentre_01_Site"
+ {
+  over "demo_datacentre_01"
+  {
+   over "L02_Office"
+   {
+    string aeco:class:ifc:name = "L02 Office"
+    double aeco:elevation = 7
+    custom string aeco:props:DC_Typical:Prototype = "lvl.l1"
+
+    over "Office_Corridor_L01"
+    {
+     custom string aeco:props:Pset_SpaceCommon:Reference = "sp.ocorr.1.2"
+     matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (0, 0, -7, 1) )
+     uniform token[] xformOpOrder = ["xformOp:transform"]
+
+     over "Corridor_ceiling_void" (
+      active = false
+     )
+     {
+      over "pipe_chw_void_f" (
+       active = false
+      )
+      {
+      }
+
+      over "pipe_chw_void_r" (
+       active = false
+      )
+      {
+      }
+
+      over "pipe_clash_hard" (
+       active = false
+      )
+      {
+      }
+
+      over "pipe_clash_near" (
+       active = false
+      )
+      {
+      }
+
+      over "pipe_clash_tangent" (
+       active = false
+      )
+      {
+      }
+
+      over "tray_void_ocorr_1" (
+       active = false
+      )
+      {
+      }
+
+      over "Extent" (
+       active = false
+      )
+      {
+      }
+     }
+
+     over "clg_ocorr_1" (
+      active = false
+     )
+     {
+     }
+
+     over "pod_wc_temp" (
+      active = false
+     )
+     {
+     }
+
+     over "Extent"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (22.5, -1.5, 7, 1) )
+      uniform token[] xformOpOrder = ["xformOp:transform"]
+     }
+
+     over "sec_cam_corr_ocorr_1_1"
+     {
+      string aeco:class:ifc:name = "sec.cam.corr.ocorr.1.2.1"
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (15.5, -1.5, 9.9, 1) )
+      uniform token[] xformOpOrder = ["xformOp:transform"]
+     }
+
+     over "sec_cam_corr_ocorr_1_2"
+     {
+      string aeco:class:ifc:name = "sec.cam.corr.ocorr.1.2.2"
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (29.5, -1.5, 9.9, 1) )
+      uniform token[] xformOpOrder = ["xformOp:transform"]
+     }
+    }
+
+    over "Open_Office"
+    {
+     custom string aeco:props:Pset_SpaceCommon:Reference = "sp.office.2"
+     matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (0, 0, -7, 1) )
+     uniform token[] xformOpOrder = ["xformOp:transform"]
+
+     over "Office_ceiling_void" (
+      active = false
+     )
+     {
+      over "cnd_void_office_1" (
+       active = false
+      )
+      {
+      }
+
+      over "cnd_void_office_2" (
+       active = false
+      )
+      {
+      }
+
+      over "fcu_office_1" (
+       active = false
+      )
+      {
+      }
+
+      over "Extent" (
+       active = false
+      )
+      {
+      }
+     }
+
+     over "clg_office" (
+      active = false
+     )
+     {
+     }
+
+     over "grl_office_1" (
+      active = false
+     )
+     {
+     }
+
+     over "grl_office_2" (
+      active = false
+     )
+     {
+     }
+
+     over "grl_office_3" (
+      active = false
+     )
+     {
+     }
+
+     over "grl_office_4" (
+      active = false
+     )
+     {
+     }
+
+     over "lum_office_1" (
+      active = false
+     )
+     {
+     }
+
+     over "lum_office_2" (
+      active = false
+     )
+     {
+     }
+
+     over "lum_office_3" (
+      active = false
+     )
+     {
+     }
+
+     over "lum_office_4" (
+      active = false
+     )
+     {
+     }
+
+     over "lum_office_5" (
+      active = false
+     )
+     {
+     }
+
+     over "lum_office_6" (
+      active = false
+     )
+     {
+     }
+
+     over "Extent"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (17, -7.5, 7, 1) )
+      uniform token[] xformOpOrder = ["xformOp:transform"]
+     }
+    }
+
+    over "WC"
+    {
+     custom string aeco:props:Pset_SpaceCommon:Reference = "sp.wc.2"
+     matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (0, 0, -7, 1) )
+     uniform token[] xformOpOrder = ["xformOp:transform"]
+
+     over "pipe_drain_pod" (
+      active = false
+     )
+     {
+     }
+
+     over "pod_wc" (
+      active = false
+     )
+     {
+     }
+
+     over "san_pod_1" (
+      active = false
+     )
+     {
+     }
+
+     over "san_pod_2" (
+      active = false
+     )
+     {
+     }
+
+     over "Extent"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (28, -10, 7, 1) )
+      uniform token[] xformOpOrder = ["xformOp:transform"]
+     }
+    }
+
+    over "Kitchen_Break"
+    {
+     custom string aeco:props:Pset_SpaceCommon:Reference = "sp.kitchen.2"
+     matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (0, 0, -7, 1) )
+     uniform token[] xformOpOrder = ["xformOp:transform"]
+
+     over "Extent"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (28, -5.5, 7, 1) )
+      uniform token[] xformOpOrder = ["xformOp:transform"]
+     }
+    }
+
+    over "Stair_L01"
+    {
+     custom string aeco:props:Pset_SpaceCommon:Reference = "sp.stair.1.2"
+     matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (0, 0, -7, 1) )
+     uniform token[] xformOpOrder = ["xformOp:transform"]
+
+     over "Extent"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (13.5, -1.5, 7, 1) )
+      uniform token[] xformOpOrder = ["xformOp:transform"]
+     }
+
+     over "Office_Stair"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (0, 0, 1, 0), (1, 0, 0, 0), (12.9, -2.9, 7, 1) )
+      uniform token[] xformOpOrder = ["xformOp:transform"]
+     }
+    }
+
+    over "Meeting_Room_L01"
+    {
+     custom string aeco:props:Pset_SpaceCommon:Reference = "sp.meeting.1.2"
+     matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (0, 0, -7, 1) )
+     uniform token[] xformOpOrder = ["xformOp:transform"]
+
+     over "Extent"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (24, -7.5, 7, 1) )
+      uniform token[] xformOpOrder = ["xformOp:transform"]
+     }
+    }
+
+    over "wall_l1_h_007"
+    {
+     string aeco:class:ifc:name = "wall.l2.h.007"
+
+     over "Geom"
+     {
+      double aeco:body:tolerance = None
+      double aeco:derived:tolerance = None
+     }
+    }
+
+    over "wall_l1_h_003"
+    {
+     string aeco:class:ifc:name = "wall.l2.h.003"
+    }
+
+    over "wall_l1_v_019"
+    {
+     string aeco:class:ifc:name = "wall.l2.v.019"
+    }
+
+    over "Additional_Meeting_Access"
+    {
+     matrix4d xformOp:transform = ( (0, 1, 0, 0), (-1, 0, 0, 0), (0, 0, 1, 0), (27, -5.95, 0, 1) )
+     uniform token[] xformOpOrder = ["xformOp:transform"]
+    }
+
+    over "wall_l1_v_014"
+    {
+     string aeco:class:ifc:name = "wall.l2.v.014"
+    }
+
+    over "wall_l1_h_010"
+    {
+     string aeco:class:ifc:name = "wall.l2.h.010"
+    }
+
+    over "wall_l1_h_008"
+    {
+     string aeco:class:ifc:name = "wall.l2.h.008"
+    }
+
+    over "door_office_1"
+    {
+     string aeco:class:ifc:name = "door.office.1.2"
+     custom string aeco:props:DC_DoorApproach:ApproachSpace = "sp.ocorr.1.2"
+    }
+
+    over "wall_l1_h_004"
+    {
+     string aeco:class:ifc:name = "wall.l2.h.004"
+    }
+
+    over "wall_l1_v_013"
+    {
+     string aeco:class:ifc:name = "wall.l2.v.013"
+    }
+
+    over "door_meeting_1"
+    {
+     string aeco:class:ifc:name = "door.meeting.1.2"
+     custom string aeco:props:DC_DoorApproach:ApproachSpace = "sp.ocorr.1.2"
+    }
+
+    over "slab_l1_office"
+    {
+     string aeco:class:ifc:name = "slab.l2.office"
+    }
+
+    over "wall_l1_v_016"
+    {
+     double3 aeco:axis:end = (8.2, 0, 0)
+     double aeco:axis:length = 8.2
+     string aeco:class:ifc:name = "wall.l2.v.016"
+     custom double aeco:props:Qto_WallBaseQuantities:GrossSideArea = 24.599999999999998
+     custom double aeco:props:Qto_WallBaseQuantities:GrossVolume = 3.6899999999999995
+     custom double aeco:props:Qto_WallBaseQuantities:Length = 8.2
+     matrix4d xformOp:transform = ( (0, 1, 0, 0), (-1, 0, 0, 0), (0, 0, 1, 0), (27, -11.2, 0, 1) )
+     uniform token[] xformOpOrder = ["xformOp:transform"]
+
+     over "Geom"
+     {
+      float3[] extent = [(0, -0.075, 0), (8.2, 0.075, 3)]
+      int[] faceVertexCounts = [3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3]
+      int[] faceVertexIndices = [1, 0, 3, 2, 1, 3, 2, 3, 4, 4, 3, 5, 4, 5, 7, 6, 4, 7, 6, 7, 8, 8, 7, 9, 8, 9, 11, 10, 8, 11, 10, 11, 13, 12, 10, 13, 13, 14, 15, 13, 15, 12, 14, 0, 1, 14, 1, 15, 0, 14, 5, 7, 5, 14, 3, 0, 5, 13, 7, 14, 11, 9, 7, 11, 7, 13, 4, 15, 1, 15, 4, 6, 4, 1, 2, 15, 6, 12, 6, 8, 10, 12, 6, 10]
+      point3f[] points = [(8.2, -0.075, 0), (8.2, 0.075, 0), (6.15, 0.075, 6.661338e-16), (6.15, -0.075, 6.661338e-16), (6.15, 0.075, 2.1), (6.15, -0.075, 2.1), (5.25, 0.075, 2.1), (5.25, -0.075, 2.1), (5.25, 0.075, 6.661338e-16), (5.25, -0.075, 6.661338e-16), (0, 0.075, 0), (0, -0.075, 0), (0, 0.075, 3), (0, -0.075, 3), (8.2, -0.075, 3), (8.2, 0.075, 3)]
+     }
+    }
+
+    over "wall_l1_h_006"
+    {
+     string aeco:class:ifc:name = "wall.l2.h.006"
+    }
+
+    over "wall_l1_v_012"
+    {
+     string aeco:class:ifc:name = "wall.l2.v.012"
+    }
+
+    over "door_kitchen"
+    {
+     string aeco:class:ifc:name = "door.kitchen.2"
+     custom string aeco:props:DC_DoorApproach:ApproachSpace = "sp.ocorr.1.2"
+    }
+
+    over "door_stair_1"
+    {
+     string aeco:class:ifc:name = "door.stair.1.2"
+     custom string aeco:props:DC_DoorApproach:ApproachSpace = "sp.ocorr.1.2"
+    }
+
+    over "wall_l1_v_018"
+    {
+     string aeco:class:ifc:name = "wall.l2.v.018"
+    }
+
+    over "wall_l1_v_015"
+    {
+     string aeco:class:ifc:name = "wall.l2.v.015"
+    }
+
+    over "wall_l1_v_011"
+    {
+     string aeco:class:ifc:name = "wall.l2.v.011"
+    }
+
+    over "wall_l1_h_005"
+    {
+     string aeco:class:ifc:name = "wall.l2.h.005"
+    }
+
+    over "wall_l1_v_017"
+    {
+     string aeco:class:ifc:name = "wall.l2.v.017"
+    }
+
+    over "wall_l1_h_001"
+    {
+     string aeco:class:ifc:name = "wall.l2.h.001"
+    }
+
+    over "door_wc"
+    {
+     string aeco:class:ifc:name = "door.wc.2"
+     custom string aeco:props:DC_DoorApproach:ApproachSpace = "sp.kitchen.2"
+    }
+
+    over "wall_l1_h_009"
+    {
+     string aeco:class:ifc:name = "wall.l2.h.009"
+    }
+
+    over "wall_l1_h_002"
+    {
+     string aeco:class:ifc:name = "wall.l2.h.002"
+    }
+   }
+  }
+ }
+}
+

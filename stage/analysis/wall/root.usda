@@ -1,0 +1,20 @@
+#usda 1.0
+(
+ customLayerData = {
+  string "aeco:layer:package" = "wall"
+  string "aeco:layer:producer" = "hook v0.2.5"
+  string "aeco:layer:role" = "analysis"
+  string "aeco:layer:source" = "kind/usdaeco-wall/examples/datacentre/run.py"
+  string "aeco:layer:sourceSha256" = "9e18f0a19e4439b31ec3dbb5c225b2806f76e62202406a6d905bac191b147479"
+  string "aeco:layer:tag" = "v0.2.5"
+ }
+ subLayers = [
+  @cameras.usda@,
+  @inheritance.usda@,
+  @out/review.usda@,
+  @out/axis.derived.usda@,
+  @out/wall.drivers.usda@,
+  @inputs/cameras.usda@
+ ]
+)
+

@@ -3,7 +3,7 @@
 Release train: `aeco-0.8.1`.
 
 Each repository is a submodule at the tag shown. Paths are relative to this checkout.
-See the [HTML guide](index.html) and [stage contract](../stage/README.md).
+See the [HTML guide](index.html) and [integrated stage guide](../stage/README.md).
 
 ## core
 
@@ -31,7 +31,7 @@ See the [HTML guide](index.html) and [stage contract](../stage/README.md).
 
 ## hosts
 
-- [usdaeco-ifc](../hosts/usdaeco-ifc/README.md) · [docs](../hosts/usdaeco-ifc/docs/) · `v0.2.3`
+- [usdaeco-ifc](../hosts/usdaeco-ifc/README.md) · [docs](../hosts/usdaeco-ifc/docs/) · `v0.3.1`
 - [usdaeco-revit](../hosts/usdaeco-revit/README.md) · [docs](../hosts/usdaeco-revit/docs/) · `v0.1.5`
 - [usdaeco-bonsai](../hosts/usdaeco-bonsai/README.md) · [docs](../hosts/usdaeco-bonsai/docs/) · `v0.1.6`
 
@@ -45,7 +45,7 @@ See the [HTML guide](index.html) and [stage contract](../stage/README.md).
 
 ## data
 
-- [usdaeco-datacentre](../data/usdaeco-datacentre/README.md) · [docs](../data/usdaeco-datacentre/docs/) · `v0.4.9`
+- [usdaeco-datacentre](../data/usdaeco-datacentre/README.md) · [docs](../data/usdaeco-datacentre/docs/) · `v0.5.1`
 
 ## gate
 

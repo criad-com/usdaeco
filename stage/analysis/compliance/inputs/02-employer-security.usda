@@ -1,0 +1,69 @@
+#usda 1.0
+(
+ customLayerData = {
+  string "aeco:layer:package" = "compliance"
+  string "aeco:layer:producer" = "hook v0.1.3"
+  string "aeco:layer:role" = "analysis"
+  string "aeco:layer:source" = "kind/usdaeco-compliance/examples/datacentre/run.py"
+  string "aeco:layer:sourceSha256" = "c9ca2d1e189b819ab74c294ca01392402d15e006406857b996b88028b58e6b11"
+  string "aeco:layer:tag" = "v0.1.3"
+  bool illustrative = 1
+  string source = "employer-security.yaml"
+ }
+ defaultPrim = "Specifications"
+ fallbackPrimTypes = {
+  token[] AecoRequirement = ["Scope"]
+  token[] AecoSpecification = ["Scope"]
+ }
+ metersPerUnit = 1
+ upAxis = "Z"
+)
+
+def Scope "Specifications"
+{
+ def AecoSpecification "employer_security"
+ {
+  string[] aeco:spec:appliesToClassification = ["ifc:IfcSensor.IDENTIFIERSENSOR"]
+  rel aeco:spec:appliesToTypes = </demo_datacentre_01/_TypeCatalog/Iris_Scanner>
+  uniform token aeco:spec:kind = "specification"
+  string aeco:spec:source = "Demo employer security brief, illustrative reader clause 1"
+  string aeco:spec:title = "Illustrative employer security requirements"
+
+  def AecoRequirement "Clause01"
+  {
+   string aeco:req:measure = "measured:centreHeightAboveFloor"
+   uniform token aeco:req:operator = "between"
+   string aeco:req:rationale = "Illustrative reader centre-height band for the demonstration."
+   uniform token aeco:req:severity = "error"
+   string[] aeco:req:tokens = []
+   double aeco:req:tolerance = 0.000001
+   string aeco:req:unit = "m"
+   double[] aeco:req:values = [1.05, 1.2]
+  }
+
+  def AecoRequirement "Clause02"
+  {
+   string aeco:req:measure = "measured:distanceToDoorLeafEdge"
+   uniform token aeco:req:operator = "between"
+   string aeco:req:rationale = "Illustrative distance from reader centre to nominal door leaf edge."
+   uniform token aeco:req:severity = "error"
+   string[] aeco:req:tokens = []
+   double aeco:req:tolerance = 0.000001
+   string aeco:req:unit = "m"
+   double[] aeco:req:values = [0.3, 0.5]
+  }
+
+  def AecoRequirement "Clause03"
+  {
+   string aeco:req:measure = "measured:sideOfDoor"
+   uniform token aeco:req:operator = "eq"
+   string aeco:req:rationale = "Illustrative pull-side mounting requirement."
+   uniform token aeco:req:severity = "error"
+   string[] aeco:req:tokens = ["pull"]
+   double aeco:req:tolerance = 0
+   string aeco:req:unit = "1"
+   double[] aeco:req:values = []
+  }
+ }
+}
+

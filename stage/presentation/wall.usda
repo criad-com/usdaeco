@@ -1,0 +1,217 @@
+#usda 1.0
+(
+ customLayerData = {
+  string "aeco:layer:package" = "wall"
+  string "aeco:layer:producer" = "hook v0.2.5"
+  string "aeco:layer:role" = "presentation"
+  string "aeco:layer:source" = "kind/usdaeco-wall/examples/datacentre/run.py"
+  string "aeco:layer:sourceSha256" = "9e18f0a19e4439b31ec3dbb5c225b2806f76e62202406a6d905bac191b147479"
+  string "aeco:layer:tag" = "v0.2.5"
+ }
+)
+
+over "demo_datacentre_01"
+{
+ over "demo_datacentre_01_Site"
+ {
+  over "demo_datacentre_01"
+  {
+   over "L01_Office"
+   {
+    over "wall_l1_v_017"
+    {
+     over "Axis"
+     {
+      color3f[] primvars:displayColor = [(0.12, 0.58, 0.88)]
+      token visibility = "invisible"
+     }
+    }
+
+    over "wall_l1_h_001"
+    {
+     over "Axis"
+     {
+      color3f[] primvars:displayColor = [(0.12, 0.58, 0.88)]
+      token visibility = "invisible"
+     }
+    }
+
+    over "wall_l1_v_014"
+    {
+     over "Axis"
+     {
+      color3f[] primvars:displayColor = [(0.12, 0.58, 0.88)]
+      token visibility = "invisible"
+     }
+    }
+
+    over "wall_l1_h_008"
+    {
+     over "Axis"
+     {
+      color3f[] primvars:displayColor = [(0.12, 0.58, 0.88)]
+      token visibility = "invisible"
+     }
+    }
+
+    over "wall_l1_h_002"
+    {
+     over "Axis"
+     {
+      color3f[] primvars:displayColor = [(0.12, 0.58, 0.88)]
+      token visibility = "invisible"
+     }
+    }
+
+    over "wall_l1_h_010"
+    {
+     over "Axis"
+     {
+      color3f[] primvars:displayColor = [(0.12, 0.58, 0.88)]
+      token visibility = "invisible"
+     }
+    }
+
+    over "wall_l1_h_007"
+    {
+     over "Axis"
+     {
+      color3f[] primvars:displayColor = [(0.56, 0.69, 0.77)]
+     }
+
+     over "Geom"
+     {
+      color3f[] primvars:displayColor = [(0.56, 0.69, 0.77)]
+     }
+    }
+
+    over "wall_l1_v_013"
+    {
+     over "Axis"
+     {
+      color3f[] primvars:displayColor = [(0.12, 0.58, 0.88)]
+      token visibility = "invisible"
+     }
+    }
+
+    over "wall_l1_v_019"
+    {
+     over "Axis"
+     {
+      color3f[] primvars:displayColor = [(0.12, 0.58, 0.88)]
+      token visibility = "invisible"
+     }
+    }
+
+    over "wall_l1_v_012"
+    {
+     over "Axis"
+     {
+      color3f[] primvars:displayColor = [(0.12, 0.58, 0.88)]
+      token visibility = "invisible"
+     }
+    }
+
+    over "wall_l1_h_006"
+    {
+     over "Axis"
+     {
+      color3f[] primvars:displayColor = [(0.12, 0.58, 0.88)]
+      token visibility = "invisible"
+     }
+    }
+
+    over "wall_l1_h_004"
+    {
+     over "Axis"
+     {
+      color3f[] primvars:displayColor = [(0.12, 0.58, 0.88)]
+      token visibility = "invisible"
+     }
+    }
+
+    over "wall_l1_h_003"
+    {
+     over "Axis"
+     {
+      color3f[] primvars:displayColor = [(0.12, 0.58, 0.88)]
+      token visibility = "invisible"
+     }
+    }
+
+    over "wall_l1_v_018"
+    {
+     over "Axis"
+     {
+      color3f[] primvars:displayColor = [(0.12, 0.58, 0.88)]
+      token visibility = "invisible"
+     }
+    }
+
+    over "wall_l1_v_015"
+    {
+     over "Axis"
+     {
+      color3f[] primvars:displayColor = [(0.12, 0.58, 0.88)]
+      token visibility = "invisible"
+     }
+    }
+
+    over "wall_l1_h_009"
+    {
+     over "Axis"
+     {
+      color3f[] primvars:displayColor = [(0.12, 0.58, 0.88)]
+      token visibility = "invisible"
+     }
+    }
+
+    over "wall_l1_v_016"
+    {
+     over "Axis"
+     {
+      color3f[] primvars:displayColor = [(0.56, 0.69, 0.77)]
+     }
+
+     over "Geom"
+     {
+      color3f[] primvars:displayColor = [(0.56, 0.69, 0.77)]
+     }
+    }
+
+    over "wall_l1_v_011"
+    {
+     over "Axis"
+     {
+      color3f[] primvars:displayColor = [(0.12, 0.58, 0.88)]
+      token visibility = "invisible"
+     }
+    }
+
+    over "wall_l1_h_005"
+    {
+     over "Axis"
+     {
+      color3f[] primvars:displayColor = [(0.12, 0.58, 0.88)]
+      token visibility = "invisible"
+     }
+    }
+
+    over "Office_Corridor_L01"
+    {
+     over "Corridor_ceiling_void"
+     {
+      over "pipe_clash_hard"
+      {
+       over "Geom"
+       {
+        color3f[] primvars:displayColor = [(0.95, 0.23, 0.06)]
+       }
+      }
+     }
+    }
+   }
+  }
+ }
+}
+

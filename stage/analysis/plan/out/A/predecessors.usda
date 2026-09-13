@@ -1,0 +1,75 @@
+#usda 1.0
+(
+ customLayerData = {
+  string "aeco:layer:package" = "plan"
+  string "aeco:layer:producer" = "hook v0.1.4"
+  string "aeco:layer:role" = "analysis"
+  string "aeco:layer:source" = "kind/usdaeco-plan/examples/datacentre/run.py"
+  string "aeco:layer:sourceSha256" = "3eb75431d86cb884a3ef78789066e83df407a3c47155bb6bd3287537d724e0b5"
+  string "aeco:layer:tag" = "v0.1.4"
+  bool "aeco:plan:derived" = 1
+ }
+)
+
+over "Programme"
+{
+ over "Fitout"
+ {
+  over "Logistics"
+  {
+   over "act_pod_deliver_9ac724561c"
+   {
+    rel aeco:plan:predecessors = None
+   }
+
+   over "act_pod_install_d6fde11f61"
+   {
+    rel aeco:plan:predecessors = </Programme/Fitout/Logistics/act_pod_remove_0b9c87850e>
+   }
+
+   over "act_pod_park_9716c78a83"
+   {
+    rel aeco:plan:predecessors = </Programme/Fitout/Logistics/act_pod_deliver_9ac724561c>
+   }
+
+   over "act_pod_remove_0b9c87850e"
+   {
+    rel aeco:plan:predecessors = </Programme/Fitout/Logistics/act_pod_park_9716c78a83>
+   }
+  }
+
+  over "Services"
+  {
+   over "act_ceiling_corridor_fa7147c488"
+   {
+    rel aeco:plan:predecessors = </Programme/Fitout/Logistics/act_pod_deliver_9ac724561c>
+   }
+
+   over "act_ceiling_office_ac37b5a243"
+   {
+    rel aeco:plan:predecessors = </Programme/Fitout/Logistics/act_pod_deliver_9ac724561c>
+   }
+
+   over "act_first_2172921906"
+   {
+    rel aeco:plan:predecessors = </Programme/Fitout/Logistics/act_pod_deliver_9ac724561c>
+   }
+
+   over "act_inspect_03ca3cdbdd"
+   {
+    rel aeco:plan:predecessors = </Programme/Fitout/Services/act_first_2172921906>
+   }
+
+   over "act_second_c3b73d5c53"
+   {
+    rel aeco:plan:predecessors = </Programme/Fitout/Services/act_ceiling_office_ac37b5a243>
+   }
+
+   over "act_third_e9cbadd210"
+   {
+    rel aeco:plan:predecessors = </Programme/Fitout/Logistics/act_pod_install_d6fde11f61>
+   }
+  }
+ }
+}
+

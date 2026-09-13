@@ -1,5 +1,14 @@
 # Changelog
 
+## 0.2.0
+
+- Compose federated deliveries and recomputed analysis layers through connected
+  IFC and plugin-free USD roots, with package views and measured provenance.
+- Restore catalog inheritance across materialized IFC deliveries and isolate
+  representation placement from independently muted analysis layers.
+- Publish nine analysis integrations, 21 views, bulk geometry crates, stock
+  rendering and full-layer mute diagnostics with explicit acceptance deviations.
+
 ## 0.1.0
 
 - Establish the usdAECO suite superproject, with 23 submodules at released tags

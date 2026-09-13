@@ -1,0 +1,50 @@
+#usda 1.0
+(
+ customLayerData = {
+  string "aeco:layer:package" = "cctv"
+  string "aeco:layer:producer" = "hook v0.5.6"
+  string "aeco:layer:role" = "analysis"
+  string "aeco:layer:source" = "kind/usdaeco-cctv/examples/datacentre/run.py"
+  string "aeco:layer:sourceSha256" = "20cad38173f7b25d9ecb528dab991cc0e04a445aa0048237ceb51559dc18cee0"
+  string "aeco:layer:tag" = "v0.5.6"
+ }
+)
+
+def "Renders"
+{
+ def "cctv"
+ {
+  def Camera "overview"
+  {
+   float4[] clippingPlanes = []
+   float2 clippingRange = (0.1, 1000)
+   float focalLength = 32
+   float focusDistance = 0
+   float fStop = 0
+   float horizontalAperture = 36
+   float horizontalApertureOffset = 0
+   token projection = "perspective"
+   float verticalAperture = 22.5
+   float verticalApertureOffset = 0
+   matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (35, 24, 140, 1) )
+   uniform token[] xformOpOrder = ["xformOp:transform"]
+  }
+
+  def Camera "lookthrough"
+  {
+   float4[] clippingPlanes = []
+   float2 clippingRange = (0.05, 12)
+   float focalLength = 3
+   float focusDistance = 0
+   float fStop = 0
+   float horizontalAperture = 7.67965
+   float horizontalApertureOffset = 0
+   token projection = "perspective"
+   float verticalAperture = 4.6877136
+   float verticalApertureOffset = 0
+   matrix4d xformOp:transform = ( (0.8221921916437787, 0.5692099788303083, 0, 0), (-0.4929503017546496, 0.712039324756716, 0.49999999999999994, 0), (0.2846049894151541, -0.4110960958218893, 0.8660254037844387, 0), (8.45, 17.35, 2.92, 1) )
+   uniform token[] xformOpOrder = ["xformOp:transform"]
+  }
+ }
+}
+

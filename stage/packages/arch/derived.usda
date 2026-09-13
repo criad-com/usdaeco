@@ -1,0 +1,3474 @@
+#usda 1.0
+(
+ customLayerData = {
+  string "aeco:layer:package" = "arch"
+  string "aeco:layer:producer" = "usdAECO suite representation placement"
+  string "aeco:layer:role" = "derived"
+  string "aeco:layer:source" = "section/usdaeco-buildup/examples/datacentre/run.py"
+  string "aeco:layer:sourceSha256" = "53d0e90d16eadda33bd1bf08425246b4ad0d2062a740cd107110c42a8e658f84"
+  string "aeco:layer:tag" = "v0.2.5"
+ }
+)
+
+over "demo_datacentre_01"
+{
+ over "demo_datacentre_01_Site"
+ {
+  over "demo_datacentre_01"
+  {
+   over "L01_Office"
+   {
+    over "wall_l1_h_007"
+    {
+     over BrepArray "BodyExact"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (22, -3, 4, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+
+     over Mesh "Body"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (22, -3, 4, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+
+     over BasisCurves "Edges"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (22, -3, 4, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+
+     over Mesh "EdgeDisplay"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (22, -3, 4, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (22, -3, 4, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "wall_l1_v_016"
+    {
+     over BasisCurves "RepeatHighlight"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (-1, 0, 0, 0), (0, 0, 1, 0), (26, -8, 4, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+
+     over BrepArray "BodyExact"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (-1, 0, 0, 0), (0, 0, 1, 0), (26, -8, 4, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+
+     over Mesh "Body"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (-1, 0, 0, 0), (0, 0, 1, 0), (26, -8, 4, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+
+     over BasisCurves "Edges"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (-1, 0, 0, 0), (0, 0, 1, 0), (26, -8, 4, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (-1, 0, 0, 0), (0, 0, 1, 0), (26, -8, 4, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "wall_l1_v_017"
+    {
+     over BrepArray "BodyExact"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (-1, 0, 0, 0), (0, 0, 1, 0), (30, -12, 4, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+
+     over Mesh "Body"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (-1, 0, 0, 0), (0, 0, 1, 0), (30, -12, 4, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+
+     over BasisCurves "Edges"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (-1, 0, 0, 0), (0, 0, 1, 0), (30, -12, 4, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (-1, 0, 0, 0), (0, 0, 1, 0), (30, -12, 4, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "wall_l1_h_001"
+    {
+     over BrepArray "BodyExact"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (12, -12, 4, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+
+     over Mesh "Body"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (12, -12, 4, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+
+     over BasisCurves "Edges"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (12, -12, 4, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (12, -12, 4, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "wall_l1_v_014"
+    {
+     over BrepArray "BodyExact"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (-1, 0, 0, 0), (0, 0, 1, 0), (22, -12, 4, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+
+     over Mesh "Body"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (-1, 0, 0, 0), (0, 0, 1, 0), (22, -12, 4, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+
+     over BasisCurves "Edges"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (-1, 0, 0, 0), (0, 0, 1, 0), (22, -12, 4, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (-1, 0, 0, 0), (0, 0, 1, 0), (22, -12, 4, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "wall_l1_h_008"
+    {
+     over BrepArray "BodyExact"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (26, -3, 4, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+
+     over Mesh "Body"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (26, -3, 4, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+
+     over BasisCurves "Edges"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (26, -3, 4, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (26, -3, 4, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "wall_l1_h_002"
+    {
+     over BrepArray "BodyExact"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (22, -12, 4, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+
+     over Mesh "Body"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (22, -12, 4, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+
+     over BasisCurves "Edges"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (22, -12, 4, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (22, -12, 4, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "wall_l1_h_010"
+    {
+     over BrepArray "BodyExact"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (15, 0, 4, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+
+     over Mesh "Body"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (15, 0, 4, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+
+     over BasisCurves "Edges"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (15, 0, 4, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (15, 0, 4, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "wall_l1_v_013"
+    {
+     over BrepArray "BodyExact"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (-1, 0, 0, 0), (0, 0, 1, 0), (15, -3, 4, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+
+     over Mesh "Body"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (-1, 0, 0, 0), (0, 0, 1, 0), (15, -3, 4, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+
+     over BasisCurves "Edges"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (-1, 0, 0, 0), (0, 0, 1, 0), (15, -3, 4, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (-1, 0, 0, 0), (0, 0, 1, 0), (15, -3, 4, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "wall_l1_v_019"
+    {
+     over BrepArray "BodyExact"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (-1, 0, 0, 0), (0, 0, 1, 0), (30, -3, 4, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+
+     over Mesh "Body"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (-1, 0, 0, 0), (0, 0, 1, 0), (30, -3, 4, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+
+     over BasisCurves "Edges"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (-1, 0, 0, 0), (0, 0, 1, 0), (30, -3, 4, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (-1, 0, 0, 0), (0, 0, 1, 0), (30, -3, 4, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "wall_l1_v_012"
+    {
+     over BrepArray "BodyExact"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (-1, 0, 0, 0), (0, 0, 1, 0), (12, -3, 4, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+
+     over Mesh "Body"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (-1, 0, 0, 0), (0, 0, 1, 0), (12, -3, 4, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+
+     over BasisCurves "Edges"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (-1, 0, 0, 0), (0, 0, 1, 0), (12, -3, 4, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (-1, 0, 0, 0), (0, 0, 1, 0), (12, -3, 4, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "door_kitchen"
+    {
+     over BrepArray "BodyExact"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (27.55, -3, 4, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+
+     over Mesh "Body"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (27.55, -3, 4, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+
+     over BasisCurves "Edges"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (27.55, -3, 4, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "door_stair_1"
+    {
+     over BrepArray "BodyExact"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (-1, 0, 0, 0), (0, 0, 1, 0), (15, -1.95, 4, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+
+     over Mesh "Body"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (-1, 0, 0, 0), (0, 0, 1, 0), (15, -1.95, 4, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+
+     over BasisCurves "Edges"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (-1, 0, 0, 0), (0, 0, 1, 0), (15, -1.95, 4, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "wall_l1_h_006"
+    {
+     over BrepArray "BodyExact"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (15, -3, 4, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+
+     over Mesh "Body"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (15, -3, 4, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+
+     over BasisCurves "Edges"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (15, -3, 4, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (15, -3, 4, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "wall_l1_h_004"
+    {
+     over BrepArray "BodyExact"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (26, -8, 4, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+
+     over Mesh "Body"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (26, -8, 4, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+
+     over BasisCurves "Edges"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (26, -8, 4, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (26, -8, 4, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+
+     over Cube "BuildUpLayer1"
+     {
+      matrix4d xformOp:transform = ( (4, 0, 0, 0), (0, 0.02500000037252903, 0, 0), (0, 0, 3, 0), (28, -7.9375, 5.5, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+
+     over Cube "BuildUpLayer2"
+     {
+      matrix4d xformOp:transform = ( (4, 0, 0, 0), (0, 0.10000000149011612, 0, 0), (0, 0, 3, 0), (28, -8, 5.5, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+
+     over Cube "BuildUpLayer3"
+     {
+      matrix4d xformOp:transform = ( (4, 0, 0, 0), (0, 0.014999999664723873, 0, 0), (0, 0, 3, 0), (28, -8.0575, 5.5, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+
+     over Cube "BuildUpLayer4"
+     {
+      matrix4d xformOp:transform = ( (4, 0, 0, 0), (0, 0.009999999776482582, 0, 0), (0, 0, 3, 0), (28, -8.07, 5.5, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "door_office_1"
+    {
+     over BrepArray "BodyExact"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (16.1, -3, 4, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+
+     over Mesh "Body"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (16.1, -3, 4, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+
+     over BasisCurves "Edges"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (16.1, -3, 4, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "wall_l1_h_003"
+    {
+     over BrepArray "BodyExact"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (26, -12, 4, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+
+     over Mesh "Body"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (26, -12, 4, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+
+     over BasisCurves "Edges"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (26, -12, 4, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (26, -12, 4, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "wall_l1_v_018"
+    {
+     over BrepArray "BodyExact"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (-1, 0, 0, 0), (0, 0, 1, 0), (30, -8, 4, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+
+     over Mesh "Body"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (-1, 0, 0, 0), (0, 0, 1, 0), (30, -8, 4, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+
+     over BasisCurves "Edges"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (-1, 0, 0, 0), (0, 0, 1, 0), (30, -8, 4, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (-1, 0, 0, 0), (0, 0, 1, 0), (30, -8, 4, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "wall_l1_v_015"
+    {
+     over BrepArray "BodyExact"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (-1, 0, 0, 0), (0, 0, 1, 0), (26, -12, 4, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+
+     over Mesh "Body"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (-1, 0, 0, 0), (0, 0, 1, 0), (26, -12, 4, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+
+     over BasisCurves "Edges"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (-1, 0, 0, 0), (0, 0, 1, 0), (26, -12, 4, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (-1, 0, 0, 0), (0, 0, 1, 0), (26, -12, 4, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+
+     over Cube "BuildUpLayer1"
+     {
+      matrix4d xformOp:transform = ( (0, 4, 0, 0), (-0.02500000037252903, 0, 0, 0), (0, 0, 3, 0), (25.9375, -10, 5.5, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+
+     over Cube "BuildUpLayer2"
+     {
+      matrix4d xformOp:transform = ( (0, 4, 0, 0), (-0.10000000149011612, 0, 0, 0), (0, 0, 3, 0), (26, -10, 5.5, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+
+     over Cube "BuildUpLayer3"
+     {
+      matrix4d xformOp:transform = ( (0, 4, 0, 0), (-0.014999999664723873, 0, 0, 0), (0, 0, 3, 0), (26.0575, -10, 5.5, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+
+     over Cube "BuildUpLayer4"
+     {
+      matrix4d xformOp:transform = ( (0, 4, 0, 0), (-0.009999999776482582, 0, 0, 0), (0, 0, 3, 0), (26.07, -10, 5.5, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "wall_l1_h_009"
+    {
+     over BrepArray "BodyExact"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (12, 0, 4, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+
+     over Mesh "Body"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (12, 0, 4, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+
+     over BasisCurves "Edges"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (12, 0, 4, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (12, 0, 4, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "door_wc"
+    {
+     over BrepArray "BodyExact"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (27.55, -8, 4, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+
+     over Mesh "Body"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (27.55, -8, 4, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+
+     over BasisCurves "Edges"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (27.55, -8, 4, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "wall_l1_v_011"
+    {
+     over BrepArray "BodyExact"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (-1, 0, 0, 0), (0, 0, 1, 0), (12, -12, 4, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+
+     over Mesh "Body"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (-1, 0, 0, 0), (0, 0, 1, 0), (12, -12, 4, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+
+     over BasisCurves "Edges"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (-1, 0, 0, 0), (0, 0, 1, 0), (12, -12, 4, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (-1, 0, 0, 0), (0, 0, 1, 0), (12, -12, 4, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "wall_l1_h_005"
+    {
+     over BrepArray "BodyExact"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (12, -3, 4, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+
+     over Mesh "Body"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (12, -3, 4, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+
+     over BasisCurves "Edges"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (12, -3, 4, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (12, -3, 4, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "door_meeting_1"
+    {
+     over BrepArray "BodyExact"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (23.55, -3, 4, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+
+     over Mesh "Body"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (23.55, -3, 4, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+
+     over BasisCurves "Edges"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (23.55, -3, 4, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+   }
+
+   over "L02_Office"
+   {
+    over "Additional_Meeting_Access"
+    {
+     over BasisCurves "RepeatHighlight"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (-1, 0, 0, 0), (0, 0, 1, 0), (27, -5.95, 7, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "wall_l2_v_016"
+    {
+     over BasisCurves "RepeatHighlight"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (-1, 0, 0, 0), (0, 0, 1, 0), (27, -11.2, 7, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (-1, 0, 0, 0), (0, 0, 1, 0), (27, -11.2, 7, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "wall_l2_h_007"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (22, -3, 7, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "wall_l2_h_003"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (26, -12, 7, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "wall_l2_v_019"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (-1, 0, 0, 0), (0, 0, 1, 0), (30, -3, 7, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "wall_l2_v_014"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (-1, 0, 0, 0), (0, 0, 1, 0), (22, -12, 7, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "wall_l2_h_010"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (15, 0, 7, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "wall_l2_h_008"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (26, -3, 7, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "wall_l2_h_004"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (26, -8, 7, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "wall_l2_v_013"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (-1, 0, 0, 0), (0, 0, 1, 0), (15, -3, 7, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "wall_l2_h_006"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (15, -3, 7, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "wall_l2_v_012"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (-1, 0, 0, 0), (0, 0, 1, 0), (12, -3, 7, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "wall_l2_v_018"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (-1, 0, 0, 0), (0, 0, 1, 0), (30, -8, 7, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "wall_l2_v_015"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (-1, 0, 0, 0), (0, 0, 1, 0), (26, -12, 7, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "wall_l2_v_011"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (-1, 0, 0, 0), (0, 0, 1, 0), (12, -12, 7, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "wall_l2_h_005"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (12, -3, 7, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "wall_l2_v_017"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (-1, 0, 0, 0), (0, 0, 1, 0), (30, -12, 7, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "wall_l2_h_001"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (12, -12, 7, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "wall_l2_h_009"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (12, 0, 7, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "wall_l2_h_002"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (22, -12, 7, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+   }
+
+   over "L00_Ground"
+   {
+    over "Stair_L00"
+    {
+     over "Office_Stair"
+     {
+      over BrepArray "BodyExact"
+      {
+       matrix4d xformOp:transform = ( (0, 1, 0, 0), (0, 0, 1, 0), (1, 0, 0, 0), (12.9, -2.9, 0, 1) ) (
+        aecoDerived = true
+       )
+       token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+        aecoDerived = true
+       )
+      }
+
+      over Mesh "Body"
+      {
+       matrix4d xformOp:transform = ( (0, 1, 0, 0), (0, 0, 1, 0), (1, 0, 0, 0), (12.9, -2.9, 0, 1) ) (
+        aecoDerived = true
+       )
+       token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+        aecoDerived = true
+       )
+      }
+
+      over BasisCurves "Edges"
+      {
+       matrix4d xformOp:transform = ( (0, 1, 0, 0), (0, 0, 1, 0), (1, 0, 0, 0), (12.9, -2.9, 0, 1) ) (
+        aecoDerived = true
+       )
+       token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+        aecoDerived = true
+       )
+      }
+     }
+    }
+
+    over "wall_l0_v_051"
+    {
+     over BrepArray "BodyExact"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (-1, 0, 0, 0), (0, 0, 1, 0), (18, -6, 0, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+
+     over Mesh "Body"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (-1, 0, 0, 0), (0, 0, 1, 0), (18, -6, 0, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+
+     over BasisCurves "Edges"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (-1, 0, 0, 0), (0, 0, 1, 0), (18, -6, 0, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (-1, 0, 0, 0), (0, 0, 1, 0), (18, -6, 0, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "door_stair_0"
+    {
+     over BrepArray "BodyExact"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (13.05, -3, 0, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+
+     over Mesh "Body"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (13.05, -3, 0, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+
+     over BasisCurves "Edges"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (13.05, -3, 0, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "door_noc"
+    {
+     over BrepArray "BodyExact"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (-1, 0, 0, 0), (0, 0, 1, 0), (18, -1.95, 0, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+
+     over Mesh "Body"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (-1, 0, 0, 0), (0, 0, 1, 0), (18, -1.95, 0, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+
+     over BasisCurves "Edges"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (-1, 0, 0, 0), (0, 0, 1, 0), (18, -1.95, 0, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "wall_l0_v_058"
+    {
+     over BrepArray "BodyExact"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (-1, 0, 0, 0), (0, 0, 1, 0), (26, -6, 0, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+
+     over Mesh "Body"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (-1, 0, 0, 0), (0, 0, 1, 0), (26, -6, 0, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+
+     over BasisCurves "Edges"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (-1, 0, 0, 0), (0, 0, 1, 0), (26, -6, 0, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (-1, 0, 0, 0), (0, 0, 1, 0), (26, -6, 0, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+
+     over Cube "BuildUpLayer1"
+     {
+      matrix4d xformOp:transform = ( (0, 6, 0, 0), (-0.014999999664723873, 0, 0, 0), (0, 0, 3.75, 0), (26.0925, -3, 1.875, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+
+     over Cube "BuildUpLayer2"
+     {
+      matrix4d xformOp:transform = ( (0, 6, 0, 0), (-0.17000000178813934, 0, 0, 0), (0, 0, 3.75, 0), (26, -3, 1.875, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+
+     over Cube "BuildUpLayer3"
+     {
+      matrix4d xformOp:transform = ( (0, 6, 0, 0), (-0.014999999664723873, 0, 0, 0), (0, 0, 3.75, 0), (25.9075, -3, 1.875, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "wall_l0_h_010"
+    {
+     over BrepArray "BodyExact"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (12, 0, 0, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+
+     over Mesh "Body"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (12, 0, 0, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+
+     over BasisCurves "Edges"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (12, 0, 0, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (12, 0, 0, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "wall_l0_h_008"
+    {
+     over BrepArray "BodyExact"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (15, -3, 0, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+
+     over Mesh "Body"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (15, -3, 0, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+
+     over BasisCurves "Edges"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (15, -3, 0, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (15, -3, 0, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "door_security"
+    {
+     over BrepArray "BodyExact"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (-1, 0, 0, 0), (0, 0, 1, 0), (18, -8.45, 0, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+
+     over Mesh "Body"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (-1, 0, 0, 0), (0, 0, 1, 0), (18, -8.45, 0, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+
+     over BasisCurves "Edges"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (-1, 0, 0, 0), (0, 0, 1, 0), (18, -8.45, 0, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "wall_l0_v_052"
+    {
+     over BrepArray "BodyExact"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (-1, 0, 0, 0), (0, 0, 1, 0), (18, -3, 0, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+
+     over Mesh "Body"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (-1, 0, 0, 0), (0, 0, 1, 0), (18, -3, 0, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+
+     over BasisCurves "Edges"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (-1, 0, 0, 0), (0, 0, 1, 0), (18, -3, 0, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (-1, 0, 0, 0), (0, 0, 1, 0), (18, -3, 0, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "door_noc_meeting"
+    {
+     over BrepArray "BodyExact"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (23.55, -6, 0, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+
+     over Mesh "Body"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (23.55, -6, 0, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+
+     over BasisCurves "Edges"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (23.55, -6, 0, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "wall_l0_h_011"
+    {
+     over BrepArray "BodyExact"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (15, 0, 0, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+
+     over Mesh "Body"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (15, 0, 0, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+
+     over BasisCurves "Edges"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (15, 0, 0, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (15, 0, 0, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "wall_l0_h_005"
+    {
+     over BrepArray "BodyExact"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (22, -6, 0, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+
+     over Mesh "Body"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (22, -6, 0, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+
+     over BasisCurves "Edges"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (22, -6, 0, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (22, -6, 0, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+
+     over Cube "BuildUpLayer1"
+     {
+      matrix4d xformOp:transform = ( (4, 0, 0, 0), (0, 0.02500000037252903, 0, 0), (0, 0, 3.75, 0), (24, -6.0625, 1.875, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+
+     over Cube "BuildUpLayer2"
+     {
+      matrix4d xformOp:transform = ( (4, 0, 0, 0), (0, 0.10000000149011612, 0, 0), (0, 0, 3.75, 0), (24, -6, 1.875, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+
+     over Cube "BuildUpLayer3"
+     {
+      matrix4d xformOp:transform = ( (4, 0, 0, 0), (0, 0.02500000037252903, 0, 0), (0, 0, 3.75, 0), (24, -5.9375, 1.875, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "wall_l0_v_055"
+    {
+     over BrepArray "BodyExact"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (-1, 0, 0, 0), (0, 0, 1, 0), (22, -12, 0, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+
+     over Mesh "Body"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (-1, 0, 0, 0), (0, 0, 1, 0), (22, -12, 0, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+
+     over BasisCurves "Edges"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (-1, 0, 0, 0), (0, 0, 1, 0), (22, -12, 0, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (-1, 0, 0, 0), (0, 0, 1, 0), (22, -12, 0, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "wall_l0_h_002"
+    {
+     over BrepArray "BodyExact"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (18, -12, 0, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+
+     over Mesh "Body"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (18, -12, 0, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+
+     over BasisCurves "Edges"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (18, -12, 0, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (18, -12, 0, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "wall_l0_v_049"
+    {
+     over BrepArray "BodyExact"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (-1, 0, 0, 0), (0, 0, 1, 0), (15, -3, 0, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+
+     over Mesh "Body"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (-1, 0, 0, 0), (0, 0, 1, 0), (15, -3, 0, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+
+     over BasisCurves "Edges"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (-1, 0, 0, 0), (0, 0, 1, 0), (15, -3, 0, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (-1, 0, 0, 0), (0, 0, 1, 0), (15, -3, 0, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "wall_l0_h_003"
+    {
+     over BrepArray "BodyExact"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (22, -12, 0, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+
+     over Mesh "Body"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (22, -12, 0, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+
+     over BasisCurves "Edges"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (22, -12, 0, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (22, -12, 0, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "wall_l0_h_012"
+    {
+     over BrepArray "BodyExact"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (18, 0, 0, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+
+     over Mesh "Body"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (18, 0, 0, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+
+     over BasisCurves "Edges"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (18, 0, 0, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (18, 0, 0, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "wall_l0_h_014"
+    {
+     over BrepArray "BodyExact"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (26, 0, 0, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+
+     over Mesh "Body"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (26, 0, 0, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+
+     over BasisCurves "Edges"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (26, 0, 0, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (26, 0, 0, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "wall_l0_h_007"
+    {
+     over BrepArray "BodyExact"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (12, -3, 0, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+
+     over Mesh "Body"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (12, -3, 0, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+
+     over BasisCurves "Edges"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (12, -3, 0, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (12, -3, 0, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "wall_l0_v_060"
+    {
+     over BrepArray "BodyExact"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (-1, 0, 0, 0), (0, 0, 1, 0), (30, -6, 0, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+
+     over Mesh "Body"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (-1, 0, 0, 0), (0, 0, 1, 0), (30, -6, 0, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+
+     over BasisCurves "Edges"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (-1, 0, 0, 0), (0, 0, 1, 0), (30, -6, 0, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (-1, 0, 0, 0), (0, 0, 1, 0), (30, -6, 0, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "slab_ground_office"
+    {
+     over BrepArray "BodyExact"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (21, -6, -0.3, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+
+     over Mesh "Body"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (21, -6, -0.3, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+
+     over BasisCurves "Edges"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (21, -6, -0.3, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "door_lobby_corr"
+    {
+     over BrepArray "BodyExact"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (15.6, -3, 0, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+
+     over Mesh "Body"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (15.6, -3, 0, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+
+     over BasisCurves "Edges"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (15.6, -3, 0, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "door_meeting"
+    {
+     over BrepArray "BodyExact"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (-1, 0, 0, 0), (0, 0, 1, 0), (22, -9.45, 0, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+
+     over Mesh "Body"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (-1, 0, 0, 0), (0, 0, 1, 0), (22, -9.45, 0, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+
+     over BasisCurves "Edges"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (-1, 0, 0, 0), (0, 0, 1, 0), (22, -9.45, 0, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "wall_l0_h_013"
+    {
+     over BrepArray "BodyExact"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (24, 0, 0, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+
+     over Mesh "Body"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (24, 0, 0, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+
+     over BasisCurves "Edges"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (24, 0, 0, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (24, 0, 0, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "wall_l0_v_045"
+    {
+     over BrepArray "BodyExact"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (-1, 0, 0, 0), (0, 0, 1, 0), (12, -12, 0, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+
+     over Mesh "Body"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (-1, 0, 0, 0), (0, 0, 1, 0), (12, -12, 0, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+
+     over BasisCurves "Edges"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (-1, 0, 0, 0), (0, 0, 1, 0), (12, -12, 0, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (-1, 0, 0, 0), (0, 0, 1, 0), (12, -12, 0, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "Main_Entrance"
+    {
+     over BrepArray "BodyExact"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (14.1, -12, 0, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+
+     over Mesh "Body"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (14.1, -12, 0, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+
+     over BasisCurves "Edges"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (14.1, -12, 0, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "wall_l0_h_006"
+    {
+     over BrepArray "BodyExact"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (26, -6, 0, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+
+     over Mesh "Body"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (26, -6, 0, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+
+     over BasisCurves "Edges"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (26, -6, 0, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (26, -6, 0, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+
+     over Cube "BuildUpLayer1"
+     {
+      matrix4d xformOp:transform = ( (4, 0, 0, 0), (0, 0.014999999664723873, 0, 0), (0, 0, 3.75, 0), (28, -6.0925, 1.875, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+
+     over Cube "BuildUpLayer2"
+     {
+      matrix4d xformOp:transform = ( (4, 0, 0, 0), (0, 0.17000000178813934, 0, 0), (0, 0, 3.75, 0), (28, -6, 1.875, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+
+     over Cube "BuildUpLayer3"
+     {
+      matrix4d xformOp:transform = ( (4, 0, 0, 0), (0, 0.014999999664723873, 0, 0), (0, 0, 3.75, 0), (28, -5.9075, 1.875, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "wall_l0_v_050"
+    {
+     over BrepArray "BodyExact"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (-1, 0, 0, 0), (0, 0, 1, 0), (18, -12, 0, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+
+     over Mesh "Body"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (-1, 0, 0, 0), (0, 0, 1, 0), (18, -12, 0, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+
+     over BasisCurves "Edges"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (-1, 0, 0, 0), (0, 0, 1, 0), (18, -12, 0, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (-1, 0, 0, 0), (0, 0, 1, 0), (18, -12, 0, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "wall_l0_h_001"
+    {
+     over BrepArray "BodyExact"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (12, -12, 0, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+
+     over Mesh "Body"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (12, -12, 0, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+
+     over BasisCurves "Edges"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (12, -12, 0, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (12, -12, 0, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "wall_l0_v_046"
+    {
+     over BrepArray "BodyExact"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (-1, 0, 0, 0), (0, 0, 1, 0), (12, -3, 0, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+
+     over Mesh "Body"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (-1, 0, 0, 0), (0, 0, 1, 0), (12, -3, 0, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+
+     over BasisCurves "Edges"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (-1, 0, 0, 0), (0, 0, 1, 0), (12, -3, 0, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (-1, 0, 0, 0), (0, 0, 1, 0), (12, -3, 0, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "wall_l0_h_004"
+    {
+     over BrepArray "BodyExact"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (18, -6, 0, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+
+     over Mesh "Body"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (18, -6, 0, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+
+     over BasisCurves "Edges"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (18, -6, 0, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (18, -6, 0, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+
+     over Cube "BuildUpLayer1"
+     {
+      matrix4d xformOp:transform = ( (4, 0, 0, 0), (0, 0.02500000037252903, 0, 0), (0, 0, 3.75, 0), (20, -6.0625, 1.875, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+
+     over Cube "BuildUpLayer2"
+     {
+      matrix4d xformOp:transform = ( (4, 0, 0, 0), (0, 0.10000000149011612, 0, 0), (0, 0, 3.75, 0), (20, -6, 1.875, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+
+     over Cube "BuildUpLayer3"
+     {
+      matrix4d xformOp:transform = ( (4, 0, 0, 0), (0, 0.02500000037252903, 0, 0), (0, 0, 3.75, 0), (20, -5.9375, 1.875, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "wall_l0_v_059"
+    {
+     over BrepArray "BodyExact"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (-1, 0, 0, 0), (0, 0, 1, 0), (30, -12, 0, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+
+     over Mesh "Body"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (-1, 0, 0, 0), (0, 0, 1, 0), (30, -12, 0, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+
+     over BasisCurves "Edges"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (-1, 0, 0, 0), (0, 0, 1, 0), (30, -12, 0, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (-1, 0, 0, 0), (0, 0, 1, 0), (30, -12, 0, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "door_noc_comms"
+    {
+     over BrepArray "BodyExact"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (-1, 0, 0, 0), (0, 0, 1, 0), (26, -3.45, 0, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+
+     over Mesh "Body"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (-1, 0, 0, 0), (0, 0, 1, 0), (26, -3.45, 0, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+
+     over BasisCurves "Edges"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (-1, 0, 0, 0), (0, 0, 1, 0), (26, -3.45, 0, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "wall_l0_v_063"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (-1, 0, 0, 0), (0, 0, 1, 0), (48, 0, 0, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "wall_l0_h_033"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (38, 18, 0, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "wall_l0_h_039"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (68, 36, 0, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "wall_l0_v_069"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (-1, 0, 0, 0), (0, 0, 1, 0), (68, 18, 0, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "wall_l0_h_022"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (60, 6, 0, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "wall_l0_v_048"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (-1, 0, 0, 0), (0, 0, 1, 0), (12, 6, 0, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "wall_l0_v_043"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (-1, 0, 0, 0), (0, 0, 1, 0), (0, 18, 0, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "wall_l0_v_053"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (-1, 0, 0, 0), (0, 0, 1, 0), (18, 0, 0, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "wall_l0_v_047"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (-1, 0, 0, 0), (0, 0, 1, 0), (12, 0, 0, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "wall_l0_v_064"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (-1, 0, 0, 0), (0, 0, 1, 0), (48, 6, 0, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "wall_l0_h_017"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (54, 0, 0, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "wall_l0_h_036"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (4, 36, 0, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "wall_l0_v_065"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (-1, 0, 0, 0), (0, 0, 1, 0), (54, 0, 0, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "wall_l0_v_040"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (-1, 0, 0, 0), (0, 0, 1, 0), (0, 0, 0, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "wall_l0_v_070"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (-1, 0, 0, 0), (0, 0, 1, 0), (72, 0, 0, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "wall_l0_v_061"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (-1, 0, 0, 0), (0, 0, 1, 0), (34, 18, 0, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "wall_l0_h_009"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (0, 0, 0, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "wall_l0_h_032"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (34, 18, 0, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "wall_l0_v_068"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (-1, 0, 0, 0), (0, 0, 1, 0), (60, 6, 0, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "wall_l0_h_028"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (54, 15, 0, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "wall_l0_v_042"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (-1, 0, 0, 0), (0, 0, 1, 0), (0, 15, 0, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "wall_l0_v_067"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (-1, 0, 0, 0), (0, 0, 1, 0), (60, 0, 0, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "wall_l0_v_072"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (-1, 0, 0, 0), (0, 0, 1, 0), (72, 15, 0, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "wall_l0_v_041"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (-1, 0, 0, 0), (0, 0, 1, 0), (0, 6, 0, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "wall_l0_h_021"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (48, 6, 0, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "wall_l0_v_044"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (-1, 0, 0, 0), (0, 0, 1, 0), (4, 18, 0, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "wall_l0_h_029"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (60, 15, 0, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "wall_l0_h_025"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (18, 15, 0, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "wall_l0_h_020"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (18, 6, 0, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "wall_l0_h_015"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (30, 0, 0, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "wall_l0_v_057"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (-1, 0, 0, 0), (0, 0, 1, 0), (24, 6, 0, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "wall_l0_h_037"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (34, 36, 0, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "wall_l0_h_016"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (48, 0, 0, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "wall_l0_v_071"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (-1, 0, 0, 0), (0, 0, 1, 0), (72, 6, 0, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "wall_l0_h_038"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (38, 36, 0, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "wall_l0_v_073"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (-1, 0, 0, 0), (0, 0, 1, 0), (72, 18, 0, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "wall_l0_h_019"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (0, 6, 0, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "wall_l0_v_066"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (-1, 0, 0, 0), (0, 0, 1, 0), (54, 6, 0, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "wall_l0_v_056"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (-1, 0, 0, 0), (0, 0, 1, 0), (24, 0, 0, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "wall_l0_h_027"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (48, 15, 0, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "wall_l0_h_030"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (0, 18, 0, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "wall_l0_h_018"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (60, 0, 0, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "wall_l0_h_024"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (12, 15, 0, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "wall_l0_v_062"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (-1, 0, 0, 0), (0, 0, 1, 0), (38, 18, 0, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "wall_l0_v_054"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (0, 1, 0, 0), (-1, 0, 0, 0), (0, 0, 1, 0), (18, 6, 0, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "wall_l0_h_026"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (24, 15, 0, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "wall_l0_h_034"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (68, 18, 0, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "wall_l0_h_031"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (4, 18, 0, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "wall_l0_h_023"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (0, 15, 0, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+
+    over "wall_l0_h_035"
+    {
+     over BasisCurves "Axis"
+     {
+      matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (0, 36, 0, 1) ) (
+       aecoDerived = true
+      )
+      token[] xformOpOrder = ["!resetXformStack!", "xformOp:transform"] (
+       aecoDerived = true
+      )
+     }
+    }
+   }
+  }
+ }
+}
+

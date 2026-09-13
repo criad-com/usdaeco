@@ -55,6 +55,38 @@ def release_index(root):
     return data["train"], released
 
 
+def overrides(root):
+    """Explicit suite advances beyond the baseline train, with revision evidence."""
+    path = Path(root) / "suite-overrides.json"
+    data = read_json(path) if path.exists() else {}
+    for name, item in data.items():
+        if (name not in LAYOUT or set(item) != {"tag", "revision", "status", "reason"}
+                or not re.fullmatch(r"v\d+\.\d+\.\d+", item["tag"])
+                or not re.fullmatch(r"[a-f0-9]{40}", item["revision"])
+                or item["status"] not in {"released", "awaiting-tag"} or not item["reason"]):
+            raise ValueError("invalid suite override")
+    return data
+
+
+def pin_target(root, name, tag):
+    item = overrides(root).get(name)
+    checkout = Path(root) / LAYOUT[name]
+    if item and item["tag"] != tag:
+        raise ValueError("override tag differs from pin")
+    if item and item["status"] == "awaiting-tag":
+        try:
+            released = tag_commit(checkout, tag)
+        except ValueError:
+            return git(checkout, "rev-parse", "--verify", item["revision"] + "^{commit}")
+        if released != item["revision"]:
+            raise ValueError("release arrived; refresh the temporary revision pin")
+        return released
+    target = tag_commit(checkout, tag)
+    if item and target != item["revision"]:
+        raise ValueError("override release revision differs")
+    return target
+
+
 def validate_document(document):
     if set(document) != {"train", "repos"} or not isinstance(document["train"], str):
         raise ValueError("invalid suite document")
@@ -105,7 +137,7 @@ def generate(root):
                 tag = card["released"]
             else:
                 raise ValueError(f"{path}: missing library.json")
-            if git(checkout, "rev-parse", "HEAD") != tag_commit(checkout, tag):
+            if git(checkout, "rev-parse", "HEAD") != pin_target(root, name, tag):
                 raise ValueError(f"{path}: HEAD differs from the metadata release tag")
             if git(checkout, "status", "--porcelain", "--untracked-files=all"):
                 raise ValueError(f"{path}: local changes prevent pin generation")
@@ -141,7 +173,7 @@ def render_flake(root, document):
 def render_map(document):
     lines = ["# usdAECO suite map", "", f"Release train: `{document['train']}`.", "",
              "Each repository is a submodule at the tag shown. Paths are relative to this checkout.",
-             "See the [HTML guide](index.html) and [stage contract](../stage/README.md).", ""]
+             "See the [HTML guide](index.html) and [integrated stage guide](../stage/README.md).", ""]
     for tier in TIERS:
         lines += [f"## {tier}", ""]
         for repo in document["repos"]:

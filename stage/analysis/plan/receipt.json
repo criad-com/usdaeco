@@ -1,0 +1,17 @@
+{
+  "adaptations": [
+    "Fixed pod source lookup aliases the full publication; frame rendering is separate.",
+    "The integrated root selects programme B; A and B have separate 4D views.",
+    "Demonstration pod relocation is confined to the programme views; the integrated facility keeps its delivered placement."
+  ],
+  "differences": [
+    "findings differ (values, fields or multiplicity outside tolerance)"
+  ],
+  "expectedFindings": 6,
+  "findings": 6,
+  "producer": "hook v0.1.4",
+  "run": true,
+  "source": "kind/usdaeco-plan/examples/datacentre/run.py",
+  "sourceSha256": "3eb75431d86cb884a3ef78789066e83df407a3c47155bb6bd3287537d724e0b5",
+  "tag": "v0.1.4"
+}

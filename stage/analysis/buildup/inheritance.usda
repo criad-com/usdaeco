@@ -1,0 +1,204 @@
+#usda 1.0
+(
+ customLayerData = {
+  string "aeco:layer:package" = "buildup"
+  string "aeco:layer:producer" = "hook v0.2.5"
+  string "aeco:layer:role" = "analysis"
+  string "aeco:layer:source" = "section/usdaeco-buildup/examples/datacentre/run.py"
+  string "aeco:layer:sourceSha256" = "53d0e90d16eadda33bd1bf08425246b4ad0d2062a740cd107110c42a8e658f84"
+  string "aeco:layer:tag" = "v0.2.5"
+ }
+)
+
+over "demo_datacentre_01"
+{
+ over "demo_datacentre_01_Site"
+ {
+  over "demo_datacentre_01"
+  {
+   over "L01_Office"
+   {
+    over "wall_l1_v_014" (
+     prepend apiSchemas = ["AecoBuildUpAPI"]
+    )
+    {
+    }
+
+    over "wall_l1_h_008" (
+     prepend apiSchemas = ["AecoBuildUpAPI"]
+    )
+    {
+    }
+
+    over "wall_l1_h_007" (
+     prepend apiSchemas = ["AecoBuildUpAPI"]
+    )
+    {
+    }
+
+    over "wall_l1_v_013" (
+     prepend apiSchemas = ["AecoBuildUpAPI"]
+    )
+    {
+    }
+
+    over "wall_l1_h_006" (
+     prepend apiSchemas = ["AecoBuildUpAPI"]
+    )
+    {
+    }
+
+    over "wall_l1_h_004" (
+     prepend apiSchemas = ["AecoBuildUpAPI"]
+    )
+    {
+    }
+
+    over "wall_l1_v_015" (
+     prepend apiSchemas = ["AecoBuildUpAPI"]
+    )
+    {
+    }
+
+    over "wall_l1_v_016" (
+     prepend apiSchemas = ["AecoBuildUpAPI"]
+    )
+    {
+    }
+
+    over "wall_l1_h_005" (
+     prepend apiSchemas = ["AecoBuildUpAPI"]
+    )
+    {
+    }
+   }
+
+   over "L00_Ground"
+   {
+    over "wall_l0_v_051" (
+     prepend apiSchemas = ["AecoBuildUpAPI"]
+    )
+    {
+    }
+
+    over "wall_l0_v_058" (
+     prepend apiSchemas = ["AecoBuildUpAPI"]
+    )
+    {
+    }
+
+    over "wall_l0_h_008" (
+     prepend apiSchemas = ["AecoBuildUpAPI"]
+    )
+    {
+    }
+
+    over "wall_l0_v_052" (
+     prepend apiSchemas = ["AecoBuildUpAPI"]
+    )
+    {
+    }
+
+    over "wall_l0_h_005" (
+     prepend apiSchemas = ["AecoBuildUpAPI"]
+    )
+    {
+    }
+
+    over "wall_l0_v_055" (
+     prepend apiSchemas = ["AecoBuildUpAPI"]
+    )
+    {
+    }
+
+    over "wall_l0_v_049" (
+     prepend apiSchemas = ["AecoBuildUpAPI"]
+    )
+    {
+    }
+
+    over "wall_l0_h_007" (
+     prepend apiSchemas = ["AecoBuildUpAPI"]
+    )
+    {
+    }
+
+    over "wall_l0_h_006" (
+     prepend apiSchemas = ["AecoBuildUpAPI"]
+    )
+    {
+    }
+
+    over "wall_l0_v_050" (
+     prepend apiSchemas = ["AecoBuildUpAPI"]
+    )
+    {
+    }
+
+    over "wall_l0_h_004" (
+     prepend apiSchemas = ["AecoBuildUpAPI"]
+    )
+    {
+    }
+   }
+
+   over "L02_Office"
+   {
+    over "wall_l2_h_007" (
+     prepend apiSchemas = ["AecoBuildUpAPI"]
+    )
+    {
+    }
+
+    over "wall_l2_v_014" (
+     prepend apiSchemas = ["AecoBuildUpAPI"]
+    )
+    {
+    }
+
+    over "wall_l2_h_008" (
+     prepend apiSchemas = ["AecoBuildUpAPI"]
+    )
+    {
+    }
+
+    over "wall_l2_h_004" (
+     prepend apiSchemas = ["AecoBuildUpAPI"]
+    )
+    {
+    }
+
+    over "wall_l2_v_013" (
+     prepend apiSchemas = ["AecoBuildUpAPI"]
+    )
+    {
+    }
+
+    over "wall_l2_v_016" (
+     prepend apiSchemas = ["AecoBuildUpAPI"]
+    )
+    {
+    }
+
+    over "wall_l2_h_006" (
+     prepend apiSchemas = ["AecoBuildUpAPI"]
+    )
+    {
+    }
+
+    over "wall_l2_v_015" (
+     prepend apiSchemas = ["AecoBuildUpAPI"]
+    )
+    {
+    }
+
+    over "wall_l2_h_005" (
+     prepend apiSchemas = ["AecoBuildUpAPI"]
+    )
+    {
+    }
+   }
+  }
+ }
+}
+

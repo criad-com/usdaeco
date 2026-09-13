@@ -1,0 +1,696 @@
+#usda 1.0
+(
+ customLayerData = {
+  string "aeco:layer:package" = "repeat"
+  string "aeco:layer:producer" = "hook v0.2.1"
+  string "aeco:layer:role" = "analysis"
+  string "aeco:layer:source" = "kind/usdaeco-repeat/examples/datacentre/run.py"
+  string "aeco:layer:sourceSha256" = "1b931ed764ad3b73341738c7ba6d25433424cd5d02c520927466898467965b11"
+  string "aeco:layer:tag" = "v0.2.1"
+ }
+)
+
+over "demo_datacentre_01"
+{
+ over "demo_datacentre_01_Site"
+ {
+  over "demo_datacentre_01"
+  {
+   def AecoLevel "L02_Office" (
+    prepend apiSchemas = ["AecoRepeatAPI"]
+    prepend references = </demo_datacentre_01/demo_datacentre_01_Site/demo_datacentre_01/L01_Office>
+   )
+   {
+    string aeco:id = "9943aaa1-78be-543b-a04f-34ba731fdcfb"
+    custom string aeco:props:DC_Identity:Id = "lvl.l2"
+    matrix4d aeco:repeat:offset = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (0, 0, 3, 1) )
+    rel aeco:repeat:prototype = </demo_datacentre_01/demo_datacentre_01_Site/demo_datacentre_01/L01_Office>
+    rel collection:deviations:includes = None
+    matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (0, 0, 7, 1) )
+    uniform token[] xformOpOrder = ["xformOp:transform"]
+
+    over "WC" (
+     customData = {
+      string userDocBrief = "A bounded usable region, interior or exterior — a room, a hall, a yard, a corridor, an atrium, a plaza."
+     }
+    )
+    {
+     string aeco:id = "04e285cd-05a9-5304-b405-67f31eca58c8"
+     custom string aeco:props:DC_Identity:Id = "sp.wc.2"
+
+     over "Extent" (
+      customData = {
+       string userDocBrief = "Encodes a mesh with optional subdivision properties and features."
+      }
+     )
+     {
+      string aeco:derived:source = "04e285cd-05a9-5304-b405-67f31eca58c8"
+     }
+    }
+
+    over "Kitchen_Break" (
+     customData = {
+      string userDocBrief = "A bounded usable region, interior or exterior — a room, a hall, a yard, a corridor, an atrium, a plaza."
+     }
+    )
+    {
+     string aeco:id = "58a57278-7ce5-5715-a63d-1055e608040b"
+     custom string aeco:props:DC_Identity:Id = "sp.kitchen.2"
+
+     over "Extent" (
+      customData = {
+       string userDocBrief = "Encodes a mesh with optional subdivision properties and features."
+      }
+     )
+     {
+      string aeco:derived:source = "58a57278-7ce5-5715-a63d-1055e608040b"
+     }
+    }
+
+    over "Stair_L01" (
+     customData = {
+      string userDocBrief = "A bounded usable region, interior or exterior — a room, a hall, a yard, a corridor, an atrium, a plaza."
+     }
+    )
+    {
+     string aeco:id = "7c59001c-f965-5188-86e2-92c6056b07f0"
+     custom string aeco:props:DC_Identity:Id = "sp.stair.1.2"
+
+     over "Extent" (
+      customData = {
+       string userDocBrief = "Encodes a mesh with optional subdivision properties and features."
+      }
+     )
+     {
+      string aeco:derived:source = "7c59001c-f965-5188-86e2-92c6056b07f0"
+     }
+
+     over "Office_Stair" (
+      customData = {
+       string userDocBrief = "Concrete prim schema for a transform, which implements Xformable."
+      }
+     )
+     {
+      string aeco:id = "a6fd82c6-ba88-5b32-a6e9-77684acf0845"
+      custom string aeco:props:DC_Identity:Id = "arch.stair.3"
+
+      over "Geom" (
+       customData = {
+        string userDocBrief = "Encodes a mesh with optional subdivision properties and features."
+       }
+      )
+      {
+       string aeco:derived:source = "a6fd82c6-ba88-5b32-a6e9-77684acf0845"
+      }
+     }
+    }
+
+    over "Office_Corridor_L01" (
+     customData = {
+      string userDocBrief = "A bounded usable region, interior or exterior — a room, a hall, a yard, a corridor, an atrium, a plaza."
+     }
+    )
+    {
+     string aeco:id = "940e208f-3e02-58a1-aee5-bf97ae63ba64"
+     custom string aeco:props:DC_Identity:Id = "sp.ocorr.1.2"
+
+     over "Extent" (
+      customData = {
+       string userDocBrief = "Encodes a mesh with optional subdivision properties and features."
+      }
+     )
+     {
+      string aeco:derived:source = "940e208f-3e02-58a1-aee5-bf97ae63ba64"
+     }
+
+     over "sec_cam_corr_ocorr_1_1" (
+      customData = {
+       string userDocBrief = "Concrete prim schema for a transform, which implements Xformable."
+      }
+     )
+     {
+      string aeco:id = "9450e28b-3295-58d3-9227-46ce3ced05f6"
+      custom string aeco:props:DC_Identity:Id = "sec.cam.corr.ocorr.1.2.1"
+
+      over "Geom" (
+       customData = {
+        string userDocBrief = "Encodes a mesh with optional subdivision properties and features."
+       }
+      )
+      {
+       string aeco:derived:source = "9450e28b-3295-58d3-9227-46ce3ced05f6"
+      }
+     }
+
+     over "sec_cam_corr_ocorr_1_2" (
+      customData = {
+       string userDocBrief = "Concrete prim schema for a transform, which implements Xformable."
+      }
+     )
+     {
+      string aeco:id = "cf0e90a2-9077-5579-84fb-c34662f92afe"
+      custom string aeco:props:DC_Identity:Id = "sec.cam.corr.ocorr.1.2.2"
+
+      over "Geom" (
+       customData = {
+        string userDocBrief = "Encodes a mesh with optional subdivision properties and features."
+       }
+      )
+      {
+       string aeco:derived:source = "cf0e90a2-9077-5579-84fb-c34662f92afe"
+      }
+     }
+    }
+
+    over "Open_Office" (
+     customData = {
+      string userDocBrief = "A bounded usable region, interior or exterior — a room, a hall, a yard, a corridor, an atrium, a plaza."
+     }
+    )
+    {
+     string aeco:id = "9988a960-ad5b-5cb7-a923-06a376d3e25a"
+     custom string aeco:props:DC_Identity:Id = "sp.office.2"
+
+     over "Extent" (
+      customData = {
+       string userDocBrief = "Encodes a mesh with optional subdivision properties and features."
+      }
+     )
+     {
+      string aeco:derived:source = "9988a960-ad5b-5cb7-a923-06a376d3e25a"
+     }
+    }
+
+    over "Meeting_Room_L01" (
+     customData = {
+      string userDocBrief = "A bounded usable region, interior or exterior — a room, a hall, a yard, a corridor, an atrium, a plaza."
+     }
+    )
+    {
+     string aeco:id = "9c342601-01bc-510f-8632-6e91dfa81aea"
+     custom string aeco:props:DC_Identity:Id = "sp.meeting.1.2"
+
+     over "Extent" (
+      customData = {
+       string userDocBrief = "Encodes a mesh with optional subdivision properties and features."
+      }
+     )
+     {
+      string aeco:derived:source = "9c342601-01bc-510f-8632-6e91dfa81aea"
+     }
+    }
+
+    over "wall_l1_h_007" (
+     customData = {
+      string userDocBrief = "Concrete prim schema for a transform, which implements Xformable."
+     }
+    )
+    {
+     string aeco:id = "0302fe84-3c81-5885-a93b-c43def48d49b"
+     custom string aeco:props:DC_Identity:Id = "wall.l2.h.007"
+
+     over "Geom" (
+      customData = {
+       string userDocBrief = "Encodes a mesh with optional subdivision properties and features."
+      }
+     )
+     {
+      string aeco:derived:source = "0302fe84-3c81-5885-a93b-c43def48d49b"
+     }
+    }
+
+    over "wall_l1_h_003" (
+     customData = {
+      string userDocBrief = "Concrete prim schema for a transform, which implements Xformable."
+     }
+    )
+    {
+     string aeco:id = "053a6aa8-4184-5dc8-b5c3-16545485e242"
+     custom string aeco:props:DC_Identity:Id = "wall.l2.h.003"
+
+     over "Geom" (
+      customData = {
+       string userDocBrief = "Encodes a mesh with optional subdivision properties and features."
+      }
+     )
+     {
+      string aeco:derived:source = "053a6aa8-4184-5dc8-b5c3-16545485e242"
+     }
+    }
+
+    over "wall_l1_v_019" (
+     customData = {
+      string userDocBrief = "Concrete prim schema for a transform, which implements Xformable."
+     }
+    )
+    {
+     string aeco:id = "14c8a6ad-3fac-55a7-9dd1-06df33865f5c"
+     custom string aeco:props:DC_Identity:Id = "wall.l2.v.019"
+
+     over "Geom" (
+      customData = {
+       string userDocBrief = "Encodes a mesh with optional subdivision properties and features."
+      }
+     )
+     {
+      string aeco:derived:source = "14c8a6ad-3fac-55a7-9dd1-06df33865f5c"
+     }
+    }
+
+    over "wall_l1_v_014" (
+     customData = {
+      string userDocBrief = "Concrete prim schema for a transform, which implements Xformable."
+     }
+    )
+    {
+     string aeco:id = "446e8413-727f-5c83-b63c-b41018bc5c7a"
+     custom string aeco:props:DC_Identity:Id = "wall.l2.v.014"
+
+     over "Geom" (
+      customData = {
+       string userDocBrief = "Encodes a mesh with optional subdivision properties and features."
+      }
+     )
+     {
+      string aeco:derived:source = "446e8413-727f-5c83-b63c-b41018bc5c7a"
+     }
+    }
+
+    over "wall_l1_h_010" (
+     customData = {
+      string userDocBrief = "Concrete prim schema for a transform, which implements Xformable."
+     }
+    )
+    {
+     string aeco:id = "48299598-bfc7-5763-ada4-afcbcd8810d4"
+     custom string aeco:props:DC_Identity:Id = "wall.l2.h.010"
+
+     over "Geom" (
+      customData = {
+       string userDocBrief = "Encodes a mesh with optional subdivision properties and features."
+      }
+     )
+     {
+      string aeco:derived:source = "48299598-bfc7-5763-ada4-afcbcd8810d4"
+     }
+    }
+
+    over "wall_l1_h_008" (
+     customData = {
+      string userDocBrief = "Concrete prim schema for a transform, which implements Xformable."
+     }
+    )
+    {
+     string aeco:id = "530201f9-f6d4-5b5e-9d79-94bbc0ed39b0"
+     custom string aeco:props:DC_Identity:Id = "wall.l2.h.008"
+
+     over "Geom" (
+      customData = {
+       string userDocBrief = "Encodes a mesh with optional subdivision properties and features."
+      }
+     )
+     {
+      string aeco:derived:source = "530201f9-f6d4-5b5e-9d79-94bbc0ed39b0"
+     }
+    }
+
+    over "door_office_1" (
+     customData = {
+      string userDocBrief = "Concrete prim schema for a transform, which implements Xformable."
+     }
+    )
+    {
+     string aeco:id = "69f8bcf0-4e05-5593-8188-b4ae53affe14"
+     custom string aeco:props:DC_Identity:Id = "door.office.1.2"
+
+     over "Geom" (
+      customData = {
+       string userDocBrief = "Encodes a mesh with optional subdivision properties and features."
+      }
+     )
+     {
+      string aeco:derived:source = "69f8bcf0-4e05-5593-8188-b4ae53affe14"
+     }
+    }
+
+    over "wall_l1_h_004" (
+     customData = {
+      string userDocBrief = "Concrete prim schema for a transform, which implements Xformable."
+     }
+    )
+    {
+     string aeco:id = "707d9d9d-6751-55eb-b18b-8fbe7637bb8e"
+     custom string aeco:props:DC_Identity:Id = "wall.l2.h.004"
+
+     over "Geom" (
+      customData = {
+       string userDocBrief = "Encodes a mesh with optional subdivision properties and features."
+      }
+     )
+     {
+      string aeco:derived:source = "707d9d9d-6751-55eb-b18b-8fbe7637bb8e"
+     }
+    }
+
+    over "wall_l1_v_013" (
+     customData = {
+      string userDocBrief = "Concrete prim schema for a transform, which implements Xformable."
+     }
+    )
+    {
+     string aeco:id = "7b1263c6-f269-5ad7-b2a4-d7d6d2798e30"
+     custom string aeco:props:DC_Identity:Id = "wall.l2.v.013"
+
+     over "Geom" (
+      customData = {
+       string userDocBrief = "Encodes a mesh with optional subdivision properties and features."
+      }
+     )
+     {
+      string aeco:derived:source = "7b1263c6-f269-5ad7-b2a4-d7d6d2798e30"
+     }
+    }
+
+    over "door_meeting_1" (
+     customData = {
+      string userDocBrief = "Concrete prim schema for a transform, which implements Xformable."
+     }
+    )
+    {
+     string aeco:id = "8a801a9f-9592-5604-9aba-b0d9a7df759c"
+     custom string aeco:props:DC_Identity:Id = "door.meeting.1.2"
+
+     over "Geom" (
+      customData = {
+       string userDocBrief = "Encodes a mesh with optional subdivision properties and features."
+      }
+     )
+     {
+      string aeco:derived:source = "8a801a9f-9592-5604-9aba-b0d9a7df759c"
+     }
+    }
+
+    over "slab_l1_office" (
+     customData = {
+      string userDocBrief = "Concrete prim schema for a transform, which implements Xformable."
+     }
+    )
+    {
+     string aeco:id = "8c7be0f3-759d-57ff-b96c-fa5ef52d4717"
+     custom string aeco:props:DC_Identity:Id = "slab.l2.office"
+
+     over "Geom" (
+      customData = {
+       string userDocBrief = "Encodes a mesh with optional subdivision properties and features."
+      }
+     )
+     {
+      string aeco:derived:source = "8c7be0f3-759d-57ff-b96c-fa5ef52d4717"
+     }
+    }
+
+    over "wall_l1_v_016" (
+     customData = {
+      string userDocBrief = "Concrete prim schema for a transform, which implements Xformable."
+     }
+    )
+    {
+     string aeco:id = "8f507a9f-9bfb-516d-9f0c-89509e1ef5d9"
+     custom string aeco:props:DC_Identity:Id = "wall.l2.v.016"
+
+     over "Geom" (
+      customData = {
+       string userDocBrief = "Encodes a mesh with optional subdivision properties and features."
+      }
+     )
+     {
+      string aeco:derived:source = "8f507a9f-9bfb-516d-9f0c-89509e1ef5d9"
+     }
+    }
+
+    over "wall_l1_h_006" (
+     customData = {
+      string userDocBrief = "Concrete prim schema for a transform, which implements Xformable."
+     }
+    )
+    {
+     string aeco:id = "92583644-fb81-568e-9d67-db570ddfbc35"
+     custom string aeco:props:DC_Identity:Id = "wall.l2.h.006"
+
+     over "Geom" (
+      customData = {
+       string userDocBrief = "Encodes a mesh with optional subdivision properties and features."
+      }
+     )
+     {
+      string aeco:derived:source = "92583644-fb81-568e-9d67-db570ddfbc35"
+     }
+    }
+
+    over "wall_l1_v_012" (
+     customData = {
+      string userDocBrief = "Concrete prim schema for a transform, which implements Xformable."
+     }
+    )
+    {
+     string aeco:id = "93bc6518-e4e4-5b31-9ed8-57d271460047"
+     custom string aeco:props:DC_Identity:Id = "wall.l2.v.012"
+
+     over "Geom" (
+      customData = {
+       string userDocBrief = "Encodes a mesh with optional subdivision properties and features."
+      }
+     )
+     {
+      string aeco:derived:source = "93bc6518-e4e4-5b31-9ed8-57d271460047"
+     }
+    }
+
+    over "door_kitchen" (
+     customData = {
+      string userDocBrief = "Concrete prim schema for a transform, which implements Xformable."
+     }
+    )
+    {
+     string aeco:id = "95a6e681-5760-59ba-9a76-86f5fdbea074"
+     custom string aeco:props:DC_Identity:Id = "door.kitchen.2"
+
+     over "Geom" (
+      customData = {
+       string userDocBrief = "Encodes a mesh with optional subdivision properties and features."
+      }
+     )
+     {
+      string aeco:derived:source = "95a6e681-5760-59ba-9a76-86f5fdbea074"
+     }
+    }
+
+    over "door_stair_1" (
+     customData = {
+      string userDocBrief = "Concrete prim schema for a transform, which implements Xformable."
+     }
+    )
+    {
+     string aeco:id = "96372576-0384-5ed8-ae02-bc1c935a4edf"
+     custom string aeco:props:DC_Identity:Id = "door.stair.1.2"
+
+     over "Geom" (
+      customData = {
+       string userDocBrief = "Encodes a mesh with optional subdivision properties and features."
+      }
+     )
+     {
+      string aeco:derived:source = "96372576-0384-5ed8-ae02-bc1c935a4edf"
+     }
+    }
+
+    over "wall_l1_v_018" (
+     customData = {
+      string userDocBrief = "Concrete prim schema for a transform, which implements Xformable."
+     }
+    )
+    {
+     string aeco:id = "973c7b4b-3366-5de0-936c-7d07380d4074"
+     custom string aeco:props:DC_Identity:Id = "wall.l2.v.018"
+
+     over "Geom" (
+      customData = {
+       string userDocBrief = "Encodes a mesh with optional subdivision properties and features."
+      }
+     )
+     {
+      string aeco:derived:source = "973c7b4b-3366-5de0-936c-7d07380d4074"
+     }
+    }
+
+    over "wall_l1_v_015" (
+     customData = {
+      string userDocBrief = "Concrete prim schema for a transform, which implements Xformable."
+     }
+    )
+    {
+     string aeco:id = "9a5d68d2-9185-559d-beaa-a8501b814fc9"
+     custom string aeco:props:DC_Identity:Id = "wall.l2.v.015"
+
+     over "Geom" (
+      customData = {
+       string userDocBrief = "Encodes a mesh with optional subdivision properties and features."
+      }
+     )
+     {
+      string aeco:derived:source = "9a5d68d2-9185-559d-beaa-a8501b814fc9"
+     }
+    }
+
+    over "wall_l1_v_011" (
+     customData = {
+      string userDocBrief = "Concrete prim schema for a transform, which implements Xformable."
+     }
+    )
+    {
+     string aeco:id = "9c86f5b4-b28a-537d-921a-7d491e761eef"
+     custom string aeco:props:DC_Identity:Id = "wall.l2.v.011"
+
+     over "Geom" (
+      customData = {
+       string userDocBrief = "Encodes a mesh with optional subdivision properties and features."
+      }
+     )
+     {
+      string aeco:derived:source = "9c86f5b4-b28a-537d-921a-7d491e761eef"
+     }
+    }
+
+    over "wall_l1_h_005" (
+     customData = {
+      string userDocBrief = "Concrete prim schema for a transform, which implements Xformable."
+     }
+    )
+    {
+     string aeco:id = "b6fb5c1f-2d68-5197-9480-79e819221f06"
+     custom string aeco:props:DC_Identity:Id = "wall.l2.h.005"
+
+     over "Geom" (
+      customData = {
+       string userDocBrief = "Encodes a mesh with optional subdivision properties and features."
+      }
+     )
+     {
+      string aeco:derived:source = "b6fb5c1f-2d68-5197-9480-79e819221f06"
+     }
+    }
+
+    over "wall_l1_v_017" (
+     customData = {
+      string userDocBrief = "Concrete prim schema for a transform, which implements Xformable."
+     }
+    )
+    {
+     string aeco:id = "d6b075b8-4846-5ff9-88b7-cf553d4327f0"
+     custom string aeco:props:DC_Identity:Id = "wall.l2.v.017"
+
+     over "Geom" (
+      customData = {
+       string userDocBrief = "Encodes a mesh with optional subdivision properties and features."
+      }
+     )
+     {
+      string aeco:derived:source = "d6b075b8-4846-5ff9-88b7-cf553d4327f0"
+     }
+    }
+
+    over "wall_l1_h_001" (
+     customData = {
+      string userDocBrief = "Concrete prim schema for a transform, which implements Xformable."
+     }
+    )
+    {
+     string aeco:id = "e43db3b9-6938-52c8-998e-f6c797544a01"
+     custom string aeco:props:DC_Identity:Id = "wall.l2.h.001"
+
+     over "Geom" (
+      customData = {
+       string userDocBrief = "Encodes a mesh with optional subdivision properties and features."
+      }
+     )
+     {
+      string aeco:derived:source = "e43db3b9-6938-52c8-998e-f6c797544a01"
+     }
+    }
+
+    over "door_wc" (
+     customData = {
+      string userDocBrief = "Concrete prim schema for a transform, which implements Xformable."
+     }
+    )
+    {
+     string aeco:id = "e51fdf9e-1c04-5728-b18d-09972be43701"
+     custom string aeco:props:DC_Identity:Id = "door.wc.2"
+
+     over "Geom" (
+      customData = {
+       string userDocBrief = "Encodes a mesh with optional subdivision properties and features."
+      }
+     )
+     {
+      string aeco:derived:source = "e51fdf9e-1c04-5728-b18d-09972be43701"
+     }
+    }
+
+    over "wall_l1_h_009" (
+     customData = {
+      string userDocBrief = "Concrete prim schema for a transform, which implements Xformable."
+     }
+    )
+    {
+     string aeco:id = "e5c92fc0-698f-534a-8475-92dee2e044f5"
+     custom string aeco:props:DC_Identity:Id = "wall.l2.h.009"
+
+     over "Geom" (
+      customData = {
+       string userDocBrief = "Encodes a mesh with optional subdivision properties and features."
+      }
+     )
+     {
+      string aeco:derived:source = "e5c92fc0-698f-534a-8475-92dee2e044f5"
+     }
+    }
+
+    over "wall_l1_h_002" (
+     customData = {
+      string userDocBrief = "Concrete prim schema for a transform, which implements Xformable."
+     }
+    )
+    {
+     string aeco:id = "e7fb50b9-0347-530c-b1d8-4ec9c3462f69"
+     custom string aeco:props:DC_Identity:Id = "wall.l2.h.002"
+
+     over "Geom" (
+      customData = {
+       string userDocBrief = "Encodes a mesh with optional subdivision properties and features."
+      }
+     )
+     {
+      string aeco:derived:source = "e7fb50b9-0347-530c-b1d8-4ec9c3462f69"
+     }
+    }
+
+    over "Additional_Meeting_Access" (
+     customData = {
+      string userDocBrief = "Concrete prim schema for a transform, which implements Xformable."
+     }
+    )
+    {
+     over "Geom" (
+      customData = {
+       string userDocBrief = "Encodes a mesh with optional subdivision properties and features."
+      }
+     )
+     {
+     }
+    }
+   }
+  }
+ }
+}
+

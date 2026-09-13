@@ -1,0 +1,1611 @@
+#usda 1.0
+(
+ customLayerData = {
+  string "aeco:layer:package" = "repeat"
+  string "aeco:layer:producer" = "hook v0.2.1"
+  string "aeco:layer:role" = "analysis"
+  string "aeco:layer:source" = "kind/usdaeco-repeat/examples/datacentre/run.py"
+  string "aeco:layer:sourceSha256" = "1b931ed764ad3b73341738c7ba6d25433424cd5d02c520927466898467965b11"
+  string "aeco:layer:tag" = "v0.2.1"
+ }
+)
+
+over "demo_datacentre_01"
+{
+ over "demo_datacentre_01_Site"
+ {
+  over "demo_datacentre_01"
+  {
+   over "L01_Office"
+   {
+    over "Kitchen_Break"
+    {
+     over "Extent"
+     {
+      token visibility = "invisible"
+     }
+    }
+
+    over "Open_Office"
+    {
+     over "Extent"
+     {
+      token visibility = "invisible"
+     }
+
+     over "Office_ceiling_void"
+     {
+      over "Extent"
+      {
+       token visibility = "invisible"
+      }
+
+      over "fcu_office_1"
+      {
+       over "Geom"
+       {
+        token visibility = "invisible"
+       }
+      }
+
+      over "cnd_void_office_1"
+      {
+       over "Geom"
+       {
+        token visibility = "invisible"
+       }
+      }
+
+      over "cnd_void_office_2"
+      {
+       over "Geom"
+       {
+        token visibility = "invisible"
+       }
+      }
+     }
+
+     over "grl_office_1"
+     {
+      over "Geom"
+      {
+       token visibility = "invisible"
+      }
+     }
+
+     over "grl_office_4"
+     {
+      over "Geom"
+      {
+       token visibility = "invisible"
+      }
+     }
+
+     over "grl_office_3"
+     {
+      over "Geom"
+      {
+       token visibility = "invisible"
+      }
+     }
+
+     over "lum_office_2"
+     {
+      over "Geom"
+      {
+       token visibility = "invisible"
+      }
+     }
+
+     over "lum_office_1"
+     {
+      over "Geom"
+      {
+       token visibility = "invisible"
+      }
+     }
+
+     over "clg_office"
+     {
+      over "Geom"
+      {
+       token visibility = "invisible"
+      }
+     }
+
+     over "grl_office_2"
+     {
+      over "Geom"
+      {
+       token visibility = "invisible"
+      }
+     }
+
+     over "lum_office_3"
+     {
+      over "Geom"
+      {
+       token visibility = "invisible"
+      }
+     }
+
+     over "lum_office_6"
+     {
+      over "Geom"
+      {
+       token visibility = "invisible"
+      }
+     }
+
+     over "lum_office_4"
+     {
+      over "Geom"
+      {
+       token visibility = "invisible"
+      }
+     }
+
+     over "lum_office_5"
+     {
+      over "Geom"
+      {
+       token visibility = "invisible"
+      }
+     }
+    }
+
+    over "Office_Corridor_L01"
+    {
+     over "Corridor_ceiling_void"
+     {
+      over "Extent"
+      {
+       token visibility = "invisible"
+      }
+
+      over "tray_void_ocorr_1"
+      {
+       over "Geom"
+       {
+        token visibility = "invisible"
+       }
+      }
+
+      over "pipe_chw_void_f"
+      {
+       over "Geom"
+       {
+        token visibility = "invisible"
+       }
+      }
+
+      over "pipe_chw_void_r"
+      {
+       over "Geom"
+       {
+        token visibility = "invisible"
+       }
+      }
+
+      over "pipe_clash_hard"
+      {
+       over "Geom"
+       {
+        token visibility = "invisible"
+       }
+      }
+
+      over "pipe_clash_near"
+      {
+       over "Geom"
+       {
+        token visibility = "invisible"
+       }
+      }
+
+      over "pipe_clash_tangent"
+      {
+       over "Geom"
+       {
+        token visibility = "invisible"
+       }
+      }
+     }
+
+     over "Extent"
+     {
+      token visibility = "invisible"
+     }
+
+     over "sec_cam_corr_ocorr_1_2"
+     {
+      over "Geom"
+      {
+       token visibility = "invisible"
+      }
+     }
+
+     over "sec_cam_corr_ocorr_1_1"
+     {
+      over "Geom"
+      {
+       token visibility = "invisible"
+      }
+     }
+
+     over "pod_wc_temp"
+     {
+      over "Geom"
+      {
+       token visibility = "invisible"
+      }
+     }
+
+     over "clg_ocorr_1"
+     {
+      over "Geom"
+      {
+       token visibility = "invisible"
+      }
+     }
+    }
+
+    over "WC"
+    {
+     over "Extent"
+     {
+      token visibility = "invisible"
+     }
+
+     over "san_pod_1"
+     {
+      over "Geom"
+      {
+       token visibility = "invisible"
+      }
+     }
+
+     over "pipe_drain_pod"
+     {
+      over "Geom"
+      {
+       token visibility = "invisible"
+      }
+     }
+
+     over "san_pod_2"
+     {
+      over "Geom"
+      {
+       token visibility = "invisible"
+      }
+     }
+
+     over "pod_wc"
+     {
+      over "Geom"
+      {
+       token visibility = "invisible"
+      }
+     }
+    }
+
+    over "Stair_L01"
+    {
+     over "Extent"
+     {
+      token visibility = "invisible"
+     }
+
+     over "Office_Stair"
+     {
+      over "Geom"
+      {
+       token visibility = "invisible"
+      }
+     }
+    }
+
+    over "Meeting_Room_L01"
+    {
+     over "Extent"
+     {
+      token visibility = "invisible"
+     }
+    }
+
+    over "wall_l1_v_017"
+    {
+     over "Geom"
+     {
+      token visibility = "invisible"
+     }
+
+     def Mesh "RepeatPlan" (
+      prepend apiSchemas = ["AecoDerivedGeometryAPI"]
+     )
+     {
+      uniform token aeco:derived:approx = "bbox"
+      uniform token aeco:derived:role = "footprint"
+      string aeco:derived:source = "17fabf2a-db55-5b3d-acbe-4cc963ed34b0"
+      string aeco:derived:stamp = "repeat-plan-v1"
+      uniform bool doubleSided = 1
+      int[] faceVertexCounts = [4]
+      int[] faceVertexIndices = [0, 1, 2, 3]
+      point3f[] points = [(0, -0.15, 0.03), (4, -0.15, 0.03), (4, 0.15, 0.03), (0, 0.15, 0.03)]
+      color3f[] primvars:displayColor = [(0.2, 0.27, 0.34)]
+      uniform token subdivisionScheme = "none"
+     }
+    }
+
+    over "wall_l1_h_001"
+    {
+     over "Geom"
+     {
+      token visibility = "invisible"
+     }
+
+     def Mesh "RepeatPlan" (
+      prepend apiSchemas = ["AecoDerivedGeometryAPI"]
+     )
+     {
+      uniform token aeco:derived:approx = "bbox"
+      uniform token aeco:derived:role = "footprint"
+      string aeco:derived:source = "1aba178f-cac6-5655-9fb3-22c675cc2dd7"
+      string aeco:derived:stamp = "repeat-plan-v1"
+      uniform bool doubleSided = 1
+      int[] faceVertexCounts = [4]
+      int[] faceVertexIndices = [0, 1, 2, 3]
+      point3f[] points = [(0, -0.15, 0.03), (10, -0.15, 0.03), (10, 0.15, 0.03), (0, 0.15, 0.03)]
+      color3f[] primvars:displayColor = [(0.2, 0.27, 0.34)]
+      uniform token subdivisionScheme = "none"
+     }
+    }
+
+    over "wall_l1_v_014"
+    {
+     over "Geom"
+     {
+      token visibility = "invisible"
+     }
+
+     def Mesh "RepeatPlan" (
+      prepend apiSchemas = ["AecoDerivedGeometryAPI"]
+     )
+     {
+      uniform token aeco:derived:approx = "bbox"
+      uniform token aeco:derived:role = "footprint"
+      string aeco:derived:source = "2a39d1c5-51fc-50c0-b5ab-579342c7c597"
+      string aeco:derived:stamp = "repeat-plan-v1"
+      uniform bool doubleSided = 1
+      int[] faceVertexCounts = [4]
+      int[] faceVertexIndices = [0, 1, 2, 3]
+      point3f[] points = [(0, -0.075, 0.03), (9, -0.075, 0.03), (9, 0.075, 0.03), (0, 0.075, 0.03)]
+      color3f[] primvars:displayColor = [(0.2, 0.27, 0.34)]
+      uniform token subdivisionScheme = "none"
+     }
+    }
+
+    over "wall_l1_h_008"
+    {
+     over "Geom"
+     {
+      token visibility = "invisible"
+     }
+
+     def Mesh "RepeatPlan" (
+      prepend apiSchemas = ["AecoDerivedGeometryAPI"]
+     )
+     {
+      uniform token aeco:derived:approx = "bbox"
+      uniform token aeco:derived:role = "footprint"
+      string aeco:derived:source = "43540151-c12f-56c9-b032-2b64fd66c8e4"
+      string aeco:derived:stamp = "repeat-plan-v1"
+      uniform bool doubleSided = 1
+      int[] faceVertexCounts = [4]
+      int[] faceVertexIndices = [0, 1, 2, 3]
+      point3f[] points = [(0, -0.075, 0.03), (4, -0.075, 0.03), (4, 0.075, 0.03), (0, 0.075, 0.03)]
+      color3f[] primvars:displayColor = [(0.2, 0.27, 0.34)]
+      uniform token subdivisionScheme = "none"
+     }
+    }
+
+    over "wall_l1_h_002"
+    {
+     over "Geom"
+     {
+      token visibility = "invisible"
+     }
+
+     def Mesh "RepeatPlan" (
+      prepend apiSchemas = ["AecoDerivedGeometryAPI"]
+     )
+     {
+      uniform token aeco:derived:approx = "bbox"
+      uniform token aeco:derived:role = "footprint"
+      string aeco:derived:source = "4556958a-1b5c-5eeb-89a9-7cf49af08c5a"
+      string aeco:derived:stamp = "repeat-plan-v1"
+      uniform bool doubleSided = 1
+      int[] faceVertexCounts = [4]
+      int[] faceVertexIndices = [0, 1, 2, 3]
+      point3f[] points = [(0, -0.15, 0.03), (4, -0.15, 0.03), (4, 0.15, 0.03), (0, 0.15, 0.03)]
+      color3f[] primvars:displayColor = [(0.2, 0.27, 0.34)]
+      uniform token subdivisionScheme = "none"
+     }
+    }
+
+    over "wall_l1_h_010"
+    {
+     over "Geom"
+     {
+      token visibility = "invisible"
+     }
+
+     def Mesh "RepeatPlan" (
+      prepend apiSchemas = ["AecoDerivedGeometryAPI"]
+     )
+     {
+      uniform token aeco:derived:approx = "bbox"
+      uniform token aeco:derived:role = "footprint"
+      string aeco:derived:source = "46bb8ddc-66ac-5ee6-ba2f-72feb5bf8844"
+      string aeco:derived:stamp = "repeat-plan-v1"
+      uniform bool doubleSided = 1
+      int[] faceVertexCounts = [4]
+      int[] faceVertexIndices = [0, 1, 2, 3]
+      point3f[] points = [(0, -0.15, 0.03), (15, -0.15, 0.03), (15, 0.15, 0.03), (0, 0.15, 0.03)]
+      color3f[] primvars:displayColor = [(0.2, 0.27, 0.34)]
+      uniform token subdivisionScheme = "none"
+     }
+    }
+
+    over "wall_l1_h_007"
+    {
+     over "Geom"
+     {
+      token visibility = "invisible"
+     }
+
+     def Mesh "RepeatPlan" (
+      prepend apiSchemas = ["AecoDerivedGeometryAPI"]
+     )
+     {
+      uniform token aeco:derived:approx = "bbox"
+      uniform token aeco:derived:role = "footprint"
+      string aeco:derived:source = "51468e7f-5fca-54c5-9547-9c7f5cb51055"
+      string aeco:derived:stamp = "repeat-plan-v1"
+      uniform bool doubleSided = 1
+      int[] faceVertexCounts = [4]
+      int[] faceVertexIndices = [0, 1, 2, 3]
+      point3f[] points = [(0, -0.075, 0.03), (4, -0.075, 0.03), (4, 0.075, 0.03), (0, 0.075, 0.03)]
+      color3f[] primvars:displayColor = [(0.2, 0.27, 0.34)]
+      uniform token subdivisionScheme = "none"
+     }
+    }
+
+    over "wall_l1_v_013"
+    {
+     over "Geom"
+     {
+      token visibility = "invisible"
+     }
+
+     def Mesh "RepeatPlan" (
+      prepend apiSchemas = ["AecoDerivedGeometryAPI"]
+     )
+     {
+      uniform token aeco:derived:approx = "bbox"
+      uniform token aeco:derived:role = "footprint"
+      string aeco:derived:source = "54f3cd30-3297-5932-8281-adfb776aab7d"
+      string aeco:derived:stamp = "repeat-plan-v1"
+      uniform bool doubleSided = 1
+      int[] faceVertexCounts = [4]
+      int[] faceVertexIndices = [0, 1, 2, 3]
+      point3f[] points = [(0, -0.075, 0.03), (3, -0.075, 0.03), (3, 0.075, 0.03), (0, 0.075, 0.03)]
+      color3f[] primvars:displayColor = [(0.2, 0.27, 0.34)]
+      uniform token subdivisionScheme = "none"
+     }
+    }
+
+    over "wall_l1_v_019"
+    {
+     over "Geom"
+     {
+      token visibility = "invisible"
+     }
+
+     def Mesh "RepeatPlan" (
+      prepend apiSchemas = ["AecoDerivedGeometryAPI"]
+     )
+     {
+      uniform token aeco:derived:approx = "bbox"
+      uniform token aeco:derived:role = "footprint"
+      string aeco:derived:source = "6401b4a1-b2f1-5eb6-9378-29e500fe9c37"
+      string aeco:derived:stamp = "repeat-plan-v1"
+      uniform bool doubleSided = 1
+      int[] faceVertexCounts = [4]
+      int[] faceVertexIndices = [0, 1, 2, 3]
+      point3f[] points = [(0, -0.15, 0.03), (3, -0.15, 0.03), (3, 0.15, 0.03), (0, 0.15, 0.03)]
+      color3f[] primvars:displayColor = [(0.2, 0.27, 0.34)]
+      uniform token subdivisionScheme = "none"
+     }
+    }
+
+    over "wall_l1_v_012"
+    {
+     over "Geom"
+     {
+      token visibility = "invisible"
+     }
+
+     def Mesh "RepeatPlan" (
+      prepend apiSchemas = ["AecoDerivedGeometryAPI"]
+     )
+     {
+      uniform token aeco:derived:approx = "bbox"
+      uniform token aeco:derived:role = "footprint"
+      string aeco:derived:source = "64c0b776-f5b1-556b-8a27-116d0f4e1b6f"
+      string aeco:derived:stamp = "repeat-plan-v1"
+      uniform bool doubleSided = 1
+      int[] faceVertexCounts = [4]
+      int[] faceVertexIndices = [0, 1, 2, 3]
+      point3f[] points = [(0, -0.15, 0.03), (3, -0.15, 0.03), (3, 0.15, 0.03), (0, 0.15, 0.03)]
+      color3f[] primvars:displayColor = [(0.2, 0.27, 0.34)]
+      uniform token subdivisionScheme = "none"
+     }
+    }
+
+    over "slab_l1_office"
+    {
+     over "Geom"
+     {
+      token visibility = "invisible"
+     }
+    }
+
+    over "door_kitchen"
+    {
+     over "Geom"
+     {
+      token visibility = "invisible"
+     }
+
+     def Mesh "RepeatPlan" (
+      prepend apiSchemas = ["AecoDerivedGeometryAPI"]
+     )
+     {
+      uniform token aeco:derived:approx = "bbox"
+      uniform token aeco:derived:role = "footprint"
+      string aeco:derived:source = "7a6ebc2a-94b2-5cf5-8a2e-dac1e35b76c1"
+      string aeco:derived:stamp = "repeat-plan-v1"
+      uniform bool doubleSided = 1
+      int[] faceVertexCounts = [4]
+      int[] faceVertexIndices = [0, 1, 2, 3]
+      point3f[] points = [(-0.025, -0.015, 0.03), (0.925, -0.015, 0.03), (0.925, 0.1, 0.03), (-0.025, 0.1, 0.03)]
+      color3f[] primvars:displayColor = [(0.2, 0.27, 0.34)]
+      uniform token subdivisionScheme = "none"
+     }
+    }
+
+    over "door_stair_1"
+    {
+     over "Geom"
+     {
+      token visibility = "invisible"
+     }
+
+     def Mesh "RepeatPlan" (
+      prepend apiSchemas = ["AecoDerivedGeometryAPI"]
+     )
+     {
+      uniform token aeco:derived:approx = "bbox"
+      uniform token aeco:derived:role = "footprint"
+      string aeco:derived:source = "9321b2ab-7e62-5a34-bd1b-4dd41c818ca2"
+      string aeco:derived:stamp = "repeat-plan-v1"
+      uniform bool doubleSided = 1
+      int[] faceVertexCounts = [4]
+      int[] faceVertexIndices = [0, 1, 2, 3]
+      point3f[] points = [(-0.025, -0.015, 0.03), (0.925, -0.015, 0.03), (0.925, 0.1, 0.03), (-0.025, 0.1, 0.03)]
+      color3f[] primvars:displayColor = [(0.2, 0.27, 0.34)]
+      uniform token subdivisionScheme = "none"
+     }
+    }
+
+    over "wall_l1_h_006"
+    {
+     over "Geom"
+     {
+      token visibility = "invisible"
+     }
+
+     def Mesh "RepeatPlan" (
+      prepend apiSchemas = ["AecoDerivedGeometryAPI"]
+     )
+     {
+      uniform token aeco:derived:approx = "bbox"
+      uniform token aeco:derived:role = "footprint"
+      string aeco:derived:source = "93888444-e546-5ddb-a4ba-166a6073c262"
+      string aeco:derived:stamp = "repeat-plan-v1"
+      uniform bool doubleSided = 1
+      int[] faceVertexCounts = [4]
+      int[] faceVertexIndices = [0, 1, 2, 3]
+      point3f[] points = [(0, -0.075, 0.03), (7, -0.075, 0.03), (7, 0.075, 0.03), (0, 0.075, 0.03)]
+      color3f[] primvars:displayColor = [(0.2, 0.27, 0.34)]
+      uniform token subdivisionScheme = "none"
+     }
+    }
+
+    over "wall_l1_h_004"
+    {
+     over "Geom"
+     {
+      token visibility = "invisible"
+     }
+
+     def Mesh "RepeatPlan" (
+      prepend apiSchemas = ["AecoDerivedGeometryAPI"]
+     )
+     {
+      uniform token aeco:derived:approx = "bbox"
+      uniform token aeco:derived:role = "footprint"
+      string aeco:derived:source = "9765b9c4-40bb-5ff7-a2a5-cdebad75b0bc"
+      string aeco:derived:stamp = "repeat-plan-v1"
+      uniform bool doubleSided = 1
+      int[] faceVertexCounts = [4]
+      int[] faceVertexIndices = [0, 1, 2, 3]
+      point3f[] points = [(0, -0.075, 0.03), (4, -0.075, 0.03), (4, 0.075, 0.03), (0, 0.075, 0.03)]
+      color3f[] primvars:displayColor = [(0.2, 0.27, 0.34)]
+      uniform token subdivisionScheme = "none"
+     }
+    }
+
+    over "door_office_1"
+    {
+     over "Geom"
+     {
+      token visibility = "invisible"
+     }
+
+     def Mesh "RepeatPlan" (
+      prepend apiSchemas = ["AecoDerivedGeometryAPI"]
+     )
+     {
+      uniform token aeco:derived:approx = "bbox"
+      uniform token aeco:derived:role = "footprint"
+      string aeco:derived:source = "a1fa5d26-090b-510d-959c-da041182dd8c"
+      string aeco:derived:stamp = "repeat-plan-v1"
+      uniform bool doubleSided = 1
+      int[] faceVertexCounts = [4]
+      int[] faceVertexIndices = [0, 1, 2, 3]
+      point3f[] points = [(-0.025, -0.015, 0.03), (1.825, -0.015, 0.03), (1.825, 0.1, 0.03), (-0.025, 0.1, 0.03)]
+      color3f[] primvars:displayColor = [(0.2, 0.27, 0.34)]
+      uniform token subdivisionScheme = "none"
+     }
+    }
+
+    over "wall_l1_h_003"
+    {
+     over "Geom"
+     {
+      token visibility = "invisible"
+     }
+
+     def Mesh "RepeatPlan" (
+      prepend apiSchemas = ["AecoDerivedGeometryAPI"]
+     )
+     {
+      uniform token aeco:derived:approx = "bbox"
+      uniform token aeco:derived:role = "footprint"
+      string aeco:derived:source = "aeedc717-acaa-5458-8d1e-acd1bcfa095d"
+      string aeco:derived:stamp = "repeat-plan-v1"
+      uniform bool doubleSided = 1
+      int[] faceVertexCounts = [4]
+      int[] faceVertexIndices = [0, 1, 2, 3]
+      point3f[] points = [(0, -0.15, 0.03), (4, -0.15, 0.03), (4, 0.15, 0.03), (0, 0.15, 0.03)]
+      color3f[] primvars:displayColor = [(0.2, 0.27, 0.34)]
+      uniform token subdivisionScheme = "none"
+     }
+    }
+
+    over "wall_l1_v_018"
+    {
+     over "Geom"
+     {
+      token visibility = "invisible"
+     }
+
+     def Mesh "RepeatPlan" (
+      prepend apiSchemas = ["AecoDerivedGeometryAPI"]
+     )
+     {
+      uniform token aeco:derived:approx = "bbox"
+      uniform token aeco:derived:role = "footprint"
+      string aeco:derived:source = "b8ad6534-0347-5bac-9654-5ba0bb28183a"
+      string aeco:derived:stamp = "repeat-plan-v1"
+      uniform bool doubleSided = 1
+      int[] faceVertexCounts = [4]
+      int[] faceVertexIndices = [0, 1, 2, 3]
+      point3f[] points = [(0, -0.15, 0.03), (5, -0.15, 0.03), (5, 0.15, 0.03), (0, 0.15, 0.03)]
+      color3f[] primvars:displayColor = [(0.2, 0.27, 0.34)]
+      uniform token subdivisionScheme = "none"
+     }
+    }
+
+    over "wall_l1_v_015"
+    {
+     over "Geom"
+     {
+      token visibility = "invisible"
+     }
+
+     def Mesh "RepeatPlan" (
+      prepend apiSchemas = ["AecoDerivedGeometryAPI"]
+     )
+     {
+      uniform token aeco:derived:approx = "bbox"
+      uniform token aeco:derived:role = "footprint"
+      string aeco:derived:source = "c46e4871-96dd-54c4-af2b-1a161d7f1f55"
+      string aeco:derived:stamp = "repeat-plan-v1"
+      uniform bool doubleSided = 1
+      int[] faceVertexCounts = [4]
+      int[] faceVertexIndices = [0, 1, 2, 3]
+      point3f[] points = [(0, -0.075, 0.03), (4, -0.075, 0.03), (4, 0.075, 0.03), (0, 0.075, 0.03)]
+      color3f[] primvars:displayColor = [(0.2, 0.27, 0.34)]
+      uniform token subdivisionScheme = "none"
+     }
+    }
+
+    over "wall_l1_h_009"
+    {
+     over "Geom"
+     {
+      token visibility = "invisible"
+     }
+
+     def Mesh "RepeatPlan" (
+      prepend apiSchemas = ["AecoDerivedGeometryAPI"]
+     )
+     {
+      uniform token aeco:derived:approx = "bbox"
+      uniform token aeco:derived:role = "footprint"
+      string aeco:derived:source = "cc8f6368-1f30-53e5-a842-8fd3461d0ac6"
+      string aeco:derived:stamp = "repeat-plan-v1"
+      uniform bool doubleSided = 1
+      int[] faceVertexCounts = [4]
+      int[] faceVertexIndices = [0, 1, 2, 3]
+      point3f[] points = [(0, -0.15, 0.03), (3, -0.15, 0.03), (3, 0.15, 0.03), (0, 0.15, 0.03)]
+      color3f[] primvars:displayColor = [(0.2, 0.27, 0.34)]
+      uniform token subdivisionScheme = "none"
+     }
+    }
+
+    over "wall_l1_v_016"
+    {
+     over "Geom"
+     {
+      token visibility = "invisible"
+     }
+
+     def Mesh "RepeatPlan" (
+      prepend apiSchemas = ["AecoDerivedGeometryAPI"]
+     )
+     {
+      uniform token aeco:derived:approx = "bbox"
+      uniform token aeco:derived:role = "footprint"
+      string aeco:derived:source = "d008ead2-8996-54f8-9ced-7345cc4a0a8d"
+      string aeco:derived:stamp = "repeat-plan-v1"
+      uniform bool doubleSided = 1
+      int[] faceVertexCounts = [4]
+      int[] faceVertexIndices = [0, 1, 2, 3]
+      point3f[] points = [(0, -0.075, 0.03), (5, -0.075, 0.03), (5, 0.075, 0.03), (0, 0.075, 0.03)]
+      color3f[] primvars:displayColor = [(0.95, 0.6, 0.08)]
+      uniform token subdivisionScheme = "none"
+     }
+    }
+
+    over "door_wc"
+    {
+     over "Geom"
+     {
+      token visibility = "invisible"
+     }
+
+     def Mesh "RepeatPlan" (
+      prepend apiSchemas = ["AecoDerivedGeometryAPI"]
+     )
+     {
+      uniform token aeco:derived:approx = "bbox"
+      uniform token aeco:derived:role = "footprint"
+      string aeco:derived:source = "d955b4e4-b067-5b71-a32a-02acae314fe7"
+      string aeco:derived:stamp = "repeat-plan-v1"
+      uniform bool doubleSided = 1
+      int[] faceVertexCounts = [4]
+      int[] faceVertexIndices = [0, 1, 2, 3]
+      point3f[] points = [(-0.025, -0.015, 0.03), (0.925, -0.015, 0.03), (0.925, 0.1, 0.03), (-0.025, 0.1, 0.03)]
+      color3f[] primvars:displayColor = [(0.2, 0.27, 0.34)]
+      uniform token subdivisionScheme = "none"
+     }
+    }
+
+    over "wall_l1_v_011"
+    {
+     over "Geom"
+     {
+      token visibility = "invisible"
+     }
+
+     def Mesh "RepeatPlan" (
+      prepend apiSchemas = ["AecoDerivedGeometryAPI"]
+     )
+     {
+      uniform token aeco:derived:approx = "bbox"
+      uniform token aeco:derived:role = "footprint"
+      string aeco:derived:source = "dd5cf3a2-629b-502e-bc90-de3eee629131"
+      string aeco:derived:stamp = "repeat-plan-v1"
+      uniform bool doubleSided = 1
+      int[] faceVertexCounts = [4]
+      int[] faceVertexIndices = [0, 1, 2, 3]
+      point3f[] points = [(0, -0.15, 0.03), (9, -0.15, 0.03), (9, 0.15, 0.03), (0, 0.15, 0.03)]
+      color3f[] primvars:displayColor = [(0.2, 0.27, 0.34)]
+      uniform token subdivisionScheme = "none"
+     }
+    }
+
+    over "wall_l1_h_005"
+    {
+     over "Geom"
+     {
+      token visibility = "invisible"
+     }
+
+     def Mesh "RepeatPlan" (
+      prepend apiSchemas = ["AecoDerivedGeometryAPI"]
+     )
+     {
+      uniform token aeco:derived:approx = "bbox"
+      uniform token aeco:derived:role = "footprint"
+      string aeco:derived:source = "e045c7cd-b953-5b4a-936b-b64d2bda214d"
+      string aeco:derived:stamp = "repeat-plan-v1"
+      uniform bool doubleSided = 1
+      int[] faceVertexCounts = [4]
+      int[] faceVertexIndices = [0, 1, 2, 3]
+      point3f[] points = [(0, -0.075, 0.03), (3, -0.075, 0.03), (3, 0.075, 0.03), (0, 0.075, 0.03)]
+      color3f[] primvars:displayColor = [(0.2, 0.27, 0.34)]
+      uniform token subdivisionScheme = "none"
+     }
+    }
+
+    over "door_meeting_1"
+    {
+     over "Geom"
+     {
+      token visibility = "invisible"
+     }
+
+     def Mesh "RepeatPlan" (
+      prepend apiSchemas = ["AecoDerivedGeometryAPI"]
+     )
+     {
+      uniform token aeco:derived:approx = "bbox"
+      uniform token aeco:derived:role = "footprint"
+      string aeco:derived:source = "e58cf07c-9dfc-59dd-b09f-07f776552645"
+      string aeco:derived:stamp = "repeat-plan-v1"
+      uniform bool doubleSided = 1
+      int[] faceVertexCounts = [4]
+      int[] faceVertexIndices = [0, 1, 2, 3]
+      point3f[] points = [(-0.025, -0.015, 0.03), (0.925, -0.015, 0.03), (0.925, 0.1, 0.03), (-0.025, 0.1, 0.03)]
+      color3f[] primvars:displayColor = [(0.2, 0.27, 0.34)]
+      uniform token subdivisionScheme = "none"
+     }
+    }
+   }
+
+   over "L02_Office"
+   {
+    over "Kitchen_Break"
+    {
+     over "Extent"
+     {
+      token visibility = "invisible"
+     }
+    }
+
+    over "Open_Office"
+    {
+     over "Extent"
+     {
+      token visibility = "invisible"
+     }
+    }
+
+    over "Office_Corridor_L01"
+    {
+     over "Extent"
+     {
+      token visibility = "invisible"
+     }
+
+     over "sec_cam_corr_ocorr_1_2"
+     {
+      over "Geom"
+      {
+       token visibility = "invisible"
+      }
+     }
+
+     over "sec_cam_corr_ocorr_1_1"
+     {
+      over "Geom"
+      {
+       token visibility = "invisible"
+      }
+     }
+    }
+
+    over "WC"
+    {
+     over "Extent"
+     {
+      token visibility = "invisible"
+     }
+    }
+
+    over "Stair_L01"
+    {
+     over "Extent"
+     {
+      token visibility = "invisible"
+     }
+
+     over "Office_Stair"
+     {
+      over "Geom"
+      {
+       token visibility = "invisible"
+      }
+     }
+    }
+
+    over "Meeting_Room_L01"
+    {
+     over "Extent"
+     {
+      token visibility = "invisible"
+     }
+    }
+
+    over "wall_l1_v_017"
+    {
+     over "Geom"
+     {
+      token visibility = "invisible"
+     }
+
+     over "RepeatPlan" (
+      prepend apiSchemas = ["AecoDerivedGeometryAPI"]
+     )
+     {
+      uniform token aeco:derived:approx = "bbox"
+      uniform token aeco:derived:role = "footprint"
+      string aeco:derived:source = "d6b075b8-4846-5ff9-88b7-cf553d4327f0"
+      string aeco:derived:stamp = "repeat-plan-v1"
+      uniform bool doubleSided = 1
+      int[] faceVertexCounts = [4]
+      int[] faceVertexIndices = [0, 1, 2, 3]
+      point3f[] points = [(0, -0.15, 0.03), (4, -0.15, 0.03), (4, 0.15, 0.03), (0, 0.15, 0.03)]
+      color3f[] primvars:displayColor = [(0.2, 0.27, 0.34)]
+      uniform token subdivisionScheme = "none"
+      token visibility = "invisible"
+     }
+    }
+
+    over "wall_l1_h_001"
+    {
+     over "Geom"
+     {
+      token visibility = "invisible"
+     }
+
+     over "RepeatPlan" (
+      prepend apiSchemas = ["AecoDerivedGeometryAPI"]
+     )
+     {
+      uniform token aeco:derived:approx = "bbox"
+      uniform token aeco:derived:role = "footprint"
+      string aeco:derived:source = "e43db3b9-6938-52c8-998e-f6c797544a01"
+      string aeco:derived:stamp = "repeat-plan-v1"
+      uniform bool doubleSided = 1
+      int[] faceVertexCounts = [4]
+      int[] faceVertexIndices = [0, 1, 2, 3]
+      point3f[] points = [(0, -0.15, 0.03), (10, -0.15, 0.03), (10, 0.15, 0.03), (0, 0.15, 0.03)]
+      color3f[] primvars:displayColor = [(0.2, 0.27, 0.34)]
+      uniform token subdivisionScheme = "none"
+      token visibility = "invisible"
+     }
+    }
+
+    over "wall_l1_v_014"
+    {
+     over "Geom"
+     {
+      token visibility = "invisible"
+     }
+
+     over "RepeatPlan" (
+      prepend apiSchemas = ["AecoDerivedGeometryAPI"]
+     )
+     {
+      uniform token aeco:derived:approx = "bbox"
+      uniform token aeco:derived:role = "footprint"
+      string aeco:derived:source = "446e8413-727f-5c83-b63c-b41018bc5c7a"
+      string aeco:derived:stamp = "repeat-plan-v1"
+      uniform bool doubleSided = 1
+      int[] faceVertexCounts = [4]
+      int[] faceVertexIndices = [0, 1, 2, 3]
+      point3f[] points = [(0, -0.075, 0.03), (9, -0.075, 0.03), (9, 0.075, 0.03), (0, 0.075, 0.03)]
+      color3f[] primvars:displayColor = [(0.2, 0.27, 0.34)]
+      uniform token subdivisionScheme = "none"
+      token visibility = "invisible"
+     }
+    }
+
+    over "wall_l1_h_008"
+    {
+     over "Geom"
+     {
+      token visibility = "invisible"
+     }
+
+     over "RepeatPlan" (
+      prepend apiSchemas = ["AecoDerivedGeometryAPI"]
+     )
+     {
+      uniform token aeco:derived:approx = "bbox"
+      uniform token aeco:derived:role = "footprint"
+      string aeco:derived:source = "530201f9-f6d4-5b5e-9d79-94bbc0ed39b0"
+      string aeco:derived:stamp = "repeat-plan-v1"
+      uniform bool doubleSided = 1
+      int[] faceVertexCounts = [4]
+      int[] faceVertexIndices = [0, 1, 2, 3]
+      point3f[] points = [(0, -0.075, 0.03), (4, -0.075, 0.03), (4, 0.075, 0.03), (0, 0.075, 0.03)]
+      color3f[] primvars:displayColor = [(0.2, 0.27, 0.34)]
+      uniform token subdivisionScheme = "none"
+      token visibility = "invisible"
+     }
+    }
+
+    over "wall_l1_h_002"
+    {
+     over "Geom"
+     {
+      token visibility = "invisible"
+     }
+
+     over "RepeatPlan" (
+      prepend apiSchemas = ["AecoDerivedGeometryAPI"]
+     )
+     {
+      uniform token aeco:derived:approx = "bbox"
+      uniform token aeco:derived:role = "footprint"
+      string aeco:derived:source = "e7fb50b9-0347-530c-b1d8-4ec9c3462f69"
+      string aeco:derived:stamp = "repeat-plan-v1"
+      uniform bool doubleSided = 1
+      int[] faceVertexCounts = [4]
+      int[] faceVertexIndices = [0, 1, 2, 3]
+      point3f[] points = [(0, -0.15, 0.03), (4, -0.15, 0.03), (4, 0.15, 0.03), (0, 0.15, 0.03)]
+      color3f[] primvars:displayColor = [(0.2, 0.27, 0.34)]
+      uniform token subdivisionScheme = "none"
+      token visibility = "invisible"
+     }
+    }
+
+    over "wall_l1_h_010"
+    {
+     over "Geom"
+     {
+      token visibility = "invisible"
+     }
+
+     over "RepeatPlan" (
+      prepend apiSchemas = ["AecoDerivedGeometryAPI"]
+     )
+     {
+      uniform token aeco:derived:approx = "bbox"
+      uniform token aeco:derived:role = "footprint"
+      string aeco:derived:source = "48299598-bfc7-5763-ada4-afcbcd8810d4"
+      string aeco:derived:stamp = "repeat-plan-v1"
+      uniform bool doubleSided = 1
+      int[] faceVertexCounts = [4]
+      int[] faceVertexIndices = [0, 1, 2, 3]
+      point3f[] points = [(0, -0.15, 0.03), (15, -0.15, 0.03), (15, 0.15, 0.03), (0, 0.15, 0.03)]
+      color3f[] primvars:displayColor = [(0.2, 0.27, 0.34)]
+      uniform token subdivisionScheme = "none"
+      token visibility = "invisible"
+     }
+    }
+
+    over "wall_l1_h_007"
+    {
+     over "Geom"
+     {
+      token visibility = "invisible"
+     }
+
+     over "RepeatPlan" (
+      prepend apiSchemas = ["AecoDerivedGeometryAPI"]
+     )
+     {
+      uniform token aeco:derived:approx = "bbox"
+      uniform token aeco:derived:role = "footprint"
+      string aeco:derived:source = "0302fe84-3c81-5885-a93b-c43def48d49b"
+      string aeco:derived:stamp = "repeat-plan-v1"
+      uniform bool doubleSided = 1
+      int[] faceVertexCounts = [4]
+      int[] faceVertexIndices = [0, 1, 2, 3]
+      point3f[] points = [(0, -0.075, 0.03), (4, -0.075, 0.03), (4, 0.075, 0.03), (0, 0.075, 0.03)]
+      color3f[] primvars:displayColor = [(0.2, 0.27, 0.34)]
+      uniform token subdivisionScheme = "none"
+      token visibility = "invisible"
+     }
+    }
+
+    over "wall_l1_v_013"
+    {
+     over "Geom"
+     {
+      token visibility = "invisible"
+     }
+
+     over "RepeatPlan" (
+      prepend apiSchemas = ["AecoDerivedGeometryAPI"]
+     )
+     {
+      uniform token aeco:derived:approx = "bbox"
+      uniform token aeco:derived:role = "footprint"
+      string aeco:derived:source = "7b1263c6-f269-5ad7-b2a4-d7d6d2798e30"
+      string aeco:derived:stamp = "repeat-plan-v1"
+      uniform bool doubleSided = 1
+      int[] faceVertexCounts = [4]
+      int[] faceVertexIndices = [0, 1, 2, 3]
+      point3f[] points = [(0, -0.075, 0.03), (3, -0.075, 0.03), (3, 0.075, 0.03), (0, 0.075, 0.03)]
+      color3f[] primvars:displayColor = [(0.2, 0.27, 0.34)]
+      uniform token subdivisionScheme = "none"
+      token visibility = "invisible"
+     }
+    }
+
+    over "wall_l1_v_019"
+    {
+     over "Geom"
+     {
+      token visibility = "invisible"
+     }
+
+     over "RepeatPlan" (
+      prepend apiSchemas = ["AecoDerivedGeometryAPI"]
+     )
+     {
+      uniform token aeco:derived:approx = "bbox"
+      uniform token aeco:derived:role = "footprint"
+      string aeco:derived:source = "14c8a6ad-3fac-55a7-9dd1-06df33865f5c"
+      string aeco:derived:stamp = "repeat-plan-v1"
+      uniform bool doubleSided = 1
+      int[] faceVertexCounts = [4]
+      int[] faceVertexIndices = [0, 1, 2, 3]
+      point3f[] points = [(0, -0.15, 0.03), (3, -0.15, 0.03), (3, 0.15, 0.03), (0, 0.15, 0.03)]
+      color3f[] primvars:displayColor = [(0.2, 0.27, 0.34)]
+      uniform token subdivisionScheme = "none"
+      token visibility = "invisible"
+     }
+    }
+
+    over "wall_l1_v_012"
+    {
+     over "Geom"
+     {
+      token visibility = "invisible"
+     }
+
+     over "RepeatPlan" (
+      prepend apiSchemas = ["AecoDerivedGeometryAPI"]
+     )
+     {
+      uniform token aeco:derived:approx = "bbox"
+      uniform token aeco:derived:role = "footprint"
+      string aeco:derived:source = "93bc6518-e4e4-5b31-9ed8-57d271460047"
+      string aeco:derived:stamp = "repeat-plan-v1"
+      uniform bool doubleSided = 1
+      int[] faceVertexCounts = [4]
+      int[] faceVertexIndices = [0, 1, 2, 3]
+      point3f[] points = [(0, -0.15, 0.03), (3, -0.15, 0.03), (3, 0.15, 0.03), (0, 0.15, 0.03)]
+      color3f[] primvars:displayColor = [(0.2, 0.27, 0.34)]
+      uniform token subdivisionScheme = "none"
+      token visibility = "invisible"
+     }
+    }
+
+    over "slab_l1_office"
+    {
+     over "Geom"
+     {
+      token visibility = "invisible"
+     }
+    }
+
+    over "door_kitchen"
+    {
+     over "Geom"
+     {
+      token visibility = "invisible"
+     }
+
+     over "RepeatPlan" (
+      prepend apiSchemas = ["AecoDerivedGeometryAPI"]
+     )
+     {
+      uniform token aeco:derived:approx = "bbox"
+      uniform token aeco:derived:role = "footprint"
+      string aeco:derived:source = "95a6e681-5760-59ba-9a76-86f5fdbea074"
+      string aeco:derived:stamp = "repeat-plan-v1"
+      uniform bool doubleSided = 1
+      int[] faceVertexCounts = [4]
+      int[] faceVertexIndices = [0, 1, 2, 3]
+      point3f[] points = [(-0.025, -0.015, 0.03), (0.925, -0.015, 0.03), (0.925, 0.1, 0.03), (-0.025, 0.1, 0.03)]
+      color3f[] primvars:displayColor = [(0.2, 0.27, 0.34)]
+      uniform token subdivisionScheme = "none"
+      token visibility = "invisible"
+     }
+    }
+
+    over "door_stair_1"
+    {
+     over "Geom"
+     {
+      token visibility = "invisible"
+     }
+
+     over "RepeatPlan" (
+      prepend apiSchemas = ["AecoDerivedGeometryAPI"]
+     )
+     {
+      uniform token aeco:derived:approx = "bbox"
+      uniform token aeco:derived:role = "footprint"
+      string aeco:derived:source = "96372576-0384-5ed8-ae02-bc1c935a4edf"
+      string aeco:derived:stamp = "repeat-plan-v1"
+      uniform bool doubleSided = 1
+      int[] faceVertexCounts = [4]
+      int[] faceVertexIndices = [0, 1, 2, 3]
+      point3f[] points = [(-0.025, -0.015, 0.03), (0.925, -0.015, 0.03), (0.925, 0.1, 0.03), (-0.025, 0.1, 0.03)]
+      color3f[] primvars:displayColor = [(0.2, 0.27, 0.34)]
+      uniform token subdivisionScheme = "none"
+      token visibility = "invisible"
+     }
+    }
+
+    over "wall_l1_h_006"
+    {
+     over "Geom"
+     {
+      token visibility = "invisible"
+     }
+
+     over "RepeatPlan" (
+      prepend apiSchemas = ["AecoDerivedGeometryAPI"]
+     )
+     {
+      uniform token aeco:derived:approx = "bbox"
+      uniform token aeco:derived:role = "footprint"
+      string aeco:derived:source = "92583644-fb81-568e-9d67-db570ddfbc35"
+      string aeco:derived:stamp = "repeat-plan-v1"
+      uniform bool doubleSided = 1
+      int[] faceVertexCounts = [4]
+      int[] faceVertexIndices = [0, 1, 2, 3]
+      point3f[] points = [(0, -0.075, 0.03), (7, -0.075, 0.03), (7, 0.075, 0.03), (0, 0.075, 0.03)]
+      color3f[] primvars:displayColor = [(0.2, 0.27, 0.34)]
+      uniform token subdivisionScheme = "none"
+      token visibility = "invisible"
+     }
+    }
+
+    over "wall_l1_h_004"
+    {
+     over "Geom"
+     {
+      token visibility = "invisible"
+     }
+
+     over "RepeatPlan" (
+      prepend apiSchemas = ["AecoDerivedGeometryAPI"]
+     )
+     {
+      uniform token aeco:derived:approx = "bbox"
+      uniform token aeco:derived:role = "footprint"
+      string aeco:derived:source = "707d9d9d-6751-55eb-b18b-8fbe7637bb8e"
+      string aeco:derived:stamp = "repeat-plan-v1"
+      uniform bool doubleSided = 1
+      int[] faceVertexCounts = [4]
+      int[] faceVertexIndices = [0, 1, 2, 3]
+      point3f[] points = [(0, -0.075, 0.03), (4, -0.075, 0.03), (4, 0.075, 0.03), (0, 0.075, 0.03)]
+      color3f[] primvars:displayColor = [(0.2, 0.27, 0.34)]
+      uniform token subdivisionScheme = "none"
+      token visibility = "invisible"
+     }
+    }
+
+    over "door_office_1"
+    {
+     over "Geom"
+     {
+      token visibility = "invisible"
+     }
+
+     over "RepeatPlan" (
+      prepend apiSchemas = ["AecoDerivedGeometryAPI"]
+     )
+     {
+      uniform token aeco:derived:approx = "bbox"
+      uniform token aeco:derived:role = "footprint"
+      string aeco:derived:source = "69f8bcf0-4e05-5593-8188-b4ae53affe14"
+      string aeco:derived:stamp = "repeat-plan-v1"
+      uniform bool doubleSided = 1
+      int[] faceVertexCounts = [4]
+      int[] faceVertexIndices = [0, 1, 2, 3]
+      point3f[] points = [(-0.025, -0.015, 0.03), (1.825, -0.015, 0.03), (1.825, 0.1, 0.03), (-0.025, 0.1, 0.03)]
+      color3f[] primvars:displayColor = [(0.2, 0.27, 0.34)]
+      uniform token subdivisionScheme = "none"
+      token visibility = "invisible"
+     }
+    }
+
+    over "wall_l1_h_003"
+    {
+     over "Geom"
+     {
+      token visibility = "invisible"
+     }
+
+     over "RepeatPlan" (
+      prepend apiSchemas = ["AecoDerivedGeometryAPI"]
+     )
+     {
+      uniform token aeco:derived:approx = "bbox"
+      uniform token aeco:derived:role = "footprint"
+      string aeco:derived:source = "053a6aa8-4184-5dc8-b5c3-16545485e242"
+      string aeco:derived:stamp = "repeat-plan-v1"
+      uniform bool doubleSided = 1
+      int[] faceVertexCounts = [4]
+      int[] faceVertexIndices = [0, 1, 2, 3]
+      point3f[] points = [(0, -0.15, 0.03), (4, -0.15, 0.03), (4, 0.15, 0.03), (0, 0.15, 0.03)]
+      color3f[] primvars:displayColor = [(0.2, 0.27, 0.34)]
+      uniform token subdivisionScheme = "none"
+      token visibility = "invisible"
+     }
+    }
+
+    over "wall_l1_v_018"
+    {
+     over "Geom"
+     {
+      token visibility = "invisible"
+     }
+
+     over "RepeatPlan" (
+      prepend apiSchemas = ["AecoDerivedGeometryAPI"]
+     )
+     {
+      uniform token aeco:derived:approx = "bbox"
+      uniform token aeco:derived:role = "footprint"
+      string aeco:derived:source = "973c7b4b-3366-5de0-936c-7d07380d4074"
+      string aeco:derived:stamp = "repeat-plan-v1"
+      uniform bool doubleSided = 1
+      int[] faceVertexCounts = [4]
+      int[] faceVertexIndices = [0, 1, 2, 3]
+      point3f[] points = [(0, -0.15, 0.03), (5, -0.15, 0.03), (5, 0.15, 0.03), (0, 0.15, 0.03)]
+      color3f[] primvars:displayColor = [(0.2, 0.27, 0.34)]
+      uniform token subdivisionScheme = "none"
+      token visibility = "invisible"
+     }
+    }
+
+    over "wall_l1_v_015"
+    {
+     over "Geom"
+     {
+      token visibility = "invisible"
+     }
+
+     over "RepeatPlan" (
+      prepend apiSchemas = ["AecoDerivedGeometryAPI"]
+     )
+     {
+      uniform token aeco:derived:approx = "bbox"
+      uniform token aeco:derived:role = "footprint"
+      string aeco:derived:source = "9a5d68d2-9185-559d-beaa-a8501b814fc9"
+      string aeco:derived:stamp = "repeat-plan-v1"
+      uniform bool doubleSided = 1
+      int[] faceVertexCounts = [4]
+      int[] faceVertexIndices = [0, 1, 2, 3]
+      point3f[] points = [(0, -0.075, 0.03), (4, -0.075, 0.03), (4, 0.075, 0.03), (0, 0.075, 0.03)]
+      color3f[] primvars:displayColor = [(0.2, 0.27, 0.34)]
+      uniform token subdivisionScheme = "none"
+      token visibility = "invisible"
+     }
+    }
+
+    over "wall_l1_h_009"
+    {
+     over "Geom"
+     {
+      token visibility = "invisible"
+     }
+
+     over "RepeatPlan" (
+      prepend apiSchemas = ["AecoDerivedGeometryAPI"]
+     )
+     {
+      uniform token aeco:derived:approx = "bbox"
+      uniform token aeco:derived:role = "footprint"
+      string aeco:derived:source = "e5c92fc0-698f-534a-8475-92dee2e044f5"
+      string aeco:derived:stamp = "repeat-plan-v1"
+      uniform bool doubleSided = 1
+      int[] faceVertexCounts = [4]
+      int[] faceVertexIndices = [0, 1, 2, 3]
+      point3f[] points = [(0, -0.15, 0.03), (3, -0.15, 0.03), (3, 0.15, 0.03), (0, 0.15, 0.03)]
+      color3f[] primvars:displayColor = [(0.2, 0.27, 0.34)]
+      uniform token subdivisionScheme = "none"
+      token visibility = "invisible"
+     }
+    }
+
+    over "wall_l1_v_016"
+    {
+     over "Geom"
+     {
+      token visibility = "invisible"
+     }
+
+     over "RepeatPlan" (
+      prepend apiSchemas = ["AecoDerivedGeometryAPI"]
+     )
+     {
+      uniform token aeco:derived:approx = "bbox"
+      uniform token aeco:derived:role = "footprint"
+      string aeco:derived:source = "8f507a9f-9bfb-516d-9f0c-89509e1ef5d9"
+      string aeco:derived:stamp = "repeat-plan-v1"
+      uniform bool doubleSided = 1
+      int[] faceVertexCounts = [4]
+      int[] faceVertexIndices = [0, 1, 2, 3]
+      point3f[] points = [(0, -0.075, 0.03), (8.2, -0.075, 0.03), (8.2, 0.075, 0.03), (0, 0.075, 0.03)]
+      color3f[] primvars:displayColor = [(0.95, 0.6, 0.08)]
+      uniform token subdivisionScheme = "none"
+      token visibility = "invisible"
+     }
+    }
+
+    over "door_wc"
+    {
+     over "Geom"
+     {
+      token visibility = "invisible"
+     }
+
+     over "RepeatPlan" (
+      prepend apiSchemas = ["AecoDerivedGeometryAPI"]
+     )
+     {
+      uniform token aeco:derived:approx = "bbox"
+      uniform token aeco:derived:role = "footprint"
+      string aeco:derived:source = "e51fdf9e-1c04-5728-b18d-09972be43701"
+      string aeco:derived:stamp = "repeat-plan-v1"
+      uniform bool doubleSided = 1
+      int[] faceVertexCounts = [4]
+      int[] faceVertexIndices = [0, 1, 2, 3]
+      point3f[] points = [(-0.025, -0.015, 0.03), (0.925, -0.015, 0.03), (0.925, 0.1, 0.03), (-0.025, 0.1, 0.03)]
+      color3f[] primvars:displayColor = [(0.2, 0.27, 0.34)]
+      uniform token subdivisionScheme = "none"
+      token visibility = "invisible"
+     }
+    }
+
+    over "wall_l1_v_011"
+    {
+     over "Geom"
+     {
+      token visibility = "invisible"
+     }
+
+     over "RepeatPlan" (
+      prepend apiSchemas = ["AecoDerivedGeometryAPI"]
+     )
+     {
+      uniform token aeco:derived:approx = "bbox"
+      uniform token aeco:derived:role = "footprint"
+      string aeco:derived:source = "9c86f5b4-b28a-537d-921a-7d491e761eef"
+      string aeco:derived:stamp = "repeat-plan-v1"
+      uniform bool doubleSided = 1
+      int[] faceVertexCounts = [4]
+      int[] faceVertexIndices = [0, 1, 2, 3]
+      point3f[] points = [(0, -0.15, 0.03), (9, -0.15, 0.03), (9, 0.15, 0.03), (0, 0.15, 0.03)]
+      color3f[] primvars:displayColor = [(0.2, 0.27, 0.34)]
+      uniform token subdivisionScheme = "none"
+      token visibility = "invisible"
+     }
+    }
+
+    over "wall_l1_h_005"
+    {
+     over "Geom"
+     {
+      token visibility = "invisible"
+     }
+
+     over "RepeatPlan" (
+      prepend apiSchemas = ["AecoDerivedGeometryAPI"]
+     )
+     {
+      uniform token aeco:derived:approx = "bbox"
+      uniform token aeco:derived:role = "footprint"
+      string aeco:derived:source = "b6fb5c1f-2d68-5197-9480-79e819221f06"
+      string aeco:derived:stamp = "repeat-plan-v1"
+      uniform bool doubleSided = 1
+      int[] faceVertexCounts = [4]
+      int[] faceVertexIndices = [0, 1, 2, 3]
+      point3f[] points = [(0, -0.075, 0.03), (3, -0.075, 0.03), (3, 0.075, 0.03), (0, 0.075, 0.03)]
+      color3f[] primvars:displayColor = [(0.2, 0.27, 0.34)]
+      uniform token subdivisionScheme = "none"
+      token visibility = "invisible"
+     }
+    }
+
+    over "door_meeting_1"
+    {
+     over "Geom"
+     {
+      token visibility = "invisible"
+     }
+
+     over "RepeatPlan" (
+      prepend apiSchemas = ["AecoDerivedGeometryAPI"]
+     )
+     {
+      uniform token aeco:derived:approx = "bbox"
+      uniform token aeco:derived:role = "footprint"
+      string aeco:derived:source = "8a801a9f-9592-5604-9aba-b0d9a7df759c"
+      string aeco:derived:stamp = "repeat-plan-v1"
+      uniform bool doubleSided = 1
+      int[] faceVertexCounts = [4]
+      int[] faceVertexIndices = [0, 1, 2, 3]
+      point3f[] points = [(-0.025, -0.015, 0.03), (0.925, -0.015, 0.03), (0.925, 0.1, 0.03), (-0.025, 0.1, 0.03)]
+      color3f[] primvars:displayColor = [(0.2, 0.27, 0.34)]
+      uniform token subdivisionScheme = "none"
+      token visibility = "invisible"
+     }
+    }
+
+    over "Additional_Meeting_Access"
+    {
+     over "Geom"
+     {
+      token visibility = "invisible"
+     }
+
+     def Mesh "RepeatPlan" (
+      prepend apiSchemas = ["AecoDerivedGeometryAPI"]
+     )
+     {
+      uniform token aeco:derived:approx = "bbox"
+      uniform token aeco:derived:role = "footprint"
+      string aeco:derived:source = "3ca0f7bb-160c-52ca-b9b5-52db8a894f1c"
+      string aeco:derived:stamp = "repeat-plan-v1"
+      uniform bool doubleSided = 1
+      int[] faceVertexCounts = [4]
+      int[] faceVertexIndices = [0, 1, 2, 3]
+      point3f[] points = [(-0.025, -0.015, 0.03), (0.925, -0.015, 0.03), (0.925, 0.1, 0.03), (-0.025, 0.1, 0.03)]
+      color3f[] primvars:displayColor = [(0.04, 0.62, 0.37)]
+      uniform token subdivisionScheme = "none"
+     }
+    }
+   }
+  }
+ }
+}
+

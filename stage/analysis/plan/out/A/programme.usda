@@ -1,0 +1,387 @@
+#usda 1.0
+(
+ customLayerData = {
+  string "aeco:layer:package" = "plan"
+  string "aeco:layer:producer" = "hook v0.1.4"
+  string "aeco:layer:role" = "analysis"
+  string "aeco:layer:source" = "kind/usdaeco-plan/examples/datacentre/run.py"
+  string "aeco:layer:sourceSha256" = "3eb75431d86cb884a3ef78789066e83df407a3c47155bb6bd3287537d724e0b5"
+  string "aeco:layer:tag" = "v0.1.4"
+ }
+ defaultPrim = "Programme"
+ fallbackPrimTypes = {
+  token[] AecoActivity = ["Scope"]
+  token[] AecoMilestone = ["Scope"]
+  token[] AecoProgramme = ["Scope"]
+ }
+ metersPerUnit = 1
+ upAxis = "Z"
+)
+
+def AecoProgramme "Programme" (
+ prepend apiSchemas = ["CollectionAPI:members"]
+ customData = {
+  dictionary aeco = {
+   dictionary plan = {
+    string boundarySource = "activityEnvelope"
+   }
+  }
+ }
+ displayName = "A"
+)
+{
+ string aeco:id = "84bf284c-9c10-56ed-826b-2aeb4b401065"
+ string aeco:plan:dataDate = ""
+ string aeco:plan:epoch = "2027-03-01"
+ string aeco:plan:plannedFinish = "2027-05-09"
+ string aeco:plan:plannedStart = "2027-03-01"
+ string aeco:plan:source = "p6 xer"
+ double aeco:plan:timeCodesPerDay = 1
+ uniform token collection:members:expansionRule = "explicitOnly"
+ rel collection:members:includes = [
+  </demo_datacentre_01/demo_datacentre_01_Site/demo_datacentre_01/L01_Office/Office_Corridor_L01/Corridor_ceiling_void>,
+  </demo_datacentre_01/demo_datacentre_01_Site/demo_datacentre_01/L01_Office/Office_Corridor_L01/Corridor_ceiling_void/pipe_chw_void_f>,
+  </demo_datacentre_01/demo_datacentre_01_Site/demo_datacentre_01/L01_Office/Office_Corridor_L01/Corridor_ceiling_void/pipe_chw_void_r>,
+  </demo_datacentre_01/demo_datacentre_01_Site/demo_datacentre_01/L01_Office/Office_Corridor_L01/Corridor_ceiling_void/tray_void_ocorr_1>,
+  </demo_datacentre_01/demo_datacentre_01_Site/demo_datacentre_01/L01_Office/Office_Corridor_L01/clg_ocorr_1>,
+  </demo_datacentre_01/demo_datacentre_01_Site/demo_datacentre_01/L01_Office/Office_Corridor_L01/pod_wc_temp>,
+  </demo_datacentre_01/demo_datacentre_01_Site/demo_datacentre_01/L01_Office/Open_Office/Office_ceiling_void>,
+  </demo_datacentre_01/demo_datacentre_01_Site/demo_datacentre_01/L01_Office/Open_Office/Office_ceiling_void/cnd_void_office_1>,
+  </demo_datacentre_01/demo_datacentre_01_Site/demo_datacentre_01/L01_Office/Open_Office/Office_ceiling_void/cnd_void_office_2>,
+  </demo_datacentre_01/demo_datacentre_01_Site/demo_datacentre_01/L01_Office/Open_Office/Office_ceiling_void/fcu_office_1>,
+  </demo_datacentre_01/demo_datacentre_01_Site/demo_datacentre_01/L01_Office/Open_Office/clg_office>,
+  </demo_datacentre_01/demo_datacentre_01_Site/demo_datacentre_01/L01_Office/Open_Office/grl_office_1>,
+  </demo_datacentre_01/demo_datacentre_01_Site/demo_datacentre_01/L01_Office/Open_Office/grl_office_2>,
+  </demo_datacentre_01/demo_datacentre_01_Site/demo_datacentre_01/L01_Office/Open_Office/grl_office_3>,
+  </demo_datacentre_01/demo_datacentre_01_Site/demo_datacentre_01/L01_Office/Open_Office/grl_office_4>,
+  </demo_datacentre_01/demo_datacentre_01_Site/demo_datacentre_01/L01_Office/Open_Office/lum_office_1>,
+  </demo_datacentre_01/demo_datacentre_01_Site/demo_datacentre_01/L01_Office/Open_Office/lum_office_2>,
+  </demo_datacentre_01/demo_datacentre_01_Site/demo_datacentre_01/L01_Office/Open_Office/lum_office_3>,
+  </demo_datacentre_01/demo_datacentre_01_Site/demo_datacentre_01/L01_Office/Open_Office/lum_office_4>,
+  </demo_datacentre_01/demo_datacentre_01_Site/demo_datacentre_01/L01_Office/Open_Office/lum_office_5>,
+  </demo_datacentre_01/demo_datacentre_01_Site/demo_datacentre_01/L01_Office/Open_Office/lum_office_6>,
+  </demo_datacentre_01/demo_datacentre_01_Site/demo_datacentre_01/L01_Office/WC/pipe_drain_pod>,
+  </demo_datacentre_01/demo_datacentre_01_Site/demo_datacentre_01/L01_Office/WC/pod_wc>,
+  </demo_datacentre_01/demo_datacentre_01_Site/demo_datacentre_01/L01_Office/WC/san_pod_1>,
+  </demo_datacentre_01/demo_datacentre_01_Site/demo_datacentre_01/L01_Office/WC/san_pod_2>,
+ ]
+
+ def AecoActivity "Fitout" (
+  displayName = "Fitout"
+ )
+ {
+  string aeco:id = "5e5b0466-7538-51bd-8bea-b71361507c28"
+  uniform token aeco:plan:taskType = "notDefined"
+  string aeco:plan:wbsCode = "Fitout"
+
+  def AecoActivity "Logistics" (
+   displayName = "Logistics"
+  )
+  {
+   string aeco:id = "8a854b30-baae-56b4-a944-1403081297ab"
+   uniform token aeco:plan:taskType = "notDefined"
+   string aeco:plan:wbsCode = "Fitout.Logistics"
+
+   def AecoActivity "act_pod_deliver_9ac724561c" (
+    prepend apiSchemas = ["AecoScheduleAPI", "AecoWorkspaceAPI", "CollectionAPI:members"]
+    displayName = "Deliver temporary pod"
+   )
+   {
+    string aeco:id = "41e5df03-8346-546f-a6fd-9dcac51225ed"
+    double[] aeco:plan:lagDays = []
+    token[] aeco:plan:linkType = []
+    string[] aeco:plan:predecessorIds = []
+    uniform token aeco:plan:taskType = "installation"
+    string aeco:plan:wbsCode = "Fitout.Logistics.act.pod.deliver"
+    string aeco:schedule:actualFinish = ""
+    string aeco:schedule:actualStart = ""
+    string aeco:schedule:baselineFinish = ""
+    string aeco:schedule:baselineStart = ""
+    double aeco:schedule:percentComplete = 0
+    string aeco:schedule:plannedFinish = "2027-03-15"
+    string aeco:schedule:plannedStart = "2027-03-15"
+    rel aeco:workspace:accessVia = None
+    rel aeco:workspace:encloses = None
+    rel aeco:workspace:occupies = None
+    rel aeco:workspace:requiresAccess = None
+    uniform token collection:members:expansionRule = "explicitOnly"
+    rel collection:members:includes = </demo_datacentre_01/demo_datacentre_01_Site/demo_datacentre_01/L01_Office/Office_Corridor_L01/pod_wc_temp>
+   }
+
+   def AecoActivity "act_pod_install_d6fde11f61" (
+    prepend apiSchemas = ["AecoScheduleAPI", "AecoWorkspaceAPI", "CollectionAPI:members"]
+    displayName = "Install final bathroom pod"
+   )
+   {
+    string aeco:id = "fbf22e78-d554-5672-91f0-3fcd31fde6d5"
+    double[] aeco:plan:lagDays = [1]
+    token[] aeco:plan:linkType = ["FS"]
+    string[] aeco:plan:predecessorIds = ["f59a55c6-dcd7-518e-ba29-af8024138b0b"]
+    uniform token aeco:plan:taskType = "installation"
+    string aeco:plan:wbsCode = "Fitout.Logistics.act.pod.install"
+    string aeco:schedule:actualFinish = ""
+    string aeco:schedule:actualStart = ""
+    string aeco:schedule:baselineFinish = ""
+    string aeco:schedule:baselineStart = ""
+    double aeco:schedule:percentComplete = 0
+    string aeco:schedule:plannedFinish = "2027-04-30"
+    string aeco:schedule:plannedStart = "2027-04-30"
+    rel aeco:workspace:accessVia = None
+    rel aeco:workspace:encloses = None
+    rel aeco:workspace:occupies = None
+    rel aeco:workspace:requiresAccess = </demo_datacentre_01/demo_datacentre_01_Site/demo_datacentre_01/L01_Office/WC>
+    uniform token collection:members:expansionRule = "explicitOnly"
+    rel collection:members:includes = </demo_datacentre_01/demo_datacentre_01_Site/demo_datacentre_01/L01_Office/WC/pod_wc>
+   }
+
+   def AecoActivity "act_pod_park_9716c78a83" (
+    prepend apiSchemas = ["AecoScheduleAPI", "AecoWorkspaceAPI", "CollectionAPI:members"]
+    displayName = "Pod parked awaiting relocation"
+   )
+   {
+    string aeco:id = "a8653cfb-de25-5d0b-9ad8-944a2133e047"
+    double[] aeco:plan:lagDays = [0]
+    token[] aeco:plan:linkType = ["SS"]
+    string[] aeco:plan:predecessorIds = ["41e5df03-8346-546f-a6fd-9dcac51225ed"]
+    uniform token aeco:plan:taskType = "logistic"
+    string aeco:plan:wbsCode = "Fitout.Logistics.act.pod.park"
+    string aeco:schedule:actualFinish = ""
+    string aeco:schedule:actualStart = ""
+    string aeco:schedule:baselineFinish = ""
+    string aeco:schedule:baselineStart = ""
+    double aeco:schedule:percentComplete = 0
+    string aeco:schedule:plannedFinish = "2027-04-29"
+    string aeco:schedule:plannedStart = "2027-03-15"
+    rel aeco:workspace:accessVia = None
+    rel aeco:workspace:encloses = None
+    rel aeco:workspace:occupies = </demo_datacentre_01/demo_datacentre_01_Site/demo_datacentre_01/L01_Office/Office_Corridor_L01>
+    rel aeco:workspace:requiresAccess = None
+    uniform token collection:members:expansionRule = "explicitOnly"
+    rel collection:members:includes = </demo_datacentre_01/demo_datacentre_01_Site/demo_datacentre_01/L01_Office/Office_Corridor_L01/pod_wc_temp>
+   }
+
+   def AecoActivity "act_pod_remove_0b9c87850e" (
+    prepend apiSchemas = ["AecoScheduleAPI", "AecoWorkspaceAPI", "CollectionAPI:members"]
+    displayName = "Remove temporary pod position"
+   )
+   {
+    string aeco:id = "f59a55c6-dcd7-518e-ba29-af8024138b0b"
+    double[] aeco:plan:lagDays = [0]
+    token[] aeco:plan:linkType = ["FF"]
+    string[] aeco:plan:predecessorIds = ["a8653cfb-de25-5d0b-9ad8-944a2133e047"]
+    uniform token aeco:plan:taskType = "removal"
+    string aeco:plan:wbsCode = "Fitout.Logistics.act.pod.remove"
+    string aeco:schedule:actualFinish = ""
+    string aeco:schedule:actualStart = ""
+    string aeco:schedule:baselineFinish = ""
+    string aeco:schedule:baselineStart = ""
+    double aeco:schedule:percentComplete = 0
+    string aeco:schedule:plannedFinish = "2027-04-29"
+    string aeco:schedule:plannedStart = "2027-04-29"
+    rel aeco:workspace:accessVia = None
+    rel aeco:workspace:encloses = None
+    rel aeco:workspace:occupies = None
+    rel aeco:workspace:requiresAccess = None
+    uniform token collection:members:expansionRule = "explicitOnly"
+    rel collection:members:includes = </demo_datacentre_01/demo_datacentre_01_Site/demo_datacentre_01/L01_Office/Office_Corridor_L01/pod_wc_temp>
+   }
+  }
+
+  def AecoActivity "Services" (
+   displayName = "Services"
+  )
+  {
+   string aeco:id = "23316913-2de3-5768-ad0d-06fba9478a0e"
+   uniform token aeco:plan:taskType = "notDefined"
+   string aeco:plan:wbsCode = "Fitout.Services"
+
+   def AecoActivity "act_ceiling_corridor_fa7147c488" (
+    prepend apiSchemas = ["AecoScheduleAPI", "AecoWorkspaceAPI", "CollectionAPI:members"]
+    displayName = "Close corridor ceiling"
+   )
+   {
+    string aeco:id = "4c96d3fa-c936-59b6-a7f7-fe785540f687"
+    double[] aeco:plan:lagDays = [21]
+    token[] aeco:plan:linkType = ["FS"]
+    string[] aeco:plan:predecessorIds = ["41e5df03-8346-546f-a6fd-9dcac51225ed"]
+    uniform token aeco:plan:taskType = "construction"
+    string aeco:plan:wbsCode = "Fitout.Services.act.ceiling.corridor"
+    string aeco:schedule:actualFinish = ""
+    string aeco:schedule:actualStart = ""
+    string aeco:schedule:baselineFinish = ""
+    string aeco:schedule:baselineStart = ""
+    double aeco:schedule:percentComplete = 0
+    string aeco:schedule:plannedFinish = "2027-04-11"
+    string aeco:schedule:plannedStart = "2027-04-05"
+    rel aeco:workspace:accessVia = None
+    rel aeco:workspace:encloses = </demo_datacentre_01/demo_datacentre_01_Site/demo_datacentre_01/L01_Office/Office_Corridor_L01/Corridor_ceiling_void>
+    rel aeco:workspace:occupies = None
+    rel aeco:workspace:requiresAccess = </demo_datacentre_01/demo_datacentre_01_Site/demo_datacentre_01/L01_Office/Office_Corridor_L01>
+    uniform token collection:members:expansionRule = "explicitOnly"
+    rel collection:members:includes = </demo_datacentre_01/demo_datacentre_01_Site/demo_datacentre_01/L01_Office/Office_Corridor_L01/clg_ocorr_1>
+   }
+
+   def AecoActivity "act_ceiling_office_ac37b5a243" (
+    prepend apiSchemas = ["AecoScheduleAPI", "AecoWorkspaceAPI", "CollectionAPI:members"]
+    displayName = "Close office ceiling"
+   )
+   {
+    string aeco:id = "9556954c-0b5a-53d9-a0d5-14832a3fc47d"
+    double[] aeco:plan:lagDays = [21]
+    token[] aeco:plan:linkType = ["FS"]
+    string[] aeco:plan:predecessorIds = ["41e5df03-8346-546f-a6fd-9dcac51225ed"]
+    uniform token aeco:plan:taskType = "construction"
+    string aeco:plan:wbsCode = "Fitout.Services.act.ceiling.office"
+    string aeco:schedule:actualFinish = ""
+    string aeco:schedule:actualStart = ""
+    string aeco:schedule:baselineFinish = ""
+    string aeco:schedule:baselineStart = ""
+    double aeco:schedule:percentComplete = 0
+    string aeco:schedule:plannedFinish = "2027-04-11"
+    string aeco:schedule:plannedStart = "2027-04-05"
+    rel aeco:workspace:accessVia = None
+    rel aeco:workspace:encloses = </demo_datacentre_01/demo_datacentre_01_Site/demo_datacentre_01/L01_Office/Open_Office/Office_ceiling_void>
+    rel aeco:workspace:occupies = None
+    rel aeco:workspace:requiresAccess = </demo_datacentre_01/demo_datacentre_01_Site/demo_datacentre_01/L01_Office/Open_Office>
+    uniform token collection:members:expansionRule = "explicitOnly"
+    rel collection:members:includes = </demo_datacentre_01/demo_datacentre_01_Site/demo_datacentre_01/L01_Office/Open_Office/clg_office>
+   }
+
+   def AecoActivity "act_first_2172921906" (
+    prepend apiSchemas = ["AecoScheduleAPI", "AecoWorkspaceAPI", "CollectionAPI:members"]
+    displayName = "MEP first fix in both voids"
+   )
+   {
+    string aeco:id = "67223f5c-b5d8-5e86-8e6a-c9275d1373a3"
+    double[] aeco:plan:lagDays = [14]
+    token[] aeco:plan:linkType = ["FS"]
+    string[] aeco:plan:predecessorIds = ["41e5df03-8346-546f-a6fd-9dcac51225ed"]
+    uniform token aeco:plan:taskType = "installation"
+    string aeco:plan:wbsCode = "Fitout.Services.act.first"
+    string aeco:schedule:actualFinish = ""
+    string aeco:schedule:actualStart = ""
+    string aeco:schedule:baselineFinish = ""
+    string aeco:schedule:baselineStart = ""
+    double aeco:schedule:percentComplete = 0
+    string aeco:schedule:plannedFinish = "2027-04-18"
+    string aeco:schedule:plannedStart = "2027-03-29"
+    rel aeco:workspace:accessVia = None
+    rel aeco:workspace:encloses = None
+    rel aeco:workspace:occupies = None
+    rel aeco:workspace:requiresAccess = [
+     </demo_datacentre_01/demo_datacentre_01_Site/demo_datacentre_01/L01_Office/Office_Corridor_L01/Corridor_ceiling_void>,
+     </demo_datacentre_01/demo_datacentre_01_Site/demo_datacentre_01/L01_Office/Open_Office/Office_ceiling_void>,
+    ]
+    uniform token collection:members:expansionRule = "explicitOnly"
+    rel collection:members:includes = [
+     </demo_datacentre_01/demo_datacentre_01_Site/demo_datacentre_01/L01_Office/Office_Corridor_L01/Corridor_ceiling_void/pipe_chw_void_f>,
+     </demo_datacentre_01/demo_datacentre_01_Site/demo_datacentre_01/L01_Office/Office_Corridor_L01/Corridor_ceiling_void/pipe_chw_void_r>,
+     </demo_datacentre_01/demo_datacentre_01_Site/demo_datacentre_01/L01_Office/Office_Corridor_L01/Corridor_ceiling_void/tray_void_ocorr_1>,
+     </demo_datacentre_01/demo_datacentre_01_Site/demo_datacentre_01/L01_Office/Open_Office/Office_ceiling_void/cnd_void_office_1>,
+     </demo_datacentre_01/demo_datacentre_01_Site/demo_datacentre_01/L01_Office/Open_Office/Office_ceiling_void/cnd_void_office_2>,
+     </demo_datacentre_01/demo_datacentre_01_Site/demo_datacentre_01/L01_Office/Open_Office/Office_ceiling_void/fcu_office_1>,
+    ]
+   }
+
+   def AecoActivity "act_inspect_03ca3cdbdd" (
+    prepend apiSchemas = ["AecoScheduleAPI", "AecoWorkspaceAPI", "CollectionAPI:members"]
+    displayName = "Inspect first fix"
+   )
+   {
+    string aeco:id = "1ed3439f-b55b-5f2e-be92-b6c00e0b3314"
+    double[] aeco:plan:lagDays = [1]
+    token[] aeco:plan:linkType = ["FS"]
+    string[] aeco:plan:predecessorIds = ["67223f5c-b5d8-5e86-8e6a-c9275d1373a3"]
+    uniform token aeco:plan:taskType = "attendance"
+    string aeco:plan:wbsCode = "Fitout.Services.act.inspect"
+    string aeco:schedule:actualFinish = ""
+    string aeco:schedule:actualStart = ""
+    string aeco:schedule:baselineFinish = ""
+    string aeco:schedule:baselineStart = ""
+    double aeco:schedule:percentComplete = 0
+    string aeco:schedule:plannedFinish = "2027-04-20"
+    string aeco:schedule:plannedStart = "2027-04-19"
+    rel aeco:workspace:accessVia = None
+    rel aeco:workspace:encloses = None
+    rel aeco:workspace:occupies = None
+    rel aeco:workspace:requiresAccess = [
+     </demo_datacentre_01/demo_datacentre_01_Site/demo_datacentre_01/L01_Office/Office_Corridor_L01/Corridor_ceiling_void>,
+     </demo_datacentre_01/demo_datacentre_01_Site/demo_datacentre_01/L01_Office/Open_Office/Office_ceiling_void>,
+    ]
+    uniform token collection:members:expansionRule = "explicitOnly"
+    rel collection:members:includes = [
+     </demo_datacentre_01/demo_datacentre_01_Site/demo_datacentre_01/L01_Office/Office_Corridor_L01/Corridor_ceiling_void>,
+     </demo_datacentre_01/demo_datacentre_01_Site/demo_datacentre_01/L01_Office/Open_Office/Office_ceiling_void>,
+    ]
+   }
+
+   def AecoActivity "act_second_c3b73d5c53" (
+    prepend apiSchemas = ["AecoScheduleAPI", "AecoWorkspaceAPI", "CollectionAPI:members"]
+    displayName = "Luminaires and grilles from below"
+   )
+   {
+    string aeco:id = "02f6179d-b2cd-5945-99a1-d5b634e3ea5f"
+    double[] aeco:plan:lagDays = [8]
+    token[] aeco:plan:linkType = ["FS"]
+    string[] aeco:plan:predecessorIds = ["9556954c-0b5a-53d9-a0d5-14832a3fc47d"]
+    uniform token aeco:plan:taskType = "installation"
+    string aeco:plan:wbsCode = "Fitout.Services.act.second"
+    string aeco:schedule:actualFinish = ""
+    string aeco:schedule:actualStart = ""
+    string aeco:schedule:baselineFinish = ""
+    string aeco:schedule:baselineStart = ""
+    double aeco:schedule:percentComplete = 0
+    string aeco:schedule:plannedFinish = "2027-04-30"
+    string aeco:schedule:plannedStart = "2027-04-19"
+    rel aeco:workspace:accessVia = None
+    rel aeco:workspace:encloses = None
+    rel aeco:workspace:occupies = None
+    rel aeco:workspace:requiresAccess = </demo_datacentre_01/demo_datacentre_01_Site/demo_datacentre_01/L01_Office/Open_Office>
+    uniform token collection:members:expansionRule = "explicitOnly"
+    rel collection:members:includes = [
+     </demo_datacentre_01/demo_datacentre_01_Site/demo_datacentre_01/L01_Office/Open_Office/grl_office_1>,
+     </demo_datacentre_01/demo_datacentre_01_Site/demo_datacentre_01/L01_Office/Open_Office/grl_office_2>,
+     </demo_datacentre_01/demo_datacentre_01_Site/demo_datacentre_01/L01_Office/Open_Office/grl_office_3>,
+     </demo_datacentre_01/demo_datacentre_01_Site/demo_datacentre_01/L01_Office/Open_Office/grl_office_4>,
+     </demo_datacentre_01/demo_datacentre_01_Site/demo_datacentre_01/L01_Office/Open_Office/lum_office_1>,
+     </demo_datacentre_01/demo_datacentre_01_Site/demo_datacentre_01/L01_Office/Open_Office/lum_office_2>,
+     </demo_datacentre_01/demo_datacentre_01_Site/demo_datacentre_01/L01_Office/Open_Office/lum_office_3>,
+     </demo_datacentre_01/demo_datacentre_01_Site/demo_datacentre_01/L01_Office/Open_Office/lum_office_4>,
+     </demo_datacentre_01/demo_datacentre_01_Site/demo_datacentre_01/L01_Office/Open_Office/lum_office_5>,
+     </demo_datacentre_01/demo_datacentre_01_Site/demo_datacentre_01/L01_Office/Open_Office/lum_office_6>,
+    ]
+   }
+
+   def AecoActivity "act_third_e9cbadd210" (
+    prepend apiSchemas = ["AecoScheduleAPI", "AecoWorkspaceAPI", "CollectionAPI:members"]
+    displayName = "Drainage and sanitary third fix"
+   )
+   {
+    string aeco:id = "7069e67d-2de8-57ce-ad65-2f829aa41dfd"
+    double[] aeco:plan:lagDays = [3]
+    token[] aeco:plan:linkType = ["FS"]
+    string[] aeco:plan:predecessorIds = ["fbf22e78-d554-5672-91f0-3fcd31fde6d5"]
+    uniform token aeco:plan:taskType = "installation"
+    string aeco:plan:wbsCode = "Fitout.Services.act.third"
+    string aeco:schedule:actualFinish = ""
+    string aeco:schedule:actualStart = ""
+    string aeco:schedule:baselineFinish = ""
+    string aeco:schedule:baselineStart = ""
+    double aeco:schedule:percentComplete = 0
+    string aeco:schedule:plannedFinish = "2027-05-09"
+    string aeco:schedule:plannedStart = "2027-05-03"
+    rel aeco:workspace:accessVia = None
+    rel aeco:workspace:encloses = None
+    rel aeco:workspace:occupies = None
+    rel aeco:workspace:requiresAccess = </demo_datacentre_01/demo_datacentre_01_Site/demo_datacentre_01/L01_Office/WC>
+    uniform token collection:members:expansionRule = "explicitOnly"
+    rel collection:members:includes = [
+     </demo_datacentre_01/demo_datacentre_01_Site/demo_datacentre_01/L01_Office/WC/pipe_drain_pod>,
+     </demo_datacentre_01/demo_datacentre_01_Site/demo_datacentre_01/L01_Office/WC/san_pod_1>,
+     </demo_datacentre_01/demo_datacentre_01_Site/demo_datacentre_01/L01_Office/WC/san_pod_2>,
+    ]
+   }
+  }
+ }
+}
+

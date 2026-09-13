@@ -1,0 +1,13 @@
+{
+  "adaptations": [
+    "Native exact producer is not rerun; committed geometry is rebased over full."
+  ],
+  "differences": [],
+  "expectedFindings": 5,
+  "findings": 5,
+  "producer": "committed result v0.1.5",
+  "run": false,
+  "source": "kind/usdaeco-solid/examples/datacentre/run.py",
+  "sourceSha256": "0118e7228b59c88cb24366d29f26a2d70ff2d255f392190f982b791185df4c26",
+  "tag": "v0.1.5"
+}
