@@ -134,11 +134,12 @@ remain independent repositories at their recorded tags.
 
 ## Status
 
-Version 0.3.0 adds the flattened form, a Bonsai cooling delivery and a building
-walkthrough. Its [guide](stage/README.md)
-records what was run, what uses committed results, and the limits of the
-expected analysis findings and mute-validation deviations. The complete measured
-record is [stage/manifest.json](stage/manifest.json).
+Version 0.4.0 adds [Working with the integrated stage](docs/stage/index.html)
+and a checkout walkthrough in the documentation hub. The guide connects forms,
+deliveries, traversal and views to the published evidence. The stage remains the
+0.3.0 artifact; its [reference](stage/README.md) records what was run, what uses
+committed results, and the limits of expected analysis findings and mute-validation
+deviations. The complete measured record is [stage/manifest.json](stage/manifest.json).
 
 ## Licence
 

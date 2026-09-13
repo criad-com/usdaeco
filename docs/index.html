@@ -17,6 +17,7 @@
   <div class="nav-menu">
     <p class="caption">Schema Domains</p>
     <ul>
+      <li><a href="stage/index.html">Working with the integrated stage</a></li>
       <li><a href="schemas/usdAeco/overview.html">Built Environment (usdAeco)</a></li>
       <li class="pending"><a href="https://github.com/criad-com/usdaeco-axis">Path Drivers (usdAecoAxis)<span class="tag">guide to follow</span></a></li>
       <li class="pending"><a href="https://github.com/criad-com/usdaeco-buildup">Layered Sections (usdAecoBuildUp)<span class="tag">guide to follow</span></a></li>
@@ -67,6 +68,24 @@ applies to core prims and never changes the core's structure.</p>
 </ul>
 
 <p>Guides marked "to follow" link to their repositories until their pages exist.</p>
+
+<h2 id="working-with-the-suite">Working with the suite<a class="headerlink" href="#working-with-the-suite" title="Link to this heading">¶</a></h2>
+
+<p>Clone the usdAECO suite with its released submodules, check the checkout, then open the
+integrated stage in usdview. Use your Git service's suite URL and an existing Python 3.11+
+environment with Pillow and pytest; usdview needs an existing OpenUSD installation.
+See the <a href="../README.md#build-and-check">setup instructions</a> for prerequisites.</p>
+
+<pre><code class="sh">git clone --recurse-submodules &lt;suite-repository-url&gt; usdaeco
+cd usdaeco
+export PYTHON=python3
+env -u PYTHONPATH "$PYTHON" check.py
+usdview stage/demo-datacentre-01.usd-only.usda</code></pre>
+
+<p><a href="stage/index.html">Working with the integrated stage</a> explains the three forms,
+discipline deliveries, building traversal, views and measured proof. Form C above uses USD
+twins and needs no suite plugins. The <a href="suite.md">suite map</a> links each pinned
+repository's documentation.</p>
 
 <div class="footer-nav">
   <span></span>

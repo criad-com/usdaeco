@@ -116,13 +116,13 @@ def site(root):
     from PIL import Image, ImageStat
 
     record = read_json(root / "docs/site.json")
-    expected = {"index.html", "schemas/usdAeco/overview.html", "_static/aeco.css", "schemas/usdAeco/usdAecoExample.png"}
+    expected = {"index.html", "stage/index.html", "schemas/usdAeco/overview.html", "_static/aeco.css", "schemas/usdAeco/usdAecoExample.png"}
     require(set(record["files"]) == expected, "site inventory differs")
     total = 0
     for path, entry in record["files"].items():
         content = (root / "docs" / path).read_bytes()
         require(len(content) == entry["bytes"] and hashlib.sha256(content).hexdigest() == entry["sha256"],
-                f"{path}: site content differs from import inventory")
+                f"{path}: site content differs from site inventory")
         total += len(content)
     png = root / "docs/schemas/usdAeco/usdAecoExample.png"
     with Image.open(png) as image:
@@ -131,7 +131,7 @@ def site(root):
                 "site PNG format or caps differ")
         require(max(ImageStat.Stat(image.convert("RGB")).var) > 0, "site PNG is uniform")
         dimensions = f"{image.width}x{image.height}"
-    return f"4 site assets, {total} bytes; PNG {dimensions}, non-uniform"
+    return f"{len(expected)} site assets, {total} bytes; PNG {dimensions}, non-uniform"
 
 
 def terms(root, extra_patterns=()):

@@ -3,7 +3,8 @@
 Release train: `aeco-0.8.1`.
 
 Each repository is a submodule at the tag shown. Paths are relative to this checkout.
-See the [HTML guide](index.html) and [integrated stage guide](../stage/README.md).
+See the [HTML guide](index.html), [Working with the integrated stage](stage/index.html)
+and [stage setup and reproduction](../stage/README.md).
 
 ## core
 

@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Working with the integrated stage — usdAECO schema domains</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&family=Roboto+Slab:wght@400;700&display=swap">
+<link rel="stylesheet" href="../_static/aeco.css">
+</head>
+<body>
+<button class="nav-toggle" type="button" aria-label="Toggle navigation" onclick="document.querySelector('.nav-side').classList.toggle('open')">☰ Menu</button>
+<nav class="nav-side" aria-label="Navigation menu">
+  <div class="nav-head">
+    <a href="../index.html">usdAECO<span class="sub">schema domains for the built environment</span></a>
+  </div>
+  <div class="nav-menu">
+    <p class="caption">Schema Domains</p>
+    <ul>
+      <li class="current"><a href="index.html">Working with the integrated stage</a>
+        <ul>
+          <li><a href="#stage">What the Stage Contains</a></li>
+          <li><a href="#forms">Choosing a Form</a></li>
+          <li><a href="#folders">Reading a Package Folder</a></li>
+          <li><a href="#layers">Reading the Layer Stack</a></li>
+          <li><a href="#walking">Walking the Building</a></li>
+          <li><a href="#muting">Muting a Delivery</a></li>
+          <li><a href="#views">Choosing a View</a></li>
+          <li><a href="#proof">Reading the Connected Proof</a></li>
+          <li><a href="#checks">Where the Numbers Come From</a></li>
+        </ul>
+      </li>
+      <li><a href="../schemas/usdAeco/overview.html">Built Environment (usdAeco)</a></li>
+      <li class="pending"><a href="https://github.com/criad-com/usdaeco-axis">Path Drivers (usdAecoAxis)<span class="tag">guide to follow</span></a></li>
+      <li class="pending"><a href="https://github.com/criad-com/usdaeco-buildup">Layered Sections (usdAecoBuildUp)<span class="tag">guide to follow</span></a></li>
+      <li class="pending"><a href="https://github.com/criad-com/usdaeco-wall">Walls (usdAecoWall)<span class="tag">guide to follow</span></a></li>
+      <li class="pending"><a href="https://github.com/criad-com/usdaeco-pipe">Pipes (usdAecoPipe)<span class="tag">guide to follow</span></a></li>
+      <li class="pending"><a href="https://github.com/criad-com/usdaeco-sync">Host Sync (usdAecoSync)<span class="tag">guide to follow</span></a></li>
+      <li class="pending"><a href="https://github.com/criad-com/usdaeco-cctv">Cameras (usdAecoCctv)<span class="tag">guide to follow</span></a></li>
+      <li class="pending"><a href="https://github.com/criad-com/usdaeco-clash">Clash (usdAecoClash)<span class="tag">guide to follow</span></a></li>
+      <li class="pending"><a href="https://github.com/criad-com/usdaeco-plan">Programmes (usdAecoPlan)<span class="tag">guide to follow</span></a></li>
+      <li class="pending"><a href="https://github.com/criad-com/usdaeco-repeat">Repeated Floors (usdAecoRepeat)<span class="tag">guide to follow</span></a></li>
+      <li class="pending"><a href="https://github.com/criad-com/usdaeco-compliance">Compliance (usdAecoCompliance)<span class="tag">guide to follow</span></a></li>
+      <li class="pending"><a href="https://github.com/criad-com/usdaeco-solid">Exact Bodies (usdaeco-solid)<span class="tag">guide to follow</span></a></li>
+    </ul>
+    <p class="caption">Reference</p>
+    <ul>
+      <li><a href="https://github.com/criad-com/usdaeco-core">usdaeco-core on GitHub</a></li>
+      <li><a href="https://github.com/criad-com/usdaeco-toolchain">Build and check kit</a></li>
+      <li><a href="https://github.com/criad-com/usdaeco-scenarios">Suite manifest</a></li>
+    </ul>
+  </div>
+</nav>
+
+<div class="content-wrap">
+<main class="content">
+<ul class="breadcrumbs">
+  <li><a href="../index.html">Schema Domains</a></li>
+  <li class="current">Working with the integrated stage</li>
+</ul>
+<hr class="top">
+
+<h1 id="working-with-the-integrated-stage">Working with the integrated stage<a class="headerlink" href="#working-with-the-integrated-stage" title="Link to this heading">¶</a></h1>
+
+<p class="lead">The integrated stage brings the usdAECO suite's deliveries and studies into
+one building. Start with the USD-only form, walk its spatial structure, then inspect which
+package supplies each element. The <a href="../../stage/README.md">stage reference</a>
+documents the published files and runtime setup; the
+<a href="../index.html#working-with-the-suite">suite walkthrough</a> covers the initial checkout.</p>
+
+<h2 id="stage">What the Stage Contains<a class="headerlink" href="#stage" title="Link to this heading">¶</a></h2>
+
+<p>Read the stage as a set of project deliveries: one shared spatial spine, packages by
+discipline, and analyses above them. The <code>demo-datacentre-01</code> facility contains three
+levels, 41 spaces and 3,009 delivered elements. Eight discipline packages contribute site,
+architecture, structure, cooling, electrical, IT, fitout and security elements. The shared
+package defines their spatial containers. These counts are recorded in
+<a href="../../stage/manifest.json">manifest.json</a> under <code>packages</code>,
+<code>proofs.layout.elementsByPackage</code> and <code>proofs.vanilla.census</code>.</p>
+
+<figure class="fig-svg">
+<svg viewBox="0 0 740 260" width="740" height="260" role="img" aria-labelledby="delivery-title">
+  <title id="delivery-title">Deliveries and analyses compose over one shared spatial spine</title>
+  <defs><marker id="delivery-arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" class="arrow"/></marker></defs>
+  <rect class="box" x="20" y="14" width="700" height="48" rx="3"/>
+  <text class="label b" x="370" y="35" text-anchor="middle">Analyses and presentation</text>
+  <text class="label s" x="370" y="52" text-anchor="middle">Coverage · clash · programmes · compliance · quantities · representations</text>
+  <path class="edge" d="M370 98 V66" marker-end="url(#delivery-arrow)"/>
+  <rect class="box child" x="20" y="102" width="220" height="52" rx="3"/>
+  <text class="label b" x="130" y="124" text-anchor="middle">Architecture · structure · site</text>
+  <text class="label s" x="130" y="143" text-anchor="middle">Discipline deliveries</text>
+  <rect class="box child" x="260" y="102" width="220" height="52" rx="3"/>
+  <text class="label b" x="370" y="124" text-anchor="middle">Cooling · electrical</text>
+  <text class="label s" x="370" y="143" text-anchor="middle">Discipline deliveries</text>
+  <rect class="box child" x="500" y="102" width="220" height="52" rx="3"/>
+  <text class="label b" x="610" y="124" text-anchor="middle">IT · fitout · security</text>
+  <text class="label s" x="610" y="143" text-anchor="middle">Discipline deliveries</text>
+  <path class="edge" d="M130 196 V158" marker-end="url(#delivery-arrow)"/>
+  <path class="edge" d="M370 196 V158" marker-end="url(#delivery-arrow)"/>
+  <path class="edge" d="M610 196 V158" marker-end="url(#delivery-arrow)"/>
+  <rect class="box core" x="20" y="198" width="700" height="48" rx="3"/>
+  <text class="label b" x="370" y="219" text-anchor="middle">Shared spatial spine</text>
+  <text class="label s" x="370" y="237" text-anchor="middle">Project → site → facility → levels → spaces</text>
+</svg>
+<figcaption>Deliveries overlay the shared containers. Studies add opinions above the deliveries;
+see the <a href="../../stage/demo-datacentre-01.usd-only.usda">USD-only root's sublayers</a>.</figcaption>
+</figure>
+
+<p>The namespace describes location, layers describe delivery ownership, and collections
+describe groups. Identity stays in <code>aeco:id</code>; kind comes from classification.
+Editors author drivers, while computed representations and findings belong in derived layers.
+These are the <a href="../../core/usdaeco-core/docs/03-design-model.md">core design commitments</a>,
+also introduced in the <a href="../schemas/usdAeco/overview.html">Built Environment guide</a>.</p>
+
+<h2 id="forms">Choosing a Form<a class="headerlink" href="#forms" title="Link to this heading">¶</a></h2>
+
+<p>All three forms describe the same composed scene, within the measured
+<a href="#proof">comparison limits</a>. “No plugins” below means stock OpenUSD is sufficient;
+the viewer itself must already be installed. The files and opening requirements are listed in
+the <a href="../../stage/README.md">stage reference</a>.</p>
+
+<div class="tablewrap"><table class="docutils">
+<thead><tr><th>Form</th><th>Open under <code>stage/</code></th><th>Needs beyond OpenUSD</th><th>Use it for</th></tr></thead>
+<tbody>
+<tr><td>A · Connected</td><td><a href="../../stage/demo-datacentre-01.usda">demo-datacentre-01.usda</a></td><td><code>usdIfc</code> and its configured converter</td><td>Reading delivered IFC files through the layer stack</td></tr>
+<tr><td>B · Flattened</td><td><a href="../../stage/demo-datacentre-01.flat.usdc">demo-datacentre-01.flat.usdc</a></td><td>Nothing</td><td>Opening or sharing one self-contained crate</td></tr>
+<tr><td>C · USD-only</td><td><a href="../../stage/demo-datacentre-01.usd-only.usda">demo-datacentre-01.usd-only.usda</a></td><td>Nothing</td><td>Inspecting and muting the editable layer stack</td></tr>
+</tbody></table></div>
+
+<pre><code class="sh">usdview stage/demo-datacentre-01.usd-only.usda
+usdview stage/demo-datacentre-01.flat.usdc</code></pre>
+
+<p>Keep Form C with its relative layer tree. Form B can be opened alone, but its composition
+is baked: use A or C for package muting. Optional schema plugins enrich semantic queries and
+validation. Configure an ABI-matched <code>usdIfc</code> runtime using the
+<a href="../../hosts/usdaeco-ifc/docs/file-format.md">IFC reader instructions</a> and the
+<a href="../../stage/README.md#reproduce-and-verify">stage setup</a> before opening A.</p>
+
+<h2 id="folders">Reading a Package Folder<a class="headerlink" href="#folders" title="Link to this heading">¶</a></h2>
+
+<p>The <a href="../../stage/packages/cooling/README.md">cooling delivery</a> illustrates the
+folder convention. The delivered IFC and its USD twin sit beside one another; the twin
+separates semantics from geometry. Its overlays can be inspected independently.</p>
+
+<pre><code>stage/packages/cooling/
+  cooling.ifc                 delivered model
+  cooling.usda                USD twin root
+  cooling.semantics.usda      identities, classifications and relationships
+  cooling.geometry.usdc       display geometry
+  drivers.usda                catalog inheritance
+  derived.usda                computed representation placement
+  presentation.usda           display opinions
+  bonsai-export.json          delivery comparison receipt
+  README.md                   producer and census</code></pre>
+
+<p>Cooling was exported by Bonsai without model edits. Its
+<a href="../../stage/packages/cooling/bonsai-export.json">comparison receipt</a> records 16,163
+IFC GlobalIds, 184 document references and 184 document associations with none lost or added.
+The <a href="../../stage/manifest.json">suite manifest's <code>analyses</code> entries</a> separately
+identify each study's producer and whether its hook ran. Clash retains committed exact results;
+Solid uses a committed exact result. Full-facility exact recomputation is not proven.</p>
+
+<h2 id="layers">Reading the Layer Stack<a class="headerlink" href="#layers" title="Link to this heading">¶</a></h2>
+
+<p>At the Sdf layer level, <code>customLayerData</code> records the role, package, producer,
+source, source hash and production tag. This header excerpt comes from
+<a href="../../stage/packages/cooling/cooling.usda">cooling.usda</a>; its tag describes the
+published stage data, independently of this documentation release.</p>
+
+<pre><code class="usda">#usda 1.0
+(
+    customLayerData = {
+        string "aeco:layer:package" = "cooling"
+        string "aeco:layer:producer" = "Bonsai 0.8.5 (Blender 5.1.2) export of the generator delivery"
+        string "aeco:layer:role" = "package"
+        string "aeco:layer:source" = "cooling.ifc"
+        string "aeco:layer:sourceSha256" = "87e915c28ea9836e348f77bc91c36e97e6b008e7b9b01279df8aab44170627be"
+        string "aeco:layer:tag" = "v0.3.0"
+    }
+)</code></pre>
+
+<p>Read the root's <code>subLayers</code> list from strongest to weakest. In both
+<a href="../../stage/demo-datacentre-01.usda">A</a> and
+<a href="../../stage/demo-datacentre-01.usd-only.usda">C</a>, presentation comes first,
+then analyses, then the discipline deliveries and finally the shared spine.
+Each package's own order is presentation, derived placement when present, catalog drivers,
+then the delivery. The following figure abbreviates those lists.</p>
+
+<figure class="fig-svg">
+<svg viewBox="0 0 740 292" width="740" height="292" role="img" aria-labelledby="stack-title">
+  <title id="stack-title">The layer stack in strongest-to-weakest delivery order</title>
+  <defs><marker id="stack-arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" class="arrow"/></marker></defs>
+  <text class="label b" x="18" y="28">Strongest</text>
+  <path class="edge" d="M54 42 V244" marker-end="url(#stack-arrow)"/>
+  <text class="label b" x="18" y="274">Weakest</text>
+  <rect class="box" x="122" y="10" width="596" height="42" rx="3"/>
+  <text class="mono" x="140" y="36">presentation/*.usda</text>
+  <rect class="box" x="122" y="64" width="596" height="42" rx="3"/>
+  <text class="mono" x="140" y="90">analysis/*/root.usda</text>
+  <rect class="box child" x="122" y="118" width="596" height="96" rx="3"/>
+  <text class="label b" x="140" y="140">Packages: site → arch → structure → cooling → electrical → IT → fitout → security</text>
+  <text class="label" x="140" y="163">Within each: presentation → derived (when present) → drivers → delivery</text>
+  <text class="mono" x="140" y="191">A: &lt;package&gt;.ifc       C: &lt;package&gt;.usda</text>
+  <rect class="box core" x="122" y="226" width="596" height="50" rx="3"/>
+  <text class="label b" x="140" y="247">Shared package overlays and spatial delivery</text>
+  <text class="mono" x="140" y="265">A: shared.ifc          C: shared.usda</text>
+</svg>
+<figcaption>The delivery sequence is explicit in the roots. The shared spatial definitions
+remain below the discipline overlays; see <a href="../../stage/packages/shared/shared.semantics.usda">shared semantics</a>.</figcaption>
+</figure>
+
+<p>The connected root replaces the twin delivery entries with IFC layer identifiers. These
+two entries, excerpted from <a href="../../stage/demo-datacentre-01.usda">Form A</a>, show the
+reader's format arguments. <code>spine=over</code> overlays existing spatial prims and
+<code>geometry=1</code> includes geometry; shared uses the default defining form. The
+<a href="../../hosts/usdaeco-ifc/docs/file-format.md">reader contract</a> defines both arguments.</p>
+
+<pre><code class="usda">@packages/cooling/cooling.ifc:SDF_FORMAT_ARGS:spine=over&amp;geometry=1@
+@packages/shared/shared.ifc@</code></pre>
+
+<p>The root declares metres, Z up and 17 stock fallback types. Its animation range is 0–288
+at 24 fps. These values are authored in <a href="../../stage/demo-datacentre-01.usd-only.usda">Form C</a>.
+Source stamps are provenance to inspect: <a href="../../stage/manifest.json">manifest.json</a>
+also records six inherited electrical/IT source-stamp differences under
+<code>sourceStampDifferences</code>, separately from verified file-copy hashes.</p>
+
+<h2 id="walking">Walking the Building<a class="headerlink" href="#walking" title="Link to this heading">¶</a></h2>
+
+<p>Run <a href="../../tools/usdaeco_suite/traverse.py">traverse.py</a> from the suite root with
+an existing Python environment containing USD. It prints spatial containers and elements,
+then identifies the package with the element's defining spec. A stronger analysis opinion
+does not take ownership from that delivery.</p>
+
+<pre><code class="sh">export PYTHON=python3
+env -u PYTHONPATH "$PYTHON" tools/usdaeco_suite/traverse.py --summary
+env -u PYTHONPATH "$PYTHON" tools/usdaeco_suite/traverse.py --package cooling</code></pre>
+
+<p>The utility finds the site below the default project prim, then walks it with
+<code>Usd.PrimRange</code>. This excerpt from its <code>rows</code> function finds that start point:</p>
+
+<pre><code class="python">project = stage.GetDefaultPrim()
+site = next((p for p in Usd.PrimRange(project) if p.GetTypeName() == 'AecoSite'), None)</code></pre>
+
+<p>The actual site path is
+<code>/demo_datacentre_01/demo_datacentre_01_Site</code>. The plugin-free utility reads the
+five spatial type names and the authored <code>AecoElementAPI</code> metadata. With the core
+registered, the corresponding semantic queries use <code>IsA</code> on the spatial base and
+<code>HasAPI</code> on the element API; see the
+<a href="../schemas/usdAeco/overview.html#core-and-others">core query example</a>.
+The <a href="../../stage/README.md#walking-the-building">recorded traversal</a> includes this
+cooling branch (other branches are omitted):</p>
+
+<pre><code>demo_datacentre_01_Site [packages/shared]
+  demo_datacentre_01 [packages/shared]
+    L01_Office [packages/shared]
+      Office_Corridor_L01 [packages/shared]
+        Corridor_ceiling_void [packages/shared]
+          pipe_clash_hard [packages/cooling]
+          pipe_clash_near [packages/cooling]
+          pipe_clash_tangent [packages/cooling]</code></pre>
+
+<p>The delivered catalog and systems also sit below the project root. Analyses have their
+own roots, such as <code>/Clash</code>, <code>/Programme</code> and <code>/Specifications</code>.
+The utility prints those roots separately; its summary agrees with the
+<a href="../../stage/manifest.json">manifest's <code>proofs.layout.elementsByPackage</code></a>.</p>
+
+<h2 id="muting">Muting a Delivery<a class="headerlink" href="#muting" title="Link to this heading">¶</a></h2>
+
+<p>Open Form C and mute <code>packages/cooling/cooling.usda</code> in usdview's layer browser.
+This removes the source delivery's contribution. Independently authored drivers, placements
+and analysis opinions can remain, so the remaining prim count is not the baseline minus
+the cooling element count. Unmute the layer to restore the baseline. The measured drill
+is recorded in <a href="../../stage/manifest.json">manifest.json</a> under
+<code>proofs.mute.rows</code>, keyed by <code>layer</code>.</p>
+
+<div class="tablewrap"><table class="docutils">
+<caption>Selected manifest mute rows; counts are diagnostics newly exposed relative to baseline.</caption>
+<thead><tr><th>Muted layer</th><th>Remaining prims</th><th>Unchanged transforms compared</th><th>Port sites, predicted / observed</th><th>Dependency errors</th></tr></thead>
+<tbody>
+<tr><td><a href="../../stage/packages/cooling/cooling.usda">Cooling delivery</a></td><td>15,481</td><td>11,991</td><td>184 / 184</td><td>495</td></tr>
+<tr><td><a href="../../stage/packages/electrical/electrical.usda">Electrical delivery</a></td><td>12,709</td><td>9,815</td><td>344 / 344</td><td>15</td></tr>
+<tr><td><a href="../../stage/analysis/cctv/root.usda">CCTV analysis</a></td><td>15,421</td><td>15,052</td><td>0 / 0</td><td>11</td></tr>
+<tr><td><a href="../../stage/analysis/compliance/root.usda">Compliance analysis</a></td><td>15,562</td><td>15,179</td><td>0 / 0</td><td>0</td></tr>
+</tbody></table></div>
+
+<p>Every row above has zero composition errors and zero moved transforms. Cooling's 495
+dependency errors break down into 475 <code>PipeMissingAxis</code>, 11 <code>ComplianceStale</code>,
+6 <code>ClashResultWithoutElements</code> and 3 <code>QuantityStale</code>. The
+<a href="../../stage/manifest.json">mute table's <code>dependencyRules</code></a> explains the rules.
+For example, <code>ComplianceStale</code> means a persisted measurement's composed inputs changed;
+restore its dependency before treating that receipt as current.</p>
+
+<figure class="fig-svg">
+<svg viewBox="0 0 740 162" width="740" height="162" role="img" aria-labelledby="mute-title">
+  <title id="mute-title">Cooling muting preserves compared placement but exposes dependency diagnostics</title>
+  <defs><marker id="mute-arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" class="arrow"/></marker></defs>
+  <rect class="box" x="12" y="50" width="196" height="58" rx="3"/>
+  <text class="label b" x="110" y="75" text-anchor="middle">Mute cooling.usda</text>
+  <text class="label s" x="110" y="96" text-anchor="middle">Other opinions can remain</text>
+  <path class="edge" d="M208 79 H264 V39 H304" marker-end="url(#mute-arrow)"/>
+  <path class="edge" d="M264 79 V121 H304" marker-end="url(#mute-arrow)"/>
+  <rect class="box core" x="310" y="12" width="416" height="54" rx="3"/>
+  <text class="label b" x="328" y="34">Composition and placement</text>
+  <text class="label" x="328" y="54">0 composition errors · 11,991 unchanged transforms</text>
+  <rect class="box child" x="310" y="94" width="416" height="54" rx="3"/>
+  <text class="label b" x="328" y="116">Dependencies to inspect</text>
+  <text class="label" x="328" y="136">184 dangling port sites · 495 analysis errors</text>
+</svg>
+<figcaption>Placement and dependency validity are separate measurements in
+<a href="../../stage/manifest.json">the cooling mute row</a>.</figcaption>
+</figure>
+
+<p>The complete recorded drill covers 117 cases, including 20 view-only layers absent from
+the integrated stack. It compares 19 animated prims at 109 authored transform samples and
+records no placement changes or composition errors. Sixty cases expose analysis dependency
+errors; the port-only diagnostic requirement is therefore not met. The
+<a href="../../stage/README.md#acceptance-and-deviations">acceptance notes</a> and
+<a href="../../stage/manifest.json">mute proof</a> retain this limitation explicitly.</p>
+
+<h2 id="views">Choosing a View<a class="headerlink" href="#views" title="Link to this heading">¶</a></h2>
+
+<p>Views are small USD roots selecting sublayers. Open another root to change the selection;
+there is no view variant set. All 21 published views compose without suite plugins according to
+<a href="../../stage/manifest.json"><code>proofs.vanilla.views</code></a>. The same manifest's
+<code>views</code> table lists their selected packages and analyses.</p>
+
+<div class="tablewrap"><table class="docutils">
+<thead><tr><th>Selection</th><th>Views under <code>stage/views/</code></th></tr></thead>
+<tbody>
+<tr><td>Shared spatial structure</td><td><a href="../../stage/views/shell.usda">shell</a> (enable guide purpose to see space extents)</td></tr>
+<tr><td>Discipline packages</td><td><a href="../../stage/views/architecture.usda">architecture</a>, <a href="../../stage/views/structure.usda">structure</a>, <a href="../../stage/views/mep.usda">mep</a> (cooling + electrical), <a href="../../stage/views/electrical.usda">electrical</a>, <a href="../../stage/views/it.usda">it</a>, <a href="../../stage/views/fitout.usda">fitout</a>, <a href="../../stage/views/security.usda">security</a>, <a href="../../stage/views/site.usda">site</a>; each includes shared</td></tr>
+<tr><td>Analyses over the facility</td><td><a href="../../stage/views/cctv.usda">cctv</a>, <a href="../../stage/views/clash.usda">clash</a>, <a href="../../stage/views/plan.usda">plan</a>, <a href="../../stage/views/compliance.usda">compliance</a>, <a href="../../stage/views/repeat.usda">repeat</a>, <a href="../../stage/views/solid.usda">solid</a>, <a href="../../stage/views/wall.usda">wall</a>, <a href="../../stage/views/pipe.usda">pipe</a>, <a href="../../stage/views/buildup.usda">buildup</a></td></tr>
+<tr><td>Programme playback</td><td><a href="../../stage/views/plan-A.usda">plan-A</a> and <a href="../../stage/views/plan-B.usda">plan-B</a>; each authors 0–77 at 24 fps</td></tr>
+<tr><td>Integrated scene</td><td><a href="../../stage/views/all.usda">all</a> opens Form C</td></tr>
+</tbody></table></div>
+
+<pre><code class="sh">usdview stage/views/architecture.usda
+usdview stage/views/mep.usda
+usdview stage/views/plan-B.usda</code></pre>
+
+<p>Analysis cameras have distinct paths, such as <code>/Renders/cctv/overview</code> and
+<code>/Renders/plan/B</code>; see their <a href="../../stage/analysis/cctv/cameras.usda">CCTV</a>
+and <a href="../../stage/analysis/plan/cameras.usda">Plan</a> layers. Analysis cutaways live in
+<a href="../../stage/presentation/views/cctv.usda">view presentation layers</a>.
+The integrated root retains the delivered placement; programme relocation is scoped to
+<a href="../../stage/views/plan-B.usda">programme playback</a>.</p>
+
+<h2 id="proof">Reading the Connected Proof<a class="headerlink" href="#proof" title="Link to this heading">¶</a></h2>
+
+<p>The following measurements come from the committed
+<a href="../../stage/manifest.json">stage manifest</a>. They describe the published artifact;
+opening a form is not a fresh run of its full proof.</p>
+
+<div class="tablewrap"><table class="docutils">
+<thead><tr><th>Measurement</th><th>Recorded result</th><th>Manifest field</th></tr></thead>
+<tbody>
+<tr><td>A / C prim count</td><td>15,576 / 15,576; no added, missing or changed paths in the comparison</td><td><code>proofs.connected parity</code></td></tr>
+<tr><td>C mesh census / A–C compared meshes</td><td>3,585 / 3,583; two controlled tessellations excluded</td><td><code>proofs.vanilla.census</code>, <code>proofs.connected parity</code></td></tr>
+<tr><td>B scene / raw prim count</td><td>15,576 / 15,582; six generated prototype storage prims</td><td><code>proofs.flattened</code></td></tr>
+<tr><td>B–A compared meshes</td><td>3,585; no exclusions or changed meshes</td><td><code>proofs.flattened.comparisons.flattenedToConnected</code></td></tr>
+<tr><td>Flattened crate</td><td>3,166,293 bytes; no external assets or sublayers</td><td><code>proofs.flattened</code></td></tr>
+<tr><td>Normalized flatten builds</td><td>Three equal hashes using <code>sdf-usda-v1</code></td><td><code>proofs.flattened.normalizedHashes</code></td></tr>
+<tr><td>Registered validators</td><td>124 executed; 55 expected error-severity findings; 0 unexpected errors</td><td><code>proofs.validators</code></td></tr>
+<tr><td>Text reconstruction</td><td>177 USDA layers; 0 changed</td><td><code>proofs.rebuild</code></td></tr>
+</tbody></table></div>
+
+<p>The two mesh exceptions are <code>pipe_clash_near/Geom</code> and
+<code>pipe_clash_tangent/Geom</code>, under the office corridor's ceiling void shown in the
+traversal. Their twins use 10 and 24 points respectively; IFC retains swept solids whose
+tessellation may differ between readers. The full paths and reasons are in
+<a href="../../stage/dc.manifest.json"><code>tessellationControlled</code></a>.
+The <a href="../../tools/usdaeco_suite/stage_check.py">parity check</a> excludes only their mesh
+data, retaining their other scene-field and world-transform comparisons.</p>
+
+<p>Flattening adds six instance-prototype storage prims, so raw prim-count equality across
+all forms is not proven. The <a href="../../tools/usdaeco_suite/stage_flatten.py">flatten check</a>
+compares the original scene paths, identities, types, world transforms and animation, and
+reports those storage prims separately. B is <code>Usd.Stage.Flatten</code> of A;
+internal instance references remain in its otherwise self-contained crate.</p>
+
+<p>The validator baseline includes two <code>MisplacedDevice</code> findings from
+<a href="../../stage/analysis/compliance/integrated-findings.json">Compliance</a> and 53
+<code>RepeatDrift</code> findings from <a href="../../stage/analysis/repeat/integrated-findings.json">Repeat</a>.
+These are expected findings with error severity, so the record does not claim zero raw errors.
+The <a href="../../tools/usdaeco_suite/stage_checks.py">gate</a> requires the exact expected
+error multiset and rejects additional errors.</p>
+
+<h2 id="checks">Where the Numbers Come From<a class="headerlink" href="#checks" title="Link to this heading">¶</a></h2>
+
+<p><a href="../../stage/check.py">stage/check.py</a> runs the stage proofs through
+<a href="../../tools/usdaeco_suite/stage_check.py">stage_check.py</a> and isolated
+<a href="../../tools/usdaeco_suite/stage_probe.py">probes</a>: stock composition, connected
+parity, flattening, the Bonsai delivery, muting, inventory, layout, validators, strict checking
+and rendering. A recorded rebuild adds the text comparison. The
+<a href="../../stage/README.md#acceptance-and-deviations">published acceptance record</a> reports
+12 checks, 0 failed; its detailed results are the manifest's <code>proofs</code>.</p>
+
+<p>For a new checkout, first run the source gate and tests. They check pins, versions,
+documentation links, sanitization and source behavior; their scope is described in
+<a href="../verification.md">Verification scope</a>.</p>
+
+<pre><code class="sh">env -u PYTHONPATH "$PYTHON" check.py
+env -u PYTHONPATH "$PYTHON" -m pytest -q</code></pre>
+
+<p>To rerun stage proofs, configure the existing native runtimes in
+<a href="../../stage/README.md#reproduce-and-verify">Reproduce and verify</a>, then run:</p>
+
+<pre><code class="sh">env -u PYTHONPATH "$PYTHON" stage/check.py --use-evidence</code></pre>
+
+<p>This option reuses a successful probe only when its input, code and runtime receipt match;
+missing or stale evidence runs that probe again. It does not rebuild the stage, but strict
+checking, rendering and other noncached checks still run. There is no <code>--no-rebuild</code>
+option. To reproduce and publish fresh proof instead, follow the stage reference's build,
+<code>--record</code> and <code>--rebuild</code> workflow. The
+<a href="../../stage/vanilla.png">recorded stock render</a> and
+<a href="../../stage/README.md#acceptance-and-deviations">runtime and acceptance limitations</a>
+complete the evidence; Nix packaging and full-facility exact recomputation remain not proven.</p>
+
+<div class="footer-nav">
+  <a href="../index.html" rel="prev">« Schema Domains</a>
+  <a href="../schemas/usdAeco/overview.html" rel="next">Built Environment (usdAeco) »</a>
+</div>
+</main>
+</div>
+<script>
+(function () {
+  var esc = function (s) { return s.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;"); };
+  var re = /("(?:[^"\\\n]|\\.)*")|(#[^\n]*)|(<[^>\n]*>)|(@[^@\n]*@)|(?<![:\w])(def|over|class|uniform|custom|rel|prepend|append|delete|add|reorder|variantSet|variants|variantSets|apiSchemas|inherits|references|payload|subLayers|defaultPrim|upAxis|metersPerUnit|fallbackPrimTypes|customData|doc|allowedTokens|kind|displayName|interpolation|timeSamples)(?![:\w])|(?<![:\w])(token|string|double3|double|float3|float|int|bool|point3f|color3f|asset|quatf|matrix4d|vector3f|normal3f)(\[\])?(?![:\w])|(?<![:\w])(Aeco[A-Za-z]+|Xform|Scope|Cube|Cylinder|Sphere|Mesh|BasisCurves)(?![:\w])|(?<![\w.:])(-?\d+(?:\.\d+)?(?:e-?\d+)?)(?![\w.:])/g;
+  document.querySelectorAll("pre code.usda").forEach(function (el) {
+    var src = el.textContent, out = "", last = 0, m;
+    re.lastIndex = 0;
+    while ((m = re.exec(src)) !== null) {
+      out += esc(src.slice(last, m.index));
+      var cls = m[1] ? "str" : m[2] ? "cm" : m[3] ? "path" : m[4] ? "str" : m[5] ? "kw" : m[6] ? "ty" : m[8] ? "prim" : "num";
+      out += '<span class="' + cls + '">' + esc(m[0]) + "</span>";
+      last = m.index + m[0].length;
+    }
+    out += esc(src.slice(last));
+    el.innerHTML = out;
+  });
+})();
+</script>
+</body>
+</html>

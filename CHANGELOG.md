@@ -1,5 +1,14 @@
 # Changelog
 
+## 0.4.0
+
+- Add the Working with the integrated stage HTML guide: forms, delivery folders,
+  layer provenance, traversal, mute diagnostics, views and linked proof counts.
+- Add a suite checkout walkthrough to the Schema Domains hub, link the guide
+  from both existing sidebars and the suite map, and inventory all five site assets.
+- Preserve the published stage and its measured comparison limits; document
+  receipt reuse and the distinction between source checks and recorded stage proofs.
+
 ## 0.3.0
 
 - Publish the connected stage as a self-contained flattened crate, with stock

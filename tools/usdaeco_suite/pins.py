@@ -173,7 +173,8 @@ def render_flake(root, document):
 def render_map(document):
     lines = ["# usdAECO suite map", "", f"Release train: `{document['train']}`.", "",
              "Each repository is a submodule at the tag shown. Paths are relative to this checkout.",
-             "See the [HTML guide](index.html) and [integrated stage guide](../stage/README.md).", ""]
+             "See the [HTML guide](index.html), [Working with the integrated stage](stage/index.html)",
+             "and [stage setup and reproduction](../stage/README.md).", ""]
     for tier in TIERS:
         lines += [f"## {tier}", ""]
         for repo in document["repos"]:
