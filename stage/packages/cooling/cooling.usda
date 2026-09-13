@@ -1,29 +1,38 @@
 #usda 1.0
 (
-    customLayerData = {
-        string "aeco:layer:package" = "cooling"
-        string "aeco:layer:producer" = "usdaeco-datacentre generator 0.5.0"
-        string "aeco:layer:role" = "package"
-        string "aeco:layer:source" = "cooling.ifc"
-        string "aeco:layer:sourceSha256" = "f304d454d2530d111c058b28d5380c82b813a6e620d3db7637998d9d969dfcb1"
-        string "aeco:layer:tag" = "v0.5.0"
-    }
-    defaultPrim = "demo_datacentre_01"
-    fallbackPrimTypes = {
-        token[] AecoFacility = ["Xform"]
-        token[] AecoFacilityPart = ["Xform"]
-        token[] AecoLevel = ["Xform"]
-        token[] AecoPort = ["Xform"]
-        token[] AecoSite = ["Xform"]
-        token[] AecoSpace = ["Xform"]
-        token[] AecoSystem = ["Scope"]
-        token[] AecoZone = ["Scope"]
-    }
-    metersPerUnit = 1
-    subLayers = [
-        @cooling.semantics.usda@,
-        @cooling.geometry.usdc@
-    ]
-    upAxis = "Z"
+ customLayerData = {
+  string "aeco:layer:generatorSourceSha256" = "28d85b64eed1bd405429b893badb57f9a0fb0e8180e172b5b82029625774ed58"
+  string "aeco:layer:package" = "cooling"
+  string "aeco:layer:producer" = "Bonsai 0.8.5 (Blender 5.1.2) export of the generator delivery"
+  string "aeco:layer:role" = "package"
+  string "aeco:layer:source" = "cooling.ifc"
+  string "aeco:layer:sourceSha256" = "87e915c28ea9836e348f77bc91c36e97e6b008e7b9b01279df8aab44170627be"
+  string "aeco:layer:tag" = "v0.3.0"
+ }
+ defaultPrim = "demo_datacentre_01"
+ fallbackPrimTypes = {
+  token[] AecoActivity = ["Scope"]
+  token[] AecoClashResult = ["Scope"]
+  token[] AecoClashTest = ["Scope"]
+  token[] AecoFacility = ["Xform"]
+  token[] AecoFacilityPart = ["Xform"]
+  token[] AecoLevel = ["Xform"]
+  token[] AecoMilestone = ["Scope"]
+  token[] AecoPort = ["Xform"]
+  token[] AecoProgramme = ["Scope"]
+  token[] AecoRequirement = ["Scope"]
+  token[] AecoSite = ["Xform"]
+  token[] AecoSpace = ["Xform"]
+  token[] AecoSpecification = ["Scope"]
+  token[] AecoSyncDiagnostic = ["Scope"]
+  token[] AecoSystem = ["Scope"]
+  token[] AecoZone = ["Scope"]
+ }
+ metersPerUnit = 1
+ subLayers = [
+  @cooling.semantics.usda@,
+  @cooling.geometry.usdc@
+ ]
+ upAxis = "Z"
 )
 

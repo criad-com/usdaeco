@@ -1,5 +1,14 @@
 # Changelog
 
+## 0.3.0
+
+- Publish the connected stage as a self-contained flattened crate, with stock
+  USD parity, root metadata preservation and deterministic normalized hashes.
+- Deliver cooling through Bonsai without model edits, preserving IFC identities
+  and cross-package document links, and regenerate the pinned converter twin.
+- Add a building traversal walkthrough with delivery ownership, mute diagnostics
+  and opening instructions for all three forms.
+
 ## 0.2.0
 
 - Compose federated deliveries and recomputed analysis layers through connected

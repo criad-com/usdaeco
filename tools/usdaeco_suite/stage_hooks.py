@@ -116,7 +116,9 @@ def run(name, destination):
                     discipline = relative.split('.')[0]
                     path = destination / 'packages' / discipline / relative
                     if path.exists() and sha(path) != record['sha256']:
-                        raise ValueError('full publication source hash differs')
+                        from usdaeco_suite.bonsai_delivery import accepted_delivery_file
+                        if discipline != 'cooling' or not accepted_delivery_file(path.parent, relative):
+                            raise ValueError('full publication source hash differs')
             return destination / FORM_C, publication
         imported.published_source = published_full
     if name == 'buildup':

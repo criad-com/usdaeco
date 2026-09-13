@@ -1,7 +1,7 @@
 # Source-only utilities: run with the existing interpreter, without installation.
 [project]
 name = "usdaeco"
-version = "0.2.0"
+version = "0.3.0"
 description = "Release-pinned usdAECO suite superproject"
 requires-python = ">=3.11"
 dependencies = []

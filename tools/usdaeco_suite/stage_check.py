@@ -146,6 +146,11 @@ def main(argv=None):
                     comparedMeshes=sum('mesh' in v and p not in excluded for p, v in c.items()))
         return data, not (data['added'] or data['missing'] or changed), f"{len(a)} prims; {data['comparedMeshes']} meshes; {len(changed)} changed"
     check('connected parity', parity)
+    if not args.smoke:
+        from usdaeco_suite.stage_flatten import check_flattened
+        check('flattened', lambda: check_flattened(directory, output, manifest))
+        from usdaeco_suite.bonsai_delivery import check_delivery
+        check('Bonsai delivery', lambda: check_delivery(directory, output))
     def mute():
         data = probe('mute', directory, output / 'mute.json', plugins=not args.smoke, reuse=args.use_evidence)
         if args.smoke:

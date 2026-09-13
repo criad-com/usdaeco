@@ -141,6 +141,78 @@
     "run": true,
     "standaloneHook": false
   },
+  "bonsai": {
+    "accepted": true,
+    "converter": {
+      "repo": "usdaeco-ifc",
+      "spine": "over",
+      "tag": "v0.3.1"
+    },
+    "deviations": [],
+    "export": {
+      "bytes": 2999262,
+      "normalizedHeaderFields": [
+        "name",
+        "time_stamp"
+      ],
+      "rawSha256": "ebfd179923b4d56176067f0fb537ded393676d7831ea94715f53ef97272cb1fa",
+      "sha256": "87e915c28ea9836e348f77bc91c36e97e6b008e7b9b01279df8aab44170627be"
+    },
+    "generator": {
+      "sha256": "28d85b64eed1bd405429b893badb57f9a0fb0e8180e172b5b82029625774ed58",
+      "source": "data/usdaeco-datacentre/dist/full/cooling.ifc",
+      "tag": "v0.5.1"
+    },
+    "ifc": {
+      "associations": {
+        "added": 0,
+        "after": 184,
+        "before": 184,
+        "removed": 0
+      },
+      "documents": {
+        "added": 0,
+        "after": 184,
+        "before": 184,
+        "removed": 0
+      },
+      "entities": {
+        "added": 0,
+        "after": 45690,
+        "before": 45690,
+        "removed": 0
+      },
+      "identities": {
+        "added": 0,
+        "after": 16163,
+        "before": 16163,
+        "removed": 0
+      }
+    },
+    "producer": "Bonsai 0.8.5 (Blender 5.1.2) export of the generator delivery",
+    "runtime": {
+      "blender": "5.1.2",
+      "bonsai": "Bonsai 0.8.5",
+      "exported": true
+    },
+    "twins": {
+      "cooling.geometry.usdc": "d18a74db898f3ee0491d56fd2bd67a29f4009e7a6d1e24e51aefcad9ed615c73",
+      "cooling.semantics.usda": "bcf3010f581935b96d2bcc50d3244f5887dc7758756b77698550980908c99863",
+      "cooling.usda": "95c688ae1156e1cb96861203fb1aaaabbbd58a5575964f8dedfe15ce726a77f4"
+    },
+    "usd": {
+      "added": [],
+      "changed": {},
+      "comparedMeshes": 776,
+      "leftPrims": 3307,
+      "meshExclusions": [
+        "/demo_datacentre_01/demo_datacentre_01_Site/demo_datacentre_01/L01_Office/Office_Corridor_L01/Corridor_ceiling_void/pipe_clash_near/Geom",
+        "/demo_datacentre_01/demo_datacentre_01_Site/demo_datacentre_01/L01_Office/Office_Corridor_L01/Corridor_ceiling_void/pipe_clash_tangent/Geom"
+      ],
+      "removed": [],
+      "rightPrims": 3307
+    }
+  },
   "copied": {
     "dc.manifest.json": {
       "source": "data/usdaeco-datacentre/dist/full/dc.manifest.json",
@@ -165,26 +237,6 @@
     "packages/arch/arch.usda": {
       "source": "data/usdaeco-datacentre/dist/full/arch.usda",
       "sourceSha256": "6eb467b791a40e2d6cf84f9ecddcffdc6bf0062a7598ede89655035a6ad6f720",
-      "tag": "v0.5.1"
-    },
-    "packages/cooling/cooling.geometry.usdc": {
-      "source": "data/usdaeco-datacentre/dist/full/cooling.geometry.usdc",
-      "sourceSha256": "6137e70931554f6e5e7b5e1710e5cde05f0741596afee5ee2440574d109bb83f",
-      "tag": "v0.5.1"
-    },
-    "packages/cooling/cooling.ifc": {
-      "source": "data/usdaeco-datacentre/dist/full/cooling.ifc",
-      "sourceSha256": "28d85b64eed1bd405429b893badb57f9a0fb0e8180e172b5b82029625774ed58",
-      "tag": "v0.5.1"
-    },
-    "packages/cooling/cooling.semantics.usda": {
-      "source": "data/usdaeco-datacentre/dist/full/cooling.semantics.usda",
-      "sourceSha256": "ab591a6d6451ba9d0a897d6a41ea6f4ee2e749834ff33b3888c2bfd93a3c2290",
-      "tag": "v0.5.1"
-    },
-    "packages/cooling/cooling.usda": {
-      "source": "data/usdaeco-datacentre/dist/full/cooling.usda",
-      "sourceSha256": "35b8fe511564d931f1cbbd028af7a535fcfa0abd637e606fadcbc267fced8af3",
       "tag": "v0.5.1"
     },
     "packages/electrical/electrical.geometry.usdc": {
@@ -7561,8 +7613,8 @@
   ],
   "files": {
     "README.md": {
-      "bytes": 12170,
-      "sha256": "baf267869c26b6c771c5f503b040ce6aa6bbc5bdfb100466db9b538de4698f42"
+      "bytes": 16961,
+      "sha256": "d9da56be66ecd614c05360491eac77f3c0b49c16ea748c9158f9a522a1433e1f"
     },
     "analysis/buildup/cameras.usda": {
       "bytes": 1802,
@@ -7893,8 +7945,8 @@
       "tag": "v0.2.3"
     },
     "analysis/clash/findings.json": {
-      "bytes": 3684,
-      "sha256": "ff9499549ee656c5bfe07fa6ad3b8eda654a241f7cc6fcaa8f926eae85a5112c"
+      "bytes": 3683,
+      "sha256": "2c16dbba9a0fef5d567280b95fc6d9f7c0f04bdc8c79658fc8b063e1205a212c"
     },
     "analysis/clash/inheritance.usda": {
       "bytes": 386,
@@ -7969,24 +8021,24 @@
       "tag": "v0.2.3"
     },
     "analysis/clash/out/results.usda": {
-      "bytes": 6497,
+      "bytes": 6555,
       "package": "clash",
       "primSpecs": 8,
       "producer": "hook v0.2.3",
       "role": "analysis",
-      "sha256": "10639cc2dc6f07913711e68e88bdc3712274c577deb9ecd4e94b5f1c84293ce7",
+      "sha256": "1e3e9007ced69185431d3beb37f2d22c34477beba887ff47edf694c18fca3614",
       "source": "kind/usdaeco-clash/examples/datacentre/run.py",
       "sourceSha256": "1aab99ee111301ea03d6ddc6d205829c30d7fc71baf54ed9845770fb31b2bd8e",
       "sourceStampMatches": true,
       "tag": "v0.2.3"
     },
     "analysis/clash/out/twins.usdc": {
-      "bytes": 37670,
+      "bytes": 38001,
       "package": "clash",
       "primSpecs": 31,
       "producer": "committed result v0.2.3",
       "role": "analysis",
-      "sha256": "8c6ad1828f45bba027465aba6613850a53650c85130fd0986739b1cdc7fc3649",
+      "sha256": "f1e13d134cc499d65d5a55dcff50a7bdab59658a380582186a8d69b3f9c8d0c4",
       "source": "kind/usdaeco-clash/examples/datacentre/result/layers/out/twins.usda",
       "sourceSha256": "73f22f59c586bb8b6679cf6b136e2b732d9841cfb2fc533275fe27307fb351b8",
       "sourceStampMatches": true,
@@ -8094,7 +8146,7 @@
       "primSpecs": 20,
       "producer": "hook v0.1.3",
       "role": "analysis",
-      "sha256": "6006d20568a3ac1553ff0e7c48a124c9d979ac05f3d16f773266f828a0b74d22",
+      "sha256": "567f838be58c2edd1182e60fcea48dd4e05428bf08b603e3f521c0b65e4c6086",
       "source": "kind/usdaeco-compliance/examples/datacentre/run.py",
       "sourceSha256": "c9ca2d1e189b819ab74c294ca01392402d15e006406857b996b88028b58e6b11",
       "sourceStampMatches": true,
@@ -8657,12 +8709,12 @@
       "tag": "v0.2.1"
     },
     "analysis/repeat/out/composition/prototype.usda": {
-      "bytes": 214995,
+      "bytes": 214792,
       "package": "repeat",
       "primSpecs": 225,
       "producer": "hook v0.2.1",
       "role": "analysis",
-      "sha256": "8faecc1d54f6dd23da9e69d090889a064f684b4ba24411c0b38d6998d67b9b20",
+      "sha256": "5bad0af5f4d20f664fb02e0c89fcf74baac7cc3981585928eaf6e792bb784812",
       "source": "kind/usdaeco-repeat/examples/datacentre/run.py",
       "sourceSha256": "1b931ed764ad3b73341738c7ba6d25433424cd5d02c520927466898467965b11",
       "sourceStampMatches": true,
@@ -8809,12 +8861,12 @@
       "tag": "v0.1.5"
     },
     "analysis/solid/out/twins.usdc": {
-      "bytes": 224664,
+      "bytes": 225749,
       "package": "solid",
       "primSpecs": 574,
       "producer": "committed result v0.1.5",
       "role": "analysis",
-      "sha256": "efbd9a74c9fb57b0dfa270fe73c57ad57cefa6fddc143628c07f51a8a7a9e617",
+      "sha256": "c97347c4cf5264dff935dc7c4ecd836c192bfa5f0fc3b17881d04dc307b20344",
       "source": "kind/usdaeco-solid/examples/datacentre/result/layers/out/twins.usda",
       "sourceSha256": "286a575401078e17fb8e6a7df714582c7984104aaa5bf9623be96daf7cb1f9ec",
       "sourceStampMatches": true,
@@ -8957,17 +9009,29 @@
       },
       "sha256": "5d0b281fd8127cfe67c0b9b10568600028e47c5aea1d7ecc6581a1ffccc3d628"
     },
+    "demo-datacentre-01.flat.usdc": {
+      "bytes": 3166293,
+      "package": "suite",
+      "primSpecs": 15582,
+      "producer": "Usd.Stage.Flatten",
+      "role": "flattened",
+      "sha256": "0d0e145e27af55b0f0a903dd00bf938e3bb82fe7c1eb7c5886f9b5fdbae14dc2",
+      "source": "stage/demo-datacentre-01.usda",
+      "sourceSha256": "af7fbff24129bed732e6b7a66e604741a2c257b00c9aedfc66f50b98b567b3c4",
+      "sourceStampMatches": true,
+      "tag": "v0.3.0"
+    },
     "demo-datacentre-01.usd-only.usda": {
       "bytes": 2950,
       "package": "suite",
       "primSpecs": 0,
       "producer": "usdAECO suite",
       "role": "root",
-      "sha256": "bf30e112f2f34ad8ab7a9bed6da8bab3591213356ea48a1971a5eb6e0527d76d",
+      "sha256": "4ace74185f563deddac1e5686d18637e45e33aeb09e72f6276abc00c1eb0e6d3",
       "source": "data/usdaeco-datacentre/dist/full/dc.usda",
       "sourceSha256": "85df064b63d065fd743286fee3d6386662f61aca3cb4e154bca422d8cce52b2b",
       "sourceStampMatches": true,
-      "tag": "v0.2.0"
+      "tag": "v0.3.0"
     },
     "demo-datacentre-01.usda": {
       "bytes": 3245,
@@ -8975,11 +9039,11 @@
       "primSpecs": 0,
       "producer": "usdAECO suite",
       "role": "root",
-      "sha256": "20dc83ef2c3261de8657d2368e90465b8c42cb5f621748d0203c405bc679ef64",
+      "sha256": "af7fbff24129bed732e6b7a66e604741a2c257b00c9aedfc66f50b98b567b3c4",
       "source": "data/usdaeco-datacentre/dist/full/dc.usda",
       "sourceSha256": "85df064b63d065fd743286fee3d6386662f61aca3cb4e154bca422d8cce52b2b",
       "sourceStampMatches": true,
-      "tag": "v0.2.0"
+      "tag": "v0.3.0"
     },
     "integration.json": {
       "bytes": 62379,
@@ -9086,68 +9150,55 @@
       "tag": "v0.5.1"
     },
     "packages/cooling/README.md": {
-      "bytes": 810,
-      "sha256": "d61afddcde5f28f7e03091d780d903b5dee058db05a0afd27e00f636bec15473"
+      "bytes": 1196,
+      "sha256": "65c36b26bc7cc89790ef210213a2c9f40755d37da6704a911bba6d41ac898620"
+    },
+    "packages/cooling/bonsai-export.json": {
+      "bytes": 1984,
+      "sha256": "ea837f18928f54a846f6e6fdca828fa559203ba306f750fde3fa6c81ba91fc55"
     },
     "packages/cooling/cooling.geometry.usdc": {
-      "bytes": 146192,
-      "copy": {
-        "source": "data/usdaeco-datacentre/dist/full/cooling.geometry.usdc",
-        "sourceSha256": "6137e70931554f6e5e7b5e1710e5cde05f0741596afee5ee2440574d109bb83f",
-        "tag": "v0.5.1"
-      },
+      "bytes": 132118,
+      "generatorSourceSha256": "28d85b64eed1bd405429b893badb57f9a0fb0e8180e172b5b82029625774ed58",
       "package": "cooling",
-      "primSpecs": 1521,
-      "producer": "usdaeco-datacentre generator 0.5.0",
-      "role": "package",
-      "sha256": "6137e70931554f6e5e7b5e1710e5cde05f0741596afee5ee2440574d109bb83f",
+      "primSpecs": 1485,
+      "producer": "Bonsai 0.8.5 (Blender 5.1.2) export of the generator delivery",
+      "role": "geometry",
+      "sha256": "9e5f68792f5d464eb6ec28c15115be677f963fcea606d6845dcc0610ca0df68e",
       "source": "cooling.ifc",
-      "sourceSha256": "f304d454d2530d111c058b28d5380c82b813a6e620d3db7637998d9d969dfcb1",
-      "sourceStampMatches": false,
-      "tag": "v0.5.0"
+      "sourceSha256": "87e915c28ea9836e348f77bc91c36e97e6b008e7b9b01279df8aab44170627be",
+      "sourceStampMatches": true,
+      "tag": "v0.3.0"
     },
     "packages/cooling/cooling.ifc": {
-      "bytes": 2999268,
-      "copy": {
-        "source": "data/usdaeco-datacentre/dist/full/cooling.ifc",
-        "sourceSha256": "28d85b64eed1bd405429b893badb57f9a0fb0e8180e172b5b82029625774ed58",
-        "tag": "v0.5.1"
-      },
-      "sha256": "28d85b64eed1bd405429b893badb57f9a0fb0e8180e172b5b82029625774ed58"
+      "bytes": 2999262,
+      "sha256": "87e915c28ea9836e348f77bc91c36e97e6b008e7b9b01279df8aab44170627be"
     },
     "packages/cooling/cooling.semantics.usda": {
-      "bytes": 2150879,
-      "copy": {
-        "source": "data/usdaeco-datacentre/dist/full/cooling.semantics.usda",
-        "sourceSha256": "ab591a6d6451ba9d0a897d6a41ea6f4ee2e749834ff33b3888c2bfd93a3c2290",
-        "tag": "v0.5.1"
-      },
+      "bytes": 1677346,
+      "generatorSourceSha256": "28d85b64eed1bd405429b893badb57f9a0fb0e8180e172b5b82029625774ed58",
       "package": "cooling",
       "primSpecs": 2529,
-      "producer": "usdaeco-datacentre generator 0.5.0",
-      "role": "package",
-      "sha256": "ab591a6d6451ba9d0a897d6a41ea6f4ee2e749834ff33b3888c2bfd93a3c2290",
+      "producer": "Bonsai 0.8.5 (Blender 5.1.2) export of the generator delivery",
+      "role": "semantics",
+      "sha256": "bcb47c744f27140c16df23947757a420e3e32339e114357a7930b4dfc6d02d44",
       "source": "cooling.ifc",
-      "sourceSha256": "f304d454d2530d111c058b28d5380c82b813a6e620d3db7637998d9d969dfcb1",
-      "sourceStampMatches": false,
-      "tag": "v0.5.0"
+      "sourceSha256": "87e915c28ea9836e348f77bc91c36e97e6b008e7b9b01279df8aab44170627be",
+      "sourceStampMatches": true,
+      "tag": "v0.3.0"
     },
     "packages/cooling/cooling.usda": {
-      "bytes": 930,
-      "copy": {
-        "source": "data/usdaeco-datacentre/dist/full/cooling.usda",
-        "sourceSha256": "35b8fe511564d931f1cbbd028af7a535fcfa0abd637e606fadcbc267fced8af3",
-        "tag": "v0.5.1"
-      },
+      "bytes": 1247,
+      "generatorSourceSha256": "28d85b64eed1bd405429b893badb57f9a0fb0e8180e172b5b82029625774ed58",
       "package": "cooling",
       "primSpecs": 0,
-      "producer": "usdaeco-datacentre generator 0.5.0",
+      "producer": "Bonsai 0.8.5 (Blender 5.1.2) export of the generator delivery",
       "role": "package",
-      "sha256": "35b8fe511564d931f1cbbd028af7a535fcfa0abd637e606fadcbc267fced8af3",
+      "sha256": "5f454ac1b2bc23ae6e3e3e607cbeae45530f8bd278db771c481dd799cc34df22",
       "source": "cooling.ifc",
-      "sourceSha256": "f304d454d2530d111c058b28d5380c82b813a6e620d3db7637998d9d969dfcb1",
-      "sourceStampMatches": false,
-      "tag": "v0.5.0"
+      "sourceSha256": "87e915c28ea9836e348f77bc91c36e97e6b008e7b9b01279df8aab44170627be",
+      "sourceStampMatches": true,
+      "tag": "v0.3.0"
     },
     "packages/cooling/derived.usda": {
       "bytes": 168967,
@@ -10114,8 +10165,8 @@
       "tag": "v0.2.5"
     },
     "vanilla.png": {
-      "bytes": 67400,
-      "sha256": "f2e4a219a5b441f821b09031c8dbacb94e9c6892eb34c76fd28337454656331c"
+      "bytes": 67327,
+      "sha256": "b4e03a776fdb5b048da8df1374266e972835764fc06a5e6e66c372099ff68621"
     },
     "views/all.usda": {
       "bytes": 1214,
@@ -10123,11 +10174,11 @@
       "primSpecs": 0,
       "producer": "usdAECO suite",
       "role": "root",
-      "sha256": "9eacd6e54f66273a5c5290ca9864caf722d8c4bc110aff2259886888460e1367",
+      "sha256": "3d51e3d14043f75d2a9540c020458a7d1e80cde6297a0e93809e1c15ea6a7374",
       "source": "data/usdaeco-datacentre/dist/full/dc.usda",
       "sourceSha256": "85df064b63d065fd743286fee3d6386662f61aca3cb4e154bca422d8cce52b2b",
       "sourceStampMatches": true,
-      "tag": "v0.2.0"
+      "tag": "v0.3.0"
     },
     "views/architecture.usda": {
       "bytes": 1467,
@@ -10135,11 +10186,11 @@
       "primSpecs": 0,
       "producer": "usdAECO suite",
       "role": "root",
-      "sha256": "097754a36689b7492aee2424c760c7e5a682dc99eef7ffecb392faee228f45ac",
+      "sha256": "0767d9d66ea60e3fa5258d1211e0c14cd1b706d27536f12941ef55e1d03ae825",
       "source": "data/usdaeco-datacentre/dist/full/dc.usda",
       "sourceSha256": "85df064b63d065fd743286fee3d6386662f61aca3cb4e154bca422d8cce52b2b",
       "sourceStampMatches": true,
-      "tag": "v0.2.0"
+      "tag": "v0.3.0"
     },
     "views/buildup.usda": {
       "bytes": 2625,
@@ -10147,11 +10198,11 @@
       "primSpecs": 0,
       "producer": "usdAECO suite",
       "role": "root",
-      "sha256": "7519658b13c8ae59b48290195c53462685b0e52e4cd06c4a3de604d8c7a46603",
+      "sha256": "4fc31fecc0aeba866c0878d5bb525e3b9702e8c179d4eff73d8d133db36ceb5d",
       "source": "data/usdaeco-datacentre/dist/full/dc.usda",
       "sourceSha256": "85df064b63d065fd743286fee3d6386662f61aca3cb4e154bca422d8cce52b2b",
       "sourceStampMatches": true,
-      "tag": "v0.2.0"
+      "tag": "v0.3.0"
     },
     "views/cctv.usda": {
       "bytes": 2616,
@@ -10159,11 +10210,11 @@
       "primSpecs": 0,
       "producer": "usdAECO suite",
       "role": "root",
-      "sha256": "a8feb3bda0aafa70ee316acd6e9d1c25455461a2e6642a196760427b8cef36fe",
+      "sha256": "f844cdd57cbc2ef2918ef9cb472097abc31a4a31ad824fad6937f788001a4a6e",
       "source": "data/usdaeco-datacentre/dist/full/dc.usda",
       "sourceSha256": "85df064b63d065fd743286fee3d6386662f61aca3cb4e154bca422d8cce52b2b",
       "sourceStampMatches": true,
-      "tag": "v0.2.0"
+      "tag": "v0.3.0"
     },
     "views/clash.usda": {
       "bytes": 2619,
@@ -10171,11 +10222,11 @@
       "primSpecs": 0,
       "producer": "usdAECO suite",
       "role": "root",
-      "sha256": "1b184d30bc2892807e052d74b39943bdc14a970c7c011d4134343b2fcf8aec6b",
+      "sha256": "6f6ddc6b1aa3994efd56fed8117a50797f8c1f02fce0679904cf189f4c996523",
       "source": "data/usdaeco-datacentre/dist/full/dc.usda",
       "sourceSha256": "85df064b63d065fd743286fee3d6386662f61aca3cb4e154bca422d8cce52b2b",
       "sourceStampMatches": true,
-      "tag": "v0.2.0"
+      "tag": "v0.3.0"
     },
     "views/compliance.usda": {
       "bytes": 2634,
@@ -10183,11 +10234,11 @@
       "primSpecs": 0,
       "producer": "usdAECO suite",
       "role": "root",
-      "sha256": "7c41ead4a2510897342f9e6cf8d504d244a8ca45ef61693eb7cfa2d8d8a1c951",
+      "sha256": "a50931296ebcf3a0104f2b4884c5104c58c4283af797f03c43a3c40808261ab6",
       "source": "data/usdaeco-datacentre/dist/full/dc.usda",
       "sourceSha256": "85df064b63d065fd743286fee3d6386662f61aca3cb4e154bca422d8cce52b2b",
       "sourceStampMatches": true,
-      "tag": "v0.2.0"
+      "tag": "v0.3.0"
     },
     "views/electrical.usda": {
       "bytes": 1497,
@@ -10195,11 +10246,11 @@
       "primSpecs": 0,
       "producer": "usdAECO suite",
       "role": "root",
-      "sha256": "f952578f2f98c88ce3fd5603fd5c95d5779631a9c4012fdbd5c006f0298ca998",
+      "sha256": "7eed8e762f87ea72b50b915bf92db2655d904853bbe983656b14c7f9888018dc",
       "source": "data/usdaeco-datacentre/dist/full/dc.usda",
       "sourceSha256": "85df064b63d065fd743286fee3d6386662f61aca3cb4e154bca422d8cce52b2b",
       "sourceStampMatches": true,
-      "tag": "v0.2.0"
+      "tag": "v0.3.0"
     },
     "views/fitout.usda": {
       "bytes": 1477,
@@ -10207,11 +10258,11 @@
       "primSpecs": 0,
       "producer": "usdAECO suite",
       "role": "root",
-      "sha256": "2ca4127527fcc0219d94bea8dbee0aff094720abe16f5a5067cafe1fc55d45c3",
+      "sha256": "590292bf87024dac0eda0961268be9baa60ee1b9db275baac11c4c68ac0135f6",
       "source": "data/usdaeco-datacentre/dist/full/dc.usda",
       "sourceSha256": "85df064b63d065fd743286fee3d6386662f61aca3cb4e154bca422d8cce52b2b",
       "sourceStampMatches": true,
-      "tag": "v0.2.0"
+      "tag": "v0.3.0"
     },
     "views/it.usda": {
       "bytes": 1457,
@@ -10219,11 +10270,11 @@
       "primSpecs": 0,
       "producer": "usdAECO suite",
       "role": "root",
-      "sha256": "70b5bb94e96f97375e16c03b5267ae1c6c62fe3069d11ef1e21cd4b30ab992ed",
+      "sha256": "7831e28f01ea23be156ca7a1d24c81b8b5e7cbfb05d38fa79db144af0059972f",
       "source": "data/usdaeco-datacentre/dist/full/dc.usda",
       "sourceSha256": "85df064b63d065fd743286fee3d6386662f61aca3cb4e154bca422d8cce52b2b",
       "sourceStampMatches": true,
-      "tag": "v0.2.0"
+      "tag": "v0.3.0"
     },
     "views/mep.usda": {
       "bytes": 1654,
@@ -10231,11 +10282,11 @@
       "primSpecs": 0,
       "producer": "usdAECO suite",
       "role": "root",
-      "sha256": "9a4b15b521d1286f8c486b988bb6cba67b5679d797e66a6e5faab5c179cf15b6",
+      "sha256": "72a315ae0de9a74fddf19b311337d63ddcd5b4840a5b8406bf6af8ec10d43168",
       "source": "data/usdaeco-datacentre/dist/full/dc.usda",
       "sourceSha256": "85df064b63d065fd743286fee3d6386662f61aca3cb4e154bca422d8cce52b2b",
       "sourceStampMatches": true,
-      "tag": "v0.2.0"
+      "tag": "v0.3.0"
     },
     "views/pipe.usda": {
       "bytes": 2616,
@@ -10243,11 +10294,11 @@
       "primSpecs": 0,
       "producer": "usdAECO suite",
       "role": "root",
-      "sha256": "124ce31e45c6c4df099eebcf2960094485b5fc34a3f899e8a106310059ef2ae4",
+      "sha256": "ce64de6d499ea8520dc4e006f998f7feafc0f7f915ea973a9aead40ba05ff443",
       "source": "data/usdaeco-datacentre/dist/full/dc.usda",
       "sourceSha256": "85df064b63d065fd743286fee3d6386662f61aca3cb4e154bca422d8cce52b2b",
       "sourceStampMatches": true,
-      "tag": "v0.2.0"
+      "tag": "v0.3.0"
     },
     "views/plan-A.usda": {
       "bytes": 2586,
@@ -10255,11 +10306,11 @@
       "primSpecs": 0,
       "producer": "usdAECO suite",
       "role": "root",
-      "sha256": "0c4fdc72d78ec540cbb429d619726d87c256580ed1f0815d767d32ab32f36ef8",
+      "sha256": "3b4d8fcb0fd778b62c5a4421d7d598ba9d31ed316756e0004666ac2cf07929cc",
       "source": "data/usdaeco-datacentre/dist/full/dc.usda",
       "sourceSha256": "85df064b63d065fd743286fee3d6386662f61aca3cb4e154bca422d8cce52b2b",
       "sourceStampMatches": true,
-      "tag": "v0.2.0"
+      "tag": "v0.3.0"
     },
     "views/plan-B.usda": {
       "bytes": 2586,
@@ -10267,11 +10318,11 @@
       "primSpecs": 0,
       "producer": "usdAECO suite",
       "role": "root",
-      "sha256": "c7276b588cebf947dd38d19a62f93f12c5323ec607afdb6fe111b78d144c4fbb",
+      "sha256": "4339c46d5f8b387b3bd0f378314a5e271f1bb097a35e96d4e62fa9fdc2ade1f9",
       "source": "data/usdaeco-datacentre/dist/full/dc.usda",
       "sourceSha256": "85df064b63d065fd743286fee3d6386662f61aca3cb4e154bca422d8cce52b2b",
       "sourceStampMatches": true,
-      "tag": "v0.2.0"
+      "tag": "v0.3.0"
     },
     "views/plan.usda": {
       "bytes": 2616,
@@ -10279,11 +10330,11 @@
       "primSpecs": 0,
       "producer": "usdAECO suite",
       "role": "root",
-      "sha256": "977505731c5e809cf05680a12de11997ce97913895483d02d5693df56c1d004f",
+      "sha256": "1b02e369f2efb95569b73a4fcfadbcd36e2a53f6f838e3b5abbaa3b8702f81f7",
       "source": "data/usdaeco-datacentre/dist/full/dc.usda",
       "sourceSha256": "85df064b63d065fd743286fee3d6386662f61aca3cb4e154bca422d8cce52b2b",
       "sourceStampMatches": true,
-      "tag": "v0.2.0"
+      "tag": "v0.3.0"
     },
     "views/repeat.usda": {
       "bytes": 2622,
@@ -10291,11 +10342,11 @@
       "primSpecs": 0,
       "producer": "usdAECO suite",
       "role": "root",
-      "sha256": "3c2dc1b291cfee98a9521e8987527fcbaccdc0d4d95a7f753d0c5451242197cb",
+      "sha256": "9fc87309b5d4fb7a2a913b0947a1b4f634fb5633cb69362a0303bad216a7af93",
       "source": "data/usdaeco-datacentre/dist/full/dc.usda",
       "sourceSha256": "85df064b63d065fd743286fee3d6386662f61aca3cb4e154bca422d8cce52b2b",
       "sourceStampMatches": true,
-      "tag": "v0.2.0"
+      "tag": "v0.3.0"
     },
     "views/security.usda": {
       "bytes": 1487,
@@ -10303,11 +10354,11 @@
       "primSpecs": 0,
       "producer": "usdAECO suite",
       "role": "root",
-      "sha256": "506243e4d76b1a1419db36786e9535dc7c608dcff00e67cc0543c5fd311a3d73",
+      "sha256": "7e3e1cb666e5d4cb9cfd2b86a1e86b511a73d9507c66abd8292a9b58a223ace1",
       "source": "data/usdaeco-datacentre/dist/full/dc.usda",
       "sourceSha256": "85df064b63d065fd743286fee3d6386662f61aca3cb4e154bca422d8cce52b2b",
       "sourceStampMatches": true,
-      "tag": "v0.2.0"
+      "tag": "v0.3.0"
     },
     "views/shell.usda": {
       "bytes": 1325,
@@ -10315,11 +10366,11 @@
       "primSpecs": 0,
       "producer": "usdAECO suite",
       "role": "root",
-      "sha256": "895a91aa6de2bed413dba07af4777492c02092ee26cafe6f0b31a8e2c841f912",
+      "sha256": "1600e01193012efcba1e2ea97a6ce19263b4e4e29cf3cb640c3ce5611c2a4fbb",
       "source": "data/usdaeco-datacentre/dist/full/dc.usda",
       "sourceSha256": "85df064b63d065fd743286fee3d6386662f61aca3cb4e154bca422d8cce52b2b",
       "sourceStampMatches": true,
-      "tag": "v0.2.0"
+      "tag": "v0.3.0"
     },
     "views/site.usda": {
       "bytes": 1432,
@@ -10327,11 +10378,11 @@
       "primSpecs": 0,
       "producer": "usdAECO suite",
       "role": "root",
-      "sha256": "dd04ba772b64941ec2e15ee29b2fc31d8373cb1d3800659d2638660532984063",
+      "sha256": "69fc006264fa1ffbff34d5a21336034b1c5e080f50d0294fa81ea6f49a6ed45a",
       "source": "data/usdaeco-datacentre/dist/full/dc.usda",
       "sourceSha256": "85df064b63d065fd743286fee3d6386662f61aca3cb4e154bca422d8cce52b2b",
       "sourceStampMatches": true,
-      "tag": "v0.2.0"
+      "tag": "v0.3.0"
     },
     "views/solid.usda": {
       "bytes": 2619,
@@ -10339,11 +10390,11 @@
       "primSpecs": 0,
       "producer": "usdAECO suite",
       "role": "root",
-      "sha256": "7602bdfe57659b5ae13678b988bb74e1bde8233526d480d37c05890e8f67d634",
+      "sha256": "667acedb4ac6a71e2d74d313c2ea3e94d688a5f7429e2ece85928d916578adae",
       "source": "data/usdaeco-datacentre/dist/full/dc.usda",
       "sourceSha256": "85df064b63d065fd743286fee3d6386662f61aca3cb4e154bca422d8cce52b2b",
       "sourceStampMatches": true,
-      "tag": "v0.2.0"
+      "tag": "v0.3.0"
     },
     "views/structure.usda": {
       "bytes": 1492,
@@ -10351,11 +10402,11 @@
       "primSpecs": 0,
       "producer": "usdAECO suite",
       "role": "root",
-      "sha256": "a447e87008f01ce26d4387cda64b05fde382812e841295ac0f27a0a727ddf27b",
+      "sha256": "06d048c3297936ca9a6bcb029a45837bed348358429da4831fafd59ddf5e2311",
       "source": "data/usdaeco-datacentre/dist/full/dc.usda",
       "sourceSha256": "85df064b63d065fd743286fee3d6386662f61aca3cb4e154bca422d8cce52b2b",
       "sourceStampMatches": true,
-      "tag": "v0.2.0"
+      "tag": "v0.3.0"
     },
     "views/wall.usda": {
       "bytes": 2616,
@@ -10363,25 +10414,37 @@
       "primSpecs": 0,
       "producer": "usdAECO suite",
       "role": "root",
-      "sha256": "a9d3b3fbf6f5659139f944213690b69960c297538e932595d25a874956371fe6",
+      "sha256": "45c07d6c2e57940c081c516e741e3f9c19cd31fa0d97e868f74b4caf00ae53b8",
       "source": "data/usdaeco-datacentre/dist/full/dc.usda",
       "sourceSha256": "85df064b63d065fd743286fee3d6386662f61aca3cb4e154bca422d8cce52b2b",
       "sourceStampMatches": true,
-      "tag": "v0.2.0"
+      "tag": "v0.3.0"
     }
+  },
+  "flattened": {
+    "bytes": 3166293,
+    "cap": 10000000,
+    "distribution": "committed",
+    "file": "demo-datacentre-01.flat.usdc",
+    "normalization": "sdf-usda-v1",
+    "normalized_sha256": "5d16395e6089a17eb84a5d2fea1eaa80d9eaa9ede91eb421430c4e8aa9d6775f",
+    "sha256": "0d0e145e27af55b0f0a903dd00bf938e3bb82fe7c1eb7c5886f9b5fdbae14dc2",
+    "source": "stage/demo-datacentre-01.usda",
+    "sourceSha256": "af7fbff24129bed732e6b7a66e604741a2c257b00c9aedfc66f50b98b567b3c4",
+    "tag": "v0.3.0"
   },
   "folderBytes": {
     "analysis/buildup": 87768,
     "analysis/cctv": 765355,
-    "analysis/clash": 81413,
+    "analysis/clash": 81801,
     "analysis/compliance": 683829,
     "analysis/pipe": 543064,
     "analysis/plan": 96505,
-    "analysis/repeat": 503456,
-    "analysis/solid": 642319,
+    "analysis/repeat": 503253,
+    "analysis/solid": 643404,
     "analysis/wall": 127289,
     "packages/arch": 1224881,
-    "packages/cooling": 5564019,
+    "packages/cooling": 5079093,
     "packages/electrical": 9159880,
     "packages/fitout": 248452,
     "packages/it": 5253550,
@@ -12100,6 +12163,59 @@
     }
   },
   "proofs": {
+    "Bonsai delivery": {
+      "accepted": true,
+      "committedTwin": {
+        "added": [],
+        "changed": {},
+        "comparedMeshes": 776,
+        "leftPrims": 3307,
+        "meshExclusions": [
+          "/demo_datacentre_01/demo_datacentre_01_Site/demo_datacentre_01/L01_Office/Office_Corridor_L01/Corridor_ceiling_void/pipe_clash_near/Geom",
+          "/demo_datacentre_01/demo_datacentre_01_Site/demo_datacentre_01/L01_Office/Office_Corridor_L01/Corridor_ceiling_void/pipe_clash_tangent/Geom"
+        ],
+        "removed": [],
+        "rightPrims": 3307
+      },
+      "ifc": {
+        "associations": {
+          "added": 0,
+          "after": 184,
+          "before": 184,
+          "removed": 0
+        },
+        "documents": {
+          "added": 0,
+          "after": 184,
+          "before": 184,
+          "removed": 0
+        },
+        "entities": {
+          "added": 0,
+          "after": 45690,
+          "before": 45690,
+          "removed": 0
+        },
+        "identities": {
+          "added": 0,
+          "after": 16163,
+          "before": 16163,
+          "removed": 0
+        }
+      },
+      "usd": {
+        "added": [],
+        "changed": {},
+        "comparedMeshes": 776,
+        "leftPrims": 3307,
+        "meshExclusions": [
+          "/demo_datacentre_01/demo_datacentre_01_Site/demo_datacentre_01/L01_Office/Office_Corridor_L01/Corridor_ceiling_void/pipe_clash_near/Geom",
+          "/demo_datacentre_01/demo_datacentre_01_Site/demo_datacentre_01/L01_Office/Office_Corridor_L01/Corridor_ceiling_void/pipe_clash_tangent/Geom"
+        ],
+        "removed": [],
+        "rightPrims": 3307
+      }
+    },
     "connected parity": {
       "added": [],
       "changed": [],
@@ -12112,21 +12228,153 @@
       "missing": [],
       "twinPrims": 15576
     },
+    "flattened": {
+      "bytes": 3166293,
+      "censusDeviation": "Usd.Stage.Flatten adds generated instance-prototype storage prims.",
+      "comparisons": {
+        "flattenedToConnected": {
+          "added": [],
+          "changed": {},
+          "comparedMeshes": 3585,
+          "leftPrims": 15576,
+          "meshExclusions": [],
+          "removed": [],
+          "rightPrims": 15576
+        },
+        "flattenedToTwins": {
+          "added": [],
+          "changed": {},
+          "comparedMeshes": 3583,
+          "leftPrims": 15576,
+          "meshExclusions": [
+            "/demo_datacentre_01/demo_datacentre_01_Site/demo_datacentre_01/L01_Office/Office_Corridor_L01/Corridor_ceiling_void/pipe_clash_near/Geom",
+            "/demo_datacentre_01/demo_datacentre_01_Site/demo_datacentre_01/L01_Office/Office_Corridor_L01/Corridor_ceiling_void/pipe_clash_tangent/Geom"
+          ],
+          "removed": [],
+          "rightPrims": 15576
+        },
+        "flattenedTwinsToConnected": {
+          "added": [],
+          "changed": {},
+          "comparedMeshes": 3583,
+          "leftPrims": 15576,
+          "meshExclusions": [
+            "/demo_datacentre_01/demo_datacentre_01_Site/demo_datacentre_01/L01_Office/Office_Corridor_L01/Corridor_ceiling_void/pipe_clash_near/Geom",
+            "/demo_datacentre_01/demo_datacentre_01_Site/demo_datacentre_01/L01_Office/Office_Corridor_L01/Corridor_ceiling_void/pipe_clash_tangent/Geom"
+          ],
+          "removed": [],
+          "rightPrims": 15576
+        },
+        "flattenedTwinsToFlattenedConnected": {
+          "added": [],
+          "changed": {},
+          "comparedMeshes": 3583,
+          "leftPrims": 15576,
+          "meshExclusions": [
+            "/demo_datacentre_01/demo_datacentre_01_Site/demo_datacentre_01/L01_Office/Office_Corridor_L01/Corridor_ceiling_void/pipe_clash_near/Geom",
+            "/demo_datacentre_01/demo_datacentre_01_Site/demo_datacentre_01/L01_Office/Office_Corridor_L01/Corridor_ceiling_void/pipe_clash_tangent/Geom"
+          ],
+          "removed": [],
+          "rightPrims": 15576
+        }
+      },
+      "deterministic": true,
+      "externalAssets": [],
+      "flattenedTwinsPrototypePrims": 6,
+      "generatedPrototypePrims": 6,
+      "metadata": {
+        "defaultPrim": "demo_datacentre_01",
+        "endTimeCode": 288.0,
+        "fallbackPrimTypes": {
+          "AecoActivity": [
+            "Scope"
+          ],
+          "AecoClashResult": [
+            "Scope"
+          ],
+          "AecoClashTest": [
+            "Scope"
+          ],
+          "AecoFacility": [
+            "Xform"
+          ],
+          "AecoFacilityPart": [
+            "Xform"
+          ],
+          "AecoLevel": [
+            "Xform"
+          ],
+          "AecoMilestone": [
+            "Scope"
+          ],
+          "AecoPort": [
+            "Xform"
+          ],
+          "AecoProgramme": [
+            "Scope"
+          ],
+          "AecoRequirement": [
+            "Scope"
+          ],
+          "AecoSite": [
+            "Xform"
+          ],
+          "AecoSpace": [
+            "Xform"
+          ],
+          "AecoSpecification": [
+            "Scope"
+          ],
+          "AecoSyncDiagnostic": [
+            "Scope"
+          ],
+          "AecoSystem": [
+            "Scope"
+          ],
+          "AecoZone": [
+            "Scope"
+          ],
+          "BrepArray": [
+            "Xform"
+          ]
+        },
+        "framesPerSecond": 24.0,
+        "metersPerUnit": 1.0,
+        "startTimeCode": 0.0,
+        "timeCodesPerSecond": 24.0,
+        "upAxis": "Z"
+      },
+      "normalization": "sdf-usda-v1",
+      "normalizedHashes": [
+        "5d16395e6089a17eb84a5d2fea1eaa80d9eaa9ede91eb421430c4e8aa9d6775f",
+        "5d16395e6089a17eb84a5d2fea1eaa80d9eaa9ede91eb421430c4e8aa9d6775f",
+        "5d16395e6089a17eb84a5d2fea1eaa80d9eaa9ede91eb421430c4e8aa9d6775f"
+      ],
+      "plugins": [],
+      "rawPrims": 15582,
+      "scenePrims": 15576,
+      "stockUSD": [
+        0,
+        26,
+        8
+      ],
+      "sublayers": []
+    },
     "inventory": {
-      "bytes": 30289582,
+      "bytes": 32984360,
       "errors": [],
-      "files": 248
+      "files": 250
     },
     "layout": {
       "analysisBytes": {
         "buildup": 87768,
         "cctv": 765355,
-        "clash": 81413,
+        "clash": 81801,
         "compliance": 683829,
         "pipe": 543064,
         "plan": 96505,
-        "repeat": 503456,
-        "solid": 642319,
+        "repeat": 503253,
+        "solid": 643404,
         "wall": 127289
       },
       "cameras": [
@@ -14191,7 +14439,7 @@
       }
     },
     "publication size": {
-      "bytes": 30289582,
+      "bytes": 32984360,
       "cap": 80000000
     },
     "rebuild": {
@@ -15522,13 +15770,13 @@
       }
     },
     "vanilla render": {
-      "bytes": 67400,
+      "bytes": 67327,
       "file": "vanilla.png",
       "height": 600,
       "nonUniform": true,
       "relocatedWithoutIFC": true,
       "renderer": "Embree",
-      "sha256": "f2e4a219a5b441f821b09031c8dbacb94e9c6892eb34c76fd28337454656331c",
+      "sha256": "b4e03a776fdb5b048da8df1374266e972835764fc06a5e6e66c372099ff68621",
       "width": 960
     }
   },
@@ -15537,9 +15785,6 @@
     "tag": "v0.5.1"
   },
   "sourceStampDifferences": [
-    "packages/cooling/cooling.geometry.usdc",
-    "packages/cooling/cooling.semantics.usda",
-    "packages/cooling/cooling.usda",
     "packages/electrical/electrical.geometry.usdc",
     "packages/electrical/electrical.semantics.usda",
     "packages/electrical/electrical.usda",
@@ -15547,8 +15792,8 @@
     "packages/it/it.semantics.usda",
     "packages/it/it.usda"
   ],
-  "totalBytes": 29593682,
-  "version": "0.2.0",
+  "totalBytes": 32281037,
+  "version": "0.3.0",
   "views": {
     "all": {
       "analyses": [

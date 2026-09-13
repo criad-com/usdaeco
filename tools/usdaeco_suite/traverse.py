@@ -41,6 +41,17 @@ def rows(stage):
                        depth=prim.GetPath().pathElementCount - site.GetPath().pathElementCount)
 
 
+def selected_rows(stage, package=None):
+    from pxr import Sdf
+    tree = list(rows(stage))
+    if not package:
+        return tree
+    selected = [r for r in tree if r['element'] and r['owner'] == 'packages/' + package]
+    paths = {r['path'] for r in selected}
+    ancestors = {str(parent) for row in selected for parent in Sdf.Path(row['path']).GetPrefixes()}
+    return [r for r in tree if r['path'] in paths or (not r['element'] and r['path'] in ancestors)]
+
+
 def main(argv=None):
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('stage', nargs='?', type=Path, default=ROOT / 'stage' / FORM_C)
@@ -52,9 +63,7 @@ def main(argv=None):
     if not stage or stage.GetCompositionErrors():
         raise ValueError('stage does not compose')
     counts = Counter()
-    for row in rows(stage):
-        if args.package and row['owner'] != 'packages/' + args.package:
-            continue
+    for row in selected_rows(stage, args.package):
         counts[row['owner']] += row['element']
         if not args.summary:
             print('  ' * row['depth'] + row['name'] + ' [' + row['owner'] + ']')

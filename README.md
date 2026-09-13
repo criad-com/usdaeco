@@ -36,8 +36,10 @@ usdview stage/views/plan-B.usda
 
 Form C uses portable USD twins and opens without suite plugins. Form A,
 `stage/demo-datacentre-01.usda`, substitutes delivered IFC through the `usdIfc`
-reader. Both use the same analysis and presentation stack. The flattened
-Form B is not included in this release.
+reader. Both use the same analysis and presentation stack. Form B,
+`stage/demo-datacentre-01.flat.usdc`, is a self-contained flattened crate that
+opens alone in stock USD. Cooling was delivered through Bonsai; its comparison
+receipt proves the identities, document links and converted scene survived.
 
 ## Build and check
 
@@ -121,7 +123,7 @@ remain independent repositories at their recorded tags.
 | data/ | Released demo facility |
 | gate/ | Release scenarios and suite board |
 | docs/ | HTML guide, suite map and verification notes |
-| stage/ | Connected and USD-only roots, deliveries, analyses, views and proofs |
+| stage/ | Connected, flattened and USD-only forms, deliveries, analyses, views and proofs |
 | tools/usdaeco_suite/ | Pin, build, traversal and verification utilities |
 | tests/ | Tests executed directly from source |
 | testenv/ | Standalone source smoke entry point |
@@ -132,7 +134,8 @@ remain independent repositories at their recorded tags.
 
 ## Status
 
-Version 0.2.0 supplies the integrated stage. Its [guide](stage/README.md)
+Version 0.3.0 adds the flattened form, a Bonsai cooling delivery and a building
+walkthrough. Its [guide](stage/README.md)
 records what was run, what uses committed results, and the limits of the
 expected analysis findings and mute-validation deviations. The complete measured
 record is [stage/manifest.json](stage/manifest.json).

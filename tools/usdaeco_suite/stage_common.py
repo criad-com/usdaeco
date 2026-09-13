@@ -8,6 +8,7 @@ import sys
 ROOT = Path(__file__).resolve().parents[2]
 FORM_C = 'demo-datacentre-01.usd-only.usda'
 FORM_A = 'demo-datacentre-01.usda'
+FORM_B = 'demo-datacentre-01.flat.usdc'
 DISCIPLINES = ('site', 'arch', 'structure', 'cooling', 'electrical', 'it', 'fitout', 'security', 'shared')
 
 

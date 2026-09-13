@@ -7,17 +7,19 @@ elements, 41 spaces and three levels**, shared by all analyses. A [stock USD ren
 | Form | File | Runtime |
 |---|---|---|
 | A | `demo-datacentre-01.usda` | ABI-matched `usdIfc` file-format reader |
+| B | `demo-datacentre-01.flat.usdc` | Stock USD; one self-contained crate |
 | C | `demo-datacentre-01.usd-only.usda` | Stock USD; optional schema plugins enrich queries |
 
-The flattened Form B is not supplied here. The source is
+The source is
 `usdaeco-datacentre v0.5.1`; the reader is `usdaeco-ifc v0.3.1`.
 
-## Open, select and mute
+## Walking the building
 
 Run these commands from the suite root:
 
 ```sh
 usdview stage/demo-datacentre-01.usd-only.usda
+usdview stage/demo-datacentre-01.flat.usdc
 usdview stage/views/shell.usda
 usdview stage/views/architecture.usda
 usdview stage/views/mep.usda
@@ -55,6 +57,50 @@ env -u PYTHONPATH "$PYTHON" tools/usdaeco_suite/traverse.py --summary
 env -u PYTHONPATH "$PYTHON" tools/usdaeco_suite/traverse.py --package cooling
 ```
 
+The summary reports these delivering element counts (3,009 in total):
+
+```text
+== stage: delivered element census
+packages/arch: 167
+packages/cooling: 737
+packages/electrical: 1254
+packages/fitout: 23
+packages/it: 671
+packages/security: 70
+packages/shared: 0
+packages/site: 3
+packages/structure: 84
+```
+
+`--package cooling` retains spatial ancestors, so a real excerpt reads:
+
+```text
+demo_datacentre_01_Site [packages/shared]
+  demo_datacentre_01 [packages/shared]
+    L01_Office [packages/shared]
+      Office_Corridor_L01 [packages/shared]
+        Corridor_ceiling_void [packages/shared]
+          pipe_clash_hard [packages/cooling]
+          pipe_clash_near [packages/cooling]
+          pipe_clash_tangent [packages/cooling]
+```
+
+This is level → space → nested space → element. The full traversal also visits
+`L00_Ground` and `L02_Office`; the package filter shows only occupied branches.
+In usdview's layer browser, mute `packages/cooling/cooling.usda`. The manifest's
+`proofs.mute.rows` entry records **184 predicted and observed dangling port sites**,
+**11,991 unchanged world transforms**, and zero composition errors. It also records
+495 dependent analysis errors: 475 `PipeMissingAxis`, 11 `ComplianceStale`,
+6 `ClashResultWithoutElements` and 3 `QuantityStale`. Those analyses retain opinions
+whose inputs were removed; the diagnostics identify the dependencies to restore.
+Unmute the delivery to restore the baseline. Open `views/mep.usda` for MEP or
+`views/plan-A.usda` and `views/plan-B.usda` for the two programmes.
+
+Use Form C to explore editable layers without plugins. Use Form A with the
+IFC reader configured below to consume the delivered IFCs directly. Form B opens
+alone in stock USD, with the same scene and animation baked into one file;
+package muting and view selection use the layered Forms A and C.
+
 ## Deliveries and layer order
 
 `packages/` contains `shared`, `site`, `arch`, `structure`, `cooling`,
@@ -63,10 +109,18 @@ USD root, semantic layer, geometry crate, README and local overlays.
 The shared delivery alone defines the spatial structure. Other deliveries
 overlay it and define their elements, catalog types, systems and ports.
 
-The 36 delivered IFC/USD files are copied byte for byte. Their source stamps
-retain the original production tag, while the suite manifest records the
-release that supplied those bytes. `dc.manifest.json` is the unchanged source
-publication manifest. Package READMEs include the producer and measured census.
+The 32 IFC/USD files outside cooling are copied byte for byte. Cooling is an
+unchanged-model Bonsai 0.8.5 export from Blender 5.1.2, with its USD twin regenerated
+by the pinned converter. Its [comparison receipt](packages/cooling/bonsai-export.json)
+checks all 16,163 IFC GlobalIds, 184 document references and 184 document associations,
+plus classification, relationship targets, world transforms and 776 meshes with
+shared space extents. Only the two declared controlled meshes are excluded.
+They remain the pinned display fixtures in the regenerated twin.
+
+Copied source stamps retain their original production tag; cooling's stamps name
+its producer, accepted IFC hash and generator source hash. `dc.manifest.json` remains
+the unchanged generator publication manifest. The suite manifest records the
+accepted replacement separately under `bonsai`. Package READMEs show their census.
 
 Strongest first, the roots compose presentation, analysis roots, then each
 package's presentation, optional derived placement, catalog drivers and delivery.
@@ -77,7 +131,7 @@ Shared is last. Form A replaces each USD delivery with
 The IFC reader flattens each materialization. Package driver layers restore
 catalog inheritance, and analysis inheritance overlays propagate introduced
 type APIs to occurrences. This lets upper-layer type refinements reach both
-forms. No copied delivery is rewritten. Bulk analysis geometry uses `.usdc` crates;
+forms. Bulk analysis geometry uses `.usdc` crates;
 drivers, findings and small roots remain readable USDA.
 
 Computed representation placements belong to their delivering package. They
@@ -147,6 +201,7 @@ export USD_SOLID_OCCT_RUNTIME="$EXACT_RUNTIME"
 export AECO_EXACT_CACHE="$PWD/out/exact-cache"
 export USDRECORD="$STOCK_USD/bin/usdrecord"
 env -u PYTHONPATH "$PYTHON" stage/build.py
+env -u PYTHONPATH "$PYTHON" stage/build.py --flatten
 env -u PYTHONPATH "$PYTHON" stage/check.py --record --rebuild
 env -u PYTHONPATH "$PYTHON" check.py
 env -u PYTHONPATH "$PYTHON" -m pytest -q
@@ -176,6 +231,28 @@ first. The source resource directories are used directly; only the IFC reader
 and native kit libraries require compiled binaries.
 
 `stage/build.py --smoke` selects CCTV only. `--output` builds a separate copy.
+Normal builds regenerate cooling's twin from the committed Bonsai IFC, rerun
+the analysis hooks and flatten Form A. `--flatten` only rebuilds Form B from
+the existing connected root, writing `out/demo-datacentre-01.flat.usdc` and
+copying it into `stage/` when it is at most 10,000,000 bytes. Larger crates stay
+in `out/`: attach that file to the matching release tag, together with the
+manifest's byte count, SHA-256 and `sdf-usda-v1` normalized hash. Never commit it.
+
+To repeat the producer transaction, set `AECO_BLENDER` to Blender 5.1.2 with
+Bonsai 0.8.5, then run:
+
+```sh
+env -u PYTHONPATH "$PYTHON" tools/usdaeco_suite/bonsai_delivery.py
+env -u PYTHONPATH "$PYTHON" stage/build.py
+env -u PYTHONPATH "$PYTHON" stage/check.py --record
+```
+
+Each Blender run has a 900-second budget. The importer and exporter make no
+model edits. Only the header filename and timestamp are normalized for repeatable
+publication; the receipt retains the raw export hash. An unequal comparison
+retains the generator delivery and records the differences. Rebuilds use the
+accepted delivery as an input and do not require Blender.
+
 The development option `--reuse-hooks` only rearchives existing work; it is not
 a reconstruction proof. Normal builds rerun hooks. The checker can reuse a
 successful probe with `--use-evidence` only when its stage, probe code and runtime
@@ -194,6 +271,12 @@ are checked. The stage cap is 80,000,000 bytes; each analysis USDA is capped at
 | Measured proof | Result |
 |---|---:|
 | Connected and USD-only prims | 15,576 each; identical |
+| Flattened scene / raw prims | 15,576 / 15,582 |
+| Flattened crate bytes | 3,166,293; committed |
+| Flattened normalized SHA-256 | `5d16395e6089a17eb84a5d2fea1eaa80d9eaa9ede91eb421430c4e8aa9d6775f` |
+| Flattened generated prototype prims | 6 |
+| Flattened deterministic builds | Three equal `sdf-usda-v1` hashes |
+| Bonsai IFC GlobalIds / document links | 16,163 / 184; zero lost or changed |
 | Compared meshes | 3,583; two declared exclusions |
 | Plugin-free views | 21 |
 | Registered validators executed | 124 |
@@ -202,10 +285,10 @@ are checked. The stage cap is 80,000,000 bytes; each analysis USDA is capped at
 | Animated prims / transform samples | 19 / 109 |
 | Mute cases / placement changes | 117 / 0 |
 | Predicted and observed dangling port sites | 1,008 each |
-| Stage gate | 10 checks, 0 failed |
+| Stage gate | 12 checks, 0 failed |
 | Text layers in the rebuild comparison | 177 |
 | Source gate | 56 checks, 0 failed |
-| Pytest | 43 passed |
+| Pytest | 48 passed |
 
 The published analyses encode expected findings with validator error severity:
 2 `MisplacedDevice` results from Compliance and 53 `RepeatDrift` results from
@@ -225,7 +308,7 @@ composition, transform changes and the source manifest's predicted cross-package
 port links. This is a deviation from the port-only diagnostic requirement; it does not
 claim that a muted study remains current.
 
-Nine upstream USD source stamps (the three twin layers for cooling, electrical
+Six upstream USD source stamps (the three twin layers for electrical
 and IT) do not match their delivered IFC hashes. Those source bytes are retained
 exactly; `sourceStampDifferences` records the mismatch separately from the
 verified copy hashes and the suite-authored provenance.
@@ -236,3 +319,14 @@ recomputation is not proven. Nix packaging is not proven: the single attempt
 stopped at a public input lookup returning HTTP 404. The measured stock CPU
 renderer uses USD 25.05.01; connected reads and strict checks use the supplied
 USD 26.11 runtime, while plugin-free composition is also checked with USD 26.8.
+
+Form B is exactly `Usd.Stage.Flatten(addSourceFileComment=False)` of Form A,
+with root metadata and provenance preserved. USD introduces six generated
+instance-prototype storage prims: the literal `TraverseAll` count is therefore
+15,582 rather than 15,576. This is a deviation from raw prim-count equality.
+The checker reports those storage prims separately and compares every original
+scene path, type, identity, world transform (including animation samples) and mesh.
+`Flatten(C)` matches on those same fields; only the two declared mesh exclusions
+apply. Sublayers, external references, payloads and asset-valued dependencies
+are absent; internal instance references remain. The crate opens in a directory
+containing no other files, with no suite plugins, using stock USD 26.8.

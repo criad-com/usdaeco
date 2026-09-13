@@ -70,10 +70,10 @@ def "Clash"
     </demo_datacentre_01/demo_datacentre_01_Site/demo_datacentre_01/L01_Office/Office_Corridor_L01/Corridor_ceiling_void/pipe_clash_hard>,
     </demo_datacentre_01/demo_datacentre_01_Site/demo_datacentre_01/L01_Office/wall_l1_h_007>,
    ]
-   string aeco:clash:evidence = '{"band_decides":true,"bodies":[{"approx":"tessellated","body":"/demo_datacentre_01/demo_datacentre_01_Site/demo_datacentre_01/L01_Office/Office_Corridor_L01/Corridor_ceiling_void/pipe_clash_hard/Geom","role":"body","stamp":"ifc2usdaeco (ifcopenshell 0.8.5)","uncertainty":0.00022009999999999998,"uncertainty_method":"aeco:body:tolerance"},{"approx":"tessellated","body":"/demo_datacentre_01/demo_datacentre_01_Site/demo_datacentre_01/L01_Office/wall_l1_h_007/Geom","role":"body","stamp":"ifc2usdaeco (ifcopenshell 0.8.5)","uncertainty":0.0,"uncertainty_method":"measured planar facets; assumes orthogonal planar source, excludes unknown curvature"}],"measurement":"triangle surface gap; negative maximum sampled interior depth (vertices, centroids and clipped edge intervals), not minimum translation distance","method":"mesh","tolerance":0.001}'
+   string aeco:clash:evidence = '{"band_decides":true,"bodies":[{"approx":"tessellated","body":"/demo_datacentre_01/demo_datacentre_01_Site/demo_datacentre_01/L01_Office/Office_Corridor_L01/Corridor_ceiling_void/pipe_clash_hard/Geom","role":"body","stamp":"ifc2usdaeco (ifcopenshell 0.8.5)","uncertainty":0.0002205812233756258,"uncertainty_method":"measured ring chord sagitta plus circular-fit residual; assumes circular source"},{"approx":"tessellated","body":"/demo_datacentre_01/demo_datacentre_01_Site/demo_datacentre_01/L01_Office/wall_l1_h_007/Geom","role":"body","stamp":"ifc2usdaeco (ifcopenshell 0.8.5)","uncertainty":0.0,"uncertainty_method":"measured planar facets; assumes orthogonal planar source, excludes unknown curvature"}],"measurement":"triangle surface gap; negative maximum sampled interior depth (vertices, centroids and clipped edge intervals), not minimum translation distance","method":"mesh","tolerance":0.001}'
    uniform token aeco:clash:kind = "hard"
    point3d aeco:clash:point = (23.969850540161133, -3, 6.800000190734863)
-   double aeco:clash:uncertainty = 0.00022009999999999998
+   double aeco:clash:uncertainty = 0.0002205812233756258
 
    def Camera "Camera"
    {

@@ -1007,16 +1007,10 @@ def Xform "demo_datacentre_01" (
         prepend apiSchemas = ["AecoDerivedGeometryAPI"]
        )
        {
-        double aeco:body:tolerance = 0.00022009999999999998 (
-         aecoDerived = true
-        )
         uniform token aeco:derived:approx = "tessellated"
         uniform token aeco:derived:role = "body"
         string aeco:derived:source = "5c1bcae1-aed8-5d1a-bffe-e8eb8bc50f6f"
         string aeco:derived:stamp = "ifc2usdaeco (ifcopenshell 0.8.5)"
-        double aeco:derived:tolerance = 0.00022009999999999998 (
-         aecoDerived = true
-        )
         uniform bool doubleSided = 1
         float3[] extent = [(23.96985, -4, 6.7700696), (24.03015, -2, 6.8299303)]
         int[] faceVertexCounts = [3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3]

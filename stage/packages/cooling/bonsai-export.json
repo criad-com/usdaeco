@@ -1,0 +1,72 @@
+{
+  "accepted": true,
+  "converter": {
+    "repo": "usdaeco-ifc",
+    "spine": "over",
+    "tag": "v0.3.1"
+  },
+  "deviations": [],
+  "export": {
+    "bytes": 2999262,
+    "normalizedHeaderFields": [
+      "name",
+      "time_stamp"
+    ],
+    "rawSha256": "ebfd179923b4d56176067f0fb537ded393676d7831ea94715f53ef97272cb1fa",
+    "sha256": "87e915c28ea9836e348f77bc91c36e97e6b008e7b9b01279df8aab44170627be"
+  },
+  "generator": {
+    "sha256": "28d85b64eed1bd405429b893badb57f9a0fb0e8180e172b5b82029625774ed58",
+    "source": "data/usdaeco-datacentre/dist/full/cooling.ifc",
+    "tag": "v0.5.1"
+  },
+  "ifc": {
+    "associations": {
+      "added": 0,
+      "after": 184,
+      "before": 184,
+      "removed": 0
+    },
+    "documents": {
+      "added": 0,
+      "after": 184,
+      "before": 184,
+      "removed": 0
+    },
+    "entities": {
+      "added": 0,
+      "after": 45690,
+      "before": 45690,
+      "removed": 0
+    },
+    "identities": {
+      "added": 0,
+      "after": 16163,
+      "before": 16163,
+      "removed": 0
+    }
+  },
+  "producer": "Bonsai 0.8.5 (Blender 5.1.2) export of the generator delivery",
+  "runtime": {
+    "blender": "5.1.2",
+    "bonsai": "Bonsai 0.8.5",
+    "exported": true
+  },
+  "twins": {
+    "cooling.geometry.usdc": "d18a74db898f3ee0491d56fd2bd67a29f4009e7a6d1e24e51aefcad9ed615c73",
+    "cooling.semantics.usda": "bcf3010f581935b96d2bcc50d3244f5887dc7758756b77698550980908c99863",
+    "cooling.usda": "95c688ae1156e1cb96861203fb1aaaabbbd58a5575964f8dedfe15ce726a77f4"
+  },
+  "usd": {
+    "added": [],
+    "changed": {},
+    "comparedMeshes": 776,
+    "leftPrims": 3307,
+    "meshExclusions": [
+      "/demo_datacentre_01/demo_datacentre_01_Site/demo_datacentre_01/L01_Office/Office_Corridor_L01/Corridor_ceiling_void/pipe_clash_near/Geom",
+      "/demo_datacentre_01/demo_datacentre_01_Site/demo_datacentre_01/L01_Office/Office_Corridor_L01/Corridor_ceiling_void/pipe_clash_tangent/Geom"
+    ],
+    "removed": [],
+    "rightPrims": 3307
+  }
+}

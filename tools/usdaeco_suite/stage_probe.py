@@ -6,7 +6,7 @@ import json
 from pathlib import Path
 import sys
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
-from usdaeco_suite.stage_common import FORM_C, FORM_A, read, write, configure
+from usdaeco_suite.stage_common import FORM_C, FORM_A, FORM_B, read, write, configure
 
 
 def clean_plugins():
@@ -171,7 +171,7 @@ def mute_drill(directory, *, validate=False, progress=None, shard=0, shards=1):
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument('mode', choices=['vanilla', 'snapshot', 'mute', 'validate', 'render'])
+    parser.add_argument('mode', choices=['vanilla', 'snapshot', 'mute', 'validate', 'render', 'flatten', 'flat-snapshot'])
     parser.add_argument('directory', type=Path)
     parser.add_argument('output', type=Path)
     parser.add_argument('--plugins', action='store_true')
@@ -179,17 +179,38 @@ def main():
     parser.add_argument('--shard', type=int, default=0)
     parser.add_argument('--shards', type=int, default=1)
     args = parser.parse_args()
+    if args.mode == 'flatten':
+        # Register core's property metadatum before Flatten copies authored data.
+        from pxr import Plug
+        from usdaeco_suite.stage_common import ROOT
+        Plug.Registry().RegisterPlugins(str(ROOT / 'core/usdaeco-core/usdAeco'))
     if args.plugins:
         configure(native_plugins=True)
-    elif not args.connected:
+    elif not args.connected and args.mode != 'flatten':
         clean_plugins()
     from pxr import Plug, Usd, UsdGeom
     directory = args.directory.resolve()
     if args.mode == 'mute':
         data = mute_drill(directory, validate=args.plugins, progress=args.output, shard=args.shard, shards=args.shards)
     else:
-        stage = open_stage(directory / (FORM_A if args.connected else FORM_C))
-        if args.mode == 'snapshot':
+        stage = open_stage(directory / (FORM_B if args.mode == 'flat-snapshot' else FORM_A if args.connected else FORM_C))
+        if args.mode == 'flatten':
+            from usdaeco_suite.stage_flatten import export_flat
+            data = export_flat(stage, directory, args.output.with_suffix('.usdc'))
+        elif args.mode == 'flat-snapshot':
+            from pxr import UsdUtils
+            from usdaeco_suite.stage_flatten import metadata
+            layer = stage.GetRootLayer()
+            if layer.subLayerPaths or any(UsdUtils.ExtractExternalReferences(layer.identifier)):
+                raise ValueError('Form B is not self-contained')
+            if any(p.GetTypeName().startswith('Aeco') and p.GetPrimTypeInfo().GetSchemaType().isUnknown
+                   for p in stage.TraverseAll()):
+                raise ValueError('missing effective stock fallback')
+            data = dict(snapshot=snapshot(stage), metadata=metadata(stage), plugins=[],
+                        usdVersion=list(Usd.GetVersion()), provenance=dict(layer.customLayerData),
+                        sublayers=[], externalAssets=[])
+            clean_plugins()
+        elif args.mode == 'snapshot':
             data = snapshot(stage)
         elif args.mode == 'vanilla':
             if not stage.GetDefaultPrim() or UsdGeom.GetStageMetersPerUnit(stage) != 1 or UsdGeom.GetStageUpAxis(stage) != 'Z':

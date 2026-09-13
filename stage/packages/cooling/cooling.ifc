@@ -1,7 +1,7 @@
 ISO-10303-21;
 HEADER;
 FILE_DESCRIPTION(('ViewDefinition [CoordinationView]'),'2;1');
-FILE_NAME('cooling.ifc','2000-01-01T00:00:00',(''),(''),'ifcopenshell','usdaeco-datacentre 0.5.0','');
+FILE_NAME('cooling.ifc','2000-01-01T00:00:00',(''),(''),'IfcOpenShell 0.8.5','Bonsai 0.8.5','');
 FILE_SCHEMA(('IFC4X3_ADD2'));
 ENDSEC;
 DATA;

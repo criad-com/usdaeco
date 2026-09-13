@@ -6,7 +6,7 @@
   string "aeco:layer:role" = "root"
   string "aeco:layer:source" = "data/usdaeco-datacentre/dist/full/dc.usda"
   string "aeco:layer:sourceSha256" = "85df064b63d065fd743286fee3d6386662f61aca3cb4e154bca422d8cce52b2b"
-  string "aeco:layer:tag" = "v0.2.0"
+  string "aeco:layer:tag" = "v0.3.0"
  }
  defaultPrim = "demo_datacentre_01"
  endTimeCode = 288

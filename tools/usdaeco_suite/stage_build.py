@@ -229,7 +229,12 @@ def main(argv=None):
     parser.add_argument('--output', type=Path, default=ROOT / 'stage')
     parser.add_argument('--analyses', nargs='+')
     parser.add_argument('--reuse-hooks', action='store_true', help='development only: rearchive existing hook outputs')
+    parser.add_argument('--flatten', action='store_true', help='flatten the existing connected stage only')
     args = parser.parse_args(argv)
+    if args.flatten:
+        from usdaeco_suite.stage_flatten import build_flattened
+        build_flattened(args.output.resolve())
+        return 0
     configure()
     from pxr import Sdf
     print('== stage: federated packages', flush=True)
@@ -241,6 +246,8 @@ def main(argv=None):
     destination.mkdir(parents=True)
     fallbacks, evidence = fallback_union()
     copied = packages(destination, fallbacks)
+    from usdaeco_suite.bonsai_delivery import install_delivery
+    bonsai = install_delivery(destination, copied)
     base = package_stack(DISCIPLINES)
     root_layer(destination, FORM_C, base, fallbacks)
     names = args.analyses or (['cctv'] if args.smoke else ['cctv', 'clash', 'plan', 'compliance', 'repeat', 'solid', 'wall', 'pipe', 'buildup'])
@@ -280,6 +287,8 @@ def main(argv=None):
     from usdaeco_suite.stage_checks import finding_records
     manifest['expectedFindings'] = finding_records(manifest)
     manifest['integrationFindings'] = []
+    if bonsai:
+        manifest['bonsai'] = bonsai
     output.mkdir(parents=True, exist_ok=True)
     for name in ('packages', 'analysis', 'presentation', 'views'):
         if (output / name).exists():
@@ -288,6 +297,9 @@ def main(argv=None):
     for name in (FORM_C, FORM_A, 'dc.manifest.json', 'integration.json'):
         shutil.copyfile(destination / name, output / name)
     inventory(output, manifest)
+    if not args.smoke:
+        from usdaeco_suite.stage_flatten import build_flattened
+        build_flattened(output)
     print(f"{len(copied)} copied files, {len(analyses)} analyses, {len(selection)} views; {manifest['totalBytes']} bytes", flush=True)
     return 0
 

@@ -9,7 +9,7 @@
   string "aeco:layer:tag" = "v0.1.3"
   string aecoComplianceRole = "result"
   string evaluatorVersion = "0.1.0"
-  string inputFingerprint = "66d125324667302640c63e8edd6e14f7c3667c609560b6e3fe44dacf060407f6"
+  string inputFingerprint = "aa5bb0fbc19ed2bf9534031e1312a9218a4e9fef78ed6c430e9c361cdf49a1e0"
  }
  fallbackPrimTypes = {
   token[] AecoRequirement = ["Scope"]
