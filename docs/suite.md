@@ -3,7 +3,8 @@
 Release train: `aeco-0.9.0`.
 
 Each repository is a submodule at the tag shown. Paths are relative to this checkout.
-See the [HTML guide](index.html), [Working with the integrated stage](stage/index.html)
+See the [Built Environment schema guide](schemas/usdAeco/overview.md),
+[Working with the integrated stage](stage/index.md), the [HTML guide](index.html)
 and [stage setup and reproduction](../stage/README.md).
 
 ## core
@@ -39,7 +40,7 @@ and [stage setup and reproduction](../stage/README.md).
 ## kits
 
 - [usdaeco-toolchain](../kits/usdaeco-toolchain/README.md) · [docs](../kits/usdaeco-toolchain/docs/) · `v0.3.11`
-- [aeco-toolchain](../kits/aeco-toolchain/README.md) · [docs](../kits/aeco-toolchain/docs/) · `v0.4.0`
+- [aeco-toolchain](../kits/aeco-toolchain/README.md) · [docs](../kits/aeco-toolchain/docs/) · `v0.4.1`
 - [usdaeco-cctv-exec](../kits/usdaeco-cctv-exec/README.md) · [docs](../kits/usdaeco-cctv-exec/docs/) · `v0.2.4`
 - [usdSolid](../kits/usdSolid/README.md) · [docs](../kits/usdSolid/docs/) · `v0.1.6`
 - [usdSolidOcct](../kits/usdSolidOcct/README.md) · [docs](../kits/usdSolidOcct/docs/) · `v0.1.5`

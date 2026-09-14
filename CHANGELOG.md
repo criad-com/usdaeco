@@ -1,5 +1,14 @@
 # Changelog
 
+## 0.5.1
+
+- Add faithful Markdown twins of the schema and integrated-stage guides, with
+  GitHub navigation, standalone SVG figures and checked links from the suite docs.
+- Advance `aeco-toolchain` to `v0.4.1`, reading its version-only manifest alongside
+  the release-index metadata card; regenerate suite pins, Nix inputs and the map.
+- Inventory both Markdown pages and all five SVG figures; preserve the styled
+  HTML guides, hero PNG and published stage bytes.
+
 ## 0.5.0
 
 - Group every analysis under `/Studies/<library>` and retain one project catalog,

@@ -42,6 +42,8 @@ def parse(path):
 def check_links(root):
     root = Path(root).resolve()
     pages = sorted(p for p in (root / "docs").rglob("*") if p.suffix in {".html", ".md", ".css"})
+    if (root / "README.md").is_file():
+        pages.insert(0, root / "README.md")
     parsed = {p: parse(p) for p in pages}
     failures = []
     local = external = 0

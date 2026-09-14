@@ -59,6 +59,12 @@
     "status": "released",
     "reason": "Released stage layout, producer delivery, or public source update beyond the baseline train."
   },
+  "aeco-toolchain": {
+    "tag": "v0.4.1",
+    "revision": "e5b4541e9ec0b8ae66f6702c76a6a5d65e06d8eb",
+    "status": "released",
+    "reason": "Released public source cleanup and version metadata."
+  },
   "usdaeco-solid": {
     "tag": "v0.1.6",
     "revision": "4f2758d4cae45f44bd4dcf5292a4562ebe512b57",

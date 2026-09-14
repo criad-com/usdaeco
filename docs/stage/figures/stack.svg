@@ -1,0 +1,22 @@
+<svg viewBox="0 0 740 292" width="740" height="292" role="img" aria-labelledby="stack-title" xmlns="http://www.w3.org/2000/svg" style="font: 13px Arial, sans-serif">
+  <title id="stack-title">The layer stack in strongest-to-weakest delivery order</title>
+  <defs>
+    <marker id="stack-arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#768798" />
+    </marker>
+  </defs>
+  <text x="18" y="28" fill="#737b83" font-weight="700">Strongest</text>
+  <path d="M54 42 V244" marker-end="url(#stack-arrow)" fill="none" stroke="#768798" stroke-width="1.4" />
+  <text x="18" y="274" fill="#737b83" font-weight="700">Weakest</text>
+  <rect x="122" y="10" width="596" height="42" rx="3" fill="none" stroke="#768798" stroke-width="1.2" />
+  <text x="140" y="36" fill="#737b83" style="font: 11px monospace">presentation/*.usda</text>
+  <rect x="122" y="64" width="596" height="42" rx="3" fill="none" stroke="#768798" stroke-width="1.2" />
+  <text x="140" y="90" fill="#737b83" style="font: 11px monospace">analysis/*/root.usda</text>
+  <rect x="122" y="118" width="596" height="96" rx="3" fill="none" stroke="#80878e" stroke-width="1.2" />
+  <text x="140" y="140" fill="#737b83" font-weight="700">Packages: site → arch → structure → cooling → electrical → IT → fitout → security</text>
+  <text x="140" y="163" fill="#737b83">Within each: presentation → derived (when present) → drivers → delivery</text>
+  <text x="140" y="191" fill="#737b83" style="font: 11px monospace">A: &lt;package&gt;.ifc       C: &lt;package&gt;.usda</text>
+  <rect x="122" y="226" width="596" height="50" rx="3" fill="none" stroke="#558995" stroke-width="1.2" />
+  <text x="140" y="247" fill="#737b83" font-weight="700">Shared package overlays and spatial delivery</text>
+  <text x="140" y="265" fill="#737b83" style="font: 11px monospace">A: shared.ifc          C: shared.usda</text>
+</svg>

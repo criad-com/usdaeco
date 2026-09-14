@@ -116,7 +116,13 @@ def site(root):
     from PIL import Image, ImageStat
 
     record = read_json(root / "docs/site.json")
-    expected = {"index.html", "stage/index.html", "schemas/usdAeco/overview.html", "_static/aeco.css", "schemas/usdAeco/usdAecoExample.png"}
+    expected = {
+        "index.html", "stage/index.html", "stage/index.md",
+        "stage/figures/delivery.svg", "stage/figures/stack.svg", "stage/figures/mute.svg",
+        "schemas/usdAeco/overview.html", "schemas/usdAeco/overview.md",
+        "schemas/usdAeco/figures/grammar.svg", "schemas/usdAeco/figures/derived.svg",
+        "_static/aeco.css", "schemas/usdAeco/usdAecoExample.png",
+    }
     require(set(record["files"]) == expected, "site inventory differs")
     total = 0
     for path, entry in record["files"].items():

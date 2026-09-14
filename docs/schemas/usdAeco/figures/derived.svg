@@ -1,0 +1,32 @@
+<svg viewBox="0 0 740 232" width="740" height="232" role="img" aria-labelledby="derived-title" xmlns="http://www.w3.org/2000/svg" style="font: 13px Arial, sans-serif">
+  <title id="derived-title">An element and its derived representations</title>
+  <defs>
+    <marker id="arr2" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#768798" />
+    </marker>
+    <marker id="arr2-soft" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#80878e" />
+    </marker>
+  </defs>
+  <line x1="115" y1="140" x2="290" y2="82" marker-end="url(#arr2)" fill="none" stroke="#768798" stroke-width="1.4" />
+  <line x1="370" y1="140" x2="370" y2="82" marker-end="url(#arr2)" fill="none" stroke="#768798" stroke-width="1.4" />
+  <line x1="625" y1="140" x2="450" y2="82" marker-end="url(#arr2)" fill="none" stroke="#768798" stroke-width="1.4" />
+  <rect x="200" y="16" width="340" height="64" rx="3" fill="none" stroke="#558995" stroke-width="1.2" />
+  <text x="370" y="40" text-anchor="middle" fill="#737b83" font-weight="700">Xform "WallNorth"  +  AecoElementAPI</text>
+  <text x="370" y="62" text-anchor="middle" fill="#737b83" style="font: 10px monospace">aeco:id = "e1337f59-b0e2-5dd0-8474-c578c5b0afbd"</text>
+  <rect x="10" y="140" width="210" height="76" rx="3" fill="none" stroke="#80878e" stroke-width="1.2" />
+  <text x="115" y="162" text-anchor="middle" fill="#737b83" font-weight="700">BasisCurves "Axis"</text>
+  <text x="115" y="182" text-anchor="middle" fill="#737b83" style="font: 10px monospace">role = axis · purpose = guide</text>
+  <text x="115" y="200" text-anchor="middle" fill="#737b83" style="font: 10px monospace">approx = exact</text>
+  <rect x="265" y="140" width="210" height="76" rx="3" fill="none" stroke="#80878e" stroke-width="1.2" />
+  <text x="370" y="162" text-anchor="middle" fill="#737b83" font-weight="700">Cube "Body"</text>
+  <text x="370" y="182" text-anchor="middle" fill="#737b83" style="font: 10px monospace">role = body · purpose = render</text>
+  <text x="370" y="200" text-anchor="middle" fill="#737b83" style="font: 10px monospace">approx = exact · tolerance = 1e-6</text>
+  <rect x="520" y="140" width="210" height="76" rx="3" fill="none" stroke="#80878e" stroke-width="1.2" />
+  <text x="625" y="162" text-anchor="middle" fill="#737b83" font-weight="700">Mesh "Proxy"</text>
+  <text x="625" y="182" text-anchor="middle" fill="#737b83" style="font: 10px monospace">role = proxy · purpose = proxy</text>
+  <text x="625" y="200" text-anchor="middle" fill="#737b83" style="font: 10px monospace">approx = tessellated · from = Body</text>
+  <line x1="520" y1="128" x2="478" y2="128" marker-end="url(#arr2-soft)" fill="none" stroke="#80878e" stroke-width="1.4" stroke-dasharray="4 3" />
+  <text x="499" y="122" text-anchor="middle" fill="#737b83" font-size="11">from</text>
+  <text x="10" y="228" fill="#737b83" font-size="11">Each child is a namespace child of its referent; aeco:derived:source repeats the referent's aeco:id.</text>
+</svg>

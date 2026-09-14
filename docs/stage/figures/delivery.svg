@@ -1,0 +1,27 @@
+<svg viewBox="0 0 740 260" width="740" height="260" role="img" aria-labelledby="delivery-title" xmlns="http://www.w3.org/2000/svg" style="font: 13px Arial, sans-serif">
+  <title id="delivery-title">Deliveries and analyses compose over one shared spatial spine</title>
+  <defs>
+    <marker id="delivery-arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#768798" />
+    </marker>
+  </defs>
+  <rect x="20" y="14" width="700" height="48" rx="3" fill="none" stroke="#768798" stroke-width="1.2" />
+  <text x="370" y="35" text-anchor="middle" fill="#737b83" font-weight="700">Analyses and presentation</text>
+  <text x="370" y="52" text-anchor="middle" fill="#737b83" font-size="11">Coverage · clash · programmes · compliance · quantities · representations</text>
+  <path d="M370 98 V66" marker-end="url(#delivery-arrow)" fill="none" stroke="#768798" stroke-width="1.4" />
+  <rect x="20" y="102" width="220" height="52" rx="3" fill="none" stroke="#80878e" stroke-width="1.2" />
+  <text x="130" y="124" text-anchor="middle" fill="#737b83" font-weight="700">Architecture · structure · site</text>
+  <text x="130" y="143" text-anchor="middle" fill="#737b83" font-size="11">Discipline deliveries</text>
+  <rect x="260" y="102" width="220" height="52" rx="3" fill="none" stroke="#80878e" stroke-width="1.2" />
+  <text x="370" y="124" text-anchor="middle" fill="#737b83" font-weight="700">Cooling · electrical</text>
+  <text x="370" y="143" text-anchor="middle" fill="#737b83" font-size="11">Discipline deliveries</text>
+  <rect x="500" y="102" width="220" height="52" rx="3" fill="none" stroke="#80878e" stroke-width="1.2" />
+  <text x="610" y="124" text-anchor="middle" fill="#737b83" font-weight="700">IT · fitout · security</text>
+  <text x="610" y="143" text-anchor="middle" fill="#737b83" font-size="11">Discipline deliveries</text>
+  <path d="M130 196 V158" marker-end="url(#delivery-arrow)" fill="none" stroke="#768798" stroke-width="1.4" />
+  <path d="M370 196 V158" marker-end="url(#delivery-arrow)" fill="none" stroke="#768798" stroke-width="1.4" />
+  <path d="M610 196 V158" marker-end="url(#delivery-arrow)" fill="none" stroke="#768798" stroke-width="1.4" />
+  <rect x="20" y="198" width="700" height="48" rx="3" fill="none" stroke="#558995" stroke-width="1.2" />
+  <text x="370" y="219" text-anchor="middle" fill="#737b83" font-weight="700">Shared spatial spine</text>
+  <text x="370" y="237" text-anchor="middle" fill="#737b83" font-size="11">Project → site → facility → levels → spaces</text>
+</svg>

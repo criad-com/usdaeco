@@ -5,6 +5,10 @@ schema domains, tools, integrations, a federated demo facility and the
 [HTML guide](docs/index.html). [suite.json](suite.json) lists the pins;
 [the suite map](docs/suite.md) links their documentation.
 
+Read the [Built Environment schema guide](docs/schemas/usdAeco/overview.md) and
+[Working with the integrated stage](docs/stage/index.md) directly on GitHub.
+Both Markdown guides link their styled HTML versions.
+
 ## Use case
 
 Open and inspect one building assembled from independently delivered packages,
@@ -79,8 +83,8 @@ Illustrative domain errors retain their original severities; their counts and
 acceptance deviations are documented in the stage guide and manifest.
 
 `build.sh` verifies the source and builds Forms A and C. Nix inputs use public
-release tags. The measured Nix attempt failed to resolve a public input;
-Nix packaging remains not proven. Follow the toolchain's
+release tags. Version 0.5.1 passed Nix pin and development-shell evaluation on
+`aarch64-darwin` with `--no-build`; package builds remain not proven. Follow the toolchain's
 [external registry instructions](kits/usdaeco-toolchain/README.md#build-and-check)
 for local mirrors. Do not commit a lockfile.
 
@@ -123,7 +127,7 @@ remain independent repositories at their recorded tags.
 | kits/ | Build/check, execution and exact-geometry tools |
 | data/ | Released demo facility |
 | gate/ | Release scenarios |
-| docs/ | HTML guide, suite map and verification notes |
+| docs/ | Markdown and HTML guides, suite map and verification notes |
 | stage/ | Connected, flattened and USD-only forms, deliveries, analyses, views and proofs |
 | tools/usdaeco_suite/ | Pin, build, traversal and verification utilities |
 | tests/ | Tests executed directly from source |
@@ -135,8 +139,9 @@ remain independent repositories at their recorded tags.
 
 ## Status
 
-Version 0.5.0 groups analysis additions under `/Studies/<library>` and keeps
-one catalog under `/demo_datacentre_01/_TypeCatalog`. Render cameras live under
+Version 0.5.1 adds Markdown guides and advances `aeco-toolchain` to `v0.4.1`.
+The stage retains the 0.5.0 delivery: analysis additions under `/Studies/<library>`
+and one catalog under `/demo_datacentre_01/_TypeCatalog`. Render cameras live under
 `/Renders/<library>`. Architecture is delivered through Revit; cooling retains
 its accepted Bonsai delivery. The [stage reference](stage/README.md) and
 [manifest](stage/manifest.json) record the measured proofs and deviations.

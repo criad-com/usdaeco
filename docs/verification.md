@@ -21,11 +21,12 @@ stock composition and rendering, all registered validators, delivery and analysi
 muting, source provenance, package ownership, views, size caps and reconstruction.
 The manifest preserves raw validator severities and all stated deviations.
 
-The older `aeco-toolchain` tag has no root `library.json`; its metadata card comes
-from the release index. All other entries read their own committed metadata.
+The `aeco-toolchain` 0.4.1 manifest supplies its name and version; its kind and
+requirements still come from the release-index metadata card. All other entries
+read their own committed metadata.
 The imported schema guide's source hashes and narrow terminology substitutions
 remain recorded in [site.json](site.json), alongside current asset hashes including
-the new integrated-stage page.
+the integrated-stage page, both Markdown twins and their standalone SVG figures.
 
 Nix packaging is **not proven**. The recorded stage release's single attempt used the
 external registry documented by the toolchain and `--no-write-lock-file --no-build`.
@@ -33,6 +34,11 @@ It stopped when the public `usdSolid v0.1.6` input lookup returned HTTP 404.
 No package was built and no lockfile was written. Native stage proofs use
 existing development outputs, whose required ABI relationships are documented
 in the stage guide.
+
+For 0.5.1, one `nix flake check --no-write-lock-file --no-build` attempt resolved
+the public inputs and passed pin and development-shell evaluation on
+`aarch64-darwin`. It omitted `x86_64-linux`, built no packages and wrote no
+lockfile. This source evaluation does not replace the recorded native stage proofs.
 
 Run the two gates and tests from the suite root:
 

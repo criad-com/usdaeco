@@ -34,7 +34,7 @@
     usdaeco-bonsai.url = "github:criad-com/usdaeco-bonsai?ref=v0.1.6";
     usdaeco-bonsai.flake = false;
     usdaeco-toolchain.url = "github:criad-com/usdaeco-toolchain?ref=v0.3.11";
-    aeco-toolchain.url = "github:criad-com/aeco-toolchain?ref=v0.4.0";
+    aeco-toolchain.url = "github:criad-com/aeco-toolchain?ref=v0.4.1";
     usdaeco-cctv-exec.url = "github:criad-com/usdaeco-cctv-exec?ref=v0.2.4";
     usdaeco-cctv-exec.flake = false;
     usdSolid.url = "github:criad-com/usdSolid?ref=v0.1.6";

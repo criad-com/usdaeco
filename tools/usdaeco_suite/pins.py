@@ -128,6 +128,9 @@ def generate(root):
             manifest_path = checkout / "library.json"
             if manifest_path.is_file():
                 metadata = read_json(manifest_path)
+                if name == "aeco-toolchain":
+                    # The kit's version-only manifest supplements its release card.
+                    metadata = {**card, **metadata}
                 tag = "v" + metadata["version"]
                 library = metadata["name"] if metadata["name"].startswith("usd") and not metadata["name"].startswith("usdaeco-") else None
             elif name == "aeco-toolchain":
@@ -173,7 +176,8 @@ def render_flake(root, document):
 def render_map(document):
     lines = ["# usdAECO suite map", "", f"Release train: `{document['train']}`.", "",
              "Each repository is a submodule at the tag shown. Paths are relative to this checkout.",
-             "See the [HTML guide](index.html), [Working with the integrated stage](stage/index.html)",
+             "See the [Built Environment schema guide](schemas/usdAeco/overview.md),",
+             "[Working with the integrated stage](stage/index.md), the [HTML guide](index.html)",
              "and [stage setup and reproduction](../stage/README.md).", ""]
     for tier in TIERS:
         lines += [f"## {tier}", ""]
